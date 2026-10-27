@@ -61,3 +61,56 @@ and the project-scoped "why" behind decisions, each with the rejected alternativ
   `docs/pilot-phase1-report.md`. The headline decision is the grade rule: whether a
   single folklore collector (Afanasyev, Karadžić) counts as the brief's "one
   19th-century compiler". Verifiers ruled both ways on the same pattern.
+
+## Ben's rulings on the Phase 1 report (2026-10-27)
+
+Ruled in conversation on 2026-10-27, answering the six open decisions at the end of
+`docs/pilot-phase1-report.md`. None of these has been applied to the data yet; applying
+them is the next fix round (see "Follow-up work" below).
+
+1. **Grade rule: a single folklore collector counts as the brief's "one 19th-century
+   compiler", for now.** Bannik and drekavac stay literary, and zmey-gorynych drops from
+   regional to literary. Rejected: treating a collector who prints the folk texts
+   themselves as distinct from a compiler, which would have moved bannik and drekavac to
+   regional. Ben marked this "fine for now", so it is a pilot ruling that may be
+   revisited at scale, and no fifth grade is added.
+2. **Ralston's independence: one rule applied to all ten.** Ben said to go ahead with
+   the report's proposal without choosing between its two readings. The planner's
+   choice, open to Ben's override: Ralston 1872 counts as dependent on Afanasyev for any
+   passage where he cites Afanasyev, and as independent elsewhere. Rejected: counting him
+   dependent wholesale, which ignores his own fieldwork and other sources and would put
+   the baba-yaga grade at risk on a technicality. The fix round re-checks baba-yaga under
+   this rule.
+3. **People mapping: deferred (\*).** Ben does not want to settle the mappings for
+   Little-Russia, Lusatia, Ruthenians, Kief/Chernigof, South-Russian and Kharkov now. The
+   existing per-entry flags stand, and the mapping table is an open item to return to
+   before the Slavic batch scales. Rejected: settling a mapping table now, at Ben's
+   request.
+4. **Question 1 confirmed: 8 of 10 appearance fields are clean.** Vodyanoi and drekavac
+   are not clean, and vampir and zmey-gorynych are borderline-clean.
+5. **Template changes before scaling:**
+   - Yes: the draft must reconcile contradicting appearance clauses (the vodyanoi gap:
+     bald against long hair, two different caps).
+   - Yes: `family` becomes a checkable item that verify can support, narrow or remove.
+   - Not ruled: allowing verify to move clauses between a variant and the top level. This
+     stays open; until it is ruled, verify keeps flagging misfiled clauses without moving
+     them.
+6. **Draft budget: about $0.50 per creature at most.** A dense creature may go over that
+   cap only with written reasoning that Ben sees before the spend. Rejected: choosing
+   between a per-source split and a flat larger budget now. The split is one way to stay
+   under the cap. Caveat: Phase 1 ran as Claude Code subagents with no metered API spend,
+   so there is no per-creature cost measurement yet. Enforcing the cap needs a cost
+   measure (token counts converted at the API price of the drafting model), which the
+   fix round has to define.
+
+## Follow-up work from the rulings
+
+- Fix round (Phase 1d, not yet planned): re-grade zmey-gorynych to literary, apply the
+  Ralston rule and re-check baba-yaga, write draft-v2 (reconciling appearance clauses)
+  and verify-v2 (checkable `family`), and define the per-creature cost measure. Whether
+  the ten entries are re-run under the v2 prompts before Phase 2 is an open question in
+  `docs/phase2-brainstorm.md`.
+- People mapping table (\*): deferred by Ben on 2026-10-27; return to it before scaling.
+- Phase 2: blocked on the brainstorm. The questions for Ben are in
+  `docs/phase2-brainstorm.md`; his answers go into that file and come back through the
+  repo.
