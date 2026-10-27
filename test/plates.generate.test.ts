@@ -53,7 +53,7 @@ describe("arms", () => {
 });
 
 describe("planJob", () => {
-  const base = ["--entry", "data/entries/baba-yaga.json", "--out", "x", "--seed", "1"];
+  const base = ["--entry", "plates/bakeoff/v1/baba-yaga.json", "--out", "x", "--seed", "1"];
 
   test("schnell puts the negative tokens inline", () => {
     const { job, dryRun } = planJob(["--arm", "schnell", ...base, "--dry-run"]);
@@ -68,6 +68,6 @@ describe("planJob", () => {
   });
 
   test("bad seed is refused", () => {
-    expect(() => planJob(["--arm", "qwen", "--entry", "data/entries/baba-yaga.json", "--out", "x", "--seed", "abc"])).toThrow(/seed/);
+    expect(() => planJob(["--arm", "qwen", "--entry", "plates/bakeoff/v1/baba-yaga.json", "--out", "x", "--seed", "abc"])).toThrow(/seed/);
   });
 });

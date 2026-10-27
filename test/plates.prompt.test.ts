@@ -12,7 +12,7 @@ import {
 } from "../src/plates/prompt.js";
 
 const authors = authorIndex(JSON.parse(readFileSync("sources/manifest.json", "utf8")));
-const entry = (id: string) => JSON.parse(readFileSync(`data/entries/${id}.json`, "utf8"));
+const entry = (id: string) => JSON.parse(readFileSync(`plates/bakeoff/v1/${id}.json`, "utf8"));
 
 const words = (s: string) => s.toLowerCase().match(/[\p{L}\p{N}]+/gu) ?? [];
 
