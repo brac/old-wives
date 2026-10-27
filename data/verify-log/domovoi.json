@@ -1,0 +1,113 @@
+{
+  "entry_id": "domovoi",
+  "verifier_prompt_version": "verify-v2",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/appearance/20",
+      "text": "He is believed to resemble one of the ancestors in the colour of his hair, his dress, his attitude, his voice and his manner.",
+      "to_text": "He is believed to resemble one of the ancestors in the colour of his hair and his dress.",
+      "from_cites": [
+        "machal1918:p.240"
+      ],
+      "to_cites": [
+        "machal1918:p.240"
+      ],
+      "reason": "Voice, attitude and manner are not physical description; appearance keeps only the hair colour and dress that machal1918 p.240 names."
+    },
+    {
+      "field": "/appearance/27",
+      "text": "In White-Russia the Domovoy is called Tsmok, a snake; this House Snake rarely shows itself to mortal eyes.",
+      "to_text": "In White-Russia the Domovoy is called Tsmok, a snake.",
+      "from_cites": [
+        "ralston1872:pp.124-125"
+      ],
+      "to_cites": [
+        "ralston1872:pp.124-125"
+      ],
+      "reason": "Cut 'this House Snake rarely shows itself to mortal eyes': it is behaviour, not physical description, so it does not belong in appearance (ralston1872 p.125)."
+    },
+    {
+      "field": "/variants/0/appearance/1",
+      "text": "There he goes about the house dressed in white.",
+      "to_text": "There he is dressed in white.",
+      "from_cites": [
+        "ralston1872:pp.122-123"
+      ],
+      "to_cites": [
+        "ralston1872:pp.122-123"
+      ],
+      "reason": "Cut 'goes about the house': behaviour, not physical description; the page supports only that he is dressed in white (ralston1872 pp.122-123)."
+    },
+    {
+      "field": "/dealing_with_it/15",
+      "text": "When a newly bought animal is brought home, the owner bows to the four corners of the stall, asks the Master to love and feed it, and ties its lead-cord to the kitchen-stove.",
+      "to_text": "In several places, when a newly bought animal is brought home, the owner bows to the four corners of the stall, asks the Master to love and feed it, and ties its lead-cord to the kitchen-stove.",
+      "from_cites": [
+        "ralston1872:p.126"
+      ],
+      "to_cites": [
+        "ralston1872:p.126"
+      ],
+      "reason": "Ralston p.126 says the ceremony is customary 'in several places'; the draft stated it without that limit."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/variants/10/native/0",
+      "text": "выгорище",
+      "reason": "afanasyev1868 p.67 prints the form split as 'вы горище' (OCR or a line-break artefact); the joined form is a reasonable reading but the printed text is not exactly 'выгорище'. It is also a Russian-script rendering Afanasyev gives for the Polish name, tagged people Poles."
+    },
+    {
+      "field": "/names/variants/8",
+      "text": "Tsmok",
+      "reason": "ralston1872 p.124 OCR prints 'TsmoJc'; 'Tsmok' is the likely reading but rests on correcting the OCR."
+    },
+    {
+      "field": "/peoples_regions/8",
+      "text": "Sorbs, Lusatia",
+      "reason": "ralston1872 p.122 names Lusatia but does not name the Sorbs; the people is inferred from the region. Not shown wrong, so kept."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Máchal records the Domovoy for Russians, and his house-spirit under other names for the Little Russians (Ukrainians) and in a rite of the White Russians.",
+      "cites": [
+        "machal1918:p.240",
+        "machal1918:p.242",
+        "machal1918:p.244"
+      ]
+    },
+    {
+      "text": "Ralston records the Domovoy in several Russian governments, in White-Russia as the house snake, in Poland and in Lusatia.",
+      "cites": [
+        "ralston1872:p.122",
+        "ralston1872:p.123",
+        "ralston1872:p.124"
+      ]
+    },
+    {
+      "text": "Máchal and Ralston independently describe a hairy old man who guards the household, in different wording and detail.",
+      "cites": [
+        "machal1918:p.240",
+        "ralston1872:p.120"
+      ]
+    },
+    {
+      "text": "Ralston's 28 January kasha passage cites Afanasyev ('says Afanasief'), so that clause is counted once with Afanasyev, not as independent.",
+      "cites": [
+        "ralston1872:p.121",
+        "afanasyev1868:p.67"
+      ]
+    },
+    {
+      "text": "Afanasyev gives the house-spirit's names among the Belarusians and in Poland.",
+      "cites": [
+        "afanasyev1868:p.67"
+      ]
+    }
+  ]
+}
