@@ -1,0 +1,26 @@
+{
+  "name": "beasts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "CC-BY-4.0",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm test",
+    "validate": "tsx src/validate/cli.ts",
+    "corpus:fetch": "tsx src/corpus/fetch.ts",
+    "corpus:build": "tsx src/corpus/build.ts",
+    "corpus:verify": "tsx src/corpus/verify.ts",
+    "cite": "tsx src/corpus/cite-cli.ts",
+    "find": "tsx src/corpus/find-cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "5.0.4"
+  }
+}
