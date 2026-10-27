@@ -111,3 +111,5 @@ in the brief.
 ## Post-review amendments
 
 - (none yet)
+- 2026-10-27: Ben picked style references 2, 3 and 5 by eye, to be used with no crop. They are committed under `style/refs/`, and the manifest marks them `chosen`. The qwen-edit-refs arm passes all three.
+- 2026-10-27: zmey-gorynych's v1 bake-off text mixes the serpent, youth and warrior forms. For the bake-off only, the planner restricts it to the serpent clauses in a bake-off copy, recorded in each sidecar. Final plates use the v2 forms. Rejected: sending the mixed prompt, which would make a composite monster.

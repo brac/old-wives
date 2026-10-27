@@ -170,6 +170,41 @@ The full answers are in `docs/phase2-brainstorm.md`. Settled, with what each rej
   the agent's reported token usage priced at list price (Opus 5.5: $4 per million input,
   $20 per million output). Overruns still need written reasoning that Ben sees first.
 
+## Rulings during the v2 re-run (2026-10-27)
+
+- **Style references: candidates 2, 3 and 5** (Leonardo's study of a woman's hands,
+  Dürer's self-portrait at thirteen, and Holbein the Elder's head of a crossbowman),
+  picked by Ben by eye from the contact sheet and used as they are, with no crop. Only
+  these three are committed, under `style/refs/`. Rejected: the planner's suggestion of
+  1, 3, 5 and 6.
+- **Dense creatures: accept the gaps.** Seven v2 drafts (domovoi, vodyanoi, leshy,
+  rusalka, baba-yaga, vampir and zmey-gorynych) stopped at their roughly 100k-token
+  budget with relevant pages unread, mostly in Afanasyev. Each draft's scope note lists
+  the unread pages, and verify runs on the drafts as they stand. Rejected: a second
+  draft agent that reads the unread pages (about $0.50 to $1 per creature). The gap is a
+  scaling finding for the 1d report, not something fixed in the pilot.
+- **Ralston rule: kept as written.** Ralston is dependent on Afanasyev only where he
+  cites or quotes him on that passage. Bannik therefore stays `regional`, although its
+  verifier found that Ralston 1872 p.123 closely follows Afanasyev 1868 p.69 without
+  citing him. Rejected: widening the rule to cover close, uncited paraphrase. The case
+  is recorded as a known limit of the rule.
+
+## Backlog added 2026-10-27
+
+- Drekavac: check the 1818 page image for the two words the OCR garbles (probably
+  "der Schreyer" and "vom Wolfe"). If they are confirmed, the entry gains a name
+  meaning and the wolf detail.
+- Footnotes as lore: draft-v2 treats footnote lines as references, so story content in
+  footnotes is skipped. An example is the Siberian Zmey Gorynych tale in a footnote on
+  Afanasyev 1868 p.591. Decide whether footnotes that carry narrative may be cited.
+- `cite` with s.v. prints a single leaf, so a dictionary entry that continues onto the
+  next leaf is cut short. The tag grammar has no way to reach that continuation (for
+  example karadzic1818, Вукодлак, leaves 122-123). This was found again in v2.
+- Canary blindness: an uncommitted canary shows up in the git status that the harness
+  hands to subagents, and a committed one shows up in the recent-commits list. Neither
+  route is fully blind. Find a way to plant a canary that a verifier cannot see in
+  either place.
+
 ## Follow-up work from the rulings
 
 - Fix round (Phase 1d, not yet planned): re-grade zmey-gorynych to literary, apply the

@@ -17,7 +17,8 @@
       "height": 3778,
       "bytes": 1267879,
       "sha1_commons": "403258f5a9d28c109d02ee78ea7eaf0166b074a8",
-      "sha256": "a0b1cc2a90aa12d494d5285bfb3cf6a4c30a036d31c16b74038d52aeb1c2262b"
+      "sha256": "a0b1cc2a90aa12d494d5285bfb3cf6a4c30a036d31c16b74038d52aeb1c2262b",
+      "chosen": false
     },
     {
       "n": 2,
@@ -34,7 +35,9 @@
       "height": 2000,
       "bytes": 762779,
       "sha1_commons": "32de119f46589bdeabe146328560150f82e8a93d",
-      "sha256": "249a2fdb134628eb04a6da56829818e5308228e0a477ba5adf3e9c030b20afd5"
+      "sha256": "249a2fdb134628eb04a6da56829818e5308228e0a477ba5adf3e9c030b20afd5",
+      "chosen": true,
+      "chosen_path": "2-leonardo-study-of-a-womans-hands.jpg"
     },
     {
       "n": 3,
@@ -51,7 +54,9 @@
       "height": 2076,
       "bytes": 4148453,
       "sha1_commons": "599e673cca493de5ad1a02c6300529e6ae842cc6",
-      "sha256": "d10d0cb41d215455f743d6bb11d91cc1663f8380ace4b83fa8e3c13563be06e9"
+      "sha256": "d10d0cb41d215455f743d6bb11d91cc1663f8380ace4b83fa8e3c13563be06e9",
+      "chosen": true,
+      "chosen_path": "3-durer-self-portrait-at-thirteen.jpg"
     },
     {
       "n": 4,
@@ -68,7 +73,8 @@
       "height": 3000,
       "bytes": 2117137,
       "sha1_commons": "5807adab8ec518cfb9515b62c81a6cf20c9f707c",
-      "sha256": "240e51d8a2e28265d40706cd89d75226816e6214f6496f98236e290e62b05428"
+      "sha256": "240e51d8a2e28265d40706cd89d75226816e6214f6496f98236e290e62b05428",
+      "chosen": false
     },
     {
       "n": 5,
@@ -85,7 +91,9 @@
       "height": 4922,
       "bytes": 5839116,
       "sha1_commons": "879da88f0edf8af42998d98728df1342f6c9b1a1",
-      "sha256": "83fd960f113cb44597afc523cdb201eeaec810370f18b59228b60e51fddfd05b"
+      "sha256": "83fd960f113cb44597afc523cdb201eeaec810370f18b59228b60e51fddfd05b",
+      "chosen": true,
+      "chosen_path": "5-holbein-elder-crossbowman.jpg"
     },
     {
       "n": 6,
@@ -102,7 +110,9 @@
       "height": 2000,
       "bytes": 872944,
       "sha1_commons": "0f60670bf380d0fd98ba70951827cefb674cf8ae",
-      "sha256": "23997ef2cf7bdd506567a6a44081ad514f16d17d852712ab014244c4ca3c5e12"
+      "sha256": "23997ef2cf7bdd506567a6a44081ad514f16d17d852712ab014244c4ca3c5e12",
+      "chosen": false
     }
-  ]
+  ],
+  "chosen_note": "Chosen by Ben by eye on 2026-10-27: 2, 3 and 5, used as is with no crop. Only chosen files are committed under style/refs/."
 }

@@ -124,3 +124,6 @@ in each brief.
 ## Post-review amendments
 
 - (none yet)
+- 2026-10-27: Seven of the ten v2 drafts hit the agent budget with relevant pages unread (domovoi, vodyanoi, leshy, rusalka, baba-yaga, vampir, zmey-gorynych). Ben ruled: accept the gaps and verify the drafts as they stand. Rejected: a second read-only draft pass per dense creature. The draft agents' reported tokens run from 83k to 118k each; the 1d-c report converts them to API-equivalent cost.
+- 2026-10-27: The Ralston per-passage rule is kept as written (Ben). Bannik is graded regional, because Ralston p.123 cites nobody, although it closely tracks Afanasyev p.69. Rejected: widening the rule to cover close paraphrase mid-batch.
+- 2026-10-27: Canary A was planted uncommitted in poludnitsa `/variants/2/appearance/2`: "She wears a wreath of cornflowers on her head.", cited machal1918:p.267 (0 hits for wreath, flower, garland or crown on the page; 0 for cornflower in the corpus). Verify removed it on page evidence. The test was semi-blind: the verifier saw the draft marked modified in the harness git status, but did not treat the clause as planted.
