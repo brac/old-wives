@@ -24,14 +24,20 @@ function entryWords(e: unknown): Set<string> {
 }
 
 describe("tokens", () => {
+  test("negative tokens are bare nouns: no item starts with \"no \"", () => {
+    const items = NEGATIVE_TOKENS.split(",").map((t) => t.trim());
+    expect(items.length).toBe(18);
+    for (const t of items) expect(t.toLowerCase().startsWith("no ")).toBe(false);
+  });
+
   test("positive tokens default to guides off and plain paper; negatives carry the no-script list", () => {
     expect(STYLE_TOKENS).toBe(
       "silverpoint study, metalpoint drawing, Renaissance sketch, no construction grid, no measuring marks, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
     );
     expect(styleTokens()).toBe(styleTokens({ guides: "off", paper: "plain" }));
-    expect(NEGATIVE_TOKENS.startsWith("no painterly fantasy concept art")).toBe(true);
+    expect(NEGATIVE_TOKENS.startsWith("painterly fantasy concept art")).toBe(true);
     expect(NEGATIVE_TOKENS.endsWith(
-      "no watermark, no border, no handwriting, no inscriptions, no annotations, no script, no lettering, no captions",
+      "watermark, border, handwriting, inscriptions, annotations, script, lettering, captions",
     )).toBe(true);
     const p = buildPrompt(entry("baba-yaga"), authors);
     expect(p.guides).toBe("off");

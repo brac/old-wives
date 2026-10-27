@@ -1,6 +1,6 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 2.289,
+  "total_usd": 2.449,
   "rows": [
     {
       "date": "2026-10-27T16:17:19.854Z",
@@ -595,6 +595,50 @@
       "status": "done",
       "request_id": "01a17e77-9741-7c70-87f1-2b9fbf3cfa5f",
       "file": "plates\\cand\\out\\vodyanoi\\s12\\vodyanoi-machal-bald-reed-cap-qwen-s12.full.png"
+    },
+    {
+      "date": "2026-10-27T20:27:32.816Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 11,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f0b-fa01-70d2-83fe-47949bebea29",
+      "file": "plates\\negtest\\out\\zmey-gorynych\\s11\\zmey-gorynych-ralston-winged-serpent-qwen-s11.full.png"
+    },
+    {
+      "date": "2026-10-27T20:27:56.914Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 12,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f0c-57f5-7272-9ca6-fe635e212331",
+      "file": "plates\\negtest\\out\\zmey-gorynych\\s12\\zmey-gorynych-ralston-winged-serpent-qwen-s12.full.png"
+    },
+    {
+      "date": "2026-10-27T20:28:20.848Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 13,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f0c-b56b-7f72-ae75-6425c9931a1e",
+      "file": "plates\\negtest\\out\\zmey-gorynych\\s13\\zmey-gorynych-ralston-winged-serpent-qwen-s13.full.png"
+    },
+    {
+      "date": "2026-10-27T20:28:44.246Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 14,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f0d-10d0-7743-a86e-61f33c288a71",
+      "file": "plates\\negtest\\out\\zmey-gorynych\\s14\\zmey-gorynych-ralston-winged-serpent-qwen-s14.full.png"
     }
   ]
 }

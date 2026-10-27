@@ -261,3 +261,9 @@ The full answers are in `docs/phase2-brainstorm.md`. Settled, with what each rej
 - Phase 2: blocked on the brainstorm. The questions for Ben are in
   `docs/phase2-brainstorm.md`; his answers go into that file and come back through the
   repo.
+
+## Ben's rulings on the candidate plates, 2026-10-27
+
+- **Plates are monochrome only.** Colour words in an entry are drawn as tone. Rejected: colour plates, and a single muted tint.
+- **Taste loop:** candidates are shown beside popular reference images (Google Images, saved locally, never committed, never fed to the model). Ben's visual notes become plate prompt edits tagged as visual tradition, and the plate is marked interpretive. The entry text stays sourced. Rejected: rewriting the entries to match popular imagery, which would break the sourcing rule. Also rejected: feeding the references to the model, which copies them, and they are someone else's copyrighted work.
+- **The negative-prompt phrasing is under test.** The avoid list is written as "no X", which may invert under Qwen's language-model encoder. Detail is in `plans/phase-2.md`.

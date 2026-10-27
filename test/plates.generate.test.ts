@@ -59,7 +59,7 @@ describe("planJob", () => {
     const { job, dryRun } = planJob(["--arm", "schnell", ...base, "--dry-run"]);
     expect(dryRun).toBe(true);
     expect(job.built.negative).toBe("");
-    expect(job.built.prompt).toContain("Avoid: no painterly");
+    expect(job.built.prompt).toContain("Avoid: painterly fantasy concept art");
   });
 
   test("refs are required on the edit arm and refused elsewhere", () => {

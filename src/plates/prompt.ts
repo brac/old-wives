@@ -51,10 +51,14 @@ export function styleTokens(opts: StyleOpts = {}): string {
 /** Positive style tokens with the default switches. */
 export const STYLE_TOKENS = styleTokens();
 
-/** Negative tokens: brainstorm C4, plus the 2d no-script negatives. */
+/**
+ * Negative tokens: brainstorm C4, plus the 2d no-script negatives. Written as bare nouns
+ * (2d-c): a negative prompt already means "steer away", and Qwen-Image's language-model
+ * encoder reads a "no" inside it, so "no text" may steer toward text.
+ */
 export const NEGATIVE_TOKENS =
-  "no painterly fantasy concept art, no 3D render, no digital painting, no colour, no smooth shading, no anime, no comic book inking, no photograph, no text, no watermark, no border, " +
-  "no handwriting, no inscriptions, no annotations, no script, no lettering, no captions";
+  "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, " +
+  "handwriting, inscriptions, annotations, script, lettering, captions";
 
 /**
  * Scene plates (unseen-rule amendment, 2026-10-27): one fixed, creature-neutral presence
