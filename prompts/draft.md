@@ -1,4 +1,4 @@
-<!-- draft-v1 -->
+<!-- draft-v2 -->
 # Role: draft agent, Slavic pilot bestiary
 
 You draft ONE bestiary entry, for the creature id you were given, from the local
@@ -36,8 +36,8 @@ Look up your id in `prompts/creatures.json`. It gives a family, the peoples the 
 expects, spellings to try and pages the coverage research hit. These are **search hints,
 not claims**: never copy anything from that file into the entry and never cite it. The
 listed pages may be useless and unlisted pages may be the best ones. The `family` value
-there is the one to use unless the sources plainly contradict it, in which case keep it
-and say so in a note of kind `other`.
+there is a hint like the rest: it goes in the entry only when a page you opened supports
+it (section 5).
 
 The eleven sources (`sources/manifest.json`):
 
@@ -78,7 +78,8 @@ Footnote lines at the foot of a page are references, not lore.
 
 ## 4. The rules for every clause
 
-A clause is `{ "text": ..., "cites": [...] }`.
+A clause is `{ "text": ..., "cites": [...] }`. A top-level appearance clause may also
+carry `"form"` (section 5).
 
 1. **One claim per clause.** "Lives behind the stove" and "whistles at night" are two
    clauses.
@@ -103,7 +104,7 @@ A clause is `{ "text": ..., "cites": [...] }`.
 Fill every field the schema has. Field order and shape: see
 `fixtures/valid/draft/fixture-seen.json` and `schema/entry.schema.json`.
 
-- **id**: the creature id; it must equal the file basename. **schema_version**: `1`.
+- **id**: the creature id; it must equal the file basename. **schema_version**: `2`.
 - **names.primary.romanized**: the romanised name from the hints file.
 - **names.primary.native**: each native-script form **exactly as printed** in a page you
   opened (keep pre-reform spelling: `Банникъ`, not a modernised form), with its ISO
@@ -120,13 +121,30 @@ Fill every field the schema has. Field order and shape: see
   `Slavs` or `Slavonic`. If a source says only "the Slavs" or "the peasants" of Russia,
   record the people the context fixes (Ralston's Russian peasants are `Russians`) and
   nothing broader.
-- **family**: one value from the hints file.
+- **family**: `{ "value": ..., "cites": [...] }`. The value is the hints file's family
+  when a page you opened supports it (a spirit a page places in rivers and mill-ponds
+  supports `water`), and `cites` names that page. If a page plainly supports a different
+  one of the eight values instead, use that one and say so in a note of kind `other`. If
+  no page supports any family, write `{ "value": "unclassified", "cites": [] }` and an
+  `empty-field` note saying what you searched. Never cite a page for the family that
+  does not support it.
 - **appearance**: only physical description that a source states about this creature:
   body, size, hair, colour, clothing, posture, the forms it takes. **Each attribute is
   its own clause.** No style words (eerie, grotesque, fearsome, ancient), no inference
   (no "therefore old" from "grandfather"), no filling gaps (no eye colour because faces
   have eyes), no composites across peoples. The image prompt is built from this field
   mechanically, so every word here will be drawn.
+- **appearance_forms** and the clause `form`: when sources (or passages) describe the
+  creature in ways that cannot be one figure (bald against long green hair; a reed cap
+  against a boyar's cap of sedge), do not merge the clauses and do not choose between
+  them. Give each description a form: add `{ "id": "<kebab-id>", "label": "<short
+  label>" }` to `appearance_forms`, and set `"form": "<id>"` on every appearance clause
+  that belongs to it. A clause without `form` describes every form, so leave `form` off
+  only a clause that conflicts with no form. Clauses that share a form must make one
+  consistent figure, and every form holds at least one clause. Name the source or
+  telling in the label ("Machal's bald old man"), never a judgement ("true form"). With
+  no conflict, `appearance_forms` is `[]` and no clause has `form`. Only top-level
+  `appearance` clauses take `form`.
 - **scene**: the sourced setting where the creature is met: place, time of day, season,
   sounds and signs of its presence ("the bath-house at night", "rye fields at noon").
   Clauses and cites as everywhere else.
@@ -135,7 +153,8 @@ Fill every field the schema has. Field order and shape: see
   scene clause), and add a note `{ "kind": "empty-field", "text": "appearance: no source
   describes ...; searched <terms> in <sources>" }`. Do not supply a body.
 - **Shapeshifters:** list every attested form as its own appearance clause, each with
-  its own cite ("takes the form of a wolf", "appears as a peasant"). Do not choose a
+  its own cite ("takes the form of a wolf", "appears as a peasant"), and give forms that
+  cannot be one figure their own `appearance_forms` rows. Do not choose a
   canonical or "true" form and do not merge forms into one figure.
 - **variants**: when the sources describe the creature differently by people or region
   (northern and southern rusalki), nest one variant per people or region:
@@ -144,7 +163,7 @@ Fill every field the schema has. Field order and shape: see
   source states without restricting it. One entry per creature: never split a variant
   into a separate entry. Competing descriptions that are not tied to a region (the
   vodyanoi in different tellings) stay as separate top-level appearance clauses, each
-  with its own cite and hedge.
+  with its own cite and hedge, in separate forms (`appearance_forms`), never in variants.
 - **behavior_habitat**: what it does, where and when.
 - **dealing_with_it**: wards, offerings, taboos, appeasement, ways to escape or banish it.
 - **origin**: where it comes from and who becomes one.
@@ -176,7 +195,9 @@ npm run validate -- data/drafts/<id>.json --stage draft
 Fix and rerun until it prints `1 valid, 0 invalid`. A `R-CITE-RESOLVES` error means a
 tag points at no page: open it with `cite` and correct it; never delete a clause's only
 tag to silence the error (delete the clause instead). A `R-RELATED` warning is expected
-until the related entry exists.
+until the related entry exists. An `R-FORM-*` error means a clause names a form that is
+not in `appearance_forms`, or a form has no clause; an `R-FAMILY` error means a family
+with no cites, or `unclassified` with cites.
 
 Once green, the draft file is handed off: do not edit it again.
 

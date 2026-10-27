@@ -1,0 +1,66 @@
+{
+  "entry_id": "fixture-forms",
+  "verifier_prompt_version": "verify-v2",
+  "removed": [
+    {
+      "field": "/family",
+      "text": "water",
+      "cites": [
+        "machal1918:p.243"
+      ],
+      "reason": "Fixture reason: the page names no family."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "appearance",
+      "text": "Fixture clause.",
+      "to_text": "Fixture narrowed clause.",
+      "from_cites": [
+        "machal1918:p.243"
+      ],
+      "to_cites": [
+        "machal1918:p.243"
+      ],
+      "reason": "Fixture reason."
+    }
+  ],
+  "retagged": [
+    {
+      "field": "scene",
+      "text": "Fixture clause.",
+      "from_cites": [
+        "ralston1872:p.123"
+      ],
+      "to_cites": [
+        "ralston1872:pp.120-125"
+      ],
+      "reason": "Fixture reason."
+    }
+  ],
+  "reformed": [
+    {
+      "field": "/appearance/2",
+      "text": "Fixture clause: he has long hair.",
+      "from_form": null,
+      "to_form": "long-haired",
+      "reason": "Fixture reason: contradicts the bald form."
+    }
+  ],
+  "flagged": [
+    {
+      "field": "behavior_habitat",
+      "text": "Fixture clause.",
+      "reason": "Fixture reason."
+    }
+  ],
+  "grade": "regional",
+  "grade_rationale": [
+    {
+      "text": "Fixture clause.",
+      "cites": [
+        "machal1918:p.243"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "id": "form-unknown-id",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "fixture",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "фикстура",
+          "people": "Russians",
+          "cites": [
+            "ralston1872:p.123"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "fixtura",
+        "peoples": [
+          "Serbs"
+        ],
+        "cites": [
+          "karadzic1818:s.v.Дрекавац"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Fixture clause.",
+        "cites": [
+          "machal1918:p.243"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "Fixture region",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    }
+  ],
+  "family": {
+    "value": "water",
+    "cites": [
+      "machal1918:p.243"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "bald",
+      "label": "Fixture form: bald"
+    },
+    {
+      "id": "long-haired",
+      "label": "Fixture form: long-haired"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "Fixture common clause.",
+      "cites": [
+        "machal1918:p.243"
+      ]
+    },
+    {
+      "text": "Fixture clause: he is bald.",
+      "cites": [
+        "machal1918:p.243"
+      ],
+      "form": "bald"
+    },
+    {
+      "text": "Fixture clause: he has long hair.",
+      "cites": [
+        "ralston1872:p.123"
+      ],
+      "form": "long-haired"
+    },
+    {
+      "text": "Fixture clause: he wears a reed cap.",
+      "cites": [
+        "machal1918:p.243"
+      ],
+      "form": "reed-cap"
+    }
+  ],
+  "scene": [],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "Fixture clause.",
+      "cites": [
+        "ralston1872:pp.120-125"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "Fixture clause.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [
+    {
+      "id": "fixture-unseen",
+      "relation": "often-confused"
+    }
+  ],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "karadzic1818",
+      "author": "Vuk Stefanović Karadžić",
+      "title": "Srpski rječnik",
+      "year": 1818,
+      "url": "https://archive.org/details/srpskirjecnik00kara",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "Fixture note: origin is empty."
+    }
+  ]
+}

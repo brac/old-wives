@@ -1,6 +1,6 @@
 {
   "entry_id": "fixture-seen",
-  "verifier_prompt_version": "verify-v1",
+  "verifier_prompt_version": "verify-v2",
   "removed": [
     {
       "field": "origin",
@@ -38,6 +38,7 @@
       "reason": "Fixture reason."
     }
   ],
+  "reformed": [],
   "flagged": [
     {
       "field": "behavior_habitat",

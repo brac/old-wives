@@ -1,4 +1,4 @@
-<!-- verify-v1 -->
+<!-- verify-v2 -->
 # Role: verify agent, Slavic pilot bestiary
 
 You check ONE draft entry, for the creature id you were given, against the pages it
@@ -32,9 +32,10 @@ Every clause (`{ text, cites }`) in `names.meaning`, `appearance`, `scene`,
 `names.variants[]` row; every `peoples_regions[]` row; every `notes[]` item that carries
 `cites`. Native rows are checkable too: each `names.primary.native[]` row and each
 `names.variants[].native[]` row, whose form must be printed, in that form, on a page it cites.
+`family` is checkable too, unless its value is `unclassified`.
 
 Name each item in the log by its JSON pointer **in the draft**
-(`/appearance/2`, `/variants/0/behavior_habitat/1`, `/peoples_regions/1`).
+(`/appearance/2`, `/variants/0/behavior_habitat/1`, `/peoples_regions/1`, `/family`).
 
 ## 3. Checking each item
 
@@ -67,6 +68,23 @@ Rules for judging:
   sourced but misplaced is removed from `appearance` and logged with reason "misplaced,
   belongs in <field>": you may not move it, because moving it adds a clause elsewhere.
 - Every attested form of a shapeshifter stays as its own clause. Do not choose one.
+- **Appearance forms.** A clause with `form` belongs to that `appearance_forms` row; a
+  clause without `form` describes every form. After checking the clauses, read each form
+  together with the clauses that have no `form`: no two of them may contradict each other
+  (bald and long-haired, a reed cap and a boyar's cap). Where two do, move one of them to
+  another form it is consistent with, or to a new form (add a row to `appearance_forms`,
+  labelled by the source or telling); never merge the two, never choose the "true" one,
+  and never remove a supported clause because it conflicts. Log each move in `reformed`
+  with `field` the draft pointer, `from_form` and `to_form` (`null` for no form) and the
+  contradiction as `reason`. A form left with no clause after your removals is dropped
+  from `appearance_forms` (no log entry).
+- **Family.** `family` is supported when a cited page supports that family for this
+  creature (a page placing it in rivers and mill-ponds supports `water`). If another page
+  you opened supports it, retag it (`retagged`, field `/family`). If no page supports the
+  value, set `family` to `{ "value": "unclassified", "cites": [] }` and log the draft
+  family in `removed` (field `/family`, `text` the draft value, its draft cites). You may
+  not change it to a different family: that adds content; write a `verify found, not
+  added` note instead (section 4).
 - `peoples_regions` must name a specific people the page names (or the people its
   context fixes, such as Russian peasants in Ralston). "Slavic" is never acceptable.
 - A native row (`/names/primary/native/0`, `/names/variants/1/native/0`) whose form is not
@@ -84,8 +102,8 @@ If removals leave the entry unable to pass the schema (no `peoples_regions` row 
 an empty `appearance` with an empty `scene`), do not invent a replacement. Write the
 verify log, do not write `data/entries/<id>.json`, and say so in your hand-back.
 
-What you may add: notes, `attestation`, and the `sources` rows trimmed to the sources
-still cited. Keep `image` null.
+What you may add: notes, `attestation`, the `sources` rows trimmed to the sources
+still cited, and the `appearance_forms` rows a re-form needs (section 3). Keep `image` null.
 
 ## 5. Grade
 
@@ -96,14 +114,18 @@ Grade from the **verified** entry, by the pilot brief's four definitions:
 3. `literary`: traceable mainly to one 19th-century compiler; possible cabinet
    mythology. A creature whose surviving clauses come from a single 19th-century
    compiler, with nothing in collected folklore, is graded `literary`: kept and graded,
-   not dropped and not promoted.
+   not dropped and not promoted. **A single folklore collector (Afanasyev, Karadžić)
+   counts as one 19th-century compiler**: printing the collected texts does not make a
+   lone collector into multiple sources.
 4. `disputed`: contested, or suspected modern invention.
 
 **Independence is by author, not by book.** Afanasyev's three volumes are one source.
 Karadžić's 1818 and 1852 dictionaries are one source. Ralston's two books are one source.
 Where a source says it draws on another (Ralston or Machal quoting or citing Afanasyev,
 "says Afanasief"; Calmet paraphrasing the 1725 report), it is not independent of it: say
-so in the rationale and count them once. Erben is marked `kind: "literary"` in the
+so in the rationale and count them once. **Ralston is judged per passage:** he is
+dependent on Afanasyev for a clause only where, on that passage, he cites or quotes
+Afanasyev, and independent elsewhere. Do not count him dependent wholesale. Erben is marked `kind: "literary"` in the
 manifest: his poem is literature, not collected folklore. Count peoples only from the
 verified `peoples_regions` rows.
 
@@ -133,9 +155,9 @@ Write two files:
    applied, plus notes and `attestation`. Validate:
    `npm run validate -- data/entries/<id>.json --stage verified`
 2. `data/verify-log/<id>.json`, shape `schema/verify-log.schema.json`:
-   `entry_id`, `verifier_prompt_version: "verify-v1"`, `removed`, `downgraded`,
-   `retagged`, `flagged`, `grade`, `grade_rationale`. Every item you removed,
-   downgraded, retagged or flagged appears exactly once, with its reason. Validate:
+   `entry_id`, `verifier_prompt_version: "verify-v2"`, `removed`, `downgraded`,
+   `retagged`, `reformed`, `flagged`, `grade`, `grade_rationale`. Every item you removed,
+   downgraded, retagged, re-formed or flagged appears exactly once, with its reason. Validate:
    `npm run validate -- data/verify-log/<id>.json --log`
 
 Rerun until both print `1 valid, 0 invalid`. A `R-RELATED` error at verified stage means
@@ -143,7 +165,7 @@ a `related` id has no verified entry yet: report it; do not delete the link to p
 
 **The counts must reconcile.** Count checkable items (section 2) in the draft and in your
 entry. Every draft item is exactly one of unchanged, downgraded, retagged or removed;
-flagged items are kept and may also be unchanged, downgraded or retagged. So:
+flagged and re-formed items are kept and may also be unchanged, downgraded or retagged. So:
 `draft items - removed = entry items` (excluding notes you added). Check this before
 handing back.
 
@@ -151,7 +173,8 @@ handing back.
 
 Your final message contains only:
 
-- draft items, removed, downgraded, retagged, flagged, entry items (the reconciliation);
+- draft items, removed, downgraded, retagged, re-formed, flagged, entry items (the reconciliation);
+- the appearance forms left in the entry, one line each;
 - the grade and one line of rationale;
 - both validate lines;
 - any item you could not judge, or any reason the entry was not written.
