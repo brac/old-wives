@@ -1,0 +1,177 @@
+{
+  "id": "rusalka",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "rusalka",
+      "native": [
+        { "script": "Cyrl", "text": "Русалка", "people": "Russians", "cites": ["afanasyev1869:p.122"] }
+      ]
+    },
+    "variants": [
+      { "romanized": "Rusalky", "peoples": ["Russians"], "cites": ["machal1918:p.254"] },
+      { "romanized": "Mavki", "peoples": ["Ukrainians"], "cites": ["ralston1872:p.142"] },
+      { "romanized": "loskotalka", "peoples": ["Ukrainians"], "cites": ["afanasyev1869:p.125"] }
+    ],
+    "meaning": [
+      { "text": "The name rusalka signifies a water-maiden.", "cites": ["afanasyev1869:p.122"] },
+      { "text": "The origin of the name seems to be doubtful, but it appears to be connected with rus, an old word for a stream, or with ruslo, the bed of a river.", "cites": ["ralston1872:p.139"] },
+      { "text": "Machal glosses Rusalky as \"Water-Nymphs\" and says the name is derived from the Rusalye.", "cites": ["machal1918:p.254"] }
+    ]
+  },
+  "peoples_regions": [
+    { "people": "Russians", "cites": ["machal1918:p.254"] },
+    { "people": "Russians", "region": "Astrakhan", "cites": ["ralston1872:p.140"] },
+    { "people": "Russians", "region": "Government of Tula", "cites": ["ralston1872:p.143"] },
+    { "people": "Russians", "region": "Saratof Government", "cites": ["ralston1872:pp.145-146"] },
+    { "people": "Ukrainians", "region": "Little-Russia", "cites": ["ralston1872:p.141"] },
+    { "people": "Ukrainians", "region": "the Ukraine", "cites": ["ralston1872:p.141"] },
+    { "people": "Belarusians", "region": "White-Russia", "cites": ["ralston1872:p.141"] },
+    { "people": "Czechs", "cites": ["afanasyev1869:p.122"] }
+  ],
+  "family": { "value": "water", "cites": ["ralston1872:p.139"] },
+  "appearance_forms": [
+    { "id": "full-grown-maiden", "label": "Full-grown maiden (Ralston, Machal)" },
+    { "id": "seven-year-old-girl", "label": "Little rusalka as a seven-year-old girl (Ralston, Machal)" }
+  ],
+  "appearance": [
+    { "text": "Represented as a beauteous maiden.", "form": "full-grown-maiden", "cites": ["ralston1872:p.140"] },
+    { "text": "Sometimes appears as a maiden in the full bloom of youth.", "form": "full-grown-maiden", "cites": ["machal1918:p.254"] },
+    { "text": "Has full, snow-white bosoms.", "form": "full-grown-maiden", "cites": ["ralston1872:p.140"] },
+    { "text": "Has long and slender limbs.", "form": "full-grown-maiden", "cites": ["ralston1872:p.140"] },
+    { "text": "Her feet are small.", "form": "full-grown-maiden", "cites": ["ralston1872:p.140"] },
+    { "text": "Her eyes are wild.", "form": "full-grown-maiden", "cites": ["ralston1872:p.140"] },
+    { "text": "Her face is fair to see.", "form": "full-grown-maiden", "cites": ["ralston1872:p.140"] },
+    { "text": "Her complexion is pale.", "form": "full-grown-maiden", "cites": ["ralston1872:p.140"] },
+    { "text": "Her expression is anxious.", "form": "full-grown-maiden", "cites": ["ralston1872:p.140"] },
+    { "text": "Her hair is long, thick and wavy.", "form": "full-grown-maiden", "cites": ["ralston1872:p.140"] },
+    { "text": "Her hair is green as the grass.", "form": "full-grown-maiden", "cites": ["ralston1872:p.140"] },
+    { "text": "Her dress is either a covering of green leaves or a long white shift worn without a girdle.", "form": "full-grown-maiden", "cites": ["ralston1872:p.140", "machal1918:p.254"] },
+    { "text": "When dancing in the ripening corn, they are adorned with many-coloured poppy blossoms.", "form": "full-grown-maiden", "cites": ["machal1918:pp.254-255"] },
+    { "text": "When dancing in the ripening corn, their hair flies loose.", "form": "full-grown-maiden", "cites": ["machal1918:pp.254-255"] },
+    { "text": "Little rusalkas have the appearance of seven-year-old girls.", "form": "seven-year-old-girl", "cites": ["ralston1872:p.144"] },
+    { "text": "Sometimes the Rusalky appear as girls seven years old.", "form": "seven-year-old-girl", "cites": ["machal1918:p.254"] }
+  ],
+  "scene": [
+    { "text": "Lakes and streams, at the bottom of which they usually dwell.", "cites": ["ralston1872:p.140"] },
+    { "text": "On clear summer nights they rise to the surface of the stream and bathe, splashing and frolicking in the waves.", "cites": ["machal1918:p.255"] },
+    { "text": "They sit on the mill-wheel and turn round with it amid the splash of the stream.", "cites": ["ralston1872:p.140", "machal1918:p.255"] },
+    { "text": "They dive deep crying \"Kuku!\".", "cites": ["machal1918:p.255"] },
+    { "text": "During Green Week their voices may be heard in the rustling or sighing of the breeze, and the splash of running water betrays their dancing feet.", "cites": ["ralston1872:p.142"] },
+    { "text": "After St. Peter's day they dance by night beneath the moon.", "cites": ["ralston1872:p.142"] },
+    { "text": "Where they have danced, circles of darker and richer grass are found in the fields.", "cites": ["ralston1872:p.142", "machal1918:p.255"] },
+    { "text": "In late spring their laughter resounds far and wide in the forests.", "cites": ["machal1918:p.255"] },
+    { "text": "On Whit-Sunday Eve in Little-Russia they scamper through the rye with singing and clapping, so the corn undulates as if under a strong wind.", "cites": ["ralston1872:p.143"] }
+  ],
+  "variants": [
+    {
+      "id": "saratof",
+      "label": "Saratof Government",
+      "peoples": ["Russians"],
+      "appearance": [
+        { "text": "Described as hideous.", "cites": ["ralston1872:p.146"] },
+        { "text": "Humpbacked.", "cites": ["ralston1872:p.146"] },
+        { "text": "Hairy.", "cites": ["ralston1872:p.146"] },
+        { "text": "Has sharp claws.", "cites": ["ralston1872:p.146"] },
+        { "text": "Carries an iron hook with which it tries to seize passers-by.", "cites": ["ralston1872:p.146"] }
+      ],
+      "behavior_habitat": [
+        { "text": "In the Saratof Government the Rusalkas are held in bad repute.", "cites": ["ralston1872:p.145"] },
+        { "text": "Anyone who bathes in a river on Whit-Sunday without a preliminary prayer is instantly dragged to the bottom.", "cites": ["ralston1872:p.146"] },
+        { "text": "They may ask a man entering a wood whether he holds wormwood (Poluin) or parsley (Petrushka); if he answers parsley they tickle him till he foams at the mouth.", "cites": ["ralston1872:p.146"] }
+      ],
+      "notes": "Ralston places this description in the Saratof Government only; it contradicts his general picture of beauteous maidens, so it is kept out of the top-level appearance."
+    },
+    {
+      "id": "astrakhan-marine",
+      "label": "Marine rusalkas of Astrakhan",
+      "peoples": ["Russians"],
+      "appearance": [],
+      "behavior_habitat": [
+        { "text": "In certain districts bordering the sea, marine Rusalkas are believed in some places, such as about Astrakhan, to raise storms and vex shipping.", "cites": ["ralston1872:p.140"] },
+        { "text": "In the Government of Astrakhan it is believed the sea Rusalkas come to the surface and ask mariners whether the end of the world is near.", "cites": ["ralston1872:p.145"] }
+      ],
+      "notes": "No source opened describes the body of the marine rusalkas."
+    }
+  ],
+  "behavior_habitat": [
+    { "text": "Rusalkas are female water-spirits.", "cites": ["ralston1872:p.139"] },
+    { "text": "They live in woods, meadows, fields and waters.", "cites": ["machal1918:p.254"] },
+    { "text": "Peasants tell that rivers, springs, lakes and seas are peopled by rusalki.", "cites": ["afanasyev1869:p.122"] },
+    { "text": "They like to settle in companies, chiefly in lonely places: in pools, hollows and under river rapids.", "cites": ["afanasyev1869:p.123", "machal1918:p.255"] },
+    { "text": "They usually dwell in crystal halls at the bottom of lakes and streams, radiant with gold, silver and precious stones.", "cites": ["ralston1872:p.140"] },
+    { "text": "Sometimes they make themselves nests of straw and feathers collected during the Green Week.", "cites": ["ralston1872:p.141", "afanasyev1869:p.123"] },
+    { "text": "They emerge from the water and sit on the banks, combing and plaiting their flowing locks.", "cites": ["ralston1872:p.140"] },
+    { "text": "If anyone approaches, they fling themselves into the water and try to allure him to join them; whomever they get hold of they tickle to death.", "cites": ["ralston1872:p.140"] },
+    { "text": "Witches alone can bathe with them unhurt.", "cites": ["ralston1872:p.140"] },
+    { "text": "If a Rusalka's hair becomes dry she dies, so she is generally afraid to go far from the water unless she has a comb.", "cites": ["ralston1872:p.141"] },
+    { "text": "So long as she has a comb, she can produce a flood by passing it through her locks.", "cites": ["ralston1872:p.141"] },
+    { "text": "Sitting in the depths of rivers they entangle fishermen's nets.", "cites": ["machal1918:p.255", "afanasyev1869:p.123"] },
+    { "text": "They break dikes, flood the adjoining fields and wreck bridges.", "cites": ["machal1918:p.255"] },
+    { "text": "They may cause fatal storms, dangerous rains and heavy hail.", "cites": ["machal1918:p.255"] },
+    { "text": "They catch a flock of geese left overnight on the water and twist their wings one over the other so the birds cannot spread them.", "cites": ["afanasyev1869:p.123"] },
+    { "text": "By popular belief the rusalki are under the authority of the water-grandfather (vodyanoi).", "cites": ["afanasyev1869:p.123"] },
+    { "text": "In the evening they rock on slender branches, enticing unwary wanderers, and tickle to death or drown anyone they lead astray.", "cites": ["machal1918:p.255"] },
+    { "text": "Their fine voices lure swimmers to deep places, where they drown.", "cites": ["machal1918:p.255"] },
+    { "text": "They inveigle shepherds to play for their dancing.", "cites": ["machal1918:p.255", "ralston1872:p.142"] },
+    { "text": "In some places they are fond of spinning, in others they are given to washing linen.", "cites": ["ralston1872:p.141"] },
+    { "text": "Anyone who treads on the linen the Rusalkas have laid out to dry loses his strength or becomes a cripple.", "cites": ["ralston1872:p.142", "machal1918:p.255"] },
+    { "text": "A man who meets Rusalkas writhing and contorting may involuntarily imitate them and stay deformed or suffer St. Vitus' dance for life.", "cites": ["ralston1872:p.142"] },
+    { "text": "During the week before Whitsuntide they sit on trees and ask for linen garments.", "cites": ["ralston1872:p.141", "machal1918:p.254"] },
+    { "text": "Concealed in the ripening corn, they are ready to punish anyone who wantonly plucks the ears.", "cites": ["machal1918:p.254"] },
+    { "text": "They have much to do with the harvest, sometimes making it plenteous and at other times ruining it by rain and wind.", "cites": ["ralston1872:p.143"] },
+    { "text": "The peasants of White-Russia say the Rusalkas dwell amid the standing corn.", "cites": ["ralston1872:p.143"] },
+    { "text": "At Whitsuntide they display their greatest activity.", "cites": ["machal1918:p.255"] },
+    { "text": "At Whitsuntide they leave their watery abodes and stroll about the fields and forests until the end of June.", "cites": ["ralston1872:p.142"] },
+    { "text": "On the approach of winter they disappear and do not show themselves until it is over.", "cites": ["ralston1872:p.141"] },
+    { "text": "In Little-Russia they are supposed to appear on the Thursday of Holy Week.", "cites": ["ralston1872:p.141"] },
+    { "text": "In the Ukraine the Thursday before Whitsuntide is called the Great Day, or Easter Sunday, of the Rusalkas.", "cites": ["ralston1872:p.141"] },
+    { "text": "Rusalkas steal the bodies of children who died unbaptized, from their graves or cottages, and carry them to their underwater dwellings.", "cites": ["ralston1872:p.144"] },
+    { "text": "Near the Dnieper peasants believe the Rusalkas light wild-fires over graves, kurgans, woods and swamps to lure travellers to their ruin.", "cites": ["ralston1872:p.146"] },
+    { "text": "In many parts of Russia songs show them propounding riddles to girls and tickling those who cannot answer.", "cites": ["ralston1872:p.146"] },
+    { "text": "Rusalki are recorded as living in the mountains as well as the rivers and loving to run on their slopes; in Galicia they are said to dance on the mountains.", "cites": ["afanasyev1869:p.124"] },
+    { "text": "In some localities there is talk of forest rusalki; in spring they run from the deep waters into the woods and become wholly mixed with the forest women.", "cites": ["afanasyev1869:p.125"] }
+  ],
+  "dealing_with_it": [
+    { "text": "In White-Russia whoever meets the naked women and children who traverse the forests in the week before Whitsuntide must fling them a handkerchief or a scrap torn from his dress to escape a premature death.", "cites": ["ralston1872:p.141"] },
+    { "text": "In Little-Russia shifts, rags and skeins of thread are hung on oaks and other trees before Whitsuntide as presents to the Rusalkas.", "cites": ["ralston1872:p.141", "machal1918:p.254"] },
+    { "text": "During the Green Svyatki no one dares to work for fear of offending them; women especially must not sew or wash linen, nor men weave fences.", "cites": ["ralston1872:pp.141-142"] },
+    { "text": "Those who desecrate Rusalka week by working are punished with the loss of their cattle and poultry.", "cites": ["ralston1872:pp.142-143"] },
+    { "text": "At Whitsuntide people avoid staying outdoors at night, bathing in rivers, clapping their hands and field work that might anger them.", "cites": ["machal1918:p.255"] },
+    { "text": "At Whitsuntide young people leave bread, cheese, butter and other food for them on the banks of rivers and brooks.", "cites": ["machal1918:p.255"] },
+    { "text": "Peasant girls throw garlands to the Rusalkas, asking for rich husbands in return.", "cites": ["ralston1872:p.142"] },
+    { "text": "In Rusalka week relatives of the drowned or strangled leave the remnants of pancakes, spirits and red eggs at the graves for the Rusalkas, singing to Queen Rusalka not to destroy the soul; the Rusalkas take vengeance on those who forget.", "cites": ["ralston1872:p.145"] },
+    { "text": "In some parts of Russia, after Whitsuntide, a straw figure dressed as a woman is torn to pieces in the fields in a ceremony of expelling the Rusalka.", "cites": ["ralston1872:p.143"] },
+    { "text": "In the Government of Tula women and girls chase the Rusalka, supposed to be stealing the grain, and fling a straw figure into a stream.", "cites": ["ralston1872:pp.143-144"] },
+    { "text": "In some districts young people run about the fields on Whit-Sunday Eve waving brooms and crying \"Pursue!\".", "cites": ["ralston1872:p.144"] },
+    { "text": "In the Saratof Government one going into a wood should carry a handful of wormwood (Poluin); asked what he holds, if he answers Poluin he is safe.", "cites": ["ralston1872:p.146"] },
+    { "text": "During Trinity week Little Russians fear to linger in the forest and to answer a stranger's hallooing.", "cites": ["afanasyev1869:p.125"] },
+    { "text": "A wandering child-soul that hears \"I baptize thee in the name of the Father, and of the Son, and of the Holy Ghost\" is saved and goes straight to heaven.", "cites": ["ralston1872:p.144"] }
+  ],
+  "origin": [
+    { "text": "Russians hold that Rusalky are children who died unbaptized, or were drowned or suffocated.", "cites": ["machal1918:p.254"] },
+    { "text": "Russians also hold that they are girls and young wives who met an unnatural death or were cursed by their parents.", "cites": ["machal1918:p.254"] },
+    { "text": "Russian peasants take the little rusalkas to be ghosts of still-born children or of those who died before baptism; a soul not baptized within seven years is enrolled forever among the Rusalkas.", "cites": ["ralston1872:p.144"] },
+    { "text": "Babes cursed by their mothers before birth or before baptism share the same fate.", "cites": ["ralston1872:pp.144-145"] },
+    { "text": "Women who kill themselves, and all who are drowned, choked or strangled and do not obtain Christian burial, are liable to become Rusalkas.", "cites": ["ralston1872:p.145"] },
+    { "text": "Many a girl who drowned herself has been turned into a Rusalka or some such being and has then married a Vodyany.", "cites": ["ralston1872:p.149"] }
+  ],
+  "related": [
+    { "id": "vodyanoi", "relation": "related" },
+    { "id": "poludnitsa", "relation": "related" }
+  ],
+  "attestation": null,
+  "sources": [
+    { "source_id": "machal1918", "author": "Jan Máchal", "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)", "year": 1918, "url": "https://archive.org/details/mythologyofallra0003john", "public_domain": true },
+    { "source_id": "ralston1872", "author": "W. R. S. Ralston", "title": "The Songs of the Russian People", "year": 1872, "url": "https://archive.org/details/songsofrussianpe00ralsuoft", "public_domain": true },
+    { "source_id": "afanasyev1869", "author": "А. Н. Афанасьев (A. N. Afanasyev)", "title": "Поэтические воззрения славян на природу, т. 3", "year": 1869, "url": "https://archive.org/details/poeticheskiiavoz03afan", "public_domain": true }
+  ],
+  "image": null,
+  "notes": [
+    { "kind": "scope", "text": "Budget stop: these hinted or found pages were not opened. afanasyev1869:pp.126-150 (rest of the rusalka chapter; likely more appearance, Trinity-week custom and origin detail); afanasyev1869:p.244 (Ralston p.145 cites it for the Rusalka-week grave offering) and pp.241-243; afanasyev1869:p.309; machal1918:p.312 (the straw effigy called rusalka); ralston1872:p.373 and p.107; ralston1873:p.205 (snippet only names 'the rusalka or naiad'); the afanasyev1865 and afanasyev1868 hits for 'русал'; karadzic1818 and karadzic1852 leaves for 'русал'." },
+    { "kind": "other", "text": "Related links: Ralston p.148 calls the Vodyanuie the male counterparts of the Rusalkas, p.149 has drowned girls marry a Vodyany, and Afanasyev p.123 puts rusalki under the water-grandfather. Ralston p.147 calls the Poludnitsa 'another spiritual being of the same class' as the Rusalkas and Vilas." },
+    { "kind": "other", "text": "Variant names: 'Mavki' is Ralston's name for Rusalkas in Little-Russia and Galicia (p.142). 'loskotalka' is romanised from the inflected, OCR-split 'лоско талкою' on afanasyev1869:p.125 (Kharkov Government), so no native row is given; it is attributed to Ukrainians because the same passage speaks of the Little Russians. Machal's Navky/Mavky (p.253) are a separate class he calls 'very similar' and were not merged in." },
+    { "kind": "other", "text": "Peoples: Ralston's Little-Russia and the Ukraine are recorded as Ukrainians and White-Russia as Belarusians, with the source word kept in the region. Czechs rests on Afanasyev p.122 ('у насъ и чеховъ русалки'). The Galician mountain clause (Afanasyev p.124) has no people row because the page names only the region." },
+    { "kind": "other", "text": "The clothing clause keeps the sources' own either/or (green leaves or a white shift) rather than splitting it into two forms. The full-grown and seven-year-old forms are split because both Ralston p.144 and Machal p.254 present them as different figures." }
+  ]
+}
