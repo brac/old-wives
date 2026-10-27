@@ -1,0 +1,3 @@
+sources/pages/** -text
+sources/manifest.json -text
+sources/headwords/** -text

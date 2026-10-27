@@ -1,0 +1,379 @@
+[
+  {
+    "id": "machal1918",
+    "author": "Jan Máchal",
+    "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+    "year": 1918,
+    "edition": "Marshall Jones, Boston 1918; vol. 3, Slavic part pp. ~217-330",
+    "language": "en",
+    "kind": "folklore",
+    "public_domain": true,
+    "pd_reason": "Published in the US in 1918; Máchal d. 1939, PD in the EU since 2010.",
+    "locator": "page",
+    "origin": {
+      "type": "ia",
+      "item": "mythologyofallra0003john",
+      "files": [
+        "mythologyofallra0003john_djvu.xml",
+        "mythologyofallra0003john_page_numbers.json"
+      ]
+    },
+    "raw": [
+      {
+        "name": "mythologyofallra0003john_djvu.xml",
+        "sha256": "839456efad7baded45874e6c27fc4d186b8aa1821c84e56292956bb44a8cae96",
+        "bytes": 9460933
+      },
+      {
+        "name": "mythologyofallra0003john_page_numbers.json",
+        "sha256": "a8351e93799ad61c8b8cc86dd1b011594511d301d0cbcb9271c5f002ba7361dd",
+        "bytes": 75774
+      }
+    ],
+    "pages_file": "sources/pages/machal1918.jsonl",
+    "pages_sha256": "993fa82ffa62fa4a2f16af01a4c45417842efc5136ad6b2a3772265084218ae6",
+    "notes": "OCR keeps diacritics inconsistently (\"LéSiy\", \"Lésiy\"); match through normalize(). Translator's death year unchecked (matters only for EU status of the English text)."
+  },
+  {
+    "id": "ralston1872",
+    "author": "W. R. S. Ralston",
+    "title": "The Songs of the Russian People",
+    "year": 1872,
+    "edition": "Ellis & Green, London 1872",
+    "language": "en",
+    "kind": "folklore",
+    "public_domain": true,
+    "pd_reason": "Published 1872; Ralston d. 1889.",
+    "locator": "page",
+    "origin": {
+      "type": "ia",
+      "item": "songsofrussianpe00ralsuoft",
+      "files": [
+        "songsofrussianpe00ralsuoft_djvu.xml",
+        "songsofrussianpe00ralsuoft_page_numbers.json"
+      ]
+    },
+    "raw": [
+      {
+        "name": "songsofrussianpe00ralsuoft_djvu.xml",
+        "sha256": "2ae6749ff2275b28ceaf4961de5b4640c1190f38cc8483753fb4afa06beb27d4",
+        "bytes": 9741746
+      },
+      {
+        "name": "songsofrussianpe00ralsuoft_page_numbers.json",
+        "sha256": "fd2ede6f848eccd5bbd196d99c550640e17c8699dab62b0607b11ad82830d5dc",
+        "bytes": 80730
+      }
+    ],
+    "pages_file": "sources/pages/ralston1872.jsonl",
+    "pages_sha256": "51c9f698057112173d25b3372ebc0885ce711df05db498a861517c243594d417",
+    "notes": "Roman front matter is recovered by IA (e.g. p.xiii); pages are lowercased in tags."
+  },
+  {
+    "id": "ralston1873",
+    "author": "W. R. S. Ralston",
+    "title": "Russian Folk-Tales",
+    "year": 1873,
+    "edition": "Smith, Elder, London 1873",
+    "language": "en",
+    "kind": "folklore",
+    "public_domain": true,
+    "pd_reason": "Published 1873; Ralston d. 1889.",
+    "locator": "page",
+    "origin": {
+      "type": "ia",
+      "item": "russianfolktales00ralsuoft",
+      "files": [
+        "russianfolktales00ralsuoft_djvu.xml",
+        "russianfolktales00ralsuoft_page_numbers.json"
+      ]
+    },
+    "raw": [
+      {
+        "name": "russianfolktales00ralsuoft_djvu.xml",
+        "sha256": "4fa0cc60d2c7abdc91942dce9495d66216b08ef2e9e0bcc18450f09f601332df",
+        "bytes": 10844853
+      },
+      {
+        "name": "russianfolktales00ralsuoft_page_numbers.json",
+        "sha256": "1c585002c501ff5db03d287528c48f85a7b0c7b28b5459ee2258ffe7042e3f4b",
+        "bytes": 69439
+      }
+    ],
+    "pages_file": "sources/pages/ralston1873.jsonl",
+    "pages_sha256": "bb7d8d54d6c612d577d0ca84fa048a5f080f1239d65e9f830da938c388b587fc",
+    "notes": "Not the 1887 Gutenberg #22373 'Russian Fairy Tales'. A few leaves are unnumbered (page null)."
+  },
+  {
+    "id": "afanasyev1865",
+    "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+    "title": "Поэтические воззрения славян на природу, т. 1",
+    "year": 1865,
+    "edition": "Moscow, K. Soldatenkov, vol. 1, 1865",
+    "language": "ru",
+    "kind": "folklore",
+    "public_domain": true,
+    "pd_reason": "Published 1865; Afanasyev d. 1871.",
+    "locator": "page",
+    "origin": {
+      "type": "ia",
+      "item": "poeticheskiiavoz01afan",
+      "files": [
+        "poeticheskiiavoz01afan_djvu.xml",
+        "poeticheskiiavoz01afan_page_numbers.json"
+      ]
+    },
+    "raw": [
+      {
+        "name": "poeticheskiiavoz01afan_djvu.xml",
+        "sha256": "a6d293ddc3d7a28a7293efeb94638248711ef2d0606a9e3d404ef1d816889b27",
+        "bytes": 18079271
+      },
+      {
+        "name": "poeticheskiiavoz01afan_page_numbers.json",
+        "sha256": "1e9f25b4c1fb07c14244c7dc6d16989780f481028d32fd3275c54b72dc9b995c",
+        "bytes": 135613
+      }
+    ],
+    "pages_file": "sources/pages/afanasyev1865.jsonl",
+    "pages_sha256": "72f071e00bd9bd966ffc9f9bb27928d8f2f4a3dae1c5d07d9f98d2ea7ceb43ec",
+    "notes": "Pre-reform orthography (ѣ, і, ъ) in the OCR; search through normalize()."
+  },
+  {
+    "id": "afanasyev1868",
+    "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+    "title": "Поэтические воззрения славян на природу, т. 2",
+    "year": 1868,
+    "edition": "Moscow, K. Soldatenkov, vol. 2, 1868",
+    "language": "ru",
+    "kind": "folklore",
+    "public_domain": true,
+    "pd_reason": "Published 1868; Afanasyev d. 1871.",
+    "locator": "page",
+    "origin": {
+      "type": "ia",
+      "item": "poeticheskiiavoz02afan",
+      "files": [
+        "poeticheskiiavoz02afan_djvu.xml",
+        "poeticheskiiavoz02afan_page_numbers.json"
+      ]
+    },
+    "raw": [
+      {
+        "name": "poeticheskiiavoz02afan_djvu.xml",
+        "sha256": "83b2a41cd53d821c81d8f9d369087b3206fab4d49c20f0c763308d4051d8aba6",
+        "bytes": 18054113
+      },
+      {
+        "name": "poeticheskiiavoz02afan_page_numbers.json",
+        "sha256": "d3034374c413590663ee47f0107bdafe777d707d97e2cfeb2317319175ba5e33",
+        "bytes": 134143
+      }
+    ],
+    "pages_file": "sources/pages/afanasyev1868.jsonl",
+    "pages_sha256": "10929c5ab44e80bbf09bae1d82152230b7605818ca20504baaab2c195e8641cd",
+    "notes": "IA metadata says 1865; the title page reads 1868. Pre-reform orthography."
+  },
+  {
+    "id": "afanasyev1869",
+    "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+    "title": "Поэтические воззрения славян на природу, т. 3",
+    "year": 1869,
+    "edition": "Moscow, K. Soldatenkov, vol. 3, 1869",
+    "language": "ru",
+    "kind": "folklore",
+    "public_domain": true,
+    "pd_reason": "Published 1869; Afanasyev d. 1871.",
+    "locator": "page",
+    "origin": {
+      "type": "ia",
+      "item": "poeticheskiiavoz03afan",
+      "files": [
+        "poeticheskiiavoz03afan_djvu.xml",
+        "poeticheskiiavoz03afan_page_numbers.json"
+      ]
+    },
+    "raw": [
+      {
+        "name": "poeticheskiiavoz03afan_djvu.xml",
+        "sha256": "ccee521438c47014648983fdcbd225a36a7859953259a41e779cfdca8563f473",
+        "bytes": 19676425
+      },
+      {
+        "name": "poeticheskiiavoz03afan_page_numbers.json",
+        "sha256": "59fa8501728cdac60e68ea1970f97f83eb288dd0bc39902546e9104595cd045b",
+        "bytes": 144536
+      }
+    ],
+    "pages_file": "sources/pages/afanasyev1869.jsonl",
+    "pages_sha256": "695eb171ca1c3460eb67a6c6dfced37b7bc27f5e89043b6bc6b8e12fa7bdeb1a",
+    "notes": "IA metadata says 1865; the title page reads 1869. Pre-reform orthography."
+  },
+  {
+    "id": "karadzic1818",
+    "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+    "title": "Српски рјечник истолкован њемачким и латинским ријечма",
+    "year": 1818,
+    "edition": "Vienna, P. P. Armenier 1818",
+    "language": "sr",
+    "kind": "folklore",
+    "public_domain": true,
+    "pd_reason": "Published 1818; Karadžić d. 1864.",
+    "locator": "headword",
+    "origin": {
+      "type": "ia",
+      "item": "srpskirjecnik00kara",
+      "files": [
+        "srpskirjecnik00kara_djvu.xml",
+        "srpskirjecnik00kara_page_numbers.json"
+      ]
+    },
+    "raw": [
+      {
+        "name": "srpskirjecnik00kara_djvu.xml",
+        "sha256": "dfe9ab92bb996db0b896e9e73b4b2577be2d288cca2ed6d7bbf3275ec21a450a",
+        "bytes": 29274481
+      },
+      {
+        "name": "srpskirjecnik00kara_page_numbers.json",
+        "sha256": "736c4f46a6465e4d1211fcf95de0569a809ebeb2bcb8d6022e76c7eee14c6d45",
+        "bytes": 94142
+      }
+    ],
+    "pages_file": "sources/pages/karadzic1818.jsonl",
+    "pages_sha256": "70bc119d4e399095298142ef4226e23370541fda0b22da99098bfa8a8b2aea28",
+    "notes": "Numbered by column; IA page_numbers confidence 16, so cite by headword (s.v.). Curated overrides in sources/headwords/karadzic1818.json. OCR is readable in Cyrillic, German and Latin."
+  },
+  {
+    "id": "karadzic1852",
+    "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+    "title": "Српски рјечник истумачен њемачкијем и латинскијем ријечима",
+    "year": 1852,
+    "edition": "Vienna 1852 (second edition)",
+    "language": "sr",
+    "kind": "folklore",
+    "public_domain": true,
+    "pd_reason": "Published 1852; Karadžić d. 1864.",
+    "locator": "headword",
+    "origin": {
+      "type": "ia",
+      "item": "srpski-rjecnik-istumacen-njemackijem-i-latinskijem-rijecima",
+      "files": [
+        "Srpski rječnik istumačen njemačkijem i latinskijem riječima_djvu.xml",
+        "Srpski rječnik istumačen njemačkijem i latinskijem riječima_page_numbers.json"
+      ]
+    },
+    "raw": [
+      {
+        "name": "Srpski rječnik istumačen njemačkijem i latinskijem riječima_djvu.xml",
+        "sha256": "db8bdfbdf9c90892bd937107980a30ec3760a2e92b53c0be24fafcccd39b5786",
+        "bytes": 53590912
+      },
+      {
+        "name": "Srpski rječnik istumačen njemačkijem i latinskijem riječima_page_numbers.json",
+        "sha256": "4c17f356cd37bf973b01bb384192fa3f4b5c302f1294da6fa214e3f786650b32",
+        "bytes": 150217
+      }
+    ],
+    "pages_file": "sources/pages/karadzic1852.jsonl",
+    "pages_sha256": "5468c5b1b8f3aca953655e4916349f18202a49a146e55742169888e11e1a8e59",
+    "notes": "Paged (confidence 100) but cited by headword like 1818. German and Latin glosses are OCR'd as Cyrillic noise; read 1818 or the page image for them. Not independent of karadzic1818."
+  },
+  {
+    "id": "frombald1725",
+    "author": "Frombald",
+    "title": "Copia eines Schreibens aus dem Gradisker District in Ungarn (Wienerisches Diarium, 21 July 1725, pp. 11-12)",
+    "year": 1725,
+    "edition": "German Wikisource diplomatic transcription of the Wienerisches Diarium, 21 July 1725; scans on Wikimedia Commons",
+    "language": "de",
+    "kind": "record",
+    "public_domain": true,
+    "pd_reason": "Published 1725; the Wikisource transcription adds no new copyright (CC0/PD).",
+    "locator": "page",
+    "origin": {
+      "type": "wikisource",
+      "page": "https://de.wikisource.org/wiki/Copia_eines_Schreibens_aus_dem_Gradisker_District",
+      "revision_id": 3780926
+    },
+    "raw": [
+      {
+        "name": "wikitext-3780926.wiki",
+        "sha256": "3fcb99f761a5601362e812909c13d12ff3ab30d53aa3a3092d796cdb0c26599f",
+        "bytes": 6313
+      }
+    ],
+    "pages_file": "sources/pages/frombald1725.jsonl",
+    "pages_sha256": "c3900a4d49d95716568899c6dea0c05d1e107b4dfee7bb8817ca9d6d869a5338",
+    "notes": "Split on {{Seite|N}} markers; wiki markup stripped in the pages file. The Wikisource header calls Frombald an 'Arzt' (doctor): that is wrong, he was the imperial Kameralprovisor (administrator). Do not take that clause from the header. ANNO original is behind Cloudflare Turnstile."
+  },
+  {
+    "id": "calmet1850v2",
+    "author": "Augustin Calmet, trans. Henry Christmas",
+    "title": "The Phantom World, vol. 2",
+    "year": 1850,
+    "edition": "Richard Bentley, London 1850",
+    "language": "en",
+    "kind": "folklore",
+    "public_domain": true,
+    "pd_reason": "Published 1850; Calmet d. 1757, Christmas d. 1868.",
+    "locator": "page",
+    "origin": {
+      "type": "ia",
+      "item": "phantomworldorph0002ugus",
+      "files": [
+        "phantomworldorph0002ugus_djvu.xml",
+        "phantomworldorph0002ugus_page_numbers.json"
+      ]
+    },
+    "raw": [
+      {
+        "name": "phantomworldorph0002ugus_djvu.xml",
+        "sha256": "67ceba03b370e0352e5657b9bb24e1acb0083f685b8600ca9962ead7661ed053",
+        "bytes": 7467917
+      },
+      {
+        "name": "phantomworldorph0002ugus_page_numbers.json",
+        "sha256": "da7ecc611833ba0fcef6de4e492185364b41aa531981e128e71e8a5125dd3fc4",
+        "bytes": 65351
+      }
+    ],
+    "pages_file": "sources/pages/calmet1850v2.jsonl",
+    "pages_sha256": "4ea9b85583da6c25153b6aa449425e5818161be5cab8cb60537d4f1afbcc98a3",
+    "notes": "A paraphrase of the 1725 Diarium report (pp. ~180-181), not a translation."
+  },
+  {
+    "id": "erben1893",
+    "author": "Karel Jaromír Erben",
+    "title": "Kytice z pověstí národních",
+    "year": 1893,
+    "edition": "Prague, Hynek 1893 edition of the 1853 poems",
+    "language": "cs",
+    "kind": "literary",
+    "public_domain": true,
+    "pd_reason": "Erben d. 1870.",
+    "locator": "page",
+    "origin": {
+      "type": "ia",
+      "item": "kyticezbsnka00erbeuoft",
+      "files": [
+        "kyticezbsnka00erbeuoft_djvu.xml",
+        "kyticezbsnka00erbeuoft_page_numbers.json"
+      ]
+    },
+    "raw": [
+      {
+        "name": "kyticezbsnka00erbeuoft_djvu.xml",
+        "sha256": "e3fe4666a3e693b29166f88d1187a367a61f5ab4d4740e750ff3cba5c650c4c8",
+        "bytes": 1946586
+      },
+      {
+        "name": "kyticezbsnka00erbeuoft_page_numbers.json",
+        "sha256": "dd2245f2a2d32b800be769d8a487fa13f6b4d556f44ebca6f5e73f1ea703326d",
+        "bytes": 33831
+      }
+    ],
+    "pages_file": "sources/pages/erben1893.jsonl",
+    "pages_sha256": "3be539bbbbe61e076e5a0e92684e1164ec99f02e81461ca897ed365aedad3a07",
+    "notes": "Literary poems (Polednice), not folklore records; grade claims resting on it as literary."
+  }
+]
