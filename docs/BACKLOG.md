@@ -144,6 +144,32 @@ The full answers are in `docs/phase2-brainstorm.md`. Settled, with what each rej
   once the grade distribution is visible; and a style sheet that carries the references,
   the locked tokens, the bake-off contact sheet and the reason for silverpoint.
 
+## Model licence and follow-up rulings (2026-10-27, later the same day)
+
+- **The bake-off line-up changes to open-weights models: Qwen-Image, Z-Image (base) and
+  FLUX.1 [schnell], all on fal.** Research (`.phase-loop/research/output-licence.md`)
+  found both FLUX.2 pro and Nano Banana Pro ambiguous under Ben's licence rule. BFL and
+  Google only decline to claim ownership of outputs; neither grants a redistribution
+  licence; and BFL bans training on outputs, which CC BY cannot carry. So both were
+  dropped as the rule requires. Recraft V4 was dropped for having no seed and no reference
+  input. The replacements are Apache 2.0 at the weights layer
+  (`.phase-loop/research/open-models.md`). Rejected: asking fal and BFL in writing (slow),
+  and relaxing the rule to "commercial use plus non-claim". fal's own terms disclaim
+  ownership of outputs, whichever model is used. Whether purely AI-made images can carry
+  copyright at all is an open legal question, recorded but not resolved.
+- **Plate size: the 2048 px minimum is lowered.** The master is the winning model's
+  native 3:4 portrait size (roughly 1024 to 1328 px on the long edge), with no upscaling.
+  Rejected: generating above native size (quality risk) and an upscaler (a second
+  licence to clear).
+- **Style references: Ben picks them by eye** from the six public-domain candidates in
+  `.phase-loop/research/style-refs.md`, shown on a contact sheet. Rejected: the planner's
+  pick of 1, 3, 5 and 6.
+- **fal key:** the key from the DungeonsAndDatasets project is reused, copied into a
+  gitignored `.env`. Rejected: a new Beasts-only key.
+- **Draft budget raised from $0.50 to $1 per creature,** measured as API-equivalent cost:
+  the agent's reported token usage priced at list price (Opus 5.5: $4 per million input,
+  $20 per million output). Overruns still need written reasoning that Ben sees first.
+
 ## Follow-up work from the rulings
 
 - Fix round (Phase 1d, not yet planned): re-grade zmey-gorynych to literary, apply the

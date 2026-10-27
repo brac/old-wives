@@ -4,3 +4,5 @@ dist/
 coverage/
 *.log
 sources/raw/
+.env
+plates/**/*.full.png
