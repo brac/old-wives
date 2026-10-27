@@ -189,6 +189,43 @@ The full answers are in `docs/phase2-brainstorm.md`. Settled, with what each rej
   citing him. Rejected: widening the rule to cover close, uncited paraphrase. The case
   is recorded as a known limit of the rule.
 
+## Bake-off verdict and Phase 1d decisions (2026-10-27)
+
+- **Model: Qwen-Image (setup D), locked for the pilot.** Ben's blind read: D for baba-yaga
+  (good hatching, but the nose reads as a cap and needs a regeneration) and D for bannik
+  (good hatching, but no setup made the bannik read). For zmey-gorynych he preferred A
+  (Z-Image) or C (FLUX.1 schnell): D's serpent is a blob with text across the top. None of
+  the four is great. Rejected:
+  - B, Qwen edit with references: it copied the reference drawing and added a face.
+  - A, Z-Image: the hatching is good but the structure is nonsensical.
+  - C, FLUX.1 schnell: the most complete, but it shows AI artefacts and reads as a
+    tattoo.
+
+  Qwen-Image's known faults (the nose, text on the serpent) go to the test grid and the
+  regeneration budget, not to another model change.
+- **Scene plates read too abstract (Ben, on bannik).** "We would need to really
+  personify these things a little more." This conflicts with the brief's unseen rule (no
+  invented body), and is open, put to Ben.
+- **Grade rules: settled as they stand, with no more tokens spent on them.** The
+  collector rule and the per-passage Ralston rule stay. Bannik and zmey-gorynych remain
+  regional. Rejected: re-deriving dependence passage by passage.
+- **Ralston's general "Snake" passages count as Zmey Gorynych lore.** The 8 referent
+  flags in zmey-gorynych are resolved "yes" and the clauses stand. Rejected: removing
+  them.
+- **No forms inside variants**, at least for the first pass. Rejected: another level of
+  detail in the schema.
+- **Footnotes:** a footnote stays a reference, not lore. Where it points to a story that
+  is in the corpus, the draft may follow it and cite the story itself. Rejected: citing
+  narrative footnotes directly.
+- **Partial-support tags are accepted.** A clause may keep a tag whose page supports
+  only part of it, as long as its tags together support the whole. Rejected: requiring
+  every tag to carry the whole clause.
+- **Cost is measured in tokens, not dollars.** The goal is a rough shape of each
+  creature, not exhaustive reading. Keep the existing per-agent budget (about 100k
+  tokens), with no top-ups and no second reading passes. Do not burn Ben's daily token
+  allowance. This replaces the $1-per-creature cap. Rejected: getting each agent's
+  input/output split to price runs exactly.
+
 ## Backlog added 2026-10-27
 
 - Drekavac: check the 1818 page image for the two words the OCR garbles (probably
