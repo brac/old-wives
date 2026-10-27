@@ -24,6 +24,11 @@ export interface SourceEntry {
   public_domain: true;
   pd_reason: string;
   locator: "page" | "headword";
+  /**
+   * Where page labels come from. "ia" (the default) takes IA's _page_numbers.json as is;
+   * "header" takes the number printed in each leaf's running header (see audit.ts).
+   */
+  page_label_source?: "ia" | "header";
   origin: Origin;
   raw: RawFile[];
   pages_file: string;
@@ -35,6 +40,8 @@ export interface PageRecord {
   leaf: number;
   page: string | null;
   text: string;
+  /** Set only when page_label_source is "header" and no header number was found on the leaf. */
+  page_inferred?: true;
 }
 
 /** Repository root, resolved from this file's location (src/corpus/). */

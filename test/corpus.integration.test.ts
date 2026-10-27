@@ -1,6 +1,7 @@
 // Runs the plan's cite and find rows (stop conditions 8-16) against the real
 // committed corpus under sources/pages/.
 import { describe, expect, test } from "vitest";
+import { auditPages, isNumericLabel } from "../src/corpus/audit.js";
 import { findIn } from "../src/corpus/find-cli.js";
 import { normalize } from "../src/corpus/normalize.js";
 import { diskCorpus, createResolver } from "../src/corpus/resolve.js";
@@ -63,4 +64,51 @@ describe("headword overrides resolve", () => {
       });
     }
   }
+});
+
+// Page-label audit: the label must match the number printed in the leaf's running header.
+// Known defects stay visible here with their own floor instead of being tuned away.
+const AUDIT_FLOOR = 0.95;
+const KNOWN_LABEL_DEFECTS: Record<string, { floor: number; why: string }> = {
+  machal1918: {
+    floor: 0.9,
+    why: "IA counts plate leaves as pages at leaves 125-153 (printed pp. 87-107 labelled 91-115, so pp. 108-115 are doubled); no data/ tag cites that range",
+  },
+};
+
+describe("page-label audit", () => {
+  const paged = corpus.sources.filter((s) => s.locator === "page" && corpus.pages(s.id).some((r) => isNumericLabel(r.page)));
+  const results = paged.map((s) => ({ id: s.id, ...auditPages(corpus.pages(s.id)) }));
+
+  test("prints per-source agreement", () => {
+    for (const r of results) {
+      const pct = r.found > 0 ? ((100 * r.agree) / r.found).toFixed(1) : "-";
+      const known = KNOWN_LABEL_DEFECTS[r.id] ? " [known defect]" : "";
+      console.log(`audit ${r.id}: ${r.agree}/${r.found} header numbers agree (${pct}%), ${r.numeric} numeric labels${known}`);
+    }
+    expect(results.length).toBeGreaterThan(0);
+  });
+
+  for (const r of results) {
+    const known = KNOWN_LABEL_DEFECTS[r.id];
+    const floor = known?.floor ?? AUDIT_FLOOR;
+    test(`${r.id}: >= ${floor * 100}% of found header numbers agree with the label`, () => {
+      if (r.found === 0) return;
+      expect(r.agree / r.found).toBeGreaterThanOrEqual(floor);
+    });
+  }
+});
+
+describe("afanasyev1865 header labels", () => {
+  const pages = corpus.pages("afanasyev1865");
+  test("p.25 is leaf 29, whose text starts with its printed number", () => {
+    expect(text("afanasyev1865:p.25").split("\n")[0]).toBe("25");
+  });
+  test("numeric labels are unique and increase with the leaf", () => {
+    const nums = pages.filter((r) => isNumericLabel(r.page)).map((r) => Number(r.page));
+    for (let i = 1; i < nums.length; i++) expect(nums[i]!).toBeGreaterThan(nums[i - 1]!);
+  });
+  test("leaf 13 (no header) is inferred from its neighbours, not the dominant offset", () => {
+    expect(pages.find((r) => r.leaf === 13)).toMatchObject({ page: "9", page_inferred: true });
+  });
 });

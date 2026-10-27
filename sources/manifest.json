@@ -115,6 +115,7 @@
     "public_domain": true,
     "pd_reason": "Published 1865; Afanasyev d. 1871.",
     "locator": "page",
+    "page_label_source": "header",
     "origin": {
       "type": "ia",
       "item": "poeticheskiiavoz01afan",
@@ -136,7 +137,7 @@
       }
     ],
     "pages_file": "sources/pages/afanasyev1865.jsonl",
-    "pages_sha256": "72f071e00bd9bd966ffc9f9bb27928d8f2f4a3dae1c5d07d9f98d2ea7ceb43ec",
+    "pages_sha256": "b66b6bb7a5df49f261793a589dcfdb5a1dff0e1f837d277f28a993a84d14bc15",
     "notes": "Pre-reform orthography (ѣ, і, ъ) in the OCR; search through normalize()."
   },
   {

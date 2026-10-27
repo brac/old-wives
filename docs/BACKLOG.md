@@ -52,3 +52,7 @@ and the project-scoped "why" behind decisions, each with the rejected alternativ
   "multiple sources" for the `regional` grade? The verify prompt counts sources by
   author, so drekavac will likely land on `literary` rather than the `regional` the
   brief expects.
+- Machal 1918 page labels: IA counts blank plate leaves as pages, so printed pp. 87-107
+  carry labels 91-115 and labels 108-115 repeat. Switch `machal1918` to
+  `page_label_source: "header"` (built in the Phase 1 corpus fix) and check the plate
+  leaves before any batch cites that range. No pilot citation is affected.

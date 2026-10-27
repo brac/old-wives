@@ -2,6 +2,7 @@
 // file's sha256 back into the manifest. Deterministic: same raw in, same bytes out.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { relabelFromHeaders } from "./audit.js";
 import { scanDjvuFile } from "./djvu.js";
 import {
   loadManifest,
@@ -20,7 +21,10 @@ interface PageNumbers {
 
 export function serializePages(records: PageRecord[]): string {
   const sorted = [...records].sort((a, b) => a.leaf - b.leaf);
-  return sorted.map((r) => JSON.stringify({ leaf: r.leaf, page: r.page, text: r.text })).join("\n") + "\n";
+  // page_inferred is written only when set, so sources labelled from IA serialize exactly as before.
+  const line = (r: PageRecord): string =>
+    JSON.stringify(r.page_inferred ? { leaf: r.leaf, page: r.page, page_inferred: true, text: r.text } : { leaf: r.leaf, page: r.page, text: r.text });
+  return sorted.map(line).join("\n") + "\n";
 }
 
 /** Strip the wiki markup used in the Frombald transcription to plain text. */
@@ -61,7 +65,8 @@ async function buildIa(source: SourceEntry): Promise<PageRecord[]> {
   const pn = JSON.parse(readFileSync(join(dir, pnName), "utf8")) as PageNumbers;
   const pageOf = new Map<number, string>();
   for (const p of pn.pages) if (p.pageNumber && p.pageNumber.trim() !== "") pageOf.set(p.leafNum, p.pageNumber.trim().toLowerCase());
-  return leaves.map((l) => ({ leaf: l.leaf, page: pageOf.get(l.leaf) ?? null, text: l.text }));
+  const records = leaves.map((l) => ({ leaf: l.leaf, page: pageOf.get(l.leaf) ?? null, text: l.text }));
+  return (source.page_label_source ?? "ia") === "header" ? relabelFromHeaders(records) : records;
 }
 
 function buildWikisource(source: SourceEntry): PageRecord[] {
@@ -81,7 +86,9 @@ async function main(): Promise<void> {
     writeFileSync(join(REPO_ROOT, source.pages_file), out, "utf8");
     source.pages_sha256 = sha256(out);
     const paged = records.filter((r) => r.page !== null).length;
-    console.log(`${source.id}: ${records.length} leaves, ${paged} paged, sha256 ${source.pages_sha256}`);
+    const inferred = records.filter((r) => r.page_inferred).length;
+    const inf = inferred > 0 ? `, ${inferred} page_inferred` : "";
+    console.log(`${source.id}: ${records.length} leaves, ${paged} paged${inf}, sha256 ${source.pages_sha256}`);
   }
   saveManifest(manifest);
 }
