@@ -1,0 +1,99 @@
+{
+  "entry_id": "baba-yaga",
+  "verifier_prompt_version": "verify-v1",
+  "removed": [
+    {
+      "field": "/appearance/4",
+      "text": "She has a single eye in the middle of her forehead.",
+      "cites": [
+        "ralston1872:p.162"
+      ],
+      "reason": "ralston1872:p.162 (and pp.161, 163-164) gives no single eye in the forehead for the Baba Yaga. Two find searches (\"one eye\", \"single eye\", \"forehead\") turned up one-eyed beings only on pages that do not name her (ralston1873:p.179 \"a tall woman ... with only one eye\", unnamed; ralston1873:p.182 cannibals)."
+    },
+    {
+      "field": "/appearance/11",
+      "text": "When she chases fugitive heroes she does so as \"a black cloud\".",
+      "cites": [
+        "ralston1872:p.164"
+      ],
+      "reason": "Misplaced, belongs in behavior_habitat: chasing heroes \"as a black cloud\" is an action, not a physical description. The page also gives it inside the mythologists' storm reading (\"she seems to be the thunder-cloud\"), which the draft itself kept out as interpretation."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "/appearance/0",
+      "text": "She is generally represented under the form of a hideous old woman.",
+      "to_text": "She is generally represented under the form of an old woman.",
+      "from_cites": [
+        "ralston1872:p.161"
+      ],
+      "to_cites": [
+        "ralston1872:p.161"
+      ],
+      "reason": "Cut the evaluative word \"hideous\": appearance holds physical description only, with no style words. The rest is verbatim at ralston1872:p.161."
+    }
+  ],
+  "retagged": [],
+  "flagged": [
+    {
+      "field": "/variants/0/behavior_habitat/2",
+      "text": "The White-Russians affirm that Death gives the dead to the Baba Yaga, with whom Death often goes prowling about.",
+      "reason": "ralston1872:p.163 quotes \"Death gives the dead to the Baba Yaga, with whom she often goes prowling about\". The referent of \"she\" is ambiguous (Death or the Baba Yaga); the draft reads it as Death, which the following sentence about feminine Death makes plausible but does not settle."
+    },
+    {
+      "field": "/names/primary/native/0",
+      "text": "баба-яга (people: Russians)",
+      "reason": "The form is printed at afanasyev1869:p.587, but the page speaks of \"the Slavic tribe\" generally and does not say Russians; the people is fixed only by the work's Russian context."
+    },
+    {
+      "field": "/peoples_regions/1",
+      "text": "Russians, Voroneje Government (source of one tale)",
+      "reason": "ralston1873:p.139 n.1 reads \"Vcroneje Government\" in the OCR; \"Voroneje\" is a reading of an evident OCR error, not the printed form."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "The verified entry names four peoples: Russians, Belarusians (\"White-Russians\"), Slovaks and Serbs (\"Servian\").",
+      "cites": [
+        "ralston1872:p.161",
+        "ralston1872:p.162",
+        "ralston1872:p.164"
+      ]
+    },
+    {
+      "text": "Two authors attest her: Ralston (two books, counted as one source) and Afanasyev.",
+      "cites": [
+        "ralston1872:p.161",
+        "afanasyev1869:p.587"
+      ]
+    },
+    {
+      "text": "Ralston is not wholly independent of Afanasyev: he quotes Afanasyev for the White-Russian Death passage, the etymology and the Voroneje tale.",
+      "cites": [
+        "ralston1872:p.163",
+        "ralston1873:p.137",
+        "ralston1873:p.139"
+      ]
+    },
+    {
+      "text": "Afanasyev independently gives the hut, the iron mortar, the White-Russian fiery mortar and the child-stealing.",
+      "cites": [
+        "afanasyev1869:p.587"
+      ]
+    },
+    {
+      "text": "Ralston's general description and the Serbian \"Iron Tooth\" carry no citation to Afanasyev on the pages opened.",
+      "cites": [
+        "ralston1872:p.161",
+        "ralston1872:p.164"
+      ]
+    },
+    {
+      "text": "The core tale she appears in is collected folklore: a tale recorded from the Voroneje Government.",
+      "cites": [
+        "ralston1873:p.139"
+      ]
+    }
+  ]
+}

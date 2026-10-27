@@ -9,198 +9,293 @@
           "script": "Cyrl",
           "text": "баба-яга",
           "people": "Russians",
-          "cites": ["afanasyev1869:p.587"]
+          "cites": [
+            "afanasyev1869:p.587"
+          ]
         }
       ]
     },
     "variants": [
       {
         "romanized": "Yaga Baba",
-        "peoples": ["Russians"],
+        "peoples": [
+          "Russians"
+        ],
         "native": [
           {
             "script": "Cyrl",
             "text": "яга-баба",
             "people": "Russians",
-            "cites": ["afanasyev1869:p.588"]
+            "cites": [
+              "afanasyev1869:p.588"
+            ]
           }
         ],
-        "cites": ["ralston1872:p.161"]
+        "cites": [
+          "ralston1872:p.161"
+        ]
       },
       {
         "romanized": "Bony-Shanks",
-        "peoples": ["Russians"],
-        "cites": ["ralston1873:p.139"]
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1873:p.139"
+        ]
       },
       {
         "romanized": "Iron Tooth",
-        "peoples": ["Serbs"],
-        "cites": ["ralston1872:p.164"]
+        "peoples": [
+          "Serbs"
+        ],
+        "cites": [
+          "ralston1872:p.164"
+        ]
       }
     ],
     "meaning": [
       {
         "text": "Baba stands for \"woman\"; the meaning of the word Yaga is uncertain.",
-        "cites": ["ralston1872:p.161"]
+        "cites": [
+          "ralston1872:p.161"
+        ]
       },
       {
         "text": "Afanasyev holds that the word yaga answers to the Sanskrit ahi, \"snake\".",
-        "cites": ["afanasyev1869:p.588", "ralston1873:p.137"]
+        "cites": [
+          "afanasyev1869:p.588",
+          "ralston1873:p.137"
+        ]
       },
       {
         "text": "Shchepkin held that Yaga means properly noisy or scolding, connected with a root meaning to brawl or scold, and that common people call a quarrelsome, scolding old woman a Yaga Baba.",
-        "cites": ["ralston1873:p.137"]
+        "cites": [
+          "ralston1873:p.137"
+        ]
       }
     ]
   },
   "peoples_regions": [
     {
       "people": "Russians",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "people": "Russians",
       "region": "Voroneje Government (source of one tale)",
-      "cites": ["ralston1873:p.139"]
+      "cites": [
+        "ralston1873:p.139"
+      ]
     },
     {
       "people": "Belarusians",
       "region": "\"White-Russians\"",
-      "cites": ["ralston1872:p.162"]
+      "cites": [
+        "ralston1872:p.162"
+      ]
     },
     {
       "people": "Slovaks",
-      "cites": ["ralston1872:p.162"]
+      "cites": [
+        "ralston1872:p.162"
+      ]
     },
     {
       "people": "Serbs",
       "region": "\"Servian\"",
-      "cites": ["ralston1872:p.164"]
+      "cites": [
+        "ralston1872:p.164"
+      ]
     }
   ],
   "family": "monster",
   "appearance": [
     {
       "text": "She is generally represented under the form of a hideous old woman.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "She is very tall in stature.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "She is very bony of limb.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "Her appearance is that of a gaunt hag.",
-      "cites": ["ralston1873:p.138"]
+      "cites": [
+        "ralston1873:p.138"
+      ]
+    },
+    {
+      "text": "She has a single eye in the middle of her forehead.",
+      "cites": [
+        "ralston1872:p.162"
+      ]
     },
     {
       "text": "She has an excessively long nose.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "Her nose is sometimes described as being of iron.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "She has dishevelled hair.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "She has long pendant breasts, sometimes described as being of iron.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "She has strong sharp teeth, sometimes described as being of iron.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "As she lies in her hut she often stretches across from one corner to the other, and her nose goes right through the ceiling.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "When she chases fugitive heroes she does so as \"a black cloud\".",
-      "cites": ["ralston1872:p.164"]
+      "cites": [
+        "ralston1872:p.164"
+      ]
     }
   ],
   "scene": [
     {
       "text": "Her usual habitation is a cottage that stands \"on fowls' legs\", that is, on slender supports.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "The hut stands at the edge of a forest, and its entrance looks towards the forest.",
-      "cites": ["ralston1873:p.138"]
+      "cites": [
+        "ralston1873:p.138"
+      ]
     },
     {
       "text": "Sometimes she lives in a larger building, round which stands a fence made of the bones of the people she has eaten, tipped with their skulls.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "At that building the uprights of the gates are human legs, the bolts are human arms, and instead of a lock there is a mouth with sharp teeth.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "Cornfields are specially haunted by the Baba Yaga.",
-      "cites": ["ralston1872:p.164"]
+      "cites": [
+        "ralston1872:p.164"
+      ]
     },
     {
       "text": "In some places, when the wind bows down the ears of corn, the peasants say that the Baba Yaga is running after children.",
-      "cites": ["ralston1872:pp.163-164"]
+      "cites": [
+        "ralston1872:pp.163-164"
+      ]
     }
   ],
   "variants": [
     {
       "id": "belarusians",
       "label": "White-Russian (Belarusian) tradition",
-      "peoples": ["Belarusians"],
+      "peoples": [
+        "Belarusians"
+      ],
       "appearance": [],
       "behavior_habitat": [
         {
           "text": "The White-Russians declare that she flies through the sky in a fiery mortar, which she urges on with a burning broom.",
-          "cites": ["ralston1872:p.162", "afanasyev1869:p.587"]
+          "cites": [
+            "ralston1872:p.162",
+            "afanasyev1869:p.587"
+          ]
         },
         {
           "text": "During her flight the winds howl, the earth groans, and the trees writhe and crack.",
-          "cites": ["ralston1872:p.162", "afanasyev1869:p.587"]
+          "cites": [
+            "ralston1872:p.162",
+            "afanasyev1869:p.587"
+          ]
         },
         {
           "text": "The White-Russians affirm that Death gives the dead to the Baba Yaga, with whom Death often goes prowling about.",
-          "cites": ["ralston1872:p.163"]
+          "cites": [
+            "ralston1872:p.163"
+          ]
         },
         {
           "text": "The White-Russians affirm that the Baba Yaga and her subordinate witches feed on the souls of people, and by that means become as light as spirits.",
-          "cites": ["ralston1872:p.163"]
+          "cites": [
+            "ralston1872:p.163"
+          ]
         }
       ]
     },
     {
       "id": "serbs",
       "label": "Serbian (\"Servian\") Baba Yaga, the \"Iron Tooth\"",
-      "peoples": ["Serbs"],
+      "peoples": [
+        "Serbs"
+      ],
       "appearance": [],
       "behavior_habitat": [
         {
           "text": "The Servian Baba Yaga carries about live coals in a pitcher.",
-          "cites": ["ralston1872:p.164"]
+          "cites": [
+            "ralston1872:p.164"
+          ]
         },
         {
           "text": "The Servian Baba Yaga burns the distaffs of lazy spinners.",
-          "cites": ["ralston1872:p.164"]
+          "cites": [
+            "ralston1872:p.164"
+          ]
         }
       ]
     },
     {
       "id": "slovaks",
       "label": "Slovak tale",
-      "peoples": ["Slovaks"],
+      "peoples": [
+        "Slovaks"
+      ],
       "appearance": [],
       "behavior_habitat": [
         {
           "text": "In a Slovak tale the sons of a Baba Yaga are described as \"baneful snakes\".",
-          "cites": ["ralston1872:p.162"]
+          "cites": [
+            "ralston1872:p.162"
+          ]
         }
       ]
     }
@@ -208,107 +303,158 @@
   "behavior_habitat": [
     {
       "text": "When she goes abroad she rides in an iron mortar, which she propels with the pestle.",
-      "cites": ["ralston1872:pp.161-162"]
+      "cites": [
+        "ralston1872:pp.161-162"
+      ]
     },
     {
       "text": "As she goes she sweeps away the traces of her passage with a broom.",
-      "cites": ["ralston1872:p.162"]
+      "cites": [
+        "ralston1872:p.162"
+      ]
     },
     {
       "text": "She flies through the air and rides to the witches' sabbaths in an iron mortar.",
-      "cites": ["afanasyev1869:p.587"]
+      "cites": [
+        "afanasyev1869:p.587"
+      ]
     },
     {
       "text": "According to some stories the Sun, the Day and the Night are her servants.",
-      "cites": ["ralston1872:p.162"]
+      "cites": [
+        "ralston1872:p.162"
+      ]
     },
     {
       "text": "According to some stories trunkless hands wait upon her and the elements fulfil her behests.",
-      "cites": ["ralston1872:p.162"]
+      "cites": [
+        "ralston1872:p.162"
+      ]
     },
     {
       "text": "She possesses a magic cudgel, a single wave of which turns any living creature into stone.",
-      "cites": ["ralston1872:p.162"]
+      "cites": [
+        "ralston1872:p.162"
+      ]
     },
     {
       "text": "She can avail herself of fire-breathing horses, seven-leagued boots, self-playing gusli, a self-cutting sword and a self-flying carpet.",
-      "cites": ["ralston1872:p.162"]
+      "cites": [
+        "ralston1872:p.162"
+      ]
     },
     {
       "text": "She cooks and eats her victims, often stealing children for her table and often belated travellers.",
-      "cites": ["ralston1872:p.162"]
+      "cites": [
+        "ralston1872:p.162"
+      ]
     },
     {
       "text": "She generally kills people in order to eat them.",
-      "cites": ["ralston1873:p.147"]
+      "cites": [
+        "ralston1873:p.147"
+      ]
     },
     {
       "text": "In one story she offers a human arm, by way of a meal, to a girl who visits her.",
-      "cites": ["ralston1873:p.147"]
+      "cites": [
+        "ralston1873:p.147"
+      ]
     },
     {
       "text": "It is also said that she steals children, lifts them into the air and throws them down dead onto the roof of the house.",
-      "cites": ["afanasyev1869:p.587"]
+      "cites": [
+        "afanasyev1869:p.587"
+      ]
     },
     {
       "text": "In some places the peasants say that when she runs after children she means to blind them or pound them in an iron churn.",
-      "cites": ["ralston1872:pp.163-164"]
+      "cites": [
+        "ralston1872:pp.163-164"
+      ]
     },
     {
       "text": "She is supposed to love to suck the white breasts of beautiful women.",
-      "cites": ["ralston1872:pp.162-163"]
+      "cites": [
+        "ralston1872:pp.162-163"
+      ]
     },
     {
       "text": "Like the Snake, she keeps guard over and knows the use of the founts of Living Water, which cures wounds and restores the dead to life.",
-      "cites": ["ralston1872:p.163"]
+      "cites": [
+        "ralston1872:p.163"
+      ]
     },
     {
       "text": "As a general rule she is described as utterly malevolent and always hungering after human flesh.",
-      "cites": ["ralston1872:p.163"]
+      "cites": [
+        "ralston1872:p.163"
+      ]
     },
     {
       "text": "According to some traditions she even feeds on the souls of the dead.",
-      "cites": ["ralston1872:p.163"]
+      "cites": [
+        "ralston1872:p.163"
+      ]
     },
     {
       "text": "Sometimes three Baba Yagas, usually three sisters, appear in a story; they are not of an unkindly nature and assist the hero with good advice and magic presents.",
-      "cites": ["ralston1872:p.163"]
+      "cites": [
+        "ralston1872:p.163"
+      ]
     },
     {
       "text": "She is frequently represented as spinning.",
-      "cites": ["ralston1872:p.164"]
+      "cites": [
+        "ralston1872:p.164"
+      ]
     },
     {
       "text": "In different versions of the same tale the Baba Yaga and the Snake often play the same part, one narrator using one name and another the other.",
-      "cites": ["ralston1872:p.162", "ralston1873:p.138"]
+      "cites": [
+        "ralston1872:p.162",
+        "ralston1873:p.138"
+      ]
     },
     {
       "text": "In one tale she sits weaving in her hut, and orders her servant-maid to heat the bath and wash her visiting niece because she wants to breakfast off her.",
-      "cites": ["ralston1873:pp.139-140"]
+      "cites": [
+        "ralston1873:pp.139-140"
+      ]
     },
     {
       "text": "In the same tale she pursues the fleeing girl in her mortar, has her oxen drink up a river in her way, and tries to gnaw through a forest.",
-      "cites": ["ralston1873:p.141"]
+      "cites": [
+        "ralston1873:p.141"
+      ]
     }
   ],
   "dealing_with_it": [
     {
       "text": "When her hut is adjured in the right words it turns round, so that its back is towards the forest and its front towards the person addressing it.",
-      "cites": ["ralston1872:p.161"]
+      "cites": [
+        "ralston1872:p.161"
+      ]
     },
     {
       "text": "In one tale a girl gets past the Baba Yaga's guardians by giving them what the Baba Yaga never gave: a ribbon for the birch-tree, oil for the door hinges, rolls for the dogs, bacon for the cat and a handkerchief for the servant-maid.",
-      "cites": ["ralston1873:pp.139-141"]
+      "cites": [
+        "ralston1873:pp.139-141"
+      ]
     },
     {
       "text": "In the same tale the girl escapes by throwing down a towel, which becomes a wide river, and then a comb, which becomes a dense forest that the Baba Yaga cannot gnaw through.",
-      "cites": ["ralston1873:pp.140-141"]
+      "cites": [
+        "ralston1873:pp.140-141"
+      ]
     }
   ],
   "origin": [
     {
       "text": "Ralston suggests the three kindly Baba Yaga sisters seem to be connected with the \"Prophetesses\" or \"Wise Women\" honoured in heathen times, who became degraded into vulgar witches under the influence of Christianity.",
-      "cites": ["ralston1872:p.163"]
+      "cites": [
+        "ralston1872:p.163"
+      ]
     }
   ],
   "related": [],
