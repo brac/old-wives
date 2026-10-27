@@ -1,0 +1,98 @@
+{
+  "entry_id": "rusalka",
+  "verifier_prompt_version": "verify-v2",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/variants/0/appearance/4",
+      "text": "Carries an iron hook with which it tries to seize passers-by.",
+      "to_text": "Has an iron hook.",
+      "from_cites": [
+        "ralston1872:p.146"
+      ],
+      "to_cites": [
+        "ralston1872:p.146"
+      ],
+      "reason": "Trying to seize passers-by is behaviour, not physical description, and is misplaced in appearance (belongs in behavior_habitat); 'carries' narrowed to the page's plain 'with ... an iron hook'."
+    }
+  ],
+  "retagged": [
+    {
+      "field": "/scene/2",
+      "text": "They sit on the mill-wheel and turn round with it amid the splash of the stream.",
+      "from_cites": [
+        "ralston1872:p.140",
+        "machal1918:p.255"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.123",
+        "ralston1872:p.140"
+      ],
+      "reason": "Machal p.255 has them sit on the mill-wheel splashing each other but not turn round with it; Afanasyev p.123 has them sit on the mill-wheel, turn with it and admire the spray, and Ralston p.140 has them cling to it and turn round amid the splash."
+    },
+    {
+      "field": "/dealing_with_it/1",
+      "text": "In Little-Russia shifts, rags and skeins of thread are hung on oaks and other trees before Whitsuntide as presents to the Rusalkas.",
+      "from_cites": [
+        "ralston1872:p.141",
+        "machal1918:p.254"
+      ],
+      "to_cites": [
+        "ralston1872:p.141"
+      ],
+      "reason": "Machal p.254 says women hang linen strips on branches but does not place it in Little-Russia; Ralston p.141 supports the clause as worded."
+    }
+  ],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/variants/2",
+      "text": "loskotalka",
+      "reason": "Afanasyev p.125 gives the name only for the Kharkov Government, in an OCR-split instrumental form ('лоско талкою'); the Ukrainians attribution rests on the preceding sentence about the Little Russians, not on a direct statement."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Ralston records the Rusalkas for Russia and, by region, for Little-Russia, the Ukraine and White-Russia.",
+      "cites": [
+        "ralston1872:p.141",
+        "ralston1872:p.143"
+      ]
+    },
+    {
+      "text": "Machal says belief in the Rusalky is most widely spread among the Russians.",
+      "cites": [
+        "machal1918:p.254"
+      ]
+    },
+    {
+      "text": "Afanasyev records rusalki 'among us and the Czechs' and says peasants people rivers, springs, lakes and seas with them.",
+      "cites": [
+        "afanasyev1869:p.122"
+      ]
+    },
+    {
+      "text": "Ralston's Rusalka account cites Afanasyev in footnotes for the tickling etymology and the Rusalka-week grave offering, so those passages are not independent of him; his other Rusalka passages carry no such citation and count as independent.",
+      "cites": [
+        "ralston1872:p.140",
+        "ralston1872:p.145"
+      ]
+    },
+    {
+      "text": "Machal's Rusalky pages cite no source, so he is counted as a third author, although his mill-wheel 'Kuku' detail matches Afanasyev's wording closely.",
+      "cites": [
+        "machal1918:p.255",
+        "afanasyev1869:p.123"
+      ]
+    },
+    {
+      "text": "Three authors (Afanasyev, Ralston, Machal) and four peoples (Russians, Ukrainians, Belarusians, Czechs) support the verified entry; the Czech row rests on one line of Afanasyev.",
+      "cites": [
+        "afanasyev1869:p.122",
+        "ralston1872:p.141",
+        "machal1918:p.254"
+      ]
+    }
+  ]
+}
