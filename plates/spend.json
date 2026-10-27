@@ -1,6 +1,6 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 1.489,
+  "total_usd": 2.289,
   "rows": [
     {
       "date": "2026-10-27T16:17:19.854Z",
@@ -375,6 +375,226 @@
       "status": "done",
       "request_id": "01a17e66-328d-7de3-9bfd-143a4ab05114",
       "file": "plates\\iter1\\out\\baba-yaga\\s2\\baba-yaga-qwen-s2.full.png"
+    },
+    {
+      "date": "2026-10-27T17:37:36.905Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 11,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e70-661f-72f2-b7d1-9d5b5d93b33c",
+      "file": "plates\\cand\\out\\zmey-gorynych\\s11\\zmey-gorynych-ralston-winged-serpent-qwen-s11.full.png"
+    },
+    {
+      "date": "2026-10-27T17:38:00.782Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 12,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e70-c326-70b3-b679-b887afc647db",
+      "file": "plates\\cand\\out\\zmey-gorynych\\s12\\zmey-gorynych-ralston-winged-serpent-qwen-s12.full.png"
+    },
+    {
+      "date": "2026-10-27T17:38:24.669Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 13,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e71-2072-7a91-a347-82a51fc4ed08",
+      "file": "plates\\cand\\out\\zmey-gorynych\\s13\\zmey-gorynych-ralston-winged-serpent-qwen-s13.full.png"
+    },
+    {
+      "date": "2026-10-27T17:38:49.021Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 14,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e71-7f8e-7221-89e1-0fbf70828e07",
+      "file": "plates\\cand\\out\\zmey-gorynych\\s14\\zmey-gorynych-ralston-winged-serpent-qwen-s14.full.png"
+    },
+    {
+      "date": "2026-10-27T17:39:13.208Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 11,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e71-de0d-7632-88b9-679872b8b994",
+      "file": "plates\\cand\\out\\leshy\\s11\\leshy-ralston-own-shape-qwen-s11.full.png"
+    },
+    {
+      "date": "2026-10-27T17:39:37.267Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 12,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e72-3c0a-7d43-8cc2-bd7326742a05",
+      "file": "plates\\cand\\out\\leshy\\s12\\leshy-ralston-own-shape-qwen-s12.full.png"
+    },
+    {
+      "date": "2026-10-27T17:40:04.564Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 11,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e72-a6a9-74a1-ad6b-31e5acef8217",
+      "file": "plates\\cand\\out\\poludnitsa\\s11\\poludnitsa-polish-qwen-s11.full.png"
+    },
+    {
+      "date": "2026-10-27T17:40:28.621Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 12,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e73-04a3-7de0-b807-0978218e7b22",
+      "file": "plates\\cand\\out\\poludnitsa\\s12\\poludnitsa-polish-qwen-s12.full.png"
+    },
+    {
+      "date": "2026-10-27T17:40:52.479Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 11,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e73-61db-7513-a69a-0c2a42bed18f",
+      "file": "plates\\cand\\out\\bannik\\s11\\bannik-qwen-s11.full.png"
+    },
+    {
+      "date": "2026-10-27T17:41:15.306Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 12,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e73-bb03-7312-8e63-4fb5d588831c",
+      "file": "plates\\cand\\out\\bannik\\s12\\bannik-qwen-s12.full.png"
+    },
+    {
+      "date": "2026-10-27T17:41:40.094Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "drekavac",
+      "seed": 11,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e74-1bd5-79c2-8e1f-544b5002dcb2",
+      "file": "plates\\cand\\out\\drekavac\\s11\\drekavac-qwen-s11.full.png"
+    },
+    {
+      "date": "2026-10-27T17:42:06.426Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "drekavac",
+      "seed": 12,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e74-82af-7c60-8476-47d103f3f817",
+      "file": "plates\\cand\\out\\drekavac\\s12\\drekavac-qwen-s12.full.png"
+    },
+    {
+      "date": "2026-10-27T17:42:36.109Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "domovoi",
+      "seed": 11,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e74-f6a3-7413-b6d5-3a43e8d329f7",
+      "file": "plates\\cand\\out\\domovoi\\s11\\domovoi-vyatka-little-old-man-qwen-s11.full.png"
+    },
+    {
+      "date": "2026-10-27T17:43:05.779Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "domovoi",
+      "seed": 12,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e75-6a89-7a93-86d1-5430d45fb429",
+      "file": "plates\\cand\\out\\domovoi\\s12\\domovoi-vyatka-little-old-man-qwen-s12.full.png"
+    },
+    {
+      "date": "2026-10-27T17:43:29.913Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 11,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e75-c8d0-70b0-9068-c5d5c62e7191",
+      "file": "plates\\cand\\out\\rusalka\\s11\\rusalka-full-grown-maiden-qwen-s11.full.png"
+    },
+    {
+      "date": "2026-10-27T17:43:53.254Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 12,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e76-23ff-7442-b44e-165fc932dff6",
+      "file": "plates\\cand\\out\\rusalka\\s12\\rusalka-full-grown-maiden-qwen-s12.full.png"
+    },
+    {
+      "date": "2026-10-27T17:44:16.849Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vampir",
+      "seed": 11,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e76-8031-7f13-a3a1-b9147e1bfa12",
+      "file": "plates\\cand\\out\\vampir\\s11\\vampir-exhumed-corpse-qwen-s11.full.png"
+    },
+    {
+      "date": "2026-10-27T17:44:40.709Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vampir",
+      "seed": 12,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e76-dd74-73e1-b59f-ecdf8ba81abe",
+      "file": "plates\\cand\\out\\vampir\\s12\\vampir-exhumed-corpse-qwen-s12.full.png"
+    },
+    {
+      "date": "2026-10-27T17:45:04.707Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vodyanoi",
+      "seed": 11,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e77-3b1e-7440-9a5e-3c6f67e52627",
+      "file": "plates\\cand\\out\\vodyanoi\\s11\\vodyanoi-machal-bald-reed-cap-qwen-s11.full.png"
+    },
+    {
+      "date": "2026-10-27T17:45:28.301Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vodyanoi",
+      "seed": 12,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e77-9741-7c70-87f1-2b9fbf3cfa5f",
+      "file": "plates\\cand\\out\\vodyanoi\\s12\\vodyanoi-machal-bald-reed-cap-qwen-s12.full.png"
     }
   ]
 }

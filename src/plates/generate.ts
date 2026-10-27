@@ -152,6 +152,7 @@ function printJob(job: Job, ledger: Ledger): void {
   for (const e of b.human_edits) console.log(`edit:      dropped "${e.text}" (${e.by}, ${e.date})`);
   console.log(`clauses:   ${b.clauses_used.length} used, ${b.clauses_dropped.length} dropped`);
   if (job.refs.length) console.log(`refs:      ${job.refs.join(", ")}`);
+  if (b.prompt_raw !== b.prompt) console.log(`raw:       ${b.prompt_raw}`);
   console.log(`prompt:    ${b.prompt}`);
   console.log(`negative:  ${b.negative || "(inline as Avoid:)"}`);
   console.log(`estimate:  $${job.estimate} (ledger $${ledger.total_usd}, cap $${SPEND_CAP_USD})`);
@@ -205,6 +206,7 @@ async function runLive(job: Job, ledger: Ledger): Promise<void> {
       guides: job.built.guides,
       paper: job.built.paper,
       prompt: job.built.prompt,
+      prompt_raw: job.built.prompt_raw,
       negative: job.built.negative,
       clauses_used: job.built.clauses_used,
       clauses_dropped: job.built.clauses_dropped,

@@ -93,7 +93,10 @@ export interface HumanEdit {
 export type Overrides = Record<string, { drop: HumanEdit[] }>;
 
 export interface PlatePrompt {
+  /** The prompt sent to the model: the clauses after sanitising, plus the tokens. */
   prompt: string;
+  /** The same prompt built from the raw clause text, before sanitising. */
+  prompt_raw: string;
   negative: string;
   /** Which entry field the main clauses came from. */
   field: "appearance" | "scene";
@@ -240,6 +243,93 @@ export function capClauses(clauses: RankedClause[], cap = CLAUSE_CAP): { used: R
   };
 }
 
+// --- Prompt sanitiser (2d-b) -------------------------------------------------------------
+// Qwen-Image letters quoted words and proper names into the plate. The sanitiser is applied
+// only to the clause text sent to the model; the entry is never changed, and the sidecar
+// keeps both the raw and the sent prompt.
+
+/** Every name form of the creature: primary romanised and native, every variant's forms. */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function nameForms(entry: any): string[] {
+  const n = entry?.names ?? {};
+  // The brief calls the native field `form`; the entries store it as `text`. Accept both.
+  const native = (list: unknown): string[] =>
+    Array.isArray(list) ? list.map((x: { text?: string; form?: string }) => x?.text ?? x?.form ?? "").filter(Boolean) : [];
+  const out = [
+    n.primary?.romanized,
+    ...native(n.primary?.native),
+    ...(Array.isArray(n.variants) ? n.variants : []).flatMap((v: { romanized?: string; native?: unknown }) => [v?.romanized, ...native(v?.native)]),
+  ].filter((s): s is string => typeof s === "string" && s.trim().length > 0);
+  // Longest first, so "Zmei Goruinuich" is replaced before "Goruinuich".
+  return [...new Set(out.map((s) => s.trim()))].sort((a, b) => b.length - a.length);
+}
+
+/** The neutral noun that stands in for the creature's names, chosen from `family`. */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function neutralNoun(entry: any): string {
+  const family = typeof entry?.family === "string" ? entry.family : entry?.family?.value;
+  return family === "monster" && entry?.id === "zmey-gorynych" ? "the serpent" : "the creature";
+}
+
+/** Quotation marks of every kind. ' and ’ count only when not between two letters. */
+const QUOTES = /["“”„‟«»‹›‚]|(?<![\p{L}\p{N}])['‘’]|['‘’](?![\p{L}\p{N}])/gu;
+
+const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const L = "[\\p{L}\\p{N}]";
+
+/** Phrases that only introduce a name, removed with the name so no stub is left. */
+const NAME_INTRO = [
+  "(?:who|which|that)\\s+(?:\\p{L}+\\s+){0,2}?(?:bears|bore|has|is\\s+called|is\\s+known\\s+as|is\\s+named|goes\\s+by)\\s+(?:the\\s+)?(?:patronymic|name|title|epithet|surname)?\\s*(?:of\\s+)?",
+  "(?:often\\s+|also\\s+|sometimes\\s+|usually\\s+|commonly\\s+)?(?:known\\s+as|called|named|styled)\\s+",
+];
+
+export function removeQuotes(text: string): string {
+  return text.replace(QUOTES, "");
+}
+
+export function removeParentheticals(text: string): string {
+  let out = text;
+  for (let prev = ""; prev !== out; ) {
+    prev = out;
+    out = out.replace(/\s*[([][^()[\]]*[)\]]/g, "");
+  }
+  return out;
+}
+
+export function replaceNames(text: string, names: string[], noun: string): string {
+  let out = text;
+  for (const name of names) {
+    const nm = `(?<!${L})${escapeRe(name)}(?!${L})`;
+    for (const intro of NAME_INTRO) {
+      // ", who sometimes bears the patronymic X," and "known as X": drop the whole phrase.
+      out = out.replace(new RegExp(`,\\s*${intro}${nm}\\s*,`, "giu"), "");
+      out = out.replace(new RegExp(`\\s*,?\\s*${intro}${nm}`, "giu"), "");
+    }
+    // An article right before the name is absorbed into the noun phrase.
+    out = out.replace(new RegExp(`(?<!${L})(?:(the|a|an)\\s+)?${nm}`, "giu"), (_m, article: string | undefined, offset: number, whole: string) => {
+      const before = whole.slice(0, offset);
+      const lead = article ?? "";
+      const capital = lead ? lead[0] === lead[0].toUpperCase() : /(^|[.!?]\s+)$/.test(before);
+      return capital ? noun[0].toUpperCase() + noun.slice(1) : noun;
+    });
+  }
+  return out;
+}
+
+function tidy(text: string): string {
+  return text
+    .replace(/\s+([,.;:!?])/g, "$1")
+    .replace(/([,;:])(?=[.!?])/g, "")
+    .replace(/,(\s*,)+/g, ",")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
+/** The text sent for one clause: no quotes, no parentheticals, no name of the creature. */
+export function sanitiseClause(text: string, names: string[], noun: string): string {
+  return tidy(replaceNames(removeParentheticals(removeQuotes(text)), names, noun));
+}
+
 export function buildPrompt(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   entry: any,
@@ -267,12 +357,17 @@ export function buildPrompt(
 
   const guides = opts.guides ?? DEFAULT_GUIDES;
   const paper = opts.paper ?? DEFAULT_PAPER;
-  const parts = used.map((c) => c.text.trim());
-  if (sel.behaviour) parts.push(PRESENCE_TOKEN);
-  parts.push(styleTokens({ guides, paper }));
-  if (opts.negativeInline) parts.push(`${AVOID_PREFIX} ${NEGATIVE_TOKENS}`);
+  const names = nameForms(entry);
+  const noun = neutralNoun(entry);
+  const tail: string[] = [];
+  if (sel.behaviour) tail.push(PRESENCE_TOKEN);
+  tail.push(styleTokens({ guides, paper }));
+  if (opts.negativeInline) tail.push(`${AVOID_PREFIX} ${NEGATIVE_TOKENS}`);
+  const raw = used.map((c) => c.text.trim());
+  const sent = raw.map((t) => sanitiseClause(t, names, noun)).filter(Boolean);
   return {
-    prompt: parts.join(" "),
+    prompt: [...sent, ...tail].join(" "),
+    prompt_raw: [...raw, ...tail].join(" "),
     negative: opts.negativeInline ? "" : NEGATIVE_TOKENS,
     field: sel.field,
     form: opts.form ?? null,

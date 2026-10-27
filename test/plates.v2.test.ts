@@ -10,6 +10,7 @@ import {
   STYLE_TOKENS,
   authorIndex,
   buildPrompt,
+  neutralNoun,
   type Overrides,
   type SelectOpts,
 } from "../src/plates/prompt.js";
@@ -41,6 +42,7 @@ describe.each(Object.entries(GATE))("v2 entry %s", (id, sel) => {
       const allowed = new Set(words(JSON.stringify(e)));
       const fixed = [STYLE_TOKENS, ...Object.values(GUIDES_TOKENS), ...Object.values(PAPER_TOKENS), NEGATIVE_TOKENS, AVOID_PREFIX];
       if (p.interpretive) fixed.push(PRESENCE_TOKEN);
+      fixed.push(neutralNoun(e)); // the sanitiser's stand-in for the creature's names
       for (const w of words(fixed.join(" "))) allowed.add(w);
       expect(words(p.prompt).filter((w) => !allowed.has(w))).toEqual([]);
       expect(p.clauses_used.length).toBeGreaterThan(0);
@@ -88,7 +90,8 @@ describe("v2 clause selection", () => {
       expect(p.behaviour_clause).not.toBeNull();
       expect(e.behavior_habitat.map((c: { text: string }) => c.text)).toContain(p.behaviour_clause);
       expect(p.clauses_used.at(-1)!.text).toBe(p.behaviour_clause);
-      expect(p.prompt).toContain(`${p.behaviour_clause} ${PRESENCE_TOKEN} ${STYLE_TOKENS}`);
+      expect(p.prompt_raw).toContain(`${p.behaviour_clause} ${PRESENCE_TOKEN} ${STYLE_TOKENS}`);
+      expect(p.prompt.endsWith(`. ${PRESENCE_TOKEN} ${STYLE_TOKENS}`)).toBe(true);
     }
     // With a populated appearance, the scene plate is opt-in.
     expect(buildPrompt(entry("drekavac"), authors).interpretive).toBe(false);
