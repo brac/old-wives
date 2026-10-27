@@ -1,0 +1,104 @@
+{
+  "entry_id": "leshy",
+  "verifier_prompt_version": "verify-v2",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/scene/4",
+      "text": "By night a forest-keeper might hear the wailing of a child, or groans as of someone dying, which lead to a foaming stream where none had been before.",
+      "to_text": "By night a forest-keeper might hear the wailing of a child, or groans as of someone dying; if he followed them he would probably fall into a foaming stream where none had been seen before.",
+      "from_cites": [
+        "ralston1872:p.158"
+      ],
+      "to_cites": [
+        "ralston1872:p.158"
+      ],
+      "reason": "Page gives the stream as what would probably happen if the keeper followed the noises ('If he followed them he would probably fall into a foaming stream'); the draft stated it as certain ('which lead to')."
+    },
+    {
+      "field": "/behavior_habitat/25",
+      "text": "By night he sleeps in a hut deep in the woods, and drives out a traveller who has taken it, sweeping over it as a whirlwind.",
+      "to_text": "By night he sleeps in a hut deep in the woods, and strives to turn out a traveller who has taken it, sweeping over it as a whirlwind.",
+      "from_cites": [
+        "ralston1872:p.155"
+      ],
+      "to_cites": [
+        "ralston1872:p.155"
+      ],
+      "reason": "Page says he 'strives hard to turn out the intruder'; the draft's 'drives out' states success the page does not."
+    },
+    {
+      "field": "/behavior_habitat/30",
+      "text": "With the first frosts, at the start of October, the лѣшіе fall through the earth and disappear for the winter, springing out again in spring.",
+      "to_text": "Usually, with the first frosts, at the start of October, the лѣшіе fall through the earth and disappear for the winter, springing out again in spring.",
+      "from_cites": [
+        "afanasyev1868:p.326"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.326"
+      ],
+      "reason": "Page hedges with 'обыкновенно' (usually); the draft dropped it."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/variants/6/native/0",
+      "text": "лисунъ",
+      "reason": "The page prints this form with OCR or line-break spacing as 'лису нъ'; read as лисунъ, but the exact printed form cannot be confirmed from the OCR text."
+    },
+    {
+      "field": "/names/variants/7/native/0",
+      "text": "полисунъ",
+      "reason": "The page prints '(по- ли су нъ)', split across a line break with OCR spacing; read as полисунъ, but the exact printed form cannot be confirmed from the OCR text."
+    },
+    {
+      "field": "/peoples_regions/6",
+      "text": "Ukrainians (Little-Russia)",
+      "reason": "Ralston names the region Little-Russia, not a people; recording it as Ukrainians is the draft's mapping (by analogy with Bohemia to Czechs), a translation choice the page neither confirms nor contradicts. The grade's second people rests on this row."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal records the silvan spirit Lésiy, Lésovik for the Russians, and names no source for it on these pages.",
+      "cites": [
+        "machal1918:p.261"
+      ]
+    },
+    {
+      "text": "Ralston records the Lyeshy among Russian peasants of the Olonetsk and Archangel Governments and of Perm, Vyatka and Vologda, citing no other author in these passages.",
+      "cites": [
+        "ralston1872:p.154",
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "text": "Ralston records the Lyeshy as the protector of the wolves in Little-Russia, recorded here as Ukrainians; this second people rests on that single Ralston passage.",
+      "cites": [
+        "ralston1872:p.154"
+      ]
+    },
+    {
+      "text": "Afanasyev records the лѣшій and its regional names from Russian provinces and districts, and the belief that they vanish underground for the winter.",
+      "cites": [
+        "afanasyev1868:p.326"
+      ]
+    },
+    {
+      "text": "Ralston's tale of the Leshy in Russian Folk-Tales cites Afanasief, so it is counted with Afanasyev and not as a separate source.",
+      "cites": [
+        "ralston1873:p.206"
+      ]
+    },
+    {
+      "text": "Machal, Ralston and Afanasyev are three independent authors, and the verified peoples are Russians and Ukrainians, so the grade is widely-attested.",
+      "cites": [
+        "machal1918:p.261",
+        "ralston1872:p.154",
+        "afanasyev1868:p.326"
+      ]
+    }
+  ]
+}
