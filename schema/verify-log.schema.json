@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://beasts.local/schema/verify-log.schema.json",
   "title": "Verify log",
-  "description": "Every clause the verify agent removed, downgraded, re-tagged or flagged in one entry, with its reason.",
+  "description": "Every item the verify agent removed, downgraded, re-tagged, re-formed or flagged in one entry, with its reason. `family` is an item too: a family the cited pages do not support is logged in `removed` (field `/family`, text its value), a re-cited one in `retagged`.",
   "type": "object",
   "required": [
     "entry_id",
@@ -10,6 +10,7 @@
     "removed",
     "downgraded",
     "retagged",
+    "reformed",
     "flagged",
     "grade",
     "grade_rationale"
@@ -51,6 +52,22 @@
       "type": "array",
       "items": { "$ref": "#/$defs/CiteChange" }
     },
+    "reformed": {
+      "description": "Appearance clauses moved to another form; null is the common set (no form). Like retagged, a reformed clause stays in the entry.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["field", "text", "from_form", "to_form", "reason"],
+        "properties": {
+          "field": { "$ref": "#/$defs/NonEmptyString" },
+          "text": { "$ref": "#/$defs/NonEmptyString" },
+          "from_form": { "$ref": "#/$defs/FormRef" },
+          "to_form": { "$ref": "#/$defs/FormRef" },
+          "reason": { "$ref": "#/$defs/NonEmptyString" }
+        },
+        "unevaluatedProperties": false
+      }
+    },
     "flagged": {
       "type": "array",
       "items": {
@@ -88,6 +105,9 @@
   "unevaluatedProperties": false,
   "$defs": {
     "NonEmptyString": { "type": "string", "minLength": 1 },
+    "FormRef": {
+      "anyOf": [{ "type": "null" }, { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }]
+    },
     "CiteTag": {
       "type": "string",
       "pattern": "^[a-z0-9]+:(p\\.[0-9ivxlcdm]+|pp\\.[0-9ivxlcdm]+-[0-9ivxlcdm]+|s\\.v\\..+)$"

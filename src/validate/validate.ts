@@ -160,7 +160,93 @@ function idIssue(obj: Record<string, unknown>, key: string, basename: string | u
   ];
 }
 
-/** Schema plus the semantic rules R-PD, R-CITE-SRC, R-CITE-RESOLVES, R-SOURCE-MANIFEST, R-ID and R-STAGE. */
+/** R-FAMILY: `unclassified` has no cites; every other family value has at least one. */
+function familyIssues(obj: Record<string, unknown>): Issue[] {
+  const family = obj.family;
+  if (!isRecord(family) || typeof family.value !== "string" || !Array.isArray(family.cites)) return [];
+  const unclassified = family.value === "unclassified";
+  if (unclassified && family.cites.length > 0) {
+    return [{ rule: "R-FAMILY", path: "/family/cites", message: 'family "unclassified" must have no cites', severity: "error" }];
+  }
+  if (!unclassified && family.cites.length === 0) {
+    return [
+      {
+        rule: "R-FAMILY",
+        path: "/family/cites",
+        message: `family "${family.value}" needs at least one cite; use "unclassified" when no page supports a family`,
+        severity: "error",
+      },
+    ];
+  }
+  return [];
+}
+
+/**
+ * R-FORM-DUP: `appearance_forms` ids are unique. R-FORM-REF: every appearance clause's `form`
+ * names an `appearance_forms` id. R-FORM-EMPTY: every form holds at least one appearance clause.
+ */
+function formIssues(obj: Record<string, unknown>): Issue[] {
+  const issues: Issue[] = [];
+  const forms = Array.isArray(obj.appearance_forms) ? obj.appearance_forms : [];
+  const clauses = Array.isArray(obj.appearance) ? obj.appearance : [];
+  const ids = new Set<string>();
+  forms.forEach((f, i) => {
+    if (!isRecord(f) || typeof f.id !== "string") return;
+    if (ids.has(f.id)) {
+      issues.push({
+        rule: "R-FORM-DUP",
+        path: pointer(["appearance_forms", i, "id"]),
+        message: `appearance form id "${f.id}" is listed twice`,
+        severity: "error",
+      });
+    }
+    ids.add(f.id);
+  });
+  const used = new Set<string>();
+  clauses.forEach((c, i) => {
+    if (!isRecord(c) || typeof c.form !== "string") return;
+    used.add(c.form);
+    if (!ids.has(c.form)) {
+      issues.push({
+        rule: "R-FORM-REF",
+        path: pointer(["appearance", i, "form"]),
+        message: `form "${c.form}" is not an id in appearance_forms`,
+        severity: "error",
+      });
+    }
+  });
+  forms.forEach((f, i) => {
+    if (!isRecord(f) || typeof f.id !== "string" || used.has(f.id)) return;
+    issues.push({
+      rule: "R-FORM-EMPTY",
+      path: pointer(["appearance_forms", i]),
+      message: `appearance form "${f.id}" has no appearance clause; drop the form`,
+      severity: "error",
+    });
+  });
+  return issues;
+}
+
+/** R-REFORMED: a `reformed` row moves a clause between two different forms. */
+function reformedIssues(obj: Record<string, unknown>): Issue[] {
+  const rows = Array.isArray(obj.reformed) ? obj.reformed : [];
+  const issues: Issue[] = [];
+  rows.forEach((r, i) => {
+    if (!isRecord(r) || !("from_form" in r) || !("to_form" in r) || r.from_form !== r.to_form) return;
+    issues.push({
+      rule: "R-REFORMED",
+      path: pointer(["reformed", i]),
+      message: `from_form and to_form are both ${JSON.stringify(r.from_form)}; a re-form must change the form`,
+      severity: "error",
+    });
+  });
+  return issues;
+}
+
+/**
+ * Schema plus the semantic rules R-PD, R-CITE-SRC, R-CITE-RESOLVES, R-SOURCE-MANIFEST, R-FAMILY,
+ * R-FORM-DUP, R-FORM-REF, R-FORM-EMPTY, R-ID and R-STAGE.
+ */
 export function validateEntry(obj: unknown, opts: EntryOptions): Issue[] {
   const issues = schemaIssues(validators().entry, obj);
   if (!isRecord(obj)) return issues;
@@ -229,6 +315,8 @@ export function validateEntry(obj: unknown, opts: EntryOptions): Issue[] {
     });
   }
 
+  issues.push(...familyIssues(obj), ...formIssues(obj));
+
   // R-ID
   issues.push(...idIssue(obj, "id", opts.basename));
 
@@ -253,7 +341,7 @@ export function validateEntry(obj: unknown, opts: EntryOptions): Issue[] {
 }
 
 /**
- * Schema plus R-ID (`entry_id` equals the file basename) and R-CITE-RESOLVES on the cites the
+ * Schema plus R-ID (`entry_id` equals the file basename), R-REFORMED and R-CITE-RESOLVES on the cites the
  * verify agent asserts (`to_cites`, `grade_rationale`). Removed clauses and `from_cites` record what
  * the draft said, which may be exactly why they were removed, so they are not resolved.
  */
@@ -264,6 +352,7 @@ export function validateLog(obj: unknown, opts: LogOptions = {}): Issue[] {
       ({ path }) => !path.startsWith("/removed/") && !/\/from_cites\//.test(path),
     );
     issues.push(...resolveIssues(asserted));
+    issues.push(...reformedIssues(obj));
     issues.push(...idIssue(obj, "entry_id", opts.basename));
   }
   return issues;

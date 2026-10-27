@@ -1,6 +1,6 @@
 {
   "id": "bad-family",
-  "schema_version": 1,
+  "schema_version": 2,
   "names": {
     "primary": {
       "romanized": "fixture",
@@ -44,7 +44,13 @@
       ]
     }
   ],
-  "family": "fae",
+  "family": {
+    "value": "fae",
+    "cites": [
+      "ralston1872:p.123"
+    ]
+  },
+  "appearance_forms": [],
   "appearance": [
     {
       "text": "Fixture clause.",

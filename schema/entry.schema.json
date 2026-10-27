@@ -9,6 +9,7 @@
     "names",
     "peoples_regions",
     "family",
+    "appearance_forms",
     "appearance",
     "scene",
     "variants",
@@ -23,7 +24,7 @@
   ],
   "properties": {
     "id": { "$ref": "#/$defs/KebabId" },
-    "schema_version": { "const": 1 },
+    "schema_version": { "const": 2 },
     "names": {
       "type": "object",
       "required": ["primary", "variants", "meaning"],
@@ -77,18 +78,47 @@
       }
     },
     "family": {
-      "enum": [
-        "household",
-        "water",
-        "forest",
-        "field",
-        "undead",
-        "disease-and-fate",
-        "monster",
-        "other"
-      ]
+      "description": "A family the cited pages support, or `unclassified` with no cites (rule R-FAMILY).",
+      "type": "object",
+      "required": ["value", "cites"],
+      "properties": {
+        "value": {
+          "enum": [
+            "household",
+            "water",
+            "forest",
+            "field",
+            "undead",
+            "disease-and-fate",
+            "monster",
+            "other",
+            "unclassified"
+          ]
+        },
+        "cites": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/CiteTag" }
+        }
+      },
+      "unevaluatedProperties": false
     },
-    "appearance": { "$ref": "#/$defs/Clauses" },
+    "appearance_forms": {
+      "description": "Forms for appearance clauses that conflict across sources. A clause without `form` describes every form; clauses sharing a `form` make one figure (rules R-FORM-*).",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label"],
+        "properties": {
+          "id": { "$ref": "#/$defs/KebabId" },
+          "label": { "$ref": "#/$defs/NonEmptyString" }
+        },
+        "unevaluatedProperties": false
+      }
+    },
+    "appearance": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/AppearanceClause" }
+    },
     "scene": { "$ref": "#/$defs/Clauses" },
     "variants": {
       "type": "array",
@@ -215,6 +245,17 @@
     "Clauses": {
       "type": "array",
       "items": { "$ref": "#/$defs/Clause" }
+    },
+    "AppearanceClause": {
+      "description": "A top-level appearance clause, with an optional `form`: the id of an `appearance_forms` row.",
+      "type": "object",
+      "required": ["text", "cites"],
+      "properties": {
+        "text": { "$ref": "#/$defs/NonEmptyString" },
+        "cites": { "$ref": "#/$defs/Cites" },
+        "form": { "$ref": "#/$defs/KebabId" }
+      },
+      "unevaluatedProperties": false
     },
     "People": {
       "description": "A specific people. The umbrella terms Slavic, Slav, Slavs and Slavonic are rejected, case-insensitively.",

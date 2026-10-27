@@ -3,6 +3,9 @@
 // runs the reconciliation check: for each field bucket, the draft's checkable items equal the
 // entry's checkable items plus the log's `removed` items. Notes the verifier added (entry notes
 // whose text is in neither the draft's notes nor a downgrade's `to_text`) are not counted.
+// `family` is one checkable item unless it is `unclassified`. Re-formed appearance clauses are
+// checked on both sides: every `reformed` row must match a form change between draft and entry,
+// and every form change must have a `reformed` row.
 // Exits 1 if any verified creature fails to reconcile, naming it. A creature with no entry or
 // no log yet is reported as pending and is not reconciled.
 import { existsSync, readdirSync, readFileSync } from "node:fs";
@@ -22,6 +25,7 @@ export const BUCKETS = [
   "name_variants",
   "meaning",
   "peoples_regions",
+  "family",
   "appearance",
   "scene",
   "behavior_habitat",
@@ -71,6 +75,8 @@ export function checkableItems(doc: Json): Item[] {
   });
   arr(names.meaning).forEach((_, i) => push(`/names/meaning/${i}`));
   arr(doc.peoples_regions).forEach((_, i) => push(`/peoples_regions/${i}`));
+  const family = doc.family;
+  if (family && family.value !== "unclassified" && arr(family.cites).length > 0) push("/family");
   for (const f of CLAUSE_FIELDS) arr(doc[f]).forEach((_, i) => push(`/${f}/${i}`));
   arr(doc.variants).forEach((v, i) => {
     for (const f of VARIANT_CLAUSE_FIELDS) arr(v[f]).forEach((_, j) => push(`/variants/${i}/${f}/${j}`));
@@ -115,14 +121,75 @@ export interface CreatureStats {
   canaryKept?: boolean;
   downgraded?: number;
   retagged?: number;
+  reformed?: number;
   flagged?: number;
   grade?: string;
   appearance?: number;
+  /** Appearance clauses with no `form`, which describe every form. */
+  commonAppearance?: number;
+  /** The entry's appearance forms, each with its clause count. */
+  forms?: FormCount[];
   sceneUsed?: boolean;
   variants?: number;
   nameVariants?: number;
   peoples?: number;
   reconcile?: Reconcile;
+}
+
+export interface FormCount {
+  id: string;
+  label: string;
+  clauses: number;
+}
+
+/** The entry's appearance forms with the number of clauses in each. */
+export function formCounts(doc: Json): FormCount[] {
+  return arr(doc.appearance_forms).map((f) => ({
+    id: f.id,
+    label: f.label,
+    clauses: arr(doc.appearance).filter((c) => c.form === f.id).length,
+  }));
+}
+
+/**
+ * Re-forms, checked on both sides. Each draft appearance clause is matched to the entry clause
+ * with its text (or its downgraded `to_text`); removed clauses have no match and are skipped.
+ * A form change with no `reformed` row, or a `reformed` row with no such change, is a mismatch.
+ */
+export function reformMismatches(draft: Json, entry: Json, log: Json): string[] {
+  const out: string[] = [];
+  const formOf = (c: Json): string | null => (typeof c?.form === "string" ? c.form : null);
+  const draftClauses = arr(draft.appearance);
+  const entryClauses = arr(entry.appearance);
+  const rows = new Map<string, Json>();
+  for (const r of arr(log.reformed)) {
+    if (rows.has(r.field)) out.push(`reformed: ${r.field} is logged twice`);
+    rows.set(r.field, r);
+  }
+  draftClauses.forEach((c, i) => {
+    const field = `/appearance/${i}`;
+    const texts = new Set([c.text, ...arr(log.downgraded).filter((d) => d.field === field).map((d) => d.to_text)]);
+    const match = entryClauses.find((e) => texts.has(e.text));
+    const row = rows.get(field);
+    rows.delete(field);
+    if (!match) {
+      if (row) out.push(`reformed: ${field} is logged but not in the entry`);
+      return;
+    }
+    const from = formOf(c);
+    const to = formOf(match);
+    if (from === to) {
+      if (row) out.push(`reformed: ${field} is logged but its form did not change (${String(from)})`);
+    } else if (!row) {
+      out.push(`reformed: ${field} moved from form ${String(from)} to ${String(to)} with no reformed row`);
+    } else if (row.from_form !== from || row.to_form !== to) {
+      out.push(
+        `reformed: ${field} logged ${String(row.from_form)} -> ${String(row.to_form)}, entry shows ${String(from)} -> ${String(to)}`,
+      );
+    }
+  });
+  for (const field of rows.keys()) out.push(`reformed: ${field} is not a draft appearance clause`);
+  return out;
 }
 
 function count(items: Item[]): Counts {
@@ -149,6 +216,7 @@ export function creatureStats(id: string, draft: Json, entry?: Json, log?: Json)
       mismatches.push(`${b}: draft ${draftCounts[b]} != verified ${verified[b]} + removed ${removedByBucket[b]}`);
     }
   }
+  mismatches.push(...reformMismatches(draft, entry, log));
 
   const canary = CANARIES[id];
   const canaryRemoved = canary ? arr(log.removed).filter((r) => r.text === canary).length : 0;
@@ -166,9 +234,12 @@ export function creatureStats(id: string, draft: Json, entry?: Json, log?: Json)
     canaryKept: canary ? entryText.includes(canary) : undefined,
     downgraded: arr(log.downgraded).length,
     retagged: arr(log.retagged).length,
+    reformed: arr(log.reformed).length,
     flagged: arr(log.flagged).length,
     grade: log.grade,
     appearance: arr(entry.appearance).length,
+    commonAppearance: arr(entry.appearance).filter((c) => typeof c.form !== "string").length,
+    forms: formCounts(entry),
     sceneUsed: arr(entry.appearance).length === 0 && arr(entry.scene).length > 0,
     variants: arr(entry.variants).length,
     nameVariants: arr(entry.names?.variants).length,
@@ -203,6 +274,7 @@ const SHORT: Record<Bucket, string> = {
   name_variants: "namevar",
   meaning: "meaning",
   peoples_regions: "peoples",
+  family: "family",
   appearance: "appear",
   scene: "scene",
   behavior_habitat: "behav",
@@ -229,19 +301,21 @@ export function render(all: CreatureStats[]): string {
     lines.push(row(["removed", ...BUCKETS.map((b) => s.removedByBucket![b]), total(s.removedByBucket!)], w));
     const canary = CANARIES[s.id] ? `, canary removed ${s.canaryRemoved}${s.canaryKept ? " (CANARY KEPT IN ENTRY)" : ""}` : "";
     lines.push(
-      `removed ${s.removed} (canaries excluded)${canary}; downgraded ${s.downgraded}; retagged ${s.retagged}; flagged ${s.flagged}; verifier-added cited notes ${s.addedNotes}`,
+      `removed ${s.removed} (canaries excluded)${canary}; downgraded ${s.downgraded}; retagged ${s.retagged}; reformed ${s.reformed}; flagged ${s.flagged}; verifier-added cited notes ${s.addedNotes}`,
     );
     lines.push(
       `grade ${s.grade}; appearance clauses ${s.appearance}; scene used ${s.sceneUsed ? "yes" : "no"}; variants ${s.variants}; name variants ${s.nameVariants}; peoples ${s.peoples}`,
     );
+    const forms = s.forms!.map((f) => `${f.id} (${f.clauses})`).join(", ");
+    lines.push(`forms ${s.forms!.length}${forms ? `: ${forms}` : ""}; common appearance clauses ${s.commonAppearance}`);
     lines.push(s.reconcile!.ok ? "reconcile: ok" : `reconcile: MISMATCH\n  ${s.reconcile!.mismatches.join("\n  ")}`);
   }
   const done = all.filter((s) => !s.pending);
-  const sum = (k: "removed" | "canaryRemoved" | "downgraded" | "retagged" | "flagged") =>
+  const sum = (k: "removed" | "canaryRemoved" | "downgraded" | "retagged" | "reformed" | "flagged") =>
     done.reduce((n, s) => n + (s[k] ?? 0), 0);
   lines.push("");
   lines.push(
-    `totals over ${done.length} verified: removed ${sum("removed")} (excl. ${sum("canaryRemoved")} canaries); downgraded ${sum("downgraded")}; retagged ${sum("retagged")}; flagged ${sum("flagged")}`,
+    `totals over ${done.length} verified: removed ${sum("removed")} (excl. ${sum("canaryRemoved")} canaries); downgraded ${sum("downgraded")}; retagged ${sum("retagged")}; reformed ${sum("reformed")}; flagged ${sum("flagged")}`,
   );
   const pending = all.filter((s) => s.pending).map((s) => s.id);
   if (pending.length > 0) lines.push(`pending: ${pending.join(", ")}`);

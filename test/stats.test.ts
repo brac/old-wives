@@ -80,3 +80,73 @@ describe("reconciliation", () => {
     expect(s.reconcile).toBeUndefined();
   });
 });
+
+describe("family", () => {
+  const withFamily = { ...draft, family: { value: "household", cites: ["ralston1872:p.123"] } };
+
+  test("a cited family is one checkable item; unclassified is none", () => {
+    expect(checkableItems(withFamily).map((i) => i.pointer)).toContain("/family");
+    expect(bucketOf("/family")).toBe("family");
+    const unclassified = { ...draft, family: { value: "unclassified", cites: [] } };
+    expect(checkableItems(unclassified).map((i) => i.pointer)).not.toContain("/family");
+  });
+
+  test("a family set to unclassified reconciles only when logged as removed", () => {
+    const e = { ...entry, family: { value: "unclassified", cites: [] } };
+    const removedFamily = { field: "/family", text: "household", cites: ["ralston1872:p.123"], reason: "no page supports it" };
+    const ok = creatureStats("domovoi", withFamily, e, { ...log, removed: [...log.removed, removedFamily] });
+    expect(ok.reconcile).toEqual({ ok: true, mismatches: [] });
+    const bad = creatureStats("domovoi", withFamily, e, log);
+    expect(bad.reconcile!.mismatches).toEqual(["family: draft 1 != verified 0 + removed 0"]);
+  });
+});
+
+describe("appearance forms", () => {
+  const formsDraft = {
+    ...draft,
+    appearance_forms: [{ id: "bald", label: "bald" }],
+    appearance: [
+      { ...clause("He is bald."), form: "bald" },
+      { ...clause("He has a reed cap."), form: "bald" },
+      clause("He has long green hair."),
+    ],
+  };
+  // Verify moved the long hair into its own form and the reed cap along with it.
+  const formsEntry = {
+    ...formsDraft,
+    appearance_forms: [
+      { id: "bald", label: "bald" },
+      { id: "long-haired", label: "long-haired" },
+    ],
+    appearance: [
+      { ...clause("He is bald."), form: "bald" },
+      { ...clause("He has a reed cap."), form: "long-haired" },
+      { ...clause("He has long green hair."), form: "long-haired" },
+    ],
+  };
+  const reformed = [
+    { field: "/appearance/1", text: "He has a reed cap.", from_form: "bald", to_form: "long-haired", reason: "r" },
+    { field: "/appearance/2", text: "He has long green hair.", from_form: null, to_form: "long-haired", reason: "r" },
+  ];
+
+  test("re-forms reconcile when every form change is logged, and forms are reported per creature", () => {
+    const s = creatureStats("x", formsDraft, formsEntry, { ...log, removed: [], reformed });
+    expect(s.reconcile).toEqual({ ok: true, mismatches: [] });
+    expect(s.reformed).toBe(2);
+    expect(s.forms).toEqual([
+      { id: "bald", label: "bald", clauses: 1 },
+      { id: "long-haired", label: "long-haired", clauses: 2 },
+    ]);
+    expect(s.commonAppearance).toBe(0);
+  });
+
+  test("a form change with no reformed row fails", () => {
+    const s = creatureStats("x", formsDraft, formsEntry, { ...log, removed: [], reformed: reformed.slice(0, 1) });
+    expect(s.reconcile!.mismatches).toEqual(["reformed: /appearance/2 moved from form null to long-haired with no reformed row"]);
+  });
+
+  test("a reformed row with no form change fails", () => {
+    const s = creatureStats("x", formsDraft, formsDraft, { ...log, removed: [], reformed: reformed.slice(0, 1) });
+    expect(s.reconcile!.mismatches).toEqual(["reformed: /appearance/1 is logged but its form did not change (bald)"]);
+  });
+});

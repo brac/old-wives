@@ -1,6 +1,6 @@
 {
   "id": "fixture-unseen",
-  "schema_version": 1,
+  "schema_version": 2,
   "names": {
     "primary": {
       "romanized": "fixture",
@@ -44,7 +44,13 @@
       ]
     }
   ],
-  "family": "field",
+  "family": {
+    "value": "field",
+    "cites": [
+      "ralston1872:p.123"
+    ]
+  },
+  "appearance_forms": [],
   "appearance": [],
   "scene": [
     {

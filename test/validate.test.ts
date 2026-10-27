@@ -12,14 +12,24 @@ const INVALID = join(FIXTURES, "invalid");
  * Each invalid fixture, the only error rule it may raise, the path it is raised at, and the stage.
  * `rule` is a list where one fixture necessarily trips two rules.
  */
-const TABLE: Record<string, { rule: string | string[]; path: string; stage: Stage }> = {
+const TABLE: Record<string, { rule: string | string[]; path: string; stage: Stage; log?: boolean }> = {
   "untagged-clause": { rule: "minItems", path: "/appearance/0/cites", stage: "draft" },
   "clause-missing-cites": { rule: "required", path: "/appearance/0", stage: "draft" },
   "bad-tag-grammar": { rule: "pattern", path: "/appearance/0/cites/0", stage: "draft" },
   "people-slavic": { rule: "pattern", path: "/peoples_regions/0/people", stage: "draft" },
   "empty-appearance-no-scene": { rule: "minItems", path: "/scene", stage: "draft" },
   "unknown-property": { rule: "unevaluatedProperties", path: "/", stage: "draft" },
-  "bad-family": { rule: "enum", path: "/family", stage: "draft" },
+  "bad-family": { rule: "enum", path: "/family/value", stage: "draft" },
+  "family-v1-string": { rule: "type", path: "/family", stage: "draft" },
+  "family-uncited": { rule: "R-FAMILY", path: "/family/cites", stage: "draft" },
+  "family-unclassified-with-cites": { rule: "R-FAMILY", path: "/family/cites", stage: "draft" },
+  "appearance-forms-missing": { rule: "required", path: "/", stage: "draft" },
+  "form-unknown-id": { rule: "R-FORM-REF", path: "/appearance/3/form", stage: "draft" },
+  "form-empty": { rule: "R-FORM-EMPTY", path: "/appearance_forms/2", stage: "draft" },
+  "form-duplicate-id": { rule: "R-FORM-DUP", path: "/appearance_forms/1/id", stage: "draft" },
+  "form-on-variant-clause": { rule: "unevaluatedProperties", path: "/variants/0/appearance/0", stage: "draft" },
+  "log-reformed-same-form": { rule: "R-REFORMED", path: "/reformed/0", stage: "verified", log: true },
+  "log-reformed-missing": { rule: "required", path: "/", stage: "verified", log: true },
   // Every manifest source is public domain, so a non-PD row also disagrees with the manifest.
   "no-pd-source": { rule: ["R-PD", "R-SOURCE-MANIFEST"], path: "/sources", stage: "draft" },
   "cite-source-not-listed": { rule: "R-CITE-SRC", path: "/appearance/0/cites/0", stage: "draft" },
@@ -41,8 +51,8 @@ describe("invalid fixtures fail on exactly their named rule", () => {
     expect(names).toEqual(Object.keys(TABLE).sort());
   });
 
-  test.each(Object.entries(TABLE))("%s", (name, { rule, path, stage }) => {
-    const { issues } = validateFile(join(INVALID, `${name}.json`), { stage });
+  test.each(Object.entries(TABLE))("%s", (name, { rule, path, stage, log }) => {
+    const { issues } = validateFile(join(INVALID, `${name}.json`), { stage, log });
     const errors = issues.filter((i) => i.severity === "error");
     expect(errors.length).toBeGreaterThan(0);
     expect([...new Set(errors.map((e) => e.rule))].sort()).toEqual([rule].flat().sort());
@@ -71,6 +81,16 @@ describe("valid fixtures pass", () => {
     expect(entries.some((e) => e.appearance.length > 0)).toBe(true);
     expect(entries.some((e) => e.appearance.length === 0 && e.scene.length > 0)).toBe(true);
     expect(entries.some((e) => e.variants.length > 0)).toBe(true);
+    expect(entries.some((e) => e.appearance_forms.length > 1)).toBe(true);
+    expect(entries.some((e) => (e.family as unknown as { value: string }).value === "unclassified")).toBe(true);
+  });
+
+  test("the valid log set has a reformed row and a removed family", () => {
+    const logs = readdirSync(join(FIXTURES, "valid/log")).map(
+      (n) => JSON.parse(readFileSync(join(FIXTURES, "valid/log", n), "utf8")) as Record<string, { field: string }[]>,
+    );
+    expect(logs.some((l) => l.reformed.length > 0)).toBe(true);
+    expect(logs.some((l) => l.removed.some((r) => r.field === "/family"))).toBe(true);
   });
 });
 
