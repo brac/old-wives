@@ -1,0 +1,204 @@
+{
+  "id": "bannik",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "bannik",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Банникъ",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1868:p.69"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Bannik",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.123"
+        ]
+      },
+      {
+        "romanized": "bannago",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "баннаго",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.69"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1868:p.69"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "When the domovoy haunts a bath (banya), he is known as a Bannik.",
+        "cites": [
+          "ralston1872:p.123"
+        ]
+      },
+      {
+        "text": "Because the domovoy also settles in bath-houses, wherever a stove is built, he is given the name bannyi (bannik).",
+        "cites": [
+          "afanasyev1868:p.69"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "cites": [
+        "ralston1872:p.123",
+        "afanasyev1868:p.69"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Smolensk Government",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    }
+  ],
+  "family": {
+    "value": "household",
+    "cites": [
+      "ralston1872:p.123"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [],
+  "scene": [
+    {
+      "text": "Met in the bath (banya) at late hours, when people bathe at night.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "His whistling, laughter and howling are often heard from behind the stove or from under the sweating-shelf of the bath-house.",
+      "cites": [
+        "afanasyev1868:p.69"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "Lives behind the stove or under the sweating-shelf (polok) of the bath-house.",
+      "cites": [
+        "afanasyev1868:p.69"
+      ]
+    },
+    {
+      "text": "Does not like people who bathe (steam themselves) at night.",
+      "cites": [
+        "ralston1872:p.123",
+        "afanasyev1868:p.69"
+      ]
+    },
+    {
+      "text": "Often suffocates those who bathe at night, especially if they have not prefaced their washing with a prayer.",
+      "cites": [
+        "ralston1872:p.123",
+        "afanasyev1868:p.69"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "The peasants avoid visiting the bath at late hours.",
+      "cites": [
+        "ralston1872:p.123",
+        "afanasyev1868:p.69"
+      ]
+    },
+    {
+      "text": "In the Smolensk Government, peasants who leave the bath leave a bucket of water and a whisk (besom) for the domovoy who takes their place, so that he too can wash and steam himself.",
+      "cites": [
+        "ralston1872:p.123",
+        "afanasyev1868:pp.69-70"
+      ]
+    },
+    {
+      "text": "In the Smolensk Government, when climbing onto the sweating-shelf to steam, people say: \"The baptised onto the shelf, the unbaptised off the shelf!\"",
+      "cites": [
+        "afanasyev1868:pp.69-70"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "Besides the hut, the domovoy settles in bath-houses, corn-drying barns and distilleries, in a word wherever a stove is built.",
+      "cites": [
+        "afanasyev1868:p.69"
+      ]
+    },
+    {
+      "text": "Afanasyev writes that when the wish for greater comfort led people to build separate bath-houses and corn-drying barns, the domovoy received new names, and these names gave rise to the idea of special spirits in charge of these outbuildings.",
+      "cites": [
+        "afanasyev1868:p.70"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "domovoi",
+      "relation": "related"
+    }
+  ],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "appearance: no source describes the bannik's body, size, hair, clothing or any form it takes; searched bannik, bannilc, banya, bath, bath-room, банник, банникъ, баннаго, банный, банн, баня, банѣ, бане, банях, подовинник across all sources (bath scoped to ralston1872, ralston1873, machal1918). Only ralston1872 p.123 and afanasyev1868 pp.69-70 name the bannik, and neither describes him."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: no source distinguishes the bannik by people or region; only Russians are named, and the Smolensk detail is a custom, not a different description. Same searches as for appearance."
+    },
+    {
+      "kind": "scope",
+      "text": "Both naming sources present the bannik as the domovoy when he lives in the bath (ralston1872 p.123, afanasyev1868 p.69), and Ralston's and Afanasyev's Smolensk bucket-and-whisk custom is written as being for 'the domovoy' in the bath; it is kept here because each page ties it to the bath spirit in the same passage. Two further pages speak of the domovoy or domestic spirits in the bath-house without naming the bannik and were left out under the narrow-attribution rule: machal1918 p.241 (the domovoy in the bath-room creeps under the benches, hissing, rumbling and giggling; a pail of water is made ready for him) and afanasyev1869 p.310 (in Novgorod Government the stealing of infants is ascribed to domestic spirits living in bath-houses, where women after childbirth are taken to be washed). The verify agent or Ben may decide whether these belong here or under domovoi."
+    },
+    {
+      "kind": "scope",
+      "text": "names.variants: 'bannago' is a plain transliteration of the form printed in afanasyev1868 p.69 ('баннаго', genitive in the phrase 'названія баннаго (банника)'); the page does not print a nominative of this name. The Ralston variant 'Bannik' is the English-text spelling (OCR also renders it 'Bannilc' on the same page)."
+    }
+  ]
+}
