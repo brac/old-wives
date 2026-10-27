@@ -1,0 +1,5 @@
+{
+  "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
+  "total_usd": 0,
+  "rows": []
+}

@@ -14,9 +14,11 @@
     "corpus:verify": "tsx src/corpus/verify.ts",
     "cite": "tsx src/corpus/cite-cli.ts",
     "find": "tsx src/corpus/find-cli.ts",
-    "stats": "tsx src/report/stats.ts"
+    "stats": "tsx src/report/stats.ts",
+    "plates": "tsx --env-file-if-exists=.env src/plates/generate.ts"
   },
   "devDependencies": {
+    "@fal-ai/client": "1.10.1",
     "@types/node": "24.19.2",
     "ajv": "8.20.0",
     "ajv-formats": "3.0.1",
