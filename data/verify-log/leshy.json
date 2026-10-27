@@ -1,0 +1,103 @@
+{
+  "entry_id": "leshy",
+  "verifier_prompt_version": "verify-v1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/notes/1",
+      "text": "Interpretive passages were left out as theory rather than lore: Ralston's mention of critics who make the Lyeshy a spirit of cloudland and storm, and Afanasyev's reading of the leshy's size and noises as thunder-clouds and lightning.",
+      "to_text": "Interpretive passages were left out as theory rather than lore: Ralston's mention of critics who make the Lyeshy a spirit of cloudland and storm, and Afanasyev's reading of the leshy's changing size as thunder-clouds and lightning.",
+      "from_cites": [
+        "ralston1872:p.153",
+        "afanasyev1868:p.330"
+      ],
+      "to_cites": [
+        "ralston1872:p.153",
+        "afanasyev1868:p.330"
+      ],
+      "reason": "Afanasyev p.330 reads the leshy's size (giant and dwarf, growing and shrinking) as thunder-clouds and lightning; it does not interpret his noises there. 'and noises' cut."
+    }
+  ],
+  "retagged": [
+    {
+      "field": "/behavior_habitat/38",
+      "text": "The peasants explain the migrations of squirrels, field-mice and other animals as the Lyeshies driving their flocks from one forest to another.",
+      "from_cites": [
+        "ralston1872:p.156"
+      ],
+      "to_cites": [
+        "ralston1872:pp.155-156"
+      ],
+      "reason": "The passage runs over: the squirrels, field-mice and other animals and their migrations are named at the foot of p.155; the peasants' explanation is on p.156."
+    }
+  ],
+  "flagged": [
+    {
+      "field": "/dealing_with_it/16",
+      "text": "Anything like the sign of the cross is distasteful to demons.",
+      "reason": "Ralston states this of 'demons' in general; it follows directly on a sentence about the Lyeshy and the Vodyany, which is the only tie to this creature."
+    },
+    {
+      "field": "/peoples_regions/3",
+      "text": "Russians, Governments of Kief and Chernigof",
+      "reason": "Ralston p.154 says only 'the peasants' of these governments; Russians is assigned by the context rule for Ralston's peasants, while the same page names Little-Russia separately. The kief-chernigof variant carries the same people. Afanasyev p.330 gives the same governments without naming a people. Left for Ben to decide, as the draft's scope note asks."
+    },
+    {
+      "field": "/peoples_regions/6",
+      "text": "Ukrainians, Little-Russia",
+      "reason": "Ralston names 'Little-Russia' and a 'Little-Russian story'; the people label 'Ukrainians' is a modern equivalent the page does not print."
+    },
+    {
+      "field": "/names/variants/5/native/0",
+      "text": "лисунъ",
+      "reason": "OCR prints the form split as 'лису нъ'; read as one word лисунъ."
+    },
+    {
+      "field": "/names/variants/6/native/0",
+      "text": "полисунъ",
+      "reason": "OCR prints the form broken across a line as '(по- ли су нъ)'; read as полисунъ."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Three authors are cited: Machal, Ralston and Afanasyev. The pages opened for Machal and for Ralston's Songs of the Russian People do not say they draw on Afanasyev, so they are counted as independent of him.",
+      "cites": [
+        "machal1918:p.261",
+        "ralston1872:p.154"
+      ]
+    },
+    {
+      "text": "Ralston's Russian Folk-Tales takes its Leshy tale from Afanasyev's collection ('Afanasief, vii. No. 33'), so that book is counted with Afanasyev, not as a further source.",
+      "cites": [
+        "ralston1873:p.206"
+      ]
+    },
+    {
+      "text": "Machal records the silvan spirit Lésiy for the Russians.",
+      "cites": [
+        "machal1918:p.261"
+      ]
+    },
+    {
+      "text": "Ralston records Lyeshy beliefs of the peasants of the Olonetsk and Archangel Governments, and separately a belief of Little-Russia.",
+      "cites": [
+        "ralston1872:p.154"
+      ]
+    },
+    {
+      "text": "Afanasyev records a Belarusian belief that the leshy's height depends on the trees he stands or walks by.",
+      "cites": [
+        "afanasyev1868:p.330"
+      ]
+    },
+    {
+      "text": "With at least two peoples (Russians and Belarusians, plus Little-Russia in Ralston) and three independent authors, the leshy is graded widely-attested.",
+      "cites": [
+        "machal1918:p.261",
+        "ralston1872:p.154",
+        "afanasyev1868:p.330"
+      ]
+    }
+  ]
+}
