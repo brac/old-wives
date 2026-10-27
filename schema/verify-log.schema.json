@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://beasts.local/schema/verify-log.schema.json",
+  "title": "Verify log",
+  "description": "Every clause the verify agent removed, downgraded, re-tagged or flagged in one entry, with its reason.",
+  "type": "object",
+  "required": [
+    "entry_id",
+    "verifier_prompt_version",
+    "removed",
+    "downgraded",
+    "retagged",
+    "flagged",
+    "grade",
+    "grade_rationale"
+  ],
+  "properties": {
+    "entry_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "verifier_prompt_version": { "$ref": "#/$defs/NonEmptyString" },
+    "removed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["field", "text", "cites", "reason"],
+        "properties": {
+          "field": { "$ref": "#/$defs/NonEmptyString" },
+          "text": { "$ref": "#/$defs/NonEmptyString" },
+          "cites": { "$ref": "#/$defs/CiteList" },
+          "reason": { "$ref": "#/$defs/NonEmptyString" }
+        },
+        "unevaluatedProperties": false
+      }
+    },
+    "downgraded": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/CiteChange" }
+    },
+    "retagged": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/CiteChange" }
+    },
+    "flagged": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["field", "text", "reason"],
+        "properties": {
+          "field": { "$ref": "#/$defs/NonEmptyString" },
+          "text": { "$ref": "#/$defs/NonEmptyString" },
+          "reason": { "$ref": "#/$defs/NonEmptyString" }
+        },
+        "unevaluatedProperties": false
+      }
+    },
+    "grade": {
+      "enum": ["widely-attested", "regional", "literary", "disputed"]
+    },
+    "grade_rationale": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["text", "cites"],
+        "properties": {
+          "text": { "$ref": "#/$defs/NonEmptyString" },
+          "cites": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "$ref": "#/$defs/CiteTag" }
+          }
+        },
+        "unevaluatedProperties": false
+      }
+    }
+  },
+  "unevaluatedProperties": false,
+  "$defs": {
+    "NonEmptyString": { "type": "string", "minLength": 1 },
+    "CiteTag": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+:(p\\.[0-9ivxlcdm]+|pp\\.[0-9ivxlcdm]+-[0-9ivxlcdm]+|s\\.v\\..+)$"
+    },
+    "CiteList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/CiteTag" }
+    },
+    "CiteChange": {
+      "type": "object",
+      "required": ["field", "text", "from_cites", "to_cites", "reason"],
+      "properties": {
+        "field": { "$ref": "#/$defs/NonEmptyString" },
+        "text": { "$ref": "#/$defs/NonEmptyString" },
+        "from_cites": { "$ref": "#/$defs/CiteList" },
+        "to_cites": { "$ref": "#/$defs/CiteList" },
+        "reason": { "$ref": "#/$defs/NonEmptyString" }
+      },
+      "unevaluatedProperties": false
+    }
+  }
+}
