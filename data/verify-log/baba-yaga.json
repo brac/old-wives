@@ -1,0 +1,85 @@
+{
+  "entry_id": "baba-yaga",
+  "verifier_prompt_version": "verify-v2",
+  "removed": [],
+  "downgraded": [],
+  "retagged": [
+    {
+      "field": "/names/variants/4/native/0",
+      "text": "гвоздензуба",
+      "from_cites": [
+        "afanasyev1869:p.595"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.594"
+      ],
+      "reason": "afanasyev1869:p.595 does not print the form; the phrase 'сербская гвоздензуба носитъ' is at the foot of p.594 and only its continuation is on p.595."
+    }
+  ],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/variants/1",
+      "text": "Jaga-baba (Poles)",
+      "reason": "Machal names Jaga-baba, Jezibaba and Jendzibaba as fairy-tale names of the Polish Jendzyna, whom he places among the Czech Jézé/Jezinky (lamias) on pp.265-266; the page never says Baba Yaga, so the identification with this creature rests on the name forms (Afanasyev p.588 lists Polish jedza/jedzi-baba as forms of yaga). Kept, not shown wrong."
+    },
+    {
+      "field": "/names/variants/2",
+      "text": "Jezibaba (Poles)",
+      "reason": "Machal names Jaga-baba, Jezibaba and Jendzibaba as fairy-tale names of the Polish Jendzyna, whom he places among the Czech Jézé/Jezinky (lamias) on pp.265-266; the page never says Baba Yaga, so the identification with this creature rests on the name forms (Afanasyev p.588 lists Polish jedza/jedzi-baba as forms of yaga). Kept, not shown wrong."
+    },
+    {
+      "field": "/names/variants/3",
+      "text": "Jendzibaba (Poles)",
+      "reason": "Machal names Jaga-baba, Jezibaba and Jendzibaba as fairy-tale names of the Polish Jendzyna, whom he places among the Czech Jézé/Jezinky (lamias) on pp.265-266; the page never says Baba Yaga, so the identification with this creature rests on the name forms (Afanasyev p.588 lists Polish jedza/jedzi-baba as forms of yaga). Kept, not shown wrong."
+    },
+    {
+      "field": "/peoples_regions/6",
+      "text": "Poles",
+      "reason": "Machal names Jaga-baba, Jezibaba and Jendzibaba as fairy-tale names of the Polish Jendzyna, whom he places among the Czech Jézé/Jezinky (lamias) on pp.265-266; the page never says Baba Yaga, so the identification with this creature rests on the name forms (Afanasyev p.588 lists Polish jedza/jedzi-baba as forms of yaga). Kept, not shown wrong."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Afanasyev records the baba-yaga for Belarusians, Russians, Little Russians (Ukrainians), Slovaks and Serbs.",
+      "cites": [
+        "afanasyev1869:p.587",
+        "afanasyev1869:p.589",
+        "afanasyev1869:p.591",
+        "afanasyev1869:p.592"
+      ]
+    },
+    {
+      "text": "Ralston describes the Baba Yaga of the Russian popular tales, her mortar and the White-Russian fiery mortar without citing Afanasyev on these passages, so he counts as an independent source for them.",
+      "cites": [
+        "ralston1872:p.161",
+        "ralston1872:p.162"
+      ]
+    },
+    {
+      "text": "Ralston records the Servian Baba Yaga, the Iron Tooth, without citing Afanasyev on that passage.",
+      "cites": [
+        "ralston1872:p.164"
+      ]
+    },
+    {
+      "text": "Ralston's White-Russian passage on Death and the souls of the dead cites Afanasyev (Skazki I.120), so it is counted once with Afanasyev.",
+      "cites": [
+        "ralston1872:p.163"
+      ]
+    },
+    {
+      "text": "Ralston's etymology note in Russian Folk-Tales quotes Afanasyev, so it is not independent of him.",
+      "cites": [
+        "ralston1873:p.137"
+      ]
+    },
+    {
+      "text": "Machal, a third author, records Jaga-baba and Jezibaba in Polish fairy-tales; the identification with this creature rests on the name forms and is flagged.",
+      "cites": [
+        "machal1918:p.266"
+      ]
+    }
+  ]
+}
