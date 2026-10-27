@@ -1,0 +1,87 @@
+{
+  "entry_id": "poludnitsa",
+  "verifier_prompt_version": "verify-v1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/notes/4",
+      "text": "related rusalka: Afanasyev vol. 3 p.139 says tradition ascribes the same traits to the rusalki, and vol. 1 p.23 compares the Lusatian poludnitsa's deadly questions with the riddles of the rusalki. This is a comparison by the author, recorded as 'related' only.",
+      "to_text": "related rusalka: Afanasyev vol. 3 p.139 says tradition ascribes the same traits to the rusalki, and vol. 1 p.25 compares the Lusatian poludnitsa's deadly questions with the riddles of the rusalki. This is a comparison by the author, recorded as 'related' only.",
+      "from_cites": [
+        "afanasyev1869:p.139",
+        "afanasyev1865:p.25"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.139",
+        "afanasyev1865:p.25"
+      ],
+      "reason": "The note says the Lusatian riddle comparison is at vol. 1 p.23, but the cited page, afanasyev1865:p.25, is where Afanasyev compares the Lusatian poludnitsa's deadly questions with the rusalki's riddles. The page number in the text was corrected to the cited page; nothing else changed."
+    }
+  ],
+  "retagged": [],
+  "flagged": [
+    {
+      "field": "/scene/1",
+      "text": "In Bohemian tradition she wanders about the fields at noon.",
+      "reason": "Machal p.267 reads 'an airy, white lady, or of an old woman who wanders about the fields at noon and haunts the dwellings of men'; the relative clause may attach only to the old-woman form rather than to the Bohemian Poludnica in general."
+    },
+    {
+      "field": "/variants/0/behavior_habitat/0",
+      "text": "She haunts the dwellings of men.",
+      "reason": "Same Machal p.267 sentence as /scene/1: 'haunts the dwellings of men' may be said only of the old-woman form."
+    },
+    {
+      "field": "/names/variants/1",
+      "text": "Polednica (Czechs)",
+      "reason": "Machal p.267 gives 'Poludnica, or Polednica' in the general opening sentence without naming a people; the Czech attribution rests on the next sentence ('According to Bohemian tradition') rather than on the page tying the form to Czechs."
+    },
+    {
+      "field": "/names/variants/2",
+      "text": "Poludniowka (Poles)",
+      "reason": "Machal p.267 prints the form as OCR 'Potudniowka'; reading it as Poludniowka (with a Polish l-stroke lost) is likely but rests on the OCR."
+    },
+    {
+      "field": "/names/variants/8",
+      "text": "poludnice (Czechs)",
+      "reason": "Erben p.183 OCR prints 'šlovou o poludnice', with a stray 'o' before the form; the exact spelling Erben printed (poludnice or polednice) is not certain from the OCR."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal records the Poludnica for the Czechs of Bohemia and Moravia, the Poles, the Lusatian Serbs and the Russians, including the Siberian Russians.",
+      "cites": [
+        "machal1918:p.267",
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "text": "Afanasyev records the poludnitsa in southern Siberia and Archangel Government, among the Lusatians, and among the Czechs.",
+      "cites": [
+        "afanasyev1869:p.137",
+        "afanasyev1869:p.138",
+        "afanasyev1869:p.311"
+      ]
+    },
+    {
+      "text": "Machal's field-spirit pages 267-268 cite no source, so nothing on them shows dependence on Afanasyev; Machal and Afanasyev count as two independent sources.",
+      "cites": [
+        "machal1918:p.267",
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "text": "Ralston's Lusatian account closely matches Afanasyev's, and the same passage cites \"Afanasief, P. V. S. iii. 77\" in its footnotes, so Ralston is not counted as independent of Afanasyev.",
+      "cites": [
+        "ralston1872:p.147",
+        "ralston1872:p.148"
+      ]
+    },
+    {
+      "text": "Erben's prose note gives Czech folk belief about the poludnice, but Erben is a literary source and is not counted as collected folklore; the grade does not rest on him.",
+      "cites": [
+        "erben1893:p.183"
+      ]
+    }
+  ]
+}
