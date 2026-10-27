@@ -1,0 +1,36 @@
+{
+  "entry_id": "drekavac",
+  "verifier_prompt_version": "verify-v2",
+  "removed": [],
+  "downgraded": [],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/primary/native/0",
+      "text": "Дрекавац",
+      "reason": "The 1852 page prints the headword in capitals (ДРЕКАВАЦ) and the 1818 OCR reads Древавац; the sentence-case form is a normalisation of the 1852 headword, not a letter-for-letter print."
+    }
+  ],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "Karadžić’s 1818 Serbian dictionary records the drekavac as a supposed four-footed animal that screams in the night like a goat being carried off.",
+      "cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ]
+    },
+    {
+      "text": "The 1852 edition repeats the article; both editions are Karadžić’s and count as one source by one 19th-century compiler.",
+      "cites": [
+        "karadzic1852:s.v.Дрекавац"
+      ]
+    },
+    {
+      "text": "Every surviving clause rests on this one dictionary article, and the only people is the Serbs, fixed by the dictionary being a Serbian dictionary.",
+      "cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ]
+    }
+  ]
+}

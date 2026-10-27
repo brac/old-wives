@@ -1,0 +1,143 @@
+{
+  "id": "drekavac",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "drekavac",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Дрекавац",
+          "people": "Serbs",
+          "cites": [
+            "karadzic1852:s.v.Дрекавац"
+          ]
+        }
+      ]
+    },
+    "variants": [],
+    "meaning": []
+  },
+  "peoples_regions": [
+    {
+      "people": "Serbs",
+      "cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ]
+    }
+  ],
+  "family": {
+    "value": "unclassified",
+    "cites": []
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "Is described as a four-footed animal.",
+      "cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "It is heard screaming in the night.",
+      "cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ]
+    },
+    {
+      "text": "Its scream is like that of a goat that is being carried off.",
+      "cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "Is a supposed animal that screams in the night.",
+      "cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ]
+    },
+    {
+      "text": "Is glossed as a nocturnal, clamorous animal.",
+      "cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ]
+    }
+  ],
+  "dealing_with_it": [],
+  "origin": [],
+  "related": [],
+  "attestation": {
+    "grade": "literary",
+    "rationale": [
+      {
+        "text": "Karadžić’s 1818 Serbian dictionary records the drekavac as a supposed four-footed animal that screams in the night like a goat being carried off.",
+        "cites": [
+          "karadzic1818:s.v.Дрекавац"
+        ]
+      },
+      {
+        "text": "The 1852 edition repeats the article; both editions are Karadžić’s and count as one source by one 19th-century compiler.",
+        "cites": [
+          "karadzic1852:s.v.Дрекавац"
+        ]
+      },
+      {
+        "text": "Every surviving clause rests on this one dictionary article, and the only people is the Serbs, fixed by the dictionary being a Serbian dictionary.",
+        "cites": [
+          "karadzic1818:s.v.Дрекавац"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "karadzic1818",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истолкован њемачким и латинским ријечма",
+      "year": 1818,
+      "url": "https://archive.org/details/srpskirjecnik00kara",
+      "public_domain": true
+    },
+    {
+      "source_id": "karadzic1852",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истумачен њемачкијем и латинскијем ријечима",
+      "year": 1852,
+      "url": "https://archive.org/details/srpski-rjecnik-istumacen-njemackijem-i-latinskijem-rijecima",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "The whole entry rests on one dictionary article, Karadžić's s.v. Дрекавац (1818, repeated in 1852). In 1818 the German and Latin gloss reads: '(supposed) animal that screams in the night like a goat that is carried off by [illegible], animal nocturnum, quadrupes, clamosum'. The agent that carries the goat off is OCR noise in both editions (1818 'vom оте', 1852 'бот Збо[је'), so the clause leaves it out rather than guess. The 1818 OCR prints the headword as 'Древавац'; the native form is taken from the 1852 headword 'ДРЕКАВАЦ', written here in sentence case."
+    },
+    {
+      "kind": "scope",
+      "text": "peoples_regions: the dictionary is a Serbian dictionary and the article gives no regional label, so the people is recorded as Serbs with no region. No opened page names Bosnians for this creature."
+    },
+    {
+      "kind": "empty-field",
+      "text": "family: the hints file suggests 'undead', but the only page found calls the drekavac a supposed four-footed nocturnal animal and says nothing of the dead, so no family is supported. Searched drekavac, дрекавац, древавац, дрекав, drekav, дрекавца, кавца, drekavatz, drekavaz, screamer, schreyer, quadrupes, clamosum across all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "names.meaning: the German gloss opening the article (OCR '© фтерег' in 1818, 'ђе Офтејет' in 1852) is too garbled to quote, and no source explains the name; left empty. Same searches as for family."
+    },
+    {
+      "kind": "empty-field",
+      "text": "names.variants, variants, origin, dealing_with_it, related: no source found says anything about other names, regional differences, where the drekavac comes from, how to deal with it, or links to other pilot creatures. The only hits for any spelling were the two Karadžić dictionary articles; no hit in machal1918, ralston1872, ralston1873, afanasyev1865-1869, frombald1725, calmet1850v2 or erben1893."
+    },
+    {
+      "kind": "accretion",
+      "text": "Editorial: modern popular, cryptid and internet accounts of the drekavac are excluded; this entry records only the cited Karadžić dictionary article."
+    }
+  ]
+}
