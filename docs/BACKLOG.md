@@ -43,3 +43,12 @@ and the project-scoped "why" behind decisions, each with the rejected alternativ
 - Machal 1918's English translator: confirm the name and death year before quoting at
   length for an EU audience. US public-domain status is clear.
 - Code license for the repo (the dataset is CC BY 4.0 per the brief): decide by Phase 3.
+- 2026-10-26: Phase 0 closed (tag `phase-0`). The validator now rejects unresolvable
+  citations, page tags on the column-numbered dictionaries, and source rows that
+  disagree with the manifest. The draft and verify role prompts are frozen at
+  `draft-v1` / `verify-v1` for the whole pilot batch, for the same reason the brief locks
+  the style tokens: changing them mid-batch invalidates the set comparison.
+- Open for Ben: does Karadžić's dictionary (one collector, two editions) count as
+  "multiple sources" for the `regional` grade? The verify prompt counts sources by
+  author, so drekavac will likely land on `literary` rather than the `regional` the
+  brief expects.

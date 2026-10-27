@@ -33,7 +33,19 @@
     },
     "downgraded": {
       "type": "array",
-      "items": { "$ref": "#/$defs/CiteChange" }
+      "items": {
+        "type": "object",
+        "required": ["field", "text", "to_text", "from_cites", "to_cites", "reason"],
+        "properties": {
+          "field": { "$ref": "#/$defs/NonEmptyString" },
+          "text": { "$ref": "#/$defs/NonEmptyString" },
+          "to_text": { "$ref": "#/$defs/NonEmptyString" },
+          "from_cites": { "$ref": "#/$defs/CiteList" },
+          "to_cites": { "$ref": "#/$defs/CiteList" },
+          "reason": { "$ref": "#/$defs/NonEmptyString" }
+        },
+        "unevaluatedProperties": false
+      }
     },
     "retagged": {
       "type": "array",

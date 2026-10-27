@@ -1,0 +1,107 @@
+{
+  "id": "native-name-uncited",
+  "schema_version": 1,
+  "names": {
+    "primary": {
+      "romanized": "fixture",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "фикстура",
+          "people": "Russians"
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "fixtura",
+        "peoples": [
+          "Serbs"
+        ],
+        "cites": [
+          "karadzic1818:s.v.Дрекавац"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Fixture clause.",
+        "cites": [
+          "machal1918:p.243"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "Fixture region",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    }
+  ],
+  "family": "household",
+  "appearance": [
+    {
+      "text": "Fixture clause.",
+      "cites": [
+        "machal1918:p.243"
+      ]
+    }
+  ],
+  "scene": [],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "Fixture clause.",
+      "cites": [
+        "ralston1872:pp.120-125"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "Fixture clause.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "karadzic1818",
+      "author": "Vuk Stefanović Karadžić",
+      "title": "Srpski rječnik",
+      "year": 1818,
+      "url": "https://archive.org/details/srpskirjecnik00kara",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "Fixture note: origin is empty."
+    }
+  ]
+}

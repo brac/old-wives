@@ -1,0 +1,147 @@
+{
+  "_status": "SEARCH HINTS, NOT CLAIMS. Everything below comes from the phase-0 coverage table (.phase-loop/reports/phase-0-research-sources.md) and the pilot brief. Nothing here may be copied into an entry or cited. Use it only to decide where to start reading with `npm run find` and `npm run cite`. A page listed here may say nothing useful; a page not listed here may say a great deal. expected_peoples is the pilot brief's expectation, not a finding: record only the peoples a source names.",
+  "creatures": [
+    {
+      "id": "domovoi",
+      "romanized": "domovoi",
+      "family": "household",
+      "expected_peoples": ["Russians", "Belarusians"],
+      "spellings": ["domovoi", "domovoy", "domovoj", "домовой", "домовый", "домовик"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "240-246", "note": "\"Domovoy\", ch. III Household Gods" },
+        { "source_id": "ralston1872", "pages": "119-139" },
+        { "source_id": "ralston1873", "pages": "205", "note": "mention" },
+        { "source_id": "afanasyev1868", "pages": "67-105", "note": "dense" }
+      ]
+    },
+    {
+      "id": "bannik",
+      "romanized": "bannik",
+      "family": "household",
+      "expected_peoples": ["Russians"],
+      "spellings": ["bannik", "банник", "банникъ", "баннаго", "банный", "bath", "bath-room", "баня", "банѣ"],
+      "source_hints": [
+        { "source_id": "ralston1872", "pages": "123", "note": "\"Bannik\" (OCR also \"Bannilc\")" },
+        { "source_id": "afanasyev1868", "pages": "69", "note": "\"банникъ\"; the word is hyphenated across a line break once (\"бан-\" / \"ника\")" },
+        { "source_id": "machal1918", "pages": "241-244", "note": "the domovoy \"in the bath-room\"; the bannik is not named, so nothing here is about the bannik unless the page says so" }
+      ]
+    },
+    {
+      "id": "rusalka",
+      "romanized": "rusalka",
+      "family": "water",
+      "expected_peoples": ["Russians", "Ukrainians"],
+      "spellings": ["rusalka", "rusalky", "rusalki", "русалка", "русалки", "русалокъ"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "253-257", "note": "\"Rusalky\", ch. V Navky and Rusalky" },
+        { "source_id": "machal1918", "pages": "312" },
+        { "source_id": "ralston1872", "pages": "139-149" },
+        { "source_id": "ralston1872", "pages": "373" },
+        { "source_id": "ralston1873", "pages": "205" },
+        { "source_id": "afanasyev1869", "pages": "122-150" },
+        { "source_id": "afanasyev1869", "pages": "241-243" },
+        { "source_id": "afanasyev1869", "pages": "309" }
+      ]
+    },
+    {
+      "id": "vodyanoi",
+      "romanized": "vodyanoi",
+      "family": "water",
+      "expected_peoples": ["Russians"],
+      "spellings": ["vodyanoi", "vodyanoy", "vodyany", "vodyanik", "водяной", "водяникъ", "водяный"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "270-271", "note": "\"Vodyanik\", ch. IX Water-Spirits" },
+        { "source_id": "ralston1872", "pages": "148-156", "note": "\"Vodyany\"" },
+        { "source_id": "ralston1873", "pages": "119" },
+        { "source_id": "ralston1873", "pages": "205" },
+        { "source_id": "afanasyev1868", "pages": "236-248" }
+      ]
+    },
+    {
+      "id": "leshy",
+      "romanized": "leshy",
+      "family": "forest",
+      "expected_peoples": ["Russians"],
+      "spellings": ["leshy", "lesiy", "lésiy", "leshi", "wood-spirit", "леший", "лѣшій", "лешій", "лесовик"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "261-263", "note": "\"Lésiy\" (OCR \"LéSiy\"), ch. VII Silvan Spirits" },
+        { "source_id": "ralston1872", "pages": "scattered", "note": "\"wood-spirit\"; search, no page range known" },
+        { "source_id": "ralston1873", "pages": "206-207", "note": "\"Leshy\"" },
+        { "source_id": "afanasyev1868", "pages": "326-349", "note": "\"лѣшій\"" }
+      ]
+    },
+    {
+      "id": "poludnitsa",
+      "romanized": "poludnitsa",
+      "family": "field",
+      "expected_peoples": ["Poles", "Russians", "Czechs"],
+      "spellings": ["poludnitsa", "poludnica", "polednica", "polednice", "południca", "полудница", "полудницы", "midday spirit"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "267-268", "note": "\"Poludnica / Polednica\", ch. VIII Field-Spirits" },
+        { "source_id": "ralston1872", "pages": "147", "note": "\"Poludnitsa\"" },
+        { "source_id": "afanasyev1865", "pages": "25" },
+        { "source_id": "afanasyev1869", "pages": "138" },
+        { "source_id": "afanasyev1869", "pages": "311" },
+        { "source_id": "erben1893", "pages": "45-46", "note": "\"Polednice\": a literary poem, manifest kind literary" }
+      ]
+    },
+    {
+      "id": "vampir",
+      "romanized": "vampir",
+      "family": "undead",
+      "expected_peoples": ["Serbs", "Russians"],
+      "spellings": ["vampir", "vampire", "vampyr", "upir", "upyr", "вампир", "вукодлак", "упырь", "упиръ", "Plogojoviz", "Plogojowitz", "Kisilova"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "229-232", "note": "upir p. 231" },
+        { "source_id": "ralston1872", "pages": "406-413", "note": "upir p. 410" },
+        { "source_id": "ralston1873", "pages": "309-324", "note": "upir p. 321" },
+        { "source_id": "afanasyev1869", "pages": "535-570", "note": "\"упырь\"" },
+        { "source_id": "karadzic1818", "pages": "s.v. Вампир, s.v. Вукодлак", "note": "Вампир points to вукодлак" },
+        { "source_id": "karadzic1852", "pages": "s.v. вампир, s.v. вукодлак" },
+        { "source_id": "frombald1725", "pages": "11-12", "note": "spelling \"Plogojoviz\"" },
+        { "source_id": "calmet1850v2", "pages": "180-181", "note": "a paraphrase of the 1725 report, not independent of it" }
+      ]
+    },
+    {
+      "id": "drekavac",
+      "romanized": "drekavac",
+      "family": "undead",
+      "expected_peoples": ["Serbs", "Bosnians"],
+      "spellings": ["drekavac", "дрекавац", "древавац"],
+      "source_hints": [
+        { "source_id": "karadzic1818", "pages": "s.v. Дрекавац", "note": "OCR \"Древавац\"; resolved through the headword override table" },
+        { "source_id": "karadzic1852", "pages": "s.v. Дрекавац", "note": "German gloss is OCR noise in this edition" }
+      ]
+    },
+    {
+      "id": "zmey-gorynych",
+      "romanized": "Zmey Gorynych",
+      "family": "monster",
+      "expected_peoples": ["Russians"],
+      "spellings": ["gorynych", "goruinich", "gorynich", "zmey", "zmei", "zmek", "smok", "змей", "змѣй", "горынычъ", "горыныч", "змај"],
+      "source_hints": [
+        { "source_id": "ralston1872", "pages": "375", "note": "\"Goruinich\"" },
+        { "source_id": "ralston1873", "pages": "65-120", "note": "generic Snake/Zmei; \"Gorynich\" not found" },
+        { "source_id": "ralston1873", "pages": "164" },
+        { "source_id": "afanasyev1868", "pages": "295" },
+        { "source_id": "afanasyev1868", "pages": "591" },
+        { "source_id": "afanasyev1869", "pages": "821", "note": "\"горынычъ\"" },
+        { "source_id": "machal1918", "pages": "247", "note": "household snake \"Zmek, Smok\"; not Gorynych" }
+      ]
+    },
+    {
+      "id": "baba-yaga",
+      "romanized": "Baba Yaga",
+      "family": "monster",
+      "expected_peoples": ["Russians"],
+      "spellings": ["baba yaga", "baba-yaga", "jaga-baba", "jezibaba", "баба-яга", "баба яга", "яга"],
+      "source_hints": [
+        { "source_id": "ralston1872", "pages": "161-172" },
+        { "source_id": "ralston1872", "pages": "184" },
+        { "source_id": "ralston1873", "pages": "137-153", "note": "and passim (91 hits)" },
+        { "source_id": "afanasyev1869", "pages": "586-595" },
+        { "source_id": "machal1918", "pages": "266", "note": "one line: \"Jaga-baba, Jezibaba\"" }
+      ]
+    }
+  ]
+}

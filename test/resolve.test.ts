@@ -34,7 +34,7 @@ const PAGES: Record<string, PageRecord[]> = {
     { leaf: 5, page: "3", text: "end" },
   ],
   dict: [
-    { leaf: 10, page: null, text: "Вампир, m. vide вукодлак.\nВампирица, f." },
+    { leaf: 10, page: "163", text: "Вампир, m. vide вукодлак.\nВампирица, f." },
     { leaf: 11, page: null, text: "„Древавац, вца, ein Thier wie eine Ziege" },
   ],
 };
@@ -89,6 +89,13 @@ describe("resolve", () => {
     expect(r.ok && r.via).toBe("override");
     expect(r.ok && r.pages[0]!.text).toContain("Ziege");
   });
+  test("p. and pp. are refused on headword sources", () => {
+    // Leaf 10 carries IA page "163", as Karadžić 1818 does, so only the locator check can refuse it.
+    const r = resolve("dict:p.163");
+    expect(r.ok === false && r.reason).toMatch(/headword/);
+    expect(resolve("dict:pp.163-163").ok).toBe(false);
+  });
+
   test("s.v. is refused on page-cited sources", () => {
     expect(resolve("book:s.v.LéSiy").ok).toBe(false);
   });

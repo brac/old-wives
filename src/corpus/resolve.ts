@@ -51,6 +51,10 @@ export function createResolver(corpus: Corpus): (tag: string) => ResolveResult {
     if (!parsed) return { ok: false, reason: `bad tag grammar: ${tag}` };
     const source = corpus.sources.find((s) => s.id === parsed.source);
     if (!source) return { ok: false, reason: `unknown source: ${parsed.source}` };
+    // Headword sources have unreliable IA page numbers (Karadžić 1818 counts columns), so pages never anchor them.
+    if (parsed.kind !== "sv" && source.locator === "headword") {
+      return { ok: false, reason: `${source.id} is a headword source; cite it as s.v.<headword>, not by page` };
+    }
     const pages = corpus.pages(source.id);
 
     if (parsed.kind === "p") {

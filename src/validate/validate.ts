@@ -3,6 +3,8 @@ import { basename as pathBasename, extname, join } from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import type { ErrorObject, ValidateFunction } from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
+import { loadManifest, type SourceEntry } from "../corpus/manifest.js";
+import { resolve } from "../corpus/resolve.js";
 
 export type Stage = "draft" | "verified";
 export type Severity = "error" | "warning";
@@ -47,6 +49,31 @@ export interface DirOptions {
 export const CITE_TAG = /^[a-z0-9]+:(p\.[0-9ivxlcdm]+|pp\.[0-9ivxlcdm]+-[0-9ivxlcdm]+|s\.v\..+)$/;
 
 const CITE_KEYS = new Set(["cites", "from_cites", "to_cites"]);
+
+/** The widest `pp.` range a cite may span, counted in corpus pages. */
+export const MAX_RANGE_PAGES = 15;
+
+let manifest: SourceEntry[] | undefined;
+function manifestSources(): SourceEntry[] {
+  manifest ??= loadManifest();
+  return manifest;
+}
+
+/** R-CITE-RESOLVES: each grammatical cite resolves in the corpus, and a `pp.` range spans at most 15 pages. */
+function resolveIssues(cites: { tag: string; path: string }[]): Issue[] {
+  const issues: Issue[] = [];
+  for (const { tag, path } of cites) {
+    if (!CITE_TAG.test(tag)) continue; // grammar is the schema's job
+    const r = resolve(tag);
+    let message: string | undefined;
+    if (!r.ok) message = `cite "${tag}" does not resolve: ${r.reason}`;
+    else if (tag.includes(":pp.") && r.pages.length > MAX_RANGE_PAGES) {
+      message = `cite "${tag}" spans ${r.pages.length} pages; the limit is ${MAX_RANGE_PAGES}`;
+    }
+    if (message) issues.push({ rule: "R-CITE-RESOLVES", path, message, severity: "error" });
+  }
+  return issues;
+}
 
 function loadSchema(name: string): object {
   const url = new URL(`../../schema/${name}`, import.meta.url);
@@ -133,7 +160,7 @@ function idIssue(obj: Record<string, unknown>, key: string, basename: string | u
   ];
 }
 
-/** Schema plus the semantic rules R-PD, R-CITE-SRC, R-ID and R-STAGE. */
+/** Schema plus the semantic rules R-PD, R-CITE-SRC, R-CITE-RESOLVES, R-SOURCE-MANIFEST, R-ID and R-STAGE. */
 export function validateEntry(obj: unknown, opts: EntryOptions): Issue[] {
   const issues = schemaIssues(validators().entry, obj);
   if (!isRecord(obj)) return issues;
@@ -171,6 +198,37 @@ export function validateEntry(obj: unknown, opts: EntryOptions): Issue[] {
     }
   }
 
+  // R-CITE-RESOLVES (an error at both stages)
+  issues.push(...resolveIssues(collectCites(obj)));
+
+  // R-SOURCE-MANIFEST: every source row is a manifest source, with the manifest's year and PD status.
+  if (Array.isArray(sources)) {
+    const known = new Map(manifestSources().map((m) => [m.id, m]));
+    sources.forEach((s, i) => {
+      if (!isRecord(s) || typeof s.source_id !== "string") return;
+      const m = known.get(s.source_id);
+      if (!m) {
+        issues.push({
+          rule: "R-SOURCE-MANIFEST",
+          path: pointer(["sources", i, "source_id"]),
+          message: `source "${s.source_id}" is not in sources/manifest.json`,
+          severity: "error",
+        });
+        return;
+      }
+      for (const key of ["public_domain", "year"] as const) {
+        if (s[key] !== m[key]) {
+          issues.push({
+            rule: "R-SOURCE-MANIFEST",
+            path: pointer(["sources", i, key]),
+            message: `${key} ${JSON.stringify(s[key])} differs from the manifest's ${JSON.stringify(m[key])} for ${m.id}`,
+            severity: "error",
+          });
+        }
+      }
+    });
+  }
+
   // R-ID
   issues.push(...idIssue(obj, "id", opts.basename));
 
@@ -194,10 +252,20 @@ export function validateEntry(obj: unknown, opts: EntryOptions): Issue[] {
   return issues;
 }
 
-/** Schema plus R-ID (`entry_id` equals the file basename). */
+/**
+ * Schema plus R-ID (`entry_id` equals the file basename) and R-CITE-RESOLVES on the cites the
+ * verify agent asserts (`to_cites`, `grade_rationale`). Removed clauses and `from_cites` record what
+ * the draft said, which may be exactly why they were removed, so they are not resolved.
+ */
 export function validateLog(obj: unknown, opts: LogOptions = {}): Issue[] {
   const issues = schemaIssues(validators().log, obj);
-  if (isRecord(obj)) issues.push(...idIssue(obj, "entry_id", opts.basename));
+  if (isRecord(obj)) {
+    const asserted = collectCites(obj).filter(
+      ({ path }) => !path.startsWith("/removed/") && !/\/from_cites\//.test(path),
+    );
+    issues.push(...resolveIssues(asserted));
+    issues.push(...idIssue(obj, "entry_id", opts.basename));
+  }
   return issues;
 }
 

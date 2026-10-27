@@ -15,6 +15,7 @@
     {
       "field": "appearance",
       "text": "Fixture clause.",
+      "to_text": "Fixture narrowed clause.",
       "from_cites": [
         "machal1918:p.243"
       ],

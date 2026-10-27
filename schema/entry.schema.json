@@ -229,7 +229,7 @@
     },
     "NativeName": {
       "type": "object",
-      "required": ["script", "text", "people"],
+      "required": ["script", "text", "people", "cites"],
       "properties": {
         "script": {
           "description": "ISO 15924 script code, e.g. Cyrl, Latn, Glag.",
@@ -237,7 +237,8 @@
           "pattern": "^[A-Z][a-z]{3}$"
         },
         "text": { "$ref": "#/$defs/NonEmptyString" },
-        "people": { "$ref": "#/$defs/People" }
+        "people": { "$ref": "#/$defs/People" },
+        "cites": { "$ref": "#/$defs/Cites" }
       },
       "unevaluatedProperties": false
     },

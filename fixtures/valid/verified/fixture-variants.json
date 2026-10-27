@@ -8,13 +8,26 @@
         {
           "script": "Cyrl",
           "text": "фикстура",
-          "people": "Russians"
+          "people": "Russians",
+          "cites": [
+            "ralston1872:p.123"
+          ]
         }
       ]
     },
     "variants": [
       {
         "romanized": "fixtura",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "фиктура",
+            "people": "Serbs",
+            "cites": [
+              "karadzic1818:s.v.Дрекавац"
+            ]
+          }
+        ],
         "peoples": [
           "Serbs"
         ],
@@ -135,7 +148,7 @@
       "author": "Jan Máchal",
       "title": "Slavic Mythology",
       "year": 1918,
-      "url": "https://example.org/fixture/machal1918",
+      "url": "https://archive.org/details/mythologyofallra0003john",
       "public_domain": true
     },
     {
@@ -143,7 +156,7 @@
       "author": "W. R. S. Ralston",
       "title": "The Songs of the Russian People",
       "year": 1872,
-      "url": "https://example.org/fixture/ralston1872",
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
       "public_domain": true
     },
     {
@@ -151,7 +164,7 @@
       "author": "Vuk Stefanović Karadžić",
       "title": "Srpski rječnik",
       "year": 1818,
-      "url": "https://example.org/fixture/karadzic1818",
+      "url": "https://archive.org/details/srpskirjecnik00kara",
       "public_domain": true
     }
   ],
