@@ -1,0 +1,871 @@
+{
+  "id": "vampir",
+  "schema_version": 1,
+  "names": {
+    "primary": {
+      "romanized": "vampir",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Вампир",
+          "people": "Serbs",
+          "cites": [
+            "karadzic1818:s.v.Вампир"
+          ]
+        },
+        {
+          "script": "Cyrl",
+          "text": "упырь",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1869:p.557"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "vukodlak",
+        "peoples": [
+          "Serbs"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "Вукодлак",
+            "people": "Serbs",
+            "cites": [
+              "karadzic1818:s.v.Вукодлак"
+            ]
+          }
+        ],
+        "cites": [
+          "karadzic1818:s.v.Вампир",
+          "karadzic1818:s.v.Вукодлак"
+        ]
+      },
+      {
+        "romanized": "upuir",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "ralston1872:p.410"
+        ]
+      },
+      {
+        "romanized": "pijawica",
+        "peoples": [
+          "Croatians"
+        ],
+        "cites": [
+          "ralston1872:p.410"
+        ]
+      },
+      {
+        "romanized": "vieszcy",
+        "peoples": [
+          "Slovenes",
+          "Kashubes"
+        ],
+        "cites": [
+          "ralston1872:p.410"
+        ]
+      },
+      {
+        "romanized": "upior",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "ralston1872:p.410"
+        ]
+      },
+      {
+        "romanized": "upiry",
+        "peoples": [
+          "Poles",
+          "Czechs"
+        ],
+        "cites": [
+          "ralston1872:p.410"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Ralston says the name has never been satisfactorily explained.",
+        "cites": [
+          "ralston1872:p.410"
+        ]
+      },
+      {
+        "text": "The name has been compared with the Lithuanian wempti, 'to drink', and wempti, wampiti, 'to growl, to mutter'.",
+        "cites": [
+          "ralston1872:p.410"
+        ]
+      },
+      {
+        "text": "The name has been derived from a root pi, 'to drink', with the prefix u; if this is correct, the characteristic of the vampire is a kind of blood-drunkenness.",
+        "cites": [
+          "ralston1872:p.410"
+        ]
+      },
+      {
+        "text": "Machal says the name, which also appears as Upir, Upidr and so on, is probably derived from the Turkish uber, 'enchantress'.",
+        "cites": [
+          "machal1918:pp.231-232"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "Tambof Government",
+      "cites": [
+        "ralston1872:p.411"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "the Ukraine and White-Russia, where Ralston says traditions are most rife within the Russian Empire",
+      "cites": [
+        "ralston1872:p.409"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Kharkov Government",
+      "cites": [
+        "afanasyev1869:p.557"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Little-Russians",
+      "cites": [
+        "ralston1872:pp.409-410",
+        "ralston1873:p.321"
+      ]
+    },
+    {
+      "people": "Serbs",
+      "region": "Servians",
+      "cites": [
+        "ralston1872:p.412"
+      ]
+    },
+    {
+      "people": "Bulgarians",
+      "cites": [
+        "ralston1872:p.412"
+      ]
+    },
+    {
+      "people": "Kashubes",
+      "region": "Kashoubes",
+      "cites": [
+        "ralston1873:p.321"
+      ]
+    },
+    {
+      "people": "Croatians",
+      "cites": [
+        "ralston1872:p.410"
+      ]
+    },
+    {
+      "people": "Slovenes",
+      "cites": [
+        "ralston1872:p.410"
+      ]
+    },
+    {
+      "people": "Poles",
+      "cites": [
+        "ralston1872:p.410"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "Czekhs",
+      "cites": [
+        "ralston1872:p.410"
+      ]
+    }
+  ],
+  "family": "undead",
+  "appearance": [
+    {
+      "text": "Vampires assume every sort of shape.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "Upyri take various forms when they come out of their graves.",
+      "cites": [
+        "afanasyev1869:p.557"
+      ]
+    },
+    {
+      "text": "According to the dictionaries, the upyr is a man with a tail.",
+      "cites": [
+        "afanasyev1869:p.557"
+      ]
+    },
+    {
+      "text": "In a story heard in the Tambof Government, the vampire appears as a stranger dressed in a red shirt.",
+      "cites": [
+        "ralston1872:p.411"
+      ]
+    },
+    {
+      "text": "In the same Tambof story, the stranger wears a new jacket.",
+      "cites": [
+        "ralston1872:p.411"
+      ]
+    },
+    {
+      "text": "Among the Southern Slavs, the buried corpse of a vampire does not decay.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "Among the Southern Slavs, the buried corpse of a vampire retains the colour of life.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "When a vampire's grave is opened, no trace of death is found on its body.",
+      "cites": [
+        "ralston1872:p.413"
+      ]
+    },
+    {
+      "text": "When a vampire's grave is opened, its cheek is rosy.",
+      "cites": [
+        "ralston1872:p.413"
+      ]
+    },
+    {
+      "text": "When a vampire's grave is opened, its skin is soft.",
+      "cites": [
+        "ralston1872:p.413"
+      ]
+    },
+    {
+      "text": "In the 1725 report, the exhumed body of Peter Plogojoviz had no smell of death about it.",
+      "cites": [
+        "frombald1725:p.12"
+      ]
+    },
+    {
+      "text": "In the 1725 report, the body of Peter Plogojoviz was quite fresh, apart from the nose, which had somewhat fallen in.",
+      "cites": [
+        "frombald1725:p.12"
+      ]
+    },
+    {
+      "text": "In the 1725 report, the hair and beard of Peter Plogojoviz had grown in the grave.",
+      "cites": [
+        "frombald1725:p.12"
+      ]
+    },
+    {
+      "text": "In the 1725 report, new nails had grown on Peter Plogojoviz after the old ones fell away.",
+      "cites": [
+        "frombald1725:p.12"
+      ]
+    },
+    {
+      "text": "In the 1725 report, the old, somewhat whitish skin of Peter Plogojoviz had peeled away and a fresh new skin had come out beneath it.",
+      "cites": [
+        "frombald1725:p.12"
+      ]
+    },
+    {
+      "text": "In the 1725 report, fresh blood was seen in the mouth of Peter Plogojoviz.",
+      "cites": [
+        "frombald1725:p.12"
+      ]
+    },
+    {
+      "text": "The 1725 report says that among such people, whom the villagers call Vampyri, the body is said to remain undecayed and the skin, hair, beard and nails to grow.",
+      "cites": [
+        "frombald1725:p.11"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "At night vampires leave their graves.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "At night vampires rock to and fro upon wayside crosses, wailing all the time.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "The vampire's power ends at cock-crow.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "Upyri come out of their graves at dead of midnight.",
+      "cites": [
+        "afanasyev1869:p.557"
+      ]
+    },
+    {
+      "text": "In the Tambof story, the vampire runs after a peasant driving past a grave-yard after dark.",
+      "cites": [
+        "ralston1872:p.411"
+      ]
+    },
+    {
+      "text": "In the Tambof story, the corpse disappears when the cocks begin to crow.",
+      "cites": [
+        "ralston1872:p.412"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "little-russian",
+      "label": "Little-Russian",
+      "peoples": [
+        "Ukrainians"
+      ],
+      "appearance": [
+        {
+          "text": "The Little-Russians hold that the vampire's teeth are like steel.",
+          "cites": [
+            "ralston1873:p.321"
+          ]
+        },
+        {
+          "text": "The Little-Russian vampire is found resting in his grave with rosy cheek and gory mouth.",
+          "cites": [
+            "ralston1873:p.321"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "If the vampire's hands have grown numb from lying long crossed in the grave, he uses his teeth to gnaw his way through all obstacles.",
+          "cites": [
+            "ralston1873:p.321"
+          ]
+        },
+        {
+          "text": "Having gnawed his way into a house, he first destroys the babes he finds there, and then the older inmates.",
+          "cites": [
+            "ralston1873:p.321"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kashube",
+      "label": "Kashube",
+      "peoples": [
+        "Kashubes"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "The Kashubes say that when the Vieszcy wakes in the grave, he begins to gnaw his own hands and feet.",
+          "cites": [
+            "ralston1873:p.321"
+          ]
+        },
+        {
+          "text": "As he gnaws, first his relations and then his other neighbours sicken and die, one after another.",
+          "cites": [
+            "ralston1873:p.321"
+          ]
+        },
+        {
+          "text": "When he has finished his own flesh, he rises at midnight and destroys cattle.",
+          "cites": [
+            "ralston1873:p.321"
+          ]
+        },
+        {
+          "text": "He may climb a belfry and sound the bell, and all who hear it will soon die.",
+          "cites": [
+            "ralston1873:p.321"
+          ]
+        },
+        {
+          "text": "But generally he sucks the blood of sleepers.",
+          "cites": [
+            "ralston1873:p.321"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serbian",
+      "label": "Serbian",
+      "peoples": [
+        "Serbs"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "Karadzic says the vukodlak comes out of the grave at night.",
+          "cites": [
+            "karadzic1852:s.v.вукодлак"
+          ]
+        },
+        {
+          "text": "The vukodlak strangles people in their houses and drinks their blood.",
+          "cites": [
+            "karadzic1852:s.v.вукодлак"
+          ]
+        },
+        {
+          "text": "Vukodlaks appear most of all in winter.",
+          "cites": [
+            "karadzic1852:s.v.вукодлак"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "Vampires suck the blood of people and so destroy them gradually.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "If they have not time to destroy people, vampires attack domestic animals.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "Among the Southern Slavs, a vampire may suck the flesh of his own breast or gnaw his own body.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "A vampire encroaches on the vitality of his nearest relations, causing them to waste away and finally die.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "In the opinion of the Russian peasant, vampires exert a very baneful influence on the weather.",
+      "cites": [
+        "ralston1872:pp.410-411"
+      ]
+    },
+    {
+      "text": "Storms, droughts, famines, cattle-plagues and similar evils are attributed to vampires and werewolves.",
+      "cites": [
+        "ralston1872:p.411"
+      ]
+    },
+    {
+      "text": "In the Tambof story, the vampire enters a house, strikes a sleeping youth on the back so that it opens, fills a pail with his blood and drinks it dry.",
+      "cites": [
+        "ralston1872:p.411"
+      ]
+    },
+    {
+      "text": "In the Tambof story, the vampire then drinks a pail of blood from a sleeping old man, and both sleepers are found dead the next morning.",
+      "cites": [
+        "ralston1872:pp.411-412"
+      ]
+    },
+    {
+      "text": "Upyri fly through the air (Kharkov Government).",
+      "cites": [
+        "afanasyev1869:p.557"
+      ]
+    },
+    {
+      "text": "Upyri ride about the countryside on horses, raise noise and din, and frighten travellers.",
+      "cites": [
+        "afanasyev1869:p.557"
+      ]
+    },
+    {
+      "text": "Upyri get into huts and suck the blood of sleeping people, who then certainly die; they especially love to suck the blood of infants.",
+      "cites": [
+        "afanasyev1869:p.557"
+      ]
+    },
+    {
+      "text": "In the 1725 report, dying villagers said that the dead Peter Plogojoviz came to them in their sleep, lay upon them and throttled them.",
+      "cites": [
+        "frombald1725:p.11"
+      ]
+    },
+    {
+      "text": "In the 1725 report, nine people, old and young, died within eight days after a 24-hour illness.",
+      "cites": [
+        "frombald1725:p.11"
+      ]
+    },
+    {
+      "text": "In the 1725 report, the widow of Peter Plogojoviz said her husband had come to her and asked for his opanki, or shoes.",
+      "cites": [
+        "frombald1725:p.11"
+      ]
+    },
+    {
+      "text": "In the 1725 report, the villagers feared the whole village could be ruined by such an evil spirit, as was said to have happened in Turkish times.",
+      "cites": [
+        "frombald1725:pp.11-12"
+      ]
+    },
+    {
+      "text": "According to the common report in 1725, the fresh blood in Plogojoviz's mouth had been sucked from the people he had killed.",
+      "cites": [
+        "frombald1725:p.12"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "There is ample evidence of exhuming the corpse of a man supposed to be a vampire and driving a stake of ash-wood, or of hawthorn or maple, through it.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "The corpse is also burned, and the exhuming, staking and burning together are believed to put a definite end to his evil doings.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "The best way to destroy a vampire is to drive a stake through it, when the blood it has been sucking will pour forth from the wound.",
+      "cites": [
+        "ralston1872:p.413"
+      ]
+    },
+    {
+      "text": "The stake must be driven into the vampire's corpse by a single stroke; a second blow would reanimate it.",
+      "cites": [
+        "ralston1872:p.413"
+      ]
+    },
+    {
+      "text": "According to Vuk Karadjic, the Servians find a vampire's grave by driving an immaculately black colt through the churchyard; it will refuse to pass over the vampire's grave.",
+      "cites": [
+        "ralston1872:p.413"
+      ]
+    },
+    {
+      "text": "The Servians then dig up the vampire, pierce it with a white-thorn stake and commit it to the flames.",
+      "cites": [
+        "ralston1872:p.413"
+      ]
+    },
+    {
+      "text": "Because a cat jumping across a corpse can make it a vampire, a corpse is always carefully watched in the cottage before the funeral.",
+      "cites": [
+        "ralston1872:p.412"
+      ]
+    },
+    {
+      "text": "Among the Serbs, the dead are always watched so that nothing passes over them.",
+      "cites": [
+        "karadzic1852:s.v.вукодлак"
+      ]
+    },
+    {
+      "text": "In the Tambof story, the vampire cannot pass gates on which crosses have been branded, but the gates of a house with no cross open of their own accord.",
+      "cites": [
+        "ralston1872:p.411"
+      ]
+    },
+    {
+      "text": "The Little-Russians hold that if fine salt is scattered on the floor of a room, the vampire's footsteps may be traced to his grave.",
+      "cites": [
+        "ralston1873:p.321"
+      ]
+    },
+    {
+      "text": "In the 1725 report, the villagers sharpened a stake and drove it through the heart of Plogojoviz's corpse, and much fresh blood flowed, also from the ears and mouth.",
+      "cites": [
+        "frombald1725:p.12"
+      ]
+    },
+    {
+      "text": "In the 1725 report, the villagers then burned the corpse to ashes, according to their usual custom.",
+      "cites": [
+        "frombald1725:p.12"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "Vampires are deceased people who in their lifetime were sorcerers, bad characters or murderers, and whose bodies are now occupied by an unclean spirit.",
+      "cites": [
+        "machal1918:p.231"
+      ]
+    },
+    {
+      "text": "Among the Southern Slavs, any person on whom an unclean shadow falls, or over whom a dog or a cat jumps, may become a vampire.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "In the Ukraine and White-Russia, vampires are supposed to be dead persons who in their lifetime were wizards, witches and werewolves.",
+      "cites": [
+        "ralston1872:p.409"
+      ]
+    },
+    {
+      "text": "Vampires are also supposed to be people who became outcasts from the Church and its rites, for instance by committing suicide or by drinking themselves to death.",
+      "cites": [
+        "ralston1872:p.409"
+      ]
+    },
+    {
+      "text": "Heretics, apostates and victims of a parental curse are also supposed to become vampires.",
+      "cites": [
+        "ralston1872:p.409"
+      ]
+    },
+    {
+      "text": "The Little-Russians attribute the birth of a vampire to an unholy union between a witch and a werewolf or a devil.",
+      "cites": [
+        "ralston1872:pp.409-410"
+      ]
+    },
+    {
+      "text": "According to the Servians and Bulgarians, unclean spirits enter the corpses of malefactors and other evilly-disposed persons, who then become vampires.",
+      "cites": [
+        "ralston1872:p.412"
+      ]
+    },
+    {
+      "text": "Any one may become a vampire if a cat jumps across his dead body while it lies in the cottage before the funeral.",
+      "cites": [
+        "ralston1872:p.412"
+      ]
+    },
+    {
+      "text": "In some places the jumping of a boy over the corpse is considered as fatal as that of a cat.",
+      "cites": [
+        "ralston1872:p.412"
+      ]
+    },
+    {
+      "text": "The flight of a bird above the body may have the same result, and in the Ukraine so may the mere breath of the wind from the Steppe.",
+      "cites": [
+        "ralston1872:p.412"
+      ]
+    },
+    {
+      "text": "Karadzic says a vukodlak is a man into whom, according to folk tales, some devilish spirit enters forty days after death and revives him.",
+      "cites": [
+        "karadzic1818:s.v.Вукодлак"
+      ]
+    },
+    {
+      "text": "An honest man cannot become a vukodlak unless some bird flies over his dead body or some other animal passes over it.",
+      "cites": [
+        "karadzic1852:s.v.вукодлак"
+      ]
+    },
+    {
+      "text": "Upyri come from wizards, werewolves and people rejected by the Church in their lifetime: suicides, drunkards, heretics, apostates and those cursed by their parents.",
+      "cites": [
+        "afanasyev1869:p.557"
+      ]
+    },
+    {
+      "text": "The Little-Russians say upyri are born of the illicit union of a werewolf or a devil with a witch.",
+      "cites": [
+        "afanasyev1869:p.557"
+      ]
+    }
+  ],
+  "related": [],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Ralston's Songs of the Russian People draws on Afanasyev for its vampire material (footnotes to 'Afanasief, P. V. S. iii.' for the Tambof story and the cat-over-corpse belief, and Karadjic's black-colt custom 'quoted by Afanasief'), so Ralston is counted with Afanasyev, not as a further source.",
+        "cites": [
+          "ralston1872:p.412",
+          "ralston1872:p.413"
+        ]
+      },
+      {
+        "text": "Ralston's Russian Folk-Tales refers its vampire names back to his Songs of the Russian People, p.410, so his two books are one source.",
+        "cites": [
+          "ralston1873:p.321"
+        ]
+      },
+      {
+        "text": "Afanasyev records upyri for the Ukraine and White Russia, with Kharkov Government and Little-Russian beliefs named.",
+        "cites": [
+          "afanasyev1869:p.557"
+        ]
+      },
+      {
+        "text": "Machal, whose opened pages do not say they draw on Afanasyev or Ralston, describes the vampire and gives Southern Slav beliefs about it.",
+        "cites": [
+          "machal1918:p.231",
+          "machal1918:p.232"
+        ]
+      },
+      {
+        "text": "Karadzic's Serbian dictionary independently records the vukodlak (vampir) for the Serbs: rising from the grave at night, strangling people and drinking their blood.",
+        "cites": [
+          "karadzic1818:s.v.Вукодлак",
+          "karadzic1852:s.v.вукодлак"
+        ]
+      },
+      {
+        "text": "The 1725 Frombald report independently records a Vampyri case among the villagers of Kisolova.",
+        "cites": [
+          "frombald1725:p.11",
+          "frombald1725:p.12"
+        ]
+      },
+      {
+        "text": "Ralston names vampire beliefs or names for Russians, Little-Russians, Servians, Bulgarians, Croatians, Slovenes, Kashubes, Poles and Czechs.",
+        "cites": [
+          "ralston1872:p.410",
+          "ralston1872:p.412",
+          "ralston1873:p.321"
+        ]
+      },
+      {
+        "text": "With at least four independent authors (Afanasyev, Machal, Karadzic, Frombald) and nine peoples in the verified rows, the entry is widely attested.",
+        "cites": [
+          "afanasyev1869:p.557",
+          "machal1918:p.232",
+          "karadzic1852:s.v.вукодлак",
+          "frombald1725:p.11"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "karadzic1818",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истолкован њемачким и латинским ријечма",
+      "year": 1818,
+      "url": "https://archive.org/details/srpskirjecnik00kara",
+      "public_domain": true
+    },
+    {
+      "source_id": "karadzic1852",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истумачен њемачкијем и латинскијем ријечима",
+      "year": 1852,
+      "url": "https://archive.org/details/srpski-rjecnik-istumacen-njemackijem-i-latinskijem-rijecima",
+      "public_domain": true
+    },
+    {
+      "source_id": "frombald1725",
+      "author": "Frombald",
+      "title": "Copia eines Schreibens aus dem Gradisker District in Ungarn (Wienerisches Diarium, 21 July 1725, pp. 11-12)",
+      "year": 1725,
+      "url": "https://de.wikisource.org/wiki/Copia_eines_Schreibens_aus_dem_Gradisker_District",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "related: no opened page links the vampire to another pilot creature id. Machal p.229 (vlkodlak identified with the vampire) was a find hit but was not opened, and no werewolf id exists in prompts/creatures.json."
+    },
+    {
+      "kind": "scope",
+      "text": "The Kisolova / Plogojoviz clauses come from frombald1725 (the 1725 report) and describe one alleged case; they are kept as case-specific clauses, not general traits. calmet1850v2 pp.180-181 paraphrases the same report and was deliberately not cited (not independent)."
+    },
+    {
+      "kind": "scope",
+      "text": "Ralston's 'Little-Russians' (and Afanasyev's малороссы) are recorded as Ukrainians, and the 'South-Russian' form upuir is attributed to Ukrainians on that basis. The Ukraine / White-Russia origin list on ralston1872:p.409 is filed under Russians with the region 'the Ukraine and White-Russia' because Ralston frames it as within the Russian Empire, not as a named people."
+    },
+    {
+      "kind": "scope",
+      "text": "Karadzic 1818 s.v.Вукодлак prints 'послије смрти 40 дана' (forty days); the 1852 OCR of the same passage reads '10 дана'. The forty-day clause cites only 1818. The 1818 entry continues onto leaf 123, which cite does not print, so 1818-only content beyond leaf 122 was not used; the strangling, blood-drinking and winter clauses cite the 1852 entry instead."
+    },
+    {
+      "kind": "scope",
+      "text": "Machal's Southern Slav clauses (p.232) are kept top-level with 'Among the Southern Slavs' in the text, because 'Southern Slavs' is not a single people and cannot head a variant."
+    },
+    {
+      "kind": "other",
+      "text": "Afanasyev vol. 3 pp.558-582 continue the vampire chapter (Karadzic's vukodlak, Kashubes, burning, aspen stakes) but were not opened for budget reasons; ralston1872:p.406 (aspen stake) and ralston1873 pp.309-324 beyond p.321 were also not opened. A later pass could add from them."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: Karadzic 1852 s.v. вукодлак also says villagers lead a black colt without markings over graves (it will not cross a vukodlak), stab the undecayed body with hawthorn stakes and burn it, that the vukodlak is found swollen and reddened with human blood ('црвен као вампир'), that he visits his wife, and that he can pass through the smallest hole, at karadzic1852:s.v.вукодлак.",
+      "cites": [
+        "karadzic1852:s.v.вукодлак"
+      ]
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: Afanasyev says upyri lie in their graves as incorruptible corpses, that their teeth are like steel fangs, and that a dictionary also defines the upyr as a wizard who turns into a wolf, at afanasyev1869:p.557.",
+      "cites": [
+        "afanasyev1869:p.557"
+      ]
+    },
+    {
+      "kind": "accretion",
+      "text": "Editorial: popular modern vampire traits from Stoker's Dracula (1897), Victorian vampire fiction and film are excluded; this entry records only the cited folk sources and the 1725 report."
+    }
+  ]
+}
