@@ -1,0 +1,158 @@
+{
+  "entry_id": "vodyanoi",
+  "verifier_prompt_version": "verify-v1",
+  "removed": [
+    {
+      "field": "/appearance/14",
+      "text": "He can transform himself in many ways.",
+      "cites": [
+        "machal1918:p.270"
+      ],
+      "reason": "Misplaced, belongs in behavior_habitat: a capacity to transform is not physical description. The attested forms (human, ordinary mortal, pike, fish tail) stay as their own clauses."
+    },
+    {
+      "field": "/behavior_habitat/17",
+      "text": "He flees at the sound of church bells.",
+      "cites": [
+        "ralston1872:p.151"
+      ],
+      "reason": "Unsupported: ralston1872:p.151 says nothing about church bells. The only church-bells on the neighbouring page (ralston1872:p.150) are heard by the drowned girl in the story, not fled by the water-sprite; a find for \"church-bells\" and for \"bells\" in ralston1872 found no other page about him."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "/appearance/8",
+      "text": "The people picture him as a naked old man with a large swollen belly and a puffy face.",
+      "to_text": "The people picture him as a naked old man.",
+      "from_cites": [
+        "afanasyev1868:p.237"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.237"
+      ],
+      "reason": "One attribute per clause: the swollen belly and puffy face were cut from this clause (they are stated separately in /appearance/6 and /appearance/7); afanasyev1868:p.237 supports the naked old man."
+    },
+    {
+      "field": "/appearance/9",
+      "text": "He combs his long green hair.",
+      "to_text": "He has long green hair.",
+      "from_cites": [
+        "machal1918:p.270"
+      ],
+      "to_cites": [
+        "machal1918:p.270"
+      ],
+      "reason": "Combing is behaviour, already recorded in /scene/3; only the physical attribute, his long green hair (machal1918:p.270), is kept in appearance."
+    },
+    {
+      "field": "/appearance/10",
+      "text": "Legend gives the grandfather water-spirit green hair and a green beard.",
+      "to_text": "Legend gives the grandfather water-spirit a green beard.",
+      "from_cites": [
+        "afanasyev1868:p.244"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.244"
+      ],
+      "reason": "One attribute per clause: green hair cut (already in /appearance/9); afanasyev1868:p.244 speaks of the legend of the green hair and beard of the grandfather-vodyanik."
+    },
+    {
+      "field": "/appearance/11",
+      "text": "In Russia he has been seen floating on a log or snag, sitting on it naked and covered in mud.",
+      "to_text": "In Russia he has been seen sitting on a log or snag, covered in mud.",
+      "from_cites": [
+        "afanasyev1868:p.243"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.243"
+      ],
+      "reason": "One attribute per clause: floating is behaviour and nakedness is already recorded in /appearance/5 and /appearance/8; afanasyev1868:p.243 says he sits on the log \"весь въ тинѣ\" (all in mud/slime). The log is kept as the referent of /appearance/12 and /appearance/13."
+    },
+    {
+      "field": "/dealing_with_it/9",
+      "text": "In some localities the sheat-fish is not eaten because it is the devil's horse, and a caught sheat-fish should not be cursed lest he hear and take revenge.",
+      "to_text": "In some localities people are advised not to eat the sheat-fish because it is the devil's horse, and a caught sheat-fish should not be cursed lest he hear and take revenge.",
+      "from_cites": [
+        "afanasyev1868:p.241"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.241"
+      ],
+      "reason": "The page says people are advised against eating the fish (\"не совѣтуютъ употреблять въ пищу\"), not that it is not eaten; wording narrowed."
+    }
+  ],
+  "retagged": [],
+  "flagged": [
+    {
+      "field": "/names/primary/native/0",
+      "text": "Дѣдушка-водяной",
+      "reason": "Form is printed on afanasyev1868:p.236, but the page names no people for it; Russians is inferred from the Russian-language account, and the same passage quotes Belarusian sayings about the vodovik."
+    },
+    {
+      "field": "/names/variants/0/native/0",
+      "text": "водяникъ",
+      "reason": "Form is printed on afanasyev1868:p.236, but the page names no people for it; Russians is inferred from the Russian-language account, and the same passage quotes Belarusian sayings about the vodovik."
+    },
+    {
+      "field": "/names/variants/3",
+      "text": "vodovik",
+      "reason": "afanasyev1868:p.236 prints водовикъ without naming a people, and the sentence using it continues \"или какъ выражаются бѣлоруссы\"; the people may be Belarusians rather than Russians."
+    },
+    {
+      "field": "/names/variants/3/native/0",
+      "text": "водовикъ",
+      "reason": "Form is printed on afanasyev1868:p.236, but the page names no people for it; Russians is inferred from the Russian-language account, and the same passage quotes Belarusian sayings about the vodovik."
+    },
+    {
+      "field": "/names/variants/4/native/0",
+      "text": "болотняникъ",
+      "reason": "Form is printed on afanasyev1868:p.236, but the page names no people for it; Russians is inferred from the Russian-language account, and the same passage quotes Belarusian sayings about the vodovik."
+    },
+    {
+      "field": "/peoples_regions/3",
+      "text": "Russians (Konchozero and Pertozero (lakes))",
+      "reason": "afanasyev1868:p.244 tells the Konchozero and Pertozero story of \"простолюдины\" (common folk) without naming a people; Russians is inferred from context."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal gives the water-spirit's names for the Russians, Bohemians, Slovenians and Poles.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "Afanasyev records the water-spirit in Russian belief with Belarusian, Little Russian, Lusatian and Czech material.",
+      "cites": [
+        "afanasyev1868:p.236",
+        "afanasyev1868:p.238",
+        "afanasyev1868:p.241",
+        "afanasyev1868:p.243"
+      ]
+    },
+    {
+      "text": "Ralston's water-sprite account cites Afanasyev (\"Afanasief, P. V. S.\") in its footnotes, so Ralston is not independent of Afanasyev and the two count as one source.",
+      "cites": [
+        "ralston1872:p.148",
+        "ralston1872:p.151"
+      ]
+    },
+    {
+      "text": "Machal's water-spirit pages give no citation of Afanasyev or Ralston, so Machal counts as a second independent source.",
+      "cites": [
+        "machal1918:p.270",
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "Seven peoples remain in the verified rows (Russians, Czechs, Ukrainians, Belarusians, Sorbs, Slovenes, Poles); Russians, Czechs and Ukrainians rest on both independent sources, Slovenes and Poles on Machal alone, Belarusians and Sorbs on Afanasyev alone.",
+      "cites": [
+        "machal1918:p.270",
+        "machal1918:p.271",
+        "afanasyev1868:p.241",
+        "afanasyev1868:p.243"
+      ]
+    }
+  ]
+}
