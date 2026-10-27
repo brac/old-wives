@@ -1,5 +1,138 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 0,
-  "rows": []
+  "total_usd": 0.609,
+  "rows": [
+    {
+      "date": "2026-10-27T16:17:19.854Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e26-e576-7af3-b224-823764ba0eb9",
+      "file": "plates\\bakeoff\\out\\qwen\\baba-yaga\\baba-yaga-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:17:43.407Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e27-412f-7e90-9eef-70cff87a90e6",
+      "file": "plates\\bakeoff\\out\\qwen\\bannik\\bannik-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:18:06.990Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e27-9d4e-75d3-8428-e09b62660922",
+      "file": "plates\\bakeoff\\out\\qwen\\zmey-gorynych.serpent\\zmey-gorynych-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:18:30.562Z",
+      "arm": "zimage",
+      "endpoint": "fal-ai/z-image/base",
+      "entry": "baba-yaga",
+      "seed": 1,
+      "estimate_usd": 0.01,
+      "status": "done",
+      "request_id": "01a17e27-f969-7293-bca2-10eba05a031f",
+      "file": "plates\\bakeoff\\out\\zimage\\baba-yaga\\baba-yaga-zimage-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:20:06.523Z",
+      "arm": "zimage",
+      "endpoint": "fal-ai/z-image/base",
+      "entry": "bannik",
+      "seed": 1,
+      "estimate_usd": 0.01,
+      "status": "done",
+      "request_id": "01a17e29-703c-7013-b9e0-c2cb80bb786e",
+      "file": "plates\\bakeoff\\out\\zimage\\bannik\\bannik-zimage-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:20:11.800Z",
+      "arm": "zimage",
+      "endpoint": "fal-ai/z-image/base",
+      "entry": "zmey-gorynych",
+      "seed": 1,
+      "estimate_usd": 0.01,
+      "status": "done",
+      "request_id": "01a17e29-84f1-7a11-83f7-b3a9e82a78ce",
+      "file": "plates\\bakeoff\\out\\zimage\\zmey-gorynych.serpent\\zmey-gorynych-zimage-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:20:17.071Z",
+      "arm": "schnell",
+      "endpoint": "fal-ai/flux/schnell",
+      "entry": "baba-yaga",
+      "seed": 1,
+      "estimate_usd": 0.003,
+      "status": "done",
+      "request_id": "01a17e29-9977-74f1-9c55-80a58f191394",
+      "file": "plates\\bakeoff\\out\\schnell\\baba-yaga\\baba-yaga-schnell-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:20:21.812Z",
+      "arm": "schnell",
+      "endpoint": "fal-ai/flux/schnell",
+      "entry": "bannik",
+      "seed": 1,
+      "estimate_usd": 0.003,
+      "status": "done",
+      "request_id": "01a17e29-abf5-7791-b123-f3aa5c36596a",
+      "file": "plates\\bakeoff\\out\\schnell\\bannik\\bannik-schnell-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:20:27.704Z",
+      "arm": "schnell",
+      "endpoint": "fal-ai/flux/schnell",
+      "entry": "zmey-gorynych",
+      "seed": 1,
+      "estimate_usd": 0.003,
+      "status": "done",
+      "request_id": "01a17e29-c2fd-7601-aeb5-7cc70982cf61",
+      "file": "plates\\bakeoff\\out\\schnell\\zmey-gorynych.serpent\\zmey-gorynych-schnell-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:20:46.490Z",
+      "arm": "qwen-edit-refs",
+      "endpoint": "fal-ai/qwen-image-edit-plus",
+      "entry": "baba-yaga",
+      "seed": 1,
+      "estimate_usd": 0.15,
+      "status": "done",
+      "request_id": "01a17e2a-0c3a-7c40-ae60-d769ca2c74e5",
+      "file": "plates\\bakeoff\\out\\qwen-edit-refs\\baba-yaga\\baba-yaga-qwen-edit-refs-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:21:15.534Z",
+      "arm": "qwen-edit-refs",
+      "endpoint": "fal-ai/qwen-image-edit-plus",
+      "entry": "bannik",
+      "seed": 1,
+      "estimate_usd": 0.15,
+      "status": "done",
+      "request_id": "01a17e2a-7db5-7842-ac52-0bd6bdfb799a",
+      "file": "plates\\bakeoff\\out\\qwen-edit-refs\\bannik\\bannik-qwen-edit-refs-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:21:46.059Z",
+      "arm": "qwen-edit-refs",
+      "endpoint": "fal-ai/qwen-image-edit-plus",
+      "entry": "zmey-gorynych",
+      "seed": 1,
+      "estimate_usd": 0.15,
+      "status": "done",
+      "request_id": "01a17e2a-f4ed-73a2-a9ba-3bc7edf2014f",
+      "file": "plates\\bakeoff\\out\\qwen-edit-refs\\zmey-gorynych.serpent\\zmey-gorynych-qwen-edit-refs-s1.full.png"
+    }
+  ]
 }
