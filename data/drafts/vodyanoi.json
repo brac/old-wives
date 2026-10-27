@@ -1,0 +1,933 @@
+{
+  "id": "vodyanoi",
+  "schema_version": 1,
+  "names": {
+    "primary": {
+      "romanized": "vodyanoi",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Дѣдушка-водяной",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1868:p.236"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Vodyanik",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.270"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "водяникъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.236"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Déduska Vodyanoy",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.270"
+        ]
+      },
+      {
+        "romanized": "Vodyany",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.148"
+        ]
+      },
+      {
+        "romanized": "vodovik",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "afanasyev1868:p.236"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "водовикъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.236"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "bolotnyanik",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "afanasyev1868:p.236"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "болотняникъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.236"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Vodnik",
+        "peoples": [
+          "Czechs"
+        ],
+        "cites": [
+          "machal1918:p.270"
+        ]
+      },
+      {
+        "romanized": "Vodeni Moz",
+        "peoples": [
+          "Slovenes"
+        ],
+        "cites": [
+          "machal1918:p.270"
+        ]
+      },
+      {
+        "romanized": "Topielec",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.270"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Déduska Vodyanoy is glossed as \"Water-Grandfather\".",
+        "cites": [
+          "machal1918:p.270"
+        ]
+      },
+      {
+        "text": "Like the domovoy, the Vodyany is affectionately called Dyedushka, or Grandfather, by the peasants.",
+        "cites": [
+          "ralston1872:p.148"
+        ]
+      },
+      {
+        "text": "When the water-grandfather lives in swamps he is called bolotnyanik.",
+        "cites": [
+          "afanasyev1868:p.236"
+        ]
+      },
+      {
+        "text": "Vodeni Moz, the Slovenian name, is glossed as \"Water-Man\".",
+        "cites": [
+          "machal1918:p.270"
+        ]
+      },
+      {
+        "text": "Topielec, the Polish name, is glossed as \"Drowner\".",
+        "cites": [
+          "machal1918:p.270"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "throughout the whole of Russia, at least in outlying districts",
+      "cites": [
+        "ralston1873:p.119"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Tambov Government",
+      "cites": [
+        "afanasyev1868:p.237"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Konchozero and Pertozero (lakes)",
+      "cites": [
+        "afanasyev1868:p.244"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "Bohemia (\"Bohemians\")",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "Bohemia",
+      "cites": [
+        "ralston1872:p.152"
+      ]
+    },
+    {
+      "people": "Belarusians",
+      "cites": [
+        "afanasyev1868:p.236"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "\"Ukranians\"",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Little Russia (Малороссія)",
+      "cites": [
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "people": "Sorbs",
+      "region": "Lusatia (лужичане)",
+      "cites": [
+        "afanasyev1868:p.238"
+      ]
+    },
+    {
+      "people": "Slovenes",
+      "region": "\"Slovenians\"",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "people": "Poles",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    }
+  ],
+  "family": "water",
+  "appearance": [
+    {
+      "text": "He is a bald-headed old man.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "He has a fat belly.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "He has puffy cheeks.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "He wears a high cap of reeds on his head.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "He wears a belt of rushes round his waist.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "He is represented by the people as a naked old man.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "He is represented with a great paunch.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "He is represented with a bloated face.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "The people picture him as a naked old man with a large swollen belly and a puffy face.",
+      "cites": [
+        "afanasyev1868:p.237"
+      ]
+    },
+    {
+      "text": "He combs his long green hair.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "Legend gives the grandfather water-spirit green hair and a green beard.",
+      "cites": [
+        "afanasyev1868:p.244"
+      ]
+    },
+    {
+      "text": "In Russia he has been seen floating on a log or snag, sitting on it naked and covered in mud.",
+      "cites": [
+        "afanasyev1868:p.243"
+      ]
+    },
+    {
+      "text": "When seen on the log he wears on his head a tall boyar's cap twisted from green sedge.",
+      "cites": [
+        "afanasyev1868:p.243",
+        "afanasyev1868:p.244"
+      ]
+    },
+    {
+      "text": "When seen on the log he has a green belt of the same sedge around his body.",
+      "cites": [
+        "afanasyev1868:p.244"
+      ]
+    },
+    {
+      "text": "He can transform himself in many ways.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "In a village he assumes the form of a human being.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "When his wife is about to give birth he takes on the appearance of an ordinary mortal.",
+      "cites": [
+        "ralston1872:p.150"
+      ]
+    },
+    {
+      "text": "Water oozes from the left side of his coat when he is in human form in a village.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "When he appears in a village water is always dripping from his left skirt.",
+      "cites": [
+        "ralston1872:p.151"
+      ]
+    },
+    {
+      "text": "Sometimes he changes himself into a fish, generally a pike.",
+      "cites": [
+        "ralston1872:p.152"
+      ]
+    },
+    {
+      "text": "Sometimes he is represented, like the western Merman, with a fish's tail.",
+      "cites": [
+        "ralston1872:p.152"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "He lives in the deeper portions of rivers, brooks or lakes, mostly in the neighbourhood of mills.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "By day he usually lies concealed in deep places and rises to the surface at night.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "At night he claps his hands and jumps from the water like a fish.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "Sometimes he sits on the mill-wheel, combing his long green hair.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "At night he sits on the shore combing his hair, or dives with a splash and comes up far away.",
+      "cites": [
+        "ralston1872:p.152"
+      ]
+    },
+    {
+      "text": "On moonlit nights he slaps the water with his palm and the loud blows are heard far along the reach.",
+      "cites": [
+        "afanasyev1868:p.243"
+      ]
+    },
+    {
+      "text": "Amid complete stillness the water suddenly swirls and foams, the water-creature leaps out and vanishes, and half a verst away the water foams again and his head shows once more.",
+      "cites": [
+        "afanasyev1868:p.243"
+      ]
+    },
+    {
+      "text": "When the mill-wheel is turning fast he sits on top of it and splashes water.",
+      "cites": [
+        "afanasyev1868:p.237"
+      ]
+    },
+    {
+      "text": "The spot on which he sits instantly becomes wet.",
+      "cites": [
+        "ralston1872:p.151"
+      ]
+    },
+    {
+      "text": "The noise of his night-time combats with the wood-sprites is heard afar off.",
+      "cites": [
+        "ralston1872:p.152"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "bohemia",
+      "label": "Bohemia",
+      "peoples": [
+        "Czechs"
+      ],
+      "appearance": [
+        {
+          "text": "In Bohemia he is said often to sit on the shore with a club in his hand, from which hang ribbons of various hues.",
+          "cites": [
+            "ralston1872:p.152"
+          ]
+        },
+        {
+          "text": "Seen close, the ribbons on his club turn out to be water-weeds and grasses.",
+          "cites": [
+            "afanasyev1868:p.243"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "In Bohemia he allures children with the ribbons, and those he gets hold of he drowns.",
+          "cites": [
+            "ralston1872:p.152"
+          ]
+        },
+        {
+          "text": "Czechs are convinced that he has a mysterious power, which nothing can avert, over people whom fate has destined to drown.",
+          "cites": [
+            "afanasyev1868:p.243"
+          ]
+        },
+        {
+          "text": "In Bohemia fishermen are afraid of assisting a drowning man, thinking he will be offended and drive the fish from their nets.",
+          "cites": [
+            "ralston1872:p.152"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lusatia",
+      "label": "Lusatia",
+      "peoples": [
+        "Sorbs"
+      ],
+      "appearance": [
+        {
+          "text": "In Lusatian belief he is dressed in a smock whose edges are always wet.",
+          "cites": [
+            "afanasyev1868:p.238"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "In Lusatian belief he appears at markets and bargains for rye: a high price foretells dearth, a low one cheap grain.",
+          "cites": [
+            "afanasyev1868:p.238"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "He generally inhabits the depths of rivers, lakes or pools.",
+      "cites": [
+        "ralston1872:p.148",
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "Sometimes he dwells in swamps.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "He is specially fond of living in a mill-stream, close to the wheel.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "Every mill is supposed to have a Vodyany attached to it, or several if it has more wheels than one.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "He possesses stone-built courtyards in which he keeps herds of horses, cattle, sheep and pigs.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "He drives his herds out at night to graze.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "He is master of the waters, and all that happens in the waters is done by his will.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "He has terrible strength in the water but is weak on dry land.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "He likes to ride a sheat-fish.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "He saddles a horse, bull or cow and rides it till it falls dead in the morasses.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "When in good humour he drives fish into the fisherman's net and guides sailors to safety in storms.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "When irritable he lures sailors to dangerous coasts and upsets their boats.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "He tears the spikes out of mill-wheels, diverts the water from its course and floods the mill.",
+      "cites": [
+        "machal1918:p.270",
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "There is a wide-spread belief that he drowns those who bathe at midday or at midnight.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "He is said to have one hundred and eleven beautiful daughters who torture and torment the drowned.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "He marries water-nymphs, or drowned girls cursed by their fathers or mothers.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "When rivers overflow he is believed to be celebrating his wedding, getting drunk and tearing down dikes, bridges and mills.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "The peasants explain floods when the snows melt as the revels of the water-sprites at a subaqueous wedding.",
+      "cites": [
+        "ralston1872:p.149",
+        "ralston1872:p.150"
+      ]
+    },
+    {
+      "text": "When his wife is about to give birth he fetches a midwife from a neighbouring village.",
+      "cites": [
+        "ralston1872:p.150"
+      ]
+    },
+    {
+      "text": "He richly rewards the midwife and sponsors with gold and silver.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "A story tells of a water-baby caught in fishermen's nets and returned to its father, who promised to drive fish into their nets and kept the promise.",
+      "cites": [
+        "ralston1872:p.150"
+      ]
+    },
+    {
+      "text": "A story tells of a drowned girl who lived for years with a water-sprite, left for her village, was not recognised, returned, and two days later her mutilated corpse floated ashore while the river roared.",
+      "cites": [
+        "ralston1872:p.150",
+        "ralston1872:p.151"
+      ]
+    },
+    {
+      "text": "He is much given to drinking, and delights in carouses and card-playing.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "He is a patron of bee-keeping.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "Sometimes he gets caught in nets, but tears them asunder and all the fish swim out after him.",
+      "cites": [
+        "ralston1872:p.151"
+      ]
+    },
+    {
+      "text": "A story tells of a corpse taken into a fisherman's boat that came to life, laughed wildly and jumped overboard: one of the Vodyany's pranks.",
+      "cites": [
+        "ralston1872:p.151"
+      ]
+    },
+    {
+      "text": "A story tells of a sportsman wading after a duck who was seized by the neck and cut himself loose with his axe, his neck left blue with finger-marks.",
+      "cites": [
+        "ralston1872:p.151"
+      ]
+    },
+    {
+      "text": "Sometimes he jumps on a horse and rides it to death.",
+      "cites": [
+        "ralston1872:p.151"
+      ]
+    },
+    {
+      "text": "During the week of the feast of the Prophet Ilya he is on the look-out for victims.",
+      "cites": [
+        "ralston1872:p.152"
+      ]
+    },
+    {
+      "text": "He keeps the souls of his victims as his servants but lets their bodies float to shore.",
+      "cites": [
+        "ralston1872:p.152"
+      ]
+    },
+    {
+      "text": "The common folk think that drowned people are dragged under by him, and that but for him nobody would drown.",
+      "cites": [
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "The drowned body is swollen and blue because he has crushed it.",
+      "cites": [
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "Waking at night one should not drink water, because the water-sickness may attach itself.",
+      "cites": [
+        "afanasyev1868:p.242"
+      ]
+    },
+    {
+      "text": "He fights with the wood-sprites at night.",
+      "cites": [
+        "ralston1872:p.152"
+      ]
+    },
+    {
+      "text": "During the winter he sleeps, and in early spring he awakes wrathful and hungry.",
+      "cites": [
+        "ralston1872:p.153"
+      ]
+    },
+    {
+      "text": "On waking in spring he breaks the ice, sets the waves in commotion and frightens the fish.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "He likes to visit markets, and his appearance foretells the price of corn.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "Fishermen explain that fish desert particular spots because they have been staked and lost at cards by the local Vodyany.",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "text": "The water-spirits of Konchozero and Pertozero are said to have played cards, and the first won all the ryapushka fish from the second, so that it is no longer caught in Pertozero.",
+      "cites": [
+        "afanasyev1868:p.244"
+      ]
+    },
+    {
+      "text": "He contrives to lure fish to himself from other rivers and lakes.",
+      "cites": [
+        "afanasyev1868:p.244"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "Millers are generally obliged to be versed in the black art, for if they do not know how to treat the water-spirits all will go ill with them.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "If the miller wishes to succeed he should bury some living being, such as a cow, a sheep or even a man, in the foundations of his mill.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "By popular belief he takes a toll from every new mill by dragging a person into the pool; a large mill is built on no fewer than ten heads (Tambov Government).",
+      "cites": [
+        "afanasyev1868:p.237"
+      ]
+    },
+    {
+      "text": "It is customary to enclose the first bee-swarm of the year in a bag weighted with a stone and throw it into the nearest river as an offering to him.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "A bee-master flourishes especially if he takes a honeycomb from a hive on St. Zosima's day and flings it at midnight into a mill-stream.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "To keep him away while horses are fording a river, the peasants sign a cross on the water with a knife or a scythe.",
+      "cites": [
+        "ralston1872:p.151"
+      ]
+    },
+    {
+      "text": "One should not bathe without a cross round one's neck, or after sunset, say the peasants.",
+      "cites": [
+        "ralston1872:p.151"
+      ]
+    },
+    {
+      "text": "It is especially dangerous to bathe during the week of the feast of the Prophet Ilya.",
+      "cites": [
+        "ralston1872:p.151",
+        "ralston1872:p.152"
+      ]
+    },
+    {
+      "text": "In Little Russia children chant a rhyme to the little devil before bathing: \"Do not break my bones; you out of the water, I into the water.\"",
+      "cites": [
+        "afanasyev1868:p.241",
+        "afanasyev1868:p.242"
+      ]
+    },
+    {
+      "text": "In some localities the sheat-fish is not eaten because it is the devil's horse, and a caught sheat-fish should not be cursed lest he hear and take revenge.",
+      "cites": [
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "In some places the peasants propitiate him in spring with a horse fed for three days, its legs tied, head smeared with honey, mane adorned with red ribbons and two millstones at its neck, flung at midnight into an ice-hole or mid-river.",
+      "cites": [
+        "ralston1872:p.153"
+      ]
+    },
+    {
+      "text": "For three days he awaits this offering, showing impatience by groanings and upheavings of water, and after receiving it becomes quiet.",
+      "cites": [
+        "ralston1872:p.153"
+      ]
+    },
+    {
+      "text": "Fishermen propitiate him in spring by pouring oil on the water, begging him to be good to them.",
+      "cites": [
+        "ralston1872:p.153"
+      ]
+    },
+    {
+      "text": "The eldest fisherman pours oil into the river saying: \"Here is a present for you, grandfather, for the new home! Love and favour our family.\"",
+      "cites": [
+        "afanasyev1868:p.245"
+      ]
+    },
+    {
+      "text": "Millers sacrifice a black pig to him once a year.",
+      "cites": [
+        "ralston1872:p.153"
+      ]
+    },
+    {
+      "text": "Millers who do not offer the black sow are tormented by him in their sleep, and he will surely wash away their dam.",
+      "cites": [
+        "afanasyev1868:p.245"
+      ]
+    },
+    {
+      "text": "A goose is generally presented to him in the middle of September for watching over the farmer's ducks and geese during the summer.",
+      "cites": [
+        "ralston1872:p.153"
+      ]
+    },
+    {
+      "text": "To make the dam durable and keep him from destroying it, the Ukrainians bury a horse's head in it.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "Neither the Lyeshy nor the Vodyany will use a pack of cards in which any clubs occur, since anything like the sign of the cross is distasteful to demons.",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [
+    {
+      "id": "rusalka",
+      "relation": "related"
+    },
+    {
+      "id": "leshy",
+      "relation": "related"
+    },
+    {
+      "id": "domovoi",
+      "relation": "related"
+    }
+  ],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "origin: no page read says where the vodyanoi comes from or who becomes one. Machal p.271, Ralston pp.149-150 and Afanasyev II p.239 say drowned or cursed girls become his wives (recorded under behavior_habitat), not that anyone becomes a vodyanoi. Searched vodyanoi, vodyanoy, vodyany, vodyanik, water-spirit, water-sprite, vodnik, водяной, водяникъ, водяник, водяный, водяному, водян across all sources; read machal1918 pp.270-271, ralston1872 pp.148-156, ralston1873 pp.119 and 205, afanasyev1868 pp.236-245."
+    },
+    {
+      "kind": "scope",
+      "text": "Machal pp.270-271 describes one 'spirit living in the water' under several peoples' names (Russian Vodyanik, Bohemian Vodnik, Slovenian Vodeni Moz, Polish Topielec) and does not tie the description that follows to any one people. Those clauses are kept top-level as Machal gives them; the verify agent may want to narrow them."
+    },
+    {
+      "kind": "scope",
+      "text": "Afanasyev II p.236 lists Czech and German name forms in Latin script, but the OCR is garbled ('ѵойпік', 'ѵ о <1-пу ипігшнѣмец. ѵа58егтапп'), so no Latin-script native forms were recorded from it. The native forms водяникъ, водовикъ and болотняникъ are printed without a stated people; Russians is recorded from context (Russian peasant belief throughout the passage)."
+    },
+    {
+      "kind": "scope",
+      "text": "Afanasyev II pp.236 and 241-242 quote Belarusian and Little Russian sayings that call the mill-wheel or bathing spirit 'чортъ'/'чортокъ' (devil); they are recorded for the vodyanoi only because the page itself places them in the vodyanoi passage."
+    },
+    {
+      "kind": "other",
+      "text": "Afanasyev II pp.246-248 were printed by a pp.236-248 cite but not read (budget) and are not cited. erben1893 (vodník hits) was not used: it is a literary poem, and the hints list only Russians."
+    }
+  ]
+}
