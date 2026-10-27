@@ -1,0 +1,96 @@
+{
+  "entry_id": "vodyanoi",
+  "verifier_prompt_version": "verify-v2",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/appearance/8",
+      "text": "In Rus' he has been seen floating on a log or snag, sitting on it naked.",
+      "to_text": "In Rus' he has been seen naked.",
+      "from_cites": [
+        "afanasyev1868:p.243"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.243"
+      ],
+      "reason": "afanasyev1868:p.243 says he has been seen floating on a log or snag, sitting on it naked; the log-riding is setting/behaviour, misplaced in appearance (belongs in scene), so only the physical attribute (naked) is kept."
+    },
+    {
+      "field": "/appearance/12",
+      "text": "He has long green hair, which he sometimes combs while sitting on the mill-wheel.",
+      "to_text": "He has long green hair.",
+      "from_cites": [
+        "machal1918:p.270"
+      ],
+      "to_cites": [
+        "machal1918:p.270"
+      ],
+      "reason": "machal1918:p.270 says he sometimes sits on the mill-wheel combing his long green hair; the combing on the mill-wheel is behaviour, misplaced in appearance (belongs in scene), so only the physical attribute is kept."
+    },
+    {
+      "field": "/appearance/13",
+      "text": "Afanasyev says the likening of water-plants to hair gave rise to the tale of the green hair and beard of grandfather vodyanik.",
+      "to_text": "Afanasyev records a tale of the green hair and beard of grandfather vodyanik.",
+      "from_cites": [
+        "afanasyev1868:p.244"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.244"
+      ],
+      "reason": "afanasyev1868:p.244 prints the tale (skazanie) of the green hair and beard of grandfather vodyanik, but the claim that it arose from likening water-plants to hair is Afanasyev's own mythological interpretation, an inference rather than a physical description; cut."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/dealing_with_it/17",
+      "text": "In Little Russia children chant a verse before bathing: \"Chortok, chortok, don't break my bones; you out of the water, and I into the water.\"",
+      "reason": "afanasyev1868:pp.241-242 prints the chant inside the vodyanoi passage, but the verse addresses a 'chortok' (little devil), not the vodyanoi by name; the referent is Afanasyev's framing."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal names the water-spirit for the Russians, Bohemians, Slovenians and Poles.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "Machal records the Ukrainians burying a horse's head in a dam to keep the Vodyanik from destroying it.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "Ralston describes the Vodyany from Russian peasant belief and gives a Bohemian telling, without citing Afanasyev on those passages.",
+      "cites": [
+        "ralston1872:p.148",
+        "ralston1872:p.152"
+      ]
+    },
+    {
+      "text": "Ralston's drowned-girl story cites Afanasyev (P. V. S. II. 239), so on that passage he is not independent of Afanasyev.",
+      "cites": [
+        "ralston1872:p.151"
+      ]
+    },
+    {
+      "text": "Afanasyev records the vodyanoi among the Lusatians, in Little Russia and among the Czechs of Bohemia, as well as in Rus'.",
+      "cites": [
+        "afanasyev1868:p.238",
+        "afanasyev1868:p.241",
+        "afanasyev1868:p.243"
+      ]
+    },
+    {
+      "text": "Machal, Ralston and Afanasyev are three independent authors attesting it across six verified peoples (Russians, Czechs, Slovenes, Poles, Ukrainians, Sorbs).",
+      "cites": [
+        "machal1918:p.270",
+        "ralston1872:p.149",
+        "afanasyev1868:p.237"
+      ]
+    }
+  ]
+}

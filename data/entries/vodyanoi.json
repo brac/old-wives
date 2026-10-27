@@ -1,0 +1,1115 @@
+{
+  "id": "vodyanoi",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "vodyanoi",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "водяной",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1868:p.237"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Vodyanik",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.270"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "водяникъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.241"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Déduska Vodyanoy",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.270"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "Дѣдушка-водяной",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.236"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Vodyany",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.148"
+        ]
+      },
+      {
+        "romanized": "Dyedushka",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.148"
+        ]
+      },
+      {
+        "romanized": "vodovik",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "afanasyev1868:p.236"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "водовикъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.236"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "bolotnyanik",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "afanasyev1868:p.236"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "болотняникъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.236"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Vodnik",
+        "peoples": [
+          "Czechs"
+        ],
+        "cites": [
+          "machal1918:p.270"
+        ]
+      },
+      {
+        "romanized": "Vodeni Moz",
+        "peoples": [
+          "Slovenes"
+        ],
+        "cites": [
+          "machal1918:p.270"
+        ]
+      },
+      {
+        "romanized": "Topielec",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.270"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Machal glosses the Russian name Déduska Vodyanoy as \"Water-Grandfather\".",
+        "cites": [
+          "machal1918:p.270"
+        ]
+      },
+      {
+        "text": "Machal glosses the Slovenian name Vodeni Moz as \"Water-Man\".",
+        "cites": [
+          "machal1918:p.270"
+        ]
+      },
+      {
+        "text": "Machal glosses the Polish name Topielec as \"Drowner\".",
+        "cites": [
+          "machal1918:p.270"
+        ]
+      },
+      {
+        "text": "Ralston renders Vodyany as \"Water-sprite\" and says the peasants affectionately call him Dyedushka, or Grandfather.",
+        "cites": [
+          "ralston1872:p.148"
+        ]
+      },
+      {
+        "text": "Ralston ties the name to the waters: the spirits that dived into the waters [vodui] inhabit them under the name of Vodyanuie, or water-sprites.",
+        "cites": [
+          "ralston1872:p.106"
+        ]
+      },
+      {
+        "text": "Afanasyev says that when the vodyanoi lives in swamps he is called bolotnyanik.",
+        "cites": [
+          "afanasyev1868:p.236"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Tambov Government (a large mill is built on no fewer than ten heads)",
+      "cites": [
+        "afanasyev1868:p.237"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "Bohemians (Vodnik)",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "Bohemia",
+      "cites": [
+        "ralston1872:p.152"
+      ]
+    },
+    {
+      "people": "Slovenes",
+      "region": "Slovenians (Vodeni Moz)",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "people": "Poles",
+      "region": "Poles (Topielec)",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Ukranians (horse's head buried in the dam)",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Little Russia (Малороссія)",
+      "cites": [
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "people": "Sorbs",
+      "region": "Lusatians (лужичане)",
+      "cites": [
+        "afanasyev1868:p.238"
+      ]
+    }
+  ],
+  "family": {
+    "value": "water",
+    "cites": [
+      "machal1918:p.270",
+      "ralston1872:p.149"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "machal-bald-reed-cap",
+      "label": "Machal's bald old man in a reed cap"
+    },
+    {
+      "id": "naked-old-man",
+      "label": "Ralston's and Afanasyev's naked old man"
+    },
+    {
+      "id": "afanasyev-log-rider",
+      "label": "Afanasyev's naked rider on a log, in a sedge boyar cap"
+    },
+    {
+      "id": "green-haired",
+      "label": "Machal's and Afanasyev's green-haired telling"
+    },
+    {
+      "id": "human-in-village",
+      "label": "Human shape when in a village"
+    },
+    {
+      "id": "fish-tailed",
+      "label": "Ralston's merman with a fish's tail"
+    },
+    {
+      "id": "pike",
+      "label": "Ralston's pike"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "He is a bald-headed old man.",
+      "cites": [
+        "machal1918:p.270"
+      ],
+      "form": "machal-bald-reed-cap"
+    },
+    {
+      "text": "He has a fat belly.",
+      "cites": [
+        "machal1918:p.270"
+      ],
+      "form": "machal-bald-reed-cap"
+    },
+    {
+      "text": "He has puffy cheeks.",
+      "cites": [
+        "machal1918:p.270"
+      ],
+      "form": "machal-bald-reed-cap"
+    },
+    {
+      "text": "He wears a high cap of reeds on his head.",
+      "cites": [
+        "machal1918:p.270"
+      ],
+      "form": "machal-bald-reed-cap"
+    },
+    {
+      "text": "He wears a belt of rushes round his waist.",
+      "cites": [
+        "machal1918:p.270"
+      ],
+      "form": "machal-bald-reed-cap"
+    },
+    {
+      "text": "The people represent him as a naked old man.",
+      "cites": [
+        "ralston1872:p.149",
+        "afanasyev1868:p.237"
+      ],
+      "form": "naked-old-man"
+    },
+    {
+      "text": "He has a great paunch (Afanasyev: a large, puffy belly).",
+      "cites": [
+        "ralston1872:p.149",
+        "afanasyev1868:p.237"
+      ],
+      "form": "naked-old-man"
+    },
+    {
+      "text": "He has a bloated, swollen face.",
+      "cites": [
+        "ralston1872:p.149",
+        "afanasyev1868:p.237"
+      ],
+      "form": "naked-old-man"
+    },
+    {
+      "text": "In Rus' he has been seen naked.",
+      "cites": [
+        "afanasyev1868:p.243"
+      ],
+      "form": "afanasyev-log-rider"
+    },
+    {
+      "text": "He is covered all over in slime (тина).",
+      "cites": [
+        "afanasyev1868:p.243"
+      ],
+      "form": "afanasyev-log-rider"
+    },
+    {
+      "text": "He wears on his head a high boyar's cap woven of green sedge (куга).",
+      "cites": [
+        "afanasyev1868:pp.243-244"
+      ],
+      "form": "afanasyev-log-rider"
+    },
+    {
+      "text": "He wears a green belt of the same grass around his body.",
+      "cites": [
+        "afanasyev1868:p.244"
+      ],
+      "form": "afanasyev-log-rider"
+    },
+    {
+      "text": "He has long green hair.",
+      "cites": [
+        "machal1918:p.270"
+      ],
+      "form": "green-haired"
+    },
+    {
+      "text": "Afanasyev records a tale of the green hair and beard of grandfather vodyanik.",
+      "cites": [
+        "afanasyev1868:p.244"
+      ],
+      "form": "green-haired"
+    },
+    {
+      "text": "When in a village he assumes the form of a human being.",
+      "cites": [
+        "machal1918:p.270"
+      ],
+      "form": "human-in-village"
+    },
+    {
+      "text": "Water oozes from (Ralston: is always dripping from) the left side or left skirt of his coat, which betrays him.",
+      "cites": [
+        "machal1918:p.270",
+        "ralston1872:p.151",
+        "afanasyev1868:p.240"
+      ],
+      "form": "human-in-village"
+    },
+    {
+      "text": "The spot on which he sits instantly becomes wet.",
+      "cites": [
+        "ralston1872:p.151",
+        "afanasyev1868:p.240"
+      ],
+      "form": "human-in-village"
+    },
+    {
+      "text": "Sometimes he is represented, like the western Merman, with a fish's tail.",
+      "cites": [
+        "ralston1872:p.152"
+      ],
+      "form": "fish-tailed"
+    },
+    {
+      "text": "Sometimes he changes himself into a fish, generally a pike.",
+      "cites": [
+        "ralston1872:p.152"
+      ],
+      "form": "pike"
+    },
+    {
+      "text": "He can transform himself in many ways.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "Deep places of rivers, brooks or lakes, mostly near mills.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "A mill-stream close to the wheel, where he is specially fond of taking up his quarters.",
+      "cites": [
+        "ralston1872:p.149"
+      ]
+    },
+    {
+      "text": "Sitting on top of the mill-wheel while it spins at full speed, splashing water.",
+      "cites": [
+        "afanasyev1868:p.237"
+      ]
+    },
+    {
+      "text": "At night he rises to the surface, clapping his hands and jumping from the water like a fish.",
+      "cites": [
+        "machal1918:p.270"
+      ]
+    },
+    {
+      "text": "On moonlit nights he slaps the water with his palm, and the ringing blows are heard far along the reach.",
+      "cites": [
+        "afanasyev1868:p.243"
+      ]
+    },
+    {
+      "text": "In dead calm the water suddenly swirls and foams, his head shows and vanishes, and half a verst away the water foams again and his head appears once more.",
+      "cites": [
+        "afanasyev1868:p.243"
+      ]
+    },
+    {
+      "text": "At night he sits on the shore combing his hair, or dives with a splash and comes up far away.",
+      "cites": [
+        "ralston1872:p.152",
+        "afanasyev1868:pp.242-243"
+      ]
+    },
+    {
+      "text": "At night the noise of his fights with the wood-sprites is heard afar off (Afanasyev: crashing of falling trees in the forest and the splash of waves).",
+      "cites": [
+        "ralston1872:p.152",
+        "afanasyev1868:p.243"
+      ]
+    },
+    {
+      "text": "In spring floods, when rivers break bridges, dams and mills, the peasants say the water-sprites are revelling at a wedding.",
+      "cites": [
+        "ralston1872:pp.149-150",
+        "afanasyev1868:p.239"
+      ]
+    },
+    {
+      "text": "In early spring, waiting for his offering, he groans and makes the waters heave.",
+      "cites": [
+        "ralston1872:p.153",
+        "afanasyev1868:p.245"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "bohemia",
+      "label": "Bohemia",
+      "peoples": [
+        "Czechs"
+      ],
+      "appearance": [
+        {
+          "text": "In Bohemia he is said often to sit on the shore with a club in his hand, from which hang ribbons of various hues.",
+          "cites": [
+            "ralston1872:p.152",
+            "afanasyev1868:p.243"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "He allures children with the ribbons, and those he gets hold of he drowns.",
+          "cites": [
+            "ralston1872:p.152",
+            "afanasyev1868:p.243"
+          ]
+        },
+        {
+          "text": "Seen close, the ribbons turn out to be water-weeds and grasses.",
+          "cites": [
+            "afanasyev1868:p.243"
+          ]
+        },
+        {
+          "text": "Fishermen in Bohemia are afraid to help a drowning man, thinking the vodyanoi will be offended and drive the fish from their nets (Afanasyev: or drown them at the first chance).",
+          "cites": [
+            "ralston1872:p.152",
+            "afanasyev1868:p.243"
+          ]
+        },
+        {
+          "text": "The Czechs are convinced the vodyanoi has a mysterious power over those whom fate has destined to drown, which nothing can avert.",
+          "cites": [
+            "afanasyev1868:p.243"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lusatia",
+      "label": "Lusatia",
+      "peoples": [
+        "Sorbs"
+      ],
+      "appearance": [
+        {
+          "text": "Among the Lusatians he appears dressed in a long loose coat (балахонъ) whose edges are always wet.",
+          "cites": [
+            "afanasyev1868:p.238"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "He shows himself at markets and bargains for rye: if he buys at a high price, dearth (a bad harvest) is to be expected; if low, bread will be cheap.",
+          "cites": [
+            "afanasyev1868:p.238"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "He generally inhabits the depths of rivers, lakes or pools.",
+      "cites": [
+        "ralston1872:pp.148-149"
+      ]
+    },
+    {
+      "text": "Sometimes he dwells in swamps.",
+      "cites": [
+        "ralston1872:p.149",
+        "afanasyev1868:p.236"
+      ]
+    },
+    {
+      "text": "Every mill is supposed to have a vodyanoi attached to it, or several if it has more than one wheel.",
+      "cites": [
+        "ralston1872:p.149",
+        "afanasyev1868:p.236"
+      ]
+    },
+    {
+      "text": "He has stone-built courtyards (Afanasyev: large stone chambers among the reeds and sedge) in the deep places.",
+      "cites": [
+        "machal1918:p.270",
+        "afanasyev1868:p.238"
+      ]
+    },
+    {
+      "text": "He keeps herds of horses, cattle, sheep and pigs and drives them out at night to graze.",
+      "cites": [
+        "machal1918:p.270",
+        "ralston1872:p.149",
+        "afanasyev1868:pp.238-239"
+      ]
+    },
+    {
+      "text": "During the day he usually lies concealed at the bottom of deep places.",
+      "cites": [
+        "machal1918:p.270",
+        "ralston1872:p.152",
+        "afanasyev1868:p.242"
+      ]
+    },
+    {
+      "text": "He is the master of the waters, and all that happens in the waters is done by his will.",
+      "cites": [
+        "machal1918:p.270",
+        "afanasyev1868:p.240"
+      ]
+    },
+    {
+      "text": "He has terrible strength while in the water but is weak on dry land.",
+      "cites": [
+        "machal1918:p.270",
+        "afanasyev1868:p.240"
+      ]
+    },
+    {
+      "text": "He rules over all the fishes in his realm.",
+      "cites": [
+        "ralston1872:p.151",
+        "afanasyev1868:p.240"
+      ]
+    },
+    {
+      "text": "In good humour he drives fish into the fisherman's net and guides sailors to safety in storms.",
+      "cites": [
+        "machal1918:p.270",
+        "afanasyev1868:p.240"
+      ]
+    },
+    {
+      "text": "In an irritable mood he lures sailors to dangerous places and upsets their boats.",
+      "cites": [
+        "machal1918:p.270",
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "He tears out the spikes of mill-wheels, diverts the water and floods the mill.",
+      "cites": [
+        "machal1918:pp.270-271",
+        "afanasyev1868:p.237"
+      ]
+    },
+    {
+      "text": "One peasant built a mill without asking the vodyanoi, and in spring he raised the waters and wrecked it.",
+      "cites": [
+        "afanasyev1868:p.237"
+      ]
+    },
+    {
+      "text": "By popular belief he takes a tax from every new mill by dragging a person into the deep pool.",
+      "cites": [
+        "afanasyev1868:p.237"
+      ]
+    },
+    {
+      "text": "He likes to ride a sheat-fish (catfish).",
+      "cites": [
+        "machal1918:p.270",
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "He saddles a horse, bull or cow and rides it until it falls dead in the morass.",
+      "cites": [
+        "machal1918:p.270",
+        "ralston1872:p.151",
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "There is a widespread belief that he drowns those who bathe at midday or at midnight.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "The common people think the drowned are dragged down by him, and that without him no one would drown.",
+      "cites": [
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "The drowned man's body is swollen and blue because the vodyanoi crushed him.",
+      "cites": [
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "He keeps the souls of his victims as his servants but lets their bodies float to shore.",
+      "cites": [
+        "ralston1872:p.152",
+        "afanasyev1868:p.242"
+      ]
+    },
+    {
+      "text": "A sportsman wading after a wounded duck was seized by the neck and pulled under, and cut himself loose with his axe; his neck was covered in blue marks from the vodyanoi's fingers.",
+      "cites": [
+        "ralston1872:p.151",
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "A fisherman took a floating corpse into his boat; it came to life, laughed wildly and jumped overboard: one of the vodyanoi's pranks.",
+      "cites": [
+        "ralston1872:p.151",
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "Sometimes he is caught in fishermen's nets, but tears them asunder, and all the fish swim out after him.",
+      "cites": [
+        "ralston1872:p.151",
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "Night is the time of his heightened activity; peasants say after sunset that the vodyanoi has 'come alive'.",
+      "cites": [
+        "afanasyev1868:p.242"
+      ]
+    },
+    {
+      "text": "He can send a 'water sickness' on one who drinks water at night after waking.",
+      "cites": [
+        "afanasyev1868:p.242"
+      ]
+    },
+    {
+      "text": "During the week of the feast of the Prophet Ilya he is on the lookout for victims.",
+      "cites": [
+        "ralston1872:p.152",
+        "afanasyev1868:p.242"
+      ]
+    },
+    {
+      "text": "He is much given to drinking and delights in carouses and card-playing.",
+      "cites": [
+        "ralston1872:p.149",
+        "afanasyev1868:p.238"
+      ]
+    },
+    {
+      "text": "Fish that suddenly desert a spot have been staked and lost at cards by the local vodyanoi.",
+      "cites": [
+        "ralston1872:p.156",
+        "afanasyev1868:p.244"
+      ]
+    },
+    {
+      "text": "The vodyaniks of lakes Konchozero and Pertozero are said to have played cards, and the first won all the ryapushka fish from the second, which have not been caught in Pertozero since.",
+      "cites": [
+        "afanasyev1868:p.244"
+      ]
+    },
+    {
+      "text": "He contrives to lure fish to himself from other rivers and lakes.",
+      "cites": [
+        "afanasyev1868:p.244"
+      ]
+    },
+    {
+      "text": "He will not use a pack of cards in which any clubs occur.",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "text": "He is a patron of bee-keeping.",
+      "cites": [
+        "ralston1872:p.149",
+        "afanasyev1868:p.238"
+      ]
+    },
+    {
+      "text": "He is married and has a family; Machal says he is said to have one hundred and eleven beautiful daughters who torment the drowned.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "He marries water-maidens, or drowned girls and girls cursed by a father or mother.",
+      "cites": [
+        "machal1918:p.271",
+        "ralston1872:p.149",
+        "afanasyev1868:p.239"
+      ]
+    },
+    {
+      "text": "When rivers overflow, he is believed to be celebrating his wedding, getting drunk and tearing down dikes, bridges and mills.",
+      "cites": [
+        "machal1918:p.271",
+        "ralston1872:p.150",
+        "afanasyev1868:p.239"
+      ]
+    },
+    {
+      "text": "When his wife is about to give birth he takes human shape and fetches a midwife from a village, rewarding her richly with gold and silver.",
+      "cites": [
+        "machal1918:p.271",
+        "ralston1872:p.150",
+        "afanasyev1868:p.240"
+      ]
+    },
+    {
+      "text": "Fishermen once caught his child in their nets and returned it on his promise to drive plenty of fish into their nets, which he kept.",
+      "cites": [
+        "ralston1872:p.150",
+        "afanasyev1868:p.240"
+      ]
+    },
+    {
+      "text": "A drowned girl who lived with a water-sprite went back to her village unrecognised; when she returned he took her again, and two days later her mutilated corpse floated ashore while the river roared, the water-sprite lamenting his loss.",
+      "cites": [
+        "ralston1872:pp.150-151",
+        "afanasyev1868:p.239"
+      ]
+    },
+    {
+      "text": "He likes to visit markets, and his buying foretells the price of corn: dear means a bad harvest, cheap a good crop.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "He sleeps through the winter in his dwelling and wakes in early spring hungry and wrathful, breaking the ice, raising waves and frightening the fish.",
+      "cites": [
+        "machal1918:p.271",
+        "ralston1872:p.153",
+        "afanasyev1868:pp.244-245"
+      ]
+    },
+    {
+      "text": "He watches over the farmer's ducks and geese during the summer months.",
+      "cites": [
+        "ralston1872:p.153"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "Millers are generally obliged to be versed in the black art (Afanasyev: a sorcerer friendly with the unclean), or all will go ill with the mill.",
+      "cites": [
+        "ralston1872:p.149",
+        "afanasyev1868:p.237"
+      ]
+    },
+    {
+      "text": "A miller who wishes to succeed should bury a living being in the foundations of his mill, such as a cow, a sheep or even a man.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "When building a mill it is enough to pledge a living creature (pig, cow, sheep or person), and the vodyanik will sooner or later find what was promised and drown it.",
+      "cites": [
+        "afanasyev1868:p.237"
+      ]
+    },
+    {
+      "text": "In early spring the peasants in some places buy a horse, feed it three days, tie its legs, smear its head with honey, braid red ribbons into its mane, hang two millstones on its neck and at midnight sink it in an ice-hole or mid-river.",
+      "cites": [
+        "ralston1872:p.153",
+        "afanasyev1868:p.245"
+      ]
+    },
+    {
+      "text": "After he has received the horse he becomes quiet.",
+      "cites": [
+        "ralston1872:p.153",
+        "afanasyev1868:p.245"
+      ]
+    },
+    {
+      "text": "Fishermen pour butter or oil on the water as an offering to him, asking him to be good to them.",
+      "cites": [
+        "machal1918:p.271",
+        "ralston1872:p.153",
+        "afanasyev1868:p.245"
+      ]
+    },
+    {
+      "text": "Millers once a year sacrifice a black, well-fed pig to him, so that he will not tear down their dams.",
+      "cites": [
+        "machal1918:p.271",
+        "ralston1872:p.153",
+        "afanasyev1868:p.245"
+      ]
+    },
+    {
+      "text": "A miller who does not make this offering is tormented by him in his sleep.",
+      "cites": [
+        "afanasyev1868:p.245"
+      ]
+    },
+    {
+      "text": "To make a dam durable and keep the Vodyanik from destroying it, the Ukranians bury a horse's head in it.",
+      "cites": [
+        "machal1918:p.271"
+      ]
+    },
+    {
+      "text": "A goose is generally presented to him in mid-September for watching over the farmer's ducks and geese.",
+      "cites": [
+        "ralston1872:p.153"
+      ]
+    },
+    {
+      "text": "The first bee-swarm of the year is put in a bag, weighted with a stone and thrown into the nearest river as an offering to him; whoever does this flourishes as a bee-master.",
+      "cites": [
+        "ralston1872:p.149",
+        "afanasyev1868:p.238"
+      ]
+    },
+    {
+      "text": "On St. Zosima's day a bee-keeper takes a honeycomb from a hive and at midnight throws it into a mill-stream.",
+      "cites": [
+        "ralston1872:p.149",
+        "afanasyev1868:p.238"
+      ]
+    },
+    {
+      "text": "To keep him off horses fording a river, the peasants sign a cross on the water with a knife or a scythe.",
+      "cites": [
+        "ralston1872:p.151",
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "One should not bathe without a cross round one's neck.",
+      "cites": [
+        "ralston1872:p.151",
+        "afanasyev1868:p.242"
+      ]
+    },
+    {
+      "text": "One should not bathe after sunset.",
+      "cites": [
+        "ralston1872:p.151",
+        "afanasyev1868:p.242"
+      ]
+    },
+    {
+      "text": "Bathing is especially dangerous in the week of the feast of the Prophet Ilya.",
+      "cites": [
+        "ralston1872:pp.151-152",
+        "afanasyev1868:p.242"
+      ]
+    },
+    {
+      "text": "One should not drink water on waking at night, lest the water sickness take hold.",
+      "cites": [
+        "afanasyev1868:p.242"
+      ]
+    },
+    {
+      "text": "In Little Russia children chant a verse before bathing: \"Chortok, chortok, don't break my bones; you out of the water, and I into the water.\"",
+      "cites": [
+        "afanasyev1868:pp.241-242"
+      ]
+    },
+    {
+      "text": "In some places people are advised not to eat sheat-fish, the devil's horse, and a caught sheat-fish should not be scolded, lest the vodyanoi hear and take revenge.",
+      "cites": [
+        "afanasyev1868:p.241"
+      ]
+    },
+    {
+      "text": "A sportsman seized by the neck escaped by cutting himself loose with his axe.",
+      "cites": [
+        "ralston1872:p.151",
+        "afanasyev1868:p.241"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "A popular legend says that when Satan and his hosts were expelled from heaven, some of the exiled spirits dived into the waters, which they now inhabit as Vodyanuie, or water-sprites.",
+      "cites": [
+        "ralston1872:p.106"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "rusalka",
+      "relation": "related"
+    },
+    {
+      "id": "domovoi",
+      "relation": "related"
+    },
+    {
+      "id": "leshy",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Machal names the water-spirit for the Russians, Bohemians, Slovenians and Poles.",
+        "cites": [
+          "machal1918:p.270"
+        ]
+      },
+      {
+        "text": "Machal records the Ukrainians burying a horse's head in a dam to keep the Vodyanik from destroying it.",
+        "cites": [
+          "machal1918:p.271"
+        ]
+      },
+      {
+        "text": "Ralston describes the Vodyany from Russian peasant belief and gives a Bohemian telling, without citing Afanasyev on those passages.",
+        "cites": [
+          "ralston1872:p.148",
+          "ralston1872:p.152"
+        ]
+      },
+      {
+        "text": "Ralston's drowned-girl story cites Afanasyev (P. V. S. II. 239), so on that passage he is not independent of Afanasyev.",
+        "cites": [
+          "ralston1872:p.151"
+        ]
+      },
+      {
+        "text": "Afanasyev records the vodyanoi among the Lusatians, in Little Russia and among the Czechs of Bohemia, as well as in Rus'.",
+        "cites": [
+          "afanasyev1868:p.238",
+          "afanasyev1868:p.241",
+          "afanasyev1868:p.243"
+        ]
+      },
+      {
+        "text": "Machal, Ralston and Afanasyev are three independent authors attesting it across six verified peoples (Russians, Czechs, Slovenes, Poles, Ukrainians, Sorbs).",
+        "cites": [
+          "machal1918:p.270",
+          "ralston1872:p.149",
+          "afanasyev1868:p.237"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "Related links: Ralston (ralston1872:p.148) calls the Vodyanuie the male counterparts of the Rusalkas and the Domovoy his kin spirit; ralston1872:p.149 says a drowned girl may become a Rusalka and then marry a Vodyany; ralston1872:p.152 and afanasyev1868:p.243 have him fight the wood-sprites (Lyeshies / лѣшіе)."
+    },
+    {
+      "kind": "scope",
+      "text": "Machal (machal1918:p.270) gives Vodnik (Bohemians), Vodeni Moz (Slovenians) and Topielec (Poles) as other peoples' names for the same water-spirit, and his whole description follows without restricting it to any one people; his description is therefore kept top-level and not split into variants."
+    },
+    {
+      "kind": "scope",
+      "text": "Afanasyev glosses much of this lore as storm and cloud myth (mill as thunder-cloud, drinking as rain, green hair as water-plants). Those interpretations are his, not folk belief, and are not entered as clauses except where they record that a tale exists (the green hair and beard)."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1868:p.236 also prints a Belarusian proverb ('every devil draws water to his own wheel') to illustrate that each vodovik manages his own wheel; it speaks of a чортъ, so Belarusians were not entered as a people. The same page's parenthetical list of Czech and German names is OCR-garbled and was not used."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1868:p.242 has a footnote saying he comes out to warm himself on the shore only during rain in sunshine (citing Grohmann); afanasyev1868:p.244 a footnote that Czechs take the green scum on a pond for the skin of a slain vodyanoi. Footnotes were treated as references and not entered."
+    },
+    {
+      "kind": "scope",
+      "text": "Not opened for budget: afanasyev1868:pp.246-248 (p.248 says in north-eastern Russia the vodyanoi often turns into something, likely more shapeshifting forms); afanasyev1869:p.140 and p.802 (winter rest; the vodyanoi moving to another place); afanasyev1865:pp.635, 643 (dam-keeper; dislike of the hare); afanasyev1868:p.204; ralston1872:p.373 (a charm against 'the evil vodyany'). Each could add behaviour, dealing_with_it or forms."
+    },
+    {
+      "kind": "other",
+      "text": "Erben's Kytice (erben1893:pp.97-107, 185-186) hits on Vodník (the Czech literary poem and its notes); erben1893 is a literary poem, not collected folklore, and it was not opened, so nothing is cited from it."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: Afanasyev also says he washes out weirs and dams, spoils fishing tackle and frightens cattle at the watering place, at afanasyev1868:p.241; and that on waking in spring he scatters the fish and wears out the small ones, at afanasyev1868:p.245."
+    },
+    {
+      "kind": "scope",
+      "text": "Verify note: Ralston's account of the vodyany (ralston1872:pp.148-156) cites Afanasyev only for the drowned-girl story (footnote on ralston1872:p.151, 'Afanasief, P. V. S. II. 239'); the footnote on ralston1872:p.148 belongs to the Polunochnitsas. Elsewhere Ralston is counted as independent of Afanasyev on these pages."
+    }
+  ]
+}
