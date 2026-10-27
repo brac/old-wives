@@ -1,0 +1,83 @@
+{
+  "entry_id": "drekavac",
+  "verifier_prompt_version": "verify-v1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/scene/0",
+      "text": "It is met at night.",
+      "to_text": "It is a nocturnal animal (Latin \"animal nocturnum\").",
+      "from_cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ],
+      "to_cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ],
+      "reason": "The page calls it a nocturnal animal and says it screams at night; \"met at night\" adds an encounter the page does not describe."
+    },
+    {
+      "field": "/scene/1",
+      "text": "Its presence is known by a scream in the night, like that of a goat being carried off.",
+      "to_text": "It screams in the night like a goat that is being carried off.",
+      "from_cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ],
+      "to_cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ],
+      "reason": "Cut \"its presence is known by\": the page says only that it screams at night like a goat being carried off, not that the scream is how it is detected."
+    },
+    {
+      "field": "/behavior_habitat/0",
+      "text": "It is a supposed (\"vermeintliches\") animal, that is, one believed in rather than known.",
+      "to_text": "It is a supposed (\"vermeintliches\") animal.",
+      "from_cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ],
+      "to_cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ],
+      "reason": "Cut the gloss \"one believed in rather than known\", which goes beyond the page's single word \"vermeintliches\"."
+    }
+  ],
+  "retagged": [],
+  "flagged": [
+    {
+      "field": "/names/meaning/0",
+      "text": "The 1818 dictionary glosses the word in German as \"der Schreyer\", the screamer.",
+      "reason": "The 1818 OCR prints the gloss as \"дер © фтерег\"; reading it as \"der Schreyer\" is plausible from the Fraktur misread and the following \"schreyt\", but the word itself is not legible."
+    },
+    {
+      "field": "/appearance/0",
+      "text": "It is described as a four-footed animal (Latin \"quadrupes\").",
+      "reason": "Fully supported by the 1818 page (\"quadrupes\"). The 1852 tag is kept but its Latin is OCR-garbled (\"пости, дпадгирез, с] а т о- ви т\"); \"quadrupes\" can be read there only by inference."
+    },
+    {
+      "field": "/behavior_habitat/2",
+      "text": "It is a nocturnal, noisy animal (Latin \"animal nocturnum ... clamosum\").",
+      "reason": "Fully supported by the 1818 page (\"animal nocturnum, quadrupes, clamosum\"). The 1852 tag is kept but its Latin is OCR-garbled (\"апшта] пости ... с] а т о- ви т\"), so it supports the clause only by inference."
+    }
+  ],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "All surviving clauses rest on one author, Vuk Karadžić: his 1818 and 1852 dictionaries are counted as one source, and no other source in the entry mentions the creature.",
+      "cites": [
+        "karadzic1818:s.v.Дрекавац",
+        "karadzic1852:s.v.Дрекавац"
+      ]
+    },
+    {
+      "text": "The only people is Serbs, fixed by the context of a Serbian dictionary; neither entry names a people or region.",
+      "cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ]
+    },
+    {
+      "text": "The entry is a short dictionary gloss of a supposed nocturnal, four-footed, screaming animal, with no tale, belief context or practice recorded. With one 19th-century compiler and no second independent source, it does not meet \"regional\" (multiple independent sources); it is graded \"literary\" under the single-compiler rule, although the manifest classes Karadžić as folklore rather than literature, so \"cabinet mythology\" is not implied.",
+      "cites": [
+        "karadzic1818:s.v.Дрекавац"
+      ]
+    }
+  ]
+}
