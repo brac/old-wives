@@ -198,3 +198,9 @@ Write the report using the phase-loop `templates/milestone-report.md`, to the pa
 ## Post-review amendments
 
 - (none yet)
+- 2026-10-26: `--stage` is required on `validate` for entries; there is no default. Rejected: defaulting to draft, because a forgotten flag would silently skip the verified-stage rules.
+- 2026-10-26: `resolve()` rejects `p.`/`pp.` tags on `locator: "headword"` sources. IA page numbers for Karadžić 1818 have confidence 16. Rejected: stripping page numbers from the build, because leaves still need them for display.
+- 2026-10-26: `grade_rationale` in the verify log is `Clause[]` (minItems 1), mirroring `attestation.rationale`. Rejected: a plain string, which could carry an uncited claim.
+- 2026-10-26: Drafts and verified entries live apart. The draft agent writes `data/drafts/<id>.json`, which is validated with `--stage draft` and never edited after hand-off. The verify agent writes `data/entries/<id>.json` with `--stage verified`, plus `data/verify-log/<id>.json`. Rejected: verify overwriting the draft in place, which destroys the before-and-after that evaluation question 2 counts.
+- 2026-10-26: The Frombald pages file has the wiki markup stripped; the raw wikitext stays hash-pinned in the manifest. Accepted as auditable.
+- 2026-10-26: The verify agent may remove, narrow or re-tag clauses and may write notes and the grade, but may not add new content clauses. Rejected: letting verify fill gaps, because then it would grade its own work.
