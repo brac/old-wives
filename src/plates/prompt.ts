@@ -4,9 +4,53 @@
 // every word in it is either in the entry or in the constants below. Nothing here
 // paraphrases, summarises or adds description.
 
-/** Positive style tokens, brainstorm C1 (first draft; locked after Ben's C3 pick). */
-export const STYLE_TOKENS =
-  "silverpoint study, metalpoint drawing on prepared paper, Renaissance sketch, visible construction lines, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, blank paper ground, study sheet";
+// Style tokens are assembled from fixed fragments. Two switches (Phase 2c test grid) each
+// own one part of the wording: --guides owns the construction-line fragment, --paper owns
+// every mention of the paper (the medium's "on prepared paper" and the ground). A switch
+// that is not passed keeps the original bake-off wording, so with neither switch the
+// tokens are byte-identical to STYLE_TOKENS below and the bake-off stays reproducible.
+
+export type Guides = "on" | "off";
+export type Paper = "plain" | "prepared";
+export interface StyleOpts {
+  guides?: Guides;
+  paper?: Paper;
+}
+
+/** Fragments shared by every style variant. */
+export const STYLE_LEAD = "silverpoint study";
+export const STYLE_SKETCH = "Renaissance sketch";
+export const STYLE_BODY = "hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome";
+export const STYLE_TAIL = "study sheet";
+
+/** Original bake-off wording, used for a switch that is not passed. */
+export const LEGACY_GUIDES = "visible construction lines";
+export const LEGACY_MEDIUM = "metalpoint drawing on prepared paper";
+export const LEGACY_GROUND = "blank paper ground";
+
+/** --guides on|off. */
+export const GUIDES_TOKENS: Record<Guides, string> = {
+  on: "proportion lines, faint construction grid and measuring marks around the figure, as on a study sheet",
+  off: "no construction grid, no measuring marks",
+};
+
+/** --paper plain|prepared. The medium drops "on prepared paper" so only the ground speaks. */
+export const PAPER_MEDIUM = "metalpoint drawing";
+export const PAPER_TOKENS: Record<Paper, string> = {
+  plain: "clean light paper ground",
+  prepared: "lightly prepared paper, pale warm tint, faint paper tooth",
+};
+
+export function styleTokens(opts: StyleOpts = {}): string {
+  const guides = opts.guides ? GUIDES_TOKENS[opts.guides] : LEGACY_GUIDES;
+  const medium = opts.paper ? PAPER_MEDIUM : LEGACY_MEDIUM;
+  const ground = opts.paper ? PAPER_TOKENS[opts.paper] : LEGACY_GROUND;
+  if (guides === undefined || ground === undefined) throw new Error(`unknown style option ${JSON.stringify(opts)}`);
+  return [STYLE_LEAD, medium, STYLE_SKETCH, guides, STYLE_BODY, ground, STYLE_TAIL].join(", ");
+}
+
+/** Positive style tokens, brainstorm C1, as used in the 2b bake-off (no switches). */
+export const STYLE_TOKENS = styleTokens();
 
 /** Negative tokens, brainstorm C4. */
 export const NEGATIVE_TOKENS =
@@ -36,6 +80,9 @@ export interface PlatePrompt {
   /** Which entry field the clauses came from. */
   field: "appearance" | "scene";
   form: string | null;
+  /** Style switches as passed; null when not passed (bake-off wording). */
+  guides: Guides | null;
+  paper: Paper | null;
   clauses_used: RankedClause[];
   clauses_dropped: RankedClause[];
 }
@@ -97,20 +144,22 @@ export function buildPrompt(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   entry: any,
   authors: AuthorIndex,
-  opts: { form?: string; negativeInline?: boolean; cap?: number } = {},
+  opts: { form?: string; negativeInline?: boolean; cap?: number } & StyleOpts = {},
 ): PlatePrompt {
   const { field, clauses } = readClauses(entry, opts.form);
   const { used, dropped } = capClauses(
     clauses.map((c) => rankClause(c, authors)),
     opts.cap ?? CLAUSE_CAP,
   );
-  const parts = [...used.map((c) => c.text.trim()), STYLE_TOKENS];
+  const parts = [...used.map((c) => c.text.trim()), styleTokens({ guides: opts.guides, paper: opts.paper })];
   if (opts.negativeInline) parts.push(`${AVOID_PREFIX} ${NEGATIVE_TOKENS}`);
   return {
     prompt: parts.join(" "),
     negative: opts.negativeInline ? "" : NEGATIVE_TOKENS,
     field,
     form: opts.form ?? null,
+    guides: opts.guides ?? null,
+    paper: opts.paper ?? null,
     clauses_used: used,
     clauses_dropped: dropped,
   };

@@ -1,6 +1,6 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 0.609,
+  "total_usd": 1.249,
   "rows": [
     {
       "date": "2026-10-27T16:17:19.854Z",
@@ -133,6 +133,182 @@
       "status": "done",
       "request_id": "01a17e2a-f4ed-73a2-a9ba-3bc7edf2014f",
       "file": "plates\\bakeoff\\out\\qwen-edit-refs\\zmey-gorynych.serpent\\zmey-gorynych-qwen-edit-refs-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:58:51.137Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e4c-e94a-7440-96e2-9a7d1f17aa73",
+      "file": "plates\\grid\\out\\baba-yaga\\gon-pplain-s1\\baba-yaga-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T16:59:15.413Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 2,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e4d-47a2-7730-a4fb-2ec589b43321",
+      "file": "plates\\grid\\out\\baba-yaga\\gon-pplain-s2\\baba-yaga-qwen-s2.full.png"
+    },
+    {
+      "date": "2026-10-27T16:59:38.730Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e4d-a2bb-7e33-93f6-47d68d5de46a",
+      "file": "plates\\grid\\out\\baba-yaga\\gon-pprepared-s1\\baba-yaga-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T17:00:02.105Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 2,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e4d-fe04-7493-92f9-c78e0b210f95",
+      "file": "plates\\grid\\out\\baba-yaga\\gon-pprepared-s2\\baba-yaga-qwen-s2.full.png"
+    },
+    {
+      "date": "2026-10-27T17:00:25.451Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e4e-5937-7f12-8c3d-b1d6d1712128",
+      "file": "plates\\grid\\out\\baba-yaga\\goff-pplain-s1\\baba-yaga-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T17:00:48.832Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 2,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e4e-b48e-70f2-9388-cdfec3e57009",
+      "file": "plates\\grid\\out\\baba-yaga\\goff-pplain-s2\\baba-yaga-qwen-s2.full.png"
+    },
+    {
+      "date": "2026-10-27T17:01:12.303Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e4f-103e-7540-97a9-91ddd4d1ae07",
+      "file": "plates\\grid\\out\\baba-yaga\\goff-pprepared-s1\\baba-yaga-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T17:01:45.287Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 2,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e4f-9112-7d92-8ef8-5302534578b4",
+      "file": "plates\\grid\\out\\baba-yaga\\goff-pprepared-s2\\baba-yaga-qwen-s2.full.png"
+    },
+    {
+      "date": "2026-10-27T17:02:08.701Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e4f-ec90-7870-8e45-998d12dea7ee",
+      "file": "plates\\grid\\out\\zmey-gorynych.serpent\\gon-pplain-s1\\zmey-gorynych-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T17:02:32.263Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 2,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e50-4896-77c0-a60e-b4a62d3ab4b2",
+      "file": "plates\\grid\\out\\zmey-gorynych.serpent\\gon-pplain-s2\\zmey-gorynych-qwen-s2.full.png"
+    },
+    {
+      "date": "2026-10-27T17:02:55.625Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e50-a3d6-76c3-9d6f-a2d1184aa172",
+      "file": "plates\\grid\\out\\zmey-gorynych.serpent\\gon-pprepared-s1\\zmey-gorynych-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T17:03:19.144Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 2,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e50-ffb2-7201-a34c-01913c479450",
+      "file": "plates\\grid\\out\\zmey-gorynych.serpent\\gon-pprepared-s2\\zmey-gorynych-qwen-s2.full.png"
+    },
+    {
+      "date": "2026-10-27T17:03:43.299Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e51-5e11-7c01-8dff-9f5967f92101",
+      "file": "plates\\grid\\out\\zmey-gorynych.serpent\\goff-pplain-s1\\zmey-gorynych-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T17:04:06.236Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 2,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e51-b7a9-7183-82b7-b5c8cb2a22f4",
+      "file": "plates\\grid\\out\\zmey-gorynych.serpent\\goff-pplain-s2\\zmey-gorynych-qwen-s2.full.png"
+    },
+    {
+      "date": "2026-10-27T17:04:29.067Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e52-10dd-73c1-9baa-d600e2d50791",
+      "file": "plates\\grid\\out\\zmey-gorynych.serpent\\goff-pprepared-s1\\zmey-gorynych-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T17:04:53.269Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 2,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e52-6f66-7063-9bcd-274d086f681c",
+      "file": "plates\\grid\\out\\zmey-gorynych.serpent\\goff-pprepared-s2\\zmey-gorynych-qwen-s2.full.png"
     }
   ]
 }

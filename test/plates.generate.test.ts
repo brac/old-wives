@@ -67,6 +67,16 @@ describe("planJob", () => {
     expect(() => planJob(["--arm", "qwen", ...base, "--refs", "style/refs/manifest.json"])).toThrow(/no reference/);
   });
 
+  test("style switches reach the built prompt; bad values are refused", () => {
+    const { job } = planJob(["--arm", "qwen", ...base, "--guides", "off", "--paper", "prepared", "--dry-run"]);
+    expect(job.built.guides).toBe("off");
+    expect(job.built.paper).toBe("prepared");
+    expect(job.built.prompt).toContain("no construction grid, no measuring marks");
+    expect(job.built.prompt).toContain("lightly prepared paper, pale warm tint, faint paper tooth");
+    expect(() => planJob(["--arm", "qwen", ...base, "--guides", "maybe"])).toThrow(/--guides/);
+    expect(() => planJob(["--arm", "qwen", ...base, "--paper", "vellum"])).toThrow(/--paper/);
+  });
+
   test("bad seed is refused", () => {
     expect(() => planJob(["--arm", "qwen", "--entry", "plates/bakeoff/v1/baba-yaga.json", "--out", "x", "--seed", "abc"])).toThrow(/seed/);
   });

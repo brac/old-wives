@@ -4,11 +4,14 @@ import {
   AVOID_PREFIX,
   CLAUSE_CAP,
   NEGATIVE_TOKENS,
+  GUIDES_TOKENS,
+  PAPER_TOKENS,
   STYLE_TOKENS,
   authorIndex,
   buildPrompt,
   capClauses,
   rankClause,
+  styleTokens,
 } from "../src/plates/prompt.js";
 
 const authors = authorIndex(JSON.parse(readFileSync("sources/manifest.json", "utf8")));
@@ -26,6 +29,49 @@ describe("tokens", () => {
     expect(STYLE_TOKENS.endsWith("blank paper ground, study sheet")).toBe(true);
     expect(NEGATIVE_TOKENS.startsWith("no painterly fantasy concept art")).toBe(true);
     expect(NEGATIVE_TOKENS.endsWith("no watermark, no border")).toBe(true);
+  });
+});
+
+// The exact 2b bake-off tokens. Do not edit: a change here means the bake-off is no longer reproducible.
+const BAKEOFF_STYLE =
+  "silverpoint study, metalpoint drawing on prepared paper, Renaissance sketch, visible construction lines, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, blank paper ground, study sheet";
+
+describe("style switches", () => {
+  test("with neither switch the tokens and prompt are byte-identical to the bake-off", () => {
+    expect(STYLE_TOKENS).toBe(BAKEOFF_STYLE);
+    expect(styleTokens()).toBe(BAKEOFF_STYLE);
+    expect(styleTokens({ guides: undefined, paper: undefined })).toBe(BAKEOFF_STYLE);
+    const e = entry("baba-yaga");
+    const p = buildPrompt(e, authors);
+    expect(p.prompt.endsWith(` ${BAKEOFF_STYLE}`)).toBe(true);
+    expect(p.guides).toBeNull();
+    expect(p.paper).toBeNull();
+  });
+
+  test("each switch emits its own wording and not the other value's", () => {
+    expect(GUIDES_TOKENS.on).toBe("proportion lines, faint construction grid and measuring marks around the figure, as on a study sheet");
+    expect(GUIDES_TOKENS.off).toBe("no construction grid, no measuring marks");
+    expect(PAPER_TOKENS.plain).toBe("clean light paper ground");
+    expect(PAPER_TOKENS.prepared).toBe("lightly prepared paper, pale warm tint, faint paper tooth");
+    for (const guides of ["on", "off"] as const) {
+      for (const paper of ["plain", "prepared"] as const) {
+        const t = styleTokens({ guides, paper });
+        expect(t).toContain(GUIDES_TOKENS[guides]);
+        expect(t).not.toContain(GUIDES_TOKENS[guides === "on" ? "off" : "on"]);
+        expect(t).toContain(PAPER_TOKENS[paper]);
+        expect(t).not.toContain(PAPER_TOKENS[paper === "plain" ? "prepared" : "plain"]);
+        // The switches replace the bake-off fragments they own, so nothing contradicts.
+        expect(t).not.toContain("visible construction lines");
+        expect(t).not.toContain("blank paper ground");
+        expect(t).not.toContain("on prepared paper");
+        if (paper === "plain") expect(t).not.toMatch(/prepared/);
+        if (guides === "off") expect(t).not.toMatch(/proportion lines|faint construction grid/);
+        const p = buildPrompt(entry("baba-yaga"), authors, { guides, paper });
+        expect(p.prompt.endsWith(` ${t}`)).toBe(true);
+        expect(p.guides).toBe(guides);
+        expect(p.paper).toBe(paper);
+      }
+    }
   });
 });
 
@@ -87,7 +133,8 @@ describe.each(["baba-yaga", "bannik", "zmey-gorynych"])("bake-off entry %s", (id
     for (const negativeInline of [false, true]) {
       const p = buildPrompt(e, authors, { negativeInline });
       const allowed = entryWords(e);
-      for (const w of words(`${STYLE_TOKENS} ${NEGATIVE_TOKENS} ${AVOID_PREFIX}`)) allowed.add(w);
+      const styles = [STYLE_TOKENS, ...Object.values(GUIDES_TOKENS), ...Object.values(PAPER_TOKENS)].join(" ");
+      for (const w of words(`${styles} ${NEGATIVE_TOKENS} ${AVOID_PREFIX}`)) allowed.add(w);
       expect(words(p.prompt).filter((w) => !allowed.has(w))).toEqual([]);
       expect(p.clauses_used.length).toBeLessThanOrEqual(10);
       expect(p.clauses_used.length + p.clauses_dropped.length).toBe(e.appearance.length || e.scene.length);

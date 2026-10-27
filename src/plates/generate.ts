@@ -1,7 +1,7 @@
 // Plate generation CLI (Phase 2a).
 //
 //   npm run plates -- --arm <id> --entry <path> [--form <id>] [--refs <a,b,...>]
-//                     --out <dir> --seed <n> [--dry-run]
+//                     --out <dir> --seed <n> [--guides on|off] [--paper plain|prepared] [--dry-run]
 //
 // A live run needs FAL_KEY, loaded with `tsx --env-file=.env`; the key is never printed.
 // --dry-run prints the prompt and the estimate, reads no key and spends nothing.
@@ -11,7 +11,7 @@ import { basename, join, resolve } from "node:path";
 import { parseArgs } from "node:util";
 import { pathToFileURL } from "node:url";
 import { buildInput, estimateUsd, getArm, type Arm } from "./arms.js";
-import { authorIndex, buildPrompt, type PlatePrompt } from "./prompt.js";
+import { GUIDES_TOKENS, PAPER_TOKENS, authorIndex, buildPrompt, type Guides, type Paper, type PlatePrompt } from "./prompt.js";
 
 /** Pilot spend cap in USD (plan phase-2, "Spend"). */
 export const SPEND_CAP_USD = 25;
@@ -88,6 +88,8 @@ export function planJob(argv: string[]): { job: Job; dryRun: boolean } {
       refs: { type: "string" },
       out: { type: "string" },
       seed: { type: "string" },
+      guides: { type: "string" },
+      paper: { type: "string" },
       "dry-run": { type: "boolean", default: false },
     },
   });
@@ -96,6 +98,12 @@ export function planJob(argv: string[]): { job: Job; dryRun: boolean } {
   }
   const seed = Number(values.seed);
   if (!Number.isSafeInteger(seed) || seed < 0) throw new Error(`--seed must be a non-negative integer, got ${values.seed}`);
+  if (values.guides !== undefined && !Object.hasOwn(GUIDES_TOKENS, values.guides)) {
+    throw new Error(`--guides must be on or off, got ${values.guides}`);
+  }
+  if (values.paper !== undefined && !Object.hasOwn(PAPER_TOKENS, values.paper)) {
+    throw new Error(`--paper must be plain or prepared, got ${values.paper}`);
+  }
   const arm = getArm(values.arm!);
   const refs = values.refs ? values.refs.split(",").map((s) => s.trim()).filter(Boolean) : [];
   if (arm.takesRefs && refs.length === 0) throw new Error(`arm ${arm.id} needs --refs`);
@@ -104,7 +112,12 @@ export function planJob(argv: string[]): { job: Job; dryRun: boolean } {
 
   const entry = JSON.parse(readFileSync(values.entry!, "utf8"));
   const authors = authorIndex(JSON.parse(readFileSync("sources/manifest.json", "utf8")));
-  const built = buildPrompt(entry, authors, { form: values.form, negativeInline: !arm.hasNegativePrompt });
+  const built = buildPrompt(entry, authors, {
+    form: values.form,
+    negativeInline: !arm.hasNegativePrompt,
+    guides: values.guides as Guides | undefined,
+    paper: values.paper as Paper | undefined,
+  });
   const job: Job = {
     arm,
     entryPath: values.entry!,
@@ -124,6 +137,7 @@ function printJob(job: Job, ledger: Ledger): void {
   const b = job.built;
   console.log(`arm:       ${job.arm.id} (${job.arm.endpoint}), ${job.arm.width}x${job.arm.height}, seed ${job.seed}`);
   console.log(`entry:     ${job.entryId} [${b.field}${job.form ? `, form ${job.form}` : ""}]`);
+  if (b.guides || b.paper) console.log(`style:     guides ${b.guides ?? "(default)"}, paper ${b.paper ?? "(default)"}`);
   console.log(`clauses:   ${b.clauses_used.length} used, ${b.clauses_dropped.length} dropped`);
   if (job.refs.length) console.log(`refs:      ${job.refs.join(", ")}`);
   console.log(`prompt:    ${b.prompt}`);
@@ -173,6 +187,8 @@ async function runLive(job: Job, ledger: Ledger): Promise<void> {
       entry: job.entryPath,
       field: job.built.field,
       form: job.built.form,
+      guides: job.built.guides,
+      paper: job.built.paper,
       prompt: job.built.prompt,
       negative: job.built.negative,
       clauses_used: job.built.clauses_used,
