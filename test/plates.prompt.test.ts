@@ -7,6 +7,7 @@ import {
   GUIDES_TOKENS,
   PAPER_TOKENS,
   STYLE_TOKENS,
+  STYLES,
   authorIndex,
   buildPrompt,
   capClauses,
@@ -32,9 +33,12 @@ describe("tokens", () => {
 
   test("positive tokens default to guides off and plain paper; negatives carry the no-script list", () => {
     expect(STYLE_TOKENS).toBe(
-      "silverpoint study, metalpoint drawing, Renaissance sketch, no construction grid, no measuring marks, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+      "silverpoint study, metalpoint drawing, Renaissance sketch, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
     );
-    expect(styleTokens()).toBe(styleTokens({ guides: "off", paper: "plain" }));
+    expect(styleTokens()).toBe(styleTokens({ guides: "off", paper: "plain", style: "a" }));
+    expect(styleTokens({ style: "b" })).toBe(
+      "silverpoint drawing, metalpoint, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground, plain empty background",
+    );
     expect(NEGATIVE_TOKENS.startsWith("painterly fantasy concept art")).toBe(true);
     expect(NEGATIVE_TOKENS.endsWith(
       "watermark, border, handwriting, inscriptions, annotations, script, lettering, captions",
@@ -42,12 +46,44 @@ describe("tokens", () => {
     const p = buildPrompt(entry("baba-yaga"), authors);
     expect(p.guides).toBe("off");
     expect(p.paper).toBe("plain");
+    expect(p.style).toBe("a");
     expect(p.prompt.endsWith(` ${STYLE_TOKENS}`)).toBe(true);
+    expect(buildPrompt(entry("baba-yaga"), authors, { style: "b" }).prompt.endsWith(` ${styleTokens({ style: "b" })}`)).toBe(true);
+  });
+
+  test('no positive style item starts with "no ", for every guides, paper and style', () => {
+    for (const style of STYLES) {
+      for (const guides of ["on", "off"] as const) {
+        for (const paper of ["plain", "prepared"] as const) {
+          const items = styleTokens({ guides, paper, style }).split(",").map((t) => t.trim());
+          for (const t of items) {
+            expect(t.length).toBeGreaterThan(0);
+            expect(t.toLowerCase().startsWith("no ")).toBe(false);
+          }
+        }
+      }
+    }
+  });
+
+  test("style b has no study, sketch or Renaissance; guides on keeps its phrase in both styles", () => {
+    for (const guides of ["on", "off"] as const) {
+      for (const paper of ["plain", "prepared"] as const) {
+        expect(styleTokens({ guides, paper, style: "b" })).not.toMatch(/study|sketch|renaissance/i);
+        for (const style of STYLES) {
+          const t = styleTokens({ guides, paper, style });
+          if (guides === "on") expect(t).toContain(GUIDES_TOKENS.on);
+          else expect(t).not.toMatch(/grid|measuring/);
+        }
+      }
+    }
+    expect(() => styleTokens({ style: "c" as never })).toThrow(/unknown style option/);
   });
 
   test('"study sheet" is gone from every style combination', () => {
-    for (const guides of ["on", "off"] as const) {
-      for (const paper of ["plain", "prepared"] as const) expect(styleTokens({ guides, paper })).not.toMatch(/study sheet/);
+    for (const style of STYLES) {
+      for (const guides of ["on", "off"] as const) {
+        for (const paper of ["plain", "prepared"] as const) expect(styleTokens({ guides, paper, style })).not.toMatch(/study sheet/);
+      }
     }
   });
 });
@@ -55,14 +91,14 @@ describe("tokens", () => {
 describe("style switches", () => {
   test("each switch emits its own wording and not the other value's", () => {
     expect(GUIDES_TOKENS.on).toBe("proportion lines, faint construction grid and measuring marks around the figure");
-    expect(GUIDES_TOKENS.off).toBe("no construction grid, no measuring marks");
+    expect(GUIDES_TOKENS.off).toBe("");
     expect(PAPER_TOKENS.plain).toBe("clean light paper ground");
     expect(PAPER_TOKENS.prepared).toBe("lightly prepared paper, pale warm tint, faint paper tooth");
     for (const guides of ["on", "off"] as const) {
       for (const paper of ["plain", "prepared"] as const) {
         const t = styleTokens({ guides, paper });
-        expect(t).toContain(GUIDES_TOKENS[guides]);
-        expect(t).not.toContain(GUIDES_TOKENS[guides === "on" ? "off" : "on"]);
+        if (guides === "on") expect(t).toContain(GUIDES_TOKENS.on);
+        else expect(t).not.toContain(GUIDES_TOKENS.on);
         expect(t).toContain(PAPER_TOKENS[paper]);
         expect(t).not.toContain(PAPER_TOKENS[paper === "plain" ? "prepared" : "plain"]);
         expect(t).not.toContain("visible construction lines");

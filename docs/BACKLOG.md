@@ -267,3 +267,19 @@ The full answers are in `docs/phase2-brainstorm.md`. Settled, with what each rej
 - **Plates are monochrome only.** Colour words in an entry are drawn as tone. Rejected: colour plates, and a single muted tint.
 - **Taste loop:** candidates are shown beside popular reference images (Google Images, saved locally, never committed, never fed to the model). Ben's visual notes become plate prompt edits tagged as visual tradition, and the plate is marked interpretive. The entry text stays sourced. Rejected: rewriting the entries to match popular imagery, which would break the sourcing rule. Also rejected: feeding the references to the model, which copies them, and they are someone else's copyrighted work.
 - **The negative-prompt phrasing is under test.** The avoid list is written as "no X", which may invert under Qwen's language-model encoder. Detail is in `plans/phase-2.md`.
+
+## Ben's taste-review notes, 2026-10-27
+
+- **Plates now follow Ben's visual descriptions,** informed by popular imagery (visual tradition), not the sourced appearance clauses. Every plate is marked interpretive, and the entries stay sourced. Rejected: editing clause by clause, which cannot change anatomy.
+- **Baba-yaga's approved plate is withdrawn.** Ben found the arms and feet skeletal. The redo is frail and gaunt, not skeletal, with a very long nose, longer hair to the shoulders and nothing of iron.
+- **Changes per creature:**
+  - Zmey becomes a three-headed, four-legged winged dragon.
+  - Leshy becomes an old man in moss with branch antlers.
+  - Poludnitsa becomes a festival-dressed corpse with a torn jaw and a sickle.
+  - Bannik becomes a small, wild, sinewy old man with a bath whisk and a bucket, with no victims.
+  - Drekavac becomes hairless and skeletal, with bird legs and long clawed arms.
+  - Domovoi becomes a cat-sized, bearded gremlin of a man.
+  - Rusalka becomes a gaunt swamp spirit, with hair and weeds covering her.
+  - Vampir becomes a gaunt aristocrat whose horror shows on a closer look.
+  - Vodyanoi becomes a fat frog-man with a human nose and a mossy beard, with no hat.
+- **Script still appears with the plain-noun negatives.** The next test removes the negated phrases from the positive prompt and the "study" and "sketch" words.

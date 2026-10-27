@@ -2,9 +2,12 @@
 //
 //   npm run plates -- --arm <id> --entry <path> [--form <id> | --variant <id> | --scene-presence]
 //                     [--refs <a,b,...>] --out <dir> --seed <n> [--guides on|off] [--paper plain|prepared]
+//                     [--style a|b]
 //                     [--dry-run]
 //
-// Human edits in plates/overrides.json (keyed by creature id) are always applied.
+// Human edits in plates/overrides.json (keyed by creature id) are always applied. A creature
+// with a `visual` override takes its subject from it, and --form, --variant and
+// --scene-presence are then an error.
 //
 // A live run needs FAL_KEY, loaded with `tsx --env-file=.env`; the key is never printed.
 // --dry-run prints the prompt and the estimate, reads no key and spends nothing.
@@ -14,7 +17,7 @@ import { basename, join, resolve } from "node:path";
 import { parseArgs } from "node:util";
 import { pathToFileURL } from "node:url";
 import { buildInput, estimateUsd, getArm, type Arm } from "./arms.js";
-import { GUIDES_TOKENS, PAPER_TOKENS, authorIndex, buildPrompt, type Guides, type Overrides, type Paper, type PlatePrompt } from "./prompt.js";
+import { GUIDES_TOKENS, PAPER_TOKENS, STYLES, authorIndex, buildPrompt, type Guides, type Overrides, type Paper, type PlatePrompt, type Style } from "./prompt.js";
 
 /** Pilot spend cap in USD (plan phase-2, "Spend"). */
 export const SPEND_CAP_USD = 25;
@@ -96,6 +99,7 @@ export function planJob(argv: string[]): { job: Job; dryRun: boolean } {
       seed: { type: "string" },
       guides: { type: "string" },
       paper: { type: "string" },
+      style: { type: "string" },
       "dry-run": { type: "boolean", default: false },
     },
   });
@@ -109,6 +113,9 @@ export function planJob(argv: string[]): { job: Job; dryRun: boolean } {
   }
   if (values.paper !== undefined && !Object.hasOwn(PAPER_TOKENS, values.paper)) {
     throw new Error(`--paper must be plain or prepared, got ${values.paper}`);
+  }
+  if (values.style !== undefined && !STYLES.includes(values.style as Style)) {
+    throw new Error(`--style must be a or b, got ${values.style}`);
   }
   const arm = getArm(values.arm!);
   const refs = values.refs ? values.refs.split(",").map((s) => s.trim()).filter(Boolean) : [];
@@ -127,6 +134,7 @@ export function planJob(argv: string[]): { job: Job; dryRun: boolean } {
     negativeInline: !arm.hasNegativePrompt,
     guides: values.guides as Guides | undefined,
     paper: values.paper as Paper | undefined,
+    style: values.style as Style | undefined,
   });
   const job: Job = {
     arm,
@@ -148,8 +156,11 @@ function printJob(job: Job, ledger: Ledger): void {
   console.log(`arm:       ${job.arm.id} (${job.arm.endpoint}), ${job.arm.width}x${job.arm.height}, seed ${job.seed}`);
   const sel = [b.field, b.form && `form ${b.form}`, b.variant && `variant ${b.variant}`, b.interpretive && "interpretive"].filter(Boolean).join(", ");
   console.log(`entry:     ${job.entryId} [${sel}]`);
-  console.log(`style:     guides ${b.guides}, paper ${b.paper}`);
-  for (const e of b.human_edits) console.log(`edit:      dropped "${e.text}" (${e.by}, ${e.date})`);
+  console.log(`style:     ${b.style}, guides ${b.guides}, paper ${b.paper}`);
+  for (const e of b.human_edits) {
+    const what = "type" in e ? "visual tradition" : "dropped";
+    console.log(`edit:      ${what} "${e.text}" (${e.by}, ${e.date})`);
+  }
   console.log(`clauses:   ${b.clauses_used.length} used, ${b.clauses_dropped.length} dropped`);
   if (job.refs.length) console.log(`refs:      ${job.refs.join(", ")}`);
   if (b.prompt_raw !== b.prompt) console.log(`raw:       ${b.prompt_raw}`);
@@ -205,6 +216,7 @@ async function runLive(job: Job, ledger: Ledger): Promise<void> {
       behaviour_clause: job.built.behaviour_clause,
       guides: job.built.guides,
       paper: job.built.paper,
+      style: job.built.style,
       prompt: job.built.prompt,
       prompt_raw: job.built.prompt_raw,
       negative: job.built.negative,

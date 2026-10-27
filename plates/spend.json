@@ -1,6 +1,6 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 2.449,
+  "total_usd": 3.529,
   "rows": [
     {
       "date": "2026-10-27T16:17:19.854Z",
@@ -639,6 +639,541 @@
       "status": "done",
       "request_id": "01a17f0d-10d0-7743-a86e-61f33c288a71",
       "file": "plates\\negtest\\out\\zmey-gorynych\\s14\\zmey-gorynych-ralston-winged-serpent-qwen-s14.full.png"
+    },
+    {
+      "date": "2026-10-27T20:58:15.119Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f28-1686-7bb3-8dff-f153faa213d8",
+      "file": "plates\\iter2\\out\\baba-yaga\\a-s21\\baba-yaga-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T20:58:38.955Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f28-736d-7311-89e0-9a43003c01cf",
+      "file": "plates\\iter2\\out\\baba-yaga\\a-s22\\baba-yaga-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T20:59:03.785Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f28-d466-7c62-8206-f2c710008c7e",
+      "file": "plates\\iter2\\out\\baba-yaga\\b-s21\\baba-yaga-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T20:59:27.938Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f29-32c2-7480-ad02-3c2db64febb8",
+      "file": "plates\\iter2\\out\\baba-yaga\\b-s22\\baba-yaga-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T20:59:51.718Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f29-8fa6-7d02-a66a-fd6cf81235cc",
+      "file": "plates\\iter2\\out\\zmey-gorynych\\a-s21\\zmey-gorynych-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T21:00:16.095Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f29-eedc-7ec0-aa51-8a05adaaf2cc",
+      "file": "plates\\iter2\\out\\zmey-gorynych\\a-s22\\zmey-gorynych-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T21:00:39.958Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f2a-4c17-7202-9695-edecae04c9cf",
+      "file": "plates\\iter2\\out\\zmey-gorynych\\b-s21\\zmey-gorynych-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T21:01:05.334Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f2a-af35-7933-b25f-c96a70675472",
+      "file": "plates\\iter2\\out\\zmey-gorynych\\b-s22\\zmey-gorynych-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T21:01:29.077Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:29.834Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:30.858Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:31.683Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:32.688Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:33.465Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:34.245Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:35.070Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:35.865Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:36.633Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:37.402Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:38.173Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:38.954Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:39.748Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:40.534Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:41.298Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:42.061Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:42.818Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:43.598Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:44.349Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:45.102Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:45.870Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 21,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:46.645Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:01:47.403Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 22,
+      "estimate_usd": 0,
+      "status": "failed",
+      "note": "fal 403, out of credit, not billed"
+    },
+    {
+      "date": "2026-10-27T21:09:08.063Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-10-27T21:10:09.903Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f32-fe6b-7ea1-a75d-f73cf2427b84",
+      "file": "plates\\iter2\\out\\baba-yaga\\a2-s21\\baba-yaga-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T21:10:34.639Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f33-5f10-7900-8a90-db757d408c4b",
+      "file": "plates\\iter2\\out\\baba-yaga\\a2-s22\\baba-yaga-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T21:11:06.671Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f33-dc33-7260-be64-e13fbd5b9da5",
+      "file": "plates\\iter2\\out\\leshy\\a-s21\\leshy-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T21:11:45.623Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f34-7459-7071-afbf-5cab0b645c89",
+      "file": "plates\\iter2\\out\\leshy\\a-s22\\leshy-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T21:12:10.269Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f34-d49c-72d0-bb2e-04a2571fb4f1",
+      "file": "plates\\iter2\\out\\poludnitsa\\a-s21\\poludnitsa-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T21:12:35.980Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f35-390d-7a80-b77e-03dd529e1474",
+      "file": "plates\\iter2\\out\\poludnitsa\\a-s22\\poludnitsa-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T21:13:00.185Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f35-97a0-71a0-85e5-4de63068069f",
+      "file": "plates\\iter2\\out\\bannik\\a-s21\\bannik-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T21:13:24.488Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f35-f689-7bd0-86e5-ce92b5af4897",
+      "file": "plates\\iter2\\out\\bannik\\a-s22\\bannik-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T21:13:53.715Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "drekavac",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f36-68b4-7d71-816e-07813ed8bbd1",
+      "file": "plates\\iter2\\out\\drekavac\\a-s21\\drekavac-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T21:14:17.923Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "drekavac",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f36-c743-74c3-ba7f-c88fd48b4395",
+      "file": "plates\\iter2\\out\\drekavac\\a-s22\\drekavac-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T21:14:42.026Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "domovoi",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f37-256b-7182-8c0c-3311e077d225",
+      "file": "plates\\iter2\\out\\domovoi\\a-s21\\domovoi-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T21:15:05.850Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "domovoi",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f37-8279-7e50-a32f-383b9429a91b",
+      "file": "plates\\iter2\\out\\domovoi\\a-s22\\domovoi-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T21:15:30.078Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f37-e121-7d61-8b0d-4e3e3a3d4740",
+      "file": "plates\\iter2\\out\\rusalka\\a-s21\\rusalka-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T21:15:53.774Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f38-3db0-77f0-b906-5324a0d39d4c",
+      "file": "plates\\iter2\\out\\rusalka\\a-s22\\rusalka-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T21:16:17.973Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vampir",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f38-9c37-7d13-b08f-4cabc9c612a8",
+      "file": "plates\\iter2\\out\\vampir\\a-s21\\vampir-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T21:16:42.052Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vampir",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f38-fa4d-71e0-b388-da4f8d692ac7",
+      "file": "plates\\iter2\\out\\vampir\\a-s22\\vampir-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T21:17:06.281Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vodyanoi",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f39-58e7-7f80-8a26-f739df091bbe",
+      "file": "plates\\iter2\\out\\vodyanoi\\a-s21\\vodyanoi-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-10-27T21:17:30.298Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vodyanoi",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17f39-b6bb-7c73-b3a5-f8c74026269a",
+      "file": "plates\\iter2\\out\\vodyanoi\\a-s22\\vodyanoi-qwen-s22.full.png"
     }
   ]
 }

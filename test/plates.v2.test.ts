@@ -10,14 +10,19 @@ import {
   STYLE_TOKENS,
   authorIndex,
   buildPrompt,
+  nameForms,
   neutralNoun,
+  styleTokens,
+  type HumanEdit,
   type Overrides,
   type SelectOpts,
 } from "../src/plates/prompt.js";
 
 const authors = authorIndex(JSON.parse(readFileSync("sources/manifest.json", "utf8")));
 const entry = (id: string) => JSON.parse(readFileSync(`data/entries/${id}.json`, "utf8"));
-const overrides = JSON.parse(readFileSync("plates/overrides.json", "utf8")) as Overrides;
+const allOverrides = JSON.parse(readFileSync("plates/overrides.json", "utf8")) as Overrides;
+/** The overrides without the 2d-d visual entries: the clause path these tests cover. */
+const overrides: Overrides = Object.fromEntries(Object.entries(allOverrides).map(([id, o]) => [id, { drop: o.drop ?? [] }]));
 const words = (s: string) => s.toLowerCase().match(/[\p{L}\p{N}]+/gu) ?? [];
 
 /** The 2d-a gate configuration for every creature. Formed entries use their largest form. */
@@ -122,9 +127,10 @@ describe("human edits", () => {
     const e = entry("baba-yaga");
     const p = buildPrompt(e, authors, { overrides, cap: 99 });
     const texts = p.clauses_used.map((c) => c.text);
-    for (const d of overrides["baba-yaga"].drop) expect(texts).not.toContain(d.text);
-    expect(p.human_edits.map((h) => h.text)).toEqual(overrides["baba-yaga"].drop.map((d) => d.text));
-    expect(p.human_edits.every((h) => h.by === "Ben" && h.date === "2026-10-27" && h.reason.length > 0)).toBe(true);
+    const drop = overrides["baba-yaga"].drop!;
+    for (const d of drop) expect(texts).not.toContain(d.text);
+    expect(p.human_edits.map((h) => h.text)).toEqual(drop.map((d) => d.text));
+    expect((p.human_edits as HumanEdit[]).every((h) => h.by === "Ben" && h.date === "2026-10-27" && h.reason.length > 0)).toBe(true);
     expect(texts.length).toBe(e.appearance.length - 2);
   });
 
@@ -136,5 +142,77 @@ describe("human edits", () => {
   test("an override missing its reason, author or date is refused", () => {
     const bad = { "baba-yaga": { drop: [{ text: "Her nose is sometimes described as being of iron." }] } } as unknown as Overrides;
     expect(() => buildPrompt(entry("baba-yaga"), authors, { overrides: bad })).toThrow(/needs text, reason, by and date/);
+  });
+});
+
+describe("visual overrides (2d-d)", () => {
+  const ids = Object.keys(GATE);
+
+  test("all ten creatures carry a visual override from Ben, and baba-yaga keeps her drop list", () => {
+    for (const id of ids) {
+      const v = allOverrides[id]?.visual;
+      expect(v, id).toBeDefined();
+      expect(v).toMatchObject({ basis: "visual tradition", by: "Ben", date: "2026-10-27" });
+      expect(v!.note!.length).toBeGreaterThan(0);
+    }
+    expect(allOverrides["baba-yaga"].drop).toHaveLength(2);
+  });
+
+  test.each(ids)("%s: no quote mark, no word of a name form, and no iron, green, red or blue in the text", (id) => {
+    const text = allOverrides[id].visual!.text;
+    expect(text).not.toMatch(/["“”„«»]/);
+    // An apostrophe between two letters (a stag's antlers) is not a quote, as in the sanitiser.
+    expect(text).not.toMatch(/(?<![\p{L}\p{N}])['‘’]|['‘’](?![\p{L}\p{N}])/u);
+    const textWords = new Set(words(text));
+    const nameWords = nameForms(entry(id)).flatMap((n) => words(n));
+    expect(nameWords.filter((w) => textWords.has(w))).toEqual([]);
+    for (const w of ["iron", "green", "red", "blue"]) expect(textWords.has(w)).toBe(false);
+  });
+
+  test.each(ids)("%s: the prompt is built from the visual text and the sidecar fields are set", (id) => {
+    const e = entry(id);
+    const v = allOverrides[id].visual!;
+    for (const style of ["a", "b"] as const) {
+      const p = buildPrompt(e, authors, { overrides: allOverrides, style });
+      expect(p.prompt).toBe(`${v.text} ${styleTokens({ style })}`);
+      expect(p.prompt_raw).toBe(p.prompt);
+      expect(p.negative).toBe(v.negative_extra ? `${NEGATIVE_TOKENS}, ${v.negative_extra}` : NEGATIVE_TOKENS);
+      expect(p.field).toBe("visual");
+      expect(p.style).toBe(style);
+      expect(p.interpretive).toBe(true);
+      expect(p.clauses_used).toEqual([]);
+      expect(p.clauses_dropped).toEqual([]);
+      expect(p.human_edits).toEqual([{ type: "visual-tradition", text: v.text, by: "Ben", date: "2026-10-27" }]);
+      const inline = buildPrompt(e, authors, { overrides: allOverrides, style, negativeInline: true });
+      expect(inline.negative).toBe("");
+      expect(inline.prompt.endsWith(`${AVOID_PREFIX} ${p.negative}`)).toBe(true);
+    }
+  });
+
+  test("the visual text passes through the sanitiser", () => {
+    const e = entry("leshy");
+    const o: Overrides = { leshy: { visual: { text: 'A "leshy" (forest) man.', basis: "visual tradition", by: "Ben", date: "2026-10-27" } } };
+    const p = buildPrompt(e, authors, { overrides: o });
+    const subject = p.prompt.slice(0, p.prompt.indexOf(styleTokens()));
+    expect(subject).not.toMatch(/["()]|leshy|forest/i);
+    expect(subject).toContain("creature");
+    expect(p.prompt_raw.startsWith('A "leshy" (forest) man. ')).toBe(true);
+  });
+
+  test("--form, --variant or --scene-presence with a visual override throws", () => {
+    expect(() => buildPrompt(entry("zmey-gorynych"), authors, { overrides: allOverrides, form: "ralston-winged-serpent" })).toThrow(/visual override/);
+    expect(() => buildPrompt(entry("poludnitsa"), authors, { overrides: allOverrides, variant: "polish" })).toThrow(/visual override/);
+    expect(() => buildPrompt(entry("drekavac"), authors, { overrides: allOverrides, scenePresence: true })).toThrow(/visual override/);
+  });
+
+  test("a visual override missing its basis, author or date is refused", () => {
+    const bad = { leshy: { visual: { text: "An old man." } } } as unknown as Overrides;
+    expect(() => buildPrompt(entry("leshy"), authors, { overrides: bad })).toThrow(/needs text, basis, by and date/);
+  });
+
+  test("visual takes precedence over drop for baba-yaga", () => {
+    const p = buildPrompt(entry("baba-yaga"), authors, { overrides: allOverrides });
+    expect(p.human_edits).toHaveLength(1);
+    expect(p.prompt).not.toMatch(/iron/i);
   });
 });

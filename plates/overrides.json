@@ -13,6 +13,101 @@
         "by": "Ben",
         "date": "2026-10-27"
       }
-    ]
+    ],
+    "visual": {
+      "text": "A frightening, witch-like old hag with an enormous, very long hooked nose that reaches down past her chin, a jutting pointed chin, sunken cheeks and glaring, malicious deep-set eyes. A sly, menacing grin shows crooked teeth. Long, thin, wild, unkempt hair falls down past her shoulders. She is gaunt and wiry but fully fleshed; her arms and hands are thin and wrinkled, with knobbly knuckles and long fingers ending in sharp nails. She wears ragged peasant clothes and leans on a gnarled wooden staff. Full figure.",
+      "negative_extra": "skeleton, bare bones, skull, metal, kindly expression, sad expression",
+      "basis": "visual tradition",
+      "by": "Ben",
+      "date": "2026-10-27",
+      "note": "Second redo: Ben wants her scarier and more witch-like, with a bigger nose."
+    }
+  },
+  "zmey-gorynych": {
+    "visual": {
+      "text": "A three-headed dragon standing on four powerful clawed legs, with two large wings spread from its back and a long, thick dragon tail. Each of its three heads rises on its own long neck, ferocious, with open jaws and sharp teeth; one head breathes a stream of fire. Scaled body. Full figure.",
+      "negative_extra": "serpent without legs",
+      "basis": "visual tradition",
+      "by": "Ben",
+      "date": "2026-10-27",
+      "note": "Ben: the common image is a three-headed, four-legged, winged dragon, not the sourced winged serpent."
+    }
+  },
+  "leshy": {
+    "visual": {
+      "text": "An old man of the forest, dressed in moss, bark, dead leaves and forest debris. From his head grow branching antlers made of gnarled tree branches, many-pointed like a stag's antlers but formed of wood and twigs. He has a long beard, a long drooping moustache and dishevelled hair hanging down, and his eyes are wild and staring. Full figure, standing.",
+      "basis": "visual tradition",
+      "by": "Ben",
+      "date": "2026-10-27",
+      "note": "Ben's description from the 2d-c taste review."
+    }
+  },
+  "poludnitsa": {
+    "visual": {
+      "text": "The corpse of a young village woman, almost a skeleton, wearing a rotted, tattered peasant festival dress, as if she died at a midsummer festival. A small wreath of field flowers sits on her skull. Her lower jaw has been torn away and hangs loose near her collarbones; a very long, grotesque tongue hangs down, tapering to a point. Her eyes are blank white orbs in deep black sockets. She holds a curved sickle blade. Full figure, standing.",
+      "basis": "visual tradition",
+      "by": "Ben",
+      "date": "2026-10-27",
+      "note": "Ben's description from the 2d-c taste review."
+    }
+  },
+  "bannik": {
+    "visual": {
+      "text": "A small, scrawny old man with wild white hair and a long white beard and moustache framing his face and nose. He is sinewy and thin, with no body fat and no bulging muscle, and looks a little wild. He sits on his bottom on the wooden floor of a bathhouse, gripping a wooden bucket of water between his legs, and holds a bundle of leafy birch twigs, a bath whisk. He is the only figure in the picture.",
+      "negative_extra": "other people, bather, victim, demon, horns",
+      "basis": "visual tradition",
+      "by": "Ben",
+      "date": "2026-10-27",
+      "note": "Ben: only the folklore creature, no victims; not demonic."
+    }
+  },
+  "drekavac": {
+    "visual": {
+      "text": "A gaunt, hairless, demonic creature with a skeletal body and skin stretched tight over bone. It stands on bird-like legs with scaly, clawed feet like a chicken's. Its forearms are very long, ending in long pointed fingernails like claws. Its ears are long and pointed, and bony protrusions run down its spine. Its mouth is vicious and full of sharp teeth. Crouching, full figure.",
+      "negative_extra": "hair, fur, goat, ghost",
+      "basis": "visual tradition",
+      "by": "Ben",
+      "date": "2026-10-27",
+      "note": "Ben's description from the 2d-c taste review."
+    }
+  },
+  "domovoi": {
+    "visual": {
+      "text": "A tiny bearded old man no bigger than a house cat, standing on the floorboards beside the base of a large stove, which shows how small he is. He wears simple peasant clothes. A huge beard and moustache cover his mouth and most of his face, and only his tousled hair pokes out above. He has large ears and sharp fingernails, and looks like an unsettling little gremlin. Full figure.",
+      "basis": "visual tradition",
+      "by": "Ben",
+      "date": "2026-10-27",
+      "note": "Ben's description from the 2d-c taste review."
+    }
+  },
+  "rusalka": {
+    "visual": {
+      "text": "A thin, gaunt young woman, a malevolent spirit of the lake, standing at the water's edge as if she has just stepped out of a swamp. Her long, wet, straggling dark hair hangs over her shoulders and covers her breasts, and swamp weeds, leaves and water plants cling to her body and cover her hips. A water lily is tucked behind one ear. Her face is lean and angular, not a classical beauty, with a cold, luring expression. Full figure.",
+      "negative_extra": "nudity, nipples, classical drapery, shawl",
+      "basis": "visual tradition",
+      "by": "Ben",
+      "date": "2026-10-27",
+      "note": "Ben asked for green hair; written as dark, wet hair under the monochrome ruling."
+    }
+  },
+  "vampir": {
+    "visual": {
+      "text": "An aristocratic vampire nobleman, tall and gaunt, in an elegant high-collared nineteenth-century frock coat and cravat, his long hair swept back. At first glance he looks refined; on a closer look his skin is deathly pale, his fingernails are long and pointed, the tips of fangs show at his lips, and a thin trickle of blood runs from the corner of his mouth. His eyes are cold and predatory. Half-length portrait.",
+      "negative_extra": "coffin, grave, corpse, cape",
+      "basis": "visual tradition",
+      "by": "Ben",
+      "date": "2026-10-27",
+      "note": "Ben: a blend of the two best-known screen vampires, written generically with no work, actor or character named."
+    }
+  },
+  "vodyanoi": {
+    "visual": {
+      "text": "A gross swamp creature, a fat humanoid with a lumpy frog-like body, as if in a sagging frog skin. His face is mostly a frog's face, with a wide mouth and bulging eyes, but with a broad, bulbous human nose. A scraggly, mossy, dripping beard hangs from his chin. His hands and feet are webbed, with pointed claw-like fingers and toes. He squats at the edge of a swamp. Full figure.",
+      "negative_extra": "hat, cap",
+      "basis": "visual tradition",
+      "by": "Ben",
+      "date": "2026-10-27",
+      "note": "Ben's description from the 2d-c taste review."
+    }
   }
 }

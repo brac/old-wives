@@ -3,6 +3,8 @@
 // The prompt is built only from an entry's verified clauses plus fixed style tokens and,
 // for a scene plate, one fixed presence token, so every word in it is either in the entry
 // or in the constants below. Nothing here paraphrases, summarises or adds description.
+// The one exception is a visual override in plates/overrides.json (2d-d): Ben's own
+// description replaces the clauses, and the plate is marked interpretive.
 
 // Style tokens are assembled from fixed fragments. Two switches (Phase 2c test grid) each
 // own one part of the wording: --guides owns the construction-line fragment, --paper owns
@@ -12,13 +14,22 @@
 
 export type Guides = "on" | "off";
 export type Paper = "plain" | "prepared";
+/**
+ * --style a|b (2d-d script test). a: the 2c tokens without the negated guides phrase.
+ * b: also drops "study", "sketch" and "Renaissance", which pull in notebook pages with
+ * handwriting, and asks for a plain empty background.
+ */
+export type Style = "a" | "b";
 export interface StyleOpts {
   guides?: Guides;
   paper?: Paper;
+  style?: Style;
 }
 
 export const DEFAULT_GUIDES: Guides = "off";
 export const DEFAULT_PAPER: Paper = "plain";
+export const DEFAULT_STYLE: Style = "a";
+export const STYLES: readonly Style[] = ["a", "b"];
 
 /**
  * Fragments shared by every style variant. "study sheet" was removed in 2d: together with
@@ -29,10 +40,18 @@ export const STYLE_MEDIUM = "metalpoint drawing";
 export const STYLE_SKETCH = "Renaissance sketch";
 export const STYLE_BODY = "hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome";
 
-/** --guides on|off. */
+/** Style b's own fragments (2d-d). */
+export const STYLE_B_LEAD = "silverpoint drawing";
+export const STYLE_B_MEDIUM = "metalpoint";
+export const STYLE_B_BACKGROUND = "plain empty background";
+
+/**
+ * --guides on|off. Off is the empty string (2d-d): the old "no construction grid, no
+ * measuring marks" named the grid and the marks in the positive prompt.
+ */
 export const GUIDES_TOKENS: Record<Guides, string> = {
   on: "proportion lines, faint construction grid and measuring marks around the figure",
-  off: "no construction grid, no measuring marks",
+  off: "",
 };
 
 /** --paper plain|prepared. */
@@ -44,8 +63,13 @@ export const PAPER_TOKENS: Record<Paper, string> = {
 export function styleTokens(opts: StyleOpts = {}): string {
   const guides = GUIDES_TOKENS[opts.guides ?? DEFAULT_GUIDES];
   const ground = PAPER_TOKENS[opts.paper ?? DEFAULT_PAPER];
-  if (guides === undefined || ground === undefined) throw new Error(`unknown style option ${JSON.stringify(opts)}`);
-  return [STYLE_LEAD, STYLE_MEDIUM, STYLE_SKETCH, guides, STYLE_BODY, ground].join(", ");
+  const style = opts.style ?? DEFAULT_STYLE;
+  if (guides === undefined || ground === undefined || !STYLES.includes(style)) throw new Error(`unknown style option ${JSON.stringify(opts)}`);
+  const parts =
+    style === "a"
+      ? [STYLE_LEAD, STYLE_MEDIUM, STYLE_SKETCH, guides, STYLE_BODY, ground]
+      : [STYLE_B_LEAD, STYLE_B_MEDIUM, guides, STYLE_BODY, ground, STYLE_B_BACKGROUND];
+  return parts.filter((p) => p.length > 0).join(", ");
 }
 
 /** Positive style tokens with the default switches. */
@@ -93,8 +117,29 @@ export interface HumanEdit {
   date: string;
 }
 
-/** plates/overrides.json: creature id -> edits. */
-export type Overrides = Record<string, { drop: HumanEdit[] }>;
+/**
+ * Ben's own visual description of a creature (2d-d). When present it replaces the sourced
+ * clauses as the plate subject; the entry itself is never changed.
+ */
+export interface VisualOverride {
+  text: string;
+  negative_extra?: string;
+  basis: string;
+  by: string;
+  date: string;
+  note?: string;
+}
+
+/** The human_edits record of a plate whose subject is a visual override. */
+export interface VisualEdit {
+  type: "visual-tradition";
+  text: string;
+  by: string;
+  date: string;
+}
+
+/** plates/overrides.json: creature id -> edits. `visual` takes precedence over `drop`. */
+export type Overrides = Record<string, { drop?: HumanEdit[]; visual?: VisualOverride }>;
 
 export interface PlatePrompt {
   /** The prompt sent to the model: the clauses after sanitising, plus the tokens. */
@@ -102,8 +147,8 @@ export interface PlatePrompt {
   /** The same prompt built from the raw clause text, before sanitising. */
   prompt_raw: string;
   negative: string;
-  /** Which entry field the main clauses came from. */
-  field: "appearance" | "scene";
+  /** Which entry field the main clauses came from; "visual" for a visual override. */
+  field: "appearance" | "scene" | "visual";
   form: string | null;
   variant: string | null;
   /** True when the presence token was added (scene plate with an invented presence). */
@@ -112,10 +157,11 @@ export interface PlatePrompt {
   behaviour_clause: string | null;
   guides: Guides;
   paper: Paper;
+  style: Style;
   clauses_used: RankedClause[];
   clauses_dropped: RankedClause[];
-  /** Clauses a human removed from this prompt before the cap. */
-  human_edits: HumanEdit[];
+  /** Clauses a human removed before the cap, or the visual override that replaced them. */
+  human_edits: Array<HumanEdit | VisualEdit>;
 }
 
 /** Map of source id (the part of a cite before ':') to author. */
@@ -211,6 +257,22 @@ export function editsFor(entry: any, overrides: Overrides | undefined): HumanEdi
     if (!texts.has(e.text.trim())) throw new Error(`override for ${entry.id} matches no clause in the entry: "${e.text}"`);
   }
   return edits;
+}
+
+/** The creature's visual override, checked for its required fields, or undefined. */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function visualFor(entry: any, overrides: Overrides | undefined): VisualOverride | undefined {
+  const v = overrides?.[entry.id]?.visual;
+  if (v === undefined) return undefined;
+  for (const k of ["text", "basis", "by", "date"] as const) {
+    if (!v || typeof v[k] !== "string" || v[k].trim() === "") {
+      throw new Error(`visual override for ${entry.id} needs text, basis, by and date: ${JSON.stringify(v)}`);
+    }
+  }
+  if (v.negative_extra !== undefined && typeof v.negative_extra !== "string") {
+    throw new Error(`visual override for ${entry.id}: negative_extra must be a string`);
+  }
+  return v;
 }
 
 function applyEdits(clauses: Clause[], edits: HumanEdit[], applied: HumanEdit[]): Clause[] {
@@ -340,6 +402,38 @@ export function buildPrompt(
   authors: AuthorIndex,
   opts: SelectOpts & { negativeInline?: boolean; cap?: number; overrides?: Overrides } & StyleOpts = {},
 ): PlatePrompt {
+  const guides = opts.guides ?? DEFAULT_GUIDES;
+  const paper = opts.paper ?? DEFAULT_PAPER;
+  const style = opts.style ?? DEFAULT_STYLE;
+  const names = nameForms(entry);
+  const noun = neutralNoun(entry);
+  const visual = visualFor(entry, opts.overrides);
+  if (visual) {
+    if (opts.form || opts.variant || opts.scenePresence) {
+      throw new Error(`entry ${entry.id} has a visual override in plates/overrides.json; --form, --variant and --scene-presence do not apply`);
+    }
+    const negative = visual.negative_extra ? `${NEGATIVE_TOKENS}, ${visual.negative_extra}` : NEGATIVE_TOKENS;
+    const tail = [styleTokens({ guides, paper, style })];
+    if (opts.negativeInline) tail.push(`${AVOID_PREFIX} ${negative}`);
+    const raw = visual.text.trim();
+    return {
+      prompt: [sanitiseClause(raw, names, noun), ...tail].join(" "),
+      prompt_raw: [raw, ...tail].join(" "),
+      negative: opts.negativeInline ? "" : negative,
+      field: "visual",
+      form: null,
+      variant: null,
+      interpretive: true,
+      behaviour_clause: null,
+      guides,
+      paper,
+      style,
+      clauses_used: [],
+      clauses_dropped: [],
+      human_edits: [{ type: "visual-tradition", text: visual.text, by: visual.by, date: visual.date }],
+    };
+  }
+
   const sel = readClauses(entry, opts);
   const edits = editsFor(entry, opts.overrides);
   const applied: HumanEdit[] = [];
@@ -359,13 +453,9 @@ export function buildPrompt(
     ({ used, dropped } = capClauses(main, cap));
   }
 
-  const guides = opts.guides ?? DEFAULT_GUIDES;
-  const paper = opts.paper ?? DEFAULT_PAPER;
-  const names = nameForms(entry);
-  const noun = neutralNoun(entry);
   const tail: string[] = [];
   if (sel.behaviour) tail.push(PRESENCE_TOKEN);
-  tail.push(styleTokens({ guides, paper }));
+  tail.push(styleTokens({ guides, paper, style }));
   if (opts.negativeInline) tail.push(`${AVOID_PREFIX} ${NEGATIVE_TOKENS}`);
   const raw = used.map((c) => c.text.trim());
   const sent = raw.map((t) => sanitiseClause(t, names, noun)).filter(Boolean);
@@ -380,6 +470,7 @@ export function buildPrompt(
     behaviour_clause: behaviour ? behaviour.text : null,
     guides,
     paper,
+    style,
     clauses_used: used,
     clauses_dropped: dropped,
     human_edits: applied,

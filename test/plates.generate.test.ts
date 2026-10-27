@@ -68,25 +68,32 @@ describe("planJob", () => {
   });
 
   test("style switches reach the built prompt; bad values are refused", () => {
-    const { job } = planJob(["--arm", "qwen", ...base, "--guides", "off", "--paper", "prepared", "--dry-run"]);
+    const { job } = planJob(["--arm", "qwen", ...base, "--guides", "off", "--paper", "prepared", "--style", "b", "--dry-run"]);
     expect(job.built.guides).toBe("off");
     expect(job.built.paper).toBe("prepared");
-    expect(job.built.prompt).toContain("no construction grid, no measuring marks");
+    expect(job.built.style).toBe("b");
+    expect(job.built.prompt).not.toContain("no construction grid");
+    expect(job.built.prompt).toContain("plain empty background");
     expect(job.built.prompt).toContain("lightly prepared paper, pale warm tint, faint paper tooth");
     expect(() => planJob(["--arm", "qwen", ...base, "--guides", "maybe"])).toThrow(/--guides/);
     expect(() => planJob(["--arm", "qwen", ...base, "--paper", "vellum"])).toThrow(/--paper/);
+    expect(() => planJob(["--arm", "qwen", ...base, "--style", "c"])).toThrow(/--style/);
+    expect(planJob(["--arm", "qwen", ...base]).job.built.style).toBe("a");
   });
 
   test("v2 selection flags and plates/overrides.json reach the job", () => {
     const v2 = (entry: string, ...rest: string[]) =>
       planJob(["--arm", "qwen", "--entry", `data/entries/${entry}.json`, "--out", "x", "--seed", "1", ...rest]).job;
-    const z = v2("zmey-gorynych", "--form", "ralston-winged-serpent");
-    expect(z.built.form).toBe("ralston-winged-serpent");
-    expect(z.name).toBe("zmey-gorynych-ralston-winged-serpent-qwen-s1");
-    expect(v2("poludnitsa", "--variant", "polish").built.variant).toBe("polish");
-    expect(v2("drekavac", "--scene-presence").built.interpretive).toBe(true);
-    expect(v2("baba-yaga").built.human_edits).toHaveLength(2);
-    expect(() => v2("zmey-gorynych", "--form", "nope")).toThrow(/has no form "nope"/);
+    // Since 2d-d every creature carries a visual override, so the selection flags are refused
+    // on the command line; the clause path behind them is tested in plates.v2.test.ts.
+    expect(() => v2("zmey-gorynych", "--form", "ralston-winged-serpent")).toThrow(/visual override/);
+    expect(() => v2("poludnitsa", "--variant", "polish")).toThrow(/visual override/);
+    expect(() => v2("drekavac", "--scene-presence")).toThrow(/visual override/);
+    const z = v2("zmey-gorynych");
+    expect(z.name).toBe("zmey-gorynych-qwen-s1");
+    expect(z.built.field).toBe("visual");
+    expect(z.built.interpretive).toBe(true);
+    expect(z.built.human_edits).toEqual([expect.objectContaining({ type: "visual-tradition", by: "Ben", date: "2026-10-27" })]);
   });
 
   test("bad seed is refused", () => {
