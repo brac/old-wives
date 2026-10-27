@@ -1,0 +1,911 @@
+{
+  "id": "leshy",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "leshy",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "лѣшій",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1868:p.326"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Lésovik",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.261"
+        ]
+      },
+      {
+        "romanized": "Lyeshy",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.153",
+          "ralston1873:p.206"
+        ]
+      },
+      {
+        "romanized": "Zuibochnik",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.157"
+        ]
+      },
+      {
+        "romanized": "leshak",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "лѣшакъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.326"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1868:p.326"
+        ]
+      },
+      {
+        "romanized": "lesovik",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "лѣсовикъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.326"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1868:p.326"
+        ]
+      },
+      {
+        "romanized": "lesnik",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "лѣсникъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.326"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1868:p.326"
+        ]
+      },
+      {
+        "romanized": "lisun",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "лисунъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.326"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1868:p.326"
+        ]
+      },
+      {
+        "romanized": "polisun",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "полисунъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.326"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1868:p.326"
+        ]
+      },
+      {
+        "romanized": "les",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "лѣсъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.326"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1868:p.326"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Machal compares the name with the Russian word for 'forest, wood'.",
+        "cites": [
+          "machal1918:p.261"
+        ]
+      },
+      {
+        "text": "Ralston states that the name Leshy or Lyeshy is derived from lyes, a forest.",
+        "cites": [
+          "ralston1873:p.206"
+        ]
+      },
+      {
+        "text": "Afanasyev states that the word лѣшій, in regional dialects and in old documents, means 'of the forest, wooded'.",
+        "cites": [
+          "afanasyev1868:p.326"
+        ]
+      },
+      {
+        "text": "In some places he is called Zuibochnik, from zuibka, a cradle, because he rocks himself among the branches as if in a cradle.",
+        "cites": [
+          "ralston1872:p.157"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "cites": [
+        "machal1918:p.261"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Olonetsk Government",
+      "cites": [
+        "ralston1872:p.154"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Government of Archangel",
+      "cites": [
+        "ralston1872:p.154"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Governments of Kief and Chernigof",
+      "cites": [
+        "ralston1872:p.154"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Vyatka Government and Vologda",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Perm",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Little-Russia",
+      "cites": [
+        "ralston1872:p.154"
+      ]
+    }
+  ],
+  "family": {
+    "value": "forest",
+    "cites": [
+      "machal1918:p.261",
+      "ralston1872:p.153"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "machal-old-man",
+      "label": "Machal's hairy old man"
+    },
+    {
+      "id": "ralston-sheepskin-peasant",
+      "label": "Ralston's peasant in a sheepskin"
+    },
+    {
+      "id": "ralston-own-shape",
+      "label": "Ralston's own shape, unclothed"
+    },
+    {
+      "id": "ralston-one-eyed",
+      "label": "Ralston's one-eyed form"
+    },
+    {
+      "id": "tale-grey-haired-moujik",
+      "label": "Ralston's tale: young moujik with grey hair"
+    },
+    {
+      "id": "ordinary-person",
+      "label": "Ordinary traveller or a friend's likeness"
+    },
+    {
+      "id": "machal-bear",
+      "label": "Machal: bear shape"
+    },
+    {
+      "id": "machal-wolf",
+      "label": "Machal: wolf shape"
+    },
+    {
+      "id": "machal-hare",
+      "label": "Machal: hare shape"
+    },
+    {
+      "id": "ralston-tree",
+      "label": "Ralston: likeness of a tree"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "His stature depends on the height of what he inhabits: in the forests he may reach the size of high trees, in the fields he is no taller than grass.",
+      "cites": [
+        "machal1918:p.261"
+      ]
+    },
+    {
+      "text": "He can alter his stature at will, at one time taller than the trees of the forest, at another shorter than the grass of the field.",
+      "cites": [
+        "ralston1872:p.153"
+      ]
+    },
+    {
+      "text": "He never has any eyebrows or eyelashes.",
+      "cites": [
+        "ralston1872:p.154"
+      ]
+    },
+    {
+      "text": "In human guise he is an old man.",
+      "cites": [
+        "machal1918:p.261"
+      ],
+      "form": "machal-old-man"
+    },
+    {
+      "text": "He has long hair and a beard.",
+      "cites": [
+        "machal1918:p.261"
+      ],
+      "form": "machal-old-man"
+    },
+    {
+      "text": "He has flashing green eyes.",
+      "cites": [
+        "machal1918:p.261"
+      ],
+      "form": "machal-old-man"
+    },
+    {
+      "text": "His body is covered by a thick coat of hair.",
+      "cites": [
+        "machal1918:p.261"
+      ],
+      "form": "machal-old-man"
+    },
+    {
+      "text": "He often appears as a peasant dressed in a sheepskin.",
+      "cites": [
+        "ralston1872:p.153"
+      ],
+      "form": "ralston-sheepskin-peasant"
+    },
+    {
+      "text": "The sheepskin is worn ungirdled.",
+      "cites": [
+        "ralston1872:p.153"
+      ],
+      "form": "ralston-sheepskin-peasant"
+    },
+    {
+      "text": "The left skirt of his garment is crossed over the right.",
+      "cites": [
+        "ralston1872:pp.153-154"
+      ],
+      "form": "ralston-sheepskin-peasant"
+    },
+    {
+      "text": "Sometimes, like a Cyclops, he has but one eye.",
+      "cites": [
+        "ralston1872:p.154"
+      ],
+      "form": "ralston-one-eyed"
+    },
+    {
+      "text": "In his own shape he appears without clothes.",
+      "cites": [
+        "ralston1872:p.154"
+      ],
+      "form": "ralston-own-shape"
+    },
+    {
+      "text": "Horns spring from his forehead.",
+      "cites": [
+        "ralston1872:p.154"
+      ],
+      "form": "ralston-own-shape"
+    },
+    {
+      "text": "His feet are like those of a goat.",
+      "cites": [
+        "ralston1872:p.154"
+      ],
+      "form": "ralston-own-shape"
+    },
+    {
+      "text": "His head and body are covered with shaggy hair.",
+      "cites": [
+        "ralston1872:p.154"
+      ],
+      "form": "ralston-own-shape"
+    },
+    {
+      "text": "His hair is sometimes as green as that of the Rusalkas.",
+      "cites": [
+        "ralston1872:p.154"
+      ],
+      "form": "ralston-own-shape"
+    },
+    {
+      "text": "His fingers are tipped with long claws.",
+      "cites": [
+        "ralston1872:p.154"
+      ],
+      "form": "ralston-own-shape"
+    },
+    {
+      "text": "In one tale he appears as a moujik sitting on a log plaiting a bast shoe.",
+      "cites": [
+        "ralston1873:p.206"
+      ],
+      "form": "tale-grey-haired-moujik"
+    },
+    {
+      "text": "In that tale he looks young, but his hair is as grey as a badger's.",
+      "cites": [
+        "ralston1873:p.206"
+      ],
+      "form": "tale-grey-haired-moujik"
+    },
+    {
+      "text": "In the woods he frequently appears to travellers as an ordinary person or as one of their friends.",
+      "cites": [
+        "machal1918:p.261"
+      ],
+      "form": "ordinary-person"
+    },
+    {
+      "text": "He would sometimes take the form of a traveller and engage a passer-by in conversation.",
+      "cites": [
+        "ralston1872:p.157"
+      ],
+      "form": "ordinary-person"
+    },
+    {
+      "text": "At times he takes the shape of a bear.",
+      "cites": [
+        "machal1918:p.261"
+      ],
+      "form": "machal-bear"
+    },
+    {
+      "text": "At times he takes the shape of a wolf.",
+      "cites": [
+        "machal1918:p.261"
+      ],
+      "form": "machal-wolf"
+    },
+    {
+      "text": "At times he takes the shape of a hare.",
+      "cites": [
+        "machal1918:p.261"
+      ],
+      "form": "machal-hare"
+    },
+    {
+      "text": "He would sometimes assume the likeness of a tree by which the neighbours were accustomed to steer.",
+      "cites": [
+        "ralston1872:p.157"
+      ],
+      "form": "ralston-tree"
+    }
+  ],
+  "scene": [
+    {
+      "text": "Deep woods and fields; forests, fields and meadows are the realm he rules.",
+      "cites": [
+        "machal1918:p.261"
+      ]
+    },
+    {
+      "text": "When he walks through the forest to look after his property, a rustling of the trees accompanies him.",
+      "cites": [
+        "machal1918:p.261"
+      ]
+    },
+    {
+      "text": "When he goes round to inspect his domains, the forest roars around him and the trees shake.",
+      "cites": [
+        "ralston1872:p.155"
+      ]
+    },
+    {
+      "text": "His laughter, the peasants say, may be heard for versts around.",
+      "cites": [
+        "ralston1872:p.157"
+      ]
+    },
+    {
+      "text": "By night a forest-keeper might hear the wailing of a child, or groans as of someone dying, which lead to a foaming stream where none had been before.",
+      "cites": [
+        "ralston1872:p.158"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "kief-chernigof",
+      "label": "Two classes in the Governments of Kief and Chernigof (Ralston)",
+      "peoples": [
+        "Russians"
+      ],
+      "appearance": [
+        {
+          "text": "Those of the woods are giants of an ashy hue.",
+          "cites": [
+            "ralston1872:p.154"
+          ]
+        },
+        {
+          "text": "Those of the cornfields are, before the harvest, the same height as the growing corn.",
+          "cites": [
+            "ralston1872:p.154"
+          ]
+        },
+        {
+          "text": "After the harvest those of the cornfields dwindle until they are no higher than the stubble.",
+          "cites": [
+            "ralston1872:p.154"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "The peasants there divide the Lyeshies into two classes, one belonging to the woods and one to the cornfields.",
+          "cites": [
+            "ralston1872:p.154"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "Usually there is only one Lésiy in each wood; if there are several, a 'silvan czar' is their lord.",
+      "cites": [
+        "machal1918:p.261"
+      ]
+    },
+    {
+      "text": "Some remain alone in forest solitudes and caves, while others build spacious dwellings in the woods and live there with wives and children.",
+      "cites": [
+        "machal1918:p.261"
+      ]
+    },
+    {
+      "text": "The Lisunki, or forest girls and women, are female Lyeshies, hairy and hideous.",
+      "cites": [
+        "ralston1872:p.159"
+      ]
+    },
+    {
+      "text": "His principal business is to guard the forest.",
+      "cites": [
+        "machal1918:p.261"
+      ]
+    },
+    {
+      "text": "He does not allow people to whistle or shout in the forest.",
+      "cites": [
+        "machal1918:p.261"
+      ]
+    },
+    {
+      "text": "He drives away thieves, frightening them by his cries and playing pranks on them.",
+      "cites": [
+        "machal1918:p.261"
+      ]
+    },
+    {
+      "text": "All the birds and beasts of the forest are under his protection.",
+      "cites": [
+        "ralston1872:p.155"
+      ]
+    },
+    {
+      "text": "His favourite is the bear, his only servant, who watches over him when he has drunk too much and guards him from the water-sprites.",
+      "cites": [
+        "ralston1872:p.155"
+      ]
+    },
+    {
+      "text": "In Little-Russia he is supposed to be the protector of the wolves.",
+      "cites": [
+        "ralston1872:p.154"
+      ]
+    },
+    {
+      "text": "He rocks upon the boughs, whistles, laughs and claps his hands.",
+      "cites": [
+        "machal1918:pp.261-262"
+      ]
+    },
+    {
+      "text": "He neighs like a horse, lows like a cow, barks like a dog and mews like a cat.",
+      "cites": [
+        "machal1918:p.262"
+      ]
+    },
+    {
+      "text": "The echo is his work.",
+      "cites": [
+        "machal1918:p.262"
+      ]
+    },
+    {
+      "text": "A strong wind constantly blows around him, so that no man has ever seen his footsteps in sand or snow.",
+      "cites": [
+        "machal1918:p.262"
+      ]
+    },
+    {
+      "text": "Wherever he goes he tries to leave no track, covering his footprints with sand, leaves or snow.",
+      "cites": [
+        "ralston1872:p.158"
+      ]
+    },
+    {
+      "text": "He misleads those who have lost their way, removes boundary-stones and signposts, and lures wanderers into thickets and morasses.",
+      "cites": [
+        "machal1918:p.262"
+      ]
+    },
+    {
+      "text": "Having led a victim into a swamp or ravine, he laughs loudly and grins at him from a little distance.",
+      "cites": [
+        "ralston1872:pp.157-158"
+      ]
+    },
+    {
+      "text": "The sounds taken for echoes are said to be calls meant to lure a sportsman or woodcutter onto dangerous ground, to tickle him to death.",
+      "cites": [
+        "ralston1872:p.157"
+      ]
+    },
+    {
+      "text": "He blows dust into travellers' eyes and their caps off their heads, and freezes their sledges to the ground.",
+      "cites": [
+        "ralston1872:p.158"
+      ]
+    },
+    {
+      "text": "He entices girls and children into his copses and keeps them a long time.",
+      "cites": [
+        "machal1918:p.262"
+      ]
+    },
+    {
+      "text": "Sometimes Lyeshies carry off mortal maidens and make them their wives.",
+      "cites": [
+        "ralston1872:p.159"
+      ]
+    },
+    {
+      "text": "In one tale a priest's daughter who strolled into the forest without leave was carried off by a Leshy and lived three years in his hut.",
+      "cites": [
+        "ralston1873:pp.206-207"
+      ]
+    },
+    {
+      "text": "He substitutes his own offspring for human children; the changeling is ugly, stupid and voracious, but strong as a horse.",
+      "cites": [
+        "machal1918:p.262"
+      ]
+    },
+    {
+      "text": "He brings illness on people; one who falls ill after returning from the woods is said to have crossed the Lyeshy's track.",
+      "cites": [
+        "ralston1872:p.158"
+      ]
+    },
+    {
+      "text": "One of his tricks is to suck the milk from cows.",
+      "cites": [
+        "ralston1872:p.154"
+      ]
+    },
+    {
+      "text": "Wood-demons quarrel among themselves, fighting with huge trees and rocks; the peasants say the devastation usually laid to hurricanes is their work.",
+      "cites": [
+        "ralston1872:pp.154-155"
+      ]
+    },
+    {
+      "text": "By night he sleeps in a hut deep in the woods, and drives out a traveller who has taken it, sweeping over it as a whirlwind.",
+      "cites": [
+        "ralston1872:p.155"
+      ]
+    },
+    {
+      "text": "Peasants explain the migrations of squirrels and field-mice by saying the Lyeshies are driving their flocks from one forest to another.",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "text": "In 1843 peasants said migrating squirrels were the stake a Lyeshy of the Vyatka Government had gambled away to one in Vologda.",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "text": "Lyeshy weddings are attended by noisy revels and violent storms, damaging cottages and felling trees on their way.",
+      "cites": [
+        "ralston1872:p.160"
+      ]
+    },
+    {
+      "text": "In the Government of Archangel a whirlwind is set down to a Lyeshy dancing wildly with his bride.",
+      "cites": [
+        "ralston1872:p.160"
+      ]
+    },
+    {
+      "text": "With the first frosts, at the start of October, the лѣшіе fall through the earth and disappear for the winter, springing out again in spring.",
+      "cites": [
+        "afanasyev1868:p.326"
+      ]
+    },
+    {
+      "text": "On leaving the forest in autumn they rage, break trees like brittle canes and drive the beasts into their burrows, while a terrible wind howls all that day.",
+      "cites": [
+        "afanasyev1868:p.326"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "A man who falls ill in the forest wraps a slice of salted bread in linen and lays it in the woods as a present for the spirit.",
+      "cites": [
+        "machal1918:p.262"
+      ]
+    },
+    {
+      "text": "To be cured, the sick man carries bread and salt wrapped in a clean rag to the forest, prays over it and leaves it as a sacrifice to the Lyeshy.",
+      "cites": [
+        "ralston1872:p.158"
+      ]
+    },
+    {
+      "text": "Shepherds make him an offering in the shape of a cow to secure his protection for their flocks.",
+      "cites": [
+        "machal1918:p.262"
+      ]
+    },
+    {
+      "text": "In the Olonetsk Government a herdsman should give the Lyeshy a cow every summer, or the spirit will destroy the whole herd.",
+      "cites": [
+        "ralston1872:p.154"
+      ]
+    },
+    {
+      "text": "In the Government of Archangel, if the herdsmen please him, he will see to the pasturing of the village cattle.",
+      "cites": [
+        "ralston1872:p.154"
+      ]
+    },
+    {
+      "text": "Huntsmen place a piece of salted bread on a tree stump and leave him the first game they take.",
+      "cites": [
+        "machal1918:p.262"
+      ]
+    },
+    {
+      "text": "A sportsman offers a piece of bread or a pancake sprinkled with salt, laid on the stump of a tree.",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "text": "In some districts hunters leave him the first animal they bag, in an oak forest.",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "text": "The Perm peasants pray to him once a year and present him with a packet of leaf-tobacco, of which he is very fond.",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "text": "A hunter's incantation calls on the 'Devils and Lyeshies' to drive the hares into his power, and the wood-demons must obey.",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "text": "To avoid being led astray, one turns one's garments inside out, puts the right shoe on the left foot, or bends down to look between one's legs.",
+      "cites": [
+        "machal1918:p.262"
+      ]
+    },
+    {
+      "text": "One who strikes his trail should take off his shoes and reverse their linings, and may also turn his shirt or pelisse inside out.",
+      "cites": [
+        "ralston1872:p.158"
+      ]
+    },
+    {
+      "text": "A forest-keeper who hears wailing or groans at night should go straight on and pay them no attention.",
+      "cites": [
+        "ralston1872:p.158"
+      ]
+    },
+    {
+      "text": "Neither the Lyeshy nor the Vodyany will use a pack of cards in which any clubs occur, since anything like the sign of the cross is distasteful to demons.",
+      "cites": [
+        "ralston1872:p.156"
+      ]
+    },
+    {
+      "text": "To invoke him, one places felled young birches in a circle with their tops in the middle, takes off one's cross, stands within and calls 'Dyedushka!' ('Grandfather!').",
+      "cites": [
+        "ralston1872:p.159"
+      ]
+    },
+    {
+      "text": "Or, on St. John's Eve, one fells an aspen so it falls east, stands on the stump facing east, looks between one's feet and asks 'Uncle Lyeshy' to appear just like oneself; he then appears in the form of a man.",
+      "cites": [
+        "ralston1872:p.159"
+      ]
+    },
+    {
+      "text": "When invoked he will bargain, giving all kinds of help in return for the invoker's soul.",
+      "cites": [
+        "ralston1872:p.159"
+      ]
+    },
+    {
+      "text": "A peasant will rarely sleep on a forest path for fear of a wood-demon's bridal procession crushing him.",
+      "cites": [
+        "ralston1872:p.160"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "A popular legend says that when Satan and his hosts were expelled from heaven, some of the exiled spirits were received by the woods, which they still haunt as Lyeshie.",
+      "cites": [
+        "ralston1872:p.106"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "rusalka",
+      "relation": "related"
+    },
+    {
+      "id": "vodyanoi",
+      "relation": "related"
+    }
+  ],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "Budget stop: of Afanasyev vol. 2 pp. 326-349 only p.326 was opened. Unread and likely relevant: afanasyev1868 pp.327-349 (the main leshy chapter: pp.329-332 shape-shifting, growth and nakedness; p.335 leshy kingdoms and the freed-captive tale; pp.336-337 drink and hunting spells; pp.340-342 leading travellers astray; pp.343, 345-346 lisunki, invocation and pacts; pp.348-349 abduction of women and weddings); afanasyev1868 pp.235, 238 (origin legend and goat-like traits); afanasyev1869 pp.311-313 (theft of unbaptised infants and changelings); afanasyev1865 p.711 (lesovik as shepherd of wolves). These would add Russian-language detail and corroboration; nothing from them is in this draft."
+    },
+    {
+      "kind": "scope",
+      "text": "Ralston 1872 p.153 gives the stature-changing detail as evidence offered by 'some critics' for a storm-spirit theory; only the stated ability to alter stature is used, not the theory."
+    },
+    {
+      "kind": "scope",
+      "text": "Afanasyev p.326 prints the variant as 'лису нъ (по- ли су нъ)' with OCR or line-break spacing; recorded as лисунъ and полисунъ. The page also gives a Czech equivalent, but the OCR of it is unreadable, so no Czech name or people is recorded."
+    },
+    {
+      "kind": "scope",
+      "text": "Ralston's peasants of Olonetsk, Archangel, Perm, Vyatka/Vologda and Kief/Chernigof are recorded as Russians, since Ralston writes of the Russian peasant; his 'Little-Russia' is recorded as Ukrainians, by analogy with the Bohemian-to-Czechs rule. Kief and Chernigof are not tied to Little-Russia on the page."
+    },
+    {
+      "kind": "scope",
+      "text": "Ralston 1872 p.373 (a spell naming 'the one-eyed Lyeshy [or wood-spirit]') was opened; it adds nothing beyond the one-eyed form on p.154 and is not cited."
+    }
+  ]
+}
