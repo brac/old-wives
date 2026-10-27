@@ -1,7 +1,16 @@
 {
   "entry_id": "vodyanoi",
   "verifier_prompt_version": "verify-v2",
-  "removed": [],
+  "removed": [
+    {
+      "field": "/appearance/19",
+      "text": "He can transform himself in many ways.",
+      "cites": [
+        "machal1918:p.270"
+      ],
+      "reason": "misplaced, belongs in behavior_habitat: machal1918:p.270 says he can transform himself in many ways, which is a capacity, not a physical description; the forms it yields (the human shape in a village, the pike) are kept as their own clauses (1d-c fix round, reviewer finding)."
+    }
+  ],
   "downgraded": [
     {
       "field": "/appearance/8",

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { bucketOf, checkableItems, creatureStats, total } from "../src/report/stats.js";
+import { bucketOf, CANARIES_BY_VERSION, canaryFor, checkableItems, creatureStats, total } from "../src/report/stats.js";
 
 const clause = (text: string) => ({ text, cites: ["ralston1872:p.123"] });
 
@@ -32,6 +32,7 @@ const entry = {
 
 const log = {
   entry_id: "domovoi",
+  verifier_prompt_version: "verify-v1",
   removed: [{ field: "/appearance/1", text: "He wears a tall felt hat.", cites: ["machal1918:p.240"], reason: "page silent" }],
   downgraded: [],
   retagged: [],
@@ -148,5 +149,55 @@ describe("appearance forms", () => {
   test("a reformed row with no form change fails", () => {
     const s = creatureStats("x", formsDraft, formsDraft, { ...log, removed: [], reformed: reformed.slice(0, 1) });
     expect(s.reconcile!.mismatches).toEqual(["reformed: /appearance/1 is logged but its form did not change (bald)"]);
+  });
+});
+
+describe("canaries, keyed on the verifier prompt version", () => {
+  const v2Canaries = {
+    poludnitsa: "She wears a wreath of cornflowers on her head.",
+    vampir: "When a vampire's grave is opened, its eyes glow red.",
+  };
+
+  test("both v1 and v2 canary sets are registered", () => {
+    expect(canaryFor("domovoi", { verifier_prompt_version: "verify-v1" })).toBe("He wears a tall felt hat.");
+    expect(canaryFor("vodyanoi", { verifier_prompt_version: "verify-v1" })).toBe("He flees at the sound of church bells.");
+    expect(canaryFor("baba-yaga", { verifier_prompt_version: "verify-v1" })).toBe(
+      "She has a single eye in the middle of her forehead.",
+    );
+    for (const [id, text] of Object.entries(v2Canaries)) {
+      expect(canaryFor(id, { verifier_prompt_version: "verify-v2" })).toBe(text);
+    }
+    expect(Object.keys(CANARIES_BY_VERSION).sort()).toEqual(["verify-v1", "verify-v2"]);
+  });
+
+  test("a v2 log counts its own canary apart, and a v1 canary is not looked for in a v2 log", () => {
+    for (const [id, text] of Object.entries(v2Canaries)) {
+      const d = { ...draft, id, appearance: [clause("He is hairy."), clause(text)] };
+      const e = { ...d, appearance: [clause("He is hairy.")] };
+      const l = {
+        ...log,
+        entry_id: id,
+        verifier_prompt_version: "verify-v2",
+        removed: [{ field: "/appearance/1", text, cites: ["ralston1872:p.123"], reason: "page silent" }],
+      };
+      const s = creatureStats(id, d, e, l);
+      expect(s.reconcile).toEqual({ ok: true, mismatches: [] });
+      expect(s.canaryRemoved).toBe(1);
+      expect(s.removed).toBe(0);
+      expect(s.canaryKept).toBe(false);
+    }
+    // domovoi under v2 has no canary: its removed felt hat is an ordinary removal.
+    const s = creatureStats("domovoi", draft, entry, { ...log, verifier_prompt_version: "verify-v2" });
+    expect(s.canaryRemoved).toBe(0);
+    expect(s.removed).toBe(1);
+    expect(s.canaryKept).toBeUndefined();
+  });
+
+  test("a v2 canary left in the entry is reported as kept", () => {
+    const text = v2Canaries.vampir;
+    const d = { ...draft, id: "vampir", appearance: [clause(text)] };
+    const s = creatureStats("vampir", d, d, { ...log, entry_id: "vampir", verifier_prompt_version: "verify-v2", removed: [] });
+    expect(s.canaryRemoved).toBe(0);
+    expect(s.canaryKept).toBe(true);
   });
 });

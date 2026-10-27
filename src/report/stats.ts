@@ -12,12 +12,28 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-/** The three planted canaries, by exact text (plan, post-review amendments). */
-export const CANARIES: Record<string, string> = {
-  domovoi: "He wears a tall felt hat.",
-  vodyanoi: "He flees at the sound of church bells.",
-  "baba-yaga": "She has a single eye in the middle of her forehead.",
+/**
+ * The planted canaries, by exact text, keyed on the log's `verifier_prompt_version` and then on
+ * creature id. Each verify batch planted its own canaries, so a log is checked only against the
+ * canaries of the batch that wrote it. verify-v1: phase 1 plan, post-review amendments, kept for
+ * history (the v1 logs are in git at tags `phase-1` and `phase-1c`). verify-v2: phase 1d.
+ */
+export const CANARIES_BY_VERSION: Record<string, Record<string, string>> = {
+  "verify-v1": {
+    domovoi: "He wears a tall felt hat.",
+    vodyanoi: "He flees at the sound of church bells.",
+    "baba-yaga": "She has a single eye in the middle of her forehead.",
+  },
+  "verify-v2": {
+    poludnitsa: "She wears a wreath of cornflowers on her head.",
+    vampir: "When a vampire's grave is opened, its eyes glow red.",
+  },
 };
+
+/** The canary planted in this creature for the verify batch that wrote `log`, if any. */
+export function canaryFor(id: string, log: Json): string | undefined {
+  return CANARIES_BY_VERSION[log?.verifier_prompt_version]?.[id];
+}
 
 /** Field buckets, in table order. */
 export const BUCKETS = [
@@ -218,7 +234,7 @@ export function creatureStats(id: string, draft: Json, entry?: Json, log?: Json)
   }
   mismatches.push(...reformMismatches(draft, entry, log));
 
-  const canary = CANARIES[id];
+  const canary = canaryFor(id, log);
   const canaryRemoved = canary ? arr(log.removed).filter((r) => r.text === canary).length : 0;
   const entryText = JSON.stringify(entry);
   const peoples = new Set(arr(entry.peoples_regions).map((p) => p.people));
@@ -299,7 +315,7 @@ export function render(all: CreatureStats[]): string {
     if (s.pending) continue;
     lines.push(row(["verified", ...BUCKETS.map((b) => s.verified![b]), total(s.verified!)], w));
     lines.push(row(["removed", ...BUCKETS.map((b) => s.removedByBucket![b]), total(s.removedByBucket!)], w));
-    const canary = CANARIES[s.id] ? `, canary removed ${s.canaryRemoved}${s.canaryKept ? " (CANARY KEPT IN ENTRY)" : ""}` : "";
+    const canary = s.canaryKept !== undefined ? `, canary removed ${s.canaryRemoved}${s.canaryKept ? " (CANARY KEPT IN ENTRY)" : ""}` : "";
     lines.push(
       `removed ${s.removed} (canaries excluded)${canary}; downgraded ${s.downgraded}; retagged ${s.retagged}; reformed ${s.reformed}; flagged ${s.flagged}; verifier-added cited notes ${s.addedNotes}`,
     );

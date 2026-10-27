@@ -1,7 +1,16 @@
 {
   "entry_id": "rusalka",
   "verifier_prompt_version": "verify-v2",
-  "removed": [],
+  "removed": [
+    {
+      "field": "/variants/0/appearance/0",
+      "text": "Described as hideous.",
+      "cites": [
+        "ralston1872:p.146"
+      ],
+      "reason": "ralston1872:p.146 does say the Saratof Rusalkas 'are described as hideous', but 'hideous' is an evaluative style word, which appearance may not hold even where the source uses it (as v1 cut 'hideous' from baba-yaga); the clause is only that word, so it is removed. The physical details on the same page (humpbacked, hairy, sharp claws, iron hook) are kept as their own clauses (1d-c fix round, reviewer finding)."
+    }
+  ],
   "downgraded": [
     {
       "field": "/variants/0/appearance/4",
