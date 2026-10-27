@@ -1,0 +1,76 @@
+{
+  "entry_id": "domovoi",
+  "verifier_prompt_version": "verify-v1",
+  "removed": [
+    {
+      "field": "/appearance/2",
+      "text": "He wears a tall felt hat.",
+      "cites": [
+        "machal1918:p.240"
+      ],
+      "reason": "Machal p.240 describes his hair, eyes, coat of hair, cloak, belt and red shirt but says nothing of a hat; find for \"felt hat\" across the corpus returns 0 hits."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "/dealing_with_it/13",
+      "text": "When a newly bought animal is first brought home, in several places its owner bows to the four corners of the stall and says, \"Here is a shaggy beast for thee, Master! Love him, give him to eat and to drink!\", then ties its lead to the kitchen-stove.",
+      "to_text": "When a newly bought animal is first brought home, in several places its owner bows to each of the four corners of the building and says, \"Here is a shaggy beast for thee, Master! Love him, give him to eat and to drink!\", then ties its lead to the kitchen-stove.",
+      "from_cites": [
+        "ralston1872:p.126"
+      ],
+      "to_cites": [
+        "ralston1872:p.126"
+      ],
+      "reason": "Ralston p.126 says the owner turns to each of the four corners of the building, not of the stall; wording narrowed to the page."
+    }
+  ],
+  "retagged": [],
+  "flagged": [
+    {
+      "field": "/peoples_regions/8",
+      "text": "Sorbs, Lusatia",
+      "reason": "Ralston pp.122-123 names the place Lusatia, not a people; Sorbs is the people that place is taken to fix, which the page itself does not print. The same applies to the peoples value of /variants/1."
+    },
+    {
+      "field": "/variants/0/behavior_habitat/0",
+      "text": "He is everywhere given to grumbling and quarrelling, in strong, idiomatic phrases.",
+      "reason": "Ralston p.122 says this holds \"every where\", not specifically in the Viatka district; the text is supported but its placement under the Viatka variant may read as regional."
+    },
+    {
+      "field": "/variants/0/appearance/6",
+      "text": "In other places his appearance is much the same, but sometimes he wears a blue caftan with a rose-coloured girdle.",
+      "reason": "Ralston p.122 gives this for \"other places\", not the Viatka district; supported, but placed under the Viatka variant."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal records the Domovoy among the Russians, and records the White Russians' homage to him and the Little Russians' Didko or Domovyk as the same genius.",
+      "cites": [
+        "machal1918:p.240",
+        "machal1918:p.242",
+        "machal1918:p.244"
+      ]
+    },
+    {
+      "text": "Ralston records Domovoy beliefs among the Russians and the Ruthenians, in Lusatia and in Poland.",
+      "cites": [
+        "ralston1872:p.122",
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "Afanasyev records the domovoi in the Great Russian provinces and under the name padpechka among the Belarusians.",
+      "cites": [
+        "afanasyev1868:p.67"
+      ]
+    },
+    {
+      "text": "Ralston cites Afanasief for the January offering, so Ralston and Afanasyev are counted as one source; Machal is counted separately, giving at least two independent sources for several peoples.",
+      "cites": [
+        "ralston1872:p.121"
+      ]
+    }
+  ]
+}

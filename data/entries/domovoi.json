@@ -1,0 +1,840 @@
+{
+  "id": "domovoi",
+  "schema_version": 1,
+  "names": {
+    "primary": {
+      "romanized": "domovoi",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "домовой",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1868:p.67"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Domovoy",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.240"
+        ]
+      },
+      {
+        "romanized": "Déduska Domovoy",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.240"
+        ]
+      },
+      {
+        "romanized": "Chozyain",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.246"
+        ]
+      },
+      {
+        "romanized": "Chozyainusko",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.246"
+        ]
+      },
+      {
+        "romanized": "Didko",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "machal1918:p.244"
+        ]
+      },
+      {
+        "romanized": "Did",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "machal1918:p.244"
+        ]
+      },
+      {
+        "romanized": "Diduch",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "machal1918:p.244"
+        ]
+      },
+      {
+        "romanized": "Domovyk",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "machal1918:p.244"
+        ]
+      },
+      {
+        "romanized": "Tsmok",
+        "peoples": [
+          "Belarusians"
+        ],
+        "cites": [
+          "ralston1872:p.124"
+        ]
+      },
+      {
+        "romanized": "padpechka",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "падпечка",
+            "people": "Belarusians",
+            "cites": [
+              "afanasyev1868:p.67"
+            ]
+          }
+        ],
+        "peoples": [
+          "Belarusians"
+        ],
+        "cites": [
+          "afanasyev1868:p.67"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Déduska Domovoy is glossed as \"Grandfather House-Lord\".",
+        "cites": [
+          "machal1918:p.240"
+        ]
+      },
+      {
+        "text": "The Russian names Chozyain and Chozyainusko for the Domovoy mean \"Master of the House\".",
+        "cites": [
+          "machal1918:p.246"
+        ]
+      },
+      {
+        "text": "The Domovoy is glossed as the house-spirit.",
+        "cites": [
+          "ralston1872:p.119"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "Russia",
+      "cites": [
+        "machal1918:p.240"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Viatka Government (one district)",
+      "cites": [
+        "ralston1872:p.122"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Smolensk Government",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Great Russian provinces",
+      "cites": [
+        "afanasyev1868:p.67"
+      ]
+    },
+    {
+      "people": "Belarusians",
+      "region": "White Russians",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "people": "Belarusians",
+      "region": "White-Russia",
+      "cites": [
+        "ralston1872:p.124"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Little Russians",
+      "cites": [
+        "machal1918:p.244"
+      ]
+    },
+    {
+      "people": "Ruthenians",
+      "cites": [
+        "ralston1872:p.122"
+      ]
+    },
+    {
+      "people": "Sorbs",
+      "region": "Lusatia",
+      "cites": [
+        "ralston1872:p.122"
+      ]
+    },
+    {
+      "people": "Poles",
+      "region": "Poland",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    }
+  ],
+  "family": "household",
+  "appearance": [
+    {
+      "text": "He is commonly represented as an old man.",
+      "cites": [
+        "machal1918:p.240"
+      ]
+    },
+    {
+      "text": "He has a grizzled, bushy head of hair.",
+      "cites": [
+        "machal1918:p.240"
+      ]
+    },
+    {
+      "text": "He has flashing eyes.",
+      "cites": [
+        "machal1918:p.240"
+      ]
+    },
+    {
+      "text": "His whole body is covered with a thick, soft coat of hair.",
+      "cites": [
+        "machal1918:p.240"
+      ]
+    },
+    {
+      "text": "He is said to be covered with thick hair even on the palms of his hands and the soles of his feet, only the space around his eyes and nose being bare.",
+      "cites": [
+        "ralston1872:p.120"
+      ]
+    },
+    {
+      "text": "His garments consist of a long cloak girded about the waist with a light red belt.",
+      "cites": [
+        "machal1918:p.240"
+      ]
+    },
+    {
+      "text": "Sometimes he wears only a red shirt.",
+      "cites": [
+        "machal1918:p.240"
+      ]
+    },
+    {
+      "text": "He often appears in the shape of a well-known member of the household he lives with, most usually the master of the house or an older member of the family, dead or alive.",
+      "cites": [
+        "machal1918:p.240"
+      ]
+    },
+    {
+      "text": "He can appear in the shape of animals such as cats, dogs and bears, the animal's coat matching the colour of the master's hair.",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "In a tale, he is seen as a little old man in a red shirt whose eyes burned like live coals.",
+      "cites": [
+        "ralston1872:p.125"
+      ]
+    },
+    {
+      "text": "Sometimes he appears as Vazila, protector of horses, shaped like a man but with equine ears and hoofs.",
+      "cites": [
+        "ralston1872:p.125"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "He hides behind the stove all day and comes forth at night when the house is asleep.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "The tracks of his shaggy feet may be seen in the snow in winter.",
+      "cites": [
+        "ralston1872:p.120"
+      ]
+    },
+    {
+      "text": "His hairy hands are felt by night gliding over the faces of sleepers.",
+      "cites": [
+        "ralston1872:p.120"
+      ]
+    },
+    {
+      "text": "When he is in the bath-room he creeps under the benches, where he lies hissing, rumbling and giggling.",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "He is said to strike a light with flint and steel and go about candle in hand, inspecting the stables and outhouses at night.",
+      "cites": [
+        "ralston1872:p.125"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "viatka",
+      "label": "One district of the Viatka Government",
+      "peoples": [
+        "Russians"
+      ],
+      "appearance": [
+        {
+          "text": "In one district of the Viatka Government he is described as a little old man, the size of a five-year-old boy.",
+          "cites": [
+            "ralston1872:p.122"
+          ]
+        },
+        {
+          "text": "There he wears a red shirt with a blue girdle.",
+          "cites": [
+            "ralston1872:p.122"
+          ]
+        },
+        {
+          "text": "There his face is wrinkled.",
+          "cites": [
+            "ralston1872:p.122"
+          ]
+        },
+        {
+          "text": "There his hair is yellowish grey.",
+          "cites": [
+            "ralston1872:p.122"
+          ]
+        },
+        {
+          "text": "There his beard is white.",
+          "cites": [
+            "ralston1872:p.122"
+          ]
+        },
+        {
+          "text": "There his eyes glow like fire.",
+          "cites": [
+            "ralston1872:p.122"
+          ]
+        },
+        {
+          "text": "In other places his appearance is much the same, but sometimes he wears a blue caftan with a rose-coloured girdle.",
+          "cites": [
+            "ralston1872:p.122"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "He is everywhere given to grumbling and quarrelling, in strong, idiomatic phrases.",
+          "cites": [
+            "ralston1872:p.122"
+          ]
+        }
+      ],
+      "notes": "Ralston's spelling is \"Yiatka\" (OCR); the region text normalises it to Viatka."
+    },
+    {
+      "id": "lusatia",
+      "label": "Lusatia",
+      "peoples": [
+        "Sorbs"
+      ],
+      "appearance": [
+        {
+          "text": "In Lusatia he takes the form of a beautiful boy dressed in white.",
+          "cites": [
+            "ralston1872:pp.122-123"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "In Lusatia he goes about the house and warns its inhabitants of impending woe by his sad groaning.",
+          "cites": [
+            "ralston1872:pp.122-123"
+          ]
+        },
+        {
+          "text": "In Lusatia it is customary to warn the Domovoy before hot water is poured away, so that he is not scalded.",
+          "cites": [
+            "ralston1872:p.123"
+          ]
+        }
+      ],
+      "notes": "Ralston names the place, Lusatia, not the people; Sorbs is the people that place fixes."
+    },
+    {
+      "id": "white-russia",
+      "label": "White Russia",
+      "peoples": [
+        "Belarusians"
+      ],
+      "appearance": [
+        {
+          "text": "In White-Russia the Domovoy is called Tsmok, a snake: a House Snake.",
+          "cites": [
+            "ralston1872:p.124"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "The House Snake brings all sorts of good to a master who treats it well and gives it omelettes, placed on the roof of the house or on the threshing-floor.",
+          "cites": [
+            "ralston1872:pp.124-125"
+          ]
+        },
+        {
+          "text": "If this is not done, the snake will burn down the house.",
+          "cites": [
+            "ralston1872:p.125"
+          ]
+        },
+        {
+          "text": "It rarely shows itself, and when it does it is generally to warn the heads of its family of some coming woe.",
+          "cites": [
+            "ralston1872:p.125"
+          ]
+        },
+        {
+          "text": "The White Russians render homage to him by placing white linen in the passage to the chamber that is his favourite haunt, as an invitation to join the family meals.",
+          "cites": [
+            "machal1918:p.242"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ruthenians",
+      "label": "Ruthenians",
+      "peoples": [
+        "Ruthenians"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "The Ruthenians reverence in the Domovoy the original constructor of the family hearth.",
+          "cites": [
+            "ralston1872:p.122"
+          ]
+        },
+        {
+          "text": "Among them he has a wife and daughters, beautiful as the Hellenic Nymphs, whose favours are deadly to mortal men.",
+          "cites": [
+            "ralston1872:p.122"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "Normally he lives in the room behind the oven, or under it, or near the threshold, or in the closet, the courtyard, the stable or the bath-room.",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "In the Great Russian provinces it is thought that he lives behind or under the stove.",
+      "cites": [
+        "afanasyev1868:p.67"
+      ]
+    },
+    {
+      "text": "Wherever fires are lighted he is to be found, in baths, in places for drying corn and in distilleries.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "When he haunts a bath he is known as a Bannik.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "It is considered dangerous to pass the night in a corn-kiln, for the Domovoy may strangle the intruder in his sleep.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "As a rule he is invisible.",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "He is very ready to punish inquisitive people who disturb him by trying to glimpse him.",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "Every house has its own Domovoy, and only one.",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "As a rule he is single, though he is sometimes believed to have a wife and children.",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "He resembles one of the ancestors in hair colour, dress, attitude, voice and manner, and the favourite cow of that ancestor is his favourite too.",
+      "cites": [
+        "machal1918:pp.240-241"
+      ]
+    },
+    {
+      "text": "Domovoys of different houses often fight; the victors settle in the house of the vanquished and trouble its inmates with noises, injuring the cattle, turning the master out of bed and choking people in their sleep.",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "He cares for the herds and protects the home and its inmates against misfortune.",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "He supervises the servants and labourers and does all sorts of work for the master at night.",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "text": "He is especially fond of spinning.",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "text": "To increase the property of a master who gratifies him, he will even rob other people.",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "text": "He shows grief by howling at night when an inmate dies, and bitter sobbing and wailing forebode the death of the master of the house.",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "text": "Sorrowful moanings are heard from him when plague, war, fire or another calamity threatens.",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "text": "He is able to foretell the future.",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "text": "When his hand feels soft and warm on a sleeper it is a sign of good luck; when cold and bristly, misfortune is to be expected.",
+      "cites": [
+        "ralston1872:p.120"
+      ]
+    },
+    {
+      "text": "Only rarely does he show an evil side, usually when people fail to honour him or give offence by cursing or bad language; then he takes vengeance on the cattle or quits the house.",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "text": "After he departs, the inmates fall ill and die, and even the cattle perish.",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "text": "If neglected he waxes wroth and knocks the tables and benches about at night.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "In Poland he is believed so loath to leave a building that he still haunts it after it burns down, dwelling in the remains of the stove.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "He is very fond of horses and often rides them all night, so that they are found in the morning foaming and exhausted.",
+      "cites": [
+        "ralston1872:pp.125-126"
+      ]
+    },
+    {
+      "text": "Sometimes he goes riding on a goat.",
+      "cites": [
+        "ralston1872:p.126"
+      ]
+    },
+    {
+      "text": "As Bagan he is guardian of the herds, taking up quarters in a little crib filled with hay for him, and on Easter Sunday and the preceding Thursday he may be seen crouching in a corner of his stall.",
+      "cites": [
+        "ralston1872:p.125"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "People court his favour by putting aside for him what is left of their evening meal.",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "text": "In some families a portion of the supper is always set aside for him.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "In the Great Russian provinces small loaves are put behind or under the stove for him.",
+      "cites": [
+        "afanasyev1868:p.67"
+      ]
+    },
+    {
+      "text": "On the 28th of January the peasants, after supper, leave a pot of stewed grain for him on the hearth in front of the stove, surrounded with hot embers.",
+      "cites": [
+        "ralston1872:p.121"
+      ]
+    },
+    {
+      "text": "An angry Domovoy may be reconciled by killing a cock at midnight and washing all the nooks and corners of the common room or courtyard with its blood.",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "text": "Sometimes bread strewn with salt is wrapped in white cloth and put in the hall or courtyard, while the household bows to the four quarters and entreats the Domovoy to cease his anger.",
+      "cites": [
+        "machal1918:p.242"
+      ]
+    },
+    {
+      "text": "To expel an intruding Domovoy, the household beats the hedges and walls with rods, crying \"Go home, we don't want other people's penates here!\"",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "To lure the Domovoy home, the household dresses in its finest in the evening, walks out into the courtyard and says, \"Déduska Domovoy, come and live with us and tend our flocks.\"",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "When a bath is being prepared, a pail of water is made ready for him to wash in.",
+      "cites": [
+        "machal1918:p.241"
+      ]
+    },
+    {
+      "text": "In the Smolensk Government peasants leaving a bath leave a bucket of water and a whisk for the Domovoy who takes their place.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "When a family moves, an old woman heats the old stove, puts the cinders at noon into a clean pan covered with a napkin, invites the Domovoy to the new house and carries the coals there, where the master and mistress wait at the gate with bread and salt.",
+      "cites": [
+        "machal1918:p.243"
+      ]
+    },
+    {
+      "text": "In the new house the coals are emptied into the oven and the pan is broken and buried below the front corner of the room.",
+      "cites": [
+        "machal1918:pp.243-244"
+      ]
+    },
+    {
+      "text": "When a Russian family moves, the fire is raked from the old stove into a jar and carried to the new one with the words \"Welcome, grandfather, to the new home!\"",
+      "cites": [
+        "ralston1872:pp.120-121"
+      ]
+    },
+    {
+      "text": "When a newly bought animal is first brought home, in several places its owner bows to each of the four corners of the building and says, \"Here is a shaggy beast for thee, Master! Love him, give him to eat and to drink!\", then ties its lead to the kitchen-stove.",
+      "cites": [
+        "ralston1872:p.126"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "There is a belief that well-being cannot settle in a newly built home until the head of the family dies, who then becomes its guardian.",
+      "cites": [
+        "machal1918:p.243"
+      ]
+    },
+    {
+      "text": "It is held that each house ought to have its familiar spirit, and that the soul of the founder of the homestead appears in that capacity.",
+      "cites": [
+        "ralston1872:p.126"
+      ]
+    },
+    {
+      "text": "In some districts tradition expressly gives the spirits of the dead the functions generally attributed to the Domovoy.",
+      "cites": [
+        "ralston1872:p.121"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "bannik",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Machal records the Domovoy among the Russians, and records the White Russians' homage to him and the Little Russians' Didko or Domovyk as the same genius.",
+        "cites": [
+          "machal1918:p.240",
+          "machal1918:p.242",
+          "machal1918:p.244"
+        ]
+      },
+      {
+        "text": "Ralston records Domovoy beliefs among the Russians and the Ruthenians, in Lusatia and in Poland.",
+        "cites": [
+          "ralston1872:p.122",
+          "ralston1872:p.123"
+        ]
+      },
+      {
+        "text": "Afanasyev records the domovoi in the Great Russian provinces and under the name padpechka among the Belarusians.",
+        "cites": [
+          "afanasyev1868:p.67"
+        ]
+      },
+      {
+        "text": "Ralston cites Afanasief for the January offering, so Ralston and Afanasyev are counted as one source; Machal is counted separately, giving at least two independent sources for several peoples.",
+        "cites": [
+          "ralston1872:p.121"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "Budget limited reading to machal1918 pp.240-246, ralston1872 pp.119-127 and afanasyev1868 p.67. find also hit ralston1872 pp.128-139, ralston1873 p.205 and afanasyev1868 pp.68-109 (dense on the domovoi) plus scattered afanasyev1865/1869 pages; none were opened, so the entry is likely incomplete, not wrong."
+    },
+    {
+      "kind": "scope",
+      "text": "Ralston p.123 says Domovoy is called Bannik when he haunts a bath, and Machal p.241 describes the Domovoy in the bath-room. Those bath details are kept here as the domovoi's, attributed as the pages tie them; the bannik entry should decide how far they transfer."
+    },
+    {
+      "kind": "scope",
+      "text": "Vazila and Bagan (ralston1872 p.125) are given by Ralston as forms or names of the Domovoy, not separate beings; kept as Domovoy clauses with the name in the text."
+    },
+    {
+      "kind": "other",
+      "text": "Ralston p.124 says that in Poland the devil and the Domovoy are often synonymous terms; recorded here only as a reading note, not as behaviour."
+    },
+    {
+      "kind": "other",
+      "text": "Ralston p.122 names the Ruthenians; the people value is kept as Ruthenians because the page does not fix a modern people (Ukrainians or Rusyns). Ben or the verify agent should decide."
+    },
+    {
+      "kind": "other",
+      "text": "Machal (pp.244-246) and Ralston (pp.121-122, 124) discuss related household spirits (Dédek, Setek, Skritek, Skrat, Stopan, Hospodaritek, Kaukas, Krosnyata, Iskrzycki). These pages do not equate them with the Domovoy, so they are left out, except the Ukrainian names Machal explicitly gives for the same genius."
+    },
+    {
+      "kind": "other",
+      "text": "Verify kept the people value Ruthenians as Ralston p.122 prints it; the page does not map it to a modern people."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: Afanasyev gives a Polish name for the domovoi, выгорище (from горѣть, to burn), at afanasyev1868:p.67."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: Machal describes rites on entering a newly built house (throwing a cat, cock or hen inside, burying a hen's head below the first corner) at machal1918:p.243."
+    },
+    {
+      "kind": "accretion",
+      "text": "Editorial: depictions of the domovoi in modern fantasy fiction, games and neopagan reconstructions are excluded; this entry records only the cited nineteenth- and early twentieth-century sources."
+    }
+  ]
+}
