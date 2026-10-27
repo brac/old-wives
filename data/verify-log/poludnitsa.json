@@ -1,0 +1,93 @@
+{
+  "entry_id": "poludnitsa",
+  "verifier_prompt_version": "verify-v2",
+  "removed": [
+    {
+      "field": "/variants/2/appearance/2",
+      "text": "She wears a wreath of cornflowers on her head.",
+      "cites": [
+        "machal1918:p.267"
+      ],
+      "reason": "machal1918:p.267 describes the Polish poludnica as a tall woman in a white robe with a sickle; it says nothing of a wreath of cornflowers, and a find for 'cornflower' and 'wreath' in machal1918 turned up no page saying it of her."
+    },
+    {
+      "field": "/variants/2/appearance/4",
+      "text": "When she leaves the fields or the forests she is accompanied by seven great black dogs.",
+      "cites": [
+        "machal1918:p.268"
+      ],
+      "reason": "Misplaced, belongs in behavior_habitat: being accompanied by seven black dogs when she leaves the fields is sourced on machal1918:p.268 but is not a physical description of her."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "/names/meaning/2",
+      "text": "Afanasyev derives the name poludnitsy from polden', noon, which he also glosses as the south, the warm, summer side.",
+      "to_text": "Afanasyev derives the name poludnitsy from polden', which he glosses as the south, the warm, summer side.",
+      "from_cites": [
+        "afanasyev1869:p.137"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.137"
+      ],
+      "reason": "afanasyev1869:p.137 glosses полдень only as 'юг, теплая, летняя сторона' (south, warm, summer side); the gloss 'noon' is the drafter's, so it was cut."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/variants/2",
+      "text": "Potudniowka",
+      "reason": "Printed so on machal1918:p.267, but the same line prints 'Pofudnica' for Poludnica, so 't' is probably OCR for 'ł' (Południowka); kept as printed."
+    },
+    {
+      "field": "/dealing_with_it/2",
+      "text": "In the same passage Afanasyev notes that priestless Old Believers say a prayer at noon to drive out \"the noonday demon\".",
+      "reason": "afanasyev1869:p.138 places the Old Believers' noon prayer against 'бес полуденный' directly after the Archangel poludnitsa sayings but does not say the noonday demon is the poludnitsa; the tie is by juxtaposition only."
+    },
+    {
+      "field": "/peoples_regions/4",
+      "text": "Czechs (erben1893:p.183)",
+      "reason": "erben1893:p.183 says 'dle podání lidu' (according to folk tradition) without naming the Czechs; the people is fixed only by context (a Czech author's Czech collection). The same applies to the 'Czech folk tradition' wording in /scene/3 and /dealing_with_it/3."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal records the poludnitsa for Bohemian (Czech) and Moravian tradition, for the Poles, for the Lusatian Serbs and for the Russians, including the Siberian Russians.",
+      "cites": [
+        "machal1918:p.267",
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "text": "Afanasyev independently records her among the Czechs, the Lusatians and the Russians of the Archangel Government and southern Siberia.",
+      "cites": [
+        "afanasyev1869:p.137",
+        "afanasyev1869:p.138",
+        "afanasyev1869:p.311"
+      ]
+    },
+    {
+      "text": "Ralston records the Lusatian Prezpolnica or Pripolnica with her sickle and flax questions, and on this passage he cites neither Afanasyev nor Machal, so he counts as a third independent author.",
+      "cites": [
+        "ralston1872:p.147",
+        "ralston1872:p.148"
+      ]
+    },
+    {
+      "text": "Afanasyev's three citing volumes (1865, 1869) count as one source; Machal gives no source for these pages.",
+      "cites": [
+        "afanasyev1865:p.25",
+        "machal1918:p.267"
+      ]
+    },
+    {
+      "text": "Erben's note on Czech folk tradition is a commentary in a literary collection and is not counted as an independent folklore source; the grade does not rest on it.",
+      "cites": [
+        "erben1893:p.183"
+      ]
+    }
+  ]
+}
