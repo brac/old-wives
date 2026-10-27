@@ -1,0 +1,124 @@
+{
+  "entry_id": "vampir",
+  "verifier_prompt_version": "verify-v2",
+  "removed": [
+    {
+      "field": "/appearance/10",
+      "text": "When a vampire's grave is opened, its eyes glow red.",
+      "cites": [
+        "ralston1872:p.413"
+      ],
+      "reason": "ralston1872:p.413 says the opened grave shows a rosy cheek and soft skin; it says nothing about the eyes, and no other cited page gives red or glowing eyes."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "/dealing_with_it/2",
+      "text": "In the Tambof story, the vampire could not enter at gates on which crosses had been branded, but the gates without a cross opened of their own accord.",
+      "to_text": "In the Tambof story, at gates on which crosses had been branded the vampire said \"Shut tight!\" and drove on, though the gates stood wide open; the barred gates of the last house, which had no cross, opened of their own accord.",
+      "from_cites": [
+        "ralston1872:p.411"
+      ],
+      "to_cites": [
+        "ralston1872:p.411"
+      ],
+      "reason": "The page does not say the vampire could not enter: it says the stranger called \"Shut tight!\" at open gates branded with crosses and went on. 'Could not enter' is an inference; narrowed to what the page reports."
+    }
+  ],
+  "retagged": [
+    {
+      "field": "/behavior_habitat/4",
+      "text": "Russian peasants believe vampires exert a baneful influence on the weather, and storms, droughts, famines and cattle-plagues are attributed to them.",
+      "from_cites": [
+        "ralston1872:p.411"
+      ],
+      "to_cites": [
+        "ralston1872:pp.410-411"
+      ],
+      "reason": "The sentence begins at the foot of p.410 ('In the opinion of the Russian peasant vampires') and continues on p.411; the attribution to Russian peasants is on p.410."
+    }
+  ],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/peoples_regions/1",
+      "text": "Serbs (Kisolova, Rahmer District, Gradisker District)",
+      "reason": "frombald1725:p.11 names no people; 'Serbs' rests on reading 'Rätzischer Manier' (Rascian manner) of the burial as Serbian. A translation choice, kept."
+    },
+    {
+      "field": "/names/variants/12",
+      "text": "Vampyri (Serbs)",
+      "reason": "frombald1725:p.11 prints 'Vampyri' as what 'they' (the villagers) call such persons; the people Serbs rests on the same reading of 'Rätzisch' as /peoples_regions/1."
+    },
+    {
+      "field": "/names/variants/1",
+      "text": "upuir (Ukrainians)",
+      "reason": "ralston1872:p.410 labels the form 'South-Russian'; recording that as Ukrainians is an interpretation, consistent with Ralston's 'Little-Russians' but not stated on the page."
+    },
+    {
+      "field": "/names/variants/6",
+      "text": "upir (Poles, Czechs)",
+      "reason": "The OCR on ralston1872:p.410 reads 'upior or upiry the latfcer being his designation among the Czekhs also'; 'upiry' is most likely 'upir,' with a misread comma, but the printed form is not certain."
+    },
+    {
+      "field": "/names/primary/native/1",
+      "text": "упырь (Russians)",
+      "reason": "afanasyev1869:p.557 prints упырь, citing dictionaries, and speaks of beliefs 'у насъ' (among us) surviving chiefly in the Ukraine and White Russia; attaching the form to Russians rather than to those peoples is a reading of 'у насъ'."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Ralston records the vampire's origins among the Ukrainians and White-Russians on a passage that cites no source.",
+      "cites": [
+        "ralston1872:p.409"
+      ]
+    },
+    {
+      "text": "Ralston's Tambof story, the Serbian and Bulgarian origin beliefs and Karadžić's black-colt test are footnoted to Afanasyev, so on those passages Ralston is not independent of Afanasyev and is counted once with him.",
+      "cites": [
+        "ralston1872:p.412",
+        "ralston1872:p.413"
+      ]
+    },
+    {
+      "text": "The coffin-lid story in Russian Folk-Tales is taken from Afanasyev's tales and is counted with Afanasyev.",
+      "cites": [
+        "ralston1873:p.309"
+      ]
+    },
+    {
+      "text": "Afanasyev records upyr beliefs chiefly in the Ukraine and White Russia, with a Kharkov Government detail.",
+      "cites": [
+        "afanasyev1869:p.557"
+      ]
+    },
+    {
+      "text": "Afanasyev's Serbian vukodlak account is given from Karadžić, whose dictionary independently equates vampir and vukodlak.",
+      "cites": [
+        "afanasyev1869:p.559",
+        "karadzic1818:s.v.Вукодлак"
+      ]
+    },
+    {
+      "text": "Machal, citing no one on these pages, records the vampire among the Southern Slavs and gives Polish, Slovenian, Bulgarian and Russian names.",
+      "cites": [
+        "machal1918:p.232"
+      ]
+    },
+    {
+      "text": "Frombald's 1725 official report records an exhumation at Kisolova of a man the villagers called one of the Vampyri.",
+      "cites": [
+        "frombald1725:p.11",
+        "frombald1725:p.12"
+      ]
+    },
+    {
+      "text": "The verified entry names ten peoples, so the vampire is attested across multiple peoples by at least five independent authors (Machal, Ralston on his uncited passages, Afanasyev, Karadžić, Frombald).",
+      "cites": [
+        "ralston1872:p.410",
+        "machal1918:p.232"
+      ]
+    }
+  ]
+}
