@@ -203,9 +203,17 @@ The full answers are in `docs/phase2-brainstorm.md`. Settled, with what each rej
 
   Qwen-Image's known faults (the nose, text on the serpent) go to the test grid and the
   regeneration budget, not to another model change.
-- **Scene plates read too abstract (Ben, on bannik).** "We would need to really
-  personify these things a little more." This conflicts with the brief's unseen rule (no
-  invented body), and is open, put to Ben.
+- **Scene plates may show an invented presence (Ben, after the bannik plates read too
+  abstract).** The entry data stays unchanged: no invented appearance enters the entry.
+  The plate prompt for an unseen creature adds a minimal, indistinct presence (for
+  example a shape or hand in the steam), and the image record and caption mark the plate
+  as interpretive. The brief's unseen rule is amended. Rejected:
+  - the empty scene (reads abstract);
+  - a sourced act shown with the creature unseen (the planner's recommendation).
+
+  The planner's mechanism, which Ben can veto: one fixed, creature-neutral presence token
+  is appended only to scene-plate prompts, together with the best-supported behaviour
+  clause, so that the presence is doing something sourced.
 - **Grade rules: settled as they stand, with no more tokens spent on them.** The
   collector rule and the per-passage Ralston rule stay. Bannik and zmey-gorynych remain
   regional. Rejected: re-deriving dependence passage by passage.

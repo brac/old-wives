@@ -70,7 +70,7 @@ Attestation grades:
 3. Literary: traceable mainly to one 19th-century compiler; possible cabinet mythology.
 4. Disputed: contested, or suspected modern invention.
 
-Unseen rule: when sources give no appearance, the plate shows the scene (the bathhouse at night, the rye field at noon), not an invented body. The appearance field stays empty and a scene field holds the sourced setting instead.
+Unseen rule: when sources give no appearance, the plate shows the scene (the bathhouse at night, the rye field at noon), not an invented body. The appearance field stays empty and a scene field holds the sourced setting instead. Amended 2026-10-27 (Ben): the data rule is unchanged, so no invented appearance enters the entry, but the plate may show a minimal invented presence of the creature in the scene. The image record marks it as interpretive, and the caption says so. Empty scenes read too abstract.
 
 Variant rule: one entry per creature, variants nested inside it with their region and source. Rusalka is one entry with a northern and a southern variant, not two entries.
 
@@ -115,7 +115,7 @@ Consistency is the brand. Every plate shares one format, one rendering idiom and
 - Style references are public-domain silverpoint studies (Leonardo, Dürer, Holbein), kept under `style/refs/`. They are style references only: no reference image may depict the creature being drawn.
 - Style tokens are fixed text appended to every prompt. Lock them during the pilot; changing them mid-batch invalidates the set comparison.
 - Generate from the appearance field only. Nothing in the prompt that is not in the verified entry, apart from the style tokens.
-- Unseen creatures get a scene plate from the scene field. The empty bathhouse at night is an honest picture and often a better one.
+- ~~Unseen creatures get a scene plate from the scene field. The empty bathhouse at night is an honest picture and often a better one.~~ Superseded 2026-10-27: unseen creatures get a scene plate from the scene field plus a minimal, indistinct invented presence (for example a shape in the steam), marked interpretive in the image record and the caption. The bake-off showed empty scene plates reading as abstract.
 - Shapeshifters (leshy) get the most commonly attested form, with the plate caption noting the shifting. No composite monsters.
 
 Open style decisions to settle with the first plates, not before: whether plates carry a hand-lettered name and region, whether a single spot color is allowed, and whether the background is blank or a minimal setting.
