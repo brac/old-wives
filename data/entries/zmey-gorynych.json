@@ -1,0 +1,415 @@
+{
+  "id": "zmey-gorynych",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "Zmey Gorynych",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Горынычъ",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1868:p.591"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Zmei Goruinuich",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1873:p.66"
+        ]
+      },
+      {
+        "romanized": "Goruinuich",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.173",
+          "ralston1873:p.115"
+        ]
+      },
+      {
+        "romanized": "Gorynchishche",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "Горынчище",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.529"
+            ]
+          },
+          {
+            "script": "Cyrl",
+            "text": "змѣище-Горынчище",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.518"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1868:p.518",
+          "afanasyev1868:p.529"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Ralston glosses the name Zmei Goruinuich as \"snake\" and \"son of the gora or mountain\".",
+        "cites": [
+          "ralston1873:p.66"
+        ]
+      },
+      {
+        "text": "Afanasyev glosses Gorynych as \"that is, dwelling in a mountain cave\".",
+        "cites": [
+          "afanasyev1868:p.591"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "\"Russian story-land\" (the Russian skazkas)",
+      "cites": [
+        "ralston1873:p.115"
+      ]
+    }
+  ],
+  "family": {
+    "value": "monster",
+    "cites": [
+      "ralston1873:p.115",
+      "afanasyev1868:p.518"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "ralston-winged-serpent",
+      "label": "Ralston's winged many-headed serpent"
+    },
+    {
+      "id": "afanasyev-twelve-trunks",
+      "label": "Afanasyev's bylina serpent with twelve trunks"
+    },
+    {
+      "id": "ralston-mounted-warrior",
+      "label": "Ralston's mounted warrior"
+    },
+    {
+      "id": "ralston-serpent-headed-man",
+      "label": "Ralston's man with a serpent's head"
+    },
+    {
+      "id": "ralston-youth",
+      "label": "Ralston's youthful gallant"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "In most of the Russian tales the Snake (often known as Zmei Goruinuich) is a serpent that seems to differ from other snakes in outward appearance only in being winged and many-headed.",
+      "form": "ralston-winged-serpent",
+      "cites": [
+        "ralston1873:pp.65-66"
+      ]
+    },
+    {
+      "text": "The number of his heads generally varies from three to twelve.",
+      "form": "ralston-winged-serpent",
+      "cites": [
+        "ralston1873:p.66"
+      ]
+    },
+    {
+      "text": "The stories describe the Serpent, who sometimes bears the patronymic Goruinuich, as \"fiery\".",
+      "form": "ralston-winged-serpent",
+      "cites": [
+        "ralston1872:p.173"
+      ]
+    },
+    {
+      "text": "In a bylina about Dobrynya the serpent Gorynchishche flies with twelve serpent trunks.",
+      "form": "afanasyev-twelve-trunks",
+      "cites": [
+        "afanasyev1868:p.518"
+      ]
+    },
+    {
+      "text": "In one story the Snake rides on horseback, with a hawk on his wrist or a raven on his shoulder and a hound at his heel.",
+      "form": "ralston-mounted-warrior",
+      "cites": [
+        "ralston1873:p.65"
+      ]
+    },
+    {
+      "text": "When going to meet a foe the Serpent sometimes takes the form of a warrior mounted on a noble charger, with a raven perched on his shoulder and a hound following at his heels.",
+      "form": "ralston-mounted-warrior",
+      "cites": [
+        "ralston1872:p.173"
+      ]
+    },
+    {
+      "text": "In another story the Snake is a composite being with a human body and a serpent's head.",
+      "form": "ralston-serpent-headed-man",
+      "cites": [
+        "ralston1873:p.65"
+      ]
+    },
+    {
+      "text": "In a third story he flies as a fiery snake into his mistress's bower, stamps his foot on the ground and becomes a youthful gallant.",
+      "form": "ralston-youth",
+      "cites": [
+        "ralston1873:p.65"
+      ]
+    },
+    {
+      "text": "In the presence of his beloved the Serpent sometimes becomes a youth of marvellous beauty.",
+      "form": "ralston-youth",
+      "cites": [
+        "ralston1872:p.173"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "He is sometimes supposed to dwell in mountain caverns.",
+      "cites": [
+        "ralston1873:p.66"
+      ]
+    },
+    {
+      "text": "Afanasyev says that the Zmei Gorynychi, like the giants, live in large mountain caves and in rocky gorges.",
+      "cites": [
+        "afanasyev1868:p.655"
+      ]
+    },
+    {
+      "text": "The serpent Gorynchishche lived in white-stone caves, where Dobrynya found his little children in his nest.",
+      "cites": [
+        "afanasyev1868:p.529"
+      ]
+    },
+    {
+      "text": "His abode may be in the bowels of the earth or in the open light of day, a sumptuous palace or a hut on fowl's legs.",
+      "cites": [
+        "ralston1873:p.66"
+      ]
+    },
+    {
+      "text": "In the bylina, while Dobrynya is bathing in a river, a cloud comes up with no wind, rain falls with no cloud, and sparks fall with no rain, and then the Gorynchishche flies in.",
+      "cites": [
+        "afanasyev1868:p.518"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "He carries off his prey to his abode.",
+      "cites": [
+        "ralston1873:p.66"
+      ]
+    },
+    {
+      "text": "As a general rule he tears some queen or princess away from her home, and she stays with him reluctantly.",
+      "cites": [
+        "ralston1873:p.66"
+      ]
+    },
+    {
+      "text": "In one story he appears to have stolen or concealed the daylight.",
+      "cites": [
+        "ralston1873:p.66"
+      ]
+    },
+    {
+      "text": "In another story the bright moon and the many stars come forth from within him after his death.",
+      "cites": [
+        "ralston1873:p.66"
+      ]
+    },
+    {
+      "text": "Sometimes he is represented as having a wife of his own species and daughters who share his tastes and powers.",
+      "cites": [
+        "ralston1873:p.66"
+      ]
+    },
+    {
+      "text": "In Russian story-land the many-headed Zmei Goruinich is represented as the type of all that is evil.",
+      "cites": [
+        "ralston1873:p.115"
+      ]
+    },
+    {
+      "text": "In the bylina the Gorynchishche tries to burn Dobrynya with fire and strike him with a trunk.",
+      "cites": [
+        "afanasyev1868:p.518"
+      ]
+    },
+    {
+      "text": "In a tale the hero's sister falls in love with the charmer Zmei Gorynych (or the Fiery Tsar), and the two plot how to destroy her brother.",
+      "cites": [
+        "afanasyev1868:p.613"
+      ]
+    },
+    {
+      "text": "In the religious verse of Yegory the Brave and Elizaveta the Fair, God sends upon a kingdom that abandoned the Christian faith a fierce, devouring cave serpent, which Afanasyev says is the same as Gorynych; it devours the whole kingdom until the turn comes to the princess Elizaveta.",
+      "cites": [
+        "afanasyev1868:p.591"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "The captive princess hails as her rescuer the hero who comes to give him battle.",
+      "cites": [
+        "ralston1873:p.66"
+      ]
+    },
+    {
+      "text": "In the bylina the hero Dobrynya overpowers and kills the Gorynchishche; so much serpent blood flows out that Dobrynya stands in it for three days and nights.",
+      "cites": [
+        "afanasyev1868:p.518"
+      ]
+    },
+    {
+      "text": "The hero Dobrynya sailed to the white-stone caves where the serpent Gorynchishche lived and killed all the little children he found in its nest, tearing them in half.",
+      "cites": [
+        "afanasyev1868:p.529"
+      ]
+    },
+    {
+      "text": "Yegory the Brave saves from death a maiden given to be devoured by the fierce Cave Serpent, which Afanasyev says is the same as Gorynych.",
+      "cites": [
+        "afanasyev1865:p.704"
+      ]
+    },
+    {
+      "text": "In the tale, the prince had hounds so strong and fierce that they frightened even Zmei Gorynych.",
+      "cites": [
+        "afanasyev1868:p.613"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [],
+  "attestation": {
+    "grade": "regional",
+    "rationale": [
+      {
+        "text": "Every verified peoples row is Russians: Ralston sets the many-headed Zmei Goruinuich in Russian story-land.",
+        "cites": [
+          "ralston1873:p.115"
+        ]
+      },
+      {
+        "text": "Ralston's passage naming the Snake Zmei Goruinuich does not cite or quote Afanasyev; its one Afanasyev footnote belongs to the Ivan Popyalof story that follows.",
+        "cites": [
+          "ralston1873:p.66"
+        ]
+      },
+      {
+        "text": "Ralston's 1872 passage on the Serpent with the patronymic Goruinuich likewise does not draw on Afanasyev for the clauses used; its Afanasyev footnote attaches only to the Luna and Zvyezda story, not used here.",
+        "cites": [
+          "ralston1872:p.173"
+        ]
+      },
+      {
+        "text": "Afanasyev separately records the Gorynchishche in the Dobrynya bylina and the cave serpent of the Yegory verse, which he equates with Gorynych.",
+        "cites": [
+          "afanasyev1868:p.518",
+          "afanasyev1868:p.591"
+        ]
+      },
+      {
+        "text": "Afanasyev's volumes count as one source and Ralston's two books as another: two independent authors for one people, so the grade is regional.",
+        "cites": [
+          "afanasyev1865:p.704",
+          "ralston1873:p.115"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1865",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 1",
+      "year": 1865,
+      "url": "https://archive.org/details/poeticheskiiavoz01afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "Ralston's appearance and behaviour passages (ralston1873 pp.65-66, ralston1872 p.173) describe 'the Snake' or 'the Serpent' of the Russian tales in general; they are attributed here because the same passage says he is 'often known by the name of Zmei Goruinich' (ralston1873 p.66) or 'sometimes bears the patronymic of Goruinuich' (ralston1872 p.173). Ralston's 'Snake' passages that do not name Goruinich (e.g. ralston1872 pp.172, 174-177; the Ivan Popyalof tale, ralston1873 p.67 ff.) were not used."
+    },
+    {
+      "kind": "scope",
+      "text": "The equations of the 'fierce cave serpent' of the Yegory verse with Gorynych (afanasyev1868 p.591, afanasyev1865 p.704) and of the snake Garafena of Buyan with Goruinich (ralston1872 p.375, 'perhaps a corruption of Goruinich'; afanasyev1868 p.295 per find snippet, not opened) are the authors' own; Garafena is not listed as a variant name. Afanasyev's identification of the Serbian divs with the Zmei Gorynychi (afanasyev1868 p.617) and his cloud/lightning readings (ralston1872 p.173, afanasyev1868 p.594) are interpretation, not lore, and were left out."
+    },
+    {
+      "kind": "scope",
+      "text": "A footnote on afanasyev1868 p.591 cites a Siberian story of Zmei Gorynych living in the Ural mountains who carried off a maiden and locked her in the Devya mountain; it was left out because footnote lines are treated as references, not lore. The Berislavl legend of a winged serpent in a mountain cave on the same page is not named Gorynych there and was not used."
+    },
+    {
+      "kind": "scope",
+      "text": "Budget stop: pages found by find but not opened, each of which may add lore: afanasyev1865 p.307 (Solovei the robber replaces Zmei Gorynych in some tellings), afanasyev1865 p.363 (a cloud nymph in love with Zmei Gorynych), afanasyev1868 p.295 (Garafena under the oak), p.306 (spell against 'zmei Gorynchishche' on an aspen), p.464 (mountain demon = Zmei Gorynych), p.556 (beast-Indra related to Zmei Gorynych), p.578 (Marina, mistress of Zmei Gorynchishche, in the Dobrynya song), p.621 (robber replaces Zmei Gorynych as the princess's lover), afanasyev1869 p.479 and p.551 (Marina, mistress of Zmei Gorynchishche), afanasyev1869 p.821 (index entry Gorynych, pointing to further pages)."
+    },
+    {
+      "kind": "empty-field",
+      "text": "origin: no opened page says where Zmei Gorynych comes from or who becomes one; Ralston's suggestion that he 'may be the lightning, looked upon as the offspring of the aerial mountain, the cloud' (ralston1872 p.173) is a mythological reading, not a folk account. Searched gorynych, goruinich, gorynich, goruinuich, gorui, zmei, zmey, zmyei, snake, горынычъ, горыныч, змей горын, змѣй горын, горынчищ, змей пещер across all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: no opened page describes Zmei Gorynych differently by people or region; all hits are Russian (Ralston's Russian tales and Afanasyev's Russian byliny and verses)."
+    },
+    {
+      "kind": "empty-field",
+      "text": "related: no opened page links Zmei Gorynych by name to another pilot creature. Ralston (ralston1872 p.172) treats the Baba Yaga as a variety of 'the Snake' in general, without naming Goruinich, so no link to baba-yaga was made. The hinted zmek/smok household snake (machal1918 p.247) was not opened; ralston1873 p.115 contrasts the evil Zmei Goruinich with the household snakes of present-day peasant belief."
+    },
+    {
+      "kind": "accretion",
+      "text": "Editorial: depictions of Zmey Gorynych in modern film, animation and games are excluded; this entry records only the cited 19th-century sources (Ralston and Afanasyev)."
+    }
+  ]
+}

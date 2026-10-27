@@ -1,0 +1,146 @@
+{
+  "entry_id": "zmey-gorynych",
+  "verifier_prompt_version": "verify-v2",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/names/variants/0",
+      "text": "Zmei Goruinich",
+      "to_text": "Zmei Goruinuich",
+      "from_cites": [
+        "ralston1873:p.66"
+      ],
+      "to_cites": [
+        "ralston1873:p.66"
+      ],
+      "reason": "Spelling narrowed to the form Ralston prints on this page, 'Zmei Goruinuich' (OCR 'Zme'i [snake] Gorui* nuich'); 'Goruinich' is not printed on the cited page."
+    },
+    {
+      "field": "/names/meaning/0",
+      "text": "Ralston glosses the name Zmei Goruinich as \"snake\" and \"son of the gora or mountain\".",
+      "to_text": "Ralston glosses the name Zmei Goruinuich as \"snake\" and \"son of the gora or mountain\".",
+      "from_cites": [
+        "ralston1873:p.66"
+      ],
+      "to_cites": [
+        "ralston1873:p.66"
+      ],
+      "reason": "Spelling narrowed to the form Ralston prints on this page, 'Zmei Goruinuich' (OCR 'Zme'i [snake] Gorui* nuich'); 'Goruinich' is not printed on the cited page."
+    },
+    {
+      "field": "/appearance/0",
+      "text": "In most of the Russian tales the Snake (often known as Zmei Goruinich) is a serpent that seems to differ from other snakes in outward appearance only in being winged and many-headed.",
+      "to_text": "In most of the Russian tales the Snake (often known as Zmei Goruinuich) is a serpent that seems to differ from other snakes in outward appearance only in being winged and many-headed.",
+      "from_cites": [
+        "ralston1873:pp.65-66"
+      ],
+      "to_cites": [
+        "ralston1873:pp.65-66"
+      ],
+      "reason": "Spelling narrowed to the form Ralston prints on this page, 'Zmei Goruinuich' (OCR 'Zme'i [snake] Gorui* nuich'); 'Goruinich' is not printed on the cited page."
+    },
+    {
+      "field": "/scene/2",
+      "text": "In a bylina the Gorynchishche lives in white-stone caves, where he keeps his little children in a nest.",
+      "to_text": "The serpent Gorynchishche lived in white-stone caves, where Dobrynya found his little children in his nest.",
+      "from_cites": [
+        "afanasyev1868:p.529"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.529"
+      ],
+      "reason": "The page does not call this account a bylina (it only cites its sources in a footnote), and says Dobrynya found the young in the nest rather than that the serpent keeps them there; 'In a bylina' and 'keeps' cut."
+    },
+    {
+      "field": "/dealing_with_it/2",
+      "text": "In another bylina Dobrynya sails to the white-stone caves of the Gorynchishche and kills all the little children he finds in its nest, tearing them in half.",
+      "to_text": "The hero Dobrynya sailed to the white-stone caves where the serpent Gorynchishche lived and killed all the little children he found in its nest, tearing them in half.",
+      "from_cites": [
+        "afanasyev1868:p.529"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.529"
+      ],
+      "reason": "The page does not call this account a bylina, nor 'another' one; 'In another bylina' cut, and tense kept to the page's narrative past."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/appearance/2",
+      "text": "The stories describe the Serpent, who sometimes bears the patronymic Goruinuich, as \"fiery\".",
+      "reason": "Ambiguous referent: Ralston gives this for 'the Snake' / 'the Serpent' of the tales in general, in a story he does not name; the name Zmei Goruinuich is only 'often' (ralston1873 p.66) or 'sometimes' (ralston1872 p.173) his, so the story's snake may not be the one so named. Kept because Ralston ties the general Snake to the name in the same passage."
+    },
+    {
+      "field": "/appearance/4",
+      "text": "In one story the Snake rides on horseback, with a hawk on his wrist or a raven on his shoulder and a hound at his heel.",
+      "reason": "Ambiguous referent: Ralston gives this for 'the Snake' / 'the Serpent' of the tales in general, in a story he does not name; the name Zmei Goruinuich is only 'often' (ralston1873 p.66) or 'sometimes' (ralston1872 p.173) his, so the story's snake may not be the one so named. Kept because Ralston ties the general Snake to the name in the same passage."
+    },
+    {
+      "field": "/appearance/5",
+      "text": "When going to meet a foe the Serpent sometimes takes the form of a warrior mounted on a noble charger, with a raven perched on his shoulder and a hound following at his heels.",
+      "reason": "Ambiguous referent: Ralston gives this for 'the Snake' / 'the Serpent' of the tales in general, in a story he does not name; the name Zmei Goruinuich is only 'often' (ralston1873 p.66) or 'sometimes' (ralston1872 p.173) his, so the story's snake may not be the one so named. Kept because Ralston ties the general Snake to the name in the same passage."
+    },
+    {
+      "field": "/appearance/6",
+      "text": "In another story the Snake is a composite being with a human body and a serpent's head.",
+      "reason": "Ambiguous referent: Ralston gives this for 'the Snake' / 'the Serpent' of the tales in general, in a story he does not name; the name Zmei Goruinuich is only 'often' (ralston1873 p.66) or 'sometimes' (ralston1872 p.173) his, so the story's snake may not be the one so named. Kept because Ralston ties the general Snake to the name in the same passage."
+    },
+    {
+      "field": "/appearance/7",
+      "text": "In a third story he flies as a fiery snake into his mistress's bower, stamps his foot on the ground and becomes a youthful gallant.",
+      "reason": "Ambiguous referent: Ralston gives this for 'the Snake' / 'the Serpent' of the tales in general, in a story he does not name; the name Zmei Goruinuich is only 'often' (ralston1873 p.66) or 'sometimes' (ralston1872 p.173) his, so the story's snake may not be the one so named. Kept because Ralston ties the general Snake to the name in the same passage."
+    },
+    {
+      "field": "/appearance/8",
+      "text": "In the presence of his beloved the Serpent sometimes becomes a youth of marvellous beauty.",
+      "reason": "Ambiguous referent: Ralston gives this for 'the Snake' / 'the Serpent' of the tales in general, in a story he does not name; the name Zmei Goruinuich is only 'often' (ralston1873 p.66) or 'sometimes' (ralston1872 p.173) his, so the story's snake may not be the one so named. Kept because Ralston ties the general Snake to the name in the same passage."
+    },
+    {
+      "field": "/behavior_habitat/2",
+      "text": "In one story he appears to have stolen or concealed the daylight.",
+      "reason": "ralston1873 p.66 says it of the Snake often known as Zmei Goruinuich, but ralston1872 p.173 sets the story of his blotting out the light of day among the tellings where he is the cloud, contrasted with those where he bears the patronymic Goruinuich. Kept: the cited page supports the wording."
+    },
+    {
+      "field": "/behavior_habitat/3",
+      "text": "In another story the bright moon and the many stars come forth from within him after his death.",
+      "reason": "ralston1873 p.66 says it of the Snake often known as Zmei Goruinuich, but ralston1872 p.173 tells the same moon-and-stars story of 'a snake', unnamed. Kept: the cited page supports the wording."
+    }
+  ],
+  "grade": "regional",
+  "grade_rationale": [
+    {
+      "text": "Every verified peoples row is Russians: Ralston sets the many-headed Zmei Goruinuich in Russian story-land.",
+      "cites": [
+        "ralston1873:p.115"
+      ]
+    },
+    {
+      "text": "Ralston's passage naming the Snake Zmei Goruinuich does not cite or quote Afanasyev; its one Afanasyev footnote belongs to the Ivan Popyalof story that follows.",
+      "cites": [
+        "ralston1873:p.66"
+      ]
+    },
+    {
+      "text": "Ralston's 1872 passage on the Serpent with the patronymic Goruinuich likewise does not draw on Afanasyev for the clauses used; its Afanasyev footnote attaches only to the Luna and Zvyezda story, not used here.",
+      "cites": [
+        "ralston1872:p.173"
+      ]
+    },
+    {
+      "text": "Afanasyev separately records the Gorynchishche in the Dobrynya bylina and the cave serpent of the Yegory verse, which he equates with Gorynych.",
+      "cites": [
+        "afanasyev1868:p.518",
+        "afanasyev1868:p.591"
+      ]
+    },
+    {
+      "text": "Afanasyev's volumes count as one source and Ralston's two books as another: two independent authors for one people, so the grade is regional.",
+      "cites": [
+        "afanasyev1865:p.704",
+        "ralston1873:p.115"
+      ]
+    }
+  ]
+}
