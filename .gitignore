@@ -6,3 +6,4 @@ coverage/
 sources/raw/
 .env
 plates/**/*.full.png
+style/refs/candidates/
