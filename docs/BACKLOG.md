@@ -56,3 +56,8 @@ and the project-scoped "why" behind decisions, each with the rejected alternativ
   carry labels 91-115 and labels 108-115 repeat. Switch `machal1918` to
   `page_label_source: "header"` (built in the Phase 1 corpus fix) and check the plate
   leaves before any batch cites that range. No pilot citation is affected.
+- 2026-10-27: Phase 1 closed (tag `phase-1`). All ten pilot creatures are drafted and
+  independently verified; results and the six open decisions for Ben are in
+  `docs/pilot-phase1-report.md`. The headline decision is the grade rule: whether a
+  single folklore collector (Afanasyev, Karadžić) counts as the brief's "one
+  19th-century compiler". Verifiers ruled both ways on the same pattern.

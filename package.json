@@ -13,7 +13,8 @@
     "corpus:build": "tsx src/corpus/build.ts",
     "corpus:verify": "tsx src/corpus/verify.ts",
     "cite": "tsx src/corpus/cite-cli.ts",
-    "find": "tsx src/corpus/find-cli.ts"
+    "find": "tsx src/corpus/find-cli.ts",
+    "stats": "tsx src/report/stats.ts"
   },
   "devDependencies": {
     "@types/node": "24.19.2",
