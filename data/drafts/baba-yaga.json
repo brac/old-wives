@@ -1,0 +1,663 @@
+{
+  "id": "baba-yaga",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "Baba Yaga",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "баба-яга",
+          "people": "Belarusians",
+          "cites": [
+            "afanasyev1869:p.587"
+          ]
+        },
+        {
+          "script": "Cyrl",
+          "text": "баба-яга",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1869:p.591"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Yaga Baba",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.161"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "яга-баба",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1869:p.588"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Jaga-baba",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.266"
+        ]
+      },
+      {
+        "romanized": "Jezibaba",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.266"
+        ]
+      },
+      {
+        "romanized": "Jendzibaba",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.266"
+        ]
+      },
+      {
+        "romanized": "Iron Tooth",
+        "peoples": [
+          "Serbs"
+        ],
+        "cites": [
+          "ralston1872:p.164"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "гвоздензуба",
+            "people": "Serbs",
+            "cites": [
+              "afanasyev1869:p.595"
+            ]
+          }
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Baba stands for \"woman\".",
+        "cites": [
+          "ralston1872:p.161"
+        ]
+      },
+      {
+        "text": "The meaning of the word Yaga is uncertain.",
+        "cites": [
+          "ralston1872:p.161"
+        ]
+      },
+      {
+        "text": "Afanasyev holds that the word yaga answers to the Sanskrit ahi, \"snake\".",
+        "cites": [
+          "afanasyev1869:p.588"
+        ]
+      },
+      {
+        "text": "Shchepkin, as quoted by Ralston, says Yaga means properly \"noisy, scolding\", from a root yagat', to brawl or scold.",
+        "cites": [
+          "ralston1873:p.137"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Poshekhonsky district",
+      "cites": [
+        "afanasyev1869:p.591"
+      ]
+    },
+    {
+      "people": "Belarusians",
+      "region": "White-Russians",
+      "cites": [
+        "ralston1872:p.162"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Little Russians",
+      "cites": [
+        "afanasyev1869:p.591"
+      ]
+    },
+    {
+      "people": "Slovaks",
+      "cites": [
+        "afanasyev1869:p.589"
+      ]
+    },
+    {
+      "people": "Serbs",
+      "region": "Servian",
+      "cites": [
+        "ralston1872:p.164"
+      ]
+    },
+    {
+      "people": "Poles",
+      "cites": [
+        "machal1918:p.266"
+      ]
+    }
+  ],
+  "family": {
+    "value": "monster",
+    "cites": [
+      "ralston1873:p.137"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "Is generally represented under the form of an old woman.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "Is very tall in stature.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "Is very bony of limb.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "Is gaunt.",
+      "cites": [
+        "ralston1873:p.138"
+      ]
+    },
+    {
+      "text": "Has an excessively long nose.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "Her nose is sometimes described as being of iron.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "Her long nose is described as snotty.",
+      "cites": [
+        "afanasyev1869:p.594"
+      ]
+    },
+    {
+      "text": "Has dishevelled hair.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "Has long pendant breasts, sometimes described as being of iron.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "Has strong sharp teeth, sometimes described as being of iron.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "In the epic description of the tales she has a bony leg.",
+      "cites": [
+        "afanasyev1869:p.591"
+      ]
+    },
+    {
+      "text": "As she lies in her hut she often stretches across from one corner to the other, and her nose goes right through the ceiling.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "As she lies in her hut her breasts hang down over the shelf-rail.",
+      "cites": [
+        "afanasyev1869:p.591"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "Her usual dwelling is a cottage that stands on fowls' legs, that is, on slender supports.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "The hut stands at the edge of a forest, with its entrance looking towards the forest.",
+      "cites": [
+        "ralston1873:p.138"
+      ]
+    },
+    {
+      "text": "Sometimes she lives in a larger building, round which stands a fence made of the bones of the people she has eaten, tipped with their skulls.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "The uprights of the gates of that building are human legs, the bolts are human arms, and instead of a lock there is a mouth with sharp teeth.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "In some places, when the wind bows down the ears of corn, the peasants say that the Baba Yaga is running after children.",
+      "cites": [
+        "ralston1872:pp.163-164"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "belarusian",
+      "label": "White-Russian (Belarusian) traditions",
+      "peoples": [
+        "Belarusians"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "The White-Russians declare that the Baba Yaga flies through the sky in a fiery mortar, which she urges on with a burning broom.",
+          "cites": [
+            "ralston1872:p.162"
+          ]
+        },
+        {
+          "text": "During her flight the winds howl, the earth groans, and the trees writhe and crack.",
+          "cites": [
+            "ralston1872:p.162"
+          ]
+        },
+        {
+          "text": "The White-Russians affirm that Death gives the dead to the Baba Yaga, and that Death often goes prowling about with her.",
+          "cites": [
+            "ralston1872:p.163"
+          ]
+        },
+        {
+          "text": "The White-Russians affirm that the Baba Yaga and her subordinate witches feed on the souls of people, and by that means become as light as spirits.",
+          "cites": [
+            "ralston1872:p.163"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serbian-iron-tooth",
+      "label": "Serbian Iron Tooth",
+      "peoples": [
+        "Serbs"
+      ],
+      "appearance": [
+        {
+          "text": "The Serbs' gvozdenzuba is a woman with iron teeth.",
+          "cites": [
+            "afanasyev1869:p.592"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "The Servian Baba Yaga, known as the Iron Tooth, carries about live coals in a pitcher.",
+          "cites": [
+            "ralston1872:p.164"
+          ]
+        },
+        {
+          "text": "The Iron Tooth burns the distaffs of lazy spinners.",
+          "cites": [
+            "ralston1872:p.164"
+          ]
+        },
+        {
+          "text": "The Serbs frighten naughty girls and boys with the gvozdenzuba.",
+          "cites": [
+            "afanasyev1869:p.592"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slovak",
+      "label": "Slovak traditions",
+      "peoples": [
+        "Slovaks"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "In a Slovak tale the sons of a Baba Yaga are described as baneful snakes.",
+          "cites": [
+            "ralston1872:p.162"
+          ]
+        },
+        {
+          "text": "The Slovaks believe that the baba-yaga can send foul weather and fair weather at her own will.",
+          "cites": [
+            "afanasyev1869:p.589"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ukrainian",
+      "label": "Little Russian (Ukrainian) iron baba",
+      "peoples": [
+        "Ukrainians"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "The Little Russians, forbidding children to pick peas, tell them not to go into the peas because the iron baba sits there.",
+          "cites": [
+            "afanasyev1869:p.591"
+          ]
+        },
+        {
+          "text": "With the same threat they stop children from running into the woods and gardens.",
+          "cites": [
+            "afanasyev1869:p.591"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "She is the most prominent of the mythic personages in the popular tales (skazki).",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "When she goes abroad she rides in an iron mortar, which she propels with the pestle.",
+      "cites": [
+        "ralston1872:pp.161-162"
+      ]
+    },
+    {
+      "text": "As she goes she sweeps away the traces of her passage with a broom.",
+      "cites": [
+        "ralston1872:p.162"
+      ]
+    },
+    {
+      "text": "She flies through the air and rides to the witches' sabbaths in an iron mortar.",
+      "cites": [
+        "afanasyev1869:p.587"
+      ]
+    },
+    {
+      "text": "According to some stories the Sun, the Day and the Night are her servants.",
+      "cites": [
+        "ralston1872:p.162"
+      ]
+    },
+    {
+      "text": "According to some stories trunkless hands wait upon her and the elements fulfil her behests.",
+      "cites": [
+        "ralston1872:p.162"
+      ]
+    },
+    {
+      "text": "She possesses a magic cudgel, a single wave of which turns any living creature into stone.",
+      "cites": [
+        "ralston1872:p.162"
+      ]
+    },
+    {
+      "text": "She can always avail herself of fire-breathing horses, seven-league boots, self-playing gusli, a self-cutting sword and a self-flying carpet.",
+      "cites": [
+        "ralston1872:p.162"
+      ]
+    },
+    {
+      "text": "She cooks and eats her victims, often stealing children and belated travellers for her table.",
+      "cites": [
+        "ralston1872:p.162"
+      ]
+    },
+    {
+      "text": "As a general rule she is described as utterly malevolent and always hungering after human flesh.",
+      "cites": [
+        "ralston1872:p.163"
+      ]
+    },
+    {
+      "text": "It is also told that the baba-yaga steals children, lifts them into the air and throws them down dead onto the roof of the house.",
+      "cites": [
+        "afanasyev1869:p.587"
+      ]
+    },
+    {
+      "text": "The baba-yaga and the witches sense the presence of a hidden man, and on meeting wandering heroes exclaim that a Russian smell is here.",
+      "cites": [
+        "afanasyev1869:p.590"
+      ]
+    },
+    {
+      "text": "She is supposed to love to suck the white breasts of beautiful women.",
+      "cites": [
+        "ralston1872:pp.162-163"
+      ]
+    },
+    {
+      "text": "She keeps guard over, and knows the use of, the founts of Living Water, which cure wounds and restore the dead to life.",
+      "cites": [
+        "ralston1872:p.163"
+      ]
+    },
+    {
+      "text": "She carefully hides copper, silver and gold in her store-rooms.",
+      "cites": [
+        "afanasyev1869:p.589"
+      ]
+    },
+    {
+      "text": "Different versions of the same tale sometimes give the leading part to the Snake and sometimes to the Baba Yaga.",
+      "cites": [
+        "ralston1872:p.162"
+      ]
+    },
+    {
+      "text": "Sometimes three Baba Yagas appear in a story; they are usually three sisters, not of an unkindly nature, who give the hero good advice and magic presents.",
+      "cites": [
+        "ralston1872:p.163"
+      ]
+    },
+    {
+      "text": "In some places the peasants say she runs after children in the corn with the intention of blinding them or pounding them in an iron churn.",
+      "cites": [
+        "ralston1872:pp.163-164"
+      ]
+    },
+    {
+      "text": "Corn-fields are specially haunted by the Baba Yaga.",
+      "cites": [
+        "ralston1872:p.164"
+      ]
+    },
+    {
+      "text": "In the Poshekhonsky district peasants frighten children away from running over the kitchen-gardens and fields with the baba-yaga.",
+      "cites": [
+        "afanasyev1869:pp.591-592"
+      ]
+    },
+    {
+      "text": "She is frequently represented as spinning.",
+      "cites": [
+        "ralston1872:p.164"
+      ]
+    },
+    {
+      "text": "According to popular traditions she spins tow, weaves linen, and chases her victims with an iron comb in her hands.",
+      "cites": [
+        "afanasyev1869:p.594"
+      ]
+    },
+    {
+      "text": "She usually lives by herself, but sometimes appears in the character of the house-mother.",
+      "cites": [
+        "ralston1873:p.147"
+      ]
+    },
+    {
+      "text": "In one story she petrifies her victims: she gives a hero one of her hairs and tells him to tie three knots and blow, and he and his horse turn into stone.",
+      "cites": [
+        "ralston1873:p.147"
+      ]
+    },
+    {
+      "text": "In that story she puts the petrified victims in her mortar, pounds them to bits, and buries the remains under a stone.",
+      "cites": [
+        "ralston1873:p.147"
+      ]
+    },
+    {
+      "text": "From the Christmas-season games Afanasyev concludes that she is a master at setting riddles and solving them.",
+      "cites": [
+        "afanasyev1869:p.595"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "When her hut is adjured in the right words it turns round, so that its back is towards the forest and its front towards the person addressing it.",
+      "cites": [
+        "ralston1872:p.161"
+      ]
+    },
+    {
+      "text": "In one story Prince Ivan feigns ignorance and persuades her to show him how to tie the knots and blow, so that she petrifies herself.",
+      "cites": [
+        "ralston1873:p.147"
+      ]
+    },
+    {
+      "text": "Prince Ivan then pounds her in her own mortar until she tells him where his comrade's fragments are and how to restore him to life.",
+      "cites": [
+        "ralston1873:p.147"
+      ]
+    },
+    {
+      "text": "In one tale two heroes lie in wait for her, catch her, and force her to show them the spring of living water.",
+      "cites": [
+        "afanasyev1869:p.589"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [
+    {
+      "id": "rusalka",
+      "relation": "related"
+    },
+    {
+      "id": "poludnitsa",
+      "relation": "related"
+    }
+  ],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "origin: no opened page says where the Baba Yaga comes from or who becomes one. Ralston (ralston1872:pp.163-164) and Afanasyev (afanasyev1869:pp.587-595) give mythologists' readings (storm, whirlwind, thunder-cloud, degraded heathen prophetesses for the three sisters); these are interpretations, not lore, and were left out. Searched baba yaga, baba-yaga, yaga, jaga-baba, jezibaba, баба-яга, баба яга, яга, ягу in all sources."
+    },
+    {
+      "kind": "scope",
+      "text": "Read in full: ralston1872:pp.161-164, ralston1873:pp.137-138 and p.147, afanasyev1869:pp.586-595, machal1918:p.266. Not opened for budget: ralston1873:pp.92-95, 125-126, 139-157 (tale texts, incl. Vasilissa at pp.152-157), 169-170, 248-250; afanasyev1865:pp.217, 291, 363, 569, 573, 775; afanasyev1868:pp.419, 449, 483, 595, 763, 780; afanasyev1869:pp.24, 451, 457, 459, 463, 467, 540-544; ralston1872:pp.168, 172, 373, 385. These tale pages may hold further scene detail and wards."
+    },
+    {
+      "kind": "scope",
+      "text": "names.meaning clauses 1-2 come from Ralston's own footnote 3 on ralston1872:p.161, and the Shchepkin clause from footnote 2 on ralston1873:p.137; the Afanasyev etymology is in the body text of afanasyev1869:p.588. They are authors' statements about the name, not references."
+    },
+    {
+      "kind": "scope",
+      "text": "Iron Tooth native form: afanasyev1869:p.595 prints 'сербская гвоздензуба' in its baba-yaga passage, and ralston1872:p.164 names the Servian Baba Yaga 'Iron Tooth' with the same coal-carrying, distaff-burning trait; the identification of the two rests on that parallel. Afanasyev p.592 prints the inflected form 'гвоздензубою'."
+    },
+    {
+      "kind": "scope",
+      "text": "Related links: afanasyev1869:p.593 compares the baba-yaga hiding in the corn-fields with tales of mavki, rusalki and poludnitsy, hence rusalka and poludnitsa as 'related'. Ralston (ralston1872:p.162) and Afanasyev (p.588) tie her to 'the Snake' / 'Fiery Snake'; no opened page names Zmey Gorynych, so no zmey-gorynych link was made."
+    },
+    {
+      "kind": "scope",
+      "text": "Sources call her 'hideous' (ralston1872:p.161) and 'evil, ugly' (afanasyev1869:p.591); these style words were kept out of appearance per the drawing rule. Afanasyev p.591's 'голова пестомъ' (head like a pestle?) was left out as its sense is unclear."
+    },
+    {
+      "kind": "scope",
+      "text": "Ukrainian variant: afanasyev1869:p.591 ties the 'iron baba' (зализна баба) of the Little Russians to the baba-yaga, who is called 'iron' in Rus'. Ralston's 'In the Ukraine the flying witch is usually called a snake' (ralston1872:p.162) was not used, since it is about a witch, not this creature."
+    }
+  ]
+}
