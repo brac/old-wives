@@ -1,14 +1,14 @@
-// Mechanical plate prompt builder (Phase 2a).
+// Mechanical plate prompt builder (Phase 2a, v2 entries in 2d).
 //
-// The prompt is built only from an entry's verified clauses plus fixed style tokens, so
-// every word in it is either in the entry or in the constants below. Nothing here
-// paraphrases, summarises or adds description.
+// The prompt is built only from an entry's verified clauses plus fixed style tokens and,
+// for a scene plate, one fixed presence token, so every word in it is either in the entry
+// or in the constants below. Nothing here paraphrases, summarises or adds description.
 
 // Style tokens are assembled from fixed fragments. Two switches (Phase 2c test grid) each
 // own one part of the wording: --guides owns the construction-line fragment, --paper owns
-// every mention of the paper (the medium's "on prepared paper" and the ground). A switch
-// that is not passed keeps the original bake-off wording, so with neither switch the
-// tokens are byte-identical to STYLE_TOKENS below and the bake-off stays reproducible.
+// the ground. Ben locked guides off and plain paper after the grid (2026-10-27), so those
+// are the defaults. The bake-off and grid wording is no longer reproduced by default:
+// their sidecars record the full prompts they were sent.
 
 export type Guides = "on" | "off";
 export type Paper = "plain" | "prepared";
@@ -17,44 +17,50 @@ export interface StyleOpts {
   paper?: Paper;
 }
 
-/** Fragments shared by every style variant. */
+export const DEFAULT_GUIDES: Guides = "off";
+export const DEFAULT_PAPER: Paper = "plain";
+
+/**
+ * Fragments shared by every style variant. "study sheet" was removed in 2d: together with
+ * "Renaissance sketch" it pulled in Leonardo-style handwritten annotations.
+ */
 export const STYLE_LEAD = "silverpoint study";
+export const STYLE_MEDIUM = "metalpoint drawing";
 export const STYLE_SKETCH = "Renaissance sketch";
 export const STYLE_BODY = "hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome";
-export const STYLE_TAIL = "study sheet";
-
-/** Original bake-off wording, used for a switch that is not passed. */
-export const LEGACY_GUIDES = "visible construction lines";
-export const LEGACY_MEDIUM = "metalpoint drawing on prepared paper";
-export const LEGACY_GROUND = "blank paper ground";
 
 /** --guides on|off. */
 export const GUIDES_TOKENS: Record<Guides, string> = {
-  on: "proportion lines, faint construction grid and measuring marks around the figure, as on a study sheet",
+  on: "proportion lines, faint construction grid and measuring marks around the figure",
   off: "no construction grid, no measuring marks",
 };
 
-/** --paper plain|prepared. The medium drops "on prepared paper" so only the ground speaks. */
-export const PAPER_MEDIUM = "metalpoint drawing";
+/** --paper plain|prepared. */
 export const PAPER_TOKENS: Record<Paper, string> = {
   plain: "clean light paper ground",
   prepared: "lightly prepared paper, pale warm tint, faint paper tooth",
 };
 
 export function styleTokens(opts: StyleOpts = {}): string {
-  const guides = opts.guides ? GUIDES_TOKENS[opts.guides] : LEGACY_GUIDES;
-  const medium = opts.paper ? PAPER_MEDIUM : LEGACY_MEDIUM;
-  const ground = opts.paper ? PAPER_TOKENS[opts.paper] : LEGACY_GROUND;
+  const guides = GUIDES_TOKENS[opts.guides ?? DEFAULT_GUIDES];
+  const ground = PAPER_TOKENS[opts.paper ?? DEFAULT_PAPER];
   if (guides === undefined || ground === undefined) throw new Error(`unknown style option ${JSON.stringify(opts)}`);
-  return [STYLE_LEAD, medium, STYLE_SKETCH, guides, STYLE_BODY, ground, STYLE_TAIL].join(", ");
+  return [STYLE_LEAD, STYLE_MEDIUM, STYLE_SKETCH, guides, STYLE_BODY, ground].join(", ");
 }
 
-/** Positive style tokens, brainstorm C1, as used in the 2b bake-off (no switches). */
+/** Positive style tokens with the default switches. */
 export const STYLE_TOKENS = styleTokens();
 
-/** Negative tokens, brainstorm C4. */
+/** Negative tokens: brainstorm C4, plus the 2d no-script negatives. */
 export const NEGATIVE_TOKENS =
-  "no painterly fantasy concept art, no 3D render, no digital painting, no colour, no smooth shading, no anime, no comic book inking, no photograph, no text, no watermark, no border";
+  "no painterly fantasy concept art, no 3D render, no digital painting, no colour, no smooth shading, no anime, no comic book inking, no photograph, no text, no watermark, no border, " +
+  "no handwriting, no inscriptions, no annotations, no script, no lettering, no captions";
+
+/**
+ * Scene plates (unseen-rule amendment, 2026-10-27): one fixed, creature-neutral presence
+ * token. A plate that carries it is interpretive.
+ */
+export const PRESENCE_TOKEN = "the creature itself only suggested as a dim, indistinct presence within the scene.";
 
 /** Prefix used when an endpoint has no negative_prompt field. */
 export const AVOID_PREFIX = "Avoid:";
@@ -65,6 +71,7 @@ export const CLAUSE_CAP = 10;
 export interface Clause {
   text: string;
   cites: string[];
+  form?: string;
 }
 
 export interface RankedClause extends Clause {
@@ -74,17 +81,34 @@ export interface RankedClause extends Clause {
   pages: number;
 }
 
+/** One human edit, from plates/overrides.json. */
+export interface HumanEdit {
+  text: string;
+  reason: string;
+  by: string;
+  date: string;
+}
+
+/** plates/overrides.json: creature id -> edits. */
+export type Overrides = Record<string, { drop: HumanEdit[] }>;
+
 export interface PlatePrompt {
   prompt: string;
   negative: string;
-  /** Which entry field the clauses came from. */
+  /** Which entry field the main clauses came from. */
   field: "appearance" | "scene";
   form: string | null;
-  /** Style switches as passed; null when not passed (bake-off wording). */
-  guides: Guides | null;
-  paper: Paper | null;
+  variant: string | null;
+  /** True when the presence token was added (scene plate with an invented presence). */
+  interpretive: boolean;
+  /** The behaviour clause added to a scene plate, else null (it is also in clauses_used). */
+  behaviour_clause: string | null;
+  guides: Guides;
+  paper: Paper;
   clauses_used: RankedClause[];
   clauses_dropped: RankedClause[];
+  /** Clauses a human removed from this prompt before the cap. */
+  human_edits: HumanEdit[];
 }
 
 /** Map of source id (the part of a cite before ':') to author. */
@@ -94,23 +118,100 @@ export function authorIndex(manifest: Array<{ id: string; author: string }>): Au
   return Object.fromEntries(manifest.map((s) => [s.id, s.author]));
 }
 
-// The only code that knows the entry shape. v1: `appearance`, `scene`, and per-variant
-// `appearance`, where --form selects a variant id. The v2 schema (Phase 1d) adds
-// `appearance_forms` and a per-clause `form`; extend this function, and nothing else.
+export interface SelectOpts {
+  /** v2: a form id from appearance_forms. v1: a variant id (legacy meaning). */
+  form?: string;
+  variant?: string;
+  scenePresence?: boolean;
+}
+
+export interface Selection {
+  field: "appearance" | "scene";
+  clauses: Clause[];
+  /** Behaviour candidates, set only for a scene plate with a presence. */
+  behaviour?: Clause[];
+}
+
+// The only code that knows the entry shape.
+// v1 (schema_version 1): `appearance`, `scene`, per-variant `appearance`; --form selects a
+//   variant id. Kept so the bake-off copies still build.
+// v2: `appearance_forms` plus a per-clause `form`. --form takes the clauses with no form
+//   plus that form's; --variant takes a variant's appearance. An entry with formed clauses
+//   must be given a form, so forms are never mixed into one composite figure.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function readClauses(entry: any, form?: string): { field: "appearance" | "scene"; clauses: Clause[] } {
-  if (form) {
-    const variant = (entry.variants ?? []).find((v: { id: string }) => v.id === form);
-    if (!variant) throw new Error(`entry ${entry.id} has no variant or form "${form}"`);
+export function readClauses(entry: any, opts: SelectOpts = {}): Selection {
+  const v2 = entry.schema_version === 2;
+  if (opts.form && opts.variant) throw new Error(`pass --form or --variant, not both`);
+  if (opts.scenePresence && (opts.form || opts.variant)) {
+    throw new Error(`--scene-presence takes the scene clauses; it cannot be combined with --form or --variant`);
+  }
+  const variantId = opts.variant ?? (v2 ? undefined : opts.form);
+  if (variantId) {
+    const ids = (entry.variants ?? []).map((v: { id: string }) => v.id);
+    const variant = (entry.variants ?? []).find((v: { id: string }) => v.id === variantId);
+    if (!variant) throw new Error(`entry ${entry.id} has no variant or form "${variantId}" (variants: ${ids.join(", ") || "none"})`);
     const appearance: Clause[] = variant.appearance ?? [];
-    if (appearance.length === 0) throw new Error(`variant "${form}" of ${entry.id} has no appearance clauses`);
+    if (appearance.length === 0) throw new Error(`variant "${variantId}" of ${entry.id} has no appearance clauses`);
     return { field: "appearance", clauses: appearance };
   }
   const appearance: Clause[] = entry.appearance ?? [];
-  if (appearance.length > 0) return { field: "appearance", clauses: appearance };
   const scene: Clause[] = entry.scene ?? [];
+  if (opts.scenePresence || (v2 && appearance.length === 0)) {
+    if (scene.length === 0) throw new Error(`entry ${entry.id} has no scene clauses for a scene plate`);
+    return { field: "scene", clauses: scene, behaviour: entry.behavior_habitat ?? [] };
+  }
+  if (v2) {
+    const formIds: string[] = (entry.appearance_forms ?? []).map((f: { id: string }) => f.id);
+    if (opts.form) {
+      if (!formIds.includes(opts.form)) {
+        throw new Error(`entry ${entry.id} has no form "${opts.form}" (forms: ${formIds.join(", ") || "none"})`);
+      }
+      return { field: "appearance", clauses: appearance.filter((c) => !c.form || c.form === opts.form) };
+    }
+    if (appearance.some((c) => c.form)) {
+      throw new Error(`entry ${entry.id} has appearance forms; pass --form <id> (forms: ${formIds.join(", ")})`);
+    }
+    return { field: "appearance", clauses: appearance };
+  }
+  if (appearance.length > 0) return { field: "appearance", clauses: appearance };
   if (scene.length > 0) return { field: "scene", clauses: scene };
   throw new Error(`entry ${entry.id} has neither appearance nor scene clauses`);
+}
+
+/** Every clause text anywhere in the entry (any object with text and cites). */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function allClauseTexts(node: any, out = new Set<string>()): Set<string> {
+  if (Array.isArray(node)) for (const n of node) allClauseTexts(n, out);
+  else if (node && typeof node === "object") {
+    if (typeof node.text === "string" && Array.isArray(node.cites)) out.add(node.text.trim());
+    for (const v of Object.values(node)) allClauseTexts(v, out);
+  }
+  return out;
+}
+
+/**
+ * Check every human edit for this entry against the entry text; one that matches no clause
+ * anywhere in the entry is an error, never a silent no-op.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function editsFor(entry: any, overrides: Overrides | undefined): HumanEdit[] {
+  const edits = overrides?.[entry.id]?.drop ?? [];
+  const texts = allClauseTexts(entry);
+  for (const e of edits) {
+    if (!e || typeof e.text !== "string" || !e.reason || !e.by || !e.date) {
+      throw new Error(`override for ${entry.id} needs text, reason, by and date: ${JSON.stringify(e)}`);
+    }
+    if (!texts.has(e.text.trim())) throw new Error(`override for ${entry.id} matches no clause in the entry: "${e.text}"`);
+  }
+  return edits;
+}
+
+function applyEdits(clauses: Clause[], edits: HumanEdit[], applied: HumanEdit[]): Clause[] {
+  return clauses.filter((c) => {
+    const hit = edits.find((e) => e.text.trim() === c.text.trim());
+    if (hit && !applied.includes(hit)) applied.push(hit);
+    return !hit;
+  });
 }
 
 export function rankClause(clause: Clause, authors: AuthorIndex): RankedClause {
@@ -118,8 +219,7 @@ export function rankClause(clause: Clause, authors: AuthorIndex): RankedClause {
   const unknown = sourceIds.filter((id) => !(id in authors));
   if (unknown.length) throw new Error(`unknown source id(s) in cites: ${unknown.join(", ")}`);
   return {
-    text: clause.text,
-    cites: clause.cites,
+    ...clause,
     authors: new Set(sourceIds.map((id) => authors[id])).size,
     pages: new Set(clause.cites).size,
   };
@@ -144,23 +244,45 @@ export function buildPrompt(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   entry: any,
   authors: AuthorIndex,
-  opts: { form?: string; negativeInline?: boolean; cap?: number } & StyleOpts = {},
+  opts: SelectOpts & { negativeInline?: boolean; cap?: number; overrides?: Overrides } & StyleOpts = {},
 ): PlatePrompt {
-  const { field, clauses } = readClauses(entry, opts.form);
-  const { used, dropped } = capClauses(
-    clauses.map((c) => rankClause(c, authors)),
-    opts.cap ?? CLAUSE_CAP,
-  );
-  const parts = [...used.map((c) => c.text.trim()), styleTokens({ guides: opts.guides, paper: opts.paper })];
+  const sel = readClauses(entry, opts);
+  const edits = editsFor(entry, opts.overrides);
+  const applied: HumanEdit[] = [];
+  const cap = opts.cap ?? CLAUSE_CAP;
+  const main = applyEdits(sel.clauses, edits, applied).map((c) => rankClause(c, authors));
+
+  let used: RankedClause[];
+  let dropped: RankedClause[];
+  let behaviour: RankedClause | null = null;
+  if (sel.behaviour) {
+    // Scene plate with a presence: one clause slot goes to the best-supported behaviour clause.
+    ({ used, dropped } = capClauses(main, cap - 1));
+    const candidates = applyEdits(sel.behaviour, edits, applied).map((c) => rankClause(c, authors));
+    behaviour = capClauses(candidates, 1).used[0] ?? null;
+    if (behaviour) used = [...used, behaviour];
+  } else {
+    ({ used, dropped } = capClauses(main, cap));
+  }
+
+  const guides = opts.guides ?? DEFAULT_GUIDES;
+  const paper = opts.paper ?? DEFAULT_PAPER;
+  const parts = used.map((c) => c.text.trim());
+  if (sel.behaviour) parts.push(PRESENCE_TOKEN);
+  parts.push(styleTokens({ guides, paper }));
   if (opts.negativeInline) parts.push(`${AVOID_PREFIX} ${NEGATIVE_TOKENS}`);
   return {
     prompt: parts.join(" "),
     negative: opts.negativeInline ? "" : NEGATIVE_TOKENS,
-    field,
+    field: sel.field,
     form: opts.form ?? null,
-    guides: opts.guides ?? null,
-    paper: opts.paper ?? null,
+    variant: opts.variant ?? null,
+    interpretive: Boolean(sel.behaviour),
+    behaviour_clause: behaviour ? behaviour.text : null,
+    guides,
+    paper,
     clauses_used: used,
     clauses_dropped: dropped,
+    human_edits: applied,
   };
 }

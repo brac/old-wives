@@ -77,6 +77,18 @@ describe("planJob", () => {
     expect(() => planJob(["--arm", "qwen", ...base, "--paper", "vellum"])).toThrow(/--paper/);
   });
 
+  test("v2 selection flags and plates/overrides.json reach the job", () => {
+    const v2 = (entry: string, ...rest: string[]) =>
+      planJob(["--arm", "qwen", "--entry", `data/entries/${entry}.json`, "--out", "x", "--seed", "1", ...rest]).job;
+    const z = v2("zmey-gorynych", "--form", "ralston-winged-serpent");
+    expect(z.built.form).toBe("ralston-winged-serpent");
+    expect(z.name).toBe("zmey-gorynych-ralston-winged-serpent-qwen-s1");
+    expect(v2("poludnitsa", "--variant", "polish").built.variant).toBe("polish");
+    expect(v2("drekavac", "--scene-presence").built.interpretive).toBe(true);
+    expect(v2("baba-yaga").built.human_edits).toHaveLength(2);
+    expect(() => v2("zmey-gorynych", "--form", "nope")).toThrow(/has no form "nope"/);
+  });
+
   test("bad seed is refused", () => {
     expect(() => planJob(["--arm", "qwen", "--entry", "plates/bakeoff/v1/baba-yaga.json", "--out", "x", "--seed", "abc"])).toThrow(/seed/);
   });

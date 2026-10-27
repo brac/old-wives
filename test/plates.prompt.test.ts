@@ -24,32 +24,31 @@ function entryWords(e: unknown): Set<string> {
 }
 
 describe("tokens", () => {
-  test("positive and negative tokens are the brainstorm C1 and C4 text", () => {
-    expect(STYLE_TOKENS.startsWith("silverpoint study, metalpoint drawing on prepared paper")).toBe(true);
-    expect(STYLE_TOKENS.endsWith("blank paper ground, study sheet")).toBe(true);
+  test("positive tokens default to guides off and plain paper; negatives carry the no-script list", () => {
+    expect(STYLE_TOKENS).toBe(
+      "silverpoint study, metalpoint drawing, Renaissance sketch, no construction grid, no measuring marks, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    );
+    expect(styleTokens()).toBe(styleTokens({ guides: "off", paper: "plain" }));
     expect(NEGATIVE_TOKENS.startsWith("no painterly fantasy concept art")).toBe(true);
-    expect(NEGATIVE_TOKENS.endsWith("no watermark, no border")).toBe(true);
+    expect(NEGATIVE_TOKENS.endsWith(
+      "no watermark, no border, no handwriting, no inscriptions, no annotations, no script, no lettering, no captions",
+    )).toBe(true);
+    const p = buildPrompt(entry("baba-yaga"), authors);
+    expect(p.guides).toBe("off");
+    expect(p.paper).toBe("plain");
+    expect(p.prompt.endsWith(` ${STYLE_TOKENS}`)).toBe(true);
+  });
+
+  test('"study sheet" is gone from every style combination', () => {
+    for (const guides of ["on", "off"] as const) {
+      for (const paper of ["plain", "prepared"] as const) expect(styleTokens({ guides, paper })).not.toMatch(/study sheet/);
+    }
   });
 });
 
-// The exact 2b bake-off tokens. Do not edit: a change here means the bake-off is no longer reproducible.
-const BAKEOFF_STYLE =
-  "silverpoint study, metalpoint drawing on prepared paper, Renaissance sketch, visible construction lines, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, blank paper ground, study sheet";
-
 describe("style switches", () => {
-  test("with neither switch the tokens and prompt are byte-identical to the bake-off", () => {
-    expect(STYLE_TOKENS).toBe(BAKEOFF_STYLE);
-    expect(styleTokens()).toBe(BAKEOFF_STYLE);
-    expect(styleTokens({ guides: undefined, paper: undefined })).toBe(BAKEOFF_STYLE);
-    const e = entry("baba-yaga");
-    const p = buildPrompt(e, authors);
-    expect(p.prompt.endsWith(` ${BAKEOFF_STYLE}`)).toBe(true);
-    expect(p.guides).toBeNull();
-    expect(p.paper).toBeNull();
-  });
-
   test("each switch emits its own wording and not the other value's", () => {
-    expect(GUIDES_TOKENS.on).toBe("proportion lines, faint construction grid and measuring marks around the figure, as on a study sheet");
+    expect(GUIDES_TOKENS.on).toBe("proportion lines, faint construction grid and measuring marks around the figure");
     expect(GUIDES_TOKENS.off).toBe("no construction grid, no measuring marks");
     expect(PAPER_TOKENS.plain).toBe("clean light paper ground");
     expect(PAPER_TOKENS.prepared).toBe("lightly prepared paper, pale warm tint, faint paper tooth");
@@ -60,7 +59,6 @@ describe("style switches", () => {
         expect(t).not.toContain(GUIDES_TOKENS[guides === "on" ? "off" : "on"]);
         expect(t).toContain(PAPER_TOKENS[paper]);
         expect(t).not.toContain(PAPER_TOKENS[paper === "plain" ? "prepared" : "plain"]);
-        // The switches replace the bake-off fragments they own, so nothing contradicts.
         expect(t).not.toContain("visible construction lines");
         expect(t).not.toContain("blank paper ground");
         expect(t).not.toContain("on prepared paper");

@@ -1,6 +1,6 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 1.249,
+  "total_usd": 1.489,
   "rows": [
     {
       "date": "2026-10-27T16:17:19.854Z",
@@ -309,6 +309,72 @@
       "status": "done",
       "request_id": "01a17e52-6f66-7063-9bcd-274d086f681c",
       "file": "plates\\grid\\out\\zmey-gorynych.serpent\\goff-pprepared-s2\\zmey-gorynych-qwen-s2.full.png"
+    },
+    {
+      "date": "2026-10-27T17:24:21.847Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e64-447b-7e23-b378-122b2e903299",
+      "file": "plates\\iter1\\out\\zmey-gorynych\\s1\\zmey-gorynych-ralston-winged-serpent-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T17:24:46.893Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 2,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e64-a5ff-7ea1-a1c3-b34333d9e64c",
+      "file": "plates\\iter1\\out\\zmey-gorynych\\s2\\zmey-gorynych-ralston-winged-serpent-qwen-s2.full.png"
+    },
+    {
+      "date": "2026-10-27T17:25:15.802Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 3,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e65-16f1-7b32-9bc5-639ee808ad6e",
+      "file": "plates\\iter1\\out\\zmey-gorynych\\s3\\zmey-gorynych-ralston-winged-serpent-qwen-s3.full.png"
+    },
+    {
+      "date": "2026-10-27T17:25:39.269Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 4,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e65-7299-7dc0-a048-e915cd7b40c0",
+      "file": "plates\\iter1\\out\\zmey-gorynych\\s4\\zmey-gorynych-ralston-winged-serpent-qwen-s4.full.png"
+    },
+    {
+      "date": "2026-10-27T17:26:05.137Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 1,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e65-d7a5-73d1-9167-f33614214570",
+      "file": "plates\\iter1\\out\\baba-yaga\\s1\\baba-yaga-qwen-s1.full.png"
+    },
+    {
+      "date": "2026-10-27T17:26:28.411Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 2,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17e66-328d-7de3-9bfd-143a4ab05114",
+      "file": "plates\\iter1\\out\\baba-yaga\\s2\\baba-yaga-qwen-s2.full.png"
     }
   ]
 }

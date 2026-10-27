@@ -1,7 +1,10 @@
 // Plate generation CLI (Phase 2a).
 //
-//   npm run plates -- --arm <id> --entry <path> [--form <id>] [--refs <a,b,...>]
-//                     --out <dir> --seed <n> [--guides on|off] [--paper plain|prepared] [--dry-run]
+//   npm run plates -- --arm <id> --entry <path> [--form <id> | --variant <id> | --scene-presence]
+//                     [--refs <a,b,...>] --out <dir> --seed <n> [--guides on|off] [--paper plain|prepared]
+//                     [--dry-run]
+//
+// Human edits in plates/overrides.json (keyed by creature id) are always applied.
 //
 // A live run needs FAL_KEY, loaded with `tsx --env-file=.env`; the key is never printed.
 // --dry-run prints the prompt and the estimate, reads no key and spends nothing.
@@ -11,11 +14,12 @@ import { basename, join, resolve } from "node:path";
 import { parseArgs } from "node:util";
 import { pathToFileURL } from "node:url";
 import { buildInput, estimateUsd, getArm, type Arm } from "./arms.js";
-import { GUIDES_TOKENS, PAPER_TOKENS, authorIndex, buildPrompt, type Guides, type Paper, type PlatePrompt } from "./prompt.js";
+import { GUIDES_TOKENS, PAPER_TOKENS, authorIndex, buildPrompt, type Guides, type Overrides, type Paper, type PlatePrompt } from "./prompt.js";
 
 /** Pilot spend cap in USD (plan phase-2, "Spend"). */
 export const SPEND_CAP_USD = 25;
 export const LEDGER_PATH = "plates/spend.json";
+export const OVERRIDES_PATH = "plates/overrides.json";
 
 export interface LedgerRow {
   date: string;
@@ -85,6 +89,8 @@ export function planJob(argv: string[]): { job: Job; dryRun: boolean } {
       arm: { type: "string" },
       entry: { type: "string" },
       form: { type: "string" },
+      variant: { type: "string" },
+      "scene-presence": { type: "boolean", default: false },
       refs: { type: "string" },
       out: { type: "string" },
       seed: { type: "string" },
@@ -112,8 +118,12 @@ export function planJob(argv: string[]): { job: Job; dryRun: boolean } {
 
   const entry = JSON.parse(readFileSync(values.entry!, "utf8"));
   const authors = authorIndex(JSON.parse(readFileSync("sources/manifest.json", "utf8")));
+  const overrides = existsSync(OVERRIDES_PATH) ? (JSON.parse(readFileSync(OVERRIDES_PATH, "utf8")) as Overrides) : undefined;
   const built = buildPrompt(entry, authors, {
     form: values.form,
+    variant: values.variant,
+    scenePresence: values["scene-presence"],
+    overrides,
     negativeInline: !arm.hasNegativePrompt,
     guides: values.guides as Guides | undefined,
     paper: values.paper as Paper | undefined,
@@ -122,13 +132,13 @@ export function planJob(argv: string[]): { job: Job; dryRun: boolean } {
     arm,
     entryPath: values.entry!,
     entryId: entry.id,
-    form: values.form,
+    form: values.form ?? values.variant,
     refs,
     out: values.out!,
     seed,
     built,
     estimate: estimateUsd(arm, refs.length),
-    name: plateName(entry.id, arm, seed, values.form),
+    name: plateName(entry.id, arm, seed, values.form ?? values.variant),
   };
   return { job, dryRun: values["dry-run"]! };
 }
@@ -136,8 +146,10 @@ export function planJob(argv: string[]): { job: Job; dryRun: boolean } {
 function printJob(job: Job, ledger: Ledger): void {
   const b = job.built;
   console.log(`arm:       ${job.arm.id} (${job.arm.endpoint}), ${job.arm.width}x${job.arm.height}, seed ${job.seed}`);
-  console.log(`entry:     ${job.entryId} [${b.field}${job.form ? `, form ${job.form}` : ""}]`);
-  if (b.guides || b.paper) console.log(`style:     guides ${b.guides ?? "(default)"}, paper ${b.paper ?? "(default)"}`);
+  const sel = [b.field, b.form && `form ${b.form}`, b.variant && `variant ${b.variant}`, b.interpretive && "interpretive"].filter(Boolean).join(", ");
+  console.log(`entry:     ${job.entryId} [${sel}]`);
+  console.log(`style:     guides ${b.guides}, paper ${b.paper}`);
+  for (const e of b.human_edits) console.log(`edit:      dropped "${e.text}" (${e.by}, ${e.date})`);
   console.log(`clauses:   ${b.clauses_used.length} used, ${b.clauses_dropped.length} dropped`);
   if (job.refs.length) console.log(`refs:      ${job.refs.join(", ")}`);
   console.log(`prompt:    ${b.prompt}`);
@@ -187,12 +199,16 @@ async function runLive(job: Job, ledger: Ledger): Promise<void> {
       entry: job.entryPath,
       field: job.built.field,
       form: job.built.form,
+      variant: job.built.variant,
+      interpretive: job.built.interpretive,
+      behaviour_clause: job.built.behaviour_clause,
       guides: job.built.guides,
       paper: job.built.paper,
       prompt: job.built.prompt,
       negative: job.built.negative,
       clauses_used: job.built.clauses_used,
       clauses_dropped: job.built.clauses_dropped,
+      human_edits: job.built.human_edits,
       refs: job.refs.map((r, i) => ({ file: r, uploaded_url: imageUrls[i] })),
       input,
       cost_usd_estimate: job.estimate,
