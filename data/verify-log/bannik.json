@@ -1,0 +1,65 @@
+{
+  "entry_id": "bannik",
+  "verifier_prompt_version": "verify-v2",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/scene/0",
+      "text": "Met in the bath (banya) at late hours, when people bathe at night.",
+      "to_text": "Haunts the bath (banya).",
+      "from_cites": [
+        "ralston1872:p.123"
+      ],
+      "to_cites": [
+        "ralston1872:p.123"
+      ],
+      "reason": "Ralston p.123 says the domovoy is known as the Bannik \"when he haunts a bath (banya)\" and that peasants avoid the bath at late hours; it does not say he is met or encountered there at late hours. The encounter-at-late-hours framing is inference and was cut."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/variants/1",
+      "text": "bannago",
+      "reason": "afanasyev1868 p.69 prints \"баннаго\" only as the genitive in \"названія баннаго (банника)\"; the form is printed as the native row requires, but a genitive inflection is recorded as a name variant. Its nominative (банный) is not printed on the page, so it cannot be substituted without adding content."
+    }
+  ],
+  "grade": "regional",
+  "grade_rationale": [
+    {
+      "text": "The only people named in the verified entry is the Russians (one general row and one Smolensk Government row).",
+      "cites": [
+        "ralston1872:p.123",
+        "afanasyev1868:p.69"
+      ]
+    },
+    {
+      "text": "Afanasyev names the bannik as the domovoy living in the bath-house and gives its haunts, sounds, night-time suffocation and the Smolensk shelf saying and bucket-and-whisk custom.",
+      "cites": [
+        "afanasyev1868:p.69",
+        "afanasyev1868:p.70"
+      ]
+    },
+    {
+      "text": "Ralston names the Bannik as the domovoy haunting the bath and gives the night-bathing danger and the Smolensk bucket-and-whisk custom; his bannik passage cites and quotes no source.",
+      "cites": [
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "Ralston cites Afanasyev two pages earlier for a different domovoy custom (footnote 8, \"Afanasief, P. V. S. ii. 67\"), not for the bannik passage, so under the per-passage rule the two are counted as two independent sources; his p.123 passage nevertheless follows the order and details of Afanasyev p.69 closely.",
+      "cites": [
+        "ralston1872:p.121",
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "One people with two independent authors grades regional.",
+      "cites": [
+        "ralston1872:p.123",
+        "afanasyev1868:p.69"
+      ]
+    }
+  ]
+}
