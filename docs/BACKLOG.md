@@ -103,6 +103,47 @@ them is the next fix round (see "Follow-up work" below).
    measure (token counts converted at the API price of the drafting model), which the
    fix round has to define.
 
+## Ben's Phase 2 brainstorm answers (2026-10-27)
+
+The full answers are in `docs/phase2-brainstorm.md`. Settled, with what each rejected:
+
+- **Idiom: Renaissance silverpoint study** (after Leonardo; sharper and higher-contrast
+  than the originals), monochrome for the whole first pass. Rejected: lubok (too
+  old-world), the Grimm television show's illustrations (too amateur), pen-and-ink
+  engraving, and a short colour palette. The brief's "House style" section was amended to
+  match.
+- **Model: fal.ai, chosen by a bake-off.** FLUX.2 pro, Nano Banana Pro and Recraft V4 are
+  given identical text and 3 to 5 style references, on baba-yaga, bannik and
+  zmey-gorynych (nine images), and Ben picks by eye. Rejected: PixelLab (wrong idiom), and
+  locking a model before seeing output. A style LoRA is deferred until about 30 plates are
+  approved.
+- **Licensing:** only commercially licensed endpoints are used, and a candidate whose
+  terms are ambiguous about CC BY 4.0 is dropped rather than argued.
+- **Budget:** $25 cap for the pilot (bake-off, test grid, ten plates and their
+  regenerations); $1 per plate, including regenerations, at scale. Spend is recorded per
+  plate in `image`.
+- **Format:** portrait 3:4, at least 2048 px on the long edge; full figure, centred, on a
+  fixed ground line on a plain paper ground. Nothing is generated around the figure: no
+  border, cartouche, lettering or scale object. Scale goes in the caption. Rejected: a
+  drawn scale figure or ruler.
+- **Test grid:** drawing guides on or off × plain or lightly prepared paper, on
+  baba-yaga and bannik (eight images); the tokens lock after Ben picks. This replaces the
+  brief's lettering × spot colour × background grid.
+- **Vision check:** mechanical mismatches only, plus a monochrome check and a no-colour-fill
+  check. No taste grading; Ben judges every plate.
+- **Content:** re-run all ten under v2 before final plates (D1 (a)). The style work may use
+  the v1 text for baba-yaga, bannik and zmey-gorynych in the meantime. Drekavac gets a
+  scene plate. Leshy is drawn in his own shape. Poludnitsa uses the `poles` variant. The
+  prompt takes at most 10 clauses, chosen by support count; dropped clauses are logged,
+  and any override is Ben's, recorded as a human edit.
+- **Storage:** web and thumbnail WebP files go in git under `plates/slavic/`, and the
+  full-resolution PNG goes to a Cloudflare R2 bucket plus a GitHub Release zip. No Git LFS,
+  and full-resolution files are never committed. `image.plate` stores the stem only.
+- **Also added to the backlog by Ben:** a coverage pass that samples uncited pages for
+  name variants, to find omissions the verify stage cannot see; revisit the grade rule
+  once the grade distribution is visible; and a style sheet that carries the references,
+  the locked tokens, the bake-off contact sheet and the reason for silverpoint.
+
 ## Follow-up work from the rulings
 
 - Fix round (Phase 1d, not yet planned): re-grade zmey-gorynych to literary, apply the

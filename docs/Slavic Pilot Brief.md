@@ -109,14 +109,18 @@ Run stages 1 and 2 for all ten before generating any art, so the appearance fiel
 Consistency is the brand. Every plate shares one format, one rendering idiom and one palette, so the set reads as a single book rather than a gallery.
 
 - One plate format: same aspect ratio, same framing, same background treatment, same scale cue on every creature. Specimen plate or field-guide plate, not splash art.
-- Rendering idiom: engraving or woodcut feel, restrained palette, visible linework. It reads as reference, hides generative wobble, sits in the Grimm register, and does not look like a game asset.
-- Reference the tradition, do not copy it: lubok prints and Bilibin are the visual ancestors. The feeling, in an original style, so that Baba Yaga is recognizable without being Bilibin's.
+- Rendering idiom (amended 2026-10-27, see `docs/phase2-brainstorm.md` C1 and C2): a Renaissance silverpoint study in the manner of Leonardo's silverpoint and metalpoint sketches. It is a drawn study sheet, not a print, with visible construction lines, hatching and cross-hatching that follow the form, and optional drawing guides. It is sharper and higher-contrast than the faded originals. The first pass is monochrome: one dark drawing tone on a light paper ground, with no colour at all.
+- ~~Rendering idiom: engraving or woodcut feel, restrained palette, visible linework.~~ Superseded 2026-10-27 by the line above. The reasons it gave still hold: visible linework reads as reference, hides generative wobble and does not look like a game asset.
+- ~~Reference the tradition, do not copy it: lubok prints and Bilibin are the visual ancestors.~~ Superseded 2026-10-27; lubok was rejected as too old-world. The constraint that remains: Baba Yaga must be recognizable without being Bilibin's.
+- Style references are public-domain silverpoint studies (Leonardo, Dürer, Holbein), kept under `style/refs/`. They are style references only: no reference image may depict the creature being drawn.
 - Style tokens are fixed text appended to every prompt. Lock them during the pilot; changing them mid-batch invalidates the set comparison.
 - Generate from the appearance field only. Nothing in the prompt that is not in the verified entry, apart from the style tokens.
 - Unseen creatures get a scene plate from the scene field. The empty bathhouse at night is an honest picture and often a better one.
 - Shapeshifters (leshy) get the most commonly attested form, with the plate caption noting the shifting. No composite monsters.
 
 Open style decisions to settle with the first plates, not before: whether plates carry a hand-lettered name and region, whether a single spot color is allowed, and whether the background is blank or a minimal setting.
+
+Amended 2026-10-27: lettering is never generated; it is added in post-processing or by the site. Spot colour is off for the first pass (monochrome). The background is a blank paper ground. What is still tested with the first plates is drawing guides on or off, and a plain or a lightly prepared paper ground.
 
 ## Deliverables and evaluation
 
