@@ -29,3 +29,17 @@ and the project-scoped "why" behind decisions, each with the rejected alternativ
   style decisions (lettering, spot color, background) are deferred to a brainstorm
   with Ben before Phase 2. Rejected: picking a provider overnight, because it is a
   billing lever and Ben is the visual judge.
+- 2026-10-26: Phase 0 settled decisions (corpus layer, tag grammar, source ids, the two
+  added sources Calmet 1850 and Erben 1893, two-stage validation, verify log) are
+  recorded with their rejected alternatives in `plans/phase-0.md`.
+
+## Open items
+
+- Drekavac has one PD author (Karadžić 1818/1852, a one-line gloss). Candidate second
+  sources: Milićević, *Život Srba seljaka* (1894) and *Glasnik Zemaljskog muzeja*
+  (1889 on). The IA Google scans have no usable Cyrillic text layer; a better scan is
+  needed (digitalna.nb.rs, BSB). The pilot proceeds with the thin source and lets the
+  verify stage grade it.
+- Machal 1918's English translator: confirm the name and death year before quoting at
+  length for an EU audience. US public-domain status is clear.
+- Code license for the repo (the dataset is CC BY 4.0 per the brief): decide by Phase 3.
