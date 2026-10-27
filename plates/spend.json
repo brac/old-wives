@@ -1,6 +1,6 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 3.529,
+  "total_usd": 4.169,
   "rows": [
     {
       "date": "2026-10-27T16:17:19.854Z",
@@ -1174,6 +1174,182 @@
       "status": "done",
       "request_id": "01a17f39-b6bb-7c73-b3a5-f8c74026269a",
       "file": "plates\\iter2\\out\\vodyanoi\\a-s22\\vodyanoi-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-10-27T23:31:33.464Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb4-71ab-7f51-b4ac-9fccd879aacd",
+      "file": "plates\\iter3\\out\\leshy\\a-s31\\leshy-qwen-s31.full.png"
+    },
+    {
+      "date": "2026-10-27T23:31:57.296Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb4-ce8c-7b32-a6b4-8ba26beafcbb",
+      "file": "plates\\iter3\\out\\leshy\\a-s32\\leshy-qwen-s32.full.png"
+    },
+    {
+      "date": "2026-10-27T23:32:20.928Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb5-2ae1-7fc3-9356-2a542d59a125",
+      "file": "plates\\iter3\\out\\poludnitsa\\a-s31\\poludnitsa-qwen-s31.full.png"
+    },
+    {
+      "date": "2026-10-27T23:32:44.533Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb5-8715-7d93-9370-a6c9eae3785b",
+      "file": "plates\\iter3\\out\\poludnitsa\\a-s32\\poludnitsa-qwen-s32.full.png"
+    },
+    {
+      "date": "2026-10-27T23:33:08.616Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb5-e52e-7d81-9f42-77879e7959e9",
+      "file": "plates\\iter3\\out\\bannik\\a-s31\\bannik-qwen-s31.full.png"
+    },
+    {
+      "date": "2026-10-27T23:33:32.426Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb6-4234-7920-b500-faeb53dbfac3",
+      "file": "plates\\iter3\\out\\bannik\\a-s32\\bannik-qwen-s32.full.png"
+    },
+    {
+      "date": "2026-10-27T23:33:56.086Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "drekavac",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb6-9ea2-75d1-956a-74889fe4645c",
+      "file": "plates\\iter3\\out\\drekavac\\a-s31\\drekavac-qwen-s31.full.png"
+    },
+    {
+      "date": "2026-10-27T23:34:19.868Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "drekavac",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb6-fb79-75d0-a13f-812e204dde09",
+      "file": "plates\\iter3\\out\\drekavac\\a-s32\\drekavac-qwen-s32.full.png"
+    },
+    {
+      "date": "2026-10-27T23:34:43.481Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "domovoi",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb7-57b7-7501-be23-8216e382cada",
+      "file": "plates\\iter3\\out\\domovoi\\a-s31\\domovoi-qwen-s31.full.png"
+    },
+    {
+      "date": "2026-10-27T23:35:07.153Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "domovoi",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb7-b432-7310-8139-36c80a45f5f1",
+      "file": "plates\\iter3\\out\\domovoi\\a-s32\\domovoi-qwen-s32.full.png"
+    },
+    {
+      "date": "2026-10-27T23:35:30.503Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb8-0f67-7303-abc5-cffd806856c0",
+      "file": "plates\\iter3\\out\\rusalka\\a-s31\\rusalka-qwen-s31.full.png"
+    },
+    {
+      "date": "2026-10-27T23:35:54.059Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb8-6b6b-7ea1-ac34-587711da751f",
+      "file": "plates\\iter3\\out\\rusalka\\a-s32\\rusalka-qwen-s32.full.png"
+    },
+    {
+      "date": "2026-10-27T23:36:17.554Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vampir",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb8-c731-77d0-921f-83e463f4d91e",
+      "file": "plates\\iter3\\out\\vampir\\a-s31\\vampir-qwen-s31.full.png"
+    },
+    {
+      "date": "2026-10-27T23:36:40.880Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vampir",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb9-2253-7402-87fb-320a2dbd8b0b",
+      "file": "plates\\iter3\\out\\vampir\\a-s32\\vampir-qwen-s32.full.png"
+    },
+    {
+      "date": "2026-10-27T23:37:04.872Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vodyanoi",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb9-8006-7242-bc18-003fa89c1b9c",
+      "file": "plates\\iter3\\out\\vodyanoi\\a-s31\\vodyanoi-qwen-s31.full.png"
+    },
+    {
+      "date": "2026-10-27T23:37:28.603Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vodyanoi",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a17fb9-dcbd-7591-8cc3-a70c5d657384",
+      "file": "plates\\iter3\\out\\vodyanoi\\a-s32\\vodyanoi-qwen-s32.full.png"
     }
   ]
 }

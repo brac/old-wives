@@ -148,3 +148,19 @@ in the brief.
   - **Baba-yaga is still not right.** The nose is not long enough and she reads as a sad old woman. Her `visual` text is rewritten to be scarier and more witch-like, with an enormous nose.
   - **2d-e** finishes the round in style a only: baba-yaga with the new text, plus the eight creatures not yet generated, each on seeds 21 and 22 (18 images, about $0.72). The review sheet carries the Google reference images again.
   - The 24 ledger rows refused with 403 (out of credit, not billed) are set to $0 with a note. The vampir `negative_extra` drops the colour word.
+- **2d-e verdict (Ben, 2026-10-27).**
+  - **Baba-yaga is approved:** `plates/iter2/out/baba-yaga/a2-s21`. Ben notes the nose reads slightly AI-made (too many nostrils) but accepts it for the pilot.
+  - **Zmey-gorynych approval is confirmed** at `a-s21`.
+  - **Every plate must show the whole figure.** Baba-yaga and leshy were cropped at the feet. Each rewritten `visual` text now ends with an explicit full-length clause (head to feet inside the frame, empty paper around it).
+  - **"Chicken legs" means reverse-jointed (digitigrade) legs,** not literal bird legs. This is written as such for drekavac and for leshy, whom Ben also described with chicken legs.
+  - **The other eight `visual` texts are rewritten from his notes:**
+    - leshy: menacing rather than a friendly Santa, keeping the tree-like arm;
+    - poludnitsa: a half-rotted corpse, not a skeleton, with the jaw hanging by a strip at the collarbone;
+    - bannik: tiny, about the size of his bucket, and mischievous;
+    - drekavac: fleshed, starved and humanoid, not a skeleton;
+    - domovoi: wholly human, with no cat;
+    - rusalka: long hair covering her breasts, entwined with plants, bare thighs, the lily kept;
+    - vampir: no blood, no red, subtler fangs;
+    - vodyanoi: a man who is part frog, with a human nose, wispy beard and head hair, and heavier webbing.
+  - Each `note` field records Ben's reason.
+- **2d-f** generates those eight on seeds 31 and 32 under `plates/iter3/out/` (16 images, 16 OK). The ledger stands at $4.17 of the $25 cap.
