@@ -1,0 +1,47 @@
+{
+  "entry_id": "bannik",
+  "verifier_prompt_version": "verify-v1",
+  "removed": [],
+  "downgraded": [],
+  "retagged": [],
+  "flagged": [
+    {
+      "field": "/names/variants/0",
+      "text": "bannago (Russians)",
+      "reason": "afanasyev1868:p.69 prints баннаго (банника) in a sentence about the domovoy in general; the people Russians is fixed only by context (\"На Руси\" and \"Крестьяне\" nearby), and the paragraph just before is about Galicia and Poland."
+    }
+  ],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "Every surviving clause is for one people, the Russians; the only region named is the Smolensk Government.",
+      "cites": [
+        "ralston1872:p.123",
+        "afanasyev1868:p.69"
+      ]
+    },
+    {
+      "text": "Only two sources name the bannik: Afanasyev (1868) and Ralston (1872).",
+      "cites": [
+        "afanasyev1868:p.69",
+        "ralston1872:p.123"
+      ]
+    },
+    {
+      "text": "Ralston is not independent of Afanasyev here: his Domovoy section cites Afanasyev (\"says Afanasief\", P. V. S. ii. 67) two pages before the bannik passage, and his bannik lore follows Afanasyev pp.69-70 point for point (bath, night bathers suffocated, no prayer, corn-kiln, Smolensk bucket and whisk).",
+      "cites": [
+        "ralston1872:p.121",
+        "ralston1872:p.123",
+        "afanasyev1868:p.69",
+        "afanasyev1868:p.70"
+      ]
+    },
+    {
+      "text": "Counted by author, the entry rests on one 19th-century compiler, Afanasyev, who himself presents the bannik as the domovoy under a new name and holds that such names produced the idea of separate outbuilding spirits; so the grade is literary rather than regional.",
+      "cites": [
+        "afanasyev1868:p.69",
+        "afanasyev1868:p.70"
+      ]
+    }
+  ]
+}
