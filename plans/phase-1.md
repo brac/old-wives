@@ -95,3 +95,5 @@ Write the report using the phase-loop `templates/milestone-report.md`, to the pa
 ## Post-review amendments
 
 - (none yet)
+- 2026-10-26: Canary 1 planted in `data/drafts/domovoi.json` at `/appearance/2`: "He wears a tall felt hat.", cited `machal1918:p.240`. The page has no "hat" or "felt", and corpus-wide `find "felt hat"` returns 0 hits. Committed separately from the draft.
+- 2026-10-26: Finding: the draft agents for domovoi and rusalka hit the 100k budget before reading every hit page (Afanasyev vols. 2 and 3 mostly unread). Each recorded the gap in a scope note. Accepted for the pilot, and the protocol stays frozen. This is a scaling finding for the pilot report: the dense creatures need either a per-source split of the draft stage or a larger budget. Rejected: sending a second draft agent to fill gaps, because it changes the protocol for some creatures and not others and so breaks the set comparison.
