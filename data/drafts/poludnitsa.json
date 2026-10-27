@@ -1,0 +1,808 @@
+{
+  "id": "poludnitsa",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "poludnitsa",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "полудница",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1869:p.138"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Polednice",
+        "native": [
+          {
+            "script": "Latn",
+            "text": "Polednice",
+            "people": "Czechs",
+            "cites": [
+              "erben1893:p.183"
+            ]
+          }
+        ],
+        "peoples": [
+          "Czechs"
+        ],
+        "cites": [
+          "erben1893:p.183"
+        ]
+      },
+      {
+        "romanized": "Przypoludnica",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.267"
+        ]
+      },
+      {
+        "romanized": "Potudniowka",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.267"
+        ]
+      },
+      {
+        "romanized": "Pripoldnica",
+        "peoples": [
+          "Sorbs"
+        ],
+        "cites": [
+          "machal1918:p.268"
+        ]
+      },
+      {
+        "romanized": "Prezpoldnica",
+        "peoples": [
+          "Sorbs"
+        ],
+        "cites": [
+          "machal1918:p.268"
+        ]
+      },
+      {
+        "romanized": "Prezpolnica",
+        "peoples": [
+          "Sorbs"
+        ],
+        "cites": [
+          "ralston1872:p.147"
+        ]
+      },
+      {
+        "romanized": "Pripolnica",
+        "peoples": [
+          "Sorbs"
+        ],
+        "cites": [
+          "ralston1872:p.147"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Machal glosses the Poludnica, or Polednica, as the \"Midday Spirit\".",
+        "cites": [
+          "machal1918:p.267"
+        ]
+      },
+      {
+        "text": "Ralston connects the name to the Russian Polden or Poluden, \"half-day\" (mid-day).",
+        "cites": [
+          "ralston1872:p.147"
+        ]
+      },
+      {
+        "text": "Afanasyev derives the name poludnitsy from polden', noon, which he also glosses as the south, the warm, summer side.",
+        "cites": [
+          "afanasyev1869:p.137"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Czechs",
+      "region": "Bohemian tradition",
+      "cites": [
+        "machal1918:p.267"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "Moravia",
+      "cites": [
+        "machal1918:p.267"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "forest districts of Bohemia",
+      "cites": [
+        "afanasyev1869:p.138"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "cites": [
+        "afanasyev1869:p.311"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "cites": [
+        "erben1893:p.183"
+      ]
+    },
+    {
+      "people": "Poles",
+      "cites": [
+        "machal1918:p.267"
+      ]
+    },
+    {
+      "people": "Sorbs",
+      "region": "Lusatia (Machal's \"Lusatian Serbs\")",
+      "cites": [
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "people": "Sorbs",
+      "region": "Lusatia (Ralston's \"Lusatians\")",
+      "cites": [
+        "ralston1872:p.147"
+      ]
+    },
+    {
+      "people": "Sorbs",
+      "region": "Lusatia",
+      "cites": [
+        "afanasyev1869:p.138"
+      ]
+    },
+    {
+      "people": "Russians",
+      "cites": [
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Siberia (Machal's \"Siberian Russians\")",
+      "cites": [
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "southern Siberia",
+      "cites": [
+        "afanasyev1869:p.137"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Archangel Government",
+      "cites": [
+        "afanasyev1869:p.138"
+      ]
+    }
+  ],
+  "family": {
+    "value": "field",
+    "cites": [
+      "machal1918:p.267"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [],
+  "scene": [
+    {
+      "text": "She appears in the fields, usually at the time of harvest.",
+      "cites": [
+        "machal1918:p.267"
+      ]
+    },
+    {
+      "text": "Among the Lusatians she appears in the fields exactly at mid-day.",
+      "cites": [
+        "ralston1872:p.147"
+      ]
+    },
+    {
+      "text": "Among the Lusatians she walks the fields from twelve to two o'clock.",
+      "cites": [
+        "afanasyev1869:p.138"
+      ]
+    },
+    {
+      "text": "In Czech folk tradition the evil beings of noon work their harm especially from eleven to twelve o'clock.",
+      "cites": [
+        "erben1893:p.183"
+      ]
+    },
+    {
+      "text": "In Polish belief she stays during the summer either in the fields or in the woods.",
+      "cites": [
+        "machal1918:p.267"
+      ]
+    },
+    {
+      "text": "In Polish belief she sometimes appears in cottages during a storm.",
+      "cites": [
+        "machal1918:pp.267-268"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "bohemian",
+      "label": "Bohemian (Czech) tradition",
+      "peoples": [
+        "Czechs"
+      ],
+      "appearance": [
+        {
+          "text": "According to Bohemian tradition she has the appearance of an airy, white lady.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "According to Bohemian tradition she may instead have the appearance of an old woman.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "Sometimes she is slight and slim like a girl twelve years old.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "In that girlish shape she has a whip in her hand.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "She wanders about the fields at noon.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "She haunts the dwellings of men.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "She floats high up in the air amid violent gusts of wind.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "Whomsoever she touches will die a sudden death.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "With her whip she strikes anyone who crosses her path, and such a man is doomed to an early death.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "She is peculiarly fond of ambushing women who have recently borne children and who go out into the street at midday.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "A child left alone in the fields by its mother at harvest-time may be stolen by a Poludnica.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "Among the Czechs she is called a forest woman who roams the fields at noon and swaps the small children that peasant women leave unattended for her own.",
+          "cites": [
+            "afanasyev1869:p.311"
+          ]
+        },
+        {
+          "text": "As the changeling is treated in the family, so well or badly fares the child the poludnitsa has stolen.",
+          "cites": [
+            "afanasyev1869:p.311"
+          ]
+        },
+        {
+          "text": "In the forest districts of Bohemia people tell of forest poludnitsy that fly in whirling winds at noon and steal small children.",
+          "cites": [
+            "afanasyev1869:p.138"
+          ]
+        },
+        {
+          "text": "Crying children are hushed with the threat that the Poludnica will come and carry them away.",
+          "cites": [
+            "machal1918:p.267",
+            "afanasyev1869:p.311"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moravian",
+      "label": "Moravia",
+      "peoples": [
+        "Czechs"
+      ],
+      "appearance": [
+        {
+          "text": "In Moravia she is represented as an old woman.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "In Moravia she is clad in a white gown.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "In Moravia she is said to have horses' hoofs.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "In Moravia she is said to have an ugly face.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "In Moravia she is said to have slanting eyes.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "In Moravia she is said to have dishevelled hair.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        }
+      ],
+      "behavior_habitat": [],
+      "notes": "Machal gives only a physical description for Moravia; no Moravian behaviour is stated on machal1918:p.267."
+    },
+    {
+      "id": "polish",
+      "label": "Polish belief",
+      "peoples": [
+        "Poles"
+      ],
+      "appearance": [
+        {
+          "text": "In Polish belief she manifests herself in the shape of a tall woman.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "She is dressed in a white robe reaching to her feet.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "She carries a sharp sickle in her hand.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "When she leaves the fields or the forests she is accompanied by seven great black dogs.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "She gives chase to the people who work in the fields or woods.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "Frequently she propounds hard questions to them, and if they cannot answer she sends grievous maladies upon them.",
+          "cites": [
+            "machal1918:p.267"
+          ]
+        },
+        {
+          "text": "The peasants ascribe various natural phenomena, such as the fata morgana, to her.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "Women and children are her favourite victims.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lusatian",
+      "label": "Lusatian Sorbs",
+      "peoples": [
+        "Sorbs"
+      ],
+      "appearance": [
+        {
+          "text": "Among the Lusatian Serbs she is represented in some stories as a tall old woman.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "In other Lusatian stories she is represented as a young female.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "She wears a white gown.",
+          "cites": [
+            "machal1918:p.268",
+            "afanasyev1869:p.138"
+          ]
+        },
+        {
+          "text": "She holds a sickle in her hand.",
+          "cites": [
+            "machal1918:p.268",
+            "ralston1872:p.147",
+            "afanasyev1869:p.138"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "She comes out of the woods at midday and appears to those who may be working there.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "She stops unexpectedly before anyone who lingers at field work at noon and questions them in detail.",
+          "cites": [
+            "afanasyev1869:p.138"
+          ]
+        },
+        {
+          "text": "She addresses any woman she finds tarrying afield instead of returning home for the mid-day rest.",
+          "cites": [
+            "ralston1872:p.147"
+          ]
+        },
+        {
+          "text": "She questions people on the growing of flax and hemp.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "She questions women on the cultivation and the spinning of flax.",
+          "cites": [
+            "ralston1872:p.147"
+          ]
+        },
+        {
+          "text": "She asks how flax is worked and how yarn and linen are made.",
+          "cites": [
+            "afanasyev1869:p.138"
+          ]
+        },
+        {
+          "text": "She cuts off the head or divides the neck of an unsatisfactory answerer.",
+          "cites": [
+            "ralston1872:pp.147-148"
+          ]
+        },
+        {
+          "text": "She wrings the heads of those who cannot answer her questions, or at least punishes them with a grave illness.",
+          "cites": [
+            "afanasyev1869:p.138"
+          ]
+        },
+        {
+          "text": "She punishes with death anyone who cannot answer her tricky questions.",
+          "cites": [
+            "afanasyev1865:p.25"
+          ]
+        },
+        {
+          "text": "She comes to the fields to question women on how flax should be worked, and wrings the necks of those who cannot answer.",
+          "cites": [
+            "afanasyev1869:pp.76-77"
+          ]
+        },
+        {
+          "text": "Her most usual victims are young women who either have children at home or are still in childbed.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "At noon she guards the corn from thieves.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "She punishes children who tread upon the ears of corn.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "russian",
+      "label": "Russian belief (Machal)",
+      "peoples": [
+        "Russians"
+      ],
+      "appearance": [
+        {
+          "text": "The Russians believe she has the shape of a tall and beautiful girl.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "She is dressed in a white gown.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "She lures small children into the corn.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "Walking about the fields at harvest-time, she seizes the heads of those she finds working there at midday and twists their necks, causing them violent pain.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "In other parts of Russia she appears as guardian of fields.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "In the Archangel Government the poludnitsa is the guardian of fields sown with rye.",
+          "cites": [
+            "afanasyev1869:p.138"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "siberian",
+      "label": "Siberian Russians",
+      "peoples": [
+        "Russians"
+      ],
+      "appearance": [
+        {
+          "text": "The Siberian Russians picture her as an old woman.",
+          "cites": [
+            "machal1918:p.268",
+            "afanasyev1869:p.137"
+          ]
+        },
+        {
+          "text": "She has thick, curly hair.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "In southern Siberia her thick hair is described as dishevelled.",
+          "cites": [
+            "afanasyev1869:p.137"
+          ]
+        },
+        {
+          "text": "She wears scanty clothing.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "In southern Siberia she is described as dressed in rags.",
+          "cites": [
+            "afanasyev1869:p.137"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "She lives among the reeds, or in the dense thickets of nettles.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        },
+        {
+          "text": "In southern Siberia she is said to live in the bath-house or in nettle bushes.",
+          "cites": [
+            "afanasyev1869:pp.137-138"
+          ]
+        },
+        {
+          "text": "She guards kitchen gardens from mischievous children.",
+          "cites": [
+            "afanasyev1869:p.138"
+          ]
+        },
+        {
+          "text": "She kidnaps naughty children.",
+          "cites": [
+            "machal1918:p.268"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [],
+  "dealing_with_it": [
+    {
+      "text": "Among the Lusatian Serbs, anyone she meets in the fields at midday must talk with her for fully an hour about one and the same thing; those who fail either forfeit their heads or have some illness sent upon them.",
+      "cites": [
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "text": "In the Archangel Government parents frighten children with \"Do not go into the rye, the poludnitsa will burn you!\" or \"The poludnitsa will eat you!\"",
+      "cites": [
+        "afanasyev1869:p.138"
+      ]
+    },
+    {
+      "text": "In the same passage Afanasyev notes that priestless Old Believers say a prayer at noon to drive out \"the noonday demon\".",
+      "cites": [
+        "afanasyev1869:p.138"
+      ]
+    },
+    {
+      "text": "According to Czech folk tradition people dislike walking in the woods at exactly noon, lest a wild woman send bewilderment (blud) upon them.",
+      "cites": [
+        "erben1893:p.183"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [
+    {
+      "id": "rusalka",
+      "relation": "related"
+    },
+    {
+      "id": "vampir",
+      "relation": "related"
+    }
+  ],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1865",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 1",
+      "year": 1865,
+      "url": "https://archive.org/details/poeticheskiiavoz01afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "erben1893",
+      "author": "Karel Jaromír Erben",
+      "title": "Kytice z pověstí národních",
+      "year": 1893,
+      "url": "https://archive.org/details/kyticezbsnka00erbeuoft",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "appearance (top level): every physical description found is tied by its source to one people or region (Bohemian, Moravian, Polish, Lusatian, Russian, Siberian Russian), so all of them sit in variants; no description is common to all of them. Searched poludnitsa, poludnica, polednica, polednice, południca, полудница, полудниц, полудн, midday spirit, midday, pripolnica, prezpolnica, przypoludnica, pripoldnica, poludniowka in all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "behavior_habitat (top level): every behaviour found is tied by its source to one people or region and sits in the matching variant; only the generic harvest-field and noon setting is given in scene."
+    },
+    {
+      "kind": "empty-field",
+      "text": "origin: no opened page says where the poludnitsa comes from or who becomes one. Searched the same terms as for appearance in all sources."
+    },
+    {
+      "kind": "scope",
+      "text": "Variant appearance clauses cannot carry a form, so alternatives inside one people's tradition (Bohemian airy white lady / old woman / twelve-year-old girl; Lusatian tall old woman / young female; Siberian curly vs dishevelled hair, scanty clothing vs rags) are written as separate hedged clauses. They are alternatives, not one figure."
+    },
+    {
+      "kind": "scope",
+      "text": "The Polish variant names come from Machal p.267, whose OCR prints \"Pofudnica (Potudniowka, Przypoludnica)\"; \"Potudniowka\" is recorded as printed. Afanasyev's Czech and Lusatian forms (\"роіесіпісе\", \"ргіроіпіса\", \"ргегроіпіса\") are Latin-script words garbled by Cyrillic OCR and were not recorded."
+    },
+    {
+      "kind": "other",
+      "text": "erben1893 pp.45-46 is Erben's literary poem \"Polednice\" and was not opened or used; only Erben's note on Czech folk tradition (p.183) is cited."
+    },
+    {
+      "kind": "other",
+      "text": "Afanasyev's mythological readings (afanasyev1869 pp.137, 139: the poludnitsy as cloud maidens identical with the sun-maidens of Serbian songs and the white women of German sagas, and as former spinners and weavers) are interpretation, not collected lore, and were not used as clauses."
+    },
+    {
+      "kind": "other",
+      "text": "Related links: afanasyev1869 p.139 says the same traits are ascribed to the rusalki, and afanasyev1865 p.25 sets the Lusatian poludnitsa's questions beside the rusalki's riddles (rusalka). afanasyev1869 p.138 says that in Little Russia similar questions are put by upyri (vampir). Ralston p.147 and afanasyev1869 p.76 class her with the vila, which is not a pilot creature."
+    },
+    {
+      "kind": "scope",
+      "text": "Pages found but not opened: afanasyev1868 p.347 (a tree spirit compared to the poludnitsa), afanasyev1869 p.147 and p.165 (poludnitsy linked with illness, in passing), p.593 (back-reference to pp.137-8), p.681 (comparison with field spirits), p.833 (index). Snippets suggest passing comparisons only; they may add illness lore."
+    }
+  ]
+}
