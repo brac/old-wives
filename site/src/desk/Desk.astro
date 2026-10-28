@@ -1,0 +1,47 @@
+---
+// The review desk page (plan phase-4, 4c). Injected by astro.config.mjs in `astro dev` only.
+// All data comes from the local API at /_desk/api; this page is a shell.
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Review desk</title>
+    <style is:global>
+      :root { --bg: #f6f1e7; --ink: #222; --mute: #6b6358; --line: #d8cfbf; --add: #d7f0d2; --del: #f6d4cf; --acc: #7a3b1d; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.45 system-ui, sans-serif; }
+      header { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--line); padding: 8px 16px; display: flex; gap: 12px; align-items: center; z-index: 2; }
+      header a { color: var(--acc); }
+      main { padding: 12px 16px 80px; max-width: 1100px; margin: 0 auto; }
+      .sheet { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+      .card { border: 1px solid var(--line); border-radius: 6px; padding: 6px; background: #fff; color: inherit; text-decoration: none; }
+      .card img, .cands img, .refs img { width: 100%; display: block; border-radius: 4px; }
+      .state { font-size: 13px; color: var(--mute); }
+      .state.approved { color: #2d6a2d; } .state.redraw { color: #9a5a00; }
+      .cands { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+      .cands figure { margin: 0; } .cands .picked { outline: 3px solid #2d6a2d; }
+      .refs { display: flex; gap: 6px; overflow-x: auto; } .refs img { width: 90px; flex: none; }
+      section { margin: 18px 0; }
+      h2 { font-size: 17px; margin: 0 0 6px; }
+      textarea { width: 100%; min-height: 110px; font: inherit; padding: 8px; }
+      button { font: inherit; padding: 8px 12px; margin: 4px 4px 0 0; border: 1px solid var(--acc); background: #fff; color: var(--acc); border-radius: 5px; }
+      button.primary { background: var(--acc); color: #fff; } button:disabled { opacity: 0.4; }
+      button.talk.on { background: #b00; color: #fff; border-color: #b00; }
+      .diff ins { background: var(--add); text-decoration: none; } .diff del { background: var(--del); }
+      .diff { background: #fff; border: 1px solid var(--line); padding: 8px; }
+      .draft { border: 2px dashed #9a5a00; padding: 8px; } .draft b { color: #9a5a00; }
+      .muted, small { color: var(--mute); } ul { padding-left: 18px; }
+      #full { position: fixed; inset: 0; background: #000d; display: none; z-index: 5; } #full img { width: 100%; height: 100%; object-fit: contain; }
+      pre { white-space: pre-wrap; font-size: 12px; background: #fff; padding: 6px; }
+    </style>
+  </head>
+  <body>
+    <header><a href="#/">Batch</a><span id="title" class="muted"></span><span style="flex:1"></span><label><input type="checkbox" id="whisper" /> Whisper</label></header>
+    <main id="app">Loading…</main>
+    <div id="full"><img alt="" /></div>
+    <script src="./desk-client.ts"></script>
+  </body>
+</html>

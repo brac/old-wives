@@ -21,7 +21,8 @@
     "site:build": "npm --prefix site run build",
     "site:preview": "npm --prefix site run preview",
     "site:test": "npm --prefix site run build && npm --prefix site test",
-    "site:contact-sheet": "npm --prefix site run contact-sheet"
+    "site:contact-sheet": "npm --prefix site run contact-sheet",
+    "desk": "npm --prefix site run dev -- --host 0.0.0.0"
   },
   "devDependencies": {
     "@fal-ai/client": "1.10.1",

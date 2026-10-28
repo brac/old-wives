@@ -1,5 +1,5 @@
 // @ts-check
-import { copyFileSync, mkdirSync, readdirSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { defineConfig } from "astro/config";
@@ -62,10 +62,37 @@ function oldWivesAssets() {
   };
 }
 
+/**
+ * The review desk (plan phase-4, 4c): the /_desk page and its local API, in `astro dev`
+ * only. The route is injected and the API mounted only when the command is "dev", so a
+ * build never contains either; site/test/desk-absent.test.ts checks dist/.
+ */
+function reviewDesk() {
+  return {
+    name: "old-wives:review-desk",
+    hooks: {
+      /** @param {{ command: string, injectRoute: (r: { pattern: string, entrypoint: string, prerender?: boolean }) => void }} opts */
+      "astro:config:setup": ({ command, injectRoute }) => {
+        if (command !== "dev") return;
+        injectRoute({ pattern: "/_desk", entrypoint: "./src/desk/Desk.astro" });
+      },
+      /** @param {{ server: import("vite").ViteDevServer, logger: import("astro").AstroIntegrationLogger }} opts */
+      "astro:server:setup": async ({ server, logger }) => {
+        const envFile = join(REPO_ROOT, ".env");
+        if (!process.env.FAL_KEY && existsSync(envFile)) process.loadEnvFile(envFile);
+        const mod = await server.ssrLoadModule(join(REPO_ROOT, "src", "desk", "api.ts"));
+        const api = mod.createDeskApi({ root: REPO_ROOT, dryRun: process.env.DESK_DRY_RUN === "1" });
+        server.middlewares.use("/_desk/api", (req, res, next) => void api(req, res, next));
+        logger.info(`review desk at /_desk/${process.env.DESK_DRY_RUN === "1" ? " (redraws are dry runs)" : ""}`);
+      },
+    },
+  };
+}
+
 export default defineConfig({
   site: SITE_URL,
   output: "static",
   trailingSlash: "ignore",
-  integrations: [oldWivesAssets()],
+  integrations: [oldWivesAssets(), reviewDesk()],
   vite: { plugins: [pinImportMetaUrl()] },
 });
