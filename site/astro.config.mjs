@@ -4,6 +4,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { defineConfig } from "astro/config";
 import { composeContactSheet } from "./scripts/contact-sheet.ts";
+import { CONTENTS_ORDER } from "./src/lib/contents.ts";
 import { SITE_URL } from "./src/lib/site.ts";
 
 const SITE_DIR = dirname(fileURLToPath(import.meta.url));
@@ -11,6 +12,13 @@ const REPO_ROOT = resolve(SITE_DIR, "..");
 const PLATES_DIR = join(REPO_ROOT, "plates", "slavic");
 /** Only the web and thumb sizes ship. The .full.png masters never do. */
 const SHIPPED_PLATE = /\.(web|thumb)\.webp$/;
+/**
+ * Only published entries' plates ship. The build fails unless every id in CONTENTS_ORDER is
+ * published (site/src/lib/entries.ts), so its ids are exactly the published ones.
+ */
+const PUBLISHED = new Set(/** @type {readonly string[]} */ (CONTENTS_ORDER));
+/** @param {string} f */
+const shipsPlate = (f) => SHIPPED_PLATE.test(f) && PUBLISHED.has(f.replace(SHIPPED_PLATE, ""));
 
 /**
  * Repo code read at build (src/validate, src/corpus, site/src/lib) finds its files
@@ -41,7 +49,7 @@ function oldWivesAssets() {
       "astro:server:setup": ({ server }) => {
         server.middlewares.use("/plates/slavic", (req, res, next) => {
           const name = decodeURIComponent((req.url ?? "").split("?")[0].replace(/^\//, ""));
-          if (!SHIPPED_PLATE.test(name) || name.includes("/")) return next();
+          if (!shipsPlate(name) || name.includes("/")) return next();
           res.setHeader("Content-Type", "image/webp");
           import("node:fs").then(({ createReadStream }) =>
             createReadStream(join(PLATES_DIR, name)).on("error", () => next()).pipe(res),
@@ -53,7 +61,7 @@ function oldWivesAssets() {
         const out = fileURLToPath(dir);
         const platesOut = join(out, "plates", "slavic");
         mkdirSync(platesOut, { recursive: true });
-        const shipped = readdirSync(PLATES_DIR).filter((f) => SHIPPED_PLATE.test(f));
+        const shipped = readdirSync(PLATES_DIR).filter(shipsPlate);
         for (const f of shipped) copyFileSync(join(PLATES_DIR, f), join(platesOut, f));
         await composeContactSheet(join(out, "og", "contact-sheet.png"), REPO_ROOT);
         logger.info(`copied ${shipped.length} plate files; wrote og/contact-sheet.png`);

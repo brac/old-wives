@@ -94,14 +94,54 @@ export interface SourceInfo {
   pagesFile: string;
 }
 
-let cache: Map<string, LoadedEntry> | undefined;
+/**
+ * The publication gate (plan phase-4, 4b/4e): an entry is published when its plate is
+ * approved, meaning `plates:finalise` has filled its `image` field with the web and thumb
+ * paths. A verified entry whose `image` is still null stays in data/entries/ and the site
+ * skips it: not in the contents, no spread, not in /data/slavic/.
+ */
+export function isPublished(entry: unknown): boolean {
+  if (typeof entry !== "object" || entry === null) return false;
+  const image = (entry as { image?: unknown }).image;
+  if (typeof image !== "object" || image === null) return false;
+  const { file, thumb } = image as { file?: unknown; thumb?: unknown };
+  return typeof file === "string" && file.length > 0 && typeof thumb === "string" && thumb.length > 0;
+}
+
+/**
+ * The contents-order errors for a set of entries on disk: a published entry missing from
+ * CONTENTS_ORDER, an id in CONTENTS_ORDER with no file, and an id in CONTENTS_ORDER whose
+ * plate is not approved. An unpublished entry missing from CONTENTS_ORDER is not an error.
+ */
+export function contentsErrors(published: Iterable<string>, unpublished: Iterable<string>, order: readonly string[]): string[] {
+  const errors: string[] = [];
+  const pub = new Set(published);
+  const unpub = new Set(unpublished);
+  const inOrder = new Set(order);
+  for (const id of pub) if (!inOrder.has(id)) errors.push(`${id}: on disk but missing from CONTENTS_ORDER`);
+  for (const id of order) {
+    if (unpub.has(id)) errors.push(`${id}: in CONTENTS_ORDER but its plate is not approved (image is empty)`);
+    else if (!pub.has(id)) errors.push(`${id}: in CONTENTS_ORDER but not in data/entries/`);
+  }
+  return errors;
+}
+
+interface Loaded {
+  /** Published entries, by id. */
+  published: Map<string, LoadedEntry>;
+  /** Verified entries on disk whose plate is not approved yet, by id. */
+  unpublished: Map<string, LoadedEntry>;
+}
+
+let cache: Loaded | undefined;
 
 /** Load and validate every data/entries/*.json. Throws (failing the build) on any error. */
-function load(): Map<string, LoadedEntry> {
+function load(): Loaded {
   if (cache) return cache;
   const files = readdirSync(ENTRIES_DIR).filter((f) => f.endsWith(".json")).sort();
   const errors: string[] = [];
-  const byId = new Map<string, LoadedEntry>();
+  const published = new Map<string, LoadedEntry>();
+  const unpublished = new Map<string, LoadedEntry>();
   for (const file of files) {
     const basename = file.slice(0, -".json".length);
     const raw = readFileSync(join(ENTRIES_DIR, file), "utf8");
@@ -115,40 +155,54 @@ function load(): Map<string, LoadedEntry> {
     for (const issue of validateEntry(obj, { stage: "verified", basename })) {
       if (issue.severity === "error") errors.push(`${file} ${issue.path} [${issue.rule}] ${issue.message}`);
     }
-    byId.set(basename, { entry: obj as Entry, raw });
+    (isPublished(obj) ? published : unpublished).set(basename, { entry: obj as Entry, raw });
   }
-  const order = new Set<string>(CONTENTS_ORDER);
-  for (const id of byId.keys()) if (!order.has(id)) errors.push(`${id}: on disk but missing from CONTENTS_ORDER`);
-  for (const id of order) if (!byId.has(id)) errors.push(`${id}: in CONTENTS_ORDER but not in data/entries/`);
+  errors.push(...contentsErrors(published.keys(), unpublished.keys(), CONTENTS_ORDER));
   if (errors.length > 0) {
     throw new Error(`entry validation failed (${errors.length} error(s)):\n  ${errors.join("\n  ")}`);
   }
-  cache = byId;
-  return byId;
+  cache = { published, unpublished };
+  return cache;
 }
 
-/** Every entry, in contents order. */
+/** Every published entry, in contents order. */
 export function getEntries(): Entry[] {
-  const byId = load();
-  return CONTENTS_ORDER.map((id) => byId.get(id)!.entry);
+  const { published } = load();
+  return CONTENTS_ORDER.map((id) => published.get(id)!.entry);
 }
 
-/** Every entry id, in contents order. */
+/** Every published entry id, in contents order. */
 export function getEntryIds(): string[] {
   load();
   return [...CONTENTS_ORDER];
 }
 
-/** One entry by id. Throws on an unknown id. */
+/** The ids of verified entries on disk that are not published yet (no approved plate), sorted. */
+export function getUnpublishedIds(): string[] {
+  return [...load().unpublished.keys()].sort();
+}
+
+/** One published entry by id. Throws on an unknown or unpublished id. */
 export function getEntry(id: string): Entry {
   return getLoaded(id).entry;
 }
 
-/** One entry with its verbatim file text. Throws on an unknown id. */
+/** One published entry with its verbatim file text. Throws on an unknown or unpublished id. */
 export function getLoaded(id: string): LoadedEntry {
-  const hit = load().get(id);
-  if (!hit) throw new Error(`unknown entry id "${id}"`);
+  const { published, unpublished } = load();
+  const hit = published.get(id);
+  if (!hit) throw new Error(unpublished.has(id) ? `entry "${id}" is not published (no approved plate)` : `unknown entry id "${id}"`);
   return hit;
+}
+
+/**
+ * How a spread shows one `related` id: a link when the id is a published entry, otherwise
+ * plain text (an unpublished or not-yet-verified id). The site never emits a dead internal link.
+ */
+export function relatedTarget(id: string): { label: string; href?: string } {
+  const { published } = load();
+  const hit = published.get(id);
+  return hit ? { label: primaryName(hit.entry), href: `/creatures/${id}/` } : { label: id };
 }
 
 /** The previous and next entries in contents order, wrapping at both ends. */

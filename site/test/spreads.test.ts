@@ -146,7 +146,7 @@ describe("spreads", () => {
     }
   });
 
-  it("links related entries only when the id exists", () => {
+  it("links related entries only when the id is published, else renders plain text", () => {
     const known = new Set<string>(CONTENTS_ORDER);
     for (const e of entries) {
       const html = spread(e.id);
@@ -154,6 +154,7 @@ describe("spreads", () => {
         const a = anchor(html, "data-related", r.id);
         expect(Boolean(a), `${e.id} -> ${r.id}`).toBe(known.has(r.id));
         if (a) expect(attr(a, "href")).toBe(`/creatures/${r.id}/`);
+        else expect(html, `${e.id} -> ${r.id} as text`).toContain(`data-related-text="${r.id}"`);
       }
     }
   });

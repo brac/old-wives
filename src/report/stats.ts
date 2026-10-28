@@ -28,6 +28,9 @@ export const CANARIES_BY_VERSION: Record<string, Record<string, string>> = {
     poludnitsa: "She wears a wreath of cornflowers on her head.",
     vampir: "When a vampire's grave is opened, its eyes glow red.",
   },
+  "verify-v2.1": {
+    polevik: "It takes the shape of a crow and perches on the last standing sheaf to watch the reapers.",
+  },
 };
 
 /** The canary planted in this creature for the verify batch that wrote `log`, if any. */

@@ -5,7 +5,7 @@ import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
 import Chips from "../../components/Chips.astro";
 import Clauses from "../../components/Clauses.astro";
-import { CONTENTS_ORDER, getEntries, getEntry, getNeighbours, imagePath, primaryName, type Clause } from "../../lib/entries.ts";
+import { getEntries, getEntry, getNeighbours, imagePath, primaryName, relatedTarget, type Clause } from "../../lib/entries.ts";
 import { GRADES, INTERPRETIVE_LINE, NOTE_KIND_LABELS, NO_APPEARANCE_LINE, RELATION_LABELS } from "../../lib/grades.ts";
 
 export const getStaticPaths = (() => getEntries().map((e) => ({ params: { id: e.id } }))) satisfies GetStaticPaths;
@@ -13,7 +13,6 @@ export const getStaticPaths = (() => getEntries().map((e) => ({ params: { id: e.
 const entry = getEntry(Astro.params.id!);
 const name = primaryName(entry);
 const { prev, next } = getNeighbours(entry.id);
-const known = new Set<string>(CONTENTS_ORDER);
 
 // Left page: appearance clauses grouped by form (unformed clauses first), or the scene
 // for an unseen creature. Each clause keeps its index in the entry for the chip markers.
@@ -168,11 +167,12 @@ const description = `${name}: a ${entry.family.value} creature of ${[...new Set(
           <h2>Related</h2>
           <ul class="plain">
             {entry.related.map((r) => {
-              const label = known.has(r.id) ? primaryName(getEntry(r.id)) : r.id;
+              // A published entry is a link; an unpublished or unverified id is plain text.
+              const t = relatedTarget(r.id);
               return (
                 <li>
                   {RELATION_LABELS[r.relation] ?? r.relation}:{" "}
-                  {known.has(r.id) ? <a href={`/creatures/${r.id}/`} data-related={r.id}>{label}</a> : <span>{label}</span>}
+                  {t.href ? <a href={t.href} data-related={r.id}>{t.label}</a> : <span data-related-text={r.id}>{t.label}</span>}
                 </li>
               );
             })}

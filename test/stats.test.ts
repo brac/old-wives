@@ -158,7 +158,7 @@ describe("canaries, keyed on the verifier prompt version", () => {
     vampir: "When a vampire's grave is opened, its eyes glow red.",
   };
 
-  test("both v1 and v2 canary sets are registered", () => {
+  test("the v1, v2 and v2.1 canary sets are registered", () => {
     expect(canaryFor("domovoi", { verifier_prompt_version: "verify-v1" })).toBe("He wears a tall felt hat.");
     expect(canaryFor("vodyanoi", { verifier_prompt_version: "verify-v1" })).toBe("He flees at the sound of church bells.");
     expect(canaryFor("baba-yaga", { verifier_prompt_version: "verify-v1" })).toBe(
@@ -167,7 +167,11 @@ describe("canaries, keyed on the verifier prompt version", () => {
     for (const [id, text] of Object.entries(v2Canaries)) {
       expect(canaryFor(id, { verifier_prompt_version: "verify-v2" })).toBe(text);
     }
-    expect(Object.keys(CANARIES_BY_VERSION).sort()).toEqual(["verify-v1", "verify-v2"]);
+    expect(canaryFor("polevik", { verifier_prompt_version: "verify-v2.1" })).toBe(
+      "It takes the shape of a crow and perches on the last standing sheaf to watch the reapers.",
+    );
+    expect(canaryFor("polevik", { verifier_prompt_version: "verify-v2" })).toBeUndefined();
+    expect(Object.keys(CANARIES_BY_VERSION).sort()).toEqual(["verify-v1", "verify-v2", "verify-v2.1"]);
   });
 
   test("a v2 log counts its own canary apart, and a v1 canary is not looked for in a v2 log", () => {

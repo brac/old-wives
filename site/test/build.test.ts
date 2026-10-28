@@ -5,7 +5,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { beforeAll, describe, expect, it } from "vitest";
-import { ENTRIES_DIR, PLATES_DIR, type Entry } from "../src/lib/entries.ts";
+import { ENTRIES_DIR, PLATES_DIR, isPublished, type Entry } from "../src/lib/entries.ts";
 
 const DIST = fileURLToPath(new URL("../dist/", import.meta.url));
 
@@ -16,11 +16,15 @@ function walk(dir: string): string[] {
   });
 }
 
-const diskIds = readdirSync(ENTRIES_DIR)
+const allIds = readdirSync(ENTRIES_DIR)
   .filter((f) => f.endsWith(".json"))
   .map((f) => f.slice(0, -".json".length))
   .sort();
-const diskEntries = diskIds.map((id) => JSON.parse(readFileSync(join(ENTRIES_DIR, `${id}.json`), "utf8")) as Entry);
+const allEntries = allIds.map((id) => JSON.parse(readFileSync(join(ENTRIES_DIR, `${id}.json`), "utf8")) as Entry);
+// Only published entries (approved plate, filled image) reach the site.
+const diskEntries = allEntries.filter((e) => isPublished(e));
+const diskIds = diskEntries.map((e) => e.id);
+const unpublishedIds = allEntries.filter((e) => !isPublished(e)).map((e) => e.id);
 
 let files: Set<string>;
 beforeAll(() => {
@@ -35,7 +39,22 @@ describe("site build output", () => {
     expect(files.has("index.html")).toBe(true);
   });
 
-  it("has a spread route for every entry on disk", () => {
+  it("an unpublished entry on disk appears nowhere in dist", () => {
+    for (const id of unpublishedIds) {
+      expect(files, `creatures/${id}/index.html`).not.toContain(`creatures/${id}/index.html`);
+      expect(files, `data/slavic/${id}.json`).not.toContain(`data/slavic/${id}.json`);
+      expect([...files].filter((f) => f.split("/").some((seg) => seg === id || seg.startsWith(`${id}.`))), id).toEqual([]);
+      // No link, route, data row or plate for it anywhere in the built text.
+      const marks = [`/creatures/${id}/`, `data/slavic/${id}.json`, `"id":"${id}"`, `"id": "${id}"`, `plates/slavic/${id}.`];
+      for (const f of files) {
+        if (!/\.(html|json|txt|xml|js|css)$/.test(f)) continue;
+        const text = readFileSync(join(DIST, f), "utf8");
+        for (const m of marks) expect(text.includes(m), `${m} in ${f}`).toBe(false);
+      }
+    }
+  });
+
+  it("has a spread route for every published entry on disk", () => {
     expect(diskIds.length).toBeGreaterThan(0);
     for (const id of diskIds) expect(files, `creatures/${id}/index.html`).toContain(`creatures/${id}/index.html`);
   });
@@ -57,7 +76,7 @@ describe("site build output", () => {
     for (const f of plates) expect(f).toMatch(/^plates\/slavic\/[a-z0-9-]+\.(web|thumb)\.webp$/);
   });
 
-  it("index.json lists exactly the entries on disk", () => {
+  it("index.json lists exactly the published entries on disk", () => {
     const rows = JSON.parse(readFileSync(join(DIST, "data/slavic/index.json"), "utf8")) as {
       id: string;
       primary_name: string;

@@ -5,24 +5,31 @@ import {
   CONTENTS_ORDER,
   ENTRIES_DIR,
   REPO_ROOT,
+  contentsErrors,
   getEntries,
   getEntry,
   getEntryIds,
   getLoaded,
   getNeighbours,
   getSource,
+  getUnpublishedIds,
   indexRows,
+  isPublished,
   primaryName,
+  relatedTarget,
 } from "../src/lib/entries.ts";
 
 const diskIds = readdirSync(ENTRIES_DIR)
   .filter((f) => f.endsWith(".json"))
   .map((f) => f.slice(0, -".json".length));
+const onDisk = (id: string) => JSON.parse(readFileSync(join(ENTRIES_DIR, `${id}.json`), "utf8")) as unknown;
+const publishedIds = diskIds.filter((id) => isPublished(onDisk(id)));
+const unpublishedIds = diskIds.filter((id) => !isPublished(onDisk(id)));
 
 describe("contents order", () => {
-  it("covers exactly the entries on disk, once each", () => {
+  it("covers exactly the published entries on disk, once each", () => {
     expect(new Set(CONTENTS_ORDER).size).toBe(CONTENTS_ORDER.length);
-    expect([...CONTENTS_ORDER].sort()).toEqual([...diskIds].sort());
+    expect([...CONTENTS_ORDER].sort()).toEqual([...publishedIds].sort());
   });
 
   it("matches the plate table in style/STYLE-SHEET.md", () => {
@@ -78,5 +85,43 @@ describe("helpers", () => {
     const rows = indexRows();
     expect(rows.map((r) => r.id)).toEqual([...CONTENTS_ORDER]);
     for (const r of rows) expect(r.peoples).toEqual([...new Set(r.peoples)]);
+  });
+});
+
+describe("publication gate", () => {
+  const plate = { file: "plates/slavic/x.web.webp", thumb: "plates/slavic/x.thumb.webp" };
+
+  it("publishes an entry only when plates:finalise has filled its image", () => {
+    expect(isPublished({ image: plate })).toBe(true);
+    expect(isPublished({ image: null })).toBe(false);
+    expect(isPublished({})).toBe(false);
+    expect(isPublished({ image: { file: "", thumb: plate.thumb } })).toBe(false);
+    expect(isPublished({ image: { file: plate.file } })).toBe(false);
+  });
+
+  it("an unpublished entry missing from CONTENTS_ORDER is not an error; a published one is", () => {
+    expect(contentsErrors(["a"], ["b"], ["a"])).toEqual([]);
+    expect(contentsErrors(["a", "b"], [], ["a"])).toEqual(["b: on disk but missing from CONTENTS_ORDER"]);
+  });
+
+  it("an id in CONTENTS_ORDER must be on disk and published", () => {
+    expect(contentsErrors(["a"], ["b"], ["a", "b", "c"])).toEqual([
+      "b: in CONTENTS_ORDER but its plate is not approved (image is empty)",
+      "c: in CONTENTS_ORDER but not in data/entries/",
+    ]);
+  });
+
+  it("loads the unpublished entries on disk but serves none of them", () => {
+    expect(getUnpublishedIds()).toEqual([...unpublishedIds].sort());
+    for (const id of unpublishedIds) {
+      expect(getEntryIds()).not.toContain(id);
+      expect(() => getEntry(id)).toThrow(/not published/);
+      expect(() => getLoaded(id)).toThrow(/not published/);
+    }
+  });
+
+  it("links a related id only when it is a published entry; otherwise it is plain text", () => {
+    expect(relatedTarget("leshy")).toEqual({ label: "Leshy", href: "/creatures/leshy/" });
+    for (const id of [...unpublishedIds, "sirin", "no-such-creature"]) expect(relatedTarget(id)).toEqual({ label: id });
   });
 });

@@ -43,6 +43,23 @@ export interface DirOptions {
   stage: Stage;
   /** Validate verify-log files instead of entries. */
   log?: boolean;
+  /**
+   * Ids of planned creatures (rows of prompts/creatures.json). A related id that is not an
+   * entry but is planned is a warning, not an error. Defaults to plannedCreatureIds().
+   */
+  planned?: ReadonlySet<string>;
+}
+
+let plannedSet: Set<string> | undefined;
+
+/** The ids in prompts/creatures.json: creatures planned for the volume, verified or not. */
+export function plannedCreatureIds(): Set<string> {
+  if (!plannedSet) {
+    const url = new URL("../../prompts/creatures.json", import.meta.url);
+    const table = JSON.parse(readFileSync(url, "utf8")) as { creatures: { id: string }[] };
+    plannedSet = new Set(table.creatures.map((c) => c.id));
+  }
+  return plannedSet;
 }
 
 /** Same grammar as `$defs/CiteTag` in schema/entry.schema.json. */
@@ -424,7 +441,9 @@ export function validateFile(file: string, opts: DirOptions): FileResult {
 
 /**
  * Validate every `*.json` file in a directory. For entries this adds R-RELATED: every
- * `related[].id` must name an entry in the same directory (warning in draft, error in verified).
+ * `related[].id` must name an entry in the same directory. A missing id is a warning in draft;
+ * in verified it is an error, unless the id is a planned creature in prompts/creatures.json
+ * ("planned, not yet verified"), which stays a warning.
  */
 export function validateDir(dir: string, opts: DirOptions): Report {
   const names = readdirSync(dir)
@@ -434,16 +453,20 @@ export function validateDir(dir: string, opts: DirOptions): Report {
 
   if (!opts.log) {
     const ids = new Set(names.map((n) => n.slice(0, -".json".length)));
+    const planned = opts.planned ?? plannedCreatureIds();
     for (const result of files) {
       const { value } = readJson(result.file);
       if (!isRecord(value) || !Array.isArray(value.related)) continue;
       value.related.forEach((rel, i) => {
         if (!isRecord(rel) || typeof rel.id !== "string" || ids.has(rel.id)) return;
+        const isPlanned = planned.has(rel.id);
         result.issues.push({
           rule: "R-RELATED",
           path: pointer(["related", i, "id"]),
-          message: `related id "${rel.id}" is not an entry in ${dir}`,
-          severity: opts.stage === "verified" ? "error" : "warning",
+          message: isPlanned
+            ? `related id "${rel.id}" is planned, not yet verified (in prompts/creatures.json, not an entry in ${dir})`
+            : `related id "${rel.id}" is not an entry in ${dir}`,
+          severity: opts.stage === "verified" && !isPlanned ? "error" : "warning",
         });
       });
     }

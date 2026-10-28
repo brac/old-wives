@@ -3,7 +3,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { afterAll, describe, expect, test } from "vitest";
 import { spawnSync } from "node:child_process";
-import { validateDir, validateEntry, validateFile, validateLog, type Stage } from "../src/validate/validate.js";
+import { plannedCreatureIds, validateDir, validateEntry, validateFile, validateLog, type Stage } from "../src/validate/validate.js";
 
 const FIXTURES = join(import.meta.dirname, "..", "fixtures");
 const INVALID = join(FIXTURES, "invalid");
@@ -135,6 +135,26 @@ describe("R-RELATED", () => {
     const related = report.files[0].issues.filter((i) => i.rule === "R-RELATED");
     expect(related.map((i) => i.severity)).toEqual(["error"]);
     expect(report.invalid).toBe(1);
+  });
+
+  test("a related id planned in prompts/creatures.json is a warning in verified", () => {
+    const report = validateDir(tmp, { stage: "verified", planned: new Set(["fixture-unseen"]) });
+    const related = report.files[0].issues.filter((i) => i.rule === "R-RELATED");
+    expect(related.map((i) => i.severity)).toEqual(["warning"]);
+    expect(related[0].message).toContain("planned, not yet verified");
+  });
+
+  test("a related id in neither the entries nor the planned list stays an error in verified", () => {
+    const report = validateDir(tmp, { stage: "verified", planned: new Set(["some-other-creature"]) });
+    const related = report.files[0].issues.filter((i) => i.rule === "R-RELATED");
+    expect(related.map((i) => i.severity)).toEqual(["error"]);
+    expect(report.invalid).toBe(1);
+  });
+
+  test("the default planned list is prompts/creatures.json", () => {
+    const planned = plannedCreatureIds();
+    expect(planned.has("sirin")).toBe(true);
+    expect(planned.has("fixture-unseen")).toBe(false);
   });
 });
 
