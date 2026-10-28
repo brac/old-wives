@@ -10,7 +10,7 @@ and the project-scoped "why" behind decisions, each with the rejected alternativ
 | 0 | Foundation: repo scaffold, entry JSON Schema and validator, PD source corpus with manifest and citation resolver, draft and verify role prompts | No |
 | 1 | Stages 1 and 2 for all ten pilot creatures: drafted, independently verified, graded entries plus per-entry verify diffs | No |
 | 2 | Style sheet, image generation (stage 3) and vision check (stage 4) | Yes: style and image-model brainstorm first |
-| 3 | Human review (stage 5), scope note draft, pilot report answering the six evaluation questions | Yes |
+| 3 | Ship v0.1: Astro book site for the ten, scope note, method page, public-repo prep (licences, README, release notes, tag), final pilot report. Human review (stage 5) was absorbed into Phase 2, where Ben approved all ten plates. Plan: `plans/phase-3.md` | Only to flip the repo public and connect Vercel |
 
 ## Decisions
 
@@ -283,3 +283,22 @@ The full answers are in `docs/phase2-brainstorm.md`. Settled, with what each rej
   - Vampir becomes a gaunt aristocrat whose horror shows on a closer look.
   - Vodyanoi becomes a fat frog-man with a human nose and a mossy beard, with no hat.
 - **Script still appears with the plain-noun negatives.** The next test removes the negated phrases from the positive prompt and the "study" and "sketch" words.
+
+## Phase 3 decisions (2026-10-27)
+
+- Ben: Astro for the site; book spreads with no page-flip animation; the agent prepares
+  the public flip (licences, README, release notes, tag) but Ben performs it; the agent
+  drafts the method page into the site for Ben to edit. Rejected: Next.js static export
+  and plain Vite (more or less machinery than a ten-page site needs); page-flip
+  animation (heavier, worse on phones, and the agent cannot judge the feel); a gallery
+  grid (drops the book); the agent flipping visibility overnight (irreversible).
+- Planner, vetoable: MIT for code, CC BY 4.0 for data and plates (closes the open
+  licence item). Rejected: Apache-2.0 for code (patent clause is noise for this repo);
+  CC BY-SA for data (share-alike would stop the plates being used in a print book
+  without relicensing the book).
+- Planner, vetoable: every spread states that the plate is a drawing after the folk
+  tradition and shows the sourced appearance clauses beside it, so the interpretive
+  split is visible on the page rather than buried in `image.interpretive`.
+- Shipping rhythm (Ben, in conversation): the unit of release is the volume, not the
+  entry. v0.1 is the ten; v1.0 is Slavic complete; later volumes are their own releases.
+
