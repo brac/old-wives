@@ -1,0 +1,100 @@
+{
+  "entry_id": "moroz",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [
+    {
+      "field": "/names/variants/0/native/0",
+      "text": "Морозко",
+      "cites": [
+        "afanasyev1865:p.319"
+      ],
+      "reason": "People 'Russians' rests on no table term: afanasyev1865:p.319 prints the form but names the people only as 'крестьяне' (peasants), which sources/peoples.json does not list; the Russians row's context rule covers Ralston's Russian peasants, and this passage also gives a Ukrainian-language call, so context does not fix Russians. The form is printed on no other page."
+    },
+    {
+      "field": "/names/variants/1/native/0",
+      "text": "Морозъ-Трескунъ",
+      "cites": [
+        "afanasyev1868:p.703"
+      ],
+      "reason": "afanasyev1868:p.703 prints the form but no people term at all, so 'Russians' rests on no row of sources/peoples.json. The other page printing it (afanasyev1865:p.318, 'Въ нашихъ преданіяхъ') has no listed term either."
+    },
+    {
+      "field": "/names/variants/2",
+      "text": "Studenets (Russians)",
+      "cites": [
+        "afanasyev1868:p.703"
+      ],
+      "reason": "The only cited page names no people, so 'Russians' rests on no term in sources/peoples.json; find shows Студенецъ for this being only on afanasyev1865:p.318 ('Въ нашихъ преданіяхъ', not a listed term) and afanasyev1868:p.703."
+    },
+    {
+      "field": "/names/variants/2/native/0",
+      "text": "Студенецъ",
+      "cites": [
+        "afanasyev1868:p.703"
+      ],
+      "reason": "Removed with its variant row: afanasyev1868:p.703 prints the form but no people term in sources/peoples.json."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "/appearance/3",
+      "text": "In a tale, Frost comes out of his ice hut as an old man who is all white.",
+      "to_text": "In a tale, Frost is an old man who is all white.",
+      "from_cites": [
+        "ralston1873:p.222",
+        "afanasyev1865:p.318"
+      ],
+      "to_cites": [
+        "ralston1873:p.222",
+        "afanasyev1865:p.318"
+      ],
+      "reason": "Coming out of the ice hut is setting and action, not physical description; both pages say only that an old man, all white ('старикъ — весь бѣлой'), comes out and that this is Frost."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [],
+  "grade": "regional",
+  "grade_rationale": [
+    {
+      "text": "Every verified peoples row names the Russians: Ralston's Russian peasants, and a variant from the Kursk Government.",
+      "cites": [
+        "ralston1873:pp.221-222",
+        "ralston1873:p.221"
+      ]
+    },
+    {
+      "text": "Afanasyev records the peasants' Morozko, a little old man with a long grey beard, and the Christmas Eve call inviting Frost to eat kissel or kutya.",
+      "cites": [
+        "afanasyev1865:p.319"
+      ]
+    },
+    {
+      "text": "Afanasyev's 1865 and 1868 volumes (Moroz-Treskun in the red-hot bath) are counted as one source.",
+      "cites": [
+        "afanasyev1868:p.703"
+      ]
+    },
+    {
+      "text": "Ralston's paragraph on Moroz as a living personage, the kissel custom, the Tcheremisses and the ice hut cites Afanasyev (P.V.S. i. 318-19), and his Kursk variant cites Afanasief IV. No 42. b, so those passages are not independent of Afanasyev.",
+      "cites": [
+        "ralston1873:p.222",
+        "ralston1873:p.221"
+      ]
+    },
+    {
+      "text": "Ralston's translated tale of the stepdaughter left under the pine for Frost cites no Afanasyev on the pages opened, so for that tale he counts as a second, independent source.",
+      "cites": [
+        "ralston1873:p.217",
+        "ralston1873:p.219"
+      ]
+    },
+    {
+      "text": "One people with two independent sources gives the grade regional.",
+      "cites": [
+        "ralston1873:p.217",
+        "afanasyev1865:p.319"
+      ]
+    }
+  ]
+}

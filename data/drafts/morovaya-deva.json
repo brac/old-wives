@@ -1,0 +1,309 @@
+{
+  "id": "morovaya-deva",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "morovaya deva",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Моровая дѣва",
+          "people": "Poles",
+          "cites": [
+            "afanasyev1869:p.110"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Pest Maiden",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "ralston1873:p.270"
+        ]
+      },
+      {
+        "romanized": "chuma-samodiva",
+        "peoples": [
+          "Bulgarians"
+        ],
+        "cites": [
+          "afanasyev1869:p.104"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "чума-самодива",
+            "people": "Bulgarians",
+            "cites": [
+              "afanasyev1869:p.104"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "yuda-samovila",
+        "peoples": [
+          "Bulgarians"
+        ],
+        "cites": [
+          "afanasyev1869:p.104"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "юда-самовила",
+            "people": "Bulgarians",
+            "cites": [
+              "afanasyev1869:p.104"
+            ]
+          }
+        ]
+      }
+    ],
+    "meaning": []
+  },
+  "peoples_regions": [
+    {
+      "people": "Poles",
+      "region": "Poles (поляки) say the Моровая дѣва travels in a two-wheeled cart",
+      "cites": [
+        "afanasyev1869:p.110"
+      ]
+    },
+    {
+      "people": "Poles",
+      "region": "a Polish story told by Wojcicki",
+      "cites": [
+        "ralston1873:p.270"
+      ]
+    },
+    {
+      "people": "Bulgarians",
+      "region": "the Bulgarians (болгары) count the Моровая дѣва among the samodivas",
+      "cites": [
+        "afanasyev1869:p.183"
+      ]
+    },
+    {
+      "people": "Sorbs",
+      "region": "Lusatians (лужичане): tale of an invisible chariot, told alongside the Polish belief",
+      "cites": [
+        "afanasyev1869:pp.110-111"
+      ]
+    }
+  ],
+  "family": {
+    "value": "disease-and-fate",
+    "cites": [
+      "afanasyev1869:p.109"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "In a Polish story the plague is embodied in the form of a woman.",
+      "cites": [
+        "ralston1873:p.270"
+      ]
+    },
+    {
+      "text": "It is told that the Моровая дѣва is dressed in a white dress.",
+      "cites": [
+        "afanasyev1869:p.109"
+      ]
+    },
+    {
+      "text": "In Lithuania she waves a red kerchief.",
+      "cites": [
+        "afanasyev1869:p.109"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "In Lithuania she shows herself in a village and goes round its houses.",
+      "cites": [
+        "afanasyev1869:p.109"
+      ]
+    },
+    {
+      "text": "In the Polish story she makes her rounds of the village at night, finding every door and window barred except one casement.",
+      "cites": [
+        "ralston1873:p.270"
+      ]
+    },
+    {
+      "text": "It is told that she drives round towns and villages on a high chariot and stops before a house.",
+      "cites": [
+        "afanasyev1869:p.109"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "In Lithuania the plague, and any epidemic sickness generally, is called the Моровая дѣва.",
+      "cites": [
+        "afanasyev1869:p.109"
+      ]
+    },
+    {
+      "text": "In Lithuania she thrusts her hand through a window or door and waves a red kerchief, wafting deadly infection onto the householders.",
+      "cites": [
+        "afanasyev1869:p.109"
+      ]
+    },
+    {
+      "text": "According to the villagers, she waves her kerchief toward whichever side she wishes to send sickness.",
+      "cites": [
+        "afanasyev1865:p.529"
+      ]
+    },
+    {
+      "text": "In the Polish story she roams from house to house in search of victims.",
+      "cites": [
+        "ralston1873:p.270"
+      ]
+    },
+    {
+      "text": "It is told that, stopping before a house on her chariot, she waves her kerchief and asks: \"What are you doing?\"",
+      "cites": [
+        "afanasyev1869:pp.109-110"
+      ]
+    },
+    {
+      "text": "If the people answer \"We are sleeping!\", she pronounces a death sentence: \"Then sleep an eternal sleep!\"",
+      "cites": [
+        "afanasyev1869:p.110"
+      ]
+    },
+    {
+      "text": "The Poles say she travels about in a two-wheeled cart.",
+      "cites": [
+        "afanasyev1869:p.110"
+      ]
+    },
+    {
+      "text": "Alongside the Polish belief, the Lusatians tell of an invisible chariot that rushes rumbling through the streets at midnight, and someone in the house beside which it stops is sure to die.",
+      "cites": [
+        "afanasyev1869:pp.110-111"
+      ]
+    },
+    {
+      "text": "According to Slavic traditions, all who respond to her voice perish of the infection.",
+      "cites": [
+        "afanasyev1869:p.562"
+      ]
+    },
+    {
+      "text": "The Bulgarians count the Моровая дѣва among the samodivas and yuda-samovilas.",
+      "cites": [
+        "afanasyev1869:p.183"
+      ]
+    },
+    {
+      "text": "A Modern Greek belief holds that, at the start of her deadly progress, she reads out from a long scroll the names of those doomed to be her victims.",
+      "cites": [
+        "afanasyev1869:p.369"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "In Lithuania, when she appears, the inhabitants shut themselves in their huts and open neither windows nor doors; only want of provisions and hunger make them break this precaution.",
+      "cites": [
+        "afanasyev1869:p.109"
+      ]
+    },
+    {
+      "text": "In Lithuania a nobleman sat with a sabre by a window left open on purpose and cut off her hand when she reached in; he and his family died, but the plague never again appeared in that place.",
+      "cites": [
+        "afanasyev1869:p.109"
+      ]
+    },
+    {
+      "text": "In the Polish story a nobleman ready to sacrifice himself cuts off the arm she thrusts in at his window, and so rids the village of her.",
+      "cites": [
+        "ralston1873:p.270"
+      ]
+    },
+    {
+      "text": "It is told that if the people of the house answer her \"We are praising God!\", she touches none of the living and drives on, saying in a gloomy voice: \"Praise Him now and for ever and ever!\"",
+      "cites": [
+        "afanasyev1869:p.110"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "afanasyev1865",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 1",
+      "year": 1865,
+      "url": "https://archive.org/details/poeticheskiiavoz01afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "other",
+      "text": "Unmapped people term: \"Въ Литвѣ\" (Lithuania), afanasyev1869:p.109. The main Моровая дѣва account (red kerchief, hand through the window, the nobleman's sabre) is placed in Lithuania. sources/peoples.json has no row for it; the people would be Lithuanians, who are not Slavs and so may not belong in the table at all. No people row was written; the clauses keep the word \"Lithuania\"."
+    },
+    {
+      "kind": "other",
+      "text": "Unmapped people term: \"Новогреческое повѣрье\" (Modern Greek belief), afanasyev1869:p.369. Proposed people: Greeks (non-Slavic). No people row written."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1869:pp.103-108 and 111-114 describe the personified plague as Чума and Куга (Croats, Bulgarians, Serbs, Podolia, Ruthenians and others: black chariot, retinue, arrows, three sisters). Afanasyev's chapter heading pairs \"моровая дева (чума)\", but those pages do not name the Моровая дѣва, so their details were not attributed to her. Only p.104's Bulgarian names were used, because p.183 states that the Bulgarians count the Моровая дѣва among the samodivas and points back to p.104. Verify should check this bridge."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1869:p.109 also tells a Russian story of a witch, all in white, who reached through a window with a sprinkler and killed the household; Afanasyev calls it \"similar\" but the page names a witch, not the Моровая дѣва, so it is not attributed to her and no Russians row is written. The white dress and chariot passage on pp.109-110 (\"Разсказываютъ еще\") names no people."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1869:p.113 says German traditions speak of a broom in place of the kerchief the Моровая дѣва waves, and that Swedish sagas tell of a Pest maiden (Pestjungfrau) with a broom; these are non-Slavic and were left out."
+    },
+    {
+      "kind": "empty-field",
+      "text": "names.meaning: no page explains the name. Searched моровая дева, моровои девы, моровую деву, моров, моровая, чума, чумы, plague, plague maiden, morovaya across all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "origin: no page says where the Моровая дѣва comes from or who becomes one (p.104's Bulgarian creation story concerns Чума and is not tied to the Моровая дѣва on that page). Same searches as above."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: the differences are by telling (Lithuanian, Polish, Lusatian, unnamed) and are kept as hedged top-level clauses; Lithuania cannot carry a people value under the table, so no regional variants were nested."
+    },
+    {
+      "kind": "empty-field",
+      "text": "related: no page I opened links the Моровая дѣва to another pilot creature id. p.183 links her to samodivas and yuda-samovilas, which are not the vila id as printed."
+    }
+  ]
+}

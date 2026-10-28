@@ -1,0 +1,433 @@
+{
+  "id": "moroz",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "Moroz",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Морозъ",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1865:p.584"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Morozko",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1873:p.216",
+          "afanasyev1865:p.319"
+        ]
+      },
+      {
+        "romanized": "Moroz-Treskun",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1873:p.223",
+          "afanasyev1868:p.703"
+        ]
+      },
+      {
+        "romanized": "Frost the Red-Nosed",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1873:p.221"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Ralston glosses Morozko as Frost.",
+        "cites": [
+          "ralston1873:p.216"
+        ]
+      },
+      {
+        "text": "Ralston calls Moroz the Russian peasants' counterpart of 'our own Jack Frost'.",
+        "cites": [
+          "ralston1873:pp.221-222"
+        ]
+      },
+      {
+        "text": "Ralston renders Moroz-Treskun as 'the Crackling Frost'.",
+        "cites": [
+          "ralston1873:p.223"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "cites": [
+        "ralston1873:pp.221-222"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Kursk Government",
+      "cites": [
+        "ralston1873:p.221"
+      ]
+    }
+  ],
+  "family": {
+    "value": "other",
+    "cites": [
+      "ralston1873:pp.221-222",
+      "afanasyev1865:p.319"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "The peasants say Morozko is an old man.",
+      "cites": [
+        "afanasyev1865:p.319"
+      ]
+    },
+    {
+      "text": "The peasants say Morozko is short, a little old man.",
+      "cites": [
+        "afanasyev1865:p.319"
+      ]
+    },
+    {
+      "text": "The peasants say Morozko has a long grey beard.",
+      "cites": [
+        "afanasyev1865:p.319"
+      ]
+    },
+    {
+      "text": "In a tale, Frost is an old man who is all white.",
+      "cites": [
+        "ralston1873:p.222",
+        "afanasyev1865:p.318"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "In the tale of the stepdaughter, Frost is met in winter, in the depths of the forest, under a tall pine that stands on a hill.",
+      "cites": [
+        "ralston1873:pp.216-217"
+      ]
+    },
+    {
+      "text": "His coming is heard as a cracking in the firs as he leaps from fir to fir, snapping his fingers.",
+      "cites": [
+        "ralston1873:p.217"
+      ]
+    },
+    {
+      "text": "To girls waiting in the forest, his cracking sounded as if someone were coming with bells.",
+      "cites": [
+        "ralston1873:p.219"
+      ]
+    },
+    {
+      "text": "In another tale, Frost lives in a hut made of ice in the forest, covered with snow and hung with icicles.",
+      "cites": [
+        "ralston1873:p.222",
+        "afanasyev1865:p.318"
+      ]
+    },
+    {
+      "text": "The peasants say Morozko runs about the fields and the streets in winter, knocking.",
+      "cites": [
+        "afanasyev1865:p.319"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "To the Russian peasants Moroz is a living personage.",
+      "cites": [
+        "ralston1873:pp.221-222"
+      ]
+    },
+    {
+      "text": "The peasants say the cracking frosts begin from Morozko's knocking.",
+      "cites": [
+        "afanasyev1865:p.319"
+      ]
+    },
+    {
+      "text": "The peasants say the rivers are bound with ice from his knocking.",
+      "cites": [
+        "afanasyev1865:p.319"
+      ]
+    },
+    {
+      "text": "If he strikes the corner of a hut, a log is sure to crack.",
+      "cites": [
+        "afanasyev1865:p.319"
+      ]
+    },
+    {
+      "text": "In some tales Moroz-Treskun, or Studenets, appears among the bogatyrs, and his breath produces a severe cold.",
+      "cites": [
+        "afanasyev1865:pp.318-319"
+      ]
+    },
+    {
+      "text": "Moroz-Treskun saves the hero who is ordered into a red-hot iron bath: he goes in and breathes, so that the heat at once turns to cold.",
+      "cites": [
+        "ralston1873:p.223",
+        "afanasyev1868:pp.703-704"
+      ]
+    },
+    {
+      "text": "In the bath, Moroz-Treskun blew in one corner and spat in another, and hoarfrost and icicles hung everywhere.",
+      "cites": [
+        "afanasyev1868:p.703"
+      ]
+    },
+    {
+      "text": "In the tale of the stepdaughter, Frost descends the pine above a maiden left there and asks her again and again whether she is warm, cracking and snapping his fingers more each time.",
+      "cites": [
+        "ralston1873:p.217"
+      ]
+    },
+    {
+      "text": "When the stepdaughter kept answering that she was warm, Frost took pity on her, wrapped her in furs and warmed her with blankets.",
+      "cites": [
+        "ralston1873:p.217"
+      ]
+    },
+    {
+      "text": "The stepdaughter was found next morning alive, with a good pelisse, a costly bridal veil and a pannier of rich gifts.",
+      "cites": [
+        "ralston1873:pp.217-218"
+      ]
+    },
+    {
+      "text": "The stepmother's two daughters, who complained of the cold and cursed him, froze to death under the pine.",
+      "cites": [
+        "ralston1873:pp.219-220"
+      ]
+    },
+    {
+      "text": "In a variant from the Kursk Government, Frost comes to a stepdaughter in the open plain intending to smite her and freeze her to death, and names himself 'Frost the Red-Nosed'.",
+      "cites": [
+        "ralston1873:p.221"
+      ]
+    },
+    {
+      "text": "In the Kursk variant, Frost, pleased by her wise words, throws a warm cloak over her and gives her robes embroidered with silver and gold and a chest with a rich dowry.",
+      "cites": [
+        "ralston1873:p.221"
+      ]
+    },
+    {
+      "text": "In the Kursk variant, when the stepmother's own daughter gives him no wise words, Frost grows angry and kills her.",
+      "cites": [
+        "ralston1873:p.221"
+      ]
+    },
+    {
+      "text": "In a tale, a peasant's wife blames Frost for a field of buckwheat found broken down.",
+      "cites": [
+        "ralston1873:p.222",
+        "afanasyev1865:p.318"
+      ]
+    },
+    {
+      "text": "Frost gives the peasant who seeks him out a magic cudgel and a self-spreading table-cloth.",
+      "cites": [
+        "ralston1873:p.222",
+        "afanasyev1865:p.318"
+      ]
+    },
+    {
+      "text": "In some variants of the tale of the North Wind who gives a peasant wonderful gifts, the Frosts take the place of the Wind and his brothers.",
+      "cites": [
+        "afanasyev1865:p.318"
+      ]
+    },
+    {
+      "text": "In another story, Frost threatens to freeze a peasant to death because he bowed more to the Wind than to the Sun and Frost.",
+      "cites": [
+        "ralston1873:p.222"
+      ]
+    },
+    {
+      "text": "Sometimes the people describe Frost as a mighty smith who forges strong chains to bind the earth and the waters.",
+      "cites": [
+        "ralston1873:p.222"
+      ]
+    },
+    {
+      "text": "By Russian belief, the frosts fly in on 9 November from the iron mountains.",
+      "cites": [
+        "afanasyev1865:p.584"
+      ]
+    },
+    {
+      "text": "A folk riddle depicts Frost as a mighty bogatyr equal in strength to Samson.",
+      "cites": [
+        "afanasyev1865:pp.584-585"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "On Christmas Eve the oldest man in each family takes a spoonful of kissel, puts his head through the window and calls: 'Frost, Frost, come and eat kissel! Frost, Frost, do not kill our oats! Drive our flax and hemp deep into the ground.'",
+      "cites": [
+        "ralston1873:p.222"
+      ]
+    },
+    {
+      "text": "Afanasyev gives the custom on Christmas Eve and on Great Day, with a spoonful of kutya or kissel, the old man standing on the threshold of the passage or climbing on the stove and putting his head through the smoke window.",
+      "cites": [
+        "afanasyev1865:p.319"
+      ]
+    },
+    {
+      "text": "Another form of the call invites Frost to come and eat kutya and not to freeze the buckwheat.",
+      "cites": [
+        "afanasyev1865:p.319"
+      ]
+    },
+    {
+      "text": "Sometimes, after calling Frost three times to the kutya and waiting a little, they add: 'Not coming? Then do not come to the rye, the wheat or any crop!'",
+      "cites": [
+        "afanasyev1865:p.319"
+      ]
+    },
+    {
+      "text": "The Tcheremisses are afraid to knock icicles off their houses, believing that Frost would then grow angry and freeze them all to death.",
+      "cites": [
+        "ralston1873:p.222",
+        "afanasyev1865:p.319"
+      ]
+    },
+    {
+      "text": "In the Kursk variant, the girl who greets Frost with 'Welcome, Frost; doubtless God has sent you for my sinful soul' is spared and rewarded.",
+      "cites": [
+        "ralston1873:p.221"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [],
+  "attestation": {
+    "grade": "regional",
+    "rationale": [
+      {
+        "text": "Every verified peoples row names the Russians: Ralston's Russian peasants, and a variant from the Kursk Government.",
+        "cites": [
+          "ralston1873:pp.221-222",
+          "ralston1873:p.221"
+        ]
+      },
+      {
+        "text": "Afanasyev records the peasants' Morozko, a little old man with a long grey beard, and the Christmas Eve call inviting Frost to eat kissel or kutya.",
+        "cites": [
+          "afanasyev1865:p.319"
+        ]
+      },
+      {
+        "text": "Afanasyev's 1865 and 1868 volumes (Moroz-Treskun in the red-hot bath) are counted as one source.",
+        "cites": [
+          "afanasyev1868:p.703"
+        ]
+      },
+      {
+        "text": "Ralston's paragraph on Moroz as a living personage, the kissel custom, the Tcheremisses and the ice hut cites Afanasyev (P.V.S. i. 318-19), and his Kursk variant cites Afanasief IV. No 42. b, so those passages are not independent of Afanasyev.",
+        "cites": [
+          "ralston1873:p.222",
+          "ralston1873:p.221"
+        ]
+      },
+      {
+        "text": "Ralston's translated tale of the stepdaughter left under the pine for Frost cites no Afanasyev on the pages opened, so for that tale he counts as a second, independent source.",
+        "cites": [
+          "ralston1873:p.217",
+          "ralston1873:p.219"
+        ]
+      },
+      {
+        "text": "One people with two independent sources gives the grade regional.",
+        "cites": [
+          "ralston1873:p.217",
+          "afanasyev1865:p.319"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1865",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 1",
+      "year": 1865,
+      "url": "https://archive.org/details/poeticheskiiavoz01afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "origin: no opened page says where Frost comes from or who becomes one (the 9 November 'iron mountains' belief is about the frosts' seasonal arrival and is filed under behavior). Searched moroz, morozko, frost (Ralston), мороз, морозко, трескун, mother frost across all sources; opened ralston1873 pp.214-223, afanasyev1865 pp.318-319 and 583-585, afanasyev1868 p.52 and pp.703-704, ralston1872 p.254."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: the Kursk telling is a variant of a tale, not a regional description of the being, so no variant block; no source describes Frost differently by people or region."
+    },
+    {
+      "kind": "empty-field",
+      "text": "related: no opened page links Moroz to another pilot creature. Ralston p.223 groups the Frost tale with the Vasilissa / Baba Yaga tale as stepmother stories; that is a tale-type link, not a link between the beings, so baba-yaga is not listed."
+    },
+    {
+      "kind": "other",
+      "text": "People term not in sources/peoples.json: 'Tcheremisses' (ralston1873:p.222; 'черемисы', afanasyev1865:p.319 footnote). No people row written. They are not a Slavic people; proposed handling as for the Tatars under the Kazan row: no people row, term kept in the clause text only."
+    },
+    {
+      "kind": "scope",
+      "text": "Afanasyev (1865 pp.318-319) also reads hoarfrost and icicles as Moroz-Treskun's spittle and snowy clouds as his hair; this is his mythological interpretation, not a described body, so it is left out of appearance. Afanasyev's pp.583-585 interpret winter as a mythic smith; only the plain folk statements (the 9 November belief, the riddle) are used. The Ukrainian-language invocation on afanasyev1865 p.319 ('Морозе, Морозе! иды до насъ кути іисты') is not attributed to a people by the page, so no Ukrainians row was added."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1868 p.52 repeats that Frost is still treated to kissel and kutya in the family (cross-referencing vol. I p.319) but its OCR reads 'небольшой въ семьѣ', so it was not cited; the custom is cited from afanasyev1865 p.319 and ralston1873 p.222. ralston1872 p.254 gives 'Bobbin Moroz', the Carpathian name for a season, not this being: not used."
+    },
+    {
+      "kind": "other",
+      "text": "Verify: the forms Морозко (afanasyev1865:p.319), Морозъ-Трескунъ (afanasyev1868:p.703) and Студенецъ (afanasyev1865:p.318, afanasyev1868:p.703) are printed, but none of these pages prints a people term listed in sources/peoples.json (p.319 says only 'крестьяне' and gives a Ukrainian-language call beside the Russian one), so the two native rows and the Studenets variant were removed. The table needs a ruling on these pages before a re-run can restore them."
+    },
+    {
+      "kind": "accretion",
+      "text": "Editorial: the modern New Year gift-bringer Ded Moroz (Grandfather Frost) and his companion the Snow Maiden are not described in the cited 19th-century sources and are excluded; this entry records only the cited folk sources."
+    }
+  ]
+}

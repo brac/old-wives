@@ -1,0 +1,105 @@
+{
+  "entry_id": "indrik",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/appearance/1",
+      "text": "It has a horn, with which it digs the earth.",
+      "to_text": "It has a horn.",
+      "from_cites": [
+        "afanasyev1868:p.553"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.553"
+      ],
+      "reason": "p.553 \"копалъ рогомъ сыру мать-землю\" supports the horn; \"with which it digs the earth\" is behaviour, misplaced in appearance (belongs in behavior_habitat, where /behavior_habitat/1 already holds it). Narrowed to the physical attribute."
+    },
+    {
+      "field": "/scene/0",
+      "text": "It goes wherever it wishes through the underground, as the sun goes across the sky.",
+      "to_text": "In a variant of the verse, it goes wherever it wishes through the underground, as the sun goes across the sky.",
+      "from_cites": [
+        "afanasyev1868:p.553"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.553"
+      ],
+      "reason": "p.553 gives these lines under \"Приведемъ варіанты: a)\", not in the main text of the verse; the clause stated them unhedged. Narrowed to a variant."
+    },
+    {
+      "field": "/scene/1",
+      "text": "Wherever the beast passes, a spring boils up.",
+      "to_text": "In a variant of the verse, wherever the beast passes, a spring boils up.",
+      "from_cites": [
+        "afanasyev1868:p.553"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.553"
+      ],
+      "reason": "p.553 gives \"Куда звѣрь пройдетъ — тута ключь кипитъ\" in variant a), not in the main text; the clause stated it unhedged. Narrowed to a variant."
+    }
+  ],
+  "retagged": [
+    {
+      "field": "/names/primary/native/0",
+      "text": "Инд-рикъ (Russians)",
+      "from_cites": [
+        "afanasyev1868:p.556"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.556",
+        "afanasyev1868:p.554"
+      ],
+      "reason": "The form is printed on p.556, but p.556 prints no term the people table maps to Russians. p.554, in the same continuous passage on the Dove Book verse, prints \"русскаго преданія\" (table row Russians: русскаго). p.556 is kept for the form, p.554 added for the people."
+    },
+    {
+      "field": "/names/variants/0/native/0",
+      "text": "Индра-звѣрь (Russians)",
+      "from_cites": [
+        "afanasyev1868:p.553"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.553",
+        "afanasyev1868:p.554"
+      ],
+      "reason": "The form is printed on p.553 (and again in the p.554 footnote), but the only people term on p.553 for this verse is the singer's \"У насъ\"; the table's \"у насъ\" row lists afanasyev1869 only, and \"Русская былина\" on p.553 is about Mikhailo Potok. p.554 names the verse \"русскаго преданія\" (table row Russians). p.554 added."
+    },
+    {
+      "field": "/names/variants/0",
+      "text": "Indra-zver (Russians)",
+      "from_cites": [
+        "afanasyev1868:p.553"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.553",
+        "afanasyev1868:p.554"
+      ],
+      "reason": "Same as /names/variants/0/native/0: p.553 prints the form, p.554 prints \"русскаго преданія\" fixing the people Russians by the table. p.554 added."
+    }
+  ],
+  "reformed": [],
+  "flagged": [],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "Every surviving clause rests on one author, Afanasyev (1868 vol. 2), who quotes the Russian Dove Book verse and its variants.",
+      "cites": [
+        "afanasyev1868:p.553",
+        "afanasyev1868:p.555"
+      ]
+    },
+    {
+      "text": "Afanasyev calls it a Russian tradition (\"русскаго преданія\"); Russians are the only people in the entry.",
+      "cites": [
+        "afanasyev1868:p.554"
+      ]
+    },
+    {
+      "text": "No second, independent source names the beast; a single 19th-century collector counts as one compiler, so the grade is literary.",
+      "cites": [
+        "afanasyev1868:p.556"
+      ]
+    }
+  ]
+}

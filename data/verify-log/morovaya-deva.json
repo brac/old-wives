@@ -1,0 +1,61 @@
+{
+  "entry_id": "morovaya-deva",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [
+    {
+      "field": "/appearance/2",
+      "text": "In Lithuania she waves a red kerchief.",
+      "cites": [
+        "afanasyev1869:p.109"
+      ],
+      "reason": "Misplaced, belongs in behavior_habitat: waving a red kerchief is an action, not physical description (the same fact is already kept at /behavior_habitat/1)."
+    }
+  ],
+  "downgraded": [],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/variants/1",
+      "text": "chuma-samodiva (Bulgarians)",
+      "reason": "p.104 gives these Bulgarian names for Чума, not for the Моровая дѣва by name; the bridge is p.183 (\"Моровая дѣва причисляется болгарами къ самодивамъ и юдамъ-самовиламъ (см. стр. 104)\") and p.109 (in Lithuania the plague is called the Моровая дѣва). Read as names of the same personified plague, but the cited page itself does not name her."
+    },
+    {
+      "field": "/names/variants/2",
+      "text": "yuda-samovila (Bulgarians)",
+      "reason": "p.104 gives these Bulgarian names for Чума, not for the Моровая дѣва by name; the bridge is p.183 (\"Моровая дѣва причисляется болгарами къ самодивамъ и юдамъ-самовиламъ (см. стр. 104)\") and p.109 (in Lithuania the plague is called the Моровая дѣва). Read as names of the same personified plague, but the cited page itself does not name her."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Afanasyev records the Моровая дѣва for the Poles (two-wheeled cart), sets a Lusatian tale of an invisible death-chariot beside it, and states that the Bulgarians count her among the samodivas and yuda-samovilas: three peoples in one compiler.",
+      "cites": [
+        "afanasyev1869:p.110",
+        "afanasyev1869:p.111",
+        "afanasyev1869:p.183"
+      ]
+    },
+    {
+      "text": "Afanasyev's 1865 and 1869 volumes are one source.",
+      "cites": [
+        "afanasyev1865:p.529",
+        "afanasyev1869:p.109"
+      ]
+    },
+    {
+      "text": "Ralston gives the Polish Pest Maiden story citing Wojcicki's Polish legends, not Afanasyev, so on this passage he is an independent second source.",
+      "cites": [
+        "ralston1873:p.270"
+      ]
+    },
+    {
+      "text": "Two independent authors and three peoples (Poles, Bulgarians, Sorbs) meet the widely-attested definition; only the Polish attestation is independently doubled, the Bulgarian and Sorb rows rest on Afanasyev alone.",
+      "cites": [
+        "ralston1873:p.270",
+        "afanasyev1869:p.110",
+        "afanasyev1869:p.183"
+      ]
+    }
+  ]
+}

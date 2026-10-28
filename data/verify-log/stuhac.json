@@ -1,0 +1,50 @@
+{
+  "entry_id": "stuhac",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [],
+  "retagged": [
+    {
+      "field": "/names/variants/0",
+      "text": "stuać (peoples: Serbs)",
+      "from_cites": [
+        "karadzic1852:s.v.Стуаћ"
+      ],
+      "to_cites": [
+        "karadzic1852:s.v.Стуаћ",
+        "karadzic1852:s.v.Стухаћ"
+      ],
+      "reason": "The cited page s.v.Стуаћ prints the form (\"СТУАЋ, стуаћа, m. vide стухаћ\") but no people or region term; it refers the reader to стухаћ, whose page gives the Herzegovina label (\"По Херцеговини\", sources/peoples.json row \"Ерц., Ерцеговини, Херцеговини\" -> Serbs). Added that page so the Serbs value rests on a printed term."
+    },
+    {
+      "field": "/names/variants/0/native/0",
+      "text": "СТУАЋ (people: Serbs)",
+      "from_cites": [
+        "karadzic1852:s.v.Стуаћ"
+      ],
+      "to_cites": [
+        "karadzic1852:s.v.Стуаћ",
+        "karadzic1852:s.v.Стухаћ"
+      ],
+      "reason": "The form СТУАЋ is printed on s.v.Стуаћ (kept); that page has no people term, so the стухаћ page, which it cross-references and which prints \"По Херцеговини\" (peoples.json row Ерц., Ерцеговини, Херцеговини -> Serbs), was added to carry the people."
+    }
+  ],
+  "reformed": [],
+  "flagged": [],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "Every surviving clause rests on one source, Karadžić's 1852 Serbian dictionary, under the headword стухаћ (стуаћ is only a cross-reference to it).",
+      "cites": [
+        "karadzic1852:s.v.Стухаћ",
+        "karadzic1852:s.v.Стуаћ"
+      ]
+    },
+    {
+      "text": "Karadžić records it for one region only, Herzegovina (\"По Херцеговини приповиједају\"), mapped to Serbs; a single folklore collector counts as one 19th-century compiler, so the grade is literary.",
+      "cites": [
+        "karadzic1852:s.v.Стухаћ"
+      ]
+    }
+  ]
+}

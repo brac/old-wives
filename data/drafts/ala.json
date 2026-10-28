@@ -1,0 +1,162 @@
+{
+  "id": "ala",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "ala",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Ала",
+          "people": "Serbs",
+          "cites": [
+            "karadzic1852:s.v.Ала"
+          ]
+        }
+      ]
+    },
+    "variants": [],
+    "meaning": [
+      {
+        "text": "Afanasyev glosses the word ala as \"a fabulous serpent\" (баснословный змѣй).",
+        "cites": [
+          "afanasyev1868:p.519"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Serbs",
+      "region": "Serbia (\"Въ Сербіи\", citing Karadžić)",
+      "cites": [
+        "afanasyev1868:p.519"
+      ]
+    }
+  ],
+  "family": {
+    "value": "monster",
+    "cites": [
+      "karadzic1852:s.v.аждаха",
+      "afanasyev1868:p.519"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "Is a dragon: Karadžić refers the ala to the aždaha, which he glosses as a dragon (Latin draco).",
+      "cites": [
+        "karadzic1852:s.v.Ала",
+        "karadzic1852:s.v.аждаха"
+      ]
+    }
+  ],
+  "scene": [],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "It is thought that the ala has a particular spiritual power beyond that of the aždaha.",
+      "cites": [
+        "karadzic1852:s.v.Ала"
+      ]
+    },
+    {
+      "text": "It is thought to fly.",
+      "cites": [
+        "karadzic1852:s.v.Ала"
+      ]
+    },
+    {
+      "text": "It is thought to lead the clouds.",
+      "cites": [
+        "karadzic1852:s.v.Ала"
+      ]
+    },
+    {
+      "text": "It is thought to bring hail down on the crops.",
+      "cites": [
+        "karadzic1852:s.v.Ала",
+        "afanasyev1868:pp.519-520"
+      ]
+    },
+    {
+      "text": "The Serbs say of an insatiable person \"ало несита!\" (\"insatiable ala!\").",
+      "cites": [
+        "karadzic1852:s.v.Ала",
+        "afanasyev1868:p.520"
+      ]
+    },
+    {
+      "text": "A Serbian saying has someone fight \"like an ala with the harvest\" (бори се као ала с берићетом).",
+      "cites": [
+        "karadzic1852:s.v.Ала",
+        "afanasyev1868:p.520"
+      ]
+    }
+  ],
+  "dealing_with_it": [],
+  "origin": [],
+  "related": [],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "karadzic1852",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истумачен њемачкијем и латинскијем ријечима",
+      "year": 1852,
+      "url": "https://archive.org/details/srpski-rjecnik-istumacen-njemackijem-i-latinskijem-rijecima",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "Afanasyev 1868 pp.519-520 quotes Karadžić's dictionary entry (his footnote 5, \"Срп. речник\"), so the two sources are not independent for any clause they share."
+    },
+    {
+      "kind": "scope",
+      "text": "The karadzic1852 page that s.v.Ала resolves to holds several unrelated headwords spelled ала: Ал/ала m. (misfortune), Ала f. (a privy, in towns of Serbia and Bosnia) and Ала as an interjection. Only the Ала f. entry that refers to аждаха is used. The same entry also says the змај is thought of as a fiery hero from whom fire leaps when he flies; that describes the zmaj, not the ala, and is not used."
+    },
+    {
+      "kind": "scope",
+      "text": "Karadžić's entry closes with the song line \"А кад ала алу појахала\" (\"and when an ala rode an ala\"); its meaning is not explained on the page, so it is not used."
+    },
+    {
+      "kind": "scope",
+      "text": "The German and Latin glosses in karadzic1852 are OCR noise; the reading of s.v.аждаха as \"dragon (draco)\" rests on the legible \"дгасо\" (draco) and \"Отафеп ... дгасол5\" (Drachen, draconis) in the adjacent аждахин entry. The verify agent should confirm against the page image or karadzic1818 if needed."
+    },
+    {
+      "kind": "empty-field",
+      "text": "names.variants: Karadžić cross-refers ала to аждаха (and аждаха to ала and змај), but also distinguishes the ala from the aždaha, so аждаха is not recorded as a variant name. Searched ала, але, алу, ало, аждаха, аждаја in all sources; no other name for the ala found."
+    },
+    {
+      "kind": "empty-field",
+      "text": "scene: no page gives a setting beyond the behaviour clauses (flying, leading clouds, hail on the crops). Searched ала, алу, але, ало, аждаха in karadzic1818, karadzic1852, afanasyev1865, afanasyev1868, afanasyev1869; ala in machal1918, ralston1872, ralston1873."
+    },
+    {
+      "kind": "empty-field",
+      "text": "dealing_with_it: no ward, offering or remedy against the ala found. Same searches as above."
+    },
+    {
+      "kind": "empty-field",
+      "text": "origin: no page says where the ala comes from or who becomes one. Same searches as above."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: no regional difference found; the only people named is the Serbs. Same searches as above."
+    },
+    {
+      "kind": "empty-field",
+      "text": "related: afanasyev1868 p.519 discusses the ala alongside dragon-fight tales (Tugarin Zmeevich, Egorii and the serpent) but does not link the ala to any other pilot creature; Karadžić's s.v.аждаха cross-refers to змај, which is not a pilot id. No link recorded."
+    }
+  ]
+}

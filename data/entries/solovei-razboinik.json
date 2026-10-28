@@ -1,0 +1,331 @@
+{
+  "id": "solovei-razboinik",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "Solovei Razboinik",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Соловей-разбойникъ",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1865:p.306"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Solovei",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1873:p.258"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "Соловей",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1865:p.307"
+            ]
+          }
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "The word solovei generally means a nightingale, but it was also the name of a mythical hero, a robber.",
+        "cites": [
+          "ralston1873:p.258"
+        ]
+      },
+      {
+        "text": "Afanasyev says the name Nightingale was given on the basis of the ancient likening of the whistle of the storm to the thunderous song of this bird.",
+        "cites": [
+          "afanasyev1865:p.308"
+        ]
+      },
+      {
+        "text": "Afanasyev explains the epithet 'robber' by the destructive properties of the storm and by the old view that joined a robbing, thieving character to the personifications of clouds.",
+        "cites": [
+          "afanasyev1865:p.309"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "the old epic tale of Ilya Muromets and Solovei-razboinik, whose hero's name is the most popular among the Russian people (въ русскомъ народѣ)",
+      "cites": [
+        "afanasyev1865:p.302"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "a Ukrainian tale (въ украинской сказкѣ) printed in 'Записки о южной Руси'",
+      "cites": [
+        "afanasyev1865:p.307"
+      ]
+    }
+  ],
+  "family": {
+    "value": "monster",
+    "cites": [
+      "afanasyev1865:p.306",
+      "afanasyev1865:p.307"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [],
+  "scene": [
+    {
+      "text": "He holds the straight road to Kiev, on which for thirty years no man walked, no beast ran and no bird flew.",
+      "cites": [
+        "afanasyev1865:p.306"
+      ]
+    },
+    {
+      "text": "He sits in a nest he has built on twelve (or nine) oaks.",
+      "cites": [
+        "afanasyev1865:p.306"
+      ]
+    },
+    {
+      "text": "His whistle is heard ten versts away.",
+      "cites": [
+        "afanasyev1865:p.306"
+      ]
+    },
+    {
+      "text": "At his whistle the dark forests bow down to the earth and the mother-river Smorodina is muddied with sand.",
+      "cites": [
+        "afanasyev1865:p.306"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "He blocked the straight road to Kiev for exactly thirty years, the time the bogatyr Ilya Muromets sat unable to move.",
+      "cites": [
+        "afanasyev1865:p.306"
+      ]
+    },
+    {
+      "text": "Sitting in his nest, he whistled so strongly and loudly that he threw everything down with his whistling, as if by the rush of a swift whirlwind.",
+      "cites": [
+        "afanasyev1865:p.306"
+      ]
+    },
+    {
+      "text": "When his whistle sounded, the bogatyr's horse under Ilya stumbled.",
+      "cites": [
+        "afanasyev1865:p.306"
+      ]
+    },
+    {
+      "text": "Brought to Prince Vladimir's court in Kiev and told to whistle at half-whistle, he answered that his lips were caked with blood and asked for a drink.",
+      "cites": [
+        "afanasyev1865:p.306"
+      ]
+    },
+    {
+      "text": "He took a cup of green wine weighing a bucket and a half in one hand and drank it in a single breath, then drank a second cup of beer and a third of sweet mead.",
+      "cites": [
+        "afanasyev1865:p.306"
+      ]
+    },
+    {
+      "text": "Having gathered great strength from the drink, he whistled and stunned the mighty bogatyrs so that they fell to the ground, while the common people fell dead.",
+      "cites": [
+        "afanasyev1865:pp.306-307"
+      ]
+    },
+    {
+      "text": "His whistle shook the strong vaults of the prince's palace: the roof and turrets flew off and the iron ties burst.",
+      "cites": [
+        "afanasyev1865:pp.306-307"
+      ]
+    },
+    {
+      "text": "He whistled like a nightingale, hissed like a serpent and roared like a beast (in a variant, like an aurochs).",
+      "cites": [
+        "afanasyev1865:p.307"
+      ]
+    },
+    {
+      "text": "His voice or whistle had the power of killing those who heard it.",
+      "cites": [
+        "ralston1873:p.258"
+      ]
+    },
+    {
+      "text": "Countless golden treasure lay in his cellars.",
+      "cites": [
+        "afanasyev1865:p.309"
+      ]
+    },
+    {
+      "text": "According to the bylina, his children turn into ravens with iron beaks.",
+      "cites": [
+        "afanasyev1865:p.309"
+      ]
+    },
+    {
+      "text": "His children turn into black ravens with iron noses.",
+      "cites": [
+        "afanasyev1865:p.514"
+      ]
+    },
+    {
+      "text": "His daughter, wishing to kill Ilya Muromets, threw a heavy gate-board down on him, but Ilya remained unharmed.",
+      "cites": [
+        "afanasyev1869:p.372"
+      ]
+    },
+    {
+      "text": "At his whistle walls and people fell.",
+      "cites": [
+        "afanasyev1868:p.526"
+      ]
+    },
+    {
+      "text": "He sits upon a tree, as does the div of the Lay of Igor's Campaign.",
+      "cites": [
+        "afanasyev1868:p.618"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "The bogatyr Ilya Muromets knocked him down from the high oaks with a tempered arrow and carried him with him to Kiev.",
+      "cites": [
+        "afanasyev1865:p.306"
+      ]
+    },
+    {
+      "text": "Angered, Ilya Muromets killed him by throwing him, according to one variant, higher than the standing tree and a little lower than the walking cloud.",
+      "cites": [
+        "afanasyev1865:p.307"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "Afanasyev concludes that in the figure of Solovei-razboinik the popular fantasy personified the demon of the stormy thundercloud.",
+      "cites": [
+        "afanasyev1865:pp.307-308"
+      ]
+    },
+    {
+      "text": "Afanasyev says the tale of Solovei-razboinik, nesting on high oaks, arose from the same source as the name of Perun's speaking bird: the likening of thunder and the howl of the storm to speech and song.",
+      "cites": [
+        "afanasyev1865:p.514"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "zmey-gorynych",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Afanasyev retells and quotes the bylina of Ilya Muromets and Solovei-razboinik, which he introduces with the remark that Ilya's name is the most popular among the Russian people.",
+        "cites": [
+          "afanasyev1865:p.302",
+          "afanasyev1865:p.306"
+        ]
+      },
+      {
+        "text": "Afanasyev reports a Ukrainian tale, printed in 'Записки о южной Руси', in which Solovei-razboinik takes the place of Zmey Gorynych.",
+        "cites": [
+          "afanasyev1865:p.307"
+        ]
+      },
+      {
+        "text": "Ralston's footnote names Solovei as a mythical robber whose voice or whistle killed those who heard it, and on that passage does not cite or quote Afanasyev, so it counts as an independent source.",
+        "cites": [
+          "ralston1873:p.258"
+        ]
+      },
+      {
+        "text": "Afanasyev's three volumes count as one source; with Ralston that is two independent authors and two peoples, the minimum for widely-attested, and the Ukrainians row rests on a single sentence of Afanasyev's.",
+        "cites": [
+          "afanasyev1865:p.307",
+          "ralston1873:p.258"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "afanasyev1865",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 1",
+      "year": 1865,
+      "url": "https://archive.org/details/poeticheskiiavoz01afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "appearance: no source describes his body, size, dress or form; searched solovei, Solovei, solovei razboinik, nightingale, nightingale robber, robber, соловей, разбойник, соловей-разбойник, соловей разбойник, соловья-разбойник, соловье-разбойник, соловью-разбойник, соловья разбой in all sources. The only bodily detail met is his own remark at Vladimir's court that his lips were caked with blood (afanasyev1865:p.306), kept under behavior_habitat as an event rather than drawn as a description. The scene field carries the sourced setting."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: no source describes him differently by people or region. Afanasyev reports only that in one Ukrainian tale Solovei-razboinik takes the place of Zmey Gorynych (afanasyev1865:p.307), which is recorded under peoples_regions and related."
+    },
+    {
+      "kind": "scope",
+      "text": "Every narrative clause comes from Afanasyev's retelling and quotation of the bylina of Ilya Muromets (afanasyev1865:pp.306-309) and his asides elsewhere. The meaning clauses from afanasyev1865:pp.308-309 and both origin clauses are Afanasyev's own mythological interpretation (a storm-cloud demon), not peasant belief, and are hedged as his. Ralston (ralston1873:p.258) gives only a footnote."
+    },
+    {
+      "kind": "scope",
+      "text": "The Russians row rests on afanasyev1865:p.302, where Afanasyev introduces the old epic tale of Ilya Muromets and Solovei-razboinik and says Ilya's name is the most popular among the Russian people; the page ties the epic, not Solovei by name, to that people, and the native rows' people follows the same reading (the variant Solovei also rests on Ralston's Russian Folk-Tales footnote). The verify agent should judge whether that is narrow enough."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1868:p.526 compares Solovei's wall-felling whistle with the whistle of the fiery serpent and the roar of Tugarin; that comparison is Afanasyev's, so no related link to tugarin was made. afanasyev1868:p.709 compares another bogatyr's blowing with Solovei's whistle and was not used."
+    },
+    {
+      "kind": "scope",
+      "text": "Verify judgment on the Russians row: kept and flagged. afanasyev1865:p.302 opens Afanasyev's discussion of the epic of Ilya Muromets and Solovei-razboinik and ties Ilya's name, in songs and traditions, to the Russian people; it does not name the people for Solovei himself. The two native rows' people rests on the same passage context, since their cited pages (pp.306-307) print the forms but no people term."
+    }
+  ]
+}

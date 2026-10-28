@@ -1,0 +1,495 @@
+{
+  "id": "firebird",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "firebird",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Жаръ-птица",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1865:p.512",
+            "afanasyev1865:p.513"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Zhar-Ptitsa",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1873:p.285"
+        ]
+      },
+      {
+        "romanized": "Ptak Ohnivak",
+        "peoples": [
+          "Czechs",
+          "Slovaks"
+        ],
+        "cites": [
+          "afanasyev1865:p.512"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Its names point to its connection with the heavenly flame and with fire in general: zhar means the glowing coals in a stove, and zhary the hot season of summer.",
+        "cites": [
+          "afanasyev1865:p.512"
+        ]
+      },
+      {
+        "text": "Its name is enough to show its close connection with flame or light.",
+        "cites": [
+          "ralston1873:p.285"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "Rus' (\"На Руси\")",
+      "cites": [
+        "afanasyev1865:p.512"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "Bohemian legends; \"чеховъ\"",
+      "cites": [
+        "ralston1873:p.285",
+        "afanasyev1865:p.512"
+      ]
+    },
+    {
+      "people": "Slovaks",
+      "cites": [
+        "afanasyev1865:p.512"
+      ]
+    },
+    {
+      "people": "Croatians",
+      "region": "a Croatian version",
+      "cites": [
+        "ralston1873:p.285"
+      ]
+    },
+    {
+      "people": "Slovenes",
+      "region": "хорутанское (Carinthian) tradition",
+      "cites": [
+        "afanasyev1865:p.513"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "the Bukovina",
+      "cites": [
+        "ralston1873:p.286"
+      ]
+    }
+  ],
+  "family": {
+    "value": "other",
+    "cites": [
+      "ralston1873:p.284"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "A bird.",
+      "cites": [
+        "ralston1873:p.284"
+      ]
+    },
+    {
+      "text": "Its feathers blaze with a silvery or golden sheen.",
+      "cites": [
+        "ralston1873:p.285",
+        "afanasyev1865:p.512"
+      ]
+    },
+    {
+      "text": "Its eyes shine like crystal.",
+      "cites": [
+        "ralston1873:p.285",
+        "afanasyev1865:p.512"
+      ]
+    },
+    {
+      "text": "In one tale its feather shines like fire.",
+      "cites": [
+        "ralston1873:p.287"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "It dwells in a golden cage.",
+      "cites": [
+        "ralston1873:p.285",
+        "afanasyev1865:pp.512-513"
+      ]
+    },
+    {
+      "text": "In the depth of the night it flies into a garden and lights it up as brightly as a thousand burning fires.",
+      "cites": [
+        "ralston1873:p.285",
+        "afanasyev1865:p.513"
+      ]
+    },
+    {
+      "text": "In one tale it flies every night into a king's garden to steal the golden fruit of an apple tree.",
+      "cites": [
+        "ralston1873:p.286"
+      ]
+    },
+    {
+      "text": "In a Russian tale the golden apples it steals ripen during the night.",
+      "cites": [
+        "afanasyev1868:p.311"
+      ]
+    },
+    {
+      "text": "In one tale, at dawn in a forest, the forest begins to roar and the sea rises in waves as it flies up, lights on the ground and pecks at scattered wheat.",
+      "cites": [
+        "ralston1873:p.287"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "czech-slovak",
+      "label": "Czech and Slovak Ptak Ohnivak",
+      "peoples": [
+        "Czechs",
+        "Slovaks"
+      ],
+      "appearance": [
+        {
+          "text": "The Ptak Ohnivak's feathers are red-gold.",
+          "cites": [
+            "afanasyev1865:p.512"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "According to Bohemian legends, its song heals the sick and restores sight to the blind.",
+          "cites": [
+            "ralston1873:pp.285-286"
+          ]
+        },
+        {
+          "text": "The Czechs are convinced that its singing heals illnesses and takes blindness from the eyes.",
+          "cites": [
+            "afanasyev1865:p.514"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "croatian",
+      "label": "Croatian version",
+      "peoples": [
+        "Croatians"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "According to a Croatian version, it feeds on magic grasses instead of golden apples.",
+          "cites": [
+            "ralston1873:p.285"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slovene",
+      "label": "Carinthian (хорутанское) tradition",
+      "peoples": [
+        "Slovenes"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "In the Carinthian tradition, instead of golden apples it steals ripe grapes from a famous vine that gave a bucket of wine every hour.",
+          "cites": [
+            "afanasyev1865:p.513"
+          ]
+        },
+        {
+          "text": "In the Carinthian tradition, its gall restores lost sight.",
+          "cites": [
+            "afanasyev1865:p.513"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bukovina",
+      "label": "Bukovina version",
+      "peoples": [
+        "Ukrainians"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "In a version from the Bukovina, while the hero lies dead after his brothers carry the bird off, the bird is silent and its cage is lustreless.",
+          "cites": [
+            "ralston1873:p.286"
+          ]
+        },
+        {
+          "text": "In the same version, when the hero comes back to life the bird starts its magic song again and its cage flashes anew like fire.",
+          "cites": [
+            "ralston1873:pp.286-287"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "A single feather from its tail lights up a dark room.",
+      "cites": [
+        "ralston1873:p.285",
+        "afanasyev1865:p.513"
+      ]
+    },
+    {
+      "text": "A tale says such a feather is worth more than a whole kingdom, and the bird itself is beyond price.",
+      "cites": [
+        "afanasyev1865:p.513"
+      ]
+    },
+    {
+      "text": "It feeds on golden apples which have the power of bestowing youth and beauty.",
+      "cites": [
+        "ralston1873:p.285"
+      ]
+    },
+    {
+      "text": "The golden apples it feeds on give eternal youth, beauty and immortality.",
+      "cites": [
+        "afanasyev1865:p.513"
+      ]
+    },
+    {
+      "text": "When it sings, pearls pour from its open beak.",
+      "cites": [
+        "afanasyev1865:pp.513-514"
+      ]
+    },
+    {
+      "text": "It sinks into a death-like slumber when the day dawns and wakes to fresh life after sunset.",
+      "cites": [
+        "ralston1873:p.286"
+      ]
+    },
+    {
+      "text": "In one tale it sleeps soundly all day, and at night its owner flies about on it.",
+      "cites": [
+        "ralston1873:p.284"
+      ]
+    },
+    {
+      "text": "In the same tale it carries a princess far away on its back at night.",
+      "cites": [
+        "ralston1873:p.284"
+      ]
+    },
+    {
+      "text": "In the same tale it plunges a prince into a magic slumber.",
+      "cites": [
+        "ralston1873:p.284"
+      ]
+    },
+    {
+      "text": "In the same tale, when the day begins to dawn during a flight, the bird sinks lower and lower and falls to the ground.",
+      "cites": [
+        "ralston1873:p.284"
+      ]
+    },
+    {
+      "text": "In the same tale its wings, cut off and worn by the princess, rustle around her and hold back a prince who eats a man every night.",
+      "cites": [
+        "ralston1873:p.284"
+      ]
+    },
+    {
+      "text": "In one tale it brings a murdered prince back to life by gathering his scattered pieces, putting them together and sprinkling them with dead water and then live water carried in its beak.",
+      "cites": [
+        "ralston1873:p.235"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "In one tale the youngest prince, keeping watch in the garden at night, fails to capture it but secures one of its tail-feathers.",
+      "cites": [
+        "ralston1873:p.286"
+      ]
+    },
+    {
+      "text": "In the same tale the hero takes the bird out of its golden cage, but trying to carry off the cage as well sounds an alarm and he is taken prisoner.",
+      "cites": [
+        "ralston1873:p.286"
+      ]
+    },
+    {
+      "text": "In another tale a hunter scatters wheat on the ground and hides behind a tree at dawn; when the bird pecks the wheat his steed sets a hoof on its wing so that it can be bound with cords.",
+      "cites": [
+        "ralston1873:p.287"
+      ]
+    },
+    {
+      "text": "In a variant of that tale it is caught with a trap: a cage strewn with pearls large and small.",
+      "cites": [
+        "ralston1873:p.287"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "The verified rows name six peoples: Russians and Czechs and Slovaks (Afanasyev), Slovenes (Afanasyev's Carinthian tradition), Croatians and Czechs (Ralston), and Ukrainians (Ralston's Bukovina version).",
+        "cites": [
+          "afanasyev1865:p.512",
+          "afanasyev1865:p.513",
+          "ralston1873:p.285",
+          "ralston1873:p.286"
+        ]
+      },
+      {
+        "text": "Afanasyev (1865) describes the bird for Rus' and records the Czech-Slovak name and red-gold feathers, the Carinthian grapes and gall, and the Czech belief in its healing song.",
+        "cites": [
+          "afanasyev1865:p.512",
+          "afanasyev1865:p.513",
+          "afanasyev1865:p.514"
+        ]
+      },
+      {
+        "text": "Ralston's general description, the Croatian version and the Bohemian legends on p.285 cite no source, and the tale on p.284 is footnoted to Khudyakov, not Afanasyev; on those passages Ralston counts as independent, though the p.285 description runs close to Afanasyev's 1865 wording.",
+        "cites": [
+          "ralston1873:p.284",
+          "ralston1873:p.285"
+        ]
+      },
+      {
+        "text": "Ralston's skazka retellings on pp.235, 286 and 287 are footnoted to \"Afanasief, vii.\" and are counted with Afanasyev, not as an independent source.",
+        "cites": [
+          "ralston1873:p.235",
+          "ralston1873:p.286",
+          "ralston1873:p.287"
+        ]
+      },
+      {
+        "text": "Both authors independently record the Czech healing-song belief (Ralston's \"Bohemian legends\", Afanasyev's \"Чехи убѣждены\"), so more than one people rests on more than one independent author.",
+        "cites": [
+          "ralston1873:p.285",
+          "afanasyev1865:p.514"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1865",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 1",
+      "year": 1865,
+      "url": "https://archive.org/details/poeticheskiiavoz01afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "origin: no page says where the firebird comes from or who becomes one. Searched firebird, fire bird, fire-bird, zhar, жар-птица, жаръ-птиц, жар-птиц in all sources. Afanasyev's mythological reading (afanasyev1865:p.513, the bird as an embodiment of the thunder god like Agni; afanasyev1868:p.295, the image mixing the sun and lightning) and Ralston's comparison with the Phoenix (ralston1873:p.286) are scholarly interpretations, not folk accounts of origin, and were left out.",
+      "cites": [
+        "afanasyev1865:p.513",
+        "afanasyev1868:p.295",
+        "ralston1873:p.286"
+      ]
+    },
+    {
+      "kind": "empty-field",
+      "text": "related: no page opened links the firebird to another pilot creature. afanasyev1869:p.159 says that in the Carinthian redaction of the golden-apple tale nine vilas take the place of the firebird; that page was read only at the hit and is a substitution in one tale, not a stated relation, so no related row was written.",
+      "cites": [
+        "afanasyev1869:p.159"
+      ]
+    },
+    {
+      "kind": "scope",
+      "text": "Variant name Ptak Ohnivak: Afanasyev's Latin-script form is OCR-garbled (\"р і а к ОЬпіѵак\") and Ralston's footnote prints \"Ptak Ohnivdk\"; no clean native form could be copied as printed, so the variant has no native row. Afanasyev prints the Cyrillic genitive \"птака Огнивака\" only.",
+      "cites": [
+        "afanasyev1865:p.512",
+        "ralston1873:p.285"
+      ]
+    },
+    {
+      "kind": "scope",
+      "text": "Ralston's footnotes were not used for lore: p.285 glosses zhar-ptitsa as \"the glow-bird\" and p.284 says \"Ornithologically, the Zhar-ptitsa is the Cassowary\"; afanasyev1865:p.514 footnote 3 says the bird carries wandering heroes on its wings in some tales. Ralston's main text says the chap-book tale on p.286 is \"of doubtful origin\".",
+      "cites": [
+        "ralston1873:p.284",
+        "ralston1873:p.285",
+        "ralston1873:p.286",
+        "afanasyev1865:p.514"
+      ]
+    },
+    {
+      "kind": "scope",
+      "text": "Most behaviour and capture clauses come from single Russian skazkas retold by Ralston (one a chap-book story he calls of doubtful origin) and are hedged as \"in one tale\". afanasyev1868:p.386 (Slavic tales: the hero plucks a tail feather that shines at night like the sun) was opened but not used beyond confirming the feather motif.",
+      "cites": [
+        "ralston1873:p.286",
+        "afanasyev1868:p.386"
+      ]
+    },
+    {
+      "kind": "empty-field",
+      "text": "appearance_forms: no conflicting descriptions; the Czech-Slovak red-gold feathers are kept in their own variant."
+    },
+    {
+      "kind": "accretion",
+      "text": "Editorial: the firebird of Stravinsky's ballet The Firebird (1910) and of later stage, film and game adaptations is excluded; this entry records only the cited folk sources."
+    }
+  ]
+}

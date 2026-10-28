@@ -1,0 +1,86 @@
+{
+  "entry_id": "firebird",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [
+    {
+      "field": "/behavior_habitat/3",
+      "text": "It nests only in the crowns of old birch trees.",
+      "cites": [
+        "ralston1873:p.285"
+      ],
+      "reason": "ralston1873:p.285 says nothing about nesting or birch trees; find \"nests\" in ralston1873 returned 0 hits and \"birch\"/\"березы\" hits are about other matters, none about the Zhar-Ptitsa."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "/appearance/3",
+      "text": "Its feather shines like fire.",
+      "to_text": "In one tale its feather shines like fire.",
+      "from_cites": [
+        "ralston1873:p.287"
+      ],
+      "to_cites": [
+        "ralston1873:p.287"
+      ],
+      "reason": "ralston1873:p.287 gives this only as a quotation from one skazka (\"In another skazka a sportsman finds ... 'like fire does the feather shine!'\"), not as a general attribute; narrowed to the one tale."
+    }
+  ],
+  "retagged": [
+    {
+      "field": "/names/primary/native/0",
+      "text": "Жаръ-птица",
+      "from_cites": [
+        "afanasyev1865:p.513"
+      ],
+      "to_cites": [
+        "afanasyev1865:p.512",
+        "afanasyev1865:p.513"
+      ],
+      "reason": "afanasyev1865:p.512 prints only the oblique forms \"Жаръ-птицею\" and \"Жаръ-птицы\" (it does tie the name to Rus', \"Иа Руси\", which carries the people); the nominative \"Жаръ-птица\" is printed on afanasyev1865:p.513 (\"Когда поетъ Жаръ-птица\"). Added p.513 for the form, kept p.512 for the people."
+    }
+  ],
+  "reformed": [],
+  "flagged": [],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "The verified rows name six peoples: Russians and Czechs and Slovaks (Afanasyev), Slovenes (Afanasyev's Carinthian tradition), Croatians and Czechs (Ralston), and Ukrainians (Ralston's Bukovina version).",
+      "cites": [
+        "afanasyev1865:p.512",
+        "afanasyev1865:p.513",
+        "ralston1873:p.285",
+        "ralston1873:p.286"
+      ]
+    },
+    {
+      "text": "Afanasyev (1865) describes the bird for Rus' and records the Czech-Slovak name and red-gold feathers, the Carinthian grapes and gall, and the Czech belief in its healing song.",
+      "cites": [
+        "afanasyev1865:p.512",
+        "afanasyev1865:p.513",
+        "afanasyev1865:p.514"
+      ]
+    },
+    {
+      "text": "Ralston's general description, the Croatian version and the Bohemian legends on p.285 cite no source, and the tale on p.284 is footnoted to Khudyakov, not Afanasyev; on those passages Ralston counts as independent, though the p.285 description runs close to Afanasyev's 1865 wording.",
+      "cites": [
+        "ralston1873:p.284",
+        "ralston1873:p.285"
+      ]
+    },
+    {
+      "text": "Ralston's skazka retellings on pp.235, 286 and 287 are footnoted to \"Afanasief, vii.\" and are counted with Afanasyev, not as an independent source.",
+      "cites": [
+        "ralston1873:p.235",
+        "ralston1873:p.286",
+        "ralston1873:p.287"
+      ]
+    },
+    {
+      "text": "Both authors independently record the Czech healing-song belief (Ralston's \"Bohemian legends\", Afanasyev's \"Чехи убѣждены\"), so more than one people rests on more than one independent author.",
+      "cites": [
+        "ralston1873:p.285",
+        "afanasyev1865:p.514"
+      ]
+    }
+  ]
+}

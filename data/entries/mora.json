@@ -1,0 +1,760 @@
+{
+  "id": "mora",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "mora",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Мора",
+          "people": "Serbs",
+          "cites": [
+            "karadzic1818:s.v.Мора"
+          ]
+        },
+        {
+          "script": "Cyrl",
+          "text": "мора",
+          "people": "Serbs",
+          "cites": [
+            "karadzic1852:s.v.мора"
+          ]
+        },
+        {
+          "script": "Cyrl",
+          "text": "мора",
+          "people": "Montenegrins",
+          "cites": [
+            "afanasyev1868:p.101"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Marui",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.133"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "мары",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.101"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Marukhi",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.133"
+        ]
+      },
+      {
+        "romanized": "Mara",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.133"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "мара",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.101"
+            ]
+          }
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Ralston says the second half of the Russian word Kikimora means the same as the German mar or the English mare in nightmare.",
+        "cites": [
+          "ralston1872:p.133"
+        ]
+      },
+      {
+        "text": "Afanasyev sets the mary beside the words mor (death, plague), mara (phantom) and mary (bier for the dead), and says the spirits by their very name recalled death and pestilence.",
+        "cites": [
+          "afanasyev1868:pp.102-103"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Serbs",
+      "region": "Servia",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "people": "Montenegrins",
+      "region": "Montenegro",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "people": "Montenegrins",
+      "region": "Црна гора; Грбаљ (у Грбљу)",
+      "cites": [
+        "karadzic1852:s.v.мора"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "Bohemia",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "чехи",
+      "cites": [
+        "afanasyev1869:p.567"
+      ]
+    },
+    {
+      "people": "Poles",
+      "region": "Poland",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Olonets Government",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Russia",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    }
+  ],
+  "family": {
+    "value": "other",
+    "cites": [
+      "ralston1872:p.133"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "living-person",
+      "label": "Machal's living man or woman"
+    },
+    {
+      "id": "straw",
+      "label": "Machal's piece of straw"
+    },
+    {
+      "id": "white-shadow",
+      "label": "Machal's white shadow"
+    },
+    {
+      "id": "leather-bag",
+      "label": "Machal's leather bag"
+    },
+    {
+      "id": "white-mouse",
+      "label": "Machal's white mouse"
+    },
+    {
+      "id": "cat",
+      "label": "Machal's cat"
+    },
+    {
+      "id": "snake",
+      "label": "Machal's snake"
+    },
+    {
+      "id": "horse",
+      "label": "Horse (Machal; Serbian tradition)"
+    },
+    {
+      "id": "tuft-of-hair",
+      "label": "Serbian tuft of hair (dlaka)"
+    },
+    {
+      "id": "butterfly",
+      "label": "Butterfly from a witch's lips (Ralston)"
+    },
+    {
+      "id": "old-woman",
+      "label": "Ilić's old woman (via Afanasyev)"
+    },
+    {
+      "id": "fly",
+      "label": "Ilić's fly (via Afanasyev)"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "Machal says the Mora is a living being, either a man or a woman.",
+      "cites": [
+        "machal1918:p.228"
+      ],
+      "form": "living-person"
+    },
+    {
+      "text": "A man who is a Mora from his birth has bushy black eyebrows growing together above his nose.",
+      "cites": [
+        "machal1918:p.228"
+      ],
+      "form": "living-person"
+    },
+    {
+      "text": "Assuming various shapes, she may be a piece of straw.",
+      "cites": [
+        "machal1918:p.228"
+      ],
+      "form": "straw"
+    },
+    {
+      "text": "She may be a white shadow.",
+      "cites": [
+        "machal1918:p.228"
+      ],
+      "form": "white-shadow"
+    },
+    {
+      "text": "She may be a leather bag.",
+      "cites": [
+        "machal1918:p.228"
+      ],
+      "form": "leather-bag"
+    },
+    {
+      "text": "She may be a white mouse.",
+      "cites": [
+        "machal1918:p.228"
+      ],
+      "form": "white-mouse"
+    },
+    {
+      "text": "She may be a cat.",
+      "cites": [
+        "machal1918:p.228"
+      ],
+      "form": "cat"
+    },
+    {
+      "text": "She may be a snake.",
+      "cites": [
+        "machal1918:p.228"
+      ],
+      "form": "snake"
+    },
+    {
+      "text": "She may be a white horse.",
+      "cites": [
+        "machal1918:p.228"
+      ],
+      "form": "horse"
+    },
+    {
+      "text": "According to a Servian tradition the Mora sometimes turns herself into a horse.",
+      "cites": [
+        "ralston1872:p.133"
+      ],
+      "form": "horse"
+    },
+    {
+      "text": "According to a Servian tradition the Mora sometimes turns herself into a dlaka, or tuft of hair.",
+      "cites": [
+        "ralston1872:p.133"
+      ],
+      "form": "tuft-of-hair"
+    },
+    {
+      "text": "In the Serbian tale the tuft that lay over the sleeper's mouth was a long tuft of white hair.",
+      "cites": [
+        "ralston1872:p.134"
+      ],
+      "form": "tuft-of-hair"
+    },
+    {
+      "text": "In Servia, Montenegro, Bohemia and Poland the spirit passes from a witch's lips in the form of a butterfly.",
+      "cites": [
+        "ralston1872:p.133"
+      ],
+      "form": "butterfly"
+    },
+    {
+      "text": "According to Ilić, as Afanasyev reports, the mora is an old woman.",
+      "cites": [
+        "afanasyev1869:p.567"
+      ],
+      "form": "old-woman"
+    },
+    {
+      "text": "According to Ilić, at night she turns into a fly or a butterfly.",
+      "cites": [
+        "afanasyev1869:p.567"
+      ],
+      "form": "fly"
+    }
+  ],
+  "scene": [
+    {
+      "text": "At night, at the dwellings of people who are asleep.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "In the Serbian tale, a guest lodging for the night in a strange house, groaning terribly in his sleep.",
+      "cites": [
+        "ralston1872:p.134"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "russian-mary",
+      "label": "Russian mary (Marui, Marukhi), household spinners",
+      "peoples": [
+        "Russians"
+      ],
+      "appearance": [
+        {
+          "text": "In Russia the Moras, or Kikimoras, are tiny female beings.",
+          "cites": [
+            "machal1918:p.228"
+          ]
+        },
+        {
+          "text": "The Russians believe in certain little old female beings called Marui or Marukhi.",
+          "cites": [
+            "ralston1872:p.133"
+          ]
+        },
+        {
+          "text": "Machal says they are invisible and do not grow old.",
+          "cites": [
+            "machal1918:p.228"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "In Russia the Moras, or Kikimoras, play the role of household gods.",
+          "cites": [
+            "machal1918:p.228"
+          ]
+        },
+        {
+          "text": "They live behind the oven.",
+          "cites": [
+            "machal1918:p.228"
+          ]
+        },
+        {
+          "text": "At night they make various noises, whining and whistling, and trouble sleeping people.",
+          "cites": [
+            "machal1918:p.228"
+          ]
+        },
+        {
+          "text": "They are very fond of spinning and hop from place to place all the time.",
+          "cites": [
+            "machal1918:p.228"
+          ]
+        },
+        {
+          "text": "The Marui or Marukhi sit on stoves and spin by night.",
+          "cites": [
+            "ralston1872:p.133"
+          ]
+        },
+        {
+          "text": "Afanasyev adds that the mary keep whispering and hopping about, and throw bricks at people.",
+          "cites": [
+            "afanasyev1868:p.101"
+          ]
+        },
+        {
+          "text": "Manifestation of their presence always portends trouble.",
+          "cites": [
+            "machal1918:p.228"
+          ]
+        },
+        {
+          "text": "Afanasyev says the household mary ride horses, wear them out with frenzied galloping, and plait their tails and manes.",
+          "cites": [
+            "afanasyev1868:p.103"
+          ]
+        }
+      ],
+      "notes": "Machal (p.228) gives Moras and Kikimoras as one name pair for Russia, and Afanasyev (afanasyev1868:p.101) calls the mary identical with the kikimory. Only clauses whose page names the moras or mary are kept here; material the pages give for the kikimora alone is left to the kikimora entry."
+    },
+    {
+      "id": "czech-mury",
+      "label": "Czech můry (via Afanasyev)",
+      "peoples": [
+        "Czechs"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "Afanasyev says the Czechs give the names můra and its forms to vampires and werewolves.",
+          "cites": [
+            "afanasyev1869:p.567"
+          ]
+        },
+        {
+          "text": "Appearing at night, the můry fall upon sleepers and crush them.",
+          "cites": [
+            "afanasyev1869:p.567"
+          ]
+        },
+        {
+          "text": "They suck blood from the heart and milk from women's breasts.",
+          "cites": [
+            "afanasyev1869:p.567"
+          ]
+        }
+      ],
+      "notes": "appearance: afanasyev1869:p.567 gives no physical description tied to the Czech můry."
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "Machal says the Mora's soul goes out of the body at night-time, leaving the body as if dead.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "Sometimes two souls are believed to be in such a body, one of which leaves it when asleep.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "Assuming various shapes, the Mora approaches the dwellings of men at night and tries to suffocate them.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "First she sends refreshing slumber to people, and when they are asleep she frightens them with terrible dreams.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "She chokes sleepers and sucks their blood.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "For the most part she torments children.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "She also throws herself upon animals, especially horses and cows.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "She even injures and withers trees.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "In Servia, Montenegro, Bohemia and Poland the mora oppresses the breathing of sleepers at night.",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "text": "Karadžić glosses the mora as that which presses on people at night in their sleep (German Alp, Latin ephialtes, incubus).",
+      "cites": [
+        "karadzic1818:s.v.Мора"
+      ]
+    },
+    {
+      "text": "Karadžić's later dictionary says she presses on people at night in their sleep and stops their breathing.",
+      "cites": [
+        "karadzic1852:s.v.мора"
+      ]
+    },
+    {
+      "text": "In a Serbian tale a Mora so tormented a man that he left his home and rode away on his white horse, but wherever he wandered the Mora followed him.",
+      "cites": [
+        "ralston1872:pp.133-134"
+      ]
+    },
+    {
+      "text": "In the tale, the master of the house where he lodged found the guest being suffocated by a long tuft of white hair lying over his mouth.",
+      "cites": [
+        "ralston1872:p.134"
+      ]
+    },
+    {
+      "text": "In the tale, the horse, the tuft of hair and the nightmare were all one.",
+      "cites": [
+        "ralston1872:p.134"
+      ]
+    },
+    {
+      "text": "According to Ilić, as Afanasyev reports, the mora flies into houses at night and chokes people.",
+      "cites": [
+        "afanasyev1869:p.567"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "Machal says various means are employed to get rid of her.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "In Montenegro, people whom the mora presses and chokes lay an outstretched belt over the bedcover when they lie down to sleep.",
+      "cites": [
+        "karadzic1852:s.v.мора"
+      ]
+    },
+    {
+      "text": "In Grbalj there is a whole prayer that a person the mora chokes should recite before lying down to sleep.",
+      "cites": [
+        "karadzic1852:s.v.мора"
+      ]
+    },
+    {
+      "text": "The Grbalj prayer forbids the mora to cross into the white court, which is locked with strong keys, until she has counted the stars in the sky, the leaves on the mountain and the sand in the sea.",
+      "cites": [
+        "karadzic1852:s.v.мора"
+      ]
+    },
+    {
+      "text": "In the Serbian tale the master of the house cut the tuft of white hair in two with scissors, and next morning the white horse was found dead.",
+      "cites": [
+        "ralston1872:p.134"
+      ]
+    },
+    {
+      "text": "Among the Czechs, women in childbed must guard themselves and their children against the evil mara, conjuring the můra not to come near their bed.",
+      "cites": [
+        "afanasyev1869:p.567"
+      ]
+    },
+    {
+      "text": "In the Olonets Government no woman lays aside her spindle without a prayer; if she forgot, the Mara would come at night and spoil all her work.",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "text": "Machal says the Russian Moras, or Kikimoras, tangle and tear the tow of women who rise from the spinning-wheel without making the sign of the cross.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "Machal reports a general Slavic belief that souls may pass into a Mora.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "A man may be a Mora from his birth.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "Ralston says that in Servia, Montenegro, Bohemia and Poland the mora is a demoniacal spirit that passes from a witch's lips.",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "text": "Some tell that the mora is a witch who repented and vowed to eat people no more, but only to press on them at night in their sleep.",
+      "cites": [
+        "karadzic1852:s.v.мора"
+      ]
+    },
+    {
+      "text": "Others think she is a girl who will become a witch once she marries.",
+      "cites": [
+        "karadzic1852:s.v.мора"
+      ]
+    },
+    {
+      "text": "Afanasyev calls the Russian mary identical with the kikimory, who are said to be infants who died unbaptised or were cursed by their parents, and so fell into the power of the unclean force.",
+      "cites": [
+        "afanasyev1868:p.101"
+      ]
+    },
+    {
+      "text": "Afanasyev reads the mary or kikimory as personified souls of the dead who, settling in their kinsmen's dwellings, took on the character of household spirits.",
+      "cites": [
+        "afanasyev1868:p.102"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "kikimora",
+      "relation": "related"
+    },
+    {
+      "id": "vjestica",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Machal records the Mora as a general Slavic belief and gives the Moras, or Kikimoras, of Russia.",
+        "cites": [
+          "machal1918:p.228"
+        ]
+      },
+      {
+        "text": "Karadžić's Serbian dictionary records the mora, with practices from Montenegro and Grbalj.",
+        "cites": [
+          "karadzic1852:s.v.мора"
+        ]
+      },
+      {
+        "text": "Ralston places the mora in Servia, Montenegro, Bohemia and Poland, and the Marui or Marukhi among the Russians.",
+        "cites": [
+          "ralston1872:p.133"
+        ]
+      },
+      {
+        "text": "Ralston gives the derivation of the word as Afanasyev's (\"says Afanasief\"), so on that passage he is counted with Afanasyev; elsewhere on the page he cites no one and is counted independent.",
+        "cites": [
+          "ralston1872:p.133"
+        ]
+      },
+      {
+        "text": "Afanasyev's account of the Serbian and Montenegrin mora cites Karadžić's dictionary, so on that passage it is counted once with Karadžić; his Russian mary rest on Russian regional sources.",
+        "cites": [
+          "afanasyev1868:p.101"
+        ]
+      },
+      {
+        "text": "Afanasyev reports the Czech names and the childbed charm against the mara from Czech sources.",
+        "cites": [
+          "afanasyev1869:p.567"
+        ]
+      },
+      {
+        "text": "The verified rows name five peoples: Serbs, Montenegrins, Czechs, Poles and Russians.",
+        "cites": [
+          "ralston1872:p.133",
+          "machal1918:p.228"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "karadzic1818",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истолкован њемачким и латинским ријечма",
+      "year": 1818,
+      "url": "https://archive.org/details/srpskirjecnik00kara",
+      "public_domain": true
+    },
+    {
+      "source_id": "karadzic1852",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истумачен њемачкијем и латинскијем ријечима",
+      "year": 1852,
+      "url": "https://archive.org/details/srpski-rjecnik-istumacen-njemackijem-i-latinskijem-rijecima",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "other",
+      "text": "family: the hints value `other` is kept. ralston1872:p.133 presents the mora as a demoniacal spirit that oppresses sleepers at night, which fits none of household, water, forest, field, undead, disease-and-fate or monster for the creature as a whole; only the Russian mary (variant russian-mary) are household spirits."
+    },
+    {
+      "kind": "scope",
+      "text": "The Polish and Czech word forms Afanasyev prints beside мора (afanasyev1868:p.101, afanasyev1869:p.567) are OCR-garbled into Cyrillic lookalike letters (тога, шага, тйга, тйгу), so no Latin-script native rows were recorded: the exact printed form cannot be recovered from the OCR. The Czech variant label uses the spelling můra from the hints only as a label; verify should check the scan."
+    },
+    {
+      "kind": "scope",
+      "text": "karadzic1852:s.v.мора: the entry's prose version of the white-horse tale runs past the end of p.368 and the tag resolves to that page only; the ending of the tale is cited to ralston1872:p.134 instead."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1869:p.567 reports Ilić's account (old woman turning into a fly or butterfly) without naming the people it belongs to, so those clauses carry no people attribution. The same page says the Little-Russians (Малоруссы, mapped to Ukrainians) call a witch мара; this is about the witch, not tied to the mora, so no Ukrainians row was written."
+    },
+    {
+      "kind": "other",
+      "text": "verify: the spelling můra/můry used in the Czech variant could not be checked against the scan; afanasyev1869:p.567 prints the Czech forms in OCR-garbled Cyrillic lookalikes (тогу, тйгу). The clause naming the forms is flagged in the verify log."
+    }
+  ]
+}

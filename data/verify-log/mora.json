@@ -1,0 +1,79 @@
+{
+  "entry_id": "mora",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/names/meaning/0",
+      "text": "Ralston says the second half of the Russian word Kikimora means the same as the German mar or the English mare in nightmare, and that in Servia, Montenegro, Bohemia and Poland the word answering to it is mora.",
+      "to_text": "Ralston says the second half of the Russian word Kikimora means the same as the German mar or the English mare in nightmare.",
+      "from_cites": [
+        "ralston1872:p.133"
+      ],
+      "to_cites": [
+        "ralston1872:p.133"
+      ],
+      "reason": "The page says that in Servia, Montenegro, Bohemia and Poland 'the word answering to mora' means the demoniacal spirit; it does not say the word in those lands is mora (Afanasyev's source passage lists distinct Polish and Czech forms). The rewording is cut; the second-half derivation, which the page states, is kept."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/variants/1/behavior_habitat/0",
+      "text": "Afanasyev says the Czechs give the names můra and its forms to vampires and werewolves.",
+      "reason": "The page prints the Czech names in OCR-garbled lookalike letters (тогу, тйгу, тоги); the reading můra is plausible but cannot be confirmed from the OCR text, and verify could not see the scan."
+    },
+    {
+      "field": "/variants/0/behavior_habitat/7",
+      "text": "Afanasyev says the household mary ride horses, wear them out with frenzied galloping, and plait their tails and manes.",
+      "reason": "Afanasyev states this inside his mythological reading and glosses the horses as clouds ('на коняхъ (тучахъ)'); it may be his interpretation rather than a reported folk belief."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal records the Mora as a general Slavic belief and gives the Moras, or Kikimoras, of Russia.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "Karadžić's Serbian dictionary records the mora, with practices from Montenegro and Grbalj.",
+      "cites": [
+        "karadzic1852:s.v.мора"
+      ]
+    },
+    {
+      "text": "Ralston places the mora in Servia, Montenegro, Bohemia and Poland, and the Marui or Marukhi among the Russians.",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "text": "Ralston gives the derivation of the word as Afanasyev's (\"says Afanasief\"), so on that passage he is counted with Afanasyev; elsewhere on the page he cites no one and is counted independent.",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "text": "Afanasyev's account of the Serbian and Montenegrin mora cites Karadžić's dictionary, so on that passage it is counted once with Karadžić; his Russian mary rest on Russian regional sources.",
+      "cites": [
+        "afanasyev1868:p.101"
+      ]
+    },
+    {
+      "text": "Afanasyev reports the Czech names and the childbed charm against the mara from Czech sources.",
+      "cites": [
+        "afanasyev1869:p.567"
+      ]
+    },
+    {
+      "text": "The verified rows name five peoples: Serbs, Montenegrins, Czechs, Poles and Russians.",
+      "cites": [
+        "ralston1872:p.133",
+        "machal1918:p.228"
+      ]
+    }
+  ]
+}

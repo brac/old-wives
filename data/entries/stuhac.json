@@ -1,0 +1,167 @@
+{
+  "id": "stuhac",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "stuhać",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "СТУХАЋ",
+          "people": "Serbs",
+          "cites": [
+            "karadzic1852:s.v.Стухаћ"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "stuać",
+        "peoples": [
+          "Serbs"
+        ],
+        "cites": [
+          "karadzic1852:s.v.Стуаћ",
+          "karadzic1852:s.v.Стухаћ"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "СТУАЋ",
+            "people": "Serbs",
+            "cites": [
+              "karadzic1852:s.v.Стуаћ",
+              "karadzic1852:s.v.Стухаћ"
+            ]
+          }
+        ]
+      }
+    ],
+    "meaning": []
+  },
+  "peoples_regions": [
+    {
+      "people": "Serbs",
+      "region": "Herzegovina (\"По Херцеговини\")",
+      "cites": [
+        "karadzic1852:s.v.Стухаћ"
+      ]
+    }
+  ],
+  "family": {
+    "value": "unclassified",
+    "cites": []
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "In Herzegovina it is told that the stuhaći have on their feet twisted bands made of human sinews.",
+      "cites": [
+        "karadzic1852:s.v.Стухаћ"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "In Herzegovina it is told that the stuhaći are found in the great mountains.",
+      "cites": [
+        "karadzic1852:s.v.Стухаћ"
+      ]
+    },
+    {
+      "text": "In Herzegovina it is told that the stuhaći are found among rocky places.",
+      "cites": [
+        "karadzic1852:s.v.Стухаћ"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "In Herzegovina it is told that the stuhaći, like vilas or devils, are found in the great mountains and rocky places.",
+      "cites": [
+        "karadzic1852:s.v.Стухаћ"
+      ]
+    },
+    {
+      "text": "The bands of human sinews on their feet keep their feet from slipping on slopes and on stones.",
+      "cites": [
+        "karadzic1852:s.v.Стухаћ"
+      ]
+    },
+    {
+      "text": "When one of them has his band break, he catches a man, pulls the sinews out of the man's legs and makes another band.",
+      "cites": [
+        "karadzic1852:s.v.Стухаћ"
+      ]
+    }
+  ],
+  "dealing_with_it": [],
+  "origin": [],
+  "related": [],
+  "attestation": {
+    "grade": "literary",
+    "rationale": [
+      {
+        "text": "Every surviving clause rests on one source, Karadžić's 1852 Serbian dictionary, under the headword стухаћ (стуаћ is only a cross-reference to it).",
+        "cites": [
+          "karadzic1852:s.v.Стухаћ",
+          "karadzic1852:s.v.Стуаћ"
+        ]
+      },
+      {
+        "text": "Karadžić records it for one region only, Herzegovina (\"По Херцеговини приповиједају\"), mapped to Serbs; a single folklore collector counts as one 19th-century compiler, so the grade is literary.",
+        "cites": [
+          "karadzic1852:s.v.Стухаћ"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "karadzic1852",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истумачен њемачкијем и латинскијем ријечима",
+      "year": 1852,
+      "url": "https://archive.org/details/srpski-rjecnik-istumacen-njemackijem-i-latinskijem-rijecima",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "names.meaning: no source explains the name. Searched стухаћ, стухаћи, стуаћ, стуах, стух, стухач, stuhac, stuhać, stuhach, stuhatsch across all sources; the only usable entry is karadzic1852 s.v.Стухаћ, which gives no etymology."
+    },
+    {
+      "kind": "empty-field",
+      "text": "family: the hints file proposes forest, but the only source page (karadzic1852 s.v.Стухаћ) places the stuhaći in the great mountains and among rocky places, not in forests, and supports none of the eight family values plainly. Left unclassified for the verify agent or Ben to decide."
+    },
+    {
+      "kind": "empty-field",
+      "text": "dealing_with_it: no source gives a ward, offering, taboo or means of escape. Same search terms as above; karadzic1852 s.v.Стухаћ is silent on it."
+    },
+    {
+      "kind": "empty-field",
+      "text": "origin: no source says where the stuhaći come from or who becomes one. Same search terms as above."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: one source, one region (Herzegovina); no regional or people variants to nest."
+    },
+    {
+      "kind": "empty-field",
+      "text": "related: the entry compares the stuhaći to vilas or devils (\"као виле или ђаволи\"); this is a likeness, not a stated link, so no related row to vila was written. The verify agent or Ben may decide otherwise."
+    },
+    {
+      "kind": "scope",
+      "text": "karadzic1818 also carries the word: find for стуаћ and for \"гужве од\" hits karadzic1818@leaf479 (snippet: \"стуаћ, m. по ерцеговини припови-\" ... \"ногама гужве од љупвије жила\"), but the 1818 headword index has no row for стуаћ or стухаћ, so `cite karadzic1818:s.v.стуаћ` returns \"headword not found\". That page was not read and is not cited; it likely holds the 1818 version of the same entry."
+    },
+    {
+      "kind": "scope",
+      "text": "Native forms are recorded as the OCR prints the headwords, in capitals (СТУХАЋ, СТУАЋ). The running text prints the genitive стухаћа and the plural стухаћи; the clauses use the plural \"stuhaći\" as the page does. \"гужве\" is rendered as \"twisted bands\" and \"жиле\" as \"sinews\" (the word also means veins). The Herzegovina label maps to Serbs through the contested Ерцеговини/Херцеговини row of sources/peoples.json."
+    }
+  ]
+}

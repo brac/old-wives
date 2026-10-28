@@ -1,0 +1,51 @@
+{
+  "entry_id": "ala",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/appearance/0",
+      "text": "Is a dragon: Karadžić refers the ala to the aždaha, which he glosses as a dragon (Latin draco).",
+      "to_text": "Karadžić refers the ala to the aždaha, which he glosses as a dragon (Latin draco).",
+      "from_cites": [
+        "karadzic1852:s.v.Ала",
+        "karadzic1852:s.v.аждаха"
+      ],
+      "to_cites": [
+        "karadzic1852:s.v.Ала",
+        "karadzic1852:s.v.аждаха"
+      ],
+      "reason": "The lead \"Is a dragon:\" asserts identity; the Ала f. entry gives only a \"vide аждаха\" cross-reference and in the same sentence sets the ala apart from the aždaha by its particular spiritual power. Cut to the cross-reference and the gloss the pages print."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/behavior_habitat/0",
+      "text": "It is thought that the ala has a particular spiritual power beyond that of the aždaha.",
+      "reason": "Translation choice: \"да алу се мисли да има од аждахе особиту духовну силу\" can be read \"beyond/more than the aždaha\" or \"apart from (distinct from) the aždaha\"; Afanasyev p.519 quotes the sentence without \"од аждахе\", so it does not settle the reading."
+    }
+  ],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "Every surviving clause rests on Karadžić’s dictionary entry for the ala (Ала f., \"види аждаха\"), one 19th-century collector.",
+      "cites": [
+        "karadzic1852:s.v.Ала"
+      ]
+    },
+    {
+      "text": "Afanasyev’s account of the ala quotes Karadžić’s dictionary (his footnote 5, \"Срп. речник\"), so it is not independent of Karadžić and is counted once with him.",
+      "cites": [
+        "afanasyev1868:p.519"
+      ]
+    },
+    {
+      "text": "The only people named for the ala is the Serbs (\"Въ Сербіи\"); no other source in the corpus records it.",
+      "cites": [
+        "afanasyev1868:p.519"
+      ]
+    }
+  ]
+}

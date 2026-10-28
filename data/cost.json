@@ -360,6 +360,168 @@
       "usd": 0.395552,
       "usd_high": 1.97776,
       "date": "2026-10-28"
+    },
+    {
+      "creature": "kresnik",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 79946,
+      "usd": 0.319784,
+      "usd_high": 1.59892,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "stuhac",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 87160,
+      "usd": 0.34864,
+      "usd_high": 1.7432,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "morovaya-deva",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 104446,
+      "usd": 0.417784,
+      "usd_high": 2.08892,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "ala",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 100964,
+      "usd": 0.403856,
+      "usd_high": 2.01928,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "indrik",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 110069,
+      "usd": 0.440276,
+      "usd_high": 2.20138,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "moroz",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 101309,
+      "usd": 0.405236,
+      "usd_high": 2.02618,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "firebird",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 96945,
+      "usd": 0.38778,
+      "usd_high": 1.9389,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "solovei-razboinik",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 101099,
+      "usd": 0.404396,
+      "usd_high": 2.02198,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "mora",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 110528,
+      "usd": 0.442112,
+      "usd_high": 2.21056,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "kresnik",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 74482,
+      "usd": 0.297928,
+      "usd_high": 1.48964,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "stuhac",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 77006,
+      "usd": 0.308024,
+      "usd_high": 1.54012,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "ala",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 87841,
+      "usd": 0.351364,
+      "usd_high": 1.75682,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "morovaya-deva",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 90884,
+      "usd": 0.363536,
+      "usd_high": 1.81768,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "indrik",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 91623,
+      "usd": 0.366492,
+      "usd_high": 1.83246,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "solovei-razboinik",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 93487,
+      "usd": 0.373948,
+      "usd_high": 1.86974,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "mora",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 107982,
+      "usd": 0.431928,
+      "usd_high": 2.15964,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "firebird",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 103844,
+      "usd": 0.415376,
+      "usd_high": 2.07688,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "moroz",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 108879,
+      "usd": 0.435516,
+      "usd_high": 2.17758,
+      "date": "2026-10-28"
     }
   ]
 }

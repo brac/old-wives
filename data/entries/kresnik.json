@@ -1,0 +1,172 @@
+{
+  "id": "kresnik",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "krsnik",
+      "native": [
+        {
+          "script": "Latn",
+          "text": "Krsnik",
+          "people": "Croatians",
+          "cites": [
+            "machal1918:p.229"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Kresnik",
+        "native": [
+          {
+            "script": "Latn",
+            "text": "Kresnik",
+            "people": "Croatians",
+            "cites": [
+              "machal1918:p.229"
+            ]
+          }
+        ],
+        "peoples": [
+          "Croatians"
+        ],
+        "cites": [
+          "machal1918:p.229"
+        ]
+      },
+      {
+        "romanized": "Karsnik",
+        "native": [
+          {
+            "script": "Latn",
+            "text": "Karsnik",
+            "people": "Croatians",
+            "cites": [
+              "machal1918:p.229"
+            ]
+          }
+        ],
+        "peoples": [
+          "Croatians"
+        ],
+        "cites": [
+          "machal1918:p.229"
+        ]
+      }
+    ],
+    "meaning": []
+  },
+  "peoples_regions": [
+    {
+      "people": "Croatians",
+      "region": "Istria (Machal: \"The Slavs in Istria\")",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    }
+  ],
+  "family": {
+    "value": "household",
+    "cites": [
+      "machal1918:p.229"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [],
+  "scene": [
+    {
+      "text": "Among the Slavs in Istria, the house possesses it as its good genius.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "It protects the house from the Vukodlak, which the Slavs in Istria believe every single family has and which tries to harm the house.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "It battles with the Vukodlak.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    }
+  ],
+  "dealing_with_it": [],
+  "origin": [],
+  "related": [],
+  "attestation": {
+    "grade": "literary",
+    "rationale": [
+      {
+        "text": "The only page in the corpus that mentions the Krsnik is Machal (1918), in one sentence, so the entry rests on a single compiler.",
+        "cites": [
+          "machal1918:p.229"
+        ]
+      },
+      {
+        "text": "Machal attributes the belief to one group only, \"the Slavs in Istria\", which the people table maps to Croatians.",
+        "cites": [
+          "machal1918:p.229"
+        ]
+      },
+      {
+        "text": "Machal cites no collector or other source for the Istrian belief on this page, so no second independent source can be counted.",
+        "cites": [
+          "machal1918:p.229"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "The whole corpus attests this being in one sentence: machal1918:p.229 (\"The Slavs in Istria believe that every single family has its own Vukodlak, who tries to harm the house; but the house also possesses a good genius, the Krsnik (Kresnik, Karsnik), who protects it from the Vukodlak and battles with him.\"). Every field is built from that sentence alone."
+    },
+    {
+      "kind": "scope",
+      "text": "People: the page names only \"The Slavs in Istria\". The sources/peoples.json row \"Slavs in Istria\" (contested) maps it to Croatians, which is applied to the peoples_regions row, the native row and the variants' peoples. The page attaches no separate people to the three spellings Krsnik, Kresnik and Karsnik."
+    },
+    {
+      "kind": "other",
+      "text": "family: the hints file proposes other; machal1918:p.229 calls it the good genius that the house possesses and that protects the house, which supports household, so household is used."
+    },
+    {
+      "kind": "empty-field",
+      "text": "appearance: no source describes the Krsnik's body or form; searched krsnik, kresnik, karsnik, krsn, kresn, karsn, \"good genius\", крсник, кресник, карсник, крсн, кресн across all sources. Only machal1918:p.229 mentions the being."
+    },
+    {
+      "kind": "empty-field",
+      "text": "names.meaning: no source explains the name; same searches as above."
+    },
+    {
+      "kind": "empty-field",
+      "text": "dealing_with_it, origin, variants: machal1918:p.229 gives no ward, offering, origin or regional difference for the Krsnik; same searches as above found no other page on it."
+    },
+    {
+      "kind": "empty-field",
+      "text": "related: machal1918:p.229 links the Krsnik to the Vukodlak, but the page itself does not tie that name to a pilot id. The term \"Vlkodlak (Vukodlak, ...)\" falls in the spellings hints of both oboroten and vampir, and the same page says the Vlkodlak is often identified with the Vampire, so choosing an id would be my inference. Left empty for Ben or the verify agent to decide."
+    },
+    {
+      "kind": "other",
+      "text": "Homograph not used: afanasyev1865:p.97 (and per find snippets afanasyev1865:p.745, afanasyev1869:p.666) print крѣсникъ/кресник as the name of the month of June, not this being."
+    }
+  ]
+}

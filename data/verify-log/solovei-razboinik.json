@@ -1,0 +1,54 @@
+{
+  "entry_id": "solovei-razboinik",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/peoples_regions/0",
+      "text": "Russians: the old epic tale of Ilya Muromets and Solovei-razboinik, whose hero's name is the most popular among the Russian people (въ русскомъ народѣ)",
+      "reason": "afanasyev1865:p.302 says Ilya Muromets's name is the most popular among the Russian people (въ русскомъ народѣ) in the sentence after introducing the epic of Ilya and Solovei-razboinik; the page ties the hero and his songs, not Solovei by name, to that people, and the same passage (p.307) separately names a Ukrainian tale and variants from other places. Read as the epic's people, but the referent is not certain."
+    },
+    {
+      "field": "/names/primary/native/0",
+      "text": "Соловей-разбойникъ (Russians)",
+      "reason": "The form is printed on afanasyev1865:p.306, but that page prints no people term; the people Russians rests on the passage context opened at afanasyev1865:p.302, the same doubt as /peoples_regions/0."
+    },
+    {
+      "field": "/names/variants/0/native/0",
+      "text": "Соловей (Russians)",
+      "reason": "The form is printed on afanasyev1865:p.307 ('Засвисталъ Соловей по соловьиному'), but that page prints no Russian term and does print 'украинской сказкѣ'; the people Russians rests on the bylina passage context opened at afanasyev1865:p.302."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Afanasyev retells and quotes the bylina of Ilya Muromets and Solovei-razboinik, which he introduces with the remark that Ilya's name is the most popular among the Russian people.",
+      "cites": [
+        "afanasyev1865:p.302",
+        "afanasyev1865:p.306"
+      ]
+    },
+    {
+      "text": "Afanasyev reports a Ukrainian tale, printed in 'Записки о южной Руси', in which Solovei-razboinik takes the place of Zmey Gorynych.",
+      "cites": [
+        "afanasyev1865:p.307"
+      ]
+    },
+    {
+      "text": "Ralston's footnote names Solovei as a mythical robber whose voice or whistle killed those who heard it, and on that passage does not cite or quote Afanasyev, so it counts as an independent source.",
+      "cites": [
+        "ralston1873:p.258"
+      ]
+    },
+    {
+      "text": "Afanasyev's three volumes count as one source; with Ralston that is two independent authors and two peoples, the minimum for widely-attested, and the Ukrainians row rests on a single sentence of Afanasyev's.",
+      "cites": [
+        "afanasyev1865:p.307",
+        "ralston1873:p.258"
+      ]
+    }
+  ]
+}

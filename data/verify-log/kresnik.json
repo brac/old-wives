@@ -1,0 +1,30 @@
+{
+  "entry_id": "kresnik",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "The only page in the corpus that mentions the Krsnik is Machal (1918), in one sentence, so the entry rests on a single compiler.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "Machal attributes the belief to one group only, \"the Slavs in Istria\", which the people table maps to Croatians.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "Machal cites no collector or other source for the Istrian belief on this page, so no second independent source can be counted.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    }
+  ]
+}

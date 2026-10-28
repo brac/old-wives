@@ -1,0 +1,285 @@
+{
+  "id": "indrik",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "indrik",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Инд-рикъ",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1868:p.556"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Indra-zver",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "Индра-звѣрь",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.553"
+            ]
+          }
+        ],
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "afanasyev1868:p.553"
+        ]
+      },
+      {
+        "romanized": "Vyndrik",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "Вындрпкъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.554"
+            ]
+          }
+        ],
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "afanasyev1868:p.554"
+        ]
+      },
+      {
+        "romanized": "Edinorog",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "Единорогъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.554"
+            ]
+          }
+        ],
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "afanasyev1868:p.554"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Afanasyev asks whether the Indian Indra should be taken as the prototype of this mythical beast, or whether the likeness of their names is no more than a chance coincidence, and says he inclines to the second view.",
+        "cites": [
+          "afanasyev1868:p.554"
+        ]
+      },
+      {
+        "text": "Afanasyev reports that our researchers compare the word Indra (with its other forms in the copies of the Dove Book verse) with a Greek word; he lists words formed from a Sanskrit root meaning to make wet, among them the Greek hydra, a fabulous water-serpent.",
+        "cites": [
+          "afanasyev1868:p.554"
+        ]
+      },
+      {
+        "text": "A footnote states that the sound н in the word Индра-звѣрь is an inserted sound.",
+        "cites": [
+          "afanasyev1868:p.554"
+        ]
+      },
+      {
+        "text": "Afanasyev glosses the beast Indrik, father of all beasts, as equal to the hydra.",
+        "cites": [
+          "afanasyev1868:p.133"
+        ]
+      },
+      {
+        "text": "Afanasyev says the lightning-bearing horn given to the mythical serpent-king in popular tradition led the singers of the Dove Book verse to replace the name Инд-рикъ, which they did not understand, with the similar-sounding word един-рогъ (one-horn).",
+        "cites": [
+          "afanasyev1868:p.556"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "русскаго преданія (the Russian tradition of the Dove Book verse)",
+      "cites": [
+        "afanasyev1868:p.554"
+      ]
+    }
+  ],
+  "family": {
+    "value": "monster",
+    "cites": [
+      "afanasyev1868:p.556"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "It is a beast (звѣрь).",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    },
+    {
+      "text": "It has a horn, with which it digs the earth.",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "It goes wherever it wishes through the underground, as the sun goes across the sky.",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    },
+    {
+      "text": "Wherever the beast passes, a spring boils up.",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    },
+    {
+      "text": "In some variants of the verse the beast lives in the mountains of Zion, on Tabor or on Mount Athos.",
+      "cites": [
+        "afanasyev1868:p.555"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "In the verse of the Dove Book, the Indra-beast is father to all beasts.",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    },
+    {
+      "text": "In the verse, when there was a drought in the world and good people had nothing to drink or wash with, it dug the damp mother earth with its horn.",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    },
+    {
+      "text": "It dug out deep springs and brought up bubbling water.",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    },
+    {
+      "text": "It let the water run into swift rivers, small streams, and deep, large lakes.",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    },
+    {
+      "text": "It gave people water to drink and to wash with.",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    },
+    {
+      "text": "In a variant of the verse it passes through all the white-stone mountains, clears streams and channels, and lets through rivers and cold wells.",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    },
+    {
+      "text": "In a variant of the verse, when this beast stirs, the whole world (mother earth under it) rocks, like clouds across the sky.",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    },
+    {
+      "text": "In a variant of the verse, when this beast turns (with its horn), all the underground springs boil up.",
+      "cites": [
+        "afanasyev1868:p.553"
+      ]
+    },
+    {
+      "text": "As the Dove Book verse tells it, the beast moves under the earth and digs air-holes, letting through streams and channels, rivers and cold wells.",
+      "cites": [
+        "afanasyev1868:p.165"
+      ]
+    },
+    {
+      "text": "In some variants of the verse it drinks and eats in the holy mountain (in one variant, from the blue sea).",
+      "cites": [
+        "afanasyev1868:p.555"
+      ]
+    },
+    {
+      "text": "In some variants of the verse it raises its young in the holy mountain.",
+      "cites": [
+        "afanasyev1868:p.555"
+      ]
+    },
+    {
+      "text": "In some variants of the verse, when the beast turns, all the holy mountains sway.",
+      "cites": [
+        "afanasyev1868:pp.555-556"
+      ]
+    }
+  ],
+  "dealing_with_it": [],
+  "origin": [],
+  "related": [
+    {
+      "id": "zmey-gorynych",
+      "relation": "related"
+    }
+  ],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "dealing_with_it: no source gives a ward, offering, taboo or way to escape the beast. Searched indrik, индрик, индрикъ, индра, индр, индра-зверь, индра зверь, вындр, единорог, unicorn, indra, dove book, golubin, pigeon book, father of all beasts, зверям отец, голубинои книге in all sources. Afanasyev's account of the healing power of unicorn horn in the 17th century (1868 p.556) is about the unicorn's horn, not tied to this beast, and is left out."
+    },
+    {
+      "kind": "empty-field",
+      "text": "origin: no source says where the beast comes from or who becomes one; same searches as above. Afanasyev's question whether the Vedic Indra is its prototype (1868 p.554) is about the name and is filed under names.meaning."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: the sources give text variants of the Dove Book verse (1868 pp.553, 555-556), not descriptions tied to a people or region, so they stay as hedged top-level clauses. Same searches as above."
+    },
+    {
+      "kind": "scope",
+      "text": "Every clause rests on Afanasyev's 1868 vol. 2, quoting the Russian verse of the Dove Book (pp.553, 555-556) and paraphrasing it (p.165). Afanasyev's mythological reading of the beast as a lightning-bearing serpent whose horn is lightning (p.556, 'чудовищный звѣрь (=змѣй)'; p.165 'миѳическимъ змѣемъ (звѣремъ-Индрою)') is his interpretation and is not used as appearance; the family 'monster' cites his phrase 'чудовищный звѣрь' (monstrous beast) on p.556."
+    },
+    {
+      "kind": "scope",
+      "text": "related: Afanasyev 1868 p.556 says the testimony of the mountain variants 'роднитъ звѣря-Индру съ Змѣемъ Горынычемъ' (makes the Indra-beast kin to Zmey Gorynych); filed as 'related'."
+    },
+    {
+      "kind": "other",
+      "text": "Native forms are kept as printed. 'Вындрпкъ' (1868 p.554) is probably an OCR misreading of 'Вындрикъ' (the same line prints 'Ин-дрпкъ' for Индрикъ), but the page prints the п, so it is recorded so. The primary form 'Инд-рикъ' is printed with Afanasyev's hyphen on p.556, mid-line, in parallel with 'един-рогъ'. p.133 prints the locative 'Индрикѣ', not recorded as a separate row. The verse's own 'У насъ' (p.553) is the singer's voice, not Afanasyev's, so the people row rests on 'русскаго преданія' (p.554) instead."
+    },
+    {
+      "kind": "other",
+      "text": "The romanized variant names (Indra-zver, Vyndrik, Edinorog) are the drafter's transliteration of the printed forms, not spellings a source prints."
+    }
+  ]
+}
