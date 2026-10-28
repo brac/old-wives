@@ -98,6 +98,21 @@ describe("spreads", () => {
     }
   });
 
+  it("hides a section with no clauses, heading and all", () => {
+    const titles = { behavior_habitat: "Behaviour and habitat", dealing_with_it: "Dealing with it", origin: "Origin" } as const;
+    let hidden = 0;
+    for (const e of entries) {
+      const html = spread(e.id);
+      expect(html, e.id).not.toContain("Nothing in the cited sources.");
+      for (const [f, title] of Object.entries(titles) as [keyof typeof titles, string][]) {
+        expect(html.includes(`<h2>${title}</h2>`), `${e.id} ${title}`).toBe(e[f].length > 0);
+        if (e[f].length === 0) hidden++;
+      }
+    }
+    // Guard against a vacuous pass: the pilot data must contain at least one empty section.
+    expect(hidden).toBeGreaterThan(0);
+  });
+
   it("renders every attestation rationale clause with exactly its cites", () => {
     for (const e of entries) expectClauses(spread(e.id), "attestation.rationale", e.attestation.rationale, e.id);
   });
@@ -179,6 +194,15 @@ describe("contents page", () => {
     const links = [...html.matchAll(/<a\b[^>]*\bdata-contents="[^"]*"[^>]*>/g)].map((m) => m[0]);
     expect(links.map((t) => attr(t, "data-contents"))).toEqual([...CONTENTS_ORDER]);
     expect(links.map((t) => attr(t, "href"))).toEqual(CONTENTS_ORDER.map((id) => `/creatures/${id}/`));
+  });
+
+  it("gives every thumbnail the silverpoint alt", () => {
+    const html = page("index.html");
+    for (const e of entries) {
+      const img = [...html.matchAll(/<img\b[^>]*>/g)].map((m) => m[0]).find((t) => attr(t, "src") === imagePath(e.image.thumb));
+      expect(img, `${e.id} thumbnail <img>`).toBeDefined();
+      expect(attr(img!, "alt")).toBe(`Silverpoint study of ${primaryName(e)}`);
+    }
   });
 
   it("uses the contact sheet as its og:image", () => {

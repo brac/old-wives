@@ -28,7 +28,8 @@ const grade = GRADES[entry.attestation.grade];
 const nativeLine = (n: { text: string; script: string; people: string }) => `${n.text} (${n.people})`;
 const peopleList = (ps: string[]) => ps.join(", ");
 // Scene clauses not already on the left page get their own section right after
-// "Behaviour and habitat", so no sourced clause vanishes from the spread.
+// "Behaviour and habitat", so no sourced clause vanishes from the spread. A section with
+// no clauses is hidden, heading and all (Phase 4, 4d).
 const sceneOnRight = entry.scene.length > 0 && !showScene;
 const sections: { title: string; field: "behavior_habitat" | "scene" | "dealing_with_it" | "origin"; clauses: Clause[] }[] = [
   { title: "Behaviour and habitat", field: "behavior_habitat", clauses: entry.behavior_habitat },
@@ -129,16 +130,14 @@ const description = `${name}: a ${entry.family.value} creature of ${[...new Set(
         <Clauses entry={entry} clauses={entry.attestation.rationale} field="attestation.rationale" />
       </section>
 
-      {sections.map((s) => (
-        <section class="block">
-          <h2>{s.title}</h2>
-          {s.clauses.length > 0 ? (
+      {sections
+        .filter((s) => s.clauses.length > 0)
+        .map((s) => (
+          <section class="block">
+            <h2>{s.title}</h2>
             <Clauses entry={entry} clauses={s.clauses} field={s.field} />
-          ) : (
-            <p class="empty">Nothing in the cited sources.</p>
-          )}
-        </section>
-      ))}
+          </section>
+        ))}
 
       {entry.variants.length > 0 && (
         <section class="block">

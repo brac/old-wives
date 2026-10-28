@@ -7,7 +7,7 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "check": "npm run typecheck && npm test && npm run site:test",
+    "check": "npm run typecheck && tsc --noEmit -p site && npm test && npm run site:test",
     "validate": "tsx src/validate/cli.ts",
     "corpus:fetch": "tsx src/corpus/fetch.ts",
     "corpus:build": "tsx src/corpus/build.ts",

@@ -175,7 +175,8 @@ main {
 
 .spread {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  /* The plate's page is wider than the entry's (Phase 4, 4d). */
+  grid-template-columns: minmax(0, 5fr) minmax(0, 4fr);
   background: var(--leaf);
   border: 1px solid var(--rule);
   box-shadow: 0 1px 0 var(--rule);
