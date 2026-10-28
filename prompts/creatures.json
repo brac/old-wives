@@ -365,6 +365,156 @@
         { "source_id": "afanasyev1868", "pages": "133", "note": "footnote: \"о звере индрике\"" }
       ],
       "batch": 3
+    },
+    {
+      "id": "oboroten",
+      "romanized": "oboroten",
+      "family": "monster",
+      "expected_peoples": ["Russians", "Ukrainians"],
+      "spellings": ["oboroten", "oborotni", "volkodlak", "vlkodlak", "vovkulak", "werewolf", "оборотень", "оборотни", "вовкулак", "вовкулаки", "волкодлак"],
+      "source_hints": [
+        { "source_id": "ralston1872", "pages": "403-410", "note": "\"oboroten\" and \"volkodlak\", ch. VI Sorcery and Witchcraft" },
+        { "source_id": "machal1918", "pages": "228-229", "note": "vlkodlak as a living man in wolf form; p. 229 says tradition often identifies him with the vampire" },
+        { "source_id": "afanasyev1869", "pages": "525-532", "note": "оборотни, вовкулаки (table of contents)" },
+        { "source_id": "afanasyev1869", "pages": "299-302" },
+        { "source_id": "afanasyev1869", "pages": "485-487", "note": "вовкулаки with the ведьмы" }
+      ],
+      "batch": 1
+    },
+    {
+      "id": "skritek",
+      "romanized": "skřítek",
+      "family": "household",
+      "expected_peoples": ["Czechs", "Slovaks", "Poles"],
+      "spellings": ["skritek", "skřítek", "skriatek", "skrata", "skrzat", "skrzatek", "skrzot", "skrat"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "244-246", "note": "ch. III Household Gods; Czech, Slovak and Polish forms; OCR \"skfitek\"" }
+      ],
+      "batch": 1
+    },
+    {
+      "id": "divozenka",
+      "romanized": "divoženka",
+      "family": "forest",
+      "expected_peoples": ["Czechs", "Poles", "Sorbs"],
+      "spellings": ["divozenka", "divoženka", "divozenky", "divé ženy", "dziwozona", "dziwje zony", "wild women", "wild woman"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "263-265", "note": "\"wild women\", with changelings" },
+        { "source_id": "erben1893", "pages": "183", "note": "note: \"divé ženy\" with the polednice" }
+      ],
+      "batch": 1
+    },
+    {
+      "id": "dolya",
+      "romanized": "dolya",
+      "family": "disease-and-fate",
+      "expected_peoples": ["Russians", "Serbs"],
+      "spellings": ["dolya", "nedolya", "sreca", "sreća", "доля", "недоля", "среча", "срећа"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "251-252", "note": "dolya; the Serbian sreca on p. 252; overlaps likho (\"nedolya, licho\")" },
+        { "source_id": "afanasyev1869", "pages": "391-404", "note": "судьба, доля и недоля (table of contents)" }
+      ],
+      "batch": 1
+    },
+    {
+      "id": "vjestica",
+      "romanized": "vještica",
+      "family": "other",
+      "expected_peoples": ["Serbs", "Russians"],
+      "spellings": ["vjestica", "vještica", "vestica", "vedma", "вјештица", "вештица", "ведьма", "ведьмы"],
+      "source_hints": [
+        { "source_id": "karadzic1852", "pages": "s.v. вјештица", "note": "a woman whose spirit leaves her in sleep as a moth, hen or turkey" },
+        { "source_id": "afanasyev1869", "pages": "422-525", "note": "ch. XXVI ведуны, ведьмы (dense)" },
+        { "source_id": "ralston1872", "pages": "168", "note": "\"The Witch\", storyland beings" },
+        { "source_id": "ralston1872", "pages": "378-416", "note": "ch. VI wizards and witches; human sorcerers, check page by page" }
+      ],
+      "batch": 2
+    },
+    {
+      "id": "tugarin",
+      "romanized": "Tugarin Zmeevich",
+      "family": "monster",
+      "expected_peoples": ["Russians"],
+      "spellings": ["tugarin", "tugarin zmeevich", "тугарин", "тугарин змеевич"],
+      "source_hints": [
+        { "source_id": "afanasyev1868", "pages": "519-526", "note": "\"сын змея\"; overlap risk with zmey-gorynych" },
+        { "source_id": "ralston1872", "pages": "173" },
+        { "source_id": "afanasyev1865", "pages": "507" },
+        { "source_id": "afanasyev1869", "pages": "837" }
+      ],
+      "batch": 2
+    },
+    {
+      "id": "usud",
+      "romanized": "usud",
+      "family": "disease-and-fate",
+      "expected_peoples": ["Serbs"],
+      "spellings": ["usud", "усуд"],
+      "source_hints": [
+        { "source_id": "afanasyev1869", "pages": "409-410", "note": "Усуд и Среча as living beings in Serbian tales" },
+        { "source_id": "karadzic1852", "pages": "s.v. усуд", "note": "\"тако ти је усуд усудио\" (in a tale)" }
+      ],
+      "batch": 2
+    },
+    {
+      "id": "zduhac",
+      "romanized": "zduhać",
+      "family": "other",
+      "expected_peoples": ["Serbs"],
+      "spellings": ["zduhac", "zduhać", "zduhacz", "zduh", "vjedogonja", "здухач", "здухаћ", "вједогоња"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "227-228", "note": "OCR \"zduhacz\"; with vjedogonja" },
+        { "source_id": "karadzic1852", "pages": "s.v. здухач", "note": "one line: \"вједовит човјек\"" }
+      ],
+      "batch": 2
+    },
+    {
+      "id": "ludki",
+      "romanized": "ludki",
+      "family": "other",
+      "expected_peoples": ["Sorbs"],
+      "spellings": ["ludki", "little people", "лудки"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "247-248", "note": "Lusatian \"little people\"" }
+      ],
+      "batch": 2
+    },
+    {
+      "id": "kresnik",
+      "romanized": "krsnik",
+      "family": "other",
+      "expected_peoples": ["Croatians", "Slovenes"],
+      "spellings": ["krsnik", "kresnik", "karsnik"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "229", "note": "one sentence: the house's good genius against the vukodlak, Istria" }
+      ],
+      "batch": 3
+    },
+    {
+      "id": "moroz",
+      "romanized": "Moroz",
+      "family": "other",
+      "expected_peoples": ["Russians"],
+      "spellings": ["moroz", "morozko", "frost", "мороз", "морозко", "мороз-трескун"],
+      "source_hints": [
+        { "source_id": "ralston1873", "pages": "214-223", "note": "the \"Frost\" tale and commentary" },
+        { "source_id": "afanasyev1868", "pages": "52", "note": "Frost fed kisel and kutya" },
+        { "source_id": "afanasyev1868", "pages": "703-704", "note": "мороз-трескун" },
+        { "source_id": "afanasyev1865", "pages": "583-585" }
+      ],
+      "batch": 3
+    },
+    {
+      "id": "solovei-razboinik",
+      "romanized": "Solovei Razboinik",
+      "family": "monster",
+      "expected_peoples": ["Russians"],
+      "spellings": ["solovei", "solovei razboinik", "соловей-разбойник", "соловей разбойник"],
+      "source_hints": [
+        { "source_id": "afanasyev1865", "pages": "306", "note": "one passage: соловей разбойник makes a nest" },
+        { "source_id": "ralston1873", "pages": "258", "note": "footnote: solovei is also the name of a mythical robber" }
+      ],
+      "batch": 3
     }
   ]
 }

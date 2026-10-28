@@ -95,3 +95,46 @@ Adding any of them is the planner's or Ben's call.
 - zduhać: machal1918 2, karadzic1852 1.
 - vještica / vedma (witch): karadzic 21, afanasyev ~280 pages; scope (human or being) to be ruled.
 - skřítek: machal1918 4. bludička: erben1893 9. divoženka: machal1918 1.
+
+## Round 2 (planner's additions)
+
+Milestone 4b-0b, run on 2026-10-28 with the same method as above (the `normalize()` fold
+with word boundaries added, then snippet reads of every hit set). The planner's picks are
+listed first, then beings found while scanning. **Result: 12 kept, so batch 3 holds 9 and
+one slot stays open.** No coverage was invented to fill it.
+
+| id | family | batch | decision | sources (hit pages; ranges about the being) | reasoning |
+|---|---|---|---|---|---|
+| oboroten | monster | 1 | keep | ralston1872 (403-410); machal1918 (228-229); afanasyev1869 (299-302, 485-487, 525-532) | The werewolf: a living person in wolf form. Ralston p. 403 gives "oboroten" and "volkodlak". Distinct from the pilot vampir, although Machal p. 229 notes that tradition often identifies the two; vukodlak stays on the vampir row. |
+| zduhac | other | 2 | keep | machal1918 2 (227-228); karadzic1852 (s.v. здухач) | Thin. A Serbian sleeper's soul that flies out (Machal, with vjedogonja); Karadžić has one line ("вједовит човјек"). |
+| vjestica | other | 2 | keep, scope flagged | karadzic1852 (s.v. вјештица, pp. 67-68); afanasyev1869 (422-525, ch. XXVI); ralston1872 (168, 378-416) | Karadžić describes a woman with a devilish spirit that leaves her in sleep as a moth, hen or turkey: a being, not only a human sorcerer. The 4b-0 question (human or being) is still Ben's to rule; if he rules it out, batch 2 drops to 9. Ralston's chapter VI is mostly about human wizards and witches. |
+| skritek | household | 1 | keep | machal1918 4 (244-246) | Czech, Slovak and Polish household genius (skřítek, skriatek, skrzat), treated beside the domovoy rather than as a name for it. |
+| bludicka | | | no hits | erben1893 1 (161, noise); afanasyev "блуждающий огонёк" (92, as the domovoi's soul) | Erben p. 161 is a poem's "světýlko"; no page treats the will-o'-the-wisp as a being. |
+| divozenka | forest | 1 | keep | machal1918 3 (263-265); erben1893 1 (183) | Machal's "wild women" (Bohemian divozenky, Polish dziwozony, Lusatian dziwje zony), with changelings. Erben p. 183 is a note pairing them with the polednice. |
+| dolya | disease-and-fate | 1 | keep | machal1918 2 (251-252); afanasyev1869 (391-404) | Personified fate. Overlap risk with likho (Machal p. 252: "nedolya, licho") and zlydni; Machal's Serbian sreća is filed here as a spelling. |
+| strzyga | | | no hits | ralston1873 (163, a title only); calmet1850v2 (64-65, 78, 184) | Calmet's striges are the classical night birds, not a Slavic being; Ralston uses "striga" only as a title for Baba Yaga. |
+| zmora | | | variant of mora | karadzic1818 1 | The pilot-era mora row already carries zmora. |
+| planetnik | | | no hits | karadzic1818, karadzic1852 (s.v. грабанцијаш) | No Polish płanetnik. Karadžić's грабанцијаш, who leads clouds and hail with the vile, is a human student, so it is not offered. |
+| boginki | | | no hits | machal1918 (262-266, changelings) | No page names boginki; the changeling material belongs to divozenka and the leshy. |
+| rarog | | | no hits | none | No page names rarog, raroh or рарог. |
+| ognenny zmei | | | variant of zmey-gorynych | afanasyev1868 23 (133-592); afanasyev1869 7 | Afanasyev uses огненный змей for the thunder dragon in general (treasure guardian p. 365, the cloud demon pp. 509-511); the night lover of young women is one sentence on p. 559. Not treated as distinct. |
+| hejkal | | | no hits | none | No page names hejkal. |
+| usud | disease-and-fate | 2 | keep | afanasyev1869 (409-410); karadzic1852 (s.v. усуд) | Thin. Afanasyev p. 410: Usud and Sreća appear in Serbian tales "as living beings". Overlap risk with dolya. |
+| rozhanitsy / sudice | | | scope: Ben's call | machal1918 (250); afanasyev1869 (318-420) | Venerated by modern neopagans; not added, as the brief says. |
+| rod | | | scope: Ben's call | afanasyev1869 (318-319, 368) | Same. |
+| kresnik | other | 3 | keep | machal1918 1 (229) | Thin: one sentence (Istria; the house's good genius that fights the vukodlak). afanasyev1865 p. 97 "кресник" is the month of June. |
+| ludki | other | 2 | keep | machal1918 2 (247-248) | Lusatian "little people", the first inhabitants of Lusatia. |
+| tugarin | monster | 2 | keep | afanasyev1868 (519-526); ralston1872 (173); afanasyev1865 (507); afanasyev1869 (837) | Tugarin Zmeevich, the bylina serpent's son. Overlap risk with zmey-gorynych. ralston1873 p. 98 "Fedor Tugarin" is a hero's name, not this being. |
+| moroz | other | 3 | keep | ralston1873 (214-223); afanasyev1868 (52, 703-704); afanasyev1865 (583-585) | Frost personified (the "Frost" tale; fed kisel and kutya at Christmas, Afanasyev 1868 p. 52). Not prayed to today, so in scope. |
+| solovei-razboinik | monster | 3 | keep | afanasyev1865 (306); ralston1873 (258, footnote) | Thin: one passage and one footnote. |
+| chudo-yudo | | | variant of zmey-gorynych | ralston1873 7 (70-72, 115, 134) | Ralston p. 70: the dragon of the tale "is called, not a snake, but a chudo-yudo": another name for the tale dragon. |
+| bereginya | | | scope: Ben's call | afanasyev1869 (124-125, 418) | Named in the old sermons among beings that received offerings; venerated by modern neopagans. Not added. |
+| vij, bes/chort | | | no hits / out | | "вий" hits are noise; the chort is the Christian devil, too generic for an entry. |
+
+### Batches after round 2
+
+| batch | creatures | families |
+|---|---|---|
+| 1 | kikimora, vila, polevik, likho, koschei, alkonost, oboroten, skritek, divozenka, dolya | 7 |
+| 2 | navka, zlydni, polunochnitsa, tryasavitsy, sirin, vjestica, tugarin, usud, zduhac, ludki | 5 |
+| 3 | mora, stuhac, morovaya-deva, ala, firebird, indrik, kresnik, moroz, solovei-razboinik | 4 (9 creatures; one slot open) |
