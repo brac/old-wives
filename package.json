@@ -15,6 +15,7 @@
     "cite": "tsx src/corpus/cite-cli.ts",
     "find": "tsx src/corpus/find-cli.ts",
     "stats": "tsx src/report/stats.ts",
+    "cost": "tsx src/cost/cli.ts",
     "plates": "tsx --env-file-if-exists=.env src/plates/generate.ts",
     "plates:finalise": "tsx src/plates/finalise.ts",
     "site:dev": "npm --prefix site run dev",

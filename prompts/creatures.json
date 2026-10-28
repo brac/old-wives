@@ -142,6 +142,229 @@
         { "source_id": "afanasyev1869", "pages": "586-595" },
         { "source_id": "machal1918", "pages": "266", "note": "one line: \"Jaga-baba, Jezibaba\"" }
       ]
+    },
+    {
+      "id": "kikimora",
+      "romanized": "kikimora",
+      "family": "household",
+      "expected_peoples": ["Russians"],
+      "spellings": ["kikimora", "kikimoras", "kikimori", "shishimora", "кикимора", "кикиморы", "кикимору", "шишимора"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "228", "note": "\"the moras, or kikimoras\"; the same page is the mora's" },
+        { "source_id": "ralston1872", "pages": "133", "note": "kikimora or shishimora as incubus" },
+        { "source_id": "ralston1872", "pages": "174" },
+        { "source_id": "afanasyev1868", "pages": "101-102", "note": "the name's etymology" },
+        { "source_id": "afanasyev1868", "pages": "578" },
+        { "source_id": "afanasyev1869", "pages": "136-137", "note": "with the poludnitsy, as elves" }
+      ],
+      "batch": 1
+    },
+    {
+      "id": "vila",
+      "romanized": "vila",
+      "family": "water",
+      "expected_peoples": ["Serbs", "Bulgarians"],
+      "spellings": ["vila", "vily", "vile", "vilas", "samovila", "samodiva", "вила", "вилы", "виле", "самовила", "самодива"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "256-260", "note": "\"vila\" is a whole-word match; a substring search also hits \"village\"" },
+        { "source_id": "ralston1872", "pages": "146-147" },
+        { "source_id": "ralston1873", "pages": "205" },
+        { "source_id": "afanasyev1869", "pages": "152-193", "note": "dense; the вилы section" },
+        { "source_id": "karadzic1818", "pages": "s.v. Вила" },
+        { "source_id": "karadzic1852", "pages": "s.v. вила, s.v. самовила" }
+      ],
+      "batch": 1
+    },
+    {
+      "id": "polevik",
+      "romanized": "polevik",
+      "family": "field",
+      "expected_peoples": ["Russians"],
+      "spellings": ["polevik", "polevoy", "полевик", "полевики", "полевиков"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "268-269", "note": "\"polevik or polevoy\"" },
+        { "source_id": "afanasyev1868", "pages": "330", "note": "Kiev and Chernigov: лисуны and полевики" },
+        { "source_id": "afanasyev1869", "pages": "771" }
+      ],
+      "batch": 1
+    },
+    {
+      "id": "likho",
+      "romanized": "likho",
+      "family": "disease-and-fate",
+      "expected_peoples": ["Russians"],
+      "spellings": ["likho", "licho", "one-eyed likho", "лихо", "лиха", "лихомъ"],
+      "source_hints": [
+        { "source_id": "ralston1873", "pages": "178-184", "note": "\"One-eyed Likho\"" },
+        { "source_id": "afanasyev1868", "pages": "696-700" },
+        { "source_id": "afanasyev1869", "pages": "396-404", "note": "лихо as a common word (\"badly\") gives noise" },
+        { "source_id": "machal1918", "pages": "252", "note": "one line: \"nedolya, licho\"" }
+      ],
+      "batch": 1
+    },
+    {
+      "id": "koschei",
+      "romanized": "Koschei",
+      "family": "monster",
+      "expected_peoples": ["Russians"],
+      "spellings": ["koshchei", "kashchei", "koschei", "koshchei the deathless", "koshchei the immortal", "кощей", "кощеи", "кащей", "безсмертный"],
+      "source_hints": [
+        { "source_id": "ralston1872", "pages": "164-168", "note": "\"Koshchei the Immortal\"" },
+        { "source_id": "ralston1873", "pages": "84-120", "note": "\"Koshchei the Deathless\"; dense" },
+        { "source_id": "afanasyev1868", "pages": "594-604", "note": "\"кощей\"" }
+      ],
+      "batch": 1
+    },
+    {
+      "id": "alkonost",
+      "romanized": "alkonost",
+      "family": "other",
+      "expected_peoples": ["Russians"],
+      "spellings": ["alkonost", "алконост", "алконостом"],
+      "source_hints": [
+        { "source_id": "afanasyev1868", "pages": "135", "note": "paired with sirin as paradise birds" },
+        { "source_id": "afanasyev1869", "pages": "221" }
+      ],
+      "batch": 1
+    },
+    {
+      "id": "navka",
+      "romanized": "navka",
+      "family": "undead",
+      "expected_peoples": ["Ukrainians", "Bulgarians"],
+      "spellings": ["navka", "navky", "navki", "mavka", "mavky", "mavkas", "навка", "навки", "нявки", "мавка", "мавки"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "253-255", "note": "ch. V Navky and Rusalky; the same chapter is a rusalka hint, so keep the two apart" },
+        { "source_id": "ralston1872", "pages": "145" },
+        { "source_id": "afanasyev1869", "pages": "145-149" },
+        { "source_id": "afanasyev1869", "pages": "241-242", "note": "\"мавки\"" }
+      ],
+      "batch": 2
+    },
+    {
+      "id": "zlydni",
+      "romanized": "zlydni",
+      "family": "disease-and-fate",
+      "expected_peoples": ["Ukrainians"],
+      "spellings": ["zlydni", "zlyden", "злыдни", "злыдней", "злыднях", "злидни", "злыдень"],
+      "source_hints": [
+        { "source_id": "afanasyev1869", "pages": "404-408", "note": "under fate, судьба, доля и недоля" },
+        { "source_id": "afanasyev1868", "pages": "699", "note": "with likho in one tale" }
+      ],
+      "batch": 2
+    },
+    {
+      "id": "polunochnitsa",
+      "romanized": "polunochnitsa",
+      "family": "field",
+      "expected_peoples": ["Russians"],
+      "spellings": ["polunochnitsa", "polunochnitsas", "полуночница", "полуночницы", "полуночниц"],
+      "source_hints": [
+        { "source_id": "ralston1872", "pages": "148", "note": "\"twelve midnight sisters\"" },
+        { "source_id": "afanasyev1869", "pages": "77", "note": "Archangel; afanasyev1865 p. 224 is a charm to the dawn, not this being" }
+      ],
+      "batch": 2
+    },
+    {
+      "id": "tryasavitsy",
+      "romanized": "tryasavitsy",
+      "family": "disease-and-fate",
+      "expected_peoples": ["Russians"],
+      "spellings": ["tryasavitsy", "tryasavitsa", "fever-sisters", "fever sisters", "трясавицы", "трясовица", "лихорадка", "лихорадки"],
+      "source_hints": [
+        { "source_id": "afanasyev1869", "pages": "73-101", "note": "the лихорадки and charms against them; dense" },
+        { "source_id": "ralston1872", "pages": "393", "note": "\"fever-sisters\"" }
+      ],
+      "batch": 2
+    },
+    {
+      "id": "sirin",
+      "romanized": "sirin",
+      "family": "other",
+      "expected_peoples": ["Russians"],
+      "spellings": ["sirin", "сирин", "сирином"],
+      "source_hints": [
+        { "source_id": "afanasyev1868", "pages": "135", "note": "paired with alkonost" },
+        { "source_id": "afanasyev1869", "pages": "153" },
+        { "source_id": "afanasyev1869", "pages": "221" }
+      ],
+      "batch": 2
+    },
+    {
+      "id": "mora",
+      "romanized": "mora",
+      "family": "other",
+      "expected_peoples": ["Serbs", "Czechs", "Poles"],
+      "spellings": ["mora", "moras", "zmora", "můra", "мора", "мары"],
+      "source_hints": [
+        { "source_id": "machal1918", "pages": "228", "note": "shared with kikimora" },
+        { "source_id": "ralston1872", "pages": "133-134", "note": "Servia, Montenegro, Bohemia, Poland" },
+        { "source_id": "karadzic1818", "pages": "s.v. Мора" },
+        { "source_id": "karadzic1852", "pages": "s.v. мора", "note": "мора is also \"must\" and \"of the sea\"; most hits are noise" },
+        { "source_id": "afanasyev1868", "pages": "101-102", "note": "etymology, with kikimora" }
+      ],
+      "batch": 3
+    },
+    {
+      "id": "stuhac",
+      "romanized": "stuhać",
+      "family": "forest",
+      "expected_peoples": ["Serbs"],
+      "spellings": ["stuhać", "stuhac", "стухаћ", "стухаћи", "стуаћ"],
+      "source_hints": [
+        { "source_id": "karadzic1852", "pages": "s.v. стухаћ", "note": "Herzegovina; also s.v. стуаћ, a cross-reference" }
+      ],
+      "batch": 3
+    },
+    {
+      "id": "morovaya-deva",
+      "romanized": "morovaya deva",
+      "family": "disease-and-fate",
+      "expected_peoples": ["Russians", "Poles", "Sorbs"],
+      "spellings": ["моровая дева", "моровои девы", "моровую деву", "plague maiden"],
+      "source_hints": [
+        { "source_id": "afanasyev1869", "pages": "103-113", "note": "\"моровая дева (чума)\"" },
+        { "source_id": "afanasyev1865", "pages": "529" }
+      ],
+      "batch": 3
+    },
+    {
+      "id": "ala",
+      "romanized": "ala",
+      "family": "monster",
+      "expected_peoples": ["Serbs"],
+      "spellings": ["ala", "але", "ала", "алу", "аждаха", "аждаја"],
+      "source_hints": [
+        { "source_id": "karadzic1852", "pages": "s.v. ала, s.v. аждаха", "note": "ала is a whole-word match; most hits are other words" },
+        { "source_id": "afanasyev1868", "pages": "519", "note": "quotes Karadžić on the ала" }
+      ],
+      "batch": 3
+    },
+    {
+      "id": "firebird",
+      "romanized": "firebird",
+      "family": "other",
+      "expected_peoples": ["Russians"],
+      "spellings": ["firebird", "fire bird", "fire-bird", "zhar-ptitsa", "жар-птица", "жар-птицы", "жар-птицею"],
+      "source_hints": [
+        { "source_id": "ralston1873", "pages": "284-287", "note": "\"the Fire Bird\"" },
+        { "source_id": "afanasyev1865", "pages": "512-514" },
+        { "source_id": "afanasyev1868", "pages": "295" },
+        { "source_id": "afanasyev1868", "pages": "311" }
+      ],
+      "batch": 3
+    },
+    {
+      "id": "indrik",
+      "romanized": "indrik",
+      "family": "monster",
+      "expected_peoples": ["Russians"],
+      "spellings": ["indrik", "индрик", "индра-зверь", "индра зверь"],
+      "source_hints": [
+        { "source_id": "afanasyev1868", "pages": "553-554", "note": "\"индра-зверь\" in the Dove Book verse" },
+        { "source_id": "afanasyev1868", "pages": "133", "note": "footnote: \"о звере индрике\"" }
+      ],
+      "batch": 3
     }
   ]
 }
