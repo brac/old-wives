@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "license": "CC-BY-4.0",
+  "license": "MIT",
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "check": "npm run typecheck && npm test",
+    "check": "npm run typecheck && npm test && npm run site:test",
     "validate": "tsx src/validate/cli.ts",
     "corpus:fetch": "tsx src/corpus/fetch.ts",
     "corpus:build": "tsx src/corpus/build.ts",
@@ -16,7 +16,12 @@
     "find": "tsx src/corpus/find-cli.ts",
     "stats": "tsx src/report/stats.ts",
     "plates": "tsx --env-file-if-exists=.env src/plates/generate.ts",
-    "plates:finalise": "tsx src/plates/finalise.ts"
+    "plates:finalise": "tsx src/plates/finalise.ts",
+    "site:dev": "npm --prefix site run dev",
+    "site:build": "npm --prefix site run build",
+    "site:preview": "npm --prefix site run preview",
+    "site:test": "npm --prefix site run build && npm --prefix site test",
+    "site:contact-sheet": "npm --prefix site run contact-sheet"
   },
   "devDependencies": {
     "@fal-ai/client": "1.10.1",

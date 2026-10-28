@@ -1,0 +1,47 @@
+---
+// Minimal base layout. 3c owns the design; this only fixes the head.
+import "@fontsource/eb-garamond/400.css";
+import "@fontsource/eb-garamond/400-italic.css";
+import { SITE_NAME, SITE_TITLE } from "../lib/site.ts";
+
+interface Props {
+  /** Page title. The site title is used alone when omitted. */
+  title?: string;
+  description?: string;
+  /** Absolute or root-relative OG image path. */
+  ogImage?: string;
+}
+
+const { title, description = SITE_TITLE, ogImage = "/og/contact-sheet.png" } = Astro.props;
+const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_TITLE;
+const ogUrl = Astro.site ? new URL(ogImage, Astro.site).href : ogImage;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  body {
+    margin: 0 auto;
+    max-width: 48rem;
+    padding: 1rem;
+    background: #f4f1ea;
+    color: #1d1b18;
+    font-family: "EB Garamond", Georgia, serif;
+  }
+</style>

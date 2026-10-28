@@ -1,0 +1,14 @@
+---
+// Placeholder contents page; 3c replaces it.
+import Base from "../layouts/Base.astro";
+import { getEntries, primaryName } from "../lib/entries.ts";
+import { SITE_TITLE } from "../lib/site.ts";
+
+const entries = getEntries();
+---
+<Base>
+  <h1>{SITE_TITLE}</h1>
+  <ol>
+    {entries.map((e) => <li><a href={`/creatures/${e.id}/`}>{primaryName(e)}</a></li>)}
+  </ol>
+</Base>
