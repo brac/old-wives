@@ -48,7 +48,7 @@ page; the plate style is specified in `style/STYLE-SHEET.md`, and the decision l
 | --- | --- | --- |
 | `typecheck` | `tsc --noEmit` | Type check `src` and `test` |
 | `test` | `vitest run` | Run unit tests |
-| `check` | `npm run typecheck && npm test` | Typecheck then test |
+| `check` | `npm run typecheck && npm test && npm run site:test` | Typecheck, unit tests, then the site build and its tests |
 | `validate` | `tsx src/validate/cli.ts` | Validate entries or verify logs |
 | `corpus:fetch` | `tsx src/corpus/fetch.ts` | Download raw source files |
 | `corpus:build` | `tsx src/corpus/build.ts` | Build per-page JSONL under `sources/pages/` |
@@ -61,7 +61,8 @@ page; the plate style is specified in `style/STYLE-SHEET.md`, and the decision l
 | `site:dev` | runs in `site/` | Start the book site's dev server |
 | `site:build` | runs in `site/` | Build the static site |
 | `site:preview` | runs in `site/` | Serve the built site locally |
-| `site:test` | runs in `site/` | Run the site's tests |
+| `site:test` | runs in `site/` | Build the site, then run its tests against the build |
+| `site:contact-sheet` | runs in `site/` | Write `docs/contact-sheet.webp`, the contact sheet of the plate thumbnails |
 
 ## Running the site
 

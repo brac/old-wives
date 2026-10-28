@@ -87,6 +87,16 @@ describe("spreads", () => {
     for (const e of entries) expectClauses(spread(e.id), "appearance", e.appearance, e.id);
   });
 
+  it("renders every scene clause with exactly its cites, on one page only", () => {
+    for (const e of entries) {
+      const html = spread(e.id);
+      expectClauses(html, "scene", e.scene, e.id);
+      if (e.scene.length === 0) continue;
+      const leftHasScene = e.appearance.length === 0;
+      expect(html.includes("<h2>Scene</h2>"), `${e.id} Scene section`).toBe(!leftHasScene);
+    }
+  });
+
   it("renders every attestation rationale clause with exactly its cites", () => {
     for (const e of entries) expectClauses(spread(e.id), "attestation.rationale", e.attestation.rationale, e.id);
   });

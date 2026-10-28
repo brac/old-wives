@@ -27,8 +27,12 @@ const showScene = entry.appearance.length === 0 && entry.scene.length > 0;
 const grade = GRADES[entry.attestation.grade];
 const nativeLine = (n: { text: string; script: string; people: string }) => `${n.text} (${n.people})`;
 const peopleList = (ps: string[]) => ps.join(", ");
-const sections: { title: string; field: "behavior_habitat" | "dealing_with_it" | "origin"; clauses: Clause[] }[] = [
+// Scene clauses not already on the left page get their own section right after
+// "Behaviour and habitat", so no sourced clause vanishes from the spread.
+const sceneOnRight = entry.scene.length > 0 && !showScene;
+const sections: { title: string; field: "behavior_habitat" | "scene" | "dealing_with_it" | "origin"; clauses: Clause[] }[] = [
   { title: "Behaviour and habitat", field: "behavior_habitat", clauses: entry.behavior_habitat },
+  ...(sceneOnRight ? [{ title: "Scene", field: "scene" as const, clauses: entry.scene }] : []),
   { title: "Dealing with it", field: "dealing_with_it", clauses: entry.dealing_with_it },
   { title: "Origin", field: "origin", clauses: entry.origin },
 ];

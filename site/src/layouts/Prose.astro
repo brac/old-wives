@@ -1,0 +1,17 @@
+---
+// Prose layout for the Markdown content pages (/about, /method, /data). The Markdown
+// carries its own H1; this layout only frames it on one page of the book.
+import Base from "./Base.astro";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+<Base title={title} description={description}>
+  <article class="prose">
+    <slot />
+  </article>
+</Base>

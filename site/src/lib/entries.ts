@@ -7,6 +7,8 @@ import { fileURLToPath } from "node:url";
 import { validateEntry } from "../../../src/validate/validate.ts";
 import { CONTENTS_ORDER } from "./contents.ts";
 import { chip, parseCite, type Chip } from "./cite.ts";
+import { deepLink, deepLinkMode, type DeepLinkMode, type PageLabelRow } from "./deeplink.ts";
+import { parsePages } from "../../../src/corpus/manifest.ts";
 
 export { CONTENTS_ORDER };
 
@@ -84,6 +86,12 @@ export interface SourceInfo {
   title: string;
   /** archive.org item page, or undefined for a source that is not an archive.org item. */
   url: string | undefined;
+  /** The archive.org item id, or undefined. */
+  iaItem: string | undefined;
+  /** Whether chips for this source may deep-link to a page (see deeplink.ts). */
+  deepLinkMode: DeepLinkMode;
+  /** The corpus pages file, relative to the repo root. */
+  pagesFile: string;
 }
 
 let cache: Map<string, LoadedEntry> | undefined;
@@ -171,6 +179,9 @@ interface ManifestRow {
   year: number;
   title: string;
   origin?: { type: string; item?: string };
+  locator: "page" | "headword";
+  page_label_source?: "ia" | "header";
+  pages_file: string;
 }
 
 let sources: Map<string, SourceInfo> | undefined;
@@ -182,13 +193,16 @@ export function getSources(): Map<string, SourceInfo> {
   sources = new Map(
     rows.map((r) => [
       r.id,
-      {
+      ((iaItem) => ({
         id: r.id,
         author: r.author,
         year: r.year,
         title: r.title,
-        url: r.origin?.type === "ia" && r.origin.item ? `https://archive.org/details/${r.origin.item}` : undefined,
-      },
+        url: iaItem ? `https://archive.org/details/${iaItem}` : undefined,
+        iaItem,
+        deepLinkMode: deepLinkMode({ iaItem, locator: r.locator, pageLabelSource: r.page_label_source }),
+        pagesFile: r.pages_file,
+      }))(r.origin?.type === "ia" && r.origin.item ? r.origin.item : undefined),
     ]),
   );
   return sources;
@@ -233,7 +247,22 @@ export function indexRows(): IndexRow[] {
  * manifest, falling back to the entry's own sources[].url when the manifest has none.
  */
 export function entryChip(entry: Entry, tag: string): Chip {
-  const { sourceId } = parseCite(tag);
-  const own = entry.sources.find((s) => s.source_id === sourceId);
-  return chip(tag, getSource(sourceId), own?.url);
+  const parsed = parseCite(tag);
+  const own = entry.sources.find((s) => s.source_id === parsed.sourceId);
+  const source = getSource(parsed.sourceId);
+  const page = deepLink(source.iaItem, source.deepLinkMode, parsed, pageLabels(source));
+  return chip(tag, { ...source, url: page ?? source.url }, own?.url);
+}
+
+const labelCache = new Map<string, PageLabelRow[]>();
+
+/** The leaf and page label of every page in a source's corpus pages file (cached). */
+function pageLabels(source: SourceInfo): PageLabelRow[] {
+  if (source.deepLinkMode === "item") return [];
+  let rows = labelCache.get(source.id);
+  if (!rows) {
+    rows = parsePages(readFileSync(join(REPO_ROOT, source.pagesFile), "utf8")).map((r) => ({ leaf: r.leaf, page: r.page }));
+    labelCache.set(source.id, rows);
+  }
+  return rows;
 }
