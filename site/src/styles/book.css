@@ -1,0 +1,422 @@
+/* Beasts: the book design. One stylesheet, plain CSS, monochrome to match the plates.
+   Tokens are listed in .phase-loop/reports/3c-1.md for review. */
+
+:root {
+  /* colour: warm greys only, no hue accents */
+  --paper: #f4f1ea;      /* ground */
+  --leaf: #faf8f3;       /* the page surface of a spread */
+  --ink: #1d1b18;        /* text */
+  --ink-soft: #5b564e;   /* secondary text, chips, captions */
+  --rule: #c9c2b4;       /* hairlines */
+  --rule-strong: #8f887c;/* the fold and the badge border */
+
+  /* type */
+  --face: "EB Garamond", Georgia, "Times New Roman", serif;
+  --text: 1.125rem;      /* 18px body */
+  --leading: 1.5;
+  --small: 0.875rem;     /* captions, notes */
+  --chip: 0.75rem;       /* cite chips */
+  --label: 0.8125rem;    /* small-caps section labels */
+  --title: 2.25rem;      /* creature name */
+
+  /* layout */
+  --measure: 34rem;      /* right-page line length, about 65 characters */
+  --spread: 76rem;       /* widest spread */
+  --page-pad: clamp(1.25rem, 3vw, 3rem);
+  --gap: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--face);
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: var(--text);
+  line-height: var(--leading);
+  font-variant-numeric: oldstyle-nums;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  text-decoration-thickness: 0.12em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+/* ---- masthead ---- */
+
+.masthead {
+  max-width: var(--spread);
+  margin: 0 auto;
+  padding: 1rem var(--page-pad);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-name {
+  text-decoration: none;
+  font-style: italic;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.25rem;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: var(--spread);
+  margin: 0 auto;
+  padding: var(--gap) var(--page-pad) 3rem;
+}
+
+/* ---- contents page ---- */
+
+.contents-title {
+  font-weight: 400;
+  font-size: var(--title);
+  line-height: 1.15;
+  margin: 1.5rem 0 0.5rem;
+  max-width: 24ch;
+}
+
+.contents-lede {
+  max-width: var(--measure);
+  margin: 0 0 2rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.thumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 2rem 1.5rem;
+}
+
+.thumbs a {
+  display: block;
+  text-decoration: none;
+}
+
+.thumbs img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  background: var(--leaf);
+}
+
+.thumb-name {
+  display: block;
+  margin-top: 0.4rem;
+  text-align: center;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+}
+
+.thumbs a:hover .thumb-name {
+  text-decoration: underline;
+}
+
+@media (max-width: 60rem) {
+  .thumbs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 30rem) {
+  .thumbs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ---- the spread ---- */
+
+.spread {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  background: var(--leaf);
+  border: 1px solid var(--rule);
+  box-shadow: 0 1px 0 var(--rule);
+}
+
+.page {
+  padding: var(--page-pad);
+  min-width: 0;
+}
+
+.page-left {
+  border-right: 1px solid var(--rule-strong);
+}
+
+.page-right > * {
+  max-width: var(--measure);
+}
+
+/* Under ~800px the spread stacks, plate first. */
+@media (max-width: 50rem) {
+  .spread {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-left {
+    border-right: 0;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+}
+
+.plate {
+  margin: 0 0 1rem;
+}
+
+.plate img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  border: 1px solid var(--rule);
+}
+
+.interpretive {
+  margin: 0 0 0.75rem;
+  font-style: italic;
+  font-size: var(--small);
+  color: var(--ink-soft);
+}
+
+.form-label,
+.variant h3 {
+  margin: 1rem 0 0.25rem;
+  font-size: var(--small);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.page-left .clauses {
+  font-size: var(--small);
+}
+
+/* ---- right page ---- */
+
+.entry-head h1 {
+  font-size: var(--title);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 0.25rem;
+}
+
+.native {
+  margin: 0 0 1.25rem;
+  color: var(--ink-soft);
+}
+
+.name-form + .name-form::before {
+  content: " · ";
+}
+
+.block {
+  margin: 0;
+  padding: 0.9rem 0 0.6rem;
+  border-top: 1px solid var(--rule);
+}
+
+.block h2 {
+  margin: 0 0 0.35rem;
+  font-size: var(--label);
+  font-weight: 600;
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+}
+
+.clauses,
+.plain,
+.sources {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.clause {
+  margin: 0 0 0.35rem;
+}
+
+.term {
+  font-style: italic;
+}
+
+.empty {
+  margin: 0;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.notes .clauses,
+.sources {
+  font-size: var(--small);
+}
+
+.kind {
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+}
+
+.sources li {
+  margin: 0 0 0.3rem;
+  padding-left: 1rem;
+  text-indent: -1rem;
+}
+
+/* ---- cite chips ---- */
+
+.chips {
+  white-space: normal;
+}
+
+.chip {
+  display: inline-block;
+  margin: 0 0.15rem 0.1rem 0;
+  padding: 0 0.35rem;
+  font-size: var(--chip);
+  line-height: 1.5;
+  font-variant-numeric: lining-nums;
+  color: var(--ink-soft);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: 0.1em;
+}
+
+a.chip:hover {
+  color: var(--ink);
+  border-color: var(--ink-soft);
+}
+
+/* ---- attestation badge ---- */
+
+.grade {
+  margin: 0 0 0.5rem;
+}
+
+.grade summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+}
+
+.grade summary::-webkit-details-marker {
+  display: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.05rem 0.6rem;
+  border: 1px solid var(--rule-strong);
+  border-radius: 2px;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+}
+
+.grade summary::after {
+  content: " ?";
+  font-size: var(--small);
+  color: var(--ink-soft);
+}
+
+.grade[open] summary::after {
+  content: "";
+}
+
+.grade-def {
+  margin: 0.35rem 0 0;
+  font-size: var(--small);
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+/* ---- variants ---- */
+
+.variant {
+  margin: 0 0 0.4rem;
+}
+
+.variant summary {
+  cursor: pointer;
+}
+
+.variant .note {
+  font-size: var(--small);
+  color: var(--ink-soft);
+}
+
+/* ---- page turn ---- */
+
+.turn {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+}
+
+.turn a {
+  text-decoration: none;
+}
+
+.turn a:hover {
+  text-decoration: underline;
+}
+
+.turn [rel="next"] {
+  text-align: right;
+}
+
+.turn-contents {
+  color: var(--ink-soft);
+}

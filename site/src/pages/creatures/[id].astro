@@ -1,14 +1,212 @@
 ---
-// Placeholder spread route; 3c replaces it.
+// One creature as a book spread: the plate on the left page, the entry on the right.
+// Right-page order follows plans/phase-3.md, "3c".
 import type { GetStaticPaths } from "astro";
 import Base from "../../layouts/Base.astro";
-import { getEntries, primaryName } from "../../lib/entries.ts";
+import Chips from "../../components/Chips.astro";
+import Clauses from "../../components/Clauses.astro";
+import { CONTENTS_ORDER, getEntries, getEntry, getNeighbours, imagePath, primaryName, type Clause } from "../../lib/entries.ts";
+import { GRADES, INTERPRETIVE_LINE, NOTE_KIND_LABELS, NO_APPEARANCE_LINE, RELATION_LABELS } from "../../lib/grades.ts";
 
 export const getStaticPaths = (() => getEntries().map((e) => ({ params: { id: e.id } }))) satisfies GetStaticPaths;
 
-const entry = getEntries().find((e) => e.id === Astro.params.id)!;
+const entry = getEntry(Astro.params.id!);
 const name = primaryName(entry);
+const { prev, next } = getNeighbours(entry.id);
+const known = new Set<string>(CONTENTS_ORDER);
+
+// Left page: appearance clauses grouped by form (unformed clauses first), or the scene
+// for an unseen creature. Each clause keeps its index in the entry for the chip markers.
+const indexed = entry.appearance.map((c, i) => ({ c, i }));
+const unformed = indexed.filter(({ c }) => !c.form);
+const forms = entry.appearance_forms
+  .map((f) => ({ ...f, rows: indexed.filter(({ c }) => c.form === f.id) }))
+  .filter((f) => f.rows.length > 0);
+const showScene = entry.appearance.length === 0 && entry.scene.length > 0;
+
+const grade = GRADES[entry.attestation.grade];
+const nativeLine = (n: { text: string; script: string; people: string }) => `${n.text} (${n.people})`;
+const peopleList = (ps: string[]) => ps.join(", ");
+const sections: { title: string; field: "behavior_habitat" | "dealing_with_it" | "origin"; clauses: Clause[] }[] = [
+  { title: "Behaviour and habitat", field: "behavior_habitat", clauses: entry.behavior_habitat },
+  { title: "Dealing with it", field: "dealing_with_it", clauses: entry.dealing_with_it },
+  { title: "Origin", field: "origin", clauses: entry.origin },
+];
+const description = `${name}: a ${entry.family.value} creature of ${[...new Set(entry.peoples_regions.map((p) => p.people))].join(", ")} folklore, with every clause cited.`;
 ---
-<Base title={name}>
-  <h1>{name}</h1>
+<Base title={name} description={description} ogImage={imagePath(entry.image.file)}>
+  <article class="spread" aria-labelledby="name">
+    <section class="page page-left" aria-label="Plate">
+      <figure class="plate">
+        <img
+          src={imagePath(entry.image.file)}
+          alt={`Silverpoint study of ${name}`}
+          width="1104"
+          height="1472"
+          decoding="async"
+        />
+      </figure>
+      {entry.image.interpretive === true && <p class="interpretive">{INTERPRETIVE_LINE}</p>}
+      {entry.appearance.length > 0 ? (
+        <div class="appearance">
+          <Clauses entry={entry} clauses={unformed.map((r) => r.c)} indices={unformed.map((r) => r.i)} field="appearance" />
+          {forms.map((f) => (
+            <div class="form">
+              <h3 class="form-label">{f.label}</h3>
+              <Clauses entry={entry} clauses={f.rows.map((r) => r.c)} indices={f.rows.map((r) => r.i)} field="appearance" />
+            </div>
+          ))}
+        </div>
+      ) : showScene ? (
+        <div class="appearance scene">
+          <Clauses entry={entry} clauses={entry.scene} field="scene" />
+        </div>
+      ) : (
+        <p class="empty">{NO_APPEARANCE_LINE}</p>
+      )}
+    </section>
+
+    <section class="page page-right" aria-label="Entry">
+      <header class="entry-head">
+        <h1 id="name">{name}</h1>
+        {entry.names.primary.native.length > 0 && (
+          <p class="native">
+            {entry.names.primary.native.map((n, i) => (
+              <span class="name-form">{nativeLine(n)} <Chips entry={entry} cites={n.cites} of={`names.primary.native.${i}`} /></span>
+            ))}
+          </p>
+        )}
+      </header>
+
+      {entry.names.variants.length > 0 && (
+        <section class="block">
+          <h2>Other names</h2>
+          <ul class="clauses">
+            {entry.names.variants.map((v, i) => (
+              <li class="clause">
+                <span class="term">{v.romanized}</span>
+                {v.native && v.native.length > 0 && <> ({v.native.map((n) => n.text).join(", ")})</>}
+                , {peopleList(v.peoples)} <Chips entry={entry} cites={v.cites} of={`names.variants.${i}`} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {entry.names.meaning.length > 0 && (
+        <section class="block">
+          <h2>The name</h2>
+          <Clauses entry={entry} clauses={entry.names.meaning} field="names.meaning" />
+        </section>
+      )}
+
+      <section class="block">
+        <h2>Peoples and regions</h2>
+        <ul class="clauses">
+          {entry.peoples_regions.map((p, i) => (
+            <li class="clause">
+              {p.people}{p.region && <>, {p.region}</>} <Chips entry={entry} cites={p.cites} of={`peoples_regions.${i}`} />
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="block">
+        <h2>Family</h2>
+        <p class="clause">{entry.family.value} <Chips entry={entry} cites={entry.family.cites} of="family" /></p>
+      </section>
+
+      <section class="block attestation">
+        <h2>Attestation</h2>
+        <details class="grade" data-grade={entry.attestation.grade}>
+          <summary title={grade.definition}><span class="badge">{grade.label}</span></summary>
+          <p class="grade-def">{grade.definition}</p>
+        </details>
+        <Clauses entry={entry} clauses={entry.attestation.rationale} field="attestation.rationale" />
+      </section>
+
+      {sections.map((s) => (
+        <section class="block">
+          <h2>{s.title}</h2>
+          {s.clauses.length > 0 ? (
+            <Clauses entry={entry} clauses={s.clauses} field={s.field} />
+          ) : (
+            <p class="empty">Nothing in the cited sources.</p>
+          )}
+        </section>
+      ))}
+
+      {entry.variants.length > 0 && (
+        <section class="block">
+          <h2>Variants</h2>
+          {entry.variants.map((v, i) => (
+            <details class="variant">
+              <summary><span class="term">{v.label}</span>, {peopleList(v.peoples)}</summary>
+              {v.appearance.length > 0 && (
+                <>
+                  <h3>Appearance</h3>
+                  <Clauses entry={entry} clauses={v.appearance} field={`variants.${i}.appearance`} />
+                </>
+              )}
+              {v.behavior_habitat.length > 0 && (
+                <>
+                  <h3>Behaviour and habitat</h3>
+                  <Clauses entry={entry} clauses={v.behavior_habitat} field={`variants.${i}.behavior_habitat`} />
+                </>
+              )}
+              {v.notes && <p class="note">{v.notes}</p>}
+            </details>
+          ))}
+        </section>
+      )}
+
+      {entry.related.length > 0 && (
+        <section class="block">
+          <h2>Related</h2>
+          <ul class="plain">
+            {entry.related.map((r) => {
+              const label = known.has(r.id) ? primaryName(getEntry(r.id)) : r.id;
+              return (
+                <li>
+                  {RELATION_LABELS[r.relation] ?? r.relation}:{" "}
+                  {known.has(r.id) ? <a href={`/creatures/${r.id}/`} data-related={r.id}>{label}</a> : <span>{label}</span>}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
+
+      <section class="block">
+        <h2>Sources</h2>
+        <ul class="sources">
+          {entry.sources.map((s) => (
+            <li>
+              {s.author}, <a href={s.url} rel="external"><cite>{s.title}</cite></a> ({s.year})
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {entry.notes.length > 0 && (
+        <section class="block notes">
+          <h2>Editorial notes</h2>
+          <ul class="clauses">
+            {entry.notes.map((n, i) => (
+              <li class="clause">
+                <span class="kind">{NOTE_KIND_LABELS[n.kind] ?? n.kind}.</span> {n.text}{" "}
+                <Chips entry={entry} cites={n.cites} of={`notes.${i}`} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </section>
+  </article>
+
+  <nav class="turn" aria-label="Previous and next creature">
+    <a href={`/creatures/${prev.id}/`} rel="prev" data-nav="prev" data-target={prev.id}>&larr; {primaryName(prev)}</a>
+    <a href="/" class="turn-contents">Contents</a>
+    <a href={`/creatures/${next.id}/`} rel="next" data-nav="next" data-target={next.id}>{primaryName(next)} &rarr;</a>
+  </nav>
 </Base>

@@ -1,0 +1,25 @@
+---
+// The cite chips for one clause. `of` names the clause ("appearance.3"), so tests can
+// count the chips a clause renders against the cites it holds in the entry.
+import { entryChip, type Entry } from "../lib/entries.ts";
+
+interface Props {
+  entry: Entry;
+  cites: string[] | undefined;
+  of: string;
+}
+
+const { entry, cites = [], of } = Astro.props;
+const chips = cites.map((tag) => entryChip(entry, tag));
+---
+{chips.length > 0 && (
+  <span class="chips">
+    {chips.map((c) =>
+      c.href ? (
+        <a class="chip" href={c.href} rel="external" data-cite={c.tag} data-of={of}>{c.label}</a>
+      ) : (
+        <span class="chip" data-cite={c.tag} data-of={of}>{c.label}</span>
+      ),
+    )}
+  </span>
+)}

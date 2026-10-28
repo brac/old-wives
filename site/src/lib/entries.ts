@@ -6,6 +6,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateEntry } from "../../../src/validate/validate.ts";
 import { CONTENTS_ORDER } from "./contents.ts";
+import { chip, parseCite, type Chip } from "./cite.ts";
 
 export { CONTENTS_ORDER };
 
@@ -20,16 +21,53 @@ export interface Cited {
   cites: string[];
 }
 
-/** The fields the site reads. The full entry is kept as-is; see schema/entry.schema.json. */
+export interface Clause extends Cited {
+  text: string;
+}
+
+export interface AppearanceClause extends Clause {
+  /** The id of an appearance_forms row; absent means the clause describes every form. */
+  form?: string;
+}
+
+export interface NativeName extends Cited {
+  script: string;
+  text: string;
+  people: string;
+}
+
+export type Grade = "widely-attested" | "regional" | "literary" | "disputed";
+
+/** The fields the site reads, typed from schema/entry.schema.json. */
 export interface Entry {
   id: string;
-  schema_version: string;
-  names: { primary: { romanized: string; [k: string]: unknown }; [k: string]: unknown };
-  family: { value: string } & Cited;
+  schema_version: string | number;
+  names: {
+    primary: { romanized: string; native: NativeName[] };
+    variants: ({ romanized: string; native?: NativeName[]; peoples: string[] } & Cited)[];
+    meaning: Clause[];
+  };
   peoples_regions: ({ people: string; region?: string } & Cited)[];
-  attestation: { grade: string; rationale: ({ text: string } & Cited)[]; [k: string]: unknown };
-  sources: { source_id: string; author: string; title: string; year: number; url: string }[];
+  family: { value: string } & Cited;
+  appearance_forms: { id: string; label: string }[];
+  appearance: AppearanceClause[];
+  scene: Clause[];
+  variants: {
+    id: string;
+    label: string;
+    peoples: string[];
+    appearance: Clause[];
+    behavior_habitat: Clause[];
+    notes?: string;
+  }[];
+  behavior_habitat: Clause[];
+  dealing_with_it: Clause[];
+  origin: Clause[];
+  related: { id: string; relation: "often-confused" | "related" | "class-of" | "instance-of" }[];
+  attestation: { grade: Grade; rationale: Clause[]; [k: string]: unknown };
+  sources: { source_id: string; author: string; title: string; year: number; url: string; [k: string]: unknown }[];
   image: { file: string; thumb: string; interpretive?: boolean; [k: string]: unknown };
+  notes: ({ kind: "accretion" | "disputed" | "scope" | "empty-field" | "other"; text: string } & Partial<Cited>)[];
   [k: string]: unknown;
 }
 
@@ -188,4 +226,14 @@ export function indexRows(): IndexRow[] {
     attestation_grade: e.attestation.grade,
     thumb: imagePath(e.image.thumb),
   }));
+}
+
+/**
+ * The chip for one cite tag on one entry: the source's archive.org item from the
+ * manifest, falling back to the entry's own sources[].url when the manifest has none.
+ */
+export function entryChip(entry: Entry, tag: string): Chip {
+  const { sourceId } = parseCite(tag);
+  const own = entry.sources.find((s) => s.source_id === sourceId);
+  return chip(tag, getSource(sourceId), own?.url);
 }

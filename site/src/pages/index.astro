@@ -1,14 +1,27 @@
 ---
-// Placeholder contents page; 3c replaces it.
+// The contents page: title, one sentence, the ten plates in contents order. Nothing else.
 import Base from "../layouts/Base.astro";
-import { getEntries, primaryName } from "../lib/entries.ts";
+import { getEntries, imagePath, primaryName } from "../lib/entries.ts";
 import { SITE_TITLE } from "../lib/site.ts";
 
 const entries = getEntries();
 ---
 <Base>
-  <h1>{SITE_TITLE}</h1>
-  <ol>
-    {entries.map((e) => <li><a href={`/creatures/${e.id}/`}>{primaryName(e)}</a></li>)}
-  </ol>
+  <section class="contents">
+    <h1 class="contents-title">{SITE_TITLE}</h1>
+    <p class="contents-lede">
+      Ten creatures of Slavic folk belief, each drawn in silverpoint and described only in the words of the
+      nineteenth-century sources, with every clause cited.
+    </p>
+    <ol class="thumbs">
+      {entries.map((e) => (
+        <li>
+          <a href={`/creatures/${e.id}/`} data-contents={e.id}>
+            <img src={imagePath(e.image.thumb)} alt="" width="400" height="533" loading="lazy" decoding="async" />
+            <span class="thumb-name">{primaryName(e)}</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
 </Base>

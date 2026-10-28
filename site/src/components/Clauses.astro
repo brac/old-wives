@@ -1,0 +1,28 @@
+---
+// A list of sourced clauses, each followed by its chips. `field` is the clause array's
+// path in the entry ("appearance", "variants.0.appearance"); `indices` keeps each
+// clause's original index when the caller passes a filtered subset.
+import Chips from "./Chips.astro";
+import type { Clause, Entry } from "../lib/entries.ts";
+
+interface Props {
+  entry: Entry;
+  clauses: Clause[];
+  field: string;
+  indices?: number[];
+}
+
+const { entry, clauses, field, indices } = Astro.props;
+---
+{clauses.length > 0 && (
+  <ul class="clauses">
+    {clauses.map((c, i) => {
+      const of = `${field}.${indices ? indices[i] : i}`;
+      return (
+        <li class="clause" data-clause={of}>
+          {c.text} <Chips entry={entry} cites={c.cites} of={of} />
+        </li>
+      );
+    })}
+  </ul>
+)}
