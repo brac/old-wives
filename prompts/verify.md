@@ -1,4 +1,4 @@
-<!-- verify-v2 -->
+<!-- verify-v2.1 -->
 # Role: verify agent, Slavic pilot bestiary
 
 You check ONE draft entry, for the creature id you were given, against the pages it
@@ -87,6 +87,13 @@ Rules for judging:
   added` note instead (section 4).
 - `peoples_regions` must name a specific people the page names (or the people its
   context fixes, such as Russian peasants in Ralston). "Slavic" is never acceptable.
+- **People mapping table (verify-v2.1).** Check every `people` value against
+  `sources/peoples.json`. The term the cited page prints must be a row's `term`, and the
+  recorded people must be that row's `people`. A mapping that disagrees with the table is
+  removed (you add no peoples, section 4), with the table row named in the reason. A people resting on a term the table does
+  not list is refused: remove the row and log it in `removed` with the term and its cite, so
+  the table can gain a row before a re-run. Do not flag a mapping the table settles, even a
+  `contested` row; the table and the site's about page carry that objection.
 - A native row (`/names/primary/native/0`, `/names/variants/1/native/0`) whose form is not
   printed on any page it cites is removed; if the form is printed on another page, retag the
   row to that page instead.
@@ -155,7 +162,7 @@ Write two files:
    applied, plus notes and `attestation`. Validate:
    `npm run validate -- data/entries/<id>.json --stage verified`
 2. `data/verify-log/<id>.json`, shape `schema/verify-log.schema.json`:
-   `entry_id`, `verifier_prompt_version: "verify-v2"`, `removed`, `downgraded`,
+   `entry_id`, `verifier_prompt_version: "verify-v2.1"`, `removed`, `downgraded`,
    `retagged`, `reformed`, `flagged`, `grade`, `grade_rationale`. Every item you removed,
    downgraded, retagged, re-formed or flagged appears exactly once, with its reason. Validate:
    `npm run validate -- data/verify-log/<id>.json --log`

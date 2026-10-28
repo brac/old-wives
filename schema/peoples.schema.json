@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://old-wives.local/schema/peoples.schema.json",
+  "title": "People mapping table",
+  "description": "sources/peoples.json: one row per source term, giving the people value an entry records for it. The set of `people` values is the only set the validator accepts in an entry (rule R-PEOPLE).",
+  "type": "object",
+  "required": ["description", "rows"],
+  "additionalProperties": false,
+  "properties": {
+    "description": { "$ref": "#/$defs/NonEmptyString" },
+    "rows": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/Row" }
+    }
+  },
+  "$defs": {
+    "NonEmptyString": { "type": "string", "minLength": 1, "pattern": "\\S" },
+    "Row": {
+      "type": "object",
+      "required": ["term", "sources", "people", "reasoning", "contested", "note", "pilot"],
+      "additionalProperties": false,
+      "properties": {
+        "term": {
+          "description": "The term as printed (variant spellings comma-separated).",
+          "$ref": "#/$defs/NonEmptyString"
+        },
+        "sources": {
+          "description": "Manifest source ids where the term appears.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9]+$" }
+        },
+        "people": {
+          "description": "The value peoples_regions[].people takes. Same rule as the entry schema's People: never Slavic, Slav, Slavs or Slavonic.",
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?!\\s*[Ss][Ll][Aa][Vv]([Ss]|[Ii][Cc]|[Oo][Nn][Ii][Cc])?\\s*$)"
+        },
+        "region": {
+          "description": "Optional region text the row suggests; the entry's region keeps the source's own word.",
+          "$ref": "#/$defs/NonEmptyString"
+        },
+        "reasoning": {
+          "description": "One or two sentences, citing the usage.",
+          "$ref": "#/$defs/NonEmptyString"
+        },
+        "contested": { "type": "boolean" },
+        "note": {
+          "description": "What a reader might object to.",
+          "$ref": "#/$defs/NonEmptyString"
+        },
+        "pilot": {
+          "description": "How the ten pilot entries' existing flags would change under this row. The pilot entries are not re-run or edited.",
+          "$ref": "#/$defs/NonEmptyString"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "description": "People mapping (Phase 4a, settled by Ben 2026-10-28). One row per source term: the people value that peoples_regions[].people, names[].peoples and native[].people take for it. draft-v2.1 applies the table and flags any term not in it; verify-v2.1 checks against it and refuses an unlisted term; the validator rejects a people value outside the set of `people` values below. `pilot` says how the ten pilot entries' existing flags would change under this table; the pilot entries are not re-run or edited.",
+  "rows": [
+    {
+      "term": "Russian, Russians, Russian peasants",
+      "sources": ["machal1918", "ralston1872", "ralston1873", "afanasyev1868", "afanasyev1869"],
+      "people": "Russians",
+      "reasoning": "The sources name the people directly. Where a page says only \"the peasants\" inside a passage about Russia (Ralston's Russian peasants), the context fixes Russians, as draft-v2 already ruled.",
+      "contested": false,
+      "note": "The context rule is the narrowest reading; it is not used to file a named Little-Russian or White-Russian region as Russian.",
+      "pilot": "No change. Rows filed this way in all ten pilot entries stand."
+    },
+    {
+      "term": "Siberian Russians, Siberia",
+      "sources": ["machal1918", "afanasyev1869"],
+      "people": "Russians",
+      "region": "Siberia",
+      "reasoning": "Machal prints \"Siberian Russians\" (p.268); Afanasyev's southern Siberia sits in the same Russian-language tradition.",
+      "contested": false,
+      "note": "Siberia also has non-Slavic peoples; the row covers only the Russian settlers the pages describe.",
+      "pilot": "No change (poludnitsa rows 10-11)."
+    },
+    {
+      "term": "у насъ (\"among us\")",
+      "sources": ["afanasyev1869"],
+      "people": "Russians",
+      "reasoning": "Afanasyev writes as a Russian for Russian readers, so \"among us\" is read as Russians when no other people is named in the sentence.",
+      "contested": true,
+      "note": "On p.557 the same passage says the belief survives chiefly in the Ukraine and White Russia, so a reader may take \"among us\" to mean Ukrainians and Belarusians there.",
+      "pilot": "vampir /names/primary/native/1: the flag stands; the reading is now the table's, but the row is contested, so the flag is kept for the reader."
+    },
+    {
+      "term": "Little-Russia, Little Russia, Малороссія",
+      "sources": ["ralston1872", "afanasyev1868"],
+      "people": "Ukrainians",
+      "region": "Little-Russia",
+      "reasoning": "Little-Russia is the 19th-century name for the Ukrainian lands of the Russian Empire, and the sources use it for the people Ralston also calls Little-Russians. The region text keeps the source's word.",
+      "contested": false,
+      "note": "The name itself is an imperial usage some readers object to; it appears only as the source's region text, never as the people.",
+      "pilot": "leshy /peoples_regions/6: the flag (a translation choice the page does not confirm) is cleared by the table. rusalka /peoples_regions/4 and vodyanoi /peoples_regions/7 are unchanged."
+    },
+    {
+      "term": "Little-Russians, Little Russians",
+      "sources": ["ralston1872", "machal1918", "afanasyev1869"],
+      "people": "Ukrainians",
+      "reasoning": "The older English and Russian name for Ukrainians; Machal uses it beside \"Ukranians\" for the same people.",
+      "contested": false,
+      "note": "As for Little-Russia: the word stays in region text, the people is Ukrainians.",
+      "pilot": "No v2 flag. The Phase 1 flags on it (domovoi, baba-yaga) would be cleared."
+    },
+    {
+      "term": "the Ukraine, Ukranians",
+      "sources": ["ralston1872", "machal1918"],
+      "people": "Ukrainians",
+      "reasoning": "Named directly (Machal prints the misspelling \"Ukranians\").",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No change."
+    },
+    {
+      "term": "South-Russian",
+      "sources": ["ralston1872"],
+      "people": "Ukrainians",
+      "reasoning": "Ralston labels forms \"South-Russian\" in the same way he labels others \"Little-Russian\", for the speech of the Ukrainian governments.",
+      "contested": true,
+      "note": "\"South-Russian\" is not stated to equal Little-Russian on p.410, and in other usage it can cover the Don and New Russia, which were not only Ukrainian.",
+      "pilot": "vampir /names/variants/1: the flag (an interpretation not stated on the page) is cleared by the table; the row is listed as contested instead."
+    },
+    {
+      "term": "Kief and Chernigof (Governments of)",
+      "sources": ["ralston1872"],
+      "people": "Ukrainians",
+      "region": "Governments of Kief and Chernigof",
+      "reasoning": "Both governments lie in Little-Russia, which the table maps to Ukrainians; a bare government name takes the people of the region it belongs to, not the people of the empire.",
+      "contested": true,
+      "note": "The pilot filed these as Russians by the context rule (Ralston is writing about Russian peasants). A reader may prefer that reading for the 1870s, or object that the modern border is being read back.",
+      "pilot": "leshy /peoples_regions/3 would change from Russians to Ukrainians. The Phase 1 flag on it is not in the v2 log, so no current flag changes."
+    },
+    {
+      "term": "Kharkov (Government of)",
+      "sources": ["ralston1872", "afanasyev1869"],
+      "people": "Ukrainians",
+      "region": "Kharkov Government",
+      "reasoning": "The Kharkov Government was Sloboda Ukraine, and Afanasyev places the rusalka form there directly after a sentence about the Little Russians. Same rule as Kief and Chernigof.",
+      "contested": true,
+      "note": "The pilot filed Kharkov as Russians in vampir (Phase 1) and as Ukrainians in rusalka; the table makes it Ukrainians in both. A reader may object as for Kief and Chernigof.",
+      "pilot": "rusalka /names/variants/2: the attribution flag is cleared by the table (the OCR part of the flag stands). vampir's Phase 1 Kharkov row is not in the v2 entry, so nothing changes there."
+    },
+    {
+      "term": "Ruthenians",
+      "sources": ["ralston1872"],
+      "people": "Ukrainians",
+      "region": "Ruthenians",
+      "reasoning": "Ralston's Ruthenians are the East Slavs of Austrian Galicia and Hungary, whom the modern usage counts as Ukrainians; the region text keeps \"Ruthenians\".",
+      "contested": true,
+      "note": "Some of these communities identify as Rusyns, a separate people, not as Ukrainians. The table chooses Ukrainians and says so.",
+      "pilot": "domovoi: the term was left unmapped in a note (ralston1872 p.122). A re-run would add a Ukrainians row; the entry is not re-run."
+    },
+    {
+      "term": "White-Russia, White-Russians, White Russians",
+      "sources": ["ralston1872", "machal1918"],
+      "people": "Belarusians",
+      "region": "White-Russia",
+      "reasoning": "White-Russia is the older English name for Belarus, and White-Russians for its people.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No change."
+    },
+    {
+      "term": "Lusatians, Lusatian Serbs, лужичане",
+      "sources": ["machal1918", "ralston1872", "afanasyev1868"],
+      "people": "Sorbs",
+      "region": "Lusatia",
+      "reasoning": "Lusatian Serbs (Machal p.268) is the older English name for the Sorbs.",
+      "contested": false,
+      "note": "\"Serbs\" here is not the Balkan people; the table keeps them apart.",
+      "pilot": "No change."
+    },
+    {
+      "term": "Lusatia",
+      "sources": ["ralston1872", "afanasyev1869"],
+      "people": "Sorbs",
+      "region": "Lusatia",
+      "reasoning": "A region named in a passage on Slavic belief; the Slavs of Lusatia are the Sorbs.",
+      "contested": false,
+      "note": "Lusatia was also German-speaking; the row applies only where the page speaks of Slavic belief there.",
+      "pilot": "domovoi /peoples_regions/8: the flag (people inferred from the region) is cleared by the table."
+    },
+    {
+      "term": "Bohemian, Bohemians, Bohemia, Czekhs",
+      "sources": ["machal1918", "ralston1872", "afanasyev1869"],
+      "people": "Czechs",
+      "region": "Bohemia",
+      "reasoning": "Bohemian is the older English name for Czech; Ralston prints \"Czekhs\". Draft-v2 already gave this as its example.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No change."
+    },
+    {
+      "term": "Moravia",
+      "sources": ["machal1918"],
+      "people": "Czechs",
+      "region": "Moravia",
+      "reasoning": "Machal treats Moravian belief as part of the Czech tradition he describes.",
+      "contested": false,
+      "note": "Some Moravians claim a separate identity; the table follows Machal.",
+      "pilot": "No change (poludnitsa row 1)."
+    },
+    {
+      "term": "dle podání lidu (\"according to folk tradition\")",
+      "sources": ["erben1893"],
+      "people": "Czechs",
+      "reasoning": "Erben's collection is of Czech folk tradition, so \"the folk\" on its pages are Czechs.",
+      "contested": false,
+      "note": "The page does not name the Czechs; the context fixes them.",
+      "pilot": "poludnitsa /peoples_regions/4: the flag (people fixed only by context) is cleared by the table."
+    },
+    {
+      "term": "Poles, Polish, Poland",
+      "sources": ["machal1918", "ralston1872", "afanasyev1869"],
+      "people": "Poles",
+      "region": "Poland",
+      "reasoning": "Named directly.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No change. (The baba-yaga /peoples_regions/6 flag is about whether Jendzyna is Baba Yaga, not about the people, and stands.)"
+    },
+    {
+      "term": "Kashubians, Kashubes",
+      "sources": ["ralston1872"],
+      "people": "Kashubians",
+      "reasoning": "Named directly by Ralston (p.410) apart from the Poles.",
+      "contested": false,
+      "note": "Kashubians are sometimes counted as Poles; the table follows the source in keeping them apart.",
+      "pilot": "No change."
+    },
+    {
+      "term": "Servian, Serbs, Serbian",
+      "sources": ["ralston1872", "karadzic1818"],
+      "people": "Serbs",
+      "reasoning": "Servian is the older English name for Serbian; Karadžić's dictionary is of the Serbian language and its usage.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No change."
+    },
+    {
+      "term": "Rätzisch, Rascian",
+      "sources": ["frombald1725"],
+      "people": "Serbs",
+      "region": "Kisolova, Gradisker District",
+      "reasoning": "Rascian (Rätzisch) was the Habsburg name for the Orthodox Serbs of the frontier; Frombald's \"Rätzischer Manier\" is read as the Serbian manner.",
+      "contested": true,
+      "note": "Rascian named a confession and a frontier status as much as a people, and the report names no people outright.",
+      "pilot": "vampir /peoples_regions/1 and /names/variants/12: the flags (a translation choice) are cleared by the table; the row is listed as contested instead."
+    },
+    {
+      "term": "Croatians",
+      "sources": ["ralston1872"],
+      "people": "Croatians",
+      "reasoning": "Named directly.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No change."
+    },
+    {
+      "term": "Slovenians, Slovenes",
+      "sources": ["machal1918", "ralston1872"],
+      "people": "Slovenes",
+      "reasoning": "Named directly.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No change."
+    },
+    {
+      "term": "Bulgarians",
+      "sources": ["ralston1872"],
+      "people": "Bulgarians",
+      "reasoning": "Named directly.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No change."
+    },
+    {
+      "term": "Slovaks, Словаки",
+      "sources": ["afanasyev1869"],
+      "people": "Slovaks",
+      "reasoning": "Named directly.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No change."
+    }
+  ]
+}

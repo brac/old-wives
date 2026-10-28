@@ -363,3 +363,26 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   moves to the second tranche. The style LoRA is for look consistency and is judged by
   redraws-to-approval, not by taste alone.
 
+
+## Phase 4a (2026-10-28)
+
+- **People mapping table settled.** `sources/peoples.json` (schema
+  `schema/peoples.schema.json`) has one row per source term: the people it is recorded
+  as, the reasoning, whether it is contested, what a reader might object to, and how the
+  pilot entries' existing flags would change under it. Six rows are contested (Ruthenians,
+  Kief and Chernigof, Kharkov, South-Russian, Afanasyev's "у насъ", Frombald's
+  "Rätzisch"), and the site's about page lists them. Kief, Chernigof and Kharkov are
+  recorded as Ukrainians, as governments of Little-Russia. Rejected: the pilot's context
+  rule for them (Russians, because Ralston writes of Russian peasants), which filed
+  Kharkov as Russians in vampir and as Ukrainians in rusalka; the table needs one answer.
+  Ruthenians are recorded as Ukrainians; rejected: Rusyns as a separate people value, and
+  leaving the term unmapped as domovoi did.
+- **Prompts draft-v2.1 and verify-v2.1 are a scoped change.** Each gains one paragraph:
+  the draft maps every people term through the table and notes, without mapping, a term
+  the table lacks; verify checks each people against the table and removes one resting
+  on an unlisted term. This adds a lookup. It does not change what counts as a claim,
+  what a clause may say, or how a grade is reached, so the tranche stays comparable with
+  the pilot under draft-v2 and verify-v2. The pilot entries are not re-run; their
+  existing flags stand.
+- **Validator rule R-PEOPLE.** Every `people` value and every item of a `peoples` list
+  must be a `people` value of the table, at both stages. All ten pilot entries pass.

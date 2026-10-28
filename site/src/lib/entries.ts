@@ -261,7 +261,7 @@ function pageLabels(source: SourceInfo): PageLabelRow[] {
   if (source.deepLinkMode === "item") return [];
   let rows = labelCache.get(source.id);
   if (!rows) {
-    rows = parsePages(readFileSync(join(REPO_ROOT, source.pagesFile), "utf8")).map((r) => ({ leaf: r.leaf, page: r.page }));
+    rows = parsePages(readFileSync(join(REPO_ROOT, source.pagesFile), "utf8")).map((r) => ({ leaf: r.leaf, page: r.page, iaPage: r.ia_page }));
     labelCache.set(source.id, rows);
   }
   return rows;

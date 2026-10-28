@@ -102,10 +102,12 @@ export function relabelFromHeaders(records: PageRecord[]): PageRecord[] {
     if (!isNumericLabel(r.page)) return r;
     const label = Number(r.page);
     const own = offsetAt[i];
-    if (own !== null && own !== undefined) return { leaf: r.leaf, page: String(label + own), text: r.text };
+    // ia_page keeps IA's own label where the header label differs, so the site can deep-link the leaf.
+    const ia = (page: string) => (page === r.page ? {} : { ia_page: r.page });
+    if (own !== null && own !== undefined) return { leaf: r.leaf, page: String(label + own), ...ia(String(label + own)), text: r.text };
     const before = neighbour(i, -1);
     const after = neighbour(i, 1);
     const offset = before !== null && before === after ? before : dominantOffset;
-    return { leaf: r.leaf, page: String(label + offset), text: r.text, page_inferred: true };
+    return { leaf: r.leaf, page: String(label + offset), ...ia(String(label + offset)), text: r.text, page_inferred: true };
   });
 }

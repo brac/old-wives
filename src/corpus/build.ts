@@ -21,9 +21,15 @@ interface PageNumbers {
 
 export function serializePages(records: PageRecord[]): string {
   const sorted = [...records].sort((a, b) => a.leaf - b.leaf);
-  // page_inferred is written only when set, so sources labelled from IA serialize exactly as before.
+  // page_inferred and ia_page are written only when set, so sources labelled from IA serialize exactly as before.
   const line = (r: PageRecord): string =>
-    JSON.stringify(r.page_inferred ? { leaf: r.leaf, page: r.page, page_inferred: true, text: r.text } : { leaf: r.leaf, page: r.page, text: r.text });
+    JSON.stringify({
+      leaf: r.leaf,
+      page: r.page,
+      ...(r.ia_page !== undefined ? { ia_page: r.ia_page } : {}),
+      ...(r.page_inferred ? { page_inferred: true } : {}),
+      text: r.text,
+    });
   return sorted.map(line).join("\n") + "\n";
 }
 
