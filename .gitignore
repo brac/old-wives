@@ -8,3 +8,7 @@ sources/raw/
 plates/**/*.full.png
 style/refs/candidates/
 plates/refs/
+.worktrees/
+.astro/
+test-results/
+playwright-report/
