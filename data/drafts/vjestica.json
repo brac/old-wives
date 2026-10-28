@@ -1,0 +1,405 @@
+{
+  "id": "vjestica",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "vještica",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "вјештица",
+          "people": "Serbs",
+          "cites": [
+            "karadzic1852:s.v.вјештица"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "vědma",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "вѣдьма",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1869:p.464"
+            ]
+          }
+        ],
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "afanasyev1869:p.464"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Afanasyev explains that the Russian names вѣдунъ and вѣдьма (also вѣдунья, вѣщица) come from the root вѣд-, вѣщ- and denote knowing people endowed with a spirit of foreknowledge and prophecy, a poetic gift and the art of healing illnesses.",
+        "cites": [
+          "afanasyev1869:p.423"
+        ]
+      },
+      {
+        "text": "Afanasyev treats the Serbian вѣштица as the same figure as the вѣдьма, writing \"the soul of the вѣдьма (вѣштица)\".",
+        "cites": [
+          "afanasyev1869:p.216"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Serbs",
+      "cites": [
+        "karadzic1852:s.v.вјештица"
+      ]
+    },
+    {
+      "people": "Serbs",
+      "cites": [
+        "afanasyev1869:p.216"
+      ]
+    },
+    {
+      "people": "Russians",
+      "cites": [
+        "afanasyev1869:p.464"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Украйна (the Ukraine)",
+      "cites": [
+        "afanasyev1869:p.422"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Малороссія (Little Russia)",
+      "cites": [
+        "afanasyev1869:p.449"
+      ]
+    }
+  ],
+  "family": {
+    "value": "other",
+    "cites": [
+      "karadzic1852:s.v.вјештица"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "Witches live among people and outwardly look no different from ordinary mortals.",
+      "cites": [
+        "afanasyev1869:p.422"
+      ]
+    },
+    {
+      "text": "Apart from that, a witch has a small tail which she carefully hides.",
+      "cites": [
+        "afanasyev1869:p.422"
+      ]
+    },
+    {
+      "text": "At night witches let their braids down loose over their shoulders.",
+      "cites": [
+        "afanasyev1869:p.466"
+      ]
+    },
+    {
+      "text": "At night, having stripped naked, witches put on long white ungirdled shifts (or shrouds).",
+      "cites": [
+        "afanasyev1869:p.466"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "The Serbian vještica flies about at night, shining like fire as she flies.",
+      "cites": [
+        "karadzic1852:s.v.вјештица"
+      ]
+    },
+    {
+      "text": "Vještice gather mostly on the threshing floor.",
+      "cites": [
+        "karadzic1852:s.v.вјештица"
+      ]
+    },
+    {
+      "text": "Villagers tell that when a witch gathers dew, milks other people's cows or makes twisted knots (заломы) in the fields, she is always in a white shift with her hair loose.",
+      "cites": [
+        "afanasyev1869:p.466"
+      ]
+    },
+    {
+      "text": "At night witches fly out through chimneys to do harm or to revel on the Bald Mountain (лысая гора).",
+      "cites": [
+        "afanasyev1869:p.466"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "serbs",
+      "label": "Serbian vještica (Karadžić)",
+      "peoples": [
+        "Serbs"
+      ],
+      "appearance": [
+        {
+          "text": "According to folk tales, the devilish spirit inside a vještica leaves her in sleep and turns into a butterfly.",
+          "cites": [
+            "karadzic1852:s.v.вјештица"
+          ]
+        },
+        {
+          "text": "The spirit may instead turn into a hen.",
+          "cites": [
+            "karadzic1852:s.v.вјештица"
+          ]
+        },
+        {
+          "text": "The spirit may instead turn into a turkey.",
+          "cites": [
+            "karadzic1852:s.v.вјештица"
+          ]
+        },
+        {
+          "text": "Serbs say the soul of the witch flies out of her in sleep in the form of a butterfly or a bird.",
+          "cites": [
+            "afanasyev1869:p.216"
+          ]
+        },
+        {
+          "text": "While the spirit is out of her, the woman lies as if dead.",
+          "cites": [
+            "karadzic1818:s.v.вјештица"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "In that shape the spirit flies about houses and eats people, especially small children.",
+          "cites": [
+            "karadzic1852:s.v.вјештица"
+          ]
+        },
+        {
+          "text": "Finding a person asleep, she strikes him with a rod over the left breast, the chest opens, and she takes out the heart and eats it, after which the chest grows together again.",
+          "cites": [
+            "karadzic1852:s.v.вјештица"
+          ]
+        },
+        {
+          "text": "Some people eaten this way die at once; others live on as long as she decreed when she ate the heart, and die the death she assigned them.",
+          "cites": [
+            "karadzic1852:s.v.вјештица"
+          ]
+        },
+        {
+          "text": "Vještice are said to eat people most of all at the Shrovetides (покладе).",
+          "cites": [
+            "karadzic1852:s.v.вјештица"
+          ]
+        },
+        {
+          "text": "When she wants to fly from the house, she smears some ointment under her armpits and says \"ni o trn ni o grm, već na pometno gumno\" (not against thorn nor bush, but onto the swept threshing floor).",
+          "cites": [
+            "karadzic1852:s.v.вјештица"
+          ]
+        },
+        {
+          "text": "A tale tells of a woman who was not a vještica, used the ointment, said by mistake \"against thorn and against bush\", and was battered all over as she flew.",
+          "cites": [
+            "karadzic1852:s.v.вјештица"
+          ]
+        },
+        {
+          "text": "If someone turns the sleeping woman's head to where her feet were while the spirit is out, she will never wake again.",
+          "cites": [
+            "karadzic1818:s.v.вјештица"
+          ]
+        },
+        {
+          "text": "Afanasyev reports the same Serbian belief: if the witch is turned head to foot while her soul wanders, the returning soul cannot find its way in and she never wakes.",
+          "cites": [
+            "afanasyev1869:p.216"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "russians",
+      "label": "Russian vědma (Afanasyev)",
+      "peoples": [
+        "Russians"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "By Russian belief, witches ride to the Bald Mountain for the Kupala gathering not only on brooms but also on swift, tireless steeds.",
+          "cites": [
+            "afanasyev1869:p.464"
+          ]
+        },
+        {
+          "text": "In tales they give heroes wonderful flying horses.",
+          "cites": [
+            "afanasyev1869:p.464"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ukrainians",
+      "label": "Ukrainian vědma (Afanasyev)",
+      "peoples": [
+        "Ukrainians"
+      ],
+      "appearance": [],
+      "behavior_habitat": [
+        {
+          "text": "In the Ukraine people are still convinced that there is no village without a witch.",
+          "cites": [
+            "afanasyev1869:p.422"
+          ]
+        },
+        {
+          "text": "In Little Russia it is told that witches steal rain and dew from the sky, carrying them off in tied-up jugs or sacks and hiding them in their huts and storerooms.",
+          "cites": [
+            "afanasyev1869:p.449"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "The common folk look for witches among themselves and will point out particular people of their own village as a witch and advise caution.",
+      "cites": [
+        "afanasyev1869:p.422"
+      ]
+    },
+    {
+      "text": "People turn to them in need for help and advice, and blame them for all public and private misfortunes.",
+      "cites": [
+        "afanasyev1869:p.422"
+      ]
+    },
+    {
+      "text": "Wishing to cause drought, a witch waves her apron at a rain cloud as soon as it appears, and the cloud leaves the horizon.",
+      "cites": [
+        "afanasyev1869:p.449"
+      ]
+    },
+    {
+      "text": "The \"Slovenian\" (словенскія) вѣштицы, like the vilas, possess deadly arrows.",
+      "cites": [
+        "afanasyev1869:p.449"
+      ]
+    },
+    {
+      "text": "At night witches sit on brooms, brew a magic potion in pots, and fly off with the rising steam through the chimneys.",
+      "cites": [
+        "afanasyev1869:p.466"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "Vještice do not eat garlic, so many people smear garlic on their chests, the soles of their feet and under their armpits at the white and Christmas Shrovetides.",
+      "cites": [
+        "karadzic1852:s.v.вјештица"
+      ]
+    },
+    {
+      "text": "Once a vještica confesses and gives it up, she can no longer eat people, but becomes a healer and gives herbs to those she has eaten.",
+      "cites": [
+        "karadzic1852:s.v.вјештица"
+      ]
+    },
+    {
+      "text": "When many children or people die in a village and all accuse some woman of being a vještica who ate them, they bind her and throw her into water to see whether she can sink, because they say a vještica cannot sink.",
+      "cites": [
+        "karadzic1818:s.v.вјештица"
+      ]
+    },
+    {
+      "text": "Serbs take a butterfly flying in the evening for the soul of a vještica, try to catch it and singe its wings.",
+      "cites": [
+        "afanasyev1869:p.216"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "A vještica is a woman who, according to folk tales, has some devilish spirit inside her.",
+      "cites": [
+        "karadzic1852:s.v.вјештица"
+      ]
+    },
+    {
+      "text": "No young and beautiful woman is called a vještica, only old women.",
+      "cites": [
+        "karadzic1852:s.v.вјештица"
+      ]
+    }
+  ],
+  "related": [],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "karadzic1852",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истумачен њемачкијем и латинскијем ријечима",
+      "year": 1852,
+      "url": "https://archive.org/details/srpski-rjecnik-istumacen-njemackijem-i-latinskijem-rijecima",
+      "public_domain": true
+    },
+    {
+      "source_id": "karadzic1818",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истолкован њемачким и латинским ријечма",
+      "year": 1818,
+      "url": "https://archive.org/details/srpskirjecnik00kara",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "Russian and Ukrainian material is Afanasyev's вѣдьма, which he explicitly equates with the Serbian вѣштица (afanasyev1869:p.216). Top-level appearance, scene and behavior clauses from afanasyev1869 pp.422, 449, 466 are stated by Afanasyev without restriction to a people; the verify agent should decide whether they belong in this entry or should be narrowed."
+    },
+    {
+      "kind": "scope",
+      "text": "Budget stop, unread relevant pages: afanasyev1869 ch. XXVI was read only at pp.422-423, 449, 464-466; unread pages with ведьм hits include pp.442-448 and 450-463 (rain, storm and flight lore), pp.467-477 (Bald Mountain gatherings; p.477 how a woman is received into the witches) and the rest of the chapter to p.525 (likely origin and dealing material). Also unread: afanasyev1869:p.566 beyond its footnote (a Serbian song in which вѣштице eat a heart), afanasyev1865 and afanasyev1868 ведьм hits, ralston1872 p.168 and pp.378-416 (witches), and the continuation of the karadzic1852 вјештица entry on the next page (a Syrmia tradition; a man who found a witch's pot of ointment)."
+    },
+    {
+      "kind": "other",
+      "text": "People term not in sources/peoples.json: \"словенскія\" (afanasyev1869:p.449, \"словенскія вѣштицы\"); proposed mapping Slovenes (the table lists only the form \"словенской\"). Kept in clause text; no people row written. Also \"Ерц.\" (Herzegovina dialect label on the karadzic1818 вјештица entry) is not in the table; proposed Serbs; not used."
+    },
+    {
+      "kind": "other",
+      "text": "Possible related link not made: a karadzic1852 find snippet (leaf 383) says some tell that the mora is a vještica who repented, but cite karadzic1852:s.v.мора resolved to a page without that text, so no link to mora was added."
+    },
+    {
+      "kind": "empty-field",
+      "text": "related: no opened page links a pilot creature; mora (see note above) and vila (afanasyev1869:p.449 compares Slovenian vještice to vilas by likeness only) were not linked."
+    }
+  ]
+}

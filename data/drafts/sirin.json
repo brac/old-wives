@@ -1,0 +1,177 @@
+{
+  "id": "sirin",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "sirin",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Сиринъ",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1868:p.135",
+            "afanasyev1869:p.221"
+          ]
+        }
+      ]
+    },
+    "variants": [],
+    "meaning": [
+      {
+        "text": "Afanasyev glosses the name Sirin as equal to 'siren' (сирена).",
+        "cites": [
+          "afanasyev1868:p.135"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "\"наше простонародье\" (our common people), who came to know the bird through popular prints",
+      "cites": [
+        "afanasyev1868:p.135"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "\"нашей старинной символикѣ\" (our old symbolism); carvings of the Dmitrievsky cathedral in Vladimir on the Klyazma",
+      "cites": [
+        "afanasyev1869:p.221"
+      ]
+    }
+  ],
+  "family": {
+    "value": "other",
+    "cites": [
+      "afanasyev1868:p.135",
+      "afanasyev1869:p.221"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "paradise-bird",
+      "label": "Afanasyev's paradise bird of the popular prints and old symbolism"
+    },
+    {
+      "id": "hamartolos-human-shaped",
+      "label": "Human-shaped pair of the old Hamartolos translation"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "Is a paradise bird (райская птица), named together with the Alkonost.",
+      "cites": [
+        "afanasyev1868:p.135",
+        "afanasyev1869:p.221"
+      ],
+      "form": "paradise-bird"
+    },
+    {
+      "text": "In the old translation of George Hamartolos, the beings called sirins are described as human-shaped creatures.",
+      "cites": [
+        "afanasyev1869:p.153"
+      ],
+      "form": "hamartolos-human-shaped"
+    },
+    {
+      "text": "In that translation they appear as a pair, a man and a woman.",
+      "cites": [
+        "afanasyev1869:p.153"
+      ],
+      "form": "hamartolos-human-shaped"
+    }
+  ],
+  "scene": [
+    {
+      "text": "Shown in popular prints (лубочныя картины), through which the common people came to know it.",
+      "cites": [
+        "afanasyev1868:p.135"
+      ]
+    },
+    {
+      "text": "According to Count Uvarov, the Sirin and the Alkonost are found on the carvings of the Dmitrievsky cathedral in Vladimir on the Klyazma.",
+      "cites": [
+        "afanasyev1869:p.221"
+      ]
+    },
+    {
+      "text": "In the old translation of George Hamartolos, the human-shaped pair called sirins were seen in the river Nile when the sun had risen.",
+      "cites": [
+        "afanasyev1869:p.153"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "In old Russian symbolism the paradise birds Alkonost and Sirin often signify the righteous.",
+      "cites": [
+        "afanasyev1869:p.221"
+      ]
+    }
+  ],
+  "dealing_with_it": [],
+  "origin": [],
+  "related": [
+    {
+      "id": "alkonost",
+      "relation": "related"
+    },
+    {
+      "id": "vila",
+      "relation": "related"
+    }
+  ],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "Every afanasyev1868:p.135 claim (the native form, the 'Sirin = siren' gloss, the popular prints, 'our common people') comes from footnote 2 at the foot of the page, not the body text. The footnote is explanatory prose, not a bare reference, so it was used; the verify agent should decide whether it counts. The OCR reads 'Сиринъ иг сирена'; 'иг' is taken as an equals sign."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1869:p.153 is a passage about the vily: Afanasyev says the old translation of George Hamartolos identifies the vily with sirens, and quotes it naming two human-shaped beings in the Nile 'иже и сирины нарицаются, рекше вилы' (OCR 'рен-те'). The human-shaped form and the Nile scene are attributed to the sirin only because the quoted text gives them that name; they may belong to the classical sirens rather than the paradise bird."
+    },
+    {
+      "kind": "scope",
+      "text": "The 'signify the righteous' clause is symbolism rather than behaviour; it is filed under behavior_habitat for want of a better field."
+    },
+    {
+      "kind": "empty-field",
+      "text": "names.variants: no source gives another name for the sirin; the plural 'сирины' (afanasyev1869:p.153) is the same name. Searched sirin, сирин, сирином, сирина, сиринъ, сирины, sirine, siren, сирен in all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "dealing_with_it: no page gives wards, offerings, taboos or escapes. Same searches as above, plus алконост, 'paradise bird', 'bird of paradise'."
+    },
+    {
+      "kind": "empty-field",
+      "text": "origin: no page says where the sirin comes from. afanasyev1868:p.135 says only that popular prints made the bird known to the common people; that is the transmission of the image, not an origin of the creature. Same searches as above."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: no page describes the sirin differently by people or region. Same searches as above."
+    }
+  ]
+}

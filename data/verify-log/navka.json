@@ -1,0 +1,88 @@
+{
+  "entry_id": "navka",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/names/meaning/1",
+      "text": "Afanasyev reports that, in the opinion of Russian researchers, mavka is the same as navka, a diminutive of nav', that is, \"little dead one\" (мертвушка).",
+      "to_text": "Afanasyev reports that, in the opinion of \"our researchers\", mavka is the same as navka, a diminutive of nav', that is, \"little dead one\" (мертвушка).",
+      "from_cites": [
+        "afanasyev1869:p.241"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.241"
+      ],
+      "reason": "The page says \"нашихъ изслѣдователей\" (our researchers); \"Russian\" is an interpretation the page does not print, so it was narrowed to the page's wording."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/primary/native/0",
+      "text": "навка (Ukrainians)",
+      "reason": "The form is printed letter-spaced as \"на вка\" on afanasyev1869:p.241, but as the researchers' equivalent of мавка; Afanasyev does not attach навка itself to a people. Ukrainians rests on the neighbouring sentence \"Въ Малороссіи и Галиціи\" about мавки."
+    },
+    {
+      "field": "/names/variants/0",
+      "text": "Navky (Ukrainians)",
+      "reason": "machal1918:p.253 uses Navky as the general term \"found throughout the Slavic languages\" and lists the Little Russian forms as navk, Nejky, Mavky, Majky; Navky itself is not tied to the Little Russians on the page."
+    },
+    {
+      "field": "/appearance/3",
+      "text": "The Mavky are either half-naked or wear only a white shirt.",
+      "reason": "Placed in form machal-girls, but on machal1918:p.253 the sentence may describe the Mavky in both their baby and girl appearances; the referent is ambiguous."
+    },
+    {
+      "field": "/dealing_with_it/3",
+      "text": "For seven years, on Trinity and Whitsun days, the souls of these infants fly through the air begging for baptism; it is thought they can be saved by the words \"I baptize thee in the name of the Father and the Son and the Holy Spirit\".",
+      "reason": "On afanasyev1869:p.241 the seven-year baptism passage concerns stillborn or unbaptized infants stolen by the rusalki; the name mavki is given a few lines later to \"this breed of child-rusalki\", and it is not certain the referent covers these infants. \"Духовъ день\" is rendered Whitsun, a loose translation."
+    },
+    {
+      "field": "/dealing_with_it/4",
+      "text": "They can also be saved by yearly requiem services on the first Monday of Peter's fast (Petrovka).",
+      "reason": "Same referent doubt as /dealing_with_it/3: the requiem-service remedy on afanasyev1869:p.241 is told of the unbaptized infants before the page names them mavki."
+    },
+    {
+      "field": "/dealing_with_it/5",
+      "text": "If within the seven years they are not redeemed by prayers and hear the formula from no one, they remain forever among the rusalki.",
+      "reason": "Same referent doubt as /dealing_with_it/3 on afanasyev1869:p.241."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal records these beings for the Little Russians (Mavky), for Bulgarians in Macedonia (Navi, Navjaci), for Slovenes (Navje) and for Poles (Latawci).",
+      "cites": [
+        "machal1918:p.253",
+        "machal1918:p.254"
+      ]
+    },
+    {
+      "text": "Afanasyev records mavki in Little-Russia and Galicia, and maiki among the Hutsuls.",
+      "cites": [
+        "afanasyev1869:p.241",
+        "afanasyev1869:p.242"
+      ]
+    },
+    {
+      "text": "Ralston gives Mavki as the Little-Russian and Galician name of the Rusalkas; that passage neither quotes nor cites Afanasyev, so it is counted as independent.",
+      "cites": [
+        "ralston1872:p.142"
+      ]
+    },
+    {
+      "text": "The Ukrainian material therefore rests on three authors (Machal, Afanasyev, Ralston); the Bulgarian, Slovene and Polish rows rest on Machal alone.",
+      "cites": [
+        "machal1918:p.254"
+      ]
+    },
+    {
+      "text": "Machal's etymology carries a footnote marker whose note is not on the page, so whether his Little Russian passage draws on Afanasyev could not be checked; even counting him once with Afanasyev, two independent authors and four peoples remain.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    }
+  ]
+}

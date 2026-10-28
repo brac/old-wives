@@ -1,0 +1,554 @@
+{
+  "id": "tryasavitsy",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "tryasavitsy",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "трясавицы",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1869:p.86"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "likhoradki",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "Лихорадки",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1869:p.86"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1869:p.86"
+        ]
+      },
+      {
+        "romanized": "likhomanki",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "лихоманокъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1869:p.86"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1869:p.86"
+        ]
+      },
+      {
+        "romanized": "sestry-tryasavitsy",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "сестеръ-трясавицъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1869:p.88"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1869:p.88"
+        ]
+      },
+      {
+        "romanized": "dvenadtsat devits-tryasavits",
+        "peoples": [
+          "Russians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "двѣнадцати дѣвицъ-трясавицъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1869:p.101"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1869:p.101"
+        ]
+      },
+      {
+        "romanized": "Fever-Sisters",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.393"
+        ]
+      },
+      {
+        "romanized": "tryastsya-nevsinukha",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "трясця-невсинуха",
+            "people": "Ukrainians",
+            "cites": [
+              "afanasyev1869:p.84"
+            ]
+          }
+        ],
+        "cites": [
+          "afanasyev1869:p.84"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Afanasyev derives the name of the first of the fevers, трясея (also трясучка, трясуница, трясца), from the verb трясти, 'to shake'.",
+        "cites": [
+          "afanasyev1869:p.86"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "the charm against the fevers is 'still not forgotten by Russian znakhari' (русскими знахарями)",
+      "cites": [
+        "afanasyev1869:p.85"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Saratov Government (саратовской губ.)",
+      "cites": [
+        "afanasyev1869:p.101"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Russian peasants (Ralston's 'Fever-Sisters')",
+      "cites": [
+        "ralston1872:p.393"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Little-Russians (малоруссы), for the constant daily fever",
+      "cites": [
+        "afanasyev1869:p.84"
+      ]
+    },
+    {
+      "people": "Belarusians",
+      "region": "White-Russians (Бѣлоруссы), who invite the fever to the dziady supper",
+      "cites": [
+        "afanasyev1869:p.85"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "Czech belief (чешскому повѣрью) that the fevers live in ponds and wells",
+      "cites": [
+        "afanasyev1869:p.94"
+      ]
+    },
+    {
+      "people": "Bulgarians",
+      "region": "the charm is ascribed to Jeremiah, a Bulgarian priest (попа болгарскаго)",
+      "cites": [
+        "afanasyev1869:p.92"
+      ]
+    }
+  ],
+  "family": {
+    "value": "disease-and-fate",
+    "cites": [
+      "afanasyev1869:p.88"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "sisinius-charm-women",
+      "label": "Women of the Sisinius charm"
+    },
+    {
+      "id": "icon-painting-figures",
+      "label": "Figures of the icon painting"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "They are women (жены).",
+      "cites": [
+        "afanasyev1869:p.85"
+      ]
+    },
+    {
+      "text": "In the charm, the women who come out of the sea are bare-headed, with hair uncovered (простоволосыя).",
+      "form": "sisinius-charm-women",
+      "cites": [
+        "afanasyev1869:p.85"
+      ]
+    },
+    {
+      "text": "In the charm, Sisinius calls them evil women of beast-like form (звѣрообразны).",
+      "form": "sisinius-charm-women",
+      "cites": [
+        "afanasyev1869:p.86"
+      ]
+    },
+    {
+      "text": "In icon painting up to the end of the seventeenth century they were shown in the form of women, often naked.",
+      "form": "icon-painting-figures",
+      "cites": [
+        "afanasyev1869:p.94"
+      ]
+    },
+    {
+      "text": "In icon painting they were shown with bat's wings.",
+      "form": "icon-painting-figures",
+      "cites": [
+        "afanasyev1869:p.94"
+      ]
+    },
+    {
+      "text": "In icon painting each was marked by a different colour: one fever all white, others yellow, red, blue, green and so on.",
+      "form": "icon-painting-figures",
+      "cites": [
+        "afanasyev1869:p.94"
+      ]
+    },
+    {
+      "text": "In seventeenth-century icons these female figures even show a certain comeliness.",
+      "form": "icon-painting-figures",
+      "cites": [
+        "afanasyev1869:p.95"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "In the charm, Saint Sisinius sits on a stone on a pillar by the Black Sea; the sea rises to the clouds and twelve women come out of it.",
+      "cites": [
+        "afanasyev1869:p.85"
+      ]
+    },
+    {
+      "text": "According to some manuscripts, the women come out of a fiery pillar.",
+      "cites": [
+        "afanasyev1869:pp.85-86"
+      ]
+    },
+    {
+      "text": "In one manuscript, seven holy men see twelve fevers (лихоманки) floating on the sea and raising a storm.",
+      "cites": [
+        "afanasyev1869:p.86"
+      ]
+    },
+    {
+      "text": "In the version condemned as Jeremiah's fable, Sisinius sits on Mount Sinai and sees seven women coming out of the sea.",
+      "cites": [
+        "afanasyev1869:p.92"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "In the charm they say they are going into the holy Russian land to torment mankind: to damage the body, break the bones and drive people into the grave.",
+      "cites": [
+        "afanasyev1869:p.86"
+      ]
+    },
+    {
+      "text": "They say they torment with various torments whoever does evil, drinks or eats to excess, sleeps through mass and matins, or does not pray to God.",
+      "cites": [
+        "afanasyev1869:p.86"
+      ]
+    },
+    {
+      "text": "Asked their names, the fevers list them and describe the torment with which each one racks the sick.",
+      "cites": [
+        "afanasyev1869:p.86"
+      ]
+    },
+    {
+      "text": "Ogneya, the fiery one, makes the person she catches burn like flame in a stove, that is, she causes inner heat.",
+      "cites": [
+        "afanasyev1869:p.87"
+      ]
+    },
+    {
+      "text": "Ledeya (or Oznoba) chills mankind like ice, so that whoever she torments cannot get warm even in the stove.",
+      "cites": [
+        "afanasyev1869:p.87"
+      ]
+    },
+    {
+      "text": "Gneteya lies on a person's ribs, presses on the belly, takes away appetite and causes vomiting.",
+      "cites": [
+        "afanasyev1869:p.87"
+      ]
+    },
+    {
+      "text": "Grynusha (or Grudica) lies on the chest by the heart and causes hoarseness and coughing up.",
+      "cites": [
+        "afanasyev1869:p.87"
+      ]
+    },
+    {
+      "text": "Glukheya presses on the head, makes it ache and stops the ears, so that the sick person goes deaf.",
+      "cites": [
+        "afanasyev1869:p.87"
+      ]
+    },
+    {
+      "text": "Lomeya (or Kostolomka) breaks the bones and back as a strong storm breaks a tree.",
+      "cites": [
+        "afanasyev1869:p.87"
+      ]
+    },
+    {
+      "text": "Pukhneya sends swelling over the whole body.",
+      "cites": [
+        "afanasyev1869:p.87"
+      ]
+    },
+    {
+      "text": "Zhelteya turns a person yellow, 'like a flower in the field'.",
+      "cites": [
+        "afanasyev1869:p.87"
+      ]
+    },
+    {
+      "text": "Korkusha (or Korcheya) cramps the sinews of the arms and legs.",
+      "cites": [
+        "afanasyev1869:pp.87-88"
+      ]
+    },
+    {
+      "text": "Glyadeya does not let the sick person sleep, and together with her demons come to the person and drive him out of his mind.",
+      "cites": [
+        "afanasyev1869:p.88"
+      ]
+    },
+    {
+      "text": "Neveya is the eldest sister of all the fevers and the most accursed; if she enters a person, he will not escape death.",
+      "cites": [
+        "afanasyev1869:p.88"
+      ]
+    },
+    {
+      "text": "The people count other ailments among these mythic sisters as well, such as burning fever (горячка), wasting and jaundice.",
+      "cites": [
+        "afanasyev1869:p.88"
+      ]
+    },
+    {
+      "text": "The people explain the rest days of an intermittent fever by saying she has much work and passes from one person to another, returning to each in turn; some say she sleeps on the free days.",
+      "cites": [
+        "afanasyev1869:p.84"
+      ]
+    },
+    {
+      "text": "By Czech belief the fevers live in ponds and wells, so there is a time when no one dares drink water from them.",
+      "cites": [
+        "afanasyev1869:p.94"
+      ]
+    },
+    {
+      "text": "At the dziady memorial supper the White-Russians invite the fever (лихорадку) along with their dead kin.",
+      "cites": [
+        "afanasyev1869:p.85"
+      ]
+    },
+    {
+      "text": "Russian peasants believe a victim who accepts a drink from a witch may swallow the Fever-Sisters with it; inside him they become snakes, toads or mice, suck his veins dry and bring him to the grave.",
+      "cites": [
+        "ralston1872:p.393"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "In the legend, God sends the archangel Michael and the four evangelists, who torment the tryasavitsy with three (or seven) iron rods, three hundred wounds a day.",
+      "cites": [
+        "afanasyev1869:p.86"
+      ]
+    },
+    {
+      "text": "In the legend the fevers promise to flee ten versts from any family in which the names of Sisinius, Michael and the evangelists are glorified.",
+      "cites": [
+        "afanasyev1869:p.86"
+      ]
+    },
+    {
+      "text": "The charm adjures the accursed tryasavitsy by Sisinius, Michael and the four evangelists to flee from the sick person three days' and three stages' distance, on threat of three hundred wounds a day.",
+      "cites": [
+        "afanasyev1869:p.89"
+      ]
+    },
+    {
+      "text": "Some manuscripts add where they must go: into dark forests, onto rotten logs, or into empty and waterless places.",
+      "cites": [
+        "afanasyev1869:p.89"
+      ]
+    },
+    {
+      "text": "The charm is to be read by a priest, and the sick person is then given water from the cross to drink with words calling the cross a driver-out of ailments, demons and tryasavitsy.",
+      "cites": [
+        "afanasyev1869:p.89"
+      ]
+    },
+    {
+      "text": "Sufferers go to the place where they think the fever entered them, scatter barley groats around themselves, bow on all sides and offer the groats to the earth and to the fever ('кумаха').",
+      "cites": [
+        "afanasyev1869:p.84"
+      ]
+    },
+    {
+      "text": "Russians and Czechs try to pass the fever to the first person they meet, or to birds, cats and dogs, or to deceive it with a false inscription on the door saying the sick person is not at home.",
+      "cites": [
+        "afanasyev1869:p.84"
+      ]
+    },
+    {
+      "text": "Siberians advise the sick to blacken the face and dress in someone else's clothes so the fever will not recognise them when she returns.",
+      "cites": [
+        "afanasyev1869:p.84"
+      ]
+    },
+    {
+      "text": "In Czech practice, a person sick with fever goes to a well before sunrise and recites a charm.",
+      "cites": [
+        "afanasyev1869:p.94"
+      ]
+    },
+    {
+      "text": "In Orel Government the sick person is bathed in lime-blossom decoction, throws the shirt taken off him into a river early in the morning, asks the 'матушка-ворогуша' to take the shirt and leave him, and goes home silent without looking back.",
+      "cites": [
+        "afanasyev1869:p.94"
+      ]
+    },
+    {
+      "text": "The fever-women are banished into the ocean-sea, into springs and swamps, rocks and mountains, reeds and trees, fire and winds.",
+      "cites": [
+        "afanasyev1869:p.94"
+      ]
+    },
+    {
+      "text": "In Saratov Government the goddess Zorya is called on to free the sick 'from all twelve maiden-tryasavitsy', after which the ailment is licked crosswise from the forehead, chin and cheeks and spat onto the ground.",
+      "cites": [
+        "afanasyev1869:p.101"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "In the charm they call themselves the accursed tryasavitsy, daughters of Herod, who took the head of John the Baptist.",
+      "cites": [
+        "afanasyev1869:p.86"
+      ]
+    },
+    {
+      "text": "Neveya, the eldest sister, is the dancer for whose sake John the Baptist was beheaded.",
+      "cites": [
+        "afanasyev1869:p.88"
+      ]
+    },
+    {
+      "text": "The maidens of burning and chilling diseases came to be held daughters of Herod, and the eldest was called плясавица (the dancer).",
+      "cites": [
+        "afanasyev1869:p.94"
+      ]
+    },
+    {
+      "text": "The article 'on true and false books' condemns the questions of Jeremiah about the ailment called tryasavitsy as fables of Jeremiah, a Bulgarian priest, whose oldest known redaction is in a fourteenth-century nomocanon.",
+      "cites": [
+        "afanasyev1869:p.92"
+      ]
+    },
+    {
+      "text": "Afanasyev takes this as evidence that the charm is of South Slavic origin and reached Russia with Bulgarian writings.",
+      "cites": [
+        "afanasyev1869:p.92"
+      ]
+    }
+  ],
+  "related": [],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "variants: no source splits the tryasavitsy by people or region into distinct descriptions; regional practices are kept as single clauses. Searched tryasavitsy, tryasavitsa, fever-sisters, fever sisters, трясавиц, трясовиц, лихорадк, трясц, fever across all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "related: no page opened links the tryasavitsy to another pilot creature id. Afanasyev p.88 ties the eldest sister Neveya to the dead (нава, навье); that was not read as a link to navka."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1869:p.85 footnote 6 gives a manuscript variant reading of the charm's women, 'сами черны, власы по поясъ' (themselves black, hair to the waist). Kept out of appearance because the role prompt treats footnote lines as references, not lore; the verify agent or Ben may decide to admit it."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1869:p.88 says that in some localities of Russia, instead of the sister-tryasavitsy, people tell of twelve ugly old women, the горячки (burning fevers). Kept out of appearance because the page presents them as a substitute, not as a description of the tryasavitsy."
+    },
+    {
+      "kind": "scope",
+      "text": "Afanasyev pp.84, 85, 94 speak of 'the fever' (лихорадка, лихоманка, кумаха, матушка-ворогуша) in the singular in folk practice; these are included because Afanasyev treats them in the same section as the sister-fevers, but they are not explicitly named tryasavitsy on those pages."
+    },
+    {
+      "kind": "other",
+      "text": "People term not in sources/peoples.json: 'Сибиряки' (Siberians), afanasyev1869:p.84; proposed people Russians. No people row written."
+    },
+    {
+      "kind": "other",
+      "text": "People term not in sources/peoples.json: 'орловской губ.' (Orel Government), afanasyev1869:p.94; proposed people Russians. No people row written."
+    },
+    {
+      "kind": "scope",
+      "text": "Pages in the hinted range afanasyev1869 pp.73-101 not opened within budget: pp.73-83, 90-91, 93, 96-100. p.73 names трясца with chest-oppression in sleep; p.96 mentions the index condemning charms against tryasavitsy alongside other false prayers; others may hold further charms or practices."
+    }
+  ]
+}

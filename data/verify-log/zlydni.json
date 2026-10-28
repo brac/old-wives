@@ -1,0 +1,59 @@
+{
+  "entry_id": "zlydni",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [],
+  "retagged": [
+    {
+      "field": "/peoples_regions/0",
+      "text": "Ukrainians: Little Russia (Малороссіи); Ralston's \"Little-Russia\"",
+      "from_cites": [
+        "afanasyev1869:p.404",
+        "ralston1873:p.194"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.404",
+        "ralston1873:pp.193-194"
+      ],
+      "reason": "The region text quotes Ralston's \"Little-Russia\", which is printed at the foot of ralston1873:p.193 (\"In Little-Russia the peasantry believe in the existence\"), running onto p.194; p.194 alone prints only \"Little-Russian\"."
+    }
+  ],
+  "reformed": [],
+  "flagged": [],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Afanasyev records the zlydni for Little Russia and gives a Belarusian proverb about them.",
+      "cites": [
+        "afanasyev1869:p.404",
+        "afanasyev1869:p.405"
+      ]
+    },
+    {
+      "text": "Ralston records a Little-Russian belief in the Zluidni, a Little-Russian curse and a White-Russian proverb, and cites no source on that passage.",
+      "cites": [
+        "ralston1873:p.193",
+        "ralston1873:p.194"
+      ]
+    },
+    {
+      "text": "Ralston's Maksimovich tale is marked as quoted by Afanasyev, so that tale is counted once.",
+      "cites": [
+        "ralston1873:p.195"
+      ]
+    },
+    {
+      "text": "Ralston's Little-Russian Likho variant, where the Zluidni sit around Likho, is marked as quoted by Afanasyev, so it is counted once.",
+      "cites": [
+        "ralston1873:p.181"
+      ]
+    },
+    {
+      "text": "Two peoples (Ukrainians, Belarusians) are each attested by Afanasyev and, on a passage that does not cite him, by Ralston.",
+      "cites": [
+        "afanasyev1869:p.404",
+        "ralston1873:p.194"
+      ]
+    }
+  ]
+}

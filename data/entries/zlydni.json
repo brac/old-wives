@@ -1,0 +1,329 @@
+{
+  "id": "zlydni",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "zlydni",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Злыдни",
+          "people": "Ukrainians",
+          "cites": [
+            "afanasyev1868:p.699"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "zlidni",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "afanasyev1869:p.404"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "злидни",
+            "people": "Ukrainians",
+            "cites": [
+              "afanasyev1869:p.404"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Zluidni",
+        "peoples": [
+          "Ukrainians",
+          "Belarusians"
+        ],
+        "cites": [
+          "ralston1873:p.194"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Ralston glosses the name as \"Woes\".",
+        "cites": [
+          "ralston1873:p.181"
+        ]
+      },
+      {
+        "text": "Ralston says the Zluidni bring zlo, or evil, to every dwelling where they take up quarters.",
+        "cites": [
+          "ralston1873:p.194"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Ukrainians",
+      "region": "Little Russia (Малороссіи); Ralston's \"Little-Russia\"",
+      "cites": [
+        "afanasyev1869:p.404",
+        "ralston1873:pp.193-194"
+      ]
+    },
+    {
+      "people": "Belarusians",
+      "region": "Belarusian proverb (у бѣлоруссовъ); Ralston's \"White-Russian\"",
+      "cites": [
+        "afanasyev1869:pp.404-405",
+        "ralston1873:p.194"
+      ]
+    }
+  ],
+  "family": {
+    "value": "disease-and-fate",
+    "cites": [
+      "afanasyev1869:pp.404-405"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "They are small beings.",
+      "cites": [
+        "afanasyev1869:p.404",
+        "ralston1873:p.194"
+      ]
+    },
+    {
+      "text": "Their form is indefinite, not clearly defined.",
+      "cites": [
+        "afanasyev1869:p.404",
+        "ralston1873:p.194"
+      ]
+    },
+    {
+      "text": "They are of tiny stature.",
+      "cites": [
+        "afanasyev1869:p.405"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "In the houses where they settle, they live behind the stove.",
+      "cites": [
+        "afanasyev1869:p.405"
+      ]
+    },
+    {
+      "text": "In one tale their voices are heard from inside an abandoned old hut overgrown with wormwood.",
+      "cites": [
+        "afanasyev1869:p.408"
+      ]
+    },
+    {
+      "text": "In a Little-Russian variant of the Likho tale they sit around Likho, a huge blind giant, inside an iron castle by a wood, fenced with human bones topped with skulls.",
+      "cites": [
+        "afanasyev1868:p.699",
+        "ralston1873:p.181"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "Afanasyev says they correspond to Gore, Likho and Nedolya of the folk-tale epic.",
+      "cites": [
+        "afanasyev1869:p.404"
+      ]
+    },
+    {
+      "text": "Wherever they settle, that house is threatened by great evil: however great the master's wealth, it quickly vanishes and dire poverty takes the place of plenty.",
+      "cites": [
+        "afanasyev1869:p.404"
+      ]
+    },
+    {
+      "text": "They bring evil to every dwelling in which they take up quarters.",
+      "cites": [
+        "ralston1873:p.194"
+      ]
+    },
+    {
+      "text": "They have a restless character.",
+      "cites": [
+        "afanasyev1869:p.405"
+      ]
+    },
+    {
+      "text": "When they settle in houses they live invisibly.",
+      "cites": [
+        "afanasyev1869:p.405"
+      ]
+    },
+    {
+      "text": "They wander the world and settle to live in groups.",
+      "cites": [
+        "afanasyev1869:p.405"
+      ]
+    },
+    {
+      "text": "A curse runs \"May the zlidni beat him!\"; Ralston calls it a Little-Russian curse.",
+      "cites": [
+        "afanasyev1869:p.404",
+        "ralston1873:p.194"
+      ]
+    },
+    {
+      "text": "A Belarusian proverb says that the zlydni asked to come in for three days, and in three years you will not get them out.",
+      "cites": [
+        "afanasyev1869:pp.404-405",
+        "ralston1873:p.194"
+      ]
+    },
+    {
+      "text": "In a tale recorded by Maksimovich they play the same role as Gore.",
+      "cites": [
+        "afanasyev1869:p.407"
+      ]
+    },
+    {
+      "text": "In that tale, after a poor man grew rich and moved to a new house, the zlydni stayed in his old hut and reproached him for abandoning them.",
+      "cites": [
+        "afanasyev1869:p.408",
+        "ralston1873:pp.194-195"
+      ]
+    },
+    {
+      "text": "In that tale they call themselves his zlydni, remind him of their faithful service, and declare they will never leave him.",
+      "cites": [
+        "afanasyev1869:p.408",
+        "ralston1873:p.195"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "In the tale, Ivan agrees to take them along only on condition that they carry his millstones on their shoulders, and makes them walk ahead of him.",
+      "cites": [
+        "afanasyev1869:p.408",
+        "ralston1873:p.195"
+      ]
+    },
+    {
+      "text": "Crossing a bridge over a deep river, he shoves them off, and they sink to the bottom with the millstones.",
+      "cites": [
+        "afanasyev1869:p.408",
+        "ralston1873:p.195"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [
+    {
+      "id": "likho",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Afanasyev records the zlydni for Little Russia and gives a Belarusian proverb about them.",
+        "cites": [
+          "afanasyev1869:p.404",
+          "afanasyev1869:p.405"
+        ]
+      },
+      {
+        "text": "Ralston records a Little-Russian belief in the Zluidni, a Little-Russian curse and a White-Russian proverb, and cites no source on that passage.",
+        "cites": [
+          "ralston1873:p.193",
+          "ralston1873:p.194"
+        ]
+      },
+      {
+        "text": "Ralston's Maksimovich tale is marked as quoted by Afanasyev, so that tale is counted once.",
+        "cites": [
+          "ralston1873:p.195"
+        ]
+      },
+      {
+        "text": "Ralston's Little-Russian Likho variant, where the Zluidni sit around Likho, is marked as quoted by Afanasyev, so it is counted once.",
+        "cites": [
+          "ralston1873:p.181"
+        ]
+      },
+      {
+        "text": "Two peoples (Ukrainians, Belarusians) are each attested by Afanasyev and, on a passage that does not cite him, by Ralston.",
+        "cites": [
+          "afanasyev1869:p.404",
+          "ralston1873:p.194"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "origin: no opened page says where the zlydni come from or who becomes one. Searched злыдни, злыдн, злыд, злидн, злид, злыден, злыдень, zlydni, zlyden, zluidni across all sources. Afanasyev (afanasyev1869:p.405) offers only his own comparative reading that they attest an ancient link between personifications of fate and death and storm spirits; that is interpretation, not origin lore, and is left out."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: the Ukrainian and Belarusian attestations (afanasyev1869:pp.404-405, ralston1873:p.194) do not describe the zlydni differently, so no per-people variant is given."
+    },
+    {
+      "kind": "scope",
+      "text": "Ralston's Zluidni passage (ralston1873:pp.194-195) is an English retelling of Afanasyev's (afanasyev1869:pp.404-408), and Ralston's Likho variant (ralston1873:p.181) retells afanasyev1868:p.699. They are cited together where both state a clause, but they are not independent witnesses."
+    },
+    {
+      "kind": "scope",
+      "text": "The family value disease-and-fate rests on afanasyev1869:pp.404-405, which places the zlydni among supernatural beings that govern luck and misfortune (Dolya, Nedolya, Gore, Likho) and treats them as mythic personifications of fate. Afanasyev also likens them by size and restless character to household dwarfs (kobolds, kikimory); that comparison is not used as a family claim."
+    },
+    {
+      "kind": "other",
+      "text": "related: likho is linked because afanasyev1869:p.404 says the zlydni correspond to Gore, Likho and Nedolya, and afanasyev1868:p.699 and ralston1873:p.181 seat them around Likho. The same page names Nedolya, the counterpart of Dolya; dolya was not added because the page ties the zlydni to Nedolya, not to Dolya. Afanasyev p.405 compares them to kikimory as a likeness only, so kikimora was not linked."
+    },
+    {
+      "kind": "other",
+      "text": "names.primary.native gives Злыдни as printed in the Little-Russian Likho variant (afanasyev1868:p.699). The same form in lower case is printed on afanasyev1869:p.404 in the Belarusian proverb and on p.408 in the Maksimovich tale, which Ralston (ralston1873:p.194) calls a Little-Russian skazka; Afanasyev p.407 does not name the people of that tale."
+    },
+    {
+      "kind": "scope",
+      "text": "Verify: the grade judges Ralston per passage. His description, curse and proverb (ralston1873:pp.193-194) cite no source and are counted as independent of Afanasyev; his Maksimovich tale (ralston1873:p.195) and Likho variant (ralston1873:p.181) are marked \"quoted by Afanasief\" and are counted with Afanasyev. The draft scope note's reading of the whole Ralston passage as a retelling is not the basis of the grade. The grade is thin: Ralston's p.194 passage follows the order and content of afanasyev1869:p.404 closely.",
+      "cites": [
+        "ralston1873:p.181",
+        "ralston1873:p.194",
+        "ralston1873:p.195"
+      ]
+    }
+  ]
+}

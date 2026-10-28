@@ -1,0 +1,300 @@
+{
+  "id": "tugarin",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "Tugarin Zmeevich",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Тугаринъ Змѣевичъ",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1868:p.519",
+            "afanasyev1868:p.526"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Tugarin Zmyeevich",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.172",
+          "ralston1872:p.173"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Afanasyev glosses the patronymic Zmeevich as \"son of the serpent\".",
+        "cites": [
+          "afanasyev1868:p.519"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "Russian tales and byliny (\"русскихъ сказокъ и былинъ\")",
+      "cites": [
+        "afanasyev1868:p.526"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "Russian stories of the Serpent (Songs of the Russian People)",
+      "cites": [
+        "ralston1872:p.172",
+        "ralston1872:p.173"
+      ]
+    }
+  ],
+  "family": {
+    "value": "monster",
+    "cites": [
+      "afanasyev1868:p.555"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "afanasyev-folk-tale-giant",
+      "label": "Afanasyev's folk tale: giant bogatyr"
+    },
+    {
+      "id": "afanasyev-oka-serpent",
+      "label": "Afanasyev's Oka river serpent"
+    },
+    {
+      "id": "afanasyev-bylina-flier",
+      "label": "Afanasyev's bylina: winged flier"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "A folk tale says he was a bogatyr (warrior-hero) three sazhens tall.",
+      "cites": [
+        "afanasyev1868:p.523"
+      ],
+      "form": "afanasyev-folk-tale-giant"
+    },
+    {
+      "text": "In the same folk tale, the space between his eyes was the length of a tempered arrow.",
+      "cites": [
+        "afanasyev1868:p.523"
+      ],
+      "form": "afanasyev-folk-tale-giant"
+    },
+    {
+      "text": "As Tugarin-zmei swimming in the Oka river, he is three hundred sazhens long.",
+      "cites": [
+        "afanasyev1868:p.555"
+      ],
+      "form": "afanasyev-oka-serpent"
+    },
+    {
+      "text": "When he saw Alesha Popovich, he turned black as an autumn night.",
+      "cites": [
+        "afanasyev1868:p.519"
+      ],
+      "form": "afanasyev-bylina-flier"
+    },
+    {
+      "text": "He rose up on wings.",
+      "cites": [
+        "afanasyev1868:p.519"
+      ],
+      "form": "afanasyev-bylina-flier"
+    }
+  ],
+  "scene": [
+    {
+      "text": "He caught sight of Alesha Popovich when Alesha went to the river.",
+      "cites": [
+        "afanasyev1868:p.519"
+      ]
+    },
+    {
+      "text": "He swims along the Oka river.",
+      "cites": [
+        "afanasyev1868:p.555"
+      ]
+    },
+    {
+      "text": "When he roared in a loud voice, the whole oak wood shook.",
+      "cites": [
+        "afanasyev1868:p.519"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "He shouted to his opponent that he would burn him with fire, trample him with his horse or kill him with his spear.",
+      "cites": [
+        "afanasyev1868:p.519"
+      ]
+    },
+    {
+      "text": "He ate and drank as much as the giants do.",
+      "cites": [
+        "afanasyev1868:p.523"
+      ]
+    },
+    {
+      "text": "According to a bylina, he sat on his good horse and rose on wings to fly beneath the heavens.",
+      "cites": [
+        "afanasyev1868:p.525"
+      ]
+    },
+    {
+      "text": "According to the bylina, Tugarin's horse is like a fierce beast: flame bursts from its maw and smoke comes from its ears in a column.",
+      "cites": [
+        "afanasyev1868:p.525"
+      ]
+    },
+    {
+      "text": "Following this description, a lubok print shows Tugarin's horse with wings.",
+      "cites": [
+        "afanasyev1868:p.525"
+      ]
+    },
+    {
+      "text": "Swimming in the Oka, he knocks down the steep banks with his back.",
+      "cites": [
+        "afanasyev1868:p.555"
+      ]
+    },
+    {
+      "text": "Swimming in the Oka, he threatens to flood the whole country.",
+      "cites": [
+        "afanasyev1868:p.555"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "The bogatyr Alesha Popovich struck Tugarin down.",
+      "cites": [
+        "afanasyev1868:p.519"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "Heroes of magic powers, such as Tugarin Zmyeevich, spring from the unions of the Serpent with mortal maidens he carries off.",
+      "cites": [
+        "ralston1872:p.173"
+      ]
+    },
+    {
+      "text": "Afanasyev names Tugarin Zmeevich among the offspring of women's unchaste unions with serpents, who are not ordinary children but sorcerer-heroes.",
+      "cites": [
+        "afanasyev1868:p.578"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "zmey-gorynych",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "regional",
+    "rationale": [
+      {
+        "text": "Afanasyev quotes Tugarin's roar as the testimony of Russian tales and byliny.",
+        "cites": [
+          "afanasyev1868:p.526"
+        ]
+      },
+      {
+        "text": "Afanasyev's Tugarin material is drawn from Kirsha Danilov's byliny and Sakharov's tales, which he summarises.",
+        "cites": [
+          "afanasyev1868:p.519",
+          "afanasyev1868:p.555"
+        ]
+      },
+      {
+        "text": "Ralston, writing of the Serpent in Russian tales, names Tugarin Zmyeevich among the heroes born of the Serpent's unions with mortal maidens.",
+        "cites": [
+          "ralston1872:p.172",
+          "ralston1872:p.173"
+        ]
+      },
+      {
+        "text": "Ralston's statement parallels Afanasyev's on p.578, but on this passage Ralston does not cite or quote Afanasyev (the page's one Afanasief footnote belongs to the Luna and Zvyezda story), so under the per-passage rule he counts as a second, independent source.",
+        "cites": [
+          "ralston1872:p.173",
+          "afanasyev1868:p.578"
+        ]
+      },
+      {
+        "text": "Both verified peoples_regions rows name Russians, and no other people is named for Tugarin: one people, two independent sources.",
+        "cites": [
+          "afanasyev1868:p.526",
+          "ralston1872:p.172"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "variants: no source ties a description of Tugarin to a particular people or region; all pages are Russian (Afanasyev 1868 pp.519, 523, 525-526, 555, 578; Ralston 1872 p.173). Searched tugarin, tugarin zmeevich, zmeevich, zmyeevich, tugar, тугарин, тугаринъ, тугар, змеевич, змее-, сын змея across all sources."
+    },
+    {
+      "kind": "scope",
+      "text": "The three appearance forms come from three different tellings that Afanasyev summarises (a folk tale on p.523, a tale cited to Sakharov on p.555, a bylina cited to Kirsha Danilov on pp.519 and 525). Three sazhens tall (p.523) and three hundred sazhens long (p.555) cannot be one figure, and the bylina's blackening and wings are kept apart rather than added to either."
+    },
+    {
+      "kind": "scope",
+      "text": "Wings: p.519 says Tugarin himself rose on wings; on p.525 the bylina says he sat on his horse and rose on wings, and Afanasyev then reads the wings as the horse's (the lubok shows the horse winged). The appearance clause rests on p.519 only; the horse details are in behavior_habitat."
+    },
+    {
+      "kind": "scope",
+      "text": "Fedor Tugarin (afanasyev1865:p.507; ralston1873:p.98) is the human hero of a different tale whose sisters are wooed by the Wind, the Hail and the Thunder; he is not this creature and nothing from those pages is used."
+    },
+    {
+      "kind": "scope",
+      "text": "related zmey-gorynych: afanasyev1868:p.555 gives Tugarin-zmei and Zmey Gorynych side by side as serpents met in rivers, and ralston1872:p.173 makes Tugarin Zmyeevich the offspring of the Serpent who sometimes bears the patronymic Goruinuich. Neither page says they are the same being; the verify agent should judge whether this supports `related`."
+    },
+    {
+      "kind": "other",
+      "text": "Afanasyev's mythological readings (the serpent as storm-cloud, giants as clouds, pp.519, 523, 525-526) are his interpretation, not reported belief, and are left out of the clauses."
+    },
+    {
+      "kind": "other",
+      "text": "Verify removed the name row Tugarin-zmei (Тугаринъ-змѣй, afanasyev1868:p.555) only because p.555 prints no people term; the form itself is printed there. A re-draft can restore it if it finds a page that names a people for that form."
+    },
+    {
+      "kind": "scope",
+      "text": "Verify kept related zmey-gorynych: afanasyev1868:p.555 sets Tugarin-zmei beside Zmey Gorynych as river serpents, and ralston1872:p.173 makes Tugarin Zmyeevich the offspring of the Serpent who sometimes bears the patronymic Goruinuich. Neither page says they are one being, and the link is \"related\", not \"same\"."
+    }
+  ]
+}

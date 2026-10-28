@@ -1,0 +1,121 @@
+{
+  "entry_id": "tugarin",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [
+    {
+      "field": "/names/variants/0",
+      "text": "Tugarin-zmei (peoples: Russians)",
+      "cites": [
+        "afanasyev1868:p.555"
+      ],
+      "reason": "The form \"Тугаринъ-змѣй\" is printed on p.555, but p.555 prints no term for any people tied to it (its only people terms are сербская, Германіи, чехи, лужичане, about other beings; the footnote cites Sakharov's tales by title only). Neighbouring p.554 has only a linguistic \"русскаго\". The people \"Russians\" rests on no term in sources/peoples.json, so the row is refused."
+    },
+    {
+      "field": "/names/variants/0/native/0",
+      "text": "Тугаринъ-змѣй",
+      "cites": [
+        "afanasyev1868:p.555"
+      ],
+      "reason": "Removed with its parent row /names/variants/0: the native row's people \"Russians\" rests on no people term printed on p.555."
+    },
+    {
+      "field": "/behavior_habitat/5",
+      "text": "He cannot abide the smoke of burning juniper and flees from it.",
+      "cites": [
+        "afanasyev1868:p.526"
+      ],
+      "reason": "p.526 says nothing about juniper; it mentions Tugarin only in the quoted roar. Searched \"можжевел\" in afanasyev1868 (hits pp.19, 347, 389, none about Tugarin) and \"тугарин\" across the corpus (pp.519, 523, 525, 526, 555, 578; p.524 and p.527 opened): no page gives juniper smoke for Tugarin."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "/appearance/4",
+      "text": "He rose up on wings and flew through the sky.",
+      "to_text": "He rose up on wings.",
+      "from_cites": [
+        "afanasyev1868:p.519"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.519"
+      ],
+      "reason": "Cut \"and flew through the sky\": flight is behaviour, not physical description. The wings (\"поднялся на крыльяхъ\") are the physical detail p.519 states."
+    }
+  ],
+  "retagged": [
+    {
+      "field": "/names/primary/native/0",
+      "text": "Тугаринъ Змѣевичъ",
+      "from_cites": [
+        "afanasyev1868:p.519"
+      ],
+      "to_cites": [
+        "afanasyev1868:p.519",
+        "afanasyev1868:p.526"
+      ],
+      "reason": "The form is printed on p.519, but p.519 prints no people term for the row's people \"Russians\". p.526 quotes the same episode (\"заревѣлъ Тугаринъ — и дрогнула вся дубрава!\") under \"русскихъ сказокъ и былинъ\"; \"русскихъ\" is in the peoples.json Russians row. Added p.526 so the people rests on a printed term."
+    },
+    {
+      "field": "/names/variants/1",
+      "text": "Tugarin Zmyeevich (peoples: Russians)",
+      "from_cites": [
+        "ralston1872:p.173"
+      ],
+      "to_cites": [
+        "ralston1872:p.172",
+        "ralston1872:p.173"
+      ],
+      "reason": "The form is printed on p.173, which prints no people term (\"the stories\"). The passage begins on p.172, which frames the stories as those of \"the heroes of Russian tales\" and \"the Skazkas\"; \"Russian\" is in the peoples.json Russians row. Added p.172."
+    },
+    {
+      "field": "/peoples_regions/1",
+      "text": "Russian stories of the Serpent (Songs of the Russian People)",
+      "from_cites": [
+        "ralston1872:p.173"
+      ],
+      "to_cites": [
+        "ralston1872:p.172",
+        "ralston1872:p.173"
+      ],
+      "reason": "p.173 says only \"the stories\"; the passage starts on p.172, which names \"Russian tales\" and \"the Skazkas\" (peoples.json Russians row, term \"Russian\"). Added p.172."
+    }
+  ],
+  "reformed": [],
+  "flagged": [],
+  "grade": "regional",
+  "grade_rationale": [
+    {
+      "text": "Afanasyev quotes Tugarin's roar as the testimony of Russian tales and byliny.",
+      "cites": [
+        "afanasyev1868:p.526"
+      ]
+    },
+    {
+      "text": "Afanasyev's Tugarin material is drawn from Kirsha Danilov's byliny and Sakharov's tales, which he summarises.",
+      "cites": [
+        "afanasyev1868:p.519",
+        "afanasyev1868:p.555"
+      ]
+    },
+    {
+      "text": "Ralston, writing of the Serpent in Russian tales, names Tugarin Zmyeevich among the heroes born of the Serpent's unions with mortal maidens.",
+      "cites": [
+        "ralston1872:p.172",
+        "ralston1872:p.173"
+      ]
+    },
+    {
+      "text": "Ralston's statement parallels Afanasyev's on p.578, but on this passage Ralston does not cite or quote Afanasyev (the page's one Afanasief footnote belongs to the Luna and Zvyezda story), so under the per-passage rule he counts as a second, independent source.",
+      "cites": [
+        "ralston1872:p.173",
+        "afanasyev1868:p.578"
+      ]
+    },
+    {
+      "text": "Both verified peoples_regions rows name Russians, and no other people is named for Tugarin: one people, two independent sources.",
+      "cites": [
+        "afanasyev1868:p.526",
+        "ralston1872:p.172"
+      ]
+    }
+  ]
+}

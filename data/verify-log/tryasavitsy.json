@@ -1,0 +1,104 @@
+{
+  "entry_id": "tryasavitsy",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/origin/3",
+      "text": "The article 'on true and false books' condemns the questions of Jeremiah about the ailment called tryasavitsy as fables of Jeremiah, a Bulgarian priest, whose oldest known redaction is in a fourteenth-century nomocanon.",
+      "to_text": "The article 'on true and false books', whose oldest known redaction is in a fourteenth-century nomocanon, condemns the questions of Jeremiah about the ailment called tryasavitsy as fables of Jeremiah, a Bulgarian priest.",
+      "from_cites": [
+        "afanasyev1869:p.92"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.92"
+      ],
+      "reason": "The page says the oldest known redaction of the article 'on true and false books' was found in a fourteenth-century nomocanon; the draft's 'whose' attaches that redaction to Jeremiah's fables. Reordered so the redaction belongs to the article; nothing else changed."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/variants/4",
+      "text": "Fever-Sisters",
+      "reason": "Ralston p.393 prints \"Fever-Sisters\" in quotes without naming the tryasavitsy or a Russian term; reading them as the same beings is a reasonable but unconfirmed identification on this page. Kept."
+    },
+    {
+      "field": "/names/variants/5",
+      "text": "tryastsya-nevsinukha",
+      "reason": "afanasyev1869:p.84 speaks only of 'the fever' (лихорадка, лихоманка, кумаха, трясця) in the singular and does not name the tryasavitsy; the tie rests on Afanasyev treating лихорадки as the tryasavitsy on pp.86 and 94 (трясца is listed on p.86 as a name of the first fever). Ambiguous referent, kept."
+    },
+    {
+      "field": "/peoples_regions/2",
+      "text": "Russian peasants (Ralston's 'Fever-Sisters')",
+      "reason": "Ralston p.393 prints \"Fever-Sisters\" in quotes without naming the tryasavitsy or a Russian term; reading them as the same beings is a reasonable but unconfirmed identification on this page. Kept."
+    },
+    {
+      "field": "/peoples_regions/3",
+      "text": "Little-Russians (малоруссы), for the constant daily fever",
+      "reason": "afanasyev1869:p.84 speaks only of 'the fever' (лихорадка, лихоманка, кумаха, трясця) in the singular and does not name the tryasavitsy; the tie rests on Afanasyev treating лихорадки as the tryasavitsy on pp.86 and 94 (трясца is listed on p.86 as a name of the first fever). Ambiguous referent, kept."
+    },
+    {
+      "field": "/peoples_regions/6",
+      "text": "the charm is ascribed to Jeremiah, a Bulgarian priest (попа болгарскаго)",
+      "reason": "afanasyev1869:p.92 names a Bulgarian priest as the author of the condemned charm and argues it reached Russia with Bulgarian writings; the term болгарскаго is in the peoples table, but the page attests a Bulgarian written apocryphon, not a belief recorded among Bulgarians. Kept."
+    },
+    {
+      "field": "/behavior_habitat/15",
+      "text": "The people explain the rest days of an intermittent fever by saying she has much work and passes from one person to another, returning to each in turn; some say she sleeps on the free days.",
+      "reason": "afanasyev1869:p.84 speaks only of 'the fever' (лихорадка, лихоманка, кумаха, трясця) in the singular and does not name the tryasavitsy; the tie rests on Afanasyev treating лихорадки as the tryasavitsy on pp.86 and 94 (трясца is listed on p.86 as a name of the first fever). Ambiguous referent, kept."
+    },
+    {
+      "field": "/behavior_habitat/17",
+      "text": "At the dziady memorial supper the White-Russians invite the fever (лихорадку) along with their dead kin.",
+      "reason": "Ralston p.393 prints \"Fever-Sisters\" in quotes without naming the tryasavitsy or a Russian term; reading them as the same beings is a reasonable but unconfirmed identification on this page. Kept."
+    },
+    {
+      "field": "/dealing_with_it/5",
+      "text": "Sufferers go to the place where they think the fever entered them, scatter barley groats around themselves, bow on all sides and offer the groats to the earth and to the fever ('кумаха').",
+      "reason": "afanasyev1869:p.84 speaks only of 'the fever' (лихорадка, лихоманка, кумаха, трясця) in the singular and does not name the tryasavitsy; the tie rests on Afanasyev treating лихорадки as the tryasavitsy on pp.86 and 94 (трясца is listed on p.86 as a name of the first fever). Ambiguous referent, kept."
+    },
+    {
+      "field": "/dealing_with_it/6",
+      "text": "Russians and Czechs try to pass the fever to the first person they meet, or to birds, cats and dogs, or to deceive it with a false inscription on the door saying the sick person is not at home.",
+      "reason": "afanasyev1869:p.84 speaks only of 'the fever' (лихорадка, лихоманка, кумаха, трясця) in the singular and does not name the tryasavitsy; the tie rests on Afanasyev treating лихорадки as the tryasavitsy on pp.86 and 94 (трясца is listed on p.86 as a name of the first fever). Ambiguous referent, kept."
+    },
+    {
+      "field": "/dealing_with_it/7",
+      "text": "Siberians advise the sick to blacken the face and dress in someone else's clothes so the fever will not recognise them when she returns.",
+      "reason": "afanasyev1869:p.84 speaks only of 'the fever' (лихорадка, лихоманка, кумаха, трясця) in the singular and does not name the tryasavitsy; the tie rests on Afanasyev treating лихорадки as the tryasavitsy on pp.86 and 94 (трясца is listed on p.86 as a name of the first fever). Ambiguous referent, kept."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Afanasyev records the fever-sisters and their cures among Russians, Little-Russians (малоруссы), White-Russians (Бѣлоруссы) and Czechs, and ascribes the Sisinius charm to a Bulgarian priest, so the verified peoples_regions name five peoples.",
+      "cites": [
+        "afanasyev1869:p.84",
+        "afanasyev1869:p.85",
+        "afanasyev1869:p.92",
+        "afanasyev1869:p.94"
+      ]
+    },
+    {
+      "text": "Afanasyev's account is one source although he works from many manuscripts and collections: he prints the charm as a composite text corrected from several copies.",
+      "cites": [
+        "afanasyev1869:p.85"
+      ]
+    },
+    {
+      "text": "Ralston independently records that Russian peasants believe a witch's drink can carry the \"Fever-Sisters\" into a victim; the passage does not cite or quote Afanasyev.",
+      "cites": [
+        "ralston1872:p.393"
+      ]
+    },
+    {
+      "text": "The second source supports only the Russians, and only through one passage whose identification of the Fever-Sisters with the tryasavitsy is flagged; every other people rests on Afanasyev alone.",
+      "cites": [
+        "ralston1872:p.393",
+        "afanasyev1869:p.84"
+      ]
+    }
+  ]
+}

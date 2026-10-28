@@ -1,0 +1,219 @@
+{
+  "id": "usud",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "usud",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Усуд",
+          "people": "Serbs",
+          "cites": [
+            "afanasyev1869:p.410"
+          ]
+        }
+      ]
+    },
+    "variants": [],
+    "meaning": [
+      {
+        "text": "Afanasyev glosses Usud with the Russian Sudba ('Fate') when retelling the Serbian tale.",
+        "cites": [
+          "afanasyev1869:p.410"
+        ]
+      },
+      {
+        "text": "Afanasyev says the word sudba (Serbian usud, sudjenje, as in 'tako ti je usud usudio!') shares a root with the verb 'to judge', and so means what is adjudged or predestined to a person by a higher divine judgment.",
+        "cites": [
+          "afanasyev1869:p.370"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Serbs",
+      "cites": [
+        "afanasyev1869:pp.409-410"
+      ]
+    }
+  ],
+  "family": {
+    "value": "disease-and-fate",
+    "cites": [
+      "afanasyev1869:p.410"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [],
+  "scene": [
+    {
+      "text": "In the Serbian tale of Fate and the two Dolyas, the wanderer finds Usud living richly and merrily in a large palace.",
+      "cites": [
+        "afanasyev1869:p.410"
+      ]
+    },
+    {
+      "text": "In the tale, Usud afterwards grows poorer with each day, and its house smaller and sadder.",
+      "cites": [
+        "afanasyev1869:p.410"
+      ]
+    },
+    {
+      "text": "In another Serbian tale the hero, going to Fate to have hard questions answered, comes to a water and must call on it to carry him across.",
+      "cites": [
+        "afanasyev1868:pp.233-234"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "Every night Usud assigns to the infants born during the past day exactly the same lot that it itself enjoyed in the day just gone.",
+      "cites": [
+        "afanasyev1869:p.410"
+      ]
+    },
+    {
+      "text": "In the tale, a man's Dolya, asked who gave her to him, answers that Fate (Usud) did.",
+      "cites": [
+        "afanasyev1869:p.410"
+      ]
+    },
+    {
+      "text": "People the wanderer meets on the road beg him to find out from Usud about their own lot.",
+      "cites": [
+        "afanasyev1869:p.410"
+      ]
+    },
+    {
+      "text": "Usud tells the poor brother that he was born on an 'orphan's night' and that such is his lot.",
+      "cites": [
+        "afanasyev1869:p.410"
+      ]
+    },
+    {
+      "text": "In another Serbian tale Usud answers the hero's question why a water has no yield: because it has never drowned a person.",
+      "cites": [
+        "afanasyev1868:p.234"
+      ]
+    },
+    {
+      "text": "Usud warns the hero not to tell the water the answer until it has carried him across, or it will drown him at once.",
+      "cites": [
+        "afanasyev1868:p.234"
+      ]
+    },
+    {
+      "text": "Usud and Sreća appear in a further tale, printed in the Matica edition, as living beings who stand under God's commands.",
+      "cites": [
+        "afanasyev1869:p.410"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "Usud advises the unlucky brother to take in his brother's daughter Militsa, born in a happy hour, and to call everything he gains hers rather than his own; following this counsel, he lives in plenty.",
+      "cites": [
+        "afanasyev1869:p.410"
+      ]
+    },
+    {
+      "text": "When he forgets and calls his grain 'mine', his field bursts into flame, and the fire dies as soon as he says the grain belongs to his niece Militsa.",
+      "cites": [
+        "afanasyev1869:p.410"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [
+    {
+      "id": "dolya",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "literary",
+    "rationale": [
+      {
+        "text": "Every surviving clause rests on Afanasyev's Poetic Views of the Slavs (volumes 2 and 3, counted as one source), retelling Serbian tales.",
+        "cites": [
+          "afanasyev1869:p.409",
+          "afanasyev1869:p.410",
+          "afanasyev1868:p.234"
+        ]
+      },
+      {
+        "text": "Afanasyev says the tale of Fate and the two Dolyas is printed in Karadžić's Serbian tales, and points to a further tale in the Matica edition; neither is a source in this entry, so no second independent author supports a clause.",
+        "cites": [
+          "afanasyev1869:p.409",
+          "afanasyev1869:p.410"
+        ]
+      },
+      {
+        "text": "The verified entry names one people, the Serbs.",
+        "cites": [
+          "afanasyev1869:p.409"
+        ]
+      },
+      {
+        "text": "One 19th-century compiler and one people give the grade literary: a lone compiler printing collected tales still counts as one source, so the entry cannot reach regional on this corpus.",
+        "cites": [
+          "afanasyev1869:p.409",
+          "afanasyev1868:p.234"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "appearance: no source describes Usud's body; Afanasyev 1869 p.410 describes the Dolyas (a fair maiden spinning gold thread, a grey old woman asleep) but not Usud itself. Searched usud, усуд, усуди, усудио, усуда, destiny, fate across all sources; Machal pp.250-252 discuss fate spirits but do not name Usud."
+    },
+    {
+      "kind": "empty-field",
+      "text": "origin: no opened page says where Usud comes from or who becomes one. Searched usud, усуд, усуда, усуди in all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "names.variants: no opened page gives another name for the being; Karadzic 1852 (leaf 739) lists судбина and судиште as words for fate cf. усуд, but as abstract nouns, not names of the being, so they are not recorded."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: the only sources are two Serbian tales retold by Afanasyev; no regional or people-specific variants are described."
+    },
+    {
+      "kind": "scope",
+      "text": "Karadzic 1852 prints a headword 'Усуд, m. тако ти је усуд усудио (у приповијеци)' on leaf 807 (page 792), but the tag karadzic1852:s.v.Усуд resolves to leaf 739, where 'усуд' first opens a line as a cross-reference under судиште. The entry is therefore not cited; the same phrase is cited through Afanasyev 1869 p.370. A headwords override (Усуд -> leaf 807) would fix the resolution."
+    },
+    {
+      "kind": "scope",
+      "text": "Afanasyev refers to the being as Судьба (Fate) with Усуд in parentheses; the clauses read his Судьба in these Serbian tales as Usud. In the 1868 p.234 tale the Serbian text names Усуд directly."
+    },
+    {
+      "kind": "other",
+      "text": "Verify: graded literary because the only source in the corpus is Afanasyev, who retells Serbian tales from Karadžić's collection and a Matica edition (afanasyev1869:pp.409-410); opening those collections directly would add an independent source and could raise the grade to regional."
+    }
+  ]
+}

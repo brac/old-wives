@@ -1,0 +1,83 @@
+{
+  "entry_id": "vjestica",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/names/meaning/0",
+      "text": "Afanasyev explains that the Russian names вѣдунъ and вѣдьма (also вѣдунья, вѣщица) come from the root вѣд-, вѣщ- and denote knowing people endowed with a spirit of foreknowledge and prophecy, a poetic gift and the art of healing illnesses.",
+      "to_text": "Afanasyev explains that the names вѣдунъ and вѣдьма (also вѣдунья, вѣщица) come from the root вѣд-, вѣщ- and denote knowing people endowed with a spirit of foreknowledge and prophecy, a poetic gift and the art of healing illnesses.",
+      "from_cites": [
+        "afanasyev1869:p.423"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.423"
+      ],
+      "reason": "The page does not call the names Russian; \"Russian\" cut. The healing gloss rests on the OCR \"дѣлить болѣзни\", read as \"лѣчить\"; kept as the evident reading."
+    },
+    {
+      "field": "/appearance/0",
+      "text": "Witches live among people and outwardly look no different from ordinary mortals.",
+      "to_text": "Outwardly witches look no different from ordinary mortals.",
+      "from_cites": [
+        "afanasyev1869:p.422"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.422"
+      ],
+      "reason": "\"live among people\" is setting, not physical description (misplaced, belongs in behavior_habitat); cut from appearance. The rest is p.422 \"съ виду ничѣмъ не отличаются отъ обыкновенныхъ смертныхъ\"."
+    },
+    {
+      "field": "/dealing_with_it/1",
+      "text": "Once a vještica confesses and gives it up, she can no longer eat people, but becomes a healer and gives herbs to those she has eaten.",
+      "to_text": "Once a vještica confesses and owns up, she can no longer eat people, but becomes a healer and gives herbs to those she has eaten.",
+      "from_cites": [
+        "karadzic1852:s.v.вјештица"
+      ],
+      "to_cites": [
+        "karadzic1852:s.v.вјештица"
+      ],
+      "reason": "\"gives it up\" reads as renouncing witchcraft; the page has \"исповједи и ода\" (confesses and discloses herself), so the translation is narrowed to the wording."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Karadžić records the vještica as a Serbian belief in his 1818 and 1852 dictionaries, which count as one source.",
+      "cites": [
+        "karadzic1852:s.v.вјештица",
+        "karadzic1818:s.v.вјештица"
+      ]
+    },
+    {
+      "text": "Afanasyev's Serbian passage on the вѣштица cites Karadžić's Srpski rječnik and quotes its entry, so for Serbs it is not independent of Karadžić.",
+      "cites": [
+        "afanasyev1869:p.216"
+      ]
+    },
+    {
+      "text": "Afanasyev equates the вѣдьма with the Serbian вѣштица (\"душа вѣдьмы (вѣштицы)\").",
+      "cites": [
+        "afanasyev1869:p.216"
+      ]
+    },
+    {
+      "text": "Afanasyev records the вѣдьма for Russians and in the Ukraine and Little Russia from collections other than Karadžić.",
+      "cites": [
+        "afanasyev1869:p.464",
+        "afanasyev1869:p.422",
+        "afanasyev1869:p.449"
+      ]
+    },
+    {
+      "text": "Three peoples therefore rest on two independent 19th-century collectors: Karadžić for Serbs, Afanasyev for Russians and Ukrainians; no single people has two independent sources, and the link between them is Afanasyev's equation.",
+      "cites": [
+        "karadzic1852:s.v.вјештица",
+        "afanasyev1869:p.216"
+      ]
+    }
+  ]
+}

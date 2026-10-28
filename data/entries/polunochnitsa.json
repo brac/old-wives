@@ -1,0 +1,194 @@
+{
+  "id": "polunochnitsa",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "polunochnitsa",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "полуночницъ",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1869:p.77"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "shmar",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "шмаръ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1869:p.77"
+            ]
+          }
+        ],
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "afanasyev1869:p.77"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Ralston renders the name Polunochnitsas as \"Midnight Sisters\".",
+        "cites": [
+          "ralston1872:p.148"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "Government of Archangel (Ralston); архангельской губер. (Afanasyev)",
+      "cites": [
+        "ralston1872:p.148",
+        "afanasyev1869:p.77"
+      ]
+    }
+  ],
+  "family": {
+    "value": "disease-and-fate",
+    "cites": [
+      "afanasyev1869:p.77"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [],
+  "scene": [
+    {
+      "text": "They attack children at night.",
+      "cites": [
+        "afanasyev1869:p.77"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "In the Government of Archangel, tradition tells of twelve midnight sisters.",
+      "cites": [
+        "ralston1872:p.148",
+        "afanasyev1869:p.77"
+      ]
+    },
+    {
+      "text": "They attack children.",
+      "cites": [
+        "ralston1872:p.148",
+        "afanasyev1869:p.77"
+      ]
+    },
+    {
+      "text": "They force the children to cry out with pain.",
+      "cites": [
+        "ralston1872:p.148",
+        "afanasyev1869:p.77"
+      ]
+    },
+    {
+      "text": "Afanasyev names them alongside the poludnitsy, as known in the Archangel Government.",
+      "cites": [
+        "afanasyev1869:p.77"
+      ]
+    }
+  ],
+  "dealing_with_it": [],
+  "origin": [],
+  "related": [
+    {
+      "id": "poludnitsa",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "literary",
+    "rationale": [
+      {
+        "text": "Afanasyev records the twelve midnight sisters for the Archangel Government only, citing the Archangel provincial year-book for 1864.",
+        "cites": [
+          "afanasyev1869:p.77"
+        ]
+      },
+      {
+        "text": "Ralston's passage on the Twelve Midnight Sisters cites Afanasief, P. V. S. iii. 77 (with Buslaev), so it counts with Afanasyev, not as an independent source.",
+        "cites": [
+          "ralston1872:p.148"
+        ]
+      },
+      {
+        "text": "The verified entry names one people (Russians) and every surviving clause rests on one 19th-century compiler, Afanasyev, so the grade is literary.",
+        "cites": [
+          "afanasyev1869:p.77",
+          "ralston1872:p.148"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "appearance: no source describes the polunochnitsy's body, dress or form; both pages say only that there are twelve sisters. Searched polunochnitsa, polunochnitsas, poluno, \"midnight sisters\", \"midnight spirit\", midnight, полуночница, полуночницы, полуночниц, полуночн, полунош, шмар, шмары across all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "dealing_with_it: no ward, offering or remedy against the polunochnitsy is given on either page (ralston1872 p.148, afanasyev1869 p.77); same searches as for appearance."
+    },
+    {
+      "kind": "empty-field",
+      "text": "origin: neither page says where the polunochnitsy come from or who becomes one; same searches as for appearance."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: both pages give only the Archangel Government tradition; no regional or people variant exists in the corpus hits."
+    },
+    {
+      "kind": "other",
+      "text": "family: the hints file proposes field, but no opened page places the polunochnitsy in fields. afanasyev1869 p.77 sets them in a passage on ailments (the falling sickness, klikushestvo) and says they attack children and make them cry with pain, which supports disease-and-fate; recorded that instead."
+    },
+    {
+      "kind": "other",
+      "text": "People term not in sources/peoples.json: \"Government of Archangel\" (ralston1872 p.148) / \"архангельской губер.\" (afanasyev1869 p.77). Proposed row: Russians. The Russians row and native-row people currently rest on the table's Russian-peasants context rule: ralston1872 p.148 sits in a passage on \"the Russian peasants\" and their traditions. The verify agent or Ben should confirm or replace this once the table gains an Archangel row."
+    },
+    {
+      "kind": "scope",
+      "text": "The variant name шмаръ is printed in parentheses after полуночницъ on afanasyev1869 p.77; it is the genitive plural as printed, kept exactly. Romanized \"shmar\" is a plain transliteration, not a source spelling. afanasyev1869 p.79 links кикиморы to кошмары, a different being; not used here."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1865 p.224 prints \"полуночница\" as an epithet of the dawn in a toothache charm (snippet only; the hints file marks it as not this being); not opened, not used. The afanasyev1869 index (p.833) points to p.77 only for полуночницы."
+    },
+    {
+      "kind": "other",
+      "text": "Verify: sources/peoples.json now lists \"Government of Archangel\" / \"архангельской губер.\" as Russians (region Archangel Government), so the Russians rows rest on that table row, not on the Russian-peasants context rule; the earlier note proposing the row is settled."
+    }
+  ]
+}

@@ -30,6 +30,7 @@ export const CANARIES_BY_VERSION: Record<string, Record<string, string>> = {
   },
   "verify-v2.1": {
     polevik: "It takes the shape of a crow and perches on the last standing sheaf to watch the reapers.",
+    tugarin: "He cannot abide the smoke of burning juniper and flees from it.",
   },
 };
 

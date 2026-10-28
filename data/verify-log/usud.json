@@ -1,0 +1,46 @@
+{
+  "entry_id": "usud",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/behavior_habitat/4",
+      "text": "In another Serbian tale Usud answers the hero's question why a water has no yield: because it has never drowned a person.",
+      "reason": "Translation choice: the Serbian text asks why the water has no 'рода' (afanasyev1868:p.234); 'yield' is one reading, but род can also mean offspring or fruit, and the page does not settle which."
+    }
+  ],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "Every surviving clause rests on Afanasyev's Poetic Views of the Slavs (volumes 2 and 3, counted as one source), retelling Serbian tales.",
+      "cites": [
+        "afanasyev1869:p.409",
+        "afanasyev1869:p.410",
+        "afanasyev1868:p.234"
+      ]
+    },
+    {
+      "text": "Afanasyev says the tale of Fate and the two Dolyas is printed in Karadžić's Serbian tales, and points to a further tale in the Matica edition; neither is a source in this entry, so no second independent author supports a clause.",
+      "cites": [
+        "afanasyev1869:p.409",
+        "afanasyev1869:p.410"
+      ]
+    },
+    {
+      "text": "The verified entry names one people, the Serbs.",
+      "cites": [
+        "afanasyev1869:p.409"
+      ]
+    },
+    {
+      "text": "One 19th-century compiler and one people give the grade literary: a lone compiler printing collected tales still counts as one source, so the entry cannot reach regional on this corpus.",
+      "cites": [
+        "afanasyev1869:p.409",
+        "afanasyev1868:p.234"
+      ]
+    }
+  ]
+}

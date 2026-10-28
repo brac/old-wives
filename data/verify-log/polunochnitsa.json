@@ -1,0 +1,50 @@
+{
+  "entry_id": "polunochnitsa",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/behavior_habitat/3",
+      "text": "Afanasyev names them alongside the poludnitsy (midday spirits), as known in the Archangel Government.",
+      "to_text": "Afanasyev names them alongside the poludnitsy, as known in the Archangel Government.",
+      "from_cites": [
+        "afanasyev1869:p.77"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.77"
+      ],
+      "reason": "The gloss \"(midday spirits)\" is not printed on p.77; the page says only \"Рядомъ съ полудницами\". Gloss cut."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/family",
+      "text": "disease-and-fate",
+      "reason": "afanasyev1869 p.77 places the polunochnitsy in a passage on ailments (the Czech name of the falling sickness, klikushestvo) and says they attack children at night and make them cry with pain, but never calls them an illness or a fate; the family rests on that context."
+    }
+  ],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "Afanasyev records the twelve midnight sisters for the Archangel Government only, citing the Archangel provincial year-book for 1864.",
+      "cites": [
+        "afanasyev1869:p.77"
+      ]
+    },
+    {
+      "text": "Ralston's passage on the Twelve Midnight Sisters cites Afanasief, P. V. S. iii. 77 (with Buslaev), so it counts with Afanasyev, not as an independent source.",
+      "cites": [
+        "ralston1872:p.148"
+      ]
+    },
+    {
+      "text": "The verified entry names one people (Russians) and every surviving clause rests on one 19th-century compiler, Afanasyev, so the grade is literary.",
+      "cites": [
+        "afanasyev1869:p.77",
+        "ralston1872:p.148"
+      ]
+    }
+  ]
+}

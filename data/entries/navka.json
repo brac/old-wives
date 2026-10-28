@@ -1,0 +1,753 @@
+{
+  "id": "navka",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "navka",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "навка",
+          "people": "Ukrainians",
+          "cites": [
+            "afanasyev1869:p.241"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Navky",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "machal1918:p.253"
+        ]
+      },
+      {
+        "romanized": "mavka",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "afanasyev1869:p.241"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "мавка",
+            "people": "Ukrainians",
+            "cites": [
+              "afanasyev1869:p.241"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Mavky",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "machal1918:p.253"
+        ]
+      },
+      {
+        "romanized": "Mavki",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "ralston1872:p.142"
+        ]
+      },
+      {
+        "romanized": "maiki",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "afanasyev1869:p.242"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "майки",
+            "people": "Ukrainians",
+            "cites": [
+              "afanasyev1869:p.242"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Majky",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "machal1918:p.253"
+        ]
+      },
+      {
+        "romanized": "Nejky",
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "machal1918:p.253"
+        ]
+      },
+      {
+        "romanized": "Navi",
+        "peoples": [
+          "Bulgarians"
+        ],
+        "cites": [
+          "machal1918:p.253"
+        ]
+      },
+      {
+        "romanized": "Navjaci",
+        "peoples": [
+          "Bulgarians"
+        ],
+        "cites": [
+          "machal1918:p.253"
+        ]
+      },
+      {
+        "romanized": "Navje",
+        "peoples": [
+          "Slovenes"
+        ],
+        "cites": [
+          "machal1918:p.253"
+        ]
+      },
+      {
+        "romanized": "Mavje",
+        "peoples": [
+          "Slovenes"
+        ],
+        "cites": [
+          "machal1918:p.253"
+        ]
+      },
+      {
+        "romanized": "Latawci",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.254"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Machal says the term Navky is cognate with Old Slavic navi, Russian navie and Little Russian navk, meaning \"dead\".",
+        "cites": [
+          "machal1918:p.253"
+        ]
+      },
+      {
+        "text": "Afanasyev reports that, in the opinion of \"our researchers\", mavka is the same as navka, a diminutive of nav', that is, \"little dead one\" (мертвушка).",
+        "cites": [
+          "afanasyev1869:p.241"
+        ]
+      },
+      {
+        "text": "Afanasyev declines that explanation, because the Little Russians still use the words navy and navskii without changing the first sound, and derives mavka instead from mal, malyi (\"small\"), so that mavka means a little one, a dwarf.",
+        "cites": [
+          "afanasyev1869:p.241"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Ukrainians",
+      "region": "Little Russians",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Little-Russia and Galicia",
+      "cites": [
+        "afanasyev1869:p.241"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Little-Russia and Galicia",
+      "cites": [
+        "ralston1872:p.142"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Hutsuls",
+      "cites": [
+        "afanasyev1869:p.242"
+      ]
+    },
+    {
+      "people": "Bulgarians",
+      "region": "Bulgarian tradition in Macedonia",
+      "cites": [
+        "machal1918:p.254"
+      ]
+    },
+    {
+      "people": "Slovenes",
+      "cites": [
+        "machal1918:p.254"
+      ]
+    },
+    {
+      "people": "Poles",
+      "cites": [
+        "machal1918:p.254"
+      ]
+    }
+  ],
+  "family": {
+    "value": "undead",
+    "cites": [
+      "machal1918:p.253"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "machal-babies",
+      "label": "Machal's Little Russian Mavky as small babies"
+    },
+    {
+      "id": "machal-girls",
+      "label": "Machal's Little Russian Mavky as young girls"
+    },
+    {
+      "id": "afanasyev-seven-year-olds",
+      "label": "Afanasyev's mavki as seven-year-old girls"
+    },
+    {
+      "id": "hutsul-maiki",
+      "label": "Afanasyev's Hutsul maiki"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "Among the Little Russians the Mavky have the appearance of small babies.",
+      "cites": [
+        "machal1918:p.253"
+      ],
+      "form": "machal-babies"
+    },
+    {
+      "text": "Among the Little Russians the Mavky have, alternatively, the appearance of young, beautiful girls.",
+      "cites": [
+        "machal1918:p.253"
+      ],
+      "form": "machal-girls"
+    },
+    {
+      "text": "As girls, the Mavky have curly hair.",
+      "cites": [
+        "machal1918:p.253"
+      ],
+      "form": "machal-girls"
+    },
+    {
+      "text": "The Mavky are either half-naked or wear only a white shirt.",
+      "cites": [
+        "machal1918:p.253"
+      ],
+      "form": "machal-girls"
+    },
+    {
+      "text": "Popular fancy pictures these child-rusalki, called mavki in Little-Russia and Galicia, as little girls of seven years old.",
+      "cites": [
+        "afanasyev1869:p.241"
+      ],
+      "form": "afanasyev-seven-year-olds"
+    },
+    {
+      "text": "They have light-brown (русые), curly hair.",
+      "cites": [
+        "afanasyev1869:p.241"
+      ],
+      "form": "afanasyev-seven-year-olds"
+    },
+    {
+      "text": "They wear white shirts without a belt.",
+      "cites": [
+        "afanasyev1869:p.241"
+      ],
+      "form": "afanasyev-seven-year-olds"
+    },
+    {
+      "text": "According to the Hutsuls, the maiki are beautiful.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ],
+      "form": "hutsul-maiki"
+    },
+    {
+      "text": "According to the Hutsuls, the maiki are slender and frisky.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ],
+      "form": "hutsul-maiki"
+    },
+    {
+      "text": "The Hutsul maiki wear thin, transparent dresses.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ],
+      "form": "hutsul-maiki"
+    },
+    {
+      "text": "The Hutsul maiki wear long braids let loose over their shoulders.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ],
+      "form": "hutsul-maiki"
+    },
+    {
+      "text": "The Hutsul maiki adorn their braids with spring flowers.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ],
+      "form": "hutsul-maiki"
+    }
+  ],
+  "scene": [
+    {
+      "text": "On moonlit nights the Little Russian Mavky rock on the branches of trees.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "Mavky may very often be seen in young corn.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "In summer, in the night hours, mavki swim on the surface of rivers, springs and lakes, splashing the water.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ]
+    },
+    {
+      "text": "Where mavki dance, the grass grows greener and thicker.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ]
+    },
+    {
+      "text": "In Little-Russia and Galicia, where the Rusalkas, there called Mavki, have danced, circles of darker and richer grass are found in the fields.",
+      "cites": [
+        "ralston1872:p.142"
+      ]
+    },
+    {
+      "text": "Those mavki who were drowned by their unwed mothers right after birth like to swing on birches, lamenting.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "bulgarian-macedonia",
+      "label": "Bulgarian Navi and Navjaci in Macedonia (Machal)",
+      "peoples": [
+        "Bulgarians"
+      ],
+      "appearance": [
+        {
+          "text": "According to Bulgarian tradition in Macedonia, the Navi and Navjaci are invisible.",
+          "cites": [
+            "machal1918:p.254"
+          ]
+        },
+        {
+          "text": "The Navi and Navjaci appear in the shape of birds.",
+          "cites": [
+            "machal1918:p.254"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "The Navi and Navjaci soar in the depths of the firmament.",
+          "cites": [
+            "machal1918:p.254"
+          ]
+        },
+        {
+          "text": "The Navi and Navjaci cry like infants.",
+          "cites": [
+            "machal1918:p.254"
+          ]
+        },
+        {
+          "text": "Searching for their mothers, they attack and trouble women in childbed.",
+          "cites": [
+            "machal1918:p.254"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slovenian",
+      "label": "Slovenian Navje (Machal)",
+      "peoples": [
+        "Slovenes"
+      ],
+      "appearance": [
+        {
+          "text": "The Slovenian Navje are believed to fly about in the form of huge black birds.",
+          "cites": [
+            "machal1918:p.254"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "The Navje plead to be baptized.",
+          "cites": [
+            "machal1918:p.254"
+          ]
+        },
+        {
+          "text": "Whoever ridicules the Navje or whistles at them rouses their anger.",
+          "cites": [
+            "machal1918:p.254"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "The Little Russian Mavky seek to attract young people by imitating the crying of infants.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "They also seek to attract young people by laughing, giggling and clapping their hands.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "Whoever follows their enticing voices is bewitched by their beauty.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "At last such a follower is tickled to death and drawn into deep water.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "Of the South-Russian mavki it is told that they seize young lads, tickle them to death and feed on their blood.",
+      "cites": [
+        "afanasyev1869:p.367"
+      ]
+    },
+    {
+      "text": "The Mavky live in woods and on steppes.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "By day they walk along the fields, crying and wailing.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "In summer they swim in rivers and lakes, beating the water merrily.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "During the fairy-week they run about fields and meadows, lamenting, \"Mother has borne me and left me unbaptized.\"",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "In the Green or Rusalka week mavki run over the fields and cornfields with the mournful cry \"мене маты породила, нехрещену схороныла!\" (mother bore me and buried me unbaptized).",
+      "cites": [
+        "afanasyev1869:p.242"
+      ]
+    },
+    {
+      "text": "The Mavky are angry at those who allowed them to die unchristened.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "Mavki accompany the rusalki and try to take revenge on living people for having let them die unbaptized and so depriving them of the heavenly kingdom.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ]
+    },
+    {
+      "text": "Of the little mavki it is told that they come to earth every year at the time when the grain begins to ear and can serve them as a safe refuge.",
+      "cites": [
+        "afanasyev1869:p.149"
+      ]
+    },
+    {
+      "text": "As nymphs of the rain springs, the Russian mavki and rusalki rush over the cornfields and fields, on the one hand watering them and giving a rich harvest, on the other sending untimely downpours and storms that damage the ripening crops.",
+      "cites": [
+        "afanasyev1869:p.148"
+      ]
+    },
+    {
+      "text": "In Little-Russia and Galicia it is told that where rusalki and mavki dance, circles are seen in the fields and the grass grows thicker and greener.",
+      "cites": [
+        "afanasyev1869:p.145"
+      ]
+    },
+    {
+      "text": "In Semik week rusalki and mavki show themselves in the fields and groves.",
+      "cites": [
+        "afanasyev1869:p.291"
+      ]
+    },
+    {
+      "text": "According to the Hutsuls, mavki dwell in caves where clear springs murmur and wonderful gardens and vineyards grow.",
+      "cites": [
+        "afanasyev1869:p.263"
+      ]
+    },
+    {
+      "text": "The Hutsul maiki care for the welfare of the fields and herds.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ]
+    },
+    {
+      "text": "As soon as the snows melt, the Hutsul maiki appear in the mountains and valleys, sow the grasses and grant a harvest.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ]
+    },
+    {
+      "text": "At night the Hutsul maiki steal flax, spin tow, weave and bleach linen, and wind wreaths.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "Whoever chances to hear the Mavky's wailing voices should say, \"I baptize thee in the name of God the Father, God the Son, and God the Holy Spirit.\"",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "Saying this sets them free.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "If for seven years they find no one to take pity on them, they are turned into water-nymphs.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "For seven years, on Trinity and Whitsun days, the souls of these infants fly through the air begging for baptism; it is thought they can be saved by the words \"I baptize thee in the name of the Father and the Son and the Holy Spirit\".",
+      "cites": [
+        "afanasyev1869:p.241"
+      ]
+    },
+    {
+      "text": "They can also be saved by yearly requiem services on the first Monday of Peter's fast (Petrovka).",
+      "cites": [
+        "afanasyev1869:p.241"
+      ]
+    },
+    {
+      "text": "If within the seven years they are not redeemed by prayers and hear the formula from no one, they remain forever among the rusalki.",
+      "cites": [
+        "afanasyev1869:p.241"
+      ]
+    },
+    {
+      "text": "In Bulgarian tradition in Macedonia the Navi and Navjaci may be set free if the baptismal formula is said over them.",
+      "cites": [
+        "machal1918:p.254"
+      ]
+    },
+    {
+      "text": "Whoever is moved to pity by the wailing of the Slovenian Navje and baptizes them will be their great benefactor.",
+      "cites": [
+        "machal1918:p.254"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "The souls of children who have died unbaptized, or who were born of mothers who met a violent death, are personified as Navky.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "In Little Russian tradition the Mavky are children either drowned by their mothers or unbaptized.",
+      "cites": [
+        "machal1918:p.253"
+      ]
+    },
+    {
+      "text": "In Bulgarian tradition in Macedonia the Navi and Navjaci are the souls of children who have died unbaptized.",
+      "cites": [
+        "machal1918:p.254"
+      ]
+    },
+    {
+      "text": "Machal says a child that has died unchristened wanders about the world for seven years begging for baptism, and if it meets no one to take compassion on it, it is turned into one of these spirits.",
+      "cites": [
+        "machal1918:p.254"
+      ]
+    },
+    {
+      "text": "Infants whom their mothers curse in the womb or before baptism vanish from home and become rusalki; this breed of child-rusalki is called mavki in Little-Russia and Galicia.",
+      "cites": [
+        "afanasyev1869:p.241"
+      ]
+    },
+    {
+      "text": "Some mavki are infants drowned by their unwed mothers right after birth.",
+      "cites": [
+        "afanasyev1869:p.242"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "rusalka",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Machal records these beings for the Little Russians (Mavky), for Bulgarians in Macedonia (Navi, Navjaci), for Slovenes (Navje) and for Poles (Latawci).",
+        "cites": [
+          "machal1918:p.253",
+          "machal1918:p.254"
+        ]
+      },
+      {
+        "text": "Afanasyev records mavki in Little-Russia and Galicia, and maiki among the Hutsuls.",
+        "cites": [
+          "afanasyev1869:p.241",
+          "afanasyev1869:p.242"
+        ]
+      },
+      {
+        "text": "Ralston gives Mavki as the Little-Russian and Galician name of the Rusalkas; that passage neither quotes nor cites Afanasyev, so it is counted as independent.",
+        "cites": [
+          "ralston1872:p.142"
+        ]
+      },
+      {
+        "text": "The Ukrainian material therefore rests on three authors (Machal, Afanasyev, Ralston); the Bulgarian, Slovene and Polish rows rest on Machal alone.",
+        "cites": [
+          "machal1918:p.254"
+        ]
+      },
+      {
+        "text": "Machal's etymology carries a footnote marker whose note is not on the page, so whether his Little Russian passage draws on Afanasyev could not be checked; even counting him once with Afanasyev, two independent authors and four peoples remain.",
+        "cites": [
+          "machal1918:p.253"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "Structure: the Little Russian (Ukrainian) mavky/mavki material from Machal p.253, Afanasyev 1869 pp.145-149, 241-242, 263, 291, 367 and Ralston 1872 p.142 is the main body and sits at top level, each clause keeping its source's restriction in the text; the Bulgarian (Macedonia) and Slovenian bird-form beings, which the sources describe differently, are nested as variants. Their dealing and origin clauses sit at top level with the people named in the text, because variants have no dealing or origin field."
+    },
+    {
+      "kind": "scope",
+      "text": "Machal p.253 makes Navky the general term with Mavky as its Little Russian form; Afanasyev p.241 describes mavki as a breed of child-rusalki and p.242 says they accompany the rusalki. Ralston p.142 uses Mavki as the Little-Russian and Galician name for Rusalkas in general. Only clauses where the page names mavki/mavky/maiki/navky (or the unbaptized-child rusalki that p.241 calls mavki) were taken; Machal p.255 and Ralston p.143 are about the rusalky only and were not used."
+    },
+    {
+      "kind": "scope",
+      "text": "The native form навка (afanasyev1869:p.241, printed letter-spaced as \"на вка\") is given there by Afanasyev as the researchers' equivalent of the Little-Russian мавка; he does not attach it to a people himself. It is filed under Ukrainians because the passage concerns the Little-Russian name. The OCR'd parenthesis \"(мал на- ми, майками)\" on the same page contains a garbled form that was not recorded."
+    },
+    {
+      "kind": "other",
+      "text": "afanasyev1869:p.148 speaks of \"русскія мавки\" next to Lithuanian undines; русскій may cover all the East Slavs there, so no Russians people row was written for it. The clause keeps \"Russian\" in its text."
+    },
+    {
+      "kind": "scope",
+      "text": "Not opened for lack of relevance or budget: afanasyev1869 pp.124, 228, 567, 593, 681 (index and cross-references to mavki alongside rusalki and poludnitsy); they may add comparative material. Searched navka, navky, navki, mavka, mavky, mavkas, навка, навки, нявки, мавка, мавки, мавк, навк, навь across all sources; no hits in karadzic1818, karadzic1852 (only unrelated подунавка, дунавке), frombald1725, calmet1850v2, erben1893, ralston1873, afanasyev1865 or afanasyev1868 for the creature."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: sources/peoples.json now lists \"южнорусскихъ\" (South-Russian row, Ukrainians, contested), so afanasyev1869:p.367 (\"О южнорусскихъ мавкахъ\") could support a Ukrainians row with region South-Russian at afanasyev1869:p.367. The draft's note that the term was missing from the table is out of date and was dropped."
+    },
+    {
+      "kind": "other",
+      "text": "verify: the draft noted \"Macedonia\" as missing from sources/peoples.json; the table now has a Macedonia row (Bulgarians, region Macedonia), which settles /peoples_regions/4 as written. The out-of-date draft note was dropped."
+    },
+    {
+      "kind": "accretion",
+      "text": "Editorial: the forest-nymph Mavka of modern Ukrainian literature and later film adaptations is not drawn on here; this entry records only the cited 19th- and early 20th-century folk sources."
+    }
+  ]
+}

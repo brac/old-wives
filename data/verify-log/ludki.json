@@ -1,0 +1,50 @@
+{
+  "entry_id": "ludki",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/behavior_habitat/19",
+      "text": "The urns, pots and lachrymatories found in ancient graves are said still to recall these Ludki funerals.",
+      "to_text": "The urns, pots and lachrymatories found in ancient graves are said still to recall these Ludki.",
+      "from_cites": [
+        "machal1918:p.248"
+      ],
+      "to_cites": [
+        "machal1918:p.248"
+      ],
+      "reason": "The page says the grave urns \"still remind us of these Ludki\"; it does not say \"funerals\", so that added word is cut."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/family",
+      "text": "other",
+      "reason": "Machal p.247 treats the Ludki as dwarfs, a race of small beings, which supports `other`; but the passage sits in the chapter \"The Household Gods\", ties dwarf myths to the worship of family genii, and says the Ludki lived partly in human dwellings, so `household` is a possible reading."
+    }
+  ],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "Every surviving clause rests on one source, Machal's Slavic Mythology pp.247-248; a corpus search for Ludki and Ludek finds no other page.",
+      "cites": [
+        "machal1918:p.247",
+        "machal1918:p.248"
+      ]
+    },
+    {
+      "text": "Machal records the Ludki for one people only, the Lusatian Serbs (Sorbs).",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "Machal gives the belief as a summary in his own voice and names no collector or collected text for it, so the entry traces to a single compiler.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    }
+  ]
+}

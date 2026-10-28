@@ -1,0 +1,54 @@
+{
+  "entry_id": "sirin",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/meaning/0",
+      "text": "Afanasyev glosses the name Sirin as equal to 'siren' (сирена).",
+      "reason": "The footnote on afanasyev1868:p.135 reads 'Сиринъ иг сирена' in OCR; 'иг' is most likely an equals sign, but the page image is not available to confirm the gloss."
+    },
+    {
+      "field": "/appearance/1",
+      "text": "In the old translation of George Hamartolos, the beings called sirins are described as human-shaped creatures.",
+      "reason": "Afanasyev quotes the Hamartolos passage to show the vily identified with sirens (\"вилы отождествляются съ сиренами\"), and the quoted text names the pair \"сирины ... рекше вилы\" (OCR 'рен-те'). The page can be read as naming these beings sirins, but the referent may be the classical sirens or the vily rather than the paradise bird Sirin of the other clauses; the page does not tie the two together."
+    },
+    {
+      "field": "/appearance/2",
+      "text": "In that translation they appear as a pair, a man and a woman.",
+      "reason": "Afanasyev quotes the Hamartolos passage to show the vily identified with sirens (\"вилы отождествляются съ сиренами\"), and the quoted text names the pair \"сирины ... рекше вилы\" (OCR 'рен-те'). The page can be read as naming these beings sirins, but the referent may be the classical sirens or the vily rather than the paradise bird Sirin of the other clauses; the page does not tie the two together."
+    },
+    {
+      "field": "/scene/2",
+      "text": "In the old translation of George Hamartolos, the human-shaped pair called sirins were seen in the river Nile when the sun had risen.",
+      "reason": "Afanasyev quotes the Hamartolos passage to show the vily identified with sirens (\"вилы отождествляются съ сиренами\"), and the quoted text names the pair \"сирины ... рекше вилы\" (OCR 'рен-те'). The page can be read as naming these beings sirins, but the referent may be the classical sirens or the vily rather than the paradise bird Sirin of the other clauses; the page does not tie the two together. The OCR 'зави-стася' and 'солнцу вшедшу' are read as 'appeared' and 'when the sun had risen'."
+    }
+  ],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "Every surviving clause rests on Afanasyev's Poetic Views (vols. 2 and 3), which count as one 19th-century source.",
+      "cites": [
+        "afanasyev1868:p.135",
+        "afanasyev1869:p.221"
+      ]
+    },
+    {
+      "text": "The other witnesses on these pages, the old Hamartolos translation and Count Uvarov's note on the Dmitrievsky cathedral carvings, reach the entry only as Afanasyev quotes or cites them, so they are not counted as independent sources.",
+      "cites": [
+        "afanasyev1869:p.153",
+        "afanasyev1869:p.221"
+      ]
+    },
+    {
+      "text": "Afanasyev attributes the bird to popular prints and old symbolism rather than to collected folk belief, and the only people the verified rows record is the Russians, by his first-person 'our'.",
+      "cites": [
+        "afanasyev1868:p.135",
+        "afanasyev1869:p.221"
+      ]
+    }
+  ]
+}

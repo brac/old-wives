@@ -1,0 +1,338 @@
+{
+  "id": "ludki",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "ludki",
+      "native": [
+        {
+          "script": "Latn",
+          "text": "Ludki",
+          "people": "Sorbs",
+          "cites": [
+            "machal1918:p.247"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Ludek",
+        "peoples": [
+          "Sorbs"
+        ],
+        "cites": [
+          "machal1918:p.248"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "The name Ludki is glossed as \"Little People\".",
+        "cites": [
+          "machal1918:p.247"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Sorbs",
+      "region": "Lusatia (Lausitz), in the belief of the Lusatian Serbs",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    }
+  ],
+  "family": {
+    "value": "other",
+    "cites": [
+      "machal1918:p.247"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "big-hat",
+      "label": "Machal's Ludki in big hats"
+    },
+    {
+      "id": "red-cap",
+      "label": "Machal's Ludki in red caps"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "They were small in stature.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "Their heads were disproportionately large.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "Their eyes protruded.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They dressed gaily.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They wore big hats upon their heads.",
+      "cites": [
+        "machal1918:p.247"
+      ],
+      "form": "big-hat"
+    },
+    {
+      "text": "They wore red caps upon their heads.",
+      "cites": [
+        "machal1918:p.247"
+      ],
+      "form": "red-cap"
+    }
+  ],
+  "scene": [
+    {
+      "text": "They lived partly in human dwellings.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They lived partly in woods and on mountains.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They also lived underground, in abodes resembling bakers' ovens and furnished like an ordinary house.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "They lived in Lusatia in ages long past and had their own king.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They were pagans and could not endure the ringing of bells.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "Later they left the country, so that now they are rarely seen.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They spoke their own language, which was a much altered form of Serbian.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They had a peculiar way of talking, following any positive assertion with a negative expression of the same idea.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They grew corn, picking the kernels with an awl, and ground the thrashed grain between two stones.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They made bread by placing the dough between two smooth stones and keeping it underground until it hardened; the bread was sandy, coarse, brown and doughy.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They also ate roots of plants and wild fruit.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "In case of need they borrowed bread from human beings.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They often cut grain at harvest time, stole pods and turnips, and carried away anything suitable for food.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They were familiar with all sorts of handicraft, especially the smith's trade.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "It was they who taught mankind the art of building houses.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "text": "They were fond of music and singing and knew how to play an instrument resembling a cymbal.",
+      "cites": [
+        "machal1918:pp.247-248"
+      ]
+    },
+    {
+      "text": "They were endowed with the art of prophecy and often foretold things that were to happen.",
+      "cites": [
+        "machal1918:p.248"
+      ]
+    },
+    {
+      "text": "They lived in families and held pompous feasts at their weddings and christenings.",
+      "cites": [
+        "machal1918:p.248"
+      ]
+    },
+    {
+      "text": "Ludki households were hostile to each other and waged violent internecine wars.",
+      "cites": [
+        "machal1918:p.248"
+      ]
+    },
+    {
+      "text": "Toward human beings they were well disposed, and they borrowed kneading-troughs, churns and pots from men.",
+      "cites": [
+        "machal1918:p.248"
+      ]
+    },
+    {
+      "text": "When a Ludek died, his relatives burned his body, put the ashes into vessels and buried the vessels in the earth.",
+      "cites": [
+        "machal1918:p.248"
+      ]
+    },
+    {
+      "text": "During the funeral ceremonies the friends and relatives of the dead wept copiously, collecting the tears in small jars held under their eyes, which they buried when filled.",
+      "cites": [
+        "machal1918:p.248"
+      ]
+    },
+    {
+      "text": "The urns, pots and lachrymatories found in ancient graves are said still to recall these Ludki.",
+      "cites": [
+        "machal1918:p.248"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "They did their best to recompense those who willingly complied with their requests to borrow.",
+      "cites": [
+        "machal1918:p.248"
+      ]
+    },
+    {
+      "text": "They cruelly punished those who offended them.",
+      "cites": [
+        "machal1918:p.248"
+      ]
+    },
+    {
+      "text": "Their friendly relations were restricted to one special human household, which gave them food, mostly millet, and conversed with them.",
+      "cites": [
+        "machal1918:p.248"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "In the belief of the Lusatian Serbs, the Ludki were the first inhabitants of Lusatia.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    }
+  ],
+  "related": [],
+  "attestation": {
+    "grade": "literary",
+    "rationale": [
+      {
+        "text": "Every surviving clause rests on one source, Machal's Slavic Mythology pp.247-248; a corpus search for Ludki and Ludek finds no other page.",
+        "cites": [
+          "machal1918:p.247",
+          "machal1918:p.248"
+        ]
+      },
+      {
+        "text": "Machal records the Ludki for one people only, the Lusatian Serbs (Sorbs).",
+        "cites": [
+          "machal1918:p.247"
+        ]
+      },
+      {
+        "text": "Machal gives the belief as a summary in his own voice and names no collector or collected text for it, so the entry traces to a single compiler.",
+        "cites": [
+          "machal1918:p.247"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "Machal p.247 says the Ludki \"wore big hats or red caps\"; the two headgear options cannot be one figure, so they are split into two appearance forms rather than merged.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "kind": "scope",
+      "text": "Machal p.248 adds that the Poles in Prussian Poland call \"similar beings\" Krasnoludi or Krasnoludki, and that among the Slovaks in Hungary the Latky are small spirits who live on mountains and in mines. The page calls these similar, not the same beings, so they are not recorded as name variants or people rows of the Ludki.",
+      "cites": [
+        "machal1918:p.248"
+      ]
+    },
+    {
+      "kind": "other",
+      "text": "Family is `other` (the hint's value): Machal p.247 treats the Ludki under myths about dwarfs, a race of small beings, which fits none of the household, water, forest, field, undead, disease-and-fate or monster families. The page does place the passage among household gods (\"the worship of family genii is often closely associated with myths about dwarfs\") and says they lived partly in human dwellings, so a reader may argue for `household`.",
+      "cites": [
+        "machal1918:p.247"
+      ]
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants and related are empty: only Machal pp.247-248 describes the Ludki, all for the Lusatian Serbs, with no regional variant, and no page links them to another pilot creature. Searched ludki, \"little people\", лудки, ludek, lutki, lutky, luttchen, krasnolud, latky, Lusatia, Lusatian, dwarf, underground across all sources."
+    }
+  ]
+}
