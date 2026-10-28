@@ -5,6 +5,7 @@ import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, expect, it } from "vitest";
 import { CONTENTS_ORDER, getEntries, imagePath, primaryName, type Clause } from "../src/lib/entries.ts";
+import { SITE_URL } from "../src/lib/site.ts";
 
 const DIST = fileURLToPath(new URL("../dist/", import.meta.url));
 // Hardcoded on purpose (not imported from grades.ts), so a change to the wording fails here.
@@ -159,7 +160,7 @@ describe("spreads", () => {
     const seen = new Set<string>();
     for (const e of entries) {
       const m = /<meta property="og:image" content="([^"]*)"/.exec(spread(e.id));
-      expect(m?.[1], e.id).toBe(imagePath(e.image.file));
+      expect(m?.[1], e.id).toBe(new URL(imagePath(e.image.file), SITE_URL).href);
       seen.add(m![1]!);
     }
     expect(seen.size).toBe(entries.length);
@@ -181,6 +182,6 @@ describe("contents page", () => {
   });
 
   it("uses the contact sheet as its og:image", () => {
-    expect(page("index.html")).toContain('<meta property="og:image" content="/og/contact-sheet.png"');
+    expect(page("index.html")).toContain(`<meta property="og:image" content="${SITE_URL}/og/contact-sheet.png"`);
   });
 });

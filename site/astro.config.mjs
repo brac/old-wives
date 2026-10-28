@@ -4,6 +4,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { defineConfig } from "astro/config";
 import { composeContactSheet } from "./scripts/contact-sheet.ts";
+import { SITE_URL } from "./src/lib/site.ts";
 
 const SITE_DIR = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(SITE_DIR, "..");
@@ -62,6 +63,7 @@ function oldWivesAssets() {
 }
 
 export default defineConfig({
+  site: SITE_URL,
   output: "static",
   trailingSlash: "ignore",
   integrations: [oldWivesAssets()],

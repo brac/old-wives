@@ -16,7 +16,7 @@ interface Props {
 
 const { title, description = SITE_TITLE, ogImage = "/og/contact-sheet.png" } = Astro.props;
 const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_TITLE;
-// astro.config sets no `site` URL yet, so OG image URLs stay root-relative until it does.
+// OG image URLs are absolute when astro.config sets `site`, as social previews require.
 const ogUrl = Astro.site ? new URL(ogImage, Astro.site).href : ogImage;
 ---
 <!doctype html>
