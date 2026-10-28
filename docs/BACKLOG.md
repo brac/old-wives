@@ -517,3 +517,13 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   Batch API, estimated at $0.10 to $0.20 per creature in real API spend), and
   moving the agents to Sonnet 5.5. Revisit if the plan allowance becomes the limit
   when scaling past the first tranche.
+
+## Desk note-to-edit model (2026-10-28)
+
+- **Ben: keep Gemini 2.5 Flash (through fal's `openrouter/router`) for the desk's
+  note-to-edit step.** It turns a spoken critique into a diff of the visual text.
+  It stays because fal is the only API key already configured and the call costs a
+  fraction of a cent per note. Rejected: Claude Haiku, which would need an
+  Anthropic API key in `.env`; dropping the model step and editing the visual text
+  directly, which loses the cleanup of rambling dictation. Revisit if the edits it
+  proposes are poor.

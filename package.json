@@ -23,7 +23,8 @@
     "site:preview": "npm --prefix site run preview",
     "site:test": "npm --prefix site run build && npm --prefix site test",
     "site:contact-sheet": "npm --prefix site run contact-sheet",
-    "desk": "npm --prefix site run dev -- --host 0.0.0.0"
+    "desk": "npm --prefix site run dev -- --host 0.0.0.0",
+    "desk:https": "node -e \"process.env.DESK_HTTPS='1'; require('node:child_process').execSync('npm --prefix site run dev -- --host 0.0.0.0', { stdio: 'inherit' })\""
   },
   "devDependencies": {
     "@fal-ai/client": "1.10.1",

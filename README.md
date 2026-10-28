@@ -63,6 +63,8 @@ page; the plate style is specified in `style/STYLE-SHEET.md`, and the decision l
 | `site:preview` | runs in `site/` | Serve the built site locally |
 | `site:test` | runs in `site/` | Build the site, then run its tests against the build |
 | `site:contact-sheet` | runs in `site/` | Write `docs/contact-sheet.webp`, the contact sheet of the plate thumbnails |
+| `desk` | runs in `site/` | Start the dev server with the review desk at `/_desk/`, on all interfaces |
+| `desk:https` | runs in `site/` | The same over HTTPS with a self-signed certificate, for dictation from a phone |
 
 ## Running the site
 
@@ -75,6 +77,24 @@ npm install
 npm install --prefix site
 npm run site:dev      # or: npm run site:build && npm run site:preview
 ```
+
+### Review desk
+
+The review desk is a local page for critiquing plates, served by the dev server only;
+it never reaches the built site.
+
+```sh
+npm run desk          # http://localhost:4321/_desk/
+npm run desk:https    # https://<your LAN IP>:4321/_desk/
+```
+
+The talk button dictates into the note: hold it and release, or tap once to start and
+again to stop. It uses the browser's own speech recognition when there is one, and
+otherwise records audio and sends it to Whisper on fal through the local API (needs
+`FAL_KEY`); the Whisper checkbox forces that path. Browsers allow the microphone only on
+`https` or `localhost`, so on a phone use `npm run desk:https`, open the `https://` LAN
+address it prints (for example `https://192.168.0.156:4321/_desk/`), and accept the
+certificate warning once.
 
 ## Reporting an error
 

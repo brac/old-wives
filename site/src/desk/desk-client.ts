@@ -1,6 +1,9 @@
 // Client for the review desk page. Talks only to the local API at /_desk/api.
-// Dictation: Web Speech API press-to-talk (Chrome), or, with the Whisper toggle on, the
-// recorded audio is posted to the local API, which sends it to fal and returns text.
+// Dictation: hold or tap the talk button. It uses the Web Speech API when the browser has
+// it, otherwise (or with the Whisper toggle on, or after speech fails) the recorded audio
+// is posted to the local API, which sends it to fal and returns text. talk-path.ts picks.
+
+import { chooseTalkPath, switchesToWhisper } from "./talk-path.ts";
 
 const API = "/_desk/api";
 const app = document.getElementById("app")!;
@@ -84,7 +87,7 @@ async function creatureView(id: string) {
     ${c.visual ? `<p>${esc(c.visual.text)}</p><p class="muted">negative_extra: ${esc(c.visual.negative_extra ?? "none")} · ${esc(c.visual.by)} ${esc(c.visual.date)}</p>` : `<div class="draft"><b>${esc(c.draft.label)}</b><p>${esc(c.draft.text)}</p></div>`}
   </section>
   <section><h2>Note</h2>
-    <button class="talk" id="talk">Hold to talk</button> <small id="talkstate"></small>
+    <button class="talk" id="talk">Hold or tap to talk</button> <small id="talkstate"></small>
     <textarea id="note" placeholder="Say or type what to change"></textarea>
     <button class="primary" id="apply">Apply note</button>
     <small>${esc(cfg.note_model)} via ${esc(cfg.note_endpoint)} · spent $${cfg.llm_spend_usd.toFixed(4)} of $${cfg.llm_cap_usd}</small>
@@ -170,51 +173,187 @@ async function act(fn: () => Promise<unknown>, id: string) {
   }
 }
 
+/** A Web Speech error that ruled speech out for the rest of this page session. */
+let speechError: string | null = null;
+
+function talkEnv() {
+  const w = window as any;
+  return {
+    hasSpeech: Boolean(w.SpeechRecognition ?? w.webkitSpeechRecognition),
+    hasGetUserMedia: typeof navigator.mediaDevices?.getUserMedia === "function" && typeof w.MediaRecorder === "function",
+    secure: window.isSecureContext,
+    whisperOverride: whisperBox.checked,
+    speechError,
+    host: location.host,
+  };
+}
+
+const IDLE_LABEL = "Hold or tap to talk";
+/** A press shorter than this is a tap: recording keeps going until the next tap. */
+const TAP_MS = 350;
+
 function setupTalk(btn: HTMLButtonElement, field: HTMLTextAreaElement, state: Element) {
-  const SR = (window as any).SpeechRecognition ?? (window as any).webkitSpeechRecognition;
+  btn.textContent = IDLE_LABEL;
+  const append = (text: string) => (field.value = (field.value + " " + text).trim());
+  const say = (text: string) => (state.textContent = text);
+  /** Non-null while a recording session is live; calling it ends the session. */
   let stop: (() => void) | null = null;
-  const start = async () => {
-    if (stop) return;
+  let active = false;
+  let holding = false;
+  let toggled = false;
+  let downAt = 0;
+  let session = 0;
+
+  const listening = () => {
     btn.classList.add("on");
-    if (whisperBox.checked) {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const rec = new MediaRecorder(stream);
-      const parts: Blob[] = [];
-      rec.ondataavailable = (e) => parts.push(e.data);
-      rec.onstop = async () => {
-        stream.getTracks().forEach((t) => t.stop());
-        state.textContent = "transcribing…";
-        const blob = new Blob(parts, { type: rec.mimeType });
-        const r = await fetch(`${API}/transcribe`, { method: "POST", headers: { "Content-Type": blob.type }, body: blob });
-        const d = await r.json();
-        state.textContent = r.ok ? "" : d.error;
-        if (r.ok) field.value = (field.value + " " + d.text).trim();
-      };
-      rec.start();
-      stop = () => rec.stop();
-    } else if (SR) {
-      const rec = new SR();
-      rec.lang = "en-GB";
-      rec.interimResults = false;
-      rec.continuous = true;
-      rec.onresult = (e: any) => {
-        for (let i = e.resultIndex; i < e.results.length; i++) if (e.results[i].isFinal) field.value = (field.value + " " + e.results[i][0].transcript).trim();
-      };
-      rec.onerror = (e: any) => (state.textContent = `speech: ${e.error}`);
-      rec.start();
-      stop = () => rec.stop();
-    } else {
-      state.textContent = "no speech recognition in this browser; type instead";
-    }
+    btn.textContent = toggled ? "listening… tap to stop" : "listening… release to stop";
   };
-  const end = () => {
+  const idle = () => {
+    active = false;
+    toggled = false;
     btn.classList.remove("on");
-    stop?.();
-    stop = null;
+    btn.textContent = IDLE_LABEL;
   };
-  btn.addEventListener("pointerdown", (e) => (e.preventDefault(), void start()));
-  btn.addEventListener("pointerup", end);
-  btn.addEventListener("pointerleave", end);
+
+  async function startWhisper(id: number, note?: string) {
+    let stream: MediaStream;
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    } catch (e) {
+      const err = e as DOMException;
+      idle();
+      say(
+        err?.name === "NotAllowedError" || err?.name === "SecurityError"
+          ? "mic permission denied; allow the mic for this site in the browser settings, or type instead"
+          : `mic: ${err?.message || err?.name || String(e)}`,
+      );
+      return;
+    }
+    // Released before the mic opened: drop the stream, record nothing.
+    if (id !== session || !active) return stream.getTracks().forEach((t) => t.stop());
+    let rec: MediaRecorder;
+    try {
+      rec = new MediaRecorder(stream);
+    } catch (e) {
+      stream.getTracks().forEach((t) => t.stop());
+      idle();
+      return say(`recorder: ${(e as Error).message}`);
+    }
+    const parts: Blob[] = [];
+    rec.ondataavailable = (e) => e.data.size && parts.push(e.data);
+    rec.onstop = async () => {
+      stream.getTracks().forEach((t) => t.stop());
+      const blob = new Blob(parts, { type: rec.mimeType || "audio/webm" });
+      if (!blob.size) return say("nothing recorded");
+      say("transcribing…");
+      try {
+        const r = await fetch(`${API}/transcribe`, { method: "POST", headers: { "Content-Type": blob.type }, body: blob });
+        const raw = await r.text();
+        let d: any = {};
+        try {
+          d = JSON.parse(raw);
+        } catch {
+          d = { error: raw.slice(0, 200) || r.statusText };
+        }
+        if (r.ok && typeof d.text === "string") {
+          append(d.text);
+          say(note ?? "");
+        } else say(`transcription failed: ${d.error ?? r.statusText}`);
+      } catch (e) {
+        say(`transcription failed: ${(e as Error).message}`);
+      }
+    };
+    rec.start();
+    stop = () => rec.state !== "inactive" && rec.stop();
+    say(note ? `${note} · listening…` : "listening…");
+  }
+
+  function startSpeech(note?: string) {
+    const w = window as any;
+    const SR = w.SpeechRecognition ?? w.webkitSpeechRecognition;
+    const rec = new SR();
+    rec.lang = "en-GB";
+    rec.interimResults = false;
+    rec.continuous = true;
+    rec.onresult = (e: any) => {
+      for (let i = e.resultIndex; i < e.results.length; i++) if (e.results[i].isFinal) append(e.results[i][0].transcript);
+    };
+    rec.onerror = (e: any) => {
+      const code = String(e.error);
+      if (!switchesToWhisper(code)) return say(`speech: ${code}`);
+      speechError = code;
+      const next = chooseTalkPath(talkEnv());
+      say(next.path === "whisper" ? `speech: ${code}; switched to server transcription for the next press` : `speech: ${code}; ${next.path === "none" ? next.message : "type instead"}`);
+    };
+    // Recognition can end by itself (silence, errors); reflect that in the button.
+    rec.onend = () => {
+      if (stop === stopThis) {
+        stop = null;
+        idle();
+        if (state.textContent?.endsWith("listening…")) say("");
+      }
+    };
+    const stopThis = () => rec.stop();
+    try {
+      rec.start();
+    } catch (e) {
+      idle();
+      return say(`speech: ${(e as Error).message}`);
+    }
+    stop = stopThis;
+    say(note ? `${note} · listening…` : "listening…");
+  }
+
+  function start() {
+    const choice = chooseTalkPath(talkEnv());
+    if (choice.path === "none") return say(choice.message);
+    active = true;
+    const id = ++session;
+    listening();
+    if (choice.path === "whisper") void startWhisper(id, choice.note);
+    else startSpeech(choice.note);
+  }
+
+  function end() {
+    const s = stop;
+    stop = null;
+    idle();
+    session++;
+    // Clear the "listening…" line, but keep an error that arrived while recording.
+    if (state.textContent?.endsWith("listening…")) say("");
+    s?.();
+  }
+
+  btn.addEventListener("pointerdown", (e) => {
+    e.preventDefault();
+    if (active) {
+      // Second tap of a tap-to-toggle session, or a press while still recording.
+      holding = false;
+      return end();
+    }
+    holding = true;
+    downAt = performance.now();
+    start();
+  });
+  btn.addEventListener("pointerup", () => {
+    if (!holding) return;
+    holding = false;
+    if (!active) return;
+    if (performance.now() - downAt < TAP_MS) {
+      toggled = true;
+      listening();
+    } else end();
+  });
+  btn.addEventListener("pointerleave", () => {
+    if (holding && active && !toggled) {
+      holding = false;
+      end();
+    }
+  });
+  btn.addEventListener("pointercancel", () => {
+    if (holding && active && !toggled) end();
+    holding = false;
+  });
   btn.addEventListener("contextmenu", (e) => e.preventDefault());
 }
 

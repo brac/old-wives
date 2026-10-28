@@ -97,10 +97,17 @@ function reviewDesk() {
   };
 }
 
+/**
+ * `npm run desk:https` sets DESK_HTTPS=1: the dev server then serves a self-signed
+ * certificate, so a phone on the LAN gets a secure context (mic access) after one
+ * certificate warning. Imported only under the flag, so builds, tests and Vercel never load it.
+ */
+const httpsPlugins = process.env.DESK_HTTPS === "1" ? [(await import("@vitejs/plugin-basic-ssl")).default({ name: "old-wives-desk" })] : [];
+
 export default defineConfig({
   site: SITE_URL,
   output: "static",
   trailingSlash: "ignore",
   integrations: [oldWivesAssets(), reviewDesk()],
-  vite: { plugins: [pinImportMetaUrl()] },
+  vite: { plugins: [pinImportMetaUrl(), ...httpsPlugins] },
 });
