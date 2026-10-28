@@ -1,24 +1,7 @@
 {
   "entry_id": "kikimora",
   "verifier_prompt_version": "verify-v2.1",
-  "removed": [
-    {
-      "field": "/names/variants/1",
-      "text": "mora (peoples: Russians)",
-      "cites": [
-        "machal1918:p.228"
-      ],
-      "reason": "The page ties the name to kikimoras (\"In Russia the Moras, or Kikimoras\") but the people rests on the term \"Russia\", which no row of sources/peoples.json lists (the Russians row lists only \"Russian, Russians, Russian peasants\"). Unlisted term refused under verify-v2.1; no other cited page gives a listed term for this name."
-    },
-    {
-      "field": "/names/variants/2/native/0",
-      "text": "мара (Cyrl, people: Russians)",
-      "cites": [
-        "afanasyev1868:p.101"
-      ],
-      "reason": "The form is printed (\"явится ночью мара\"), but its people rests on \"Въ Россіи также извѣстны мары\": the term \"Россія\" (Russia) is not listed in sources/peoples.json. Unlisted term refused; ralston1872:p.133 prints \"The Russians\" for the Mara but not the Cyrillic form, so the row cannot be retagged."
-    }
-  ],
+  "removed": [],
   "downgraded": [],
   "retagged": [
     {
@@ -31,36 +14,11 @@
         "ralston1872:p.133",
         "afanasyev1868:p.101"
       ],
-      "reason": "afanasyev1868:p.101 identifies the mary with the kikimoras but fixes the people only by \"Въ Россіи\", a term not in sources/peoples.json; ralston1872:p.133 prints \"The Russians believe in certain little old female beings called Marui or Marukhi\" and \"the Mara\", a listed term (Russians row). Ralston added for the people, Afanasyev kept for the identification."
-    },
-    {
-      "field": "/peoples_regions/0",
-      "text": "Russians, Russia",
-      "from_cites": [
-        "machal1918:p.228",
-        "ralston1872:p.133",
-        "afanasyev1868:p.101"
-      ],
-      "to_cites": [
-        "ralston1872:p.133",
-        "afanasyev1868:p.101"
-      ],
-      "reason": "machal1918:p.228 prints only \"In Russia\", a term sources/peoples.json does not list; Ralston (\"The Russian word for such an incubus is Kikimora\") and Afanasyev (\"русское кикимора\") print the listed Russians term."
+      "reason": "afanasyev1868:p.101 identifies the mary with the kikimoras but fixes the people only by \"Въ Россіи\", a term not in sources/peoples.json; ralston1872:p.133 prints \"The Russians believe in certain little old female beings called Marui or Marukhi\" and \"the Mara\", a listed term (Russians row). Ralston added for the people, Afanasyev kept for the identification. Since verify, \"Россіи\" has been added to the Russians row (people-table form added after verify (phase 4b-peoples-3)), so afanasyev1868:p.101 now fixes the people as well and the Cyrillic мара native row was restored on it; the Ralston tag stays as a further support, since this row was not on the restore list."
     }
   ],
   "reformed": [],
-  "flagged": [
-    {
-      "field": "/names/primary/native/0",
-      "text": "кикимора (Cyrl, people: Russians)",
-      "reason": "Form printed on afanasyev1868:p.101. The people rests on \"русское кикимора\": the Russians row of sources/peoples.json lists the English \"Russian\" and names afanasyev1868 among its sources, so the Russian adjective is read as that term, but the row does not print the Cyrillic form as it does for великорусскій."
-    },
-    {
-      "field": "/names/variants/0/native/0",
-      "text": "шишимора (Cyrl, people: Russians)",
-      "reason": "Form printed on afanasyev1868:p.101 (\"русское кикимора или шишимора\"). Same reading as /names/primary/native/0: \"русское\" taken as the table's \"Russian\" term, which the row does not print in Cyrillic."
-    }
-  ],
+  "flagged": [],
   "grade": "regional",
   "grade_rationale": [
     {

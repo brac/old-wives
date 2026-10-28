@@ -1,16 +1,7 @@
 {
   "entry_id": "vila",
   "verifier_prompt_version": "verify-v2.1",
-  "removed": [
-    {
-      "field": "/peoples_regions/6",
-      "text": "Czechs (ancient written traditions of the Czechs)",
-      "cites": [
-        "machal1918:p.256"
-      ],
-      "reason": "Machal p.256 prints 'Czechs', which is not a term in sources/peoples.json: the Czechs row lists 'Bohemian, Bohemians, Bohemia, Czekhs, чехи, ...' but not the spelling 'Czechs'. Refused under verify-v2.1 until the table gains the term; the page does say the Vila is mentioned in the ancient written traditions of the Czechs."
-    }
-  ],
+  "removed": [],
   "downgraded": [
     {
       "field": "/behavior_habitat/28",
@@ -37,30 +28,9 @@
       "reason": "Ralston p.147 introduces the passage as 'says a story', not a song; 'song' replaced with 'story'."
     }
   ],
-  "retagged": [
-    {
-      "field": "/peoples_regions/0",
-      "text": "Serbs (Serbian legends; Servian Vilas)",
-      "from_cites": [
-        "machal1918:p.256",
-        "karadzic1852:s.v.вила",
-        "ralston1872:p.146"
-      ],
-      "to_cites": [
-        "machal1918:p.256",
-        "ralston1872:p.146"
-      ],
-      "reason": "karadzic1852 s.v. вила does not print a term from the Serbs row of sources/peoples.json (the page has only 'Српски' in sense 2, which the table does not list); Machal p.256 prints 'Serbian legends' and Ralston p.146 'The Servian Vilas', both terms of the Serbs row."
-    }
-  ],
+  "retagged": [],
   "reformed": [],
-  "flagged": [
-    {
-      "field": "/names/primary/native/0",
-      "text": "вила (Serbs)",
-      "reason": "The form вила is printed as the headword at karadzic1852 s.v. вила, so the row stands. Its people value Serbs rests on the dictionary being a Serbian dictionary (Српски рјечник); the entry page prints no term from the Serbs row of sources/peoples.json (only 'Српски' in sense 2), so the mapping is by context, not by a listed term."
-    }
-  ],
+  "flagged": [],
   "grade": "widely-attested",
   "grade_rationale": [
     {
@@ -68,6 +38,12 @@
       "cites": [
         "machal1918:p.256",
         "machal1918:p.257"
+      ]
+    },
+    {
+      "text": "Machal also says the Vila is mentioned in the ancient written traditions of the Czechs, a seventh people; the Czechs row was restored after verify because the people-table form \"Czechs\" was added after verify (phase 4b-peoples-3). The grade is unchanged.",
+      "cites": [
+        "machal1918:p.256"
       ]
     },
     {

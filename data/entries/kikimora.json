@@ -37,7 +37,26 @@
         ]
       },
       {
+        "romanized": "mora",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.228"
+        ]
+      },
+      {
         "romanized": "mara",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "мара",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.101"
+            ]
+          }
+        ],
         "peoples": [
           "Russians"
         ],
@@ -74,6 +93,7 @@
       "people": "Russians",
       "region": "Russia",
       "cites": [
+        "machal1918:p.228",
         "ralston1872:p.133",
         "afanasyev1868:p.101"
       ]
@@ -463,10 +483,6 @@
     {
       "kind": "scope",
       "text": "machal1918:p.228 and afanasyev1868:p.101 identify the Russian maras/moras with the kikimoras. Material on the mora of Serbia, Montenegro, Bohemia and Poland and on the Olonets mara (ralston1872:p.133, machal1918:p.228, afanasyev1868:p.101) is not tied to the kikimora by name and was left to the mora entry."
-    },
-    {
-      "kind": "other",
-      "text": "verify-v2.1: the mora variant (machal1918:p.228, \"In Russia the Moras, or Kikimoras\") and the Cyrillic мара native row (afanasyev1868:p.101, \"Въ Россіи также извѣстны мары\") were removed because their people rests on the term \"Russia\" / \"Россія\", which sources/peoples.json does not list. If the table gains a row for that term, a re-run can restore them."
     },
     {
       "kind": "accretion",

@@ -129,6 +129,24 @@
         "cites": [
           "machal1918:p.265"
         ]
+      },
+      {
+        "romanized": "Divi-te Zeni",
+        "peoples": [
+          "Bulgarians"
+        ],
+        "cites": [
+          "machal1918:p.263"
+        ]
+      },
+      {
+        "romanized": "Diva-ta Zena",
+        "peoples": [
+          "Bulgarians"
+        ],
+        "cites": [
+          "machal1918:p.265"
+        ]
       }
     ],
     "meaning": [
@@ -158,7 +176,7 @@
       "people": "Sorbs",
       "region": "Lusatian",
       "cites": [
-        "machal1918:p.264"
+        "machal1918:p.263"
       ]
     },
     {
@@ -172,7 +190,14 @@
       "people": "Slovenes",
       "region": "Slovenian",
       "cites": [
-        "machal1918:p.264"
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "people": "Bulgarians",
+      "region": "Bulgarian",
+      "cites": [
+        "machal1918:p.263"
       ]
     },
     {
@@ -532,6 +557,47 @@
           ]
         }
       ]
+    },
+    {
+      "id": "bulgarian",
+      "label": "Bulgarian Diva-ta Zena",
+      "peoples": [
+        "Bulgarians"
+      ],
+      "appearance": [
+        {
+          "text": "The Bulgarian Diva-ta Zena is covered with a thick coat of hair.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        },
+        {
+          "text": "She has long breasts, which she throws over her shoulders to nurse her children.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "The Bulgarian Diva-ta Zena lives in the woods.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        },
+        {
+          "text": "She is strong and savage.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        },
+        {
+          "text": "Her enunciation is defective.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        }
+      ]
     }
   ],
   "behavior_habitat": [
@@ -773,6 +839,13 @@
         ]
       },
       {
+        "text": "Machal also records the Wild Women for the Bulgarians (Bulgarian Divi-te Zeni, the Bulgarian Diva-ta Zena), a fifth people; the Bulgarians row and variant were restored after verify because the people-table form \"Bulgarian\" was added after verify (phase 4b-peoples-3). The grade is unchanged.",
+        "cites": [
+          "machal1918:p.263",
+          "machal1918:p.265"
+        ]
+      },
+      {
         "text": "Afanasyev records the dziwozony of Poland and the divé ženy of Bohemia.",
         "cites": [
           "afanasyev1868:p.343"
@@ -859,10 +932,6 @@
     {
       "kind": "other",
       "text": "verify found, not added: sources/peoples.json now lists \"Galicia, Галиція, Галиціи\" (afanasyev1868:p.343) and \"Hutsuls, гуцулы, гуцуловъ\" (afanasyev1869:p.803), both -> Ukrainians (contested rows), and \"чешскому\" (afanasyev1869:p.311) -> Czechs. The draft note above that calls these terms unmapped predates the table rows; a re-run could add a Ukrainians peoples_regions row from the Hutsul passage."
-    },
-    {
-      "kind": "other",
-      "text": "verify found, not added: Machal names a Bulgarian form of the Wild Women (Divi-te Zeni, machal1918:p.263; Diva-ta Zena, machal1918:p.265, living in the woods, hairy, strong and savage), but prints only the adjective \"Bulgarian\", which sources/peoples.json does not list. The Bulgarian people row, both Bulgarian name rows and the Bulgarian variant were removed at verify; adding \"Bulgarian\" to the Bulgarians row would let a re-run restore them. \"Lusatian\" and \"Slovenian\" on p.263 are likewise unlisted; those rows were re-cited to p.264, which prints \"Lusatian Serbs\" and \"Slovenians\"."
     }
   ]
 }

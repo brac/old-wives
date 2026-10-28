@@ -85,6 +85,7 @@
       "region": "Serbian legends; Servian Vilas",
       "cites": [
         "machal1918:p.256",
+        "karadzic1852:s.v.вила",
         "ralston1872:p.146"
       ]
     },
@@ -119,6 +120,13 @@
     {
       "people": "Russians",
       "region": "ancient written traditions of the Russians",
+      "cites": [
+        "machal1918:p.256"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "ancient written traditions of the Czechs",
       "cites": [
         "machal1918:p.256"
       ]
@@ -684,6 +692,12 @@
         ]
       },
       {
+        "text": "Machal also says the Vila is mentioned in the ancient written traditions of the Czechs, a seventh people; the Czechs row was restored after verify because the people-table form \"Czechs\" was added after verify (phase 4b-peoples-3). The grade is unchanged.",
+        "cites": [
+          "machal1918:p.256"
+        ]
+      },
+      {
         "text": "Karadzic's dictionary describes the Serbian vila's dwelling, dress, hair and punishments independently of Machal.",
         "cites": [
           "karadzic1852:s.v.вила"
@@ -779,10 +793,6 @@
     {
       "kind": "other",
       "text": "verify found, not added: Machal says the festivals for the Rusalky are at the same time festivals of the Vily, with young people going to the meadows, picking flowers and singing songs about the fairies, at machal1918:p.257."
-    },
-    {
-      "kind": "other",
-      "text": "Verify removed the Czechs row because sources/peoples.json lists 'Czekhs' but not the spelling 'Czechs' that machal1918:p.256 prints; adding 'Czechs' to the Czechs row would let a re-run keep it. Several terms the draft listed as unmapped (Croatia, Bulgaria, болгары, сербской, словенской, Montenegro) do now have rows in the table."
     },
     {
       "kind": "accretion",

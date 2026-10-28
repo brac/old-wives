@@ -35,9 +35,10 @@
         "afanasyev1869:p.530"
       ],
       "to_cites": [
+        "afanasyev1869:p.530",
         "afanasyev1869:p.532"
       ],
-      "reason": "afanasyev1869:p.530 says 'По русскимъ повѣрьямъ' (by Russian beliefs); 'русскимъ' is not a term in sources/peoples.json. afanasyev1869:p.532 prints 'О вовкулакахъ великорусскіе поселяне ... разсказываютъ', and 'великорусскіе' is a table term for Russians."
+      "reason": "afanasyev1869:p.532 prints 'О вовкулакахъ великорусскіе поселяне ... разсказываютъ', and 'великорусскіе' is a table term for Russians, so p.532 was added. People-table form added after verify (phase 4b-peoples-3): afanasyev1869:p.530 says 'По русскимъ повѣрьямъ, вовкулаки бываютъ двухъ родовъ' (by Russian beliefs, vovkulaki are of two kinds), and 'русскимъ' is now a form of the Russians row in sources/peoples.json, so the draft cite p.530 is restored. At first verify the form was missing from the table and p.530 was dropped."
     }
   ],
   "reformed": [],
