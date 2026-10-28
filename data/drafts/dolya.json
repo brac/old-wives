@@ -1,0 +1,433 @@
+{
+  "id": "dolya",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "dolya",
+      "native": [
+        {
+          "script": "Latn",
+          "text": "Dolya",
+          "people": "Russians",
+          "cites": [
+            "machal1918:p.251"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Nedolya",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.252"
+        ]
+      },
+      {
+        "romanized": "Licho",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.252"
+        ]
+      },
+      {
+        "romanized": "Sreća",
+        "peoples": [
+          "Serbs"
+        ],
+        "cites": [
+          "machal1918:p.252"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "Срећа",
+            "people": "Serbs",
+            "cites": [
+              "karadzic1818:s.v.Срећа"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Nesreća",
+        "peoples": [
+          "Serbs"
+        ],
+        "cites": [
+          "machal1918:p.252"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "In popular speech the word dolya is sometimes used in the sense of a positively happy fate, and with the negative ne (nedolya) in the sense of an unhappy, sorrowful fate.",
+        "cites": [
+          "afanasyev1869:p.396"
+        ]
+      },
+      {
+        "text": "Russian tradition personifies the fate bestowed upon a man at his birth as a supernatural being called Dolya.",
+        "cites": [
+          "machal1918:p.251"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "cites": [
+        "machal1918:p.251"
+      ]
+    },
+    {
+      "people": "Serbs",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    }
+  ],
+  "family": {
+    "value": "disease-and-fate",
+    "cites": [
+      "machal1918:p.251"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "She is described as a poorly dressed woman.",
+      "cites": [
+        "machal1918:p.251"
+      ]
+    },
+    {
+      "text": "She is capable of transforming herself into various shapes.",
+      "cites": [
+        "machal1918:p.251"
+      ]
+    },
+    {
+      "text": "In a Little-Russian tale, the rich brother's Dolya appears as a woman in beggar's rags.",
+      "cites": [
+        "afanasyev1869:p.392"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "In a Little-Russian tale, the poor brother, hired to reap for his rich brother, meets the brother's Dolya in the harvest field walking among the shocks of grain.",
+      "cites": [
+        "afanasyev1869:p.392"
+      ]
+    },
+    {
+      "text": "In a variant tale of two fisherman brothers, the poor brother goes to the river at night and hears splashing as the rich brother's Dolya drives fish into his brother's net.",
+      "cites": [
+        "afanasyev1869:p.393"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "serbian-sreca",
+      "label": "Serbian Sreća (Machal)",
+      "peoples": [
+        "Serbs"
+      ],
+      "appearance": [
+        {
+          "text": "The Sreća is described as a beautiful girl spinning a golden thread.",
+          "cites": [
+            "machal1918:p.252"
+          ]
+        },
+        {
+          "text": "As the evil Sreća (Nesreća) she is represented as an old woman with bloodshot eyes.",
+          "cites": [
+            "machal1918:p.252"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "Machal calls the Sreća the Serbian counterpart of the Russian Dolya.",
+          "cites": [
+            "machal1918:p.252"
+          ]
+        },
+        {
+          "text": "She bestows welfare upon the mortal to whom she is assigned, caring for his fields and grazing his flocks.",
+          "cites": [
+            "machal1918:p.252"
+          ]
+        },
+        {
+          "text": "In national songs and traditions the Sreća frequently occurs as an independent being by the side of God.",
+          "cites": [
+            "machal1918:p.252"
+          ]
+        },
+        {
+          "text": "The Sreća is not only good but also evil; as evil she is misfortune personified and may be called Nesreća.",
+          "cites": [
+            "machal1918:p.252"
+          ]
+        },
+        {
+          "text": "The evil Sreća is always sleeping and takes no notice of her master's affairs, although she is also said to be engaged in spinning.",
+          "cites": [
+            "machal1918:p.252"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "She usually lives behind the oven.",
+      "cites": [
+        "machal1918:p.251"
+      ]
+    },
+    {
+      "text": "She is either good or evil.",
+      "cites": [
+        "machal1918:p.251"
+      ]
+    },
+    {
+      "text": "The good Dolya protects her favourite by day and by night and serves him faithfully from his birth to his death.",
+      "cites": [
+        "machal1918:p.251"
+      ]
+    },
+    {
+      "text": "The good Dolya takes care of his children, waters his fields and meadows with dew, and works for him.",
+      "cites": [
+        "machal1918:p.251"
+      ]
+    },
+    {
+      "text": "The good Dolya drives fish into his nets and swarms of bees into his hives.",
+      "cites": [
+        "machal1918:pp.251-252"
+      ]
+    },
+    {
+      "text": "The good Dolya protects him against wild beasts and guards his flocks.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "The good Dolya gets purchasers for his goods and increases the price of his crops.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "The good Dolya selects good, full ears from other people's sheaves for him.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "The good Dolya bestows good health upon him.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "No one will succeed unless she helps him, and without her assistance all his efforts are in vain.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "The man who gets an evil Dolya (Nedolya, Licho) finds all his toil of no avail.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "The evil Dolya does nothing but sleep, dress herself or make merry, never thinking of offering him any aid.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "Her power has no limits; a proverb says, \"Not even your horse will get you away from your Dolya.\"",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "In a Little-Russian tale, the rich brother's Dolya pulls the largest ears from the sheaves the poor brother received as wages and sticks them into the sheaves of the rich brother.",
+      "cites": [
+        "afanasyev1869:p.392"
+      ]
+    },
+    {
+      "text": "In the same tale, the poor brother's Dolya is called a white-hands who thinks only of songs and finery, and so he is poor.",
+      "cites": [
+        "afanasyev1869:p.393"
+      ]
+    },
+    {
+      "text": "In the fisherman variant, the poor brother's Dolya is lazy and lies belly-up on a stone, singing songs and playing the gusli.",
+      "cites": [
+        "afanasyev1869:p.393"
+      ]
+    },
+    {
+      "text": "In popular songs the bitter, unkind Dolya is born together with a person, follows him step by step through his whole life, and sees him into the grave.",
+      "cites": [
+        "afanasyev1869:p.397"
+      ]
+    },
+    {
+      "text": "According to popular conviction, Dolya and Nedolya act by their own reckoning, independently of the will and intentions of the person they belong to.",
+      "cites": [
+        "afanasyev1869:p.404"
+      ]
+    },
+    {
+      "text": "When the Dolya leaves her client and stops working for him, he falls into poverty.",
+      "cites": [
+        "afanasyev1869:p.404"
+      ]
+    },
+    {
+      "text": "The activity of Nedolya is always directed to a person's harm: while she is awake misfortune follows misfortune, and it becomes easier only when she falls asleep.",
+      "cites": [
+        "afanasyev1869:p.404"
+      ]
+    },
+    {
+      "text": "Afanasyev holds that Dolya and Nedolya are living mythical persons, identical with the maidens of fate (rozhanitsy).",
+      "cites": [
+        "afanasyev1869:p.403"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "It is impossible to get rid of the Dolya: all attempts to sell her, make her lose herself in the woods, or drown her in the sea are bound to fail.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "In the fisherman variant, the poor brother rushes to the stone and whips his lazy Dolya with a lash.",
+      "cites": [
+        "afanasyev1869:p.393"
+      ]
+    },
+    {
+      "text": "A bride going to her wedding addresses her Dolya in a song: if she is good, sit with me on the cart; if she is bad, float away with the water.",
+      "cites": [
+        "afanasyev1869:p.394"
+      ]
+    },
+    {
+      "text": "In a Little-Russian song a girl carts her bitter Dolya to market to sell her, but people know her and will not buy, so the girl throws her down from the cart.",
+      "cites": [
+        "afanasyev1869:p.395"
+      ]
+    },
+    {
+      "text": "In another song a girl bids her evil Dolya go and drown herself, or lose herself in the woods or perish in the field, and the Dolya answers that she will cling to her.",
+      "cites": [
+        "afanasyev1869:p.395"
+      ]
+    },
+    {
+      "text": "A saying advises: when Likho (Nedolya) sleeps, do not wake it.",
+      "cites": [
+        "afanasyev1869:p.404"
+      ]
+    },
+    {
+      "text": "Unlike the Dolya, a man may get rid of the evil Serbian Sreća (Nesreća) and drive her away.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "The Dolya is the fate bestowed upon a man at his birth, personified.",
+      "cites": [
+        "machal1918:p.251"
+      ]
+    },
+    {
+      "text": "In popular songs the evil Dolya is born together with the person she follows.",
+      "cites": [
+        "afanasyev1869:p.397"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "likho",
+      "relation": "related"
+    }
+  ],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "karadzic1818",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истолкован њемачким и латинским ријечма",
+      "year": 1818,
+      "url": "https://archive.org/details/srpskirjecnik00kara",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "other",
+      "text": "names.primary.native: the only form tied to a listed people is Machal's romanised Dolya (\"Russian tradition ... called Dolya\", machal1918:p.251), recorded as a Latn row. Afanasyev prints the Cyrillic Доля (afanasyev1869:p.392, p.404) and Недоля (p.403, p.404), but only inside a Little-Russian tale (малорусская, p.392), a Great-Russian tale (Великорусская редакція, p.393) or general popular belief (p.396, p.404) with no listed people named, so no Cyrillic row was written. Searched доля, недоля, dolya, nedolya in all sources."
+    },
+    {
+      "kind": "other",
+      "text": "Unmapped people terms: 'малорусская' (Little-Russian, afanasyev1869:p.392) and 'малороссійскихъ' (Little-Russian songs, afanasyev1869:p.394), proposed Ukrainians; the table lists Малороссія and Little-Russians but not these Russian adjectives. 'Великорусская' (Great-Russian, afanasyev1869:p.393), proposed Russians. Clauses from these pages keep the source word and no people row was written for them."
+    },
+    {
+      "kind": "scope",
+      "text": "Top-level fields hold the Dolya as Machal (Russian tradition) and Afanasyev (Little-Russian and Great-Russian tales and songs) describe her; the Serbian Sreća, which Machal calls her counterpart and describes differently, is kept as the serbian-sreca variant. Karadžić s.v. Срећа glosses only the common word (das Glück, fortuna); it is cited only for the printed native form."
+    },
+    {
+      "kind": "scope",
+      "text": "Unread pages in the Afanasyev chapter: afanasyev1869:pp.398-402 (continuation of the songs on Беда, Горе and Лихо that p.396 says replace Nedolya; may hold more Nedolya material) and afanasyev1869:p.411 (find hit: 'недоля также прядет нити', Nedolya also spins threads, in the Serbian usud/sreća section pp.409-411). ralston1873:p.197 footnote glosses dolya as 'lot, share' and was not opened. Not read to keep within budget."
+    },
+    {
+      "kind": "other",
+      "text": "related: Machal gives Licho as another name for the evil Dolya (machal1918:p.252), and Afanasyev uses Likho for Nedolya in a saying (afanasyev1869:p.404); recorded as 'related' rather than a stronger relation."
+    }
+  ]
+}

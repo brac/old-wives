@@ -1,0 +1,540 @@
+{
+  "id": "likho",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "likho",
+      "native": [
+        {
+          "script": "Latn",
+          "text": "Licho",
+          "people": "Poles",
+          "cites": [
+            "ralston1873:p.178"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Licho",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:pp.251-252"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "As a substantive, likho conveys the idea of something malevolent or unfortunate.",
+        "cites": [
+          "ralston1873:p.178"
+        ]
+      },
+      {
+        "text": "The adjective likhoi has two opposite meanings: sometimes what is evil, hurtful or malicious, sometimes what is bold and vigorous.",
+        "cites": [
+          "ralston1873:p.178"
+        ]
+      },
+      {
+        "text": "The Polish licho properly signifies uneven.",
+        "cites": [
+          "ralston1873:p.178"
+        ]
+      },
+      {
+        "text": "In the tales the name is rendered as evil: the smith sets out to seek evil (likho), and the Little-Russian story says 'This was Likho (Evil)'.",
+        "cites": [
+          "ralston1873:pp.178-181"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "cites": [
+        "machal1918:pp.251-252"
+      ]
+    },
+    {
+      "people": "Poles",
+      "cites": [
+        "ralston1873:p.178"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Little-Russian (variant of the tale quoted by Afanasief)",
+      "cites": [
+        "ralston1873:p.181"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "South Russia (a proverb common to Poland and South Russia)",
+      "cites": [
+        "ralston1873:p.178"
+      ]
+    }
+  ],
+  "family": {
+    "value": "disease-and-fate",
+    "cites": [
+      "machal1918:p.252",
+      "afanasyev1869:p.396"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "voroneje-one-eyed-woman",
+      "label": "One-eyed woman of the Voroneje tale (Ralston, Afanasyev)"
+    },
+    {
+      "id": "afanasyev-one-eyed-giant",
+      "label": "Afanasyev's one-eyed giant of other variants"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "In the tale from the Voroneje Government, Likho takes a female form.",
+      "cites": [
+        "ralston1873:p.178"
+      ],
+      "form": "voroneje-one-eyed-woman"
+    },
+    {
+      "text": "She is a tall woman.",
+      "cites": [
+        "ralston1873:p.179",
+        "afanasyev1868:p.698"
+      ],
+      "form": "voroneje-one-eyed-woman"
+    },
+    {
+      "text": "She is lank.",
+      "cites": [
+        "ralston1873:p.179"
+      ],
+      "form": "voroneje-one-eyed-woman"
+    },
+    {
+      "text": "She is crooked.",
+      "cites": [
+        "ralston1873:p.179"
+      ],
+      "form": "voroneje-one-eyed-woman"
+    },
+    {
+      "text": "She has only one eye.",
+      "cites": [
+        "ralston1873:p.179",
+        "afanasyev1868:p.698"
+      ],
+      "form": "voroneje-one-eyed-woman"
+    },
+    {
+      "text": "Afanasyev's retelling calls her a giantess.",
+      "cites": [
+        "afanasyev1868:p.698"
+      ],
+      "form": "voroneje-one-eyed-woman"
+    },
+    {
+      "text": "In other variants of the tale Likho is represented as a giant.",
+      "cites": [
+        "afanasyev1868:p.699"
+      ],
+      "form": "afanasyev-one-eyed-giant"
+    },
+    {
+      "text": "This giant is taller than the tallest oak.",
+      "cites": [
+        "afanasyev1868:p.699"
+      ],
+      "form": "afanasyev-one-eyed-giant"
+    },
+    {
+      "text": "This giant has a single eye in the forehead.",
+      "cites": [
+        "afanasyev1868:p.699"
+      ],
+      "form": "afanasyev-one-eyed-giant"
+    },
+    {
+      "text": "A tale tells of a man who sought Likho, and it appeared to him in the shape of a one-eyed giant.",
+      "cites": [
+        "afanasyev1869:p.396"
+      ],
+      "form": "afanasyev-one-eyed-giant"
+    }
+  ],
+  "scene": [
+    {
+      "text": "In the Voroneje tale Likho is met in a dark, dense forest, reached along a small, narrow path.",
+      "cites": [
+        "ralston1873:p.179"
+      ]
+    },
+    {
+      "text": "Its dwelling is a large cottage standing in the forest.",
+      "cites": [
+        "ralston1873:p.179",
+        "afanasyev1868:p.698"
+      ]
+    },
+    {
+      "text": "The cottage is empty when the travellers enter, and everything looks bare and squalid.",
+      "cites": [
+        "ralston1873:p.179"
+      ]
+    },
+    {
+      "text": "The travellers come upon it at night.",
+      "cites": [
+        "ralston1873:p.179",
+        "afanasyev1868:p.698"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "little-russian",
+      "label": "Little-Russian variant of the tale",
+      "peoples": [
+        "Ukrainians"
+      ],
+      "appearance": [
+        {
+          "text": "Likho is a huge giant.",
+          "cites": [
+            "ralston1873:p.181",
+            "afanasyev1868:p.699"
+          ]
+        },
+        {
+          "text": "The giant is fat.",
+          "cites": [
+            "afanasyev1868:p.699"
+          ]
+        },
+        {
+          "text": "Likho is blind.",
+          "cites": [
+            "ralston1873:p.181",
+            "afanasyev1868:p.699"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "Likho lives in an iron castle standing beside a wood.",
+          "cites": [
+            "ralston1873:p.181",
+            "afanasyev1868:p.699"
+          ]
+        },
+        {
+          "text": "The castle is surrounded by a palisade of human bones tipped with skulls.",
+          "cites": [
+            "ralston1873:p.181",
+            "afanasyev1868:p.699"
+          ]
+        },
+        {
+          "text": "Likho lies on a couch of human bones.",
+          "cites": [
+            "ralston1873:p.181",
+            "afanasyev1868:p.699"
+          ]
+        },
+        {
+          "text": "Around Likho sit Zluidni (Woes) and Zhurba (Care).",
+          "cites": [
+            "ralston1873:p.181",
+            "afanasyev1868:p.699"
+          ]
+        },
+        {
+          "text": "A voice from the castle answers the seeker that evil is here.",
+          "cites": [
+            "ralston1873:p.181",
+            "afanasyev1868:p.699"
+          ]
+        },
+        {
+          "text": "Likho offers the guest a human head to eat.",
+          "cites": [
+            "afanasyev1868:p.699"
+          ]
+        },
+        {
+          "text": "Likho intends to eat the visitor.",
+          "cites": [
+            "ralston1873:p.181",
+            "afanasyev1868:p.699"
+          ]
+        },
+        {
+          "text": "When the guest flees, Likho hears the iron doors creak and cries to them to hold the fugitive.",
+          "cites": [
+            "ralston1873:p.181",
+            "afanasyev1868:p.700"
+          ]
+        },
+        {
+          "text": "The door slams on the fugitive's right hand and he loses it.",
+          "cites": [
+            "ralston1873:p.181",
+            "afanasyev1868:p.700"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "Some of the skazkas offer a personification of evil called Likho, somewhat resembling their picture of the supernatural witch.",
+      "cites": [
+        "ralston1873:p.178"
+      ]
+    },
+    {
+      "text": "To Likho is always attributed a character of unmitigated malevolence.",
+      "cites": [
+        "ralston1873:p.184"
+      ]
+    },
+    {
+      "text": "Among the Polish peasantry Licho describes an evil spirit, a sort of devil.",
+      "cites": [
+        "ralston1873:p.178"
+      ]
+    },
+    {
+      "text": "In the Voroneje tale Likho greets the travellers who come to spend the night and says she shall have something to sup on.",
+      "cites": [
+        "ralston1873:p.179",
+        "afanasyev1868:p.698"
+      ]
+    },
+    {
+      "text": "She lights the stove, cuts the tailor's throat, puts him in the oven and eats him.",
+      "cites": [
+        "ralston1873:p.179",
+        "afanasyev1868:p.698"
+      ]
+    },
+    {
+      "text": "She keeps a flock of sheep, drives them into her cottage for the night and lets them out in the morning one at a time, catching each by the wool on its back.",
+      "cites": [
+        "ralston1873:p.180",
+        "afanasyev1868:p.698"
+      ]
+    },
+    {
+      "text": "After she is blinded she sits down at the threshold of the cottage.",
+      "cites": [
+        "ralston1873:p.180",
+        "afanasyev1868:p.698"
+      ]
+    },
+    {
+      "text": "A golden-handled hatchet sticks in a tree in her forest, and the hand of the man who seizes it sticks fast to it.",
+      "cites": [
+        "ralston1873:pp.180-181",
+        "afanasyev1868:p.699"
+      ]
+    },
+    {
+      "text": "She comes after the escaping smith, crying that he has not got away yet.",
+      "cites": [
+        "ralston1873:p.181",
+        "afanasyev1868:p.699"
+      ]
+    },
+    {
+      "text": "In other variants the giant Likho drives the sheep into the fold with a pine log.",
+      "cites": [
+        "afanasyev1868:p.699"
+      ]
+    },
+    {
+      "text": "Machal names the evil Dolya, the fate a man gets for his share, Nedolya or Licho.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "For the man who gets an evil Dolya, all his toil and all his endeavours are of no avail.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "The evil Dolya does nothing but sleep, dress herself or make merry, never offering him any aid.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "A proverb says misfortune (likho) walks not through the trees but among people.",
+      "cites": [
+        "afanasyev1869:p.396"
+      ]
+    },
+    {
+      "text": "A proverb says: do not seek likho, it will find you itself.",
+      "cites": [
+        "afanasyev1869:p.396"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "A proverb common to Poland and South Russia says: When Likho sleeps, awake it not.",
+      "cites": [
+        "ralston1873:p.178"
+      ]
+    },
+    {
+      "text": "In the Voroneje tale the smith, asked by her to forge her an eye, ties her with a thick cord and puts out her sound eye with a red-hot awl.",
+      "cites": [
+        "ralston1873:pp.179-180"
+      ]
+    },
+    {
+      "text": "He escapes by turning his sheepskin coat wool outward and crawling out among her sheep.",
+      "cites": [
+        "ralston1873:p.180",
+        "afanasyev1868:p.698"
+      ]
+    },
+    {
+      "text": "Caught by the hand on the golden-handled hatchet, he cuts off his own hand and so escapes.",
+      "cites": [
+        "ralston1873:p.181",
+        "afanasyev1868:p.699"
+      ]
+    },
+    {
+      "text": "In the Little-Russian variant the guest hides the human head Likho offers him instead of eating it, first under the bench and then in his bosom.",
+      "cites": [
+        "afanasyev1868:p.699"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [
+    {
+      "id": "zlydni",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Ralston's Voroneje tale of One-eyed Likho is Afanasyev's tale III No. 14, and his Little-Russian variant is quoted by Afanasyev, so those passages count with Afanasyev, not as an independent source.",
+        "cites": [
+          "ralston1873:p.178",
+          "ralston1873:p.181"
+        ]
+      },
+      {
+        "text": "Afanasyev prints the Voroneje tale, the giant variants and the Little-Russian variant, and lists лихо among the words that stand for Недоля, with proverbs on it.",
+        "cites": [
+          "afanasyev1868:p.698",
+          "afanasyev1868:p.699",
+          "afanasyev1869:p.396"
+        ]
+      },
+      {
+        "text": "Ralston's account of Licho as an evil spirit among the Polish peasantry cites Wojcicki, not Afanasyev, and he records a proverb on Likho common to Poland and South Russia, giving Poles and Ukrainians.",
+        "cites": [
+          "ralston1873:p.178"
+        ]
+      },
+      {
+        "text": "Machal, citing no source on the page, records Licho as a name of the evil Dolya in Russian tradition, a third independent author (the identification with the tale figure is flagged).",
+        "cites": [
+          "machal1918:p.251",
+          "machal1918:p.252"
+        ]
+      },
+      {
+        "text": "The verified entry names three peoples (Russians, Poles, Ukrainians) across three independent authors, so the grade is widely-attested, though the tale itself rests on Afanasyev alone.",
+        "cites": [
+          "ralston1873:p.178",
+          "machal1918:p.252",
+          "afanasyev1868:p.698"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "origin: no source says where Likho comes from or who becomes one; searched likho, licho, one-eyed, лихо, лиха, лихомъ, одноглаз, лихо одноглаз and woe across all sources, and read ralston1873 pp.178-185, afanasyev1868 pp.696-700, afanasyev1869 pp.396-397 and machal1918 pp.251-252."
+    },
+    {
+      "kind": "other",
+      "text": "People terms not in sources/peoples.json, so no people row was written for them: 'На Руси' (afanasyev1868:p.698, where the tale of One-eyed Likho is introduced; proposed Russians); 'великорусской сказкѣ' (afanasyev1868:p.700, the Great-Russian tale; proposed Russians); 'малорусскій варіантъ' (afanasyev1868:p.699; proposed Ukrainians, as the table lists Малороссія but not the adjective); 'Voroneje Government' (ralston1873:p.178 footnote, where the tale comes from; proposed Russians). Because only these unlisted terms attach a people to the Cyrillic form, the printed forms 'Лихо' (afanasyev1868:pp.698-699) and 'Лихо одноглазое' (afanasyev1868:p.698) are not recorded as native rows, and Ralston's title 'One-eyed Likho' (ralston1873:p.178) is not recorded as a name variant."
+    },
+    {
+      "kind": "scope",
+      "text": "Table rows matched by word form rather than exact term: Ralston's 'Little-Russian variant' (ralston1873:p.181) to the 'Little-Russians' row, and 'South Russia' (ralston1873:p.178) to the contested 'South-Russian' row (listed there for ralston1872). Both are recorded as Ukrainians."
+    },
+    {
+      "kind": "scope",
+      "text": "The one-eyed giant of afanasyev1869:p.396 comes from a footnote that cites the same tale number (N. R. Sk. III, 14) that ralston1873:p.178 and afanasyev1868:p.698 tell with a one-eyed woman; the footnote calls it a giant, so it is filed under the giant form. Gore or Woe (ralston1873:pp.184-185) and Бѣда (afanasyev1869:pp.396-397) are separate personifications of misfortune and were not merged into Likho; only proverbs that print лихо were used."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: sources/peoples.json now lists terms the draft note above treats as unlisted: \"Voroneje Government\" (contested row, Russians) at ralston1873:p.178, \"На Руси\" (contested row, Russians) at afanasyev1868:p.698, \"великорусской\" (Russians) at afanasyev1868:p.700 and \"малорусскій\" (Ukrainians) at afanasyev1868:p.699. A re-run could record a Russians row resting on the tale itself, and the native form \"Лихо\" (afanasyev1868:pp.698-699)."
+    },
+    {
+      "kind": "scope",
+      "text": "Verify: much of the tale material reaches Ralston from Afanasyev (ralston1873:p.178 footnote \"Afanasief, iii. No. 14\"; ralston1873:p.181 \"quoted by Afanasief\"), so the double tags on those clauses are one tradition, not two independent witnesses."
+    }
+  ]
+}

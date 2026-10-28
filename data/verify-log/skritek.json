@@ -1,0 +1,47 @@
+{
+  "entry_id": "skritek",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/primary/native/0",
+      "text": "Skřítek",
+      "reason": "The OCR on machal1918:pp.244-245 prints \"Skiitek\" and \"Skfitek\", and the bibliography (p.397) \"Skritek\"; the form with ř and í is a plausible reading of the garbled OCR but is not printed in the corpus text, and without the page image it cannot be shown either right or wrong. The row's people Czechs carries the same context doubt as /peoples_regions/0."
+    },
+    {
+      "field": "/peoples_regions/0",
+      "text": "Czechs",
+      "reason": "The skřítek sentence on machal1918:p.244 (\"Another designation of the family genius was Skřítek\") names no people. It follows the \"old Bohemian word Setek\" paragraph, which the table's Bohemian row maps to Czechs, but the Styrian Slovenian Setek paragraph stands between them, and p.245 sets the Slovaks, Poland and Styria against it only by contrast. The Czech referent is a likely reading, not one the page states."
+    }
+  ],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "Every surviving clause cites one source, Máchal's Slavic Mythology (1918); no other source remains in the entry.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "Máchal records the spirit under separate names for the Slovaks, the Poles and the Slovenians in Styria.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "The Czech reading rests only on the passage following Máchal's old Bohemian Setek; the skřítek sentence itself names no people.",
+      "cites": [
+        "machal1918:p.244"
+      ]
+    },
+    {
+      "text": "Máchal says the spirit's memory still lives in popular tradition but cites no collection or informant in the passage; one compiler counts as one source, so four peoples do not make the entry regional or widely attested.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    }
+  ]
+}

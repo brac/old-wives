@@ -1,0 +1,79 @@
+{
+  "entry_id": "dolya",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/variants/0/appearance/0",
+      "text": "The Sreća is described as a beautiful girl spinning a golden thread.",
+      "to_text": "The Sreća is described as a beautiful girl.",
+      "from_cites": [
+        "machal1918:p.252"
+      ],
+      "to_cites": [
+        "machal1918:p.252"
+      ],
+      "reason": "Cut 'spinning a golden thread': an activity, not a physical attribute, misplaced in appearance (belongs in behavior_habitat). The page does describe her as a beautiful girl."
+    },
+    {
+      "field": "/dealing_with_it/3",
+      "text": "In a Little-Russian song a girl carts her bitter Dolya to market to sell her, but people know her and will not buy, so the girl throws her down from the cart.",
+      "to_text": "In a song the singer carts the bitter Dolya to market to sell her, but people know her and will not buy, so the singer throws her down from the cart.",
+      "from_cites": [
+        "afanasyev1869:p.395"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.395"
+      ],
+      "reason": "The song (b, continued on p.395) does not mark the speaker as a girl, so 'a girl' became 'the singer'. 'Little-Russian' is printed only on p.394 (пѣсняхъ малороссійскихъ), which the clause does not cite, so it was cut."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/dealing_with_it/2",
+      "text": "A bride going to her wedding addresses her Dolya in a song: if she is good, sit with me on the cart; if she is bad, float away with the water.",
+      "reason": "The OCR prints 'коли ты якая' ('if you are such / some kind'); 'if she is bad' is a reading of the contrast with 'добрая', not the printed word, which may be an OCR slip for a word like 'лихая'. Cannot show it is wrong."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal records the Dolya as Russian tradition.",
+      "cites": [
+        "machal1918:p.251"
+      ]
+    },
+    {
+      "text": "Machal records the Sreća as the Serbian counterpart of the Russian Dolya.",
+      "cites": [
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "Afanasyev independently prints Dolya and Nedolya tales, songs and sayings, including a Little-Russian tale and its Great-Russian version.",
+      "cites": [
+        "afanasyev1869:p.392",
+        "afanasyev1869:p.393",
+        "afanasyev1869:p.395"
+      ]
+    },
+    {
+      "text": "Machal's passage on the Dolya cites no source, so it is counted independent of Afanasyev, although the services of the good Dolya he lists closely follow those the Dolya names in Afanasyev's Little-Russian tale.",
+      "cites": [
+        "machal1918:p.251",
+        "machal1918:p.252",
+        "afanasyev1869:p.392",
+        "afanasyev1869:p.393"
+      ]
+    },
+    {
+      "text": "The Serbian evidence rests on Machal alone; Karadžić glosses Срећа only as the common word fortuna.",
+      "cites": [
+        "machal1918:p.252",
+        "karadzic1818:s.v.Срећа"
+      ]
+    }
+  ]
+}

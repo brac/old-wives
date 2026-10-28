@@ -1,0 +1,95 @@
+{
+  "entry_id": "likho",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [
+    {
+      "field": "/variants/0/appearance/3",
+      "text": "The giant lies stretched out with his head in the corner (pokut) and his feet on the stove.",
+      "cites": [
+        "afanasyev1868:p.699"
+      ],
+      "reason": "Misplaced, belongs in behavior_habitat: afanasyev1868:p.699 prints the giant lying with his head on the pokut and his feet on the stove; that is posture and setting, not a physical attribute."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "/dealing_with_it/1",
+      "text": "In the Voroneje tale the smith offers to forge her a new eye, ties her with a thick cord and puts out her sound eye with a red-hot awl.",
+      "to_text": "In the Voroneje tale the smith, asked by her to forge her an eye, ties her with a thick cord and puts out her sound eye with a red-hot awl.",
+      "from_cites": [
+        "ralston1873:pp.179-180",
+        "afanasyev1868:p.698"
+      ],
+      "to_cites": [
+        "ralston1873:pp.179-180"
+      ],
+      "reason": "On both pages she asks for the eye (\"Make me an eye\", ralston1873:p.179; \"Скуй мнѣ глазъ\", afanasyev1868:p.698); the smith does not offer it. afanasyev1868:p.698 has neither the thick cord nor the sound eye, so only Ralston supports the narrowed text."
+    }
+  ],
+  "retagged": [
+    {
+      "field": "/scene/0",
+      "text": "In the Voroneje tale Likho is met in a dark, dense forest, reached along a small, narrow path.",
+      "from_cites": [
+        "ralston1873:p.179",
+        "afanasyev1868:p.698"
+      ],
+      "to_cites": [
+        "ralston1873:p.179"
+      ],
+      "reason": "afanasyev1868:p.698 has the dense dark forest but not the small, narrow path; ralston1873:p.179 supports the whole clause."
+    }
+  ],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/variants/0",
+      "text": "Licho (Russians)",
+      "reason": "machal1918:p.252 prints \"Licho\" only as another name of the evil Dolya (\"an evil Dolya (Nedolya, Licho)\") in the Russian Dolya passage; the page does not tie it to the Likho of the tales, so whether it names this creature is a reading of the page."
+    },
+    {
+      "field": "/peoples_regions/0",
+      "text": "Russians",
+      "reason": "The Russians row rests only on machal1918:pp.251-252, where Licho is a name of the evil Dolya in \"Russian tradition\"; the term maps to Russians under the table, but the page does not say the evil Dolya is the Likho of the tales."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Ralston's Voroneje tale of One-eyed Likho is Afanasyev's tale III No. 14, and his Little-Russian variant is quoted by Afanasyev, so those passages count with Afanasyev, not as an independent source.",
+      "cites": [
+        "ralston1873:p.178",
+        "ralston1873:p.181"
+      ]
+    },
+    {
+      "text": "Afanasyev prints the Voroneje tale, the giant variants and the Little-Russian variant, and lists лихо among the words that stand for Недоля, with proverbs on it.",
+      "cites": [
+        "afanasyev1868:p.698",
+        "afanasyev1868:p.699",
+        "afanasyev1869:p.396"
+      ]
+    },
+    {
+      "text": "Ralston's account of Licho as an evil spirit among the Polish peasantry cites Wojcicki, not Afanasyev, and he records a proverb on Likho common to Poland and South Russia, giving Poles and Ukrainians.",
+      "cites": [
+        "ralston1873:p.178"
+      ]
+    },
+    {
+      "text": "Machal, citing no source on the page, records Licho as a name of the evil Dolya in Russian tradition, a third independent author (the identification with the tale figure is flagged).",
+      "cites": [
+        "machal1918:p.251",
+        "machal1918:p.252"
+      ]
+    },
+    {
+      "text": "The verified entry names three peoples (Russians, Poles, Ukrainians) across three independent authors, so the grade is widely-attested, though the tale itself rests on Afanasyev alone.",
+      "cites": [
+        "ralston1873:p.178",
+        "machal1918:p.252",
+        "afanasyev1868:p.698"
+      ]
+    }
+  ]
+}

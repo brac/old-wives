@@ -1,0 +1,249 @@
+{
+  "id": "polevik",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "polevik",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "полевиковъ",
+          "people": "Ukrainians",
+          "cites": [
+            "afanasyev1868:p.330"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Polevoy",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "machal1918:p.268"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Machal compares the name with the Russian word pole, \"field\".",
+        "cites": [
+          "machal1918:p.268"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "cites": [
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Kiev and Chernigov Governments (кіевская и черниговская губ.)",
+      "cites": [
+        "afanasyev1868:p.330"
+      ]
+    }
+  ],
+  "family": {
+    "value": "field",
+    "cites": [
+      "machal1918:p.268"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "Among the Russians it is about the height of a corn-stalk until harvest-time.",
+      "cites": [
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "text": "Among the Russians, at harvest-time it shrivels to the size of stubble.",
+      "cites": [
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "text": "In the Kiev and Chernigov Governments poleviki are said to be equal in height to the grain growing in the field.",
+      "cites": [
+        "afanasyev1868:p.330"
+      ]
+    },
+    {
+      "text": "In the Kiev and Chernigov Governments poleviki are said to shrink after the harvest and become as tiny as stubble, no taller than the cut stalks left standing on the root.",
+      "cites": [
+        "afanasyev1868:p.330"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "The fields at harvest-time, among the standing corn.",
+      "cites": [
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "text": "It appears at noon or before sunset.",
+      "cites": [
+        "machal1918:p.269"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "It runs away before the swing of the scythe and hides among the stalks that are still standing.",
+      "cites": [
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "text": "When the grain ripens and the villagers begin to reap or mow it, the polevik flees from the strokes of the sickle and scythe and hides in the ears still standing on the root.",
+      "cites": [
+        "afanasyev1869:p.771"
+      ]
+    },
+    {
+      "text": "When the last ears are cut, it gets into the hands of the reaper and is brought to the barn with the final sheaf.",
+      "cites": [
+        "machal1918:pp.268-269"
+      ]
+    },
+    {
+      "text": "With the last uncut ears it falls into the reaper's hands and is carried in the last harvest sheaf to the threshing floor or the farmer's house.",
+      "cites": [
+        "afanasyev1869:pp.771-772"
+      ]
+    },
+    {
+      "text": "It roams about on horseback.",
+      "cites": [
+        "machal1918:p.269"
+      ]
+    },
+    {
+      "text": "It rides over those who are sleeping in the field at noon or before sunset.",
+      "cites": [
+        "machal1918:p.269"
+      ]
+    },
+    {
+      "text": "It may send disease upon those who sleep in the field at that time.",
+      "cites": [
+        "machal1918:p.269"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "It is unsafe to take a nap in the field at noon or before sunset, when the polevik appears.",
+      "cites": [
+        "machal1918:p.269"
+      ]
+    },
+    {
+      "text": "Afanasyev gives the spirit's arrival in the last sheaf as the reason the last harvest sheaf is dressed up as a doll and set in the place of honour, under the icons.",
+      "cites": [
+        "afanasyev1869:pp.771-772"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [
+    {
+      "id": "poludnitsa",
+      "relation": "related"
+    },
+    {
+      "id": "leshy",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Machal records the polevik for the Russians.",
+        "cites": [
+          "machal1918:p.268"
+        ]
+      },
+      {
+        "text": "Afanasyev records poleviki, as tall as the growing grain and shrinking to stubble after harvest, in the Kiev and Chernigov Governments, which the people table maps to Ukrainians.",
+        "cites": [
+          "afanasyev1868:p.330"
+        ]
+      },
+      {
+        "text": "Machal's polevik passage cites no source on the page, so Machal and Afanasyev are counted as two independent authors; Afanasyev's two volumes count as one source.",
+        "cites": [
+          "machal1918:p.268",
+          "machal1918:p.269",
+          "afanasyev1869:pp.771-772"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "origin: no page says where the polevik comes from or who becomes one. afanasyev1869:p.771 theorises in general that plants were seen as embodiments of elemental (storm and wind) spirits, which thereby took on the character of forest, field or grain genii; this is the author's interpretation of grain spirits as a class, not a statement about the polevik's origin, so it was left out. Searched polevik, polevoy, polevoi, полевик, полевики, полевиков, полевикъ, полевой, полевой дед, полев, field-spirit, field spirit(s) in all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: Machal (Russians) and Afanasyev (Kiev and Chernigov Governments) agree on the size-with-the-grain detail; no page describes the creature differently by people or region, so no variant was nested."
+    },
+    {
+      "kind": "scope",
+      "text": "names.primary.native: the only native form tied to a named people is the genitive plural полевиковъ (afanasyev1868:p.330, Kiev and Chernigov Governments). The singular полевикъ is printed on afanasyev1869:p.771, but in a passage framed as German, Slavic and Lithuanian tradition with no single people named, so it was not given a native row."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1869:p.771 footnote 4 lists names the Slavs give to grain spirits (полевой дѣдъ, an OCR-broken 'поде- Л и к ъ', гречуха, жыцень), and afanasyev1869:p.591 says peasants of Poshekhonye district frighten children away from the fields with the полевой дѣдъ or Baba Yaga. Neither page says these are names of the polevik itself, and 'the Slavs' maps to no single people, so they were not recorded as variants."
+    },
+    {
+      "kind": "scope",
+      "text": "related: poludnitsa is linked because machal1918:p.268 introduces the polevik as a second Russian field-spirit 'besides the Poludnica'; leshy is linked because afanasyev1868:p.330, in a passage on the leshy's size, says the Kiev and Chernigov Governments distinguish лисуны from полевики. Both are 'related', not a stronger relation."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1868:p.330 writes 'Въ кіевской и черниговской губ.'; this was mapped through the table row 'Kief and Chernigof (Governments of)' to Ukrainians, with the source's wording kept in the region text."
+    }
+  ]
+}

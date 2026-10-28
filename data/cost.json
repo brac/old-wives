@@ -1,0 +1,185 @@
+{
+  "description": "One row per draft or verify run. subagent_tokens is the harness's total for the run (no input/output split). usd = tokens x the model's input price, usd_high = tokens x its output price; the true cost lies between and is input-dominated. The $0.50 per-creature cap is checked against the sum of usd. Written by `npm run cost -- add`.",
+  "rows": [
+    {
+      "creature": "alkonost",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 87253,
+      "usd": 0.349012,
+      "usd_high": 1.74506,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "polevik",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 90037,
+      "usd": 0.360148,
+      "usd_high": 1.80074,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "koschei",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 100039,
+      "usd": 0.400156,
+      "usd_high": 2.00078,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "kikimora",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 100181,
+      "usd": 0.400724,
+      "usd_high": 2.00362,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "vila",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 109117,
+      "usd": 0.436468,
+      "usd_high": 2.18234,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "likho",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 117595,
+      "usd": 0.47038,
+      "usd_high": 2.3519,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "skritek",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 92634,
+      "usd": 0.370536,
+      "usd_high": 1.85268,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "dolya",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 110637,
+      "usd": 0.442548,
+      "usd_high": 2.21274,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "oboroten",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 111761,
+      "usd": 0.447044,
+      "usd_high": 2.23522,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "divozenka",
+      "stage": "draft",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 105654,
+      "usd": 0.422616,
+      "usd_high": 2.11308,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "alkonost",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 84111,
+      "usd": 0.336444,
+      "usd_high": 1.68222,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "polevik",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 89075,
+      "usd": 0.3563,
+      "usd_high": 1.7815,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "skritek",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 89450,
+      "usd": 0.3578,
+      "usd_high": 1.789,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "koschei",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 96088,
+      "usd": 0.384352,
+      "usd_high": 1.92176,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "likho",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 99839,
+      "usd": 0.399356,
+      "usd_high": 1.99678,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "vila",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 107016,
+      "usd": 0.428064,
+      "usd_high": 2.14032,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "dolya",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 103547,
+      "usd": 0.414188,
+      "usd_high": 2.07094,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "kikimora",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 101779,
+      "usd": 0.407116,
+      "usd_high": 2.03558,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "divozenka",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 113361,
+      "usd": 0.453444,
+      "usd_high": 2.26722,
+      "date": "2026-10-28"
+    },
+    {
+      "creature": "oboroten",
+      "stage": "verify",
+      "model": "claude-opus-5-5",
+      "subagent_tokens": 120364,
+      "usd": 0.481456,
+      "usd_high": 2.40728,
+      "date": "2026-10-28"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "entry_id": "vila",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [
+    {
+      "field": "/peoples_regions/6",
+      "text": "Czechs (ancient written traditions of the Czechs)",
+      "cites": [
+        "machal1918:p.256"
+      ],
+      "reason": "Machal p.256 prints 'Czechs', which is not a term in sources/peoples.json: the Czechs row lists 'Bohemian, Bohemians, Bohemia, Czekhs, чехи, ...' but not the spelling 'Czechs'. Refused under verify-v2.1 until the table gains the term; the page does say the Vila is mentioned in the ancient written traditions of the Czechs."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "/behavior_habitat/28",
+      "text": "In a Servian story a vila from the hill, hearing a husband boast that his wife was fairer than the white vila, demanded to see her and admitted she was three times as beautiful.",
+      "to_text": "In a Servian story a husband boasted that his wife was more beautiful than the white vila; the vila from the hill overheard and demanded to see her, and the wife was three times as beautiful as the vila.",
+      "from_cites": [
+        "ralston1872:p.147"
+      ],
+      "to_cites": [
+        "ralston1872:p.147"
+      ],
+      "reason": "Ralston p.147 has the narrator state that the wife was three times as beautiful; the vila does not 'admit' it in those words, she says only that the vaunt is no great one. Narrowed to the page's telling."
+    },
+    {
+      "field": "/origin/6",
+      "text": "In a Servian song the vila from the hill says the hill bore her, swaddled her in green leaves, the morning dew nourished her and the hill breeze rocked her.",
+      "to_text": "In a Servian story the vila from the hill says the hill itself bore her and swaddled her in green leaves, the morning dew nourished her and the breeze from the hill rocked her.",
+      "from_cites": [
+        "ralston1872:p.147"
+      ],
+      "to_cites": [
+        "ralston1872:p.147"
+      ],
+      "reason": "Ralston p.147 introduces the passage as 'says a story', not a song; 'song' replaced with 'story'."
+    }
+  ],
+  "retagged": [
+    {
+      "field": "/peoples_regions/0",
+      "text": "Serbs (Serbian legends; Servian Vilas)",
+      "from_cites": [
+        "machal1918:p.256",
+        "karadzic1852:s.v.вила",
+        "ralston1872:p.146"
+      ],
+      "to_cites": [
+        "machal1918:p.256",
+        "ralston1872:p.146"
+      ],
+      "reason": "karadzic1852 s.v. вила does not print a term from the Serbs row of sources/peoples.json (the page has only 'Српски' in sense 2, which the table does not list); Machal p.256 prints 'Serbian legends' and Ralston p.146 'The Servian Vilas', both terms of the Serbs row."
+    }
+  ],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/names/primary/native/0",
+      "text": "вила (Serbs)",
+      "reason": "The form вила is printed as the headword at karadzic1852 s.v. вила, so the row stands. Its people value Serbs rests on the dictionary being a Serbian dictionary (Српски рјечник); the entry page prints no term from the Serbs row of sources/peoples.json (only 'Српски' in sense 2), so the mapping is by context, not by a listed term."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal records the vila among Serbs, Bulgarians, Slovaks, Poles and Slovenians, and says the Vila is mentioned in the ancient written traditions of the Russians.",
+      "cites": [
+        "machal1918:p.256",
+        "machal1918:p.257"
+      ]
+    },
+    {
+      "text": "Karadzic's dictionary describes the Serbian vila's dwelling, dress, hair and punishments independently of Machal.",
+      "cites": [
+        "karadzic1852:s.v.вила"
+      ]
+    },
+    {
+      "text": "Afanasyev records the Bulgarian samovila and samodiva and the Serbian vily turning into swans.",
+      "cites": [
+        "afanasyev1869:p.182",
+        "afanasyev1869:p.188"
+      ]
+    },
+    {
+      "text": "Ralston independently describes the Servian Vilas and a Bulgarian song of a fountain-guarding Vila, without citing Afanasyev on those passages.",
+      "cites": [
+        "ralston1872:p.146",
+        "ralston1872:p.181"
+      ]
+    },
+    {
+      "text": "Ralston's story of the vila from the hill is quoted from Vuk Karadjich by Buslaef, so on that passage he is not independent of Karadzic and is counted once with him.",
+      "cites": [
+        "ralston1872:p.147"
+      ]
+    }
+  ]
+}

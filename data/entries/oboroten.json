@@ -1,0 +1,689 @@
+{
+  "id": "oboroten",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "oboroten",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "оборотень",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1869:p.529",
+            "ralston1872:p.403"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "volkodlak",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "Волкодлакъ",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1869:p.527",
+              "ralston1872:p.404"
+            ]
+          }
+        ],
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.403",
+          "ralston1872:p.404"
+        ]
+      },
+      {
+        "romanized": "vovkulak",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "вовкулакъ",
+            "people": "Ukrainians",
+            "cites": [
+              "afanasyev1869:p.527"
+            ]
+          }
+        ],
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "ralston1872:p.404"
+        ]
+      },
+      {
+        "romanized": "vovkun",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "вовкунъ",
+            "people": "Ukrainians",
+            "cites": [
+              "afanasyev1869:p.527"
+            ]
+          }
+        ],
+        "peoples": [
+          "Ukrainians"
+        ],
+        "cites": [
+          "afanasyev1869:p.527"
+        ]
+      },
+      {
+        "romanized": "wlkodlak",
+        "peoples": [
+          "Czechs"
+        ],
+        "cites": [
+          "ralston1872:p.404"
+        ]
+      },
+      {
+        "romanized": "vukodlak",
+        "peoples": [
+          "Serbs"
+        ],
+        "cites": [
+          "ralston1872:p.404"
+        ]
+      },
+      {
+        "romanized": "vrkodlak",
+        "peoples": [
+          "Bulgarians"
+        ],
+        "cites": [
+          "ralston1872:p.404"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Ralston glosses oboroten as from oborotit', 'to turn', the name of a person changed into another shape by magic.",
+        "cites": [
+          "ralston1872:p.403"
+        ]
+      },
+      {
+        "text": "Ralston, following Afanasyev, explains volkodlak as from volk, 'wolf', and dlaka, 'a tuft of hair', and so 'a hide'.",
+        "cites": [
+          "ralston1872:p.403"
+        ]
+      },
+      {
+        "text": "Afanasyev calls volkodlak a compound of 'wolf' and dlaka, 'wool, fleece, tuft of hair', meaning a being covered with wolf's hair or a wolf's skin.",
+        "cites": [
+          "afanasyev1869:p.527"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "Russia",
+      "cites": [
+        "ralston1872:p.403"
+      ]
+    },
+    {
+      "people": "Russians",
+      "cites": [
+        "afanasyev1869:p.532"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "the Ukraine",
+      "cites": [
+        "ralston1872:p.432"
+      ]
+    },
+    {
+      "people": "Ukrainians",
+      "region": "Ruthenians",
+      "cites": [
+        "ralston1872:p.408"
+      ]
+    },
+    {
+      "people": "Belarusians",
+      "region": "White-Russians",
+      "cites": [
+        "ralston1872:p.407"
+      ]
+    },
+    {
+      "people": "Poles",
+      "region": "Polish tradition",
+      "cites": [
+        "ralston1872:p.407"
+      ]
+    }
+  ],
+  "family": {
+    "value": "monster",
+    "cites": [
+      "machal1918:p.229"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "wolf",
+      "label": "Wolf shape (Machal, Ralston)"
+    },
+    {
+      "id": "human-sign",
+      "label": "Human shape, Ralston's sign under the tongue"
+    },
+    {
+      "id": "bear",
+      "label": "Afanasyev's Great-Russian bear shape"
+    },
+    {
+      "id": "black-dog",
+      "label": "Ralston's Russian black dog"
+    },
+    {
+      "id": "hen",
+      "label": "Machal's hen shape"
+    },
+    {
+      "id": "horse",
+      "label": "Machal's horse shape"
+    },
+    {
+      "id": "cow",
+      "label": "Machal's cow shape"
+    },
+    {
+      "id": "cat",
+      "label": "Machal's cat shape"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "A person who becomes a vlkodlak takes the shape of a wolf.",
+      "cites": [
+        "machal1918:pp.228-229"
+      ],
+      "form": "wolf"
+    },
+    {
+      "text": "In a Polish tale of a youth bewitched by a witch, his hands turned into wolf's paws.",
+      "cites": [
+        "ralston1872:p.407"
+      ],
+      "form": "wolf"
+    },
+    {
+      "text": "In the same Polish tale, his whole body bristled with shaggy hair.",
+      "cites": [
+        "ralston1872:p.407"
+      ],
+      "form": "wolf"
+    },
+    {
+      "text": "A spell for a wizard who wishes to turn into a werewolf speaks of a shaggy grey wolf with a warm hide.",
+      "cites": [
+        "ralston1872:p.406"
+      ],
+      "form": "wolf"
+    },
+    {
+      "text": "Among the Russian peasantry it is believed that a werewolf may be known by the bristles which grow under his tongue.",
+      "cites": [
+        "ralston1872:p.404"
+      ],
+      "form": "human-sign"
+    },
+    {
+      "text": "Great-Russian peasants say vovkulaki are sorcerers able to turn into bears as well as wolves.",
+      "cites": [
+        "afanasyev1869:p.532"
+      ],
+      "form": "bear"
+    },
+    {
+      "text": "In one Russian story a young man bewitched by an old sorceress takes the form of a black dog.",
+      "cites": [
+        "ralston1872:p.408"
+      ],
+      "form": "black-dog"
+    },
+    {
+      "text": "The Vlkodlak can transform himself into hens.",
+      "cites": [
+        "machal1918:p.229"
+      ],
+      "form": "hen"
+    },
+    {
+      "text": "The Vlkodlak can transform himself into a horse.",
+      "cites": [
+        "machal1918:p.229"
+      ],
+      "form": "horse"
+    },
+    {
+      "text": "The Vlkodlak can transform himself into a cow.",
+      "cites": [
+        "machal1918:p.229"
+      ],
+      "form": "cow"
+    },
+    {
+      "text": "The Vlkodlak can transform himself into a dog.",
+      "cites": [
+        "machal1918:p.229"
+      ],
+      "form": "black-dog"
+    },
+    {
+      "text": "The Vlkodlak can transform himself into a cat.",
+      "cites": [
+        "machal1918:p.229"
+      ],
+      "form": "cat"
+    }
+  ],
+  "scene": [
+    {
+      "text": "A person turned into a Vlkodlak runs about the village in wolf shape and approaches human dwellings.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "Sorcerers roam as wolves usually by night and take human form again by day.",
+      "cites": [
+        "afanasyev1869:p.530"
+      ]
+    },
+    {
+      "text": "In the Ukraine and White Russia the involuntary vovkulaki live in dens and roam the forests, howling like wolves.",
+      "cites": [
+        "afanasyev1869:pp.549-550"
+      ]
+    },
+    {
+      "text": "The involuntary vovkulaki often wander near their native village.",
+      "cites": [
+        "afanasyev1869:p.550"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "According to Russian beliefs vovkulaki are of two kinds: sorcerers who take a beast's shape, or ordinary people turned into wolves by sorcery.",
+      "cites": [
+        "afanasyev1869:p.530"
+      ]
+    },
+    {
+      "text": "Sorcerers' turning into wolves is done with the devil's help, and they are in close dealings with unclean spirits.",
+      "cites": [
+        "afanasyev1869:pp.530-531"
+      ]
+    },
+    {
+      "text": "Dealers in the black art who have turned themselves into wolves are for the most part ravenous destroyers of all that falls in their way.",
+      "cites": [
+        "ralston1872:pp.406-407"
+      ]
+    },
+    {
+      "text": "People made wolves against their will seldom disgrace their human nature, attaching themselves to men and apologising with tears and pawings.",
+      "cites": [
+        "ralston1872:p.407"
+      ]
+    },
+    {
+      "text": "Unless driven by hunger the involuntary werewolves never slay and eat, and when they must kill a sheep they seek one from a village other than their own.",
+      "cites": [
+        "ralston1872:p.407"
+      ]
+    },
+    {
+      "text": "The involuntary vovkulaki keep human understanding and almost never attack village herds; only unbearable hunger drives them to seek prey.",
+      "cites": [
+        "afanasyev1869:p.550"
+      ]
+    },
+    {
+      "text": "When they see a person they look at him piteously, as if begging for help, and tears have been seen streaming from the vovkulak's eyes.",
+      "cites": [
+        "afanasyev1869:p.550"
+      ]
+    },
+    {
+      "text": "The vovkulak will not take raw meat offered to him but greedily eats a thrown piece of bread.",
+      "cites": [
+        "afanasyev1869:p.550"
+      ]
+    },
+    {
+      "text": "A person turned into a Vlkodlak casts plaintive glances at people without harming anyone.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "In a Polish tale the bewitched youth's cattle fled from him in terror, and his voice had become a mere howl.",
+      "cites": [
+        "ralston1872:p.407"
+      ]
+    },
+    {
+      "text": "A man turned into a wolf by a witch said afterwards that he made friends with a real wolf and hunted with him, never forgetting he was a man though he had lost articulate speech.",
+      "cites": [
+        "ralston1872:p.407"
+      ]
+    },
+    {
+      "text": "At night the Vlkodlak attacks cattle, sucks the milk of cows, mares and sheep, strangles horses, and causes cattle to die of plague.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "The Vlkodlak may even assail human beings, frightening, beating and strangling them.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "The Slavs in Istria believe that every family has its own Vukodlak, who tries to harm the house.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "Among the Southern Slavs an old tradition, dating from the thirteenth century, tells of a Vukodlak who followed the clouds and devoured the sun or the moon, causing an eclipse.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "The Serbs say vukodlaki appear chiefly in winter, from Christmas to the Day of the Ascension.",
+      "cites": [
+        "afanasyev1869:p.528"
+      ]
+    },
+    {
+      "text": "Among the Poles it is believed that oborotni turn into wolves twice a year, at Koliada and on St John's Night.",
+      "cites": [
+        "afanasyev1869:p.528"
+      ]
+    },
+    {
+      "text": "In popular tradition the Vlkodlak is frequently identified with the Vampire, and similar stories are told of both.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "A person turned into a Vlkodlak keeps his wolf shape until the same person who enchanted him destroys the charm.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "To cure an involuntary werewolf it is necessary either to strip off his hide or to remove the magic girdle or other amulet that put him in his brute state.",
+      "cites": [
+        "ralston1872:p.408"
+      ]
+    },
+    {
+      "text": "In one Russian story, on a wizard's advice, people heated a bath as hot as possible and scalded the bewitched dog's skin off, and it turned back into a young man of a neighbouring village.",
+      "cites": [
+        "ralston1872:p.408"
+      ]
+    },
+    {
+      "text": "In the Ukraine there lingers a tradition that a werewolf touched with a pitchfork or a flail at once resumes his human form.",
+      "cites": [
+        "ralston1872:p.432"
+      ]
+    },
+    {
+      "text": "Buslaev notes that a buried werewolf or vampire has to be pierced with an aspen stake.",
+      "cites": [
+        "ralston1872:p.406"
+      ]
+    },
+    {
+      "text": "In Russia it is thought that a sorcerer who knows a person's name can make him an oboroten at will, so the baptismal name must be hidden and another, invented name used.",
+      "cites": [
+        "afanasyev1869:p.549"
+      ]
+    },
+    {
+      "text": "Among the Southern Slavs, during an eclipse attributed to the Vukodlak, drums were beaten, bells rung and guns fired to drive the demon away.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "In Istria each house also has a good genius, the Krsnik, who protects it from the Vukodlak and battles with him.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "The power of dealers in magic to transform themselves or their victims into various shapes is widely spread in Russia, and a person so changed is called oboroten.",
+      "cites": [
+        "ralston1872:p.403"
+      ]
+    },
+    {
+      "text": "A child born feet foremost or with teeth will become a Vlkodlak.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "A person may be turned into a Vlkodlak by magic power, most often bride and bridegroom on their way to church to be married.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    },
+    {
+      "text": "Great-Russian peasants say vovkulaki are sorcerers gifted with the power to turn into wolves or bears.",
+      "cites": [
+        "afanasyev1869:p.532"
+      ]
+    },
+    {
+      "text": "In the Ukraine and White Russia, people turned into beasts against their will by sorcerers and witches are called vovkulaki, because they are most often pictured as wolves.",
+      "cites": [
+        "afanasyev1869:p.549"
+      ]
+    },
+    {
+      "text": "In a Polish tradition a youth who scorned a witch's love was turned into a wolf as he swung his axe in the forest.",
+      "cites": [
+        "ralston1872:p.407"
+      ]
+    },
+    {
+      "text": "A White-Russian tradition tells that a hostile magician turned the bridegroom and the other men of a wedding party into wolves.",
+      "cites": [
+        "ralston1872:p.407"
+      ]
+    },
+    {
+      "text": "To transform a wedding party the hostile wizard is generally believed to girdle each member with a leather strap or piece of bast over which spells have been whispered.",
+      "cites": [
+        "ralston1872:p.408"
+      ]
+    },
+    {
+      "text": "In a Ruthenian story a witch hid her rolled-up girdle beneath the threshold of a wedding cottage, and everyone who stepped across it became a wolf.",
+      "cites": [
+        "ralston1872:p.408"
+      ]
+    },
+    {
+      "text": "Ralston prints a Russian spell to be spoken by a wizard who wishes to turn into a werewolf, calling on the moon to melt the bullet and blunt the knife so that none may seize the grey wolf.",
+      "cites": [
+        "ralston1872:p.406"
+      ]
+    },
+    {
+      "text": "The Kormchaya Kniga states that in these transformed beings the people used to see not mere mortals but 'chasers of the clouds'.",
+      "cites": [
+        "ralston1872:p.404",
+        "afanasyev1869:p.527"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "vampir",
+      "relation": "related"
+    },
+    {
+      "id": "kresnik",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Afanasyev records vovkulaki among Great-Russian peasants and, as involuntary werewolves, in the Ukraine and White Russia.",
+        "cites": [
+          "afanasyev1869:p.532",
+          "afanasyev1869:p.549"
+        ]
+      },
+      {
+        "text": "Afanasyev also records the belief among the Poles and the Serbs.",
+        "cites": [
+          "afanasyev1869:p.528"
+        ]
+      },
+      {
+        "text": "Ralston's account of involuntary werewolves, with the Polish, White-Russian and Ruthenian tales and the black-dog cure, cites Afanasyev, so it is counted with him, not as a second source.",
+        "cites": [
+          "ralston1872:p.408"
+        ]
+      },
+      {
+        "text": "Ralston's Ukrainian pitchfork tradition also cites Afanasyev.",
+        "cites": [
+          "ralston1872:p.432"
+        ]
+      },
+      {
+        "text": "Ralston independently gives oboroten as the name in Russia for a person changed by magic, records the Russian peasant belief in bristles under the werewolf's tongue, and prints a werewolf spell from Sakharov.",
+        "cites": [
+          "ralston1872:p.403",
+          "ralston1872:p.404",
+          "ralston1872:p.406"
+        ]
+      },
+      {
+        "text": "Machal, a third author, records the Vlkodlak among the Slavs generally, with South-Slav and Istrian traditions.",
+        "cites": [
+          "machal1918:p.229"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "variants: left empty. The sources do describe regional traditions (Istrian family Vukodlak, the South Slav eclipse Vukodlak, Serbian winter season, Polish twice-yearly turning), but each is a single detail and the region terms 'Slavs in Istria' and 'Jugo-Slavs' are not in sources/peoples.json, so they are kept as attributed top-level clauses instead."
+    },
+    {
+      "kind": "scope",
+      "text": "Budget stop. Pages not read that likely matter: afanasyev1869:pp.552-553 (Ralston cites pp.549-553 for the cures and the black-dog story; more cures likely), afanasyev1869:pp.485-487 (vovkulaki with witches, per hints), afanasyev1869:pp.299-302 (hint pages, oboroten on p.302), afanasyev1869:p.556-557 (vovkulak and vampire link), afanasyev1865:pp.736-737 (Kormchaya 'volkodlaki' passage cited by Afanasyev), karadzic1818 s.v. Вукодлак (Serbian dictionary entry), machal1918:p.232 ('oboroten (Russian)' in the vampire list), ralston1873:p.320 (werwolf names)."
+    },
+    {
+      "kind": "scope",
+      "text": "names.primary.native 'оборотень' is cited from afanasyev1869:p.529, where Afanasyev prints the nominative in his own Russian prose about a Carinthian tale; the page does not attach the word to a people. Russians is assigned because Ralston (ralston1872:p.403) gives oboroten as the name used in Russia. Afanasyev's other opened pages print only inflected forms (оборотнемъ, оборотняхъ, оборотни)."
+    },
+    {
+      "kind": "scope",
+      "text": "Native forms on afanasyev1869:p.527 are given with abbreviations: 'малор.' (вовкулакъ, вовкунъ) and 'бѣлор.' (вавкалакъ). The vovkulak row's people Ukrainians rests on Ralston's 'Little-Russian vovkulak' (ralston1872:p.404); вовкунъ is mapped by reading 'малор.' as Little-Russian. The Belarusian form вавкалакъ is left out because 'бѣлор.' is not a table term; propose 'бѣлор.' -> Belarusians and 'малор.' -> Ukrainians."
+    },
+    {
+      "kind": "other",
+      "text": "People terms met that sources/peoples.json does not cover, left unmapped: 'Great-Russian' (ralston1872:p.404; великорусскіе afanasyev1869:p.532; propose Russians); 'Dalmatian' vakudluk (ralston1872:p.404; propose Croatians); 'Lett' wilkats (ralston1872:p.404; non-Slavic, propose no row); 'Jugo-Slavs (Southern Slavs)' (machal1918:p.229; no single people); 'Slavs in Istria' (machal1918:p.229; propose Croatians or Slovenes, contested); 'Сербы' (afanasyev1869:p.528; propose Serbs); 'У поляковъ' (afanasyev1869:p.528; propose Poles); 'На Руси' (afanasyev1869:p.549; propose Russians); 'Украйна' and 'Бѣлоруссія' (afanasyev1869:p.549; propose Ukrainians and Belarusians). Clauses keep the source words; no people rows were written for these."
+    },
+    {
+      "kind": "other",
+      "text": "Machal's own names Vlkodlak, Vrkolak and Volkun (machal1918:p.229) carry no people on the page (only 'Among the Slavs'), so they are not entered as variants. The family 'monster' rests on machal1918:p.229 (attacks cattle, strangles horses and people; called a demon); Ralston and Afanasyev frame the being as a transformed sorcerer or victim, which a reader may prefer to file as 'other'."
+    },
+    {
+      "kind": "other",
+      "text": "related: vampir from machal1918:p.229 (frequently identified with the Vampire) and ralston1872:p.406 (buried werewolf or vampire pierced with aspen); kresnik from machal1918:p.229 (the Krsnik protects the house from the Vukodlak and battles him)."
+    },
+    {
+      "kind": "accretion",
+      "text": "Editorial: modern film and game werewolf traits (transformation at the full moon, silver bullets, the curse passed on by a bite) are excluded; this entry records only the cited folk sources."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: the White-Russian form вавкалакъ, labelled 'бѣлор.' (a table term for Belarusians), at afanasyev1869:p.527."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: the Dalmatian form vakudluk, labelled 'Dalmatian' (table term for Croatians, region Dalmatia), at ralston1872:p.404 (also 'далм.' at afanasyev1869:p.527)."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: peoples rows the table now settles: 'Сербы' (Serbs) at afanasyev1869:p.528; 'Slavs in Istria' (Croatians, region Istria) at machal1918:p.229."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: a person girdled into a vovkulak regains human shape only when the magic girdle wears through and bursts, and after release stays wild and gloomy and slow to recover human speech, at afanasyev1869:p.553."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: afanasyev1869:p.552 prints the black-dog bath story that ralston1872:p.408 retells; Ralston's footnote cites Afanasyev pp.549-553 for that whole passage, so p.552 could be added as the original cite."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "entry_id": "polevik",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [
+    {
+      "field": "/behavior_habitat/5",
+      "text": "It takes the shape of a crow and perches on the last standing sheaf to watch the reapers.",
+      "cites": [
+        "machal1918:p.269"
+      ],
+      "reason": "machal1918:p.269 (and p.268) say nothing about a crow or about the polevik perching on the last sheaf; a find for 'crow' in machal1918 and for 'last sheaf' across the corpus turned up no page that does."
+    }
+  ],
+  "downgraded": [],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal records the polevik for the Russians.",
+      "cites": [
+        "machal1918:p.268"
+      ]
+    },
+    {
+      "text": "Afanasyev records poleviki, as tall as the growing grain and shrinking to stubble after harvest, in the Kiev and Chernigov Governments, which the people table maps to Ukrainians.",
+      "cites": [
+        "afanasyev1868:p.330"
+      ]
+    },
+    {
+      "text": "Machal's polevik passage cites no source on the page, so Machal and Afanasyev are counted as two independent authors; Afanasyev's two volumes count as one source.",
+      "cites": [
+        "machal1918:p.268",
+        "machal1918:p.269",
+        "afanasyev1869:pp.771-772"
+      ]
+    }
+  ]
+}

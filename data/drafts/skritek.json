@@ -1,0 +1,442 @@
+{
+  "id": "skritek",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "skřítek",
+      "native": [
+        {
+          "script": "Latn",
+          "text": "Skřítek",
+          "people": "Czechs",
+          "cites": [
+            "machal1918:pp.244-245"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Skrata",
+        "peoples": [
+          "Slovaks"
+        ],
+        "cites": [
+          "machal1918:p.245"
+        ]
+      },
+      {
+        "romanized": "Skriatek",
+        "peoples": [
+          "Slovaks"
+        ],
+        "cites": [
+          "machal1918:p.245"
+        ]
+      },
+      {
+        "romanized": "Skrzatek",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.245"
+        ]
+      },
+      {
+        "romanized": "Skrzat",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.245"
+        ]
+      },
+      {
+        "romanized": "Skrzot",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.245"
+        ]
+      },
+      {
+        "romanized": "Skrat",
+        "peoples": [
+          "Slovenes"
+        ],
+        "cites": [
+          "machal1918:p.245"
+        ]
+      },
+      {
+        "romanized": "Skratec",
+        "peoples": [
+          "Slovenes"
+        ],
+        "cites": [
+          "machal1918:p.245"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "The name is glossed as \"Hobgoblin\".",
+        "cites": [
+          "machal1918:p.244"
+        ]
+      },
+      {
+        "text": "The term is said to be derived from the German Schrat or Schratt.",
+        "cites": [
+          "machal1918:pp.244-245"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Czechs",
+      "cites": [
+        "machal1918:p.244"
+      ]
+    },
+    {
+      "people": "Slovaks",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "people": "Poles",
+      "region": "Poland",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "people": "Slovenes",
+      "region": "Styria (\"The Slovenians in Styria\")",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    }
+  ],
+  "family": {
+    "value": "household",
+    "cites": [
+      "machal1918:pp.244-245"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "The goblin appeared in the shape of a small boy.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "It usually lived behind the oven.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "It usually lived in the stable.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "slovak",
+      "label": "Slovak skrata or skriatek",
+      "peoples": [
+        "Slovaks"
+      ],
+      "appearance": [
+        {
+          "text": "The Slovaks conceive the spirit as a drenched chicken.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        }
+      ],
+      "behavior_habitat": []
+    },
+    {
+      "id": "polish",
+      "label": "Polish skrzatek, skrzat or skrzot",
+      "peoples": [
+        "Poles"
+      ],
+      "appearance": [
+        {
+          "text": "In Poland it is represented as a bird, most frequently a drenched chicken.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "The bird drags its wings and tail behind it.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "It often transforms itself into a small bird that emits sparks from its body.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "It haunts the corn-loft.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "It steals corn.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "In bad weather it also visits human dwellings.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "It brings grain to the householder who shelters it and will make him rich.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "styrian-slovene",
+      "label": "Styrian Slovene skrat or skratec",
+      "peoples": [
+        "Slovenes"
+      ],
+      "appearance": [
+        {
+          "text": "It assumes different shapes.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "It may look like a young lad.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "It may look like an old man or an old woman.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "It can transform itself into a cat, a dog, a goose and so on.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "Its body is covered with hair, which it takes great pains to hide.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "When it carries money it comes in the shape of a fiery broom flying down the chimney.",
+          "cites": [
+            "machal1918:p.246"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "It brings money and corn.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "It likes to dwell in mountains and dense forests.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "It does not allow people to shout in the mountains and forests where it dwells.",
+          "cites": [
+            "machal1918:p.245"
+          ]
+        },
+        {
+          "text": "By day it perches on a beech-tree or rests in dark caves.",
+          "cites": [
+            "machal1918:pp.245-246"
+          ]
+        },
+        {
+          "text": "At night it haunts villages and smithies, where it forges and hammers until dawn.",
+          "cites": [
+            "machal1918:p.246"
+          ]
+        },
+        {
+          "text": "It will bring whatever a man wishes, placing the things on the window-sill.",
+          "cites": [
+            "machal1918:p.246"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "It favoured the household.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "It shared the joys and sorrows of the family.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "It liked to do some work in the home, such as weaving on the loom, sweeping the floor or tending the flocks.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "If the household failed to set food aside for it, it was angry and stormed about, worrying people, damaging the flocks and doing all sorts of harm to the master of the house.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "To court its favour the household set aside a portion of their meals for it.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "The portion was given especially on Thursdays and at Christmas dinner, when three bits from every dish were assigned to it.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "It was represented by a wooden statue with arms crossed on its breast and a crown upon its head, which as a rule stood on a chiffonier in a corner behind the table.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "Whenever the family was away, the figure was placed on a chiffonier or on a table to guard the house.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "In Poland, those who give it shelter under their roofs will profit by its presence.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "Among the Slovenians in Styria it may be hired for one's service.",
+      "cites": [
+        "machal1918:p.246"
+      ]
+    },
+    {
+      "text": "Among the Slovenians in Styria, to gain its help one must promise it oneself, one's wife and children, in an agreement signed in one's own blood.",
+      "cites": [
+        "machal1918:p.246"
+      ]
+    },
+    {
+      "text": "Among the Slovenians in Styria, millet gruel is its favourite dish and must be placed on the window-sill whenever it brings anything.",
+      "cites": [
+        "machal1918:p.246"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "In the passage on the Polish skrzat, it may be bred from an egg of a peculiar shape carried for a certain length of time beneath one's arm-pit.",
+      "cites": [
+        "machal1918:p.245"
+      ]
+    },
+    {
+      "text": "Among the Slovenians in Styria, it may be bred from the egg of a black hen.",
+      "cites": [
+        "machal1918:p.246"
+      ]
+    }
+  ],
+  "related": [],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "other",
+      "text": "names.primary.native: the OCR text prints the name as \"Skiitek\" (machal1918:p.244) and \"Skfitek\" (machal1918:p.245); \"Skřítek\" is the OCR reading restored to the romanised form in the hints file, not a spelling the OCR text shows. The bibliography (machal1918:p.397) prints \"Skritek\". Verify should check the page image."
+    },
+    {
+      "kind": "scope",
+      "text": "Czechs: machal1918:pp.244-245 does not name a people in the Skřítek paragraph itself. It follows the paragraphs on the ancient Czechs' Dédeks and the old Bohemian word Setek (p.244) and is set against \"The Slovaks call this spirit\" and \"in Poland\" (p.245); the Czechs row, the native row and the top-level clauses rest on that context reading. The small-boy form, the oven and stable, the work, the meal offerings and the crowned wooden statue are therefore kept top-level, not in a Czech variant."
+    },
+    {
+      "kind": "scope",
+      "text": "Polish variant: on machal1918:p.245 the sentences \"He often transforms himself into a small bird emitting sparks\", the arm-pit egg, the corn-loft, corn-stealing and the shelter in bad weather follow directly after the Polish skrzat sentence; they are filed under Poles on that reading, though the page does not repeat the people in each sentence."
+    },
+    {
+      "kind": "scope",
+      "text": "Slovene variant: machal1918:p.245 introduces the Styrian Slovenian Skrat (Skratec) with \"likewise\" inside the Skřítek passage, so it is kept in this entry as a variant. The Setek (p.244), including the Styrian Slovenian Setek, and the Bohemian Hospodaritek (p.246) are separate beings on those pages and are left out."
+    },
+    {
+      "kind": "empty-field",
+      "text": "related: no opened page links the skřítek to another pilot creature id. Searched skritek, skfitek, skriatek, skrata, skrzat, skrzatek, skrzot, skrat, skrit, škrit, скрат, skřet, hausgeist, kobold, drenched chicken, wet chicken, rarášek, rarasek, hospodarik, hospodaricek across all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: the Slovak variant has no behavior_habitat; machal1918:p.245 gives only the name and the drenched-chicken conception for the Slovaks."
+    },
+    {
+      "kind": "scope",
+      "text": "Only machal1918:pp.244-246 describe this creature. Ralston, Afanasyev, Karadžić, Frombald, Calmet and Erben gave no hits for any spelling (the скрат hits in karadzic1852 are unrelated headwords such as скратити; the kobold hit at ralston1872:p.122 is not about this creature and was not opened)."
+    }
+  ]
+}

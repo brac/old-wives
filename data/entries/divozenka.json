@@ -1,0 +1,868 @@
+{
+  "id": "divozenka",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "divoženka",
+      "native": [
+        {
+          "script": "Latn",
+          "text": "Divozenky",
+          "people": "Czechs",
+          "cites": [
+            "machal1918:p.263"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "divá žena",
+        "peoples": [
+          "Czechs"
+        ],
+        "native": [
+          {
+            "script": "Latn",
+            "text": "divá žena",
+            "people": "Czechs",
+            "cites": [
+              "erben1893:p.183"
+            ]
+          }
+        ],
+        "cites": [
+          "erben1893:p.183"
+        ]
+      },
+      {
+        "romanized": "Dziwje Zony",
+        "peoples": [
+          "Sorbs"
+        ],
+        "native": [
+          {
+            "script": "Latn",
+            "text": "Dziwje Zony",
+            "people": "Sorbs",
+            "cites": [
+              "machal1918:p.264"
+            ]
+          }
+        ],
+        "cites": [
+          "machal1918:p.264"
+        ]
+      },
+      {
+        "romanized": "Dziwozony",
+        "peoples": [
+          "Poles"
+        ],
+        "native": [
+          {
+            "script": "Latn",
+            "text": "Dziwozony",
+            "people": "Poles",
+            "cites": [
+              "machal1918:p.264"
+            ]
+          }
+        ],
+        "cites": [
+          "machal1918:p.264"
+        ]
+      },
+      {
+        "romanized": "Divje Devojke",
+        "peoples": [
+          "Slovenes"
+        ],
+        "native": [
+          {
+            "script": "Latn",
+            "text": "Divje Devojke",
+            "people": "Slovenes",
+            "cites": [
+              "machal1918:p.264"
+            ]
+          }
+        ],
+        "cites": [
+          "machal1918:p.264"
+        ]
+      },
+      {
+        "romanized": "Dekle",
+        "peoples": [
+          "Slovenes"
+        ],
+        "native": [
+          {
+            "script": "Latn",
+            "text": "Dekle",
+            "people": "Slovenes",
+            "cites": [
+              "machal1918:p.264"
+            ]
+          }
+        ],
+        "cites": [
+          "machal1918:p.264"
+        ]
+      },
+      {
+        "romanized": "Divja Zena",
+        "peoples": [
+          "Slovenes"
+        ],
+        "native": [
+          {
+            "script": "Latn",
+            "text": "Divja Zena",
+            "people": "Slovenes",
+            "cites": [
+              "machal1918:p.265"
+            ]
+          }
+        ],
+        "cites": [
+          "machal1918:p.265"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Machal gives \"Wild Women\" as the English name for the Bohemian Divozenky, Lusatian Dziwje Zony, Polish Dziwozony, Slovenian Divje Devojke and Bulgarian Divi-te Zeni.",
+        "cites": [
+          "machal1918:p.263"
+        ]
+      },
+      {
+        "text": "Machal glosses the Lusatian Dziwje Zony as \"Wild Women\".",
+        "cites": [
+          "machal1918:p.264"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Czechs",
+      "region": "Bohemian",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "people": "Sorbs",
+      "region": "Lusatian",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "people": "Poles",
+      "region": "Polish",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "people": "Slovenes",
+      "region": "Slovenian",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "people": "Poles",
+      "region": "Poland (Польша)",
+      "cites": [
+        "afanasyev1868:p.343"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "Bohemia (Богемія)",
+      "cites": [
+        "afanasyev1868:p.343"
+      ]
+    },
+    {
+      "people": "Czechs",
+      "region": "dle podání lidu (\"according to folk tradition\")",
+      "cites": [
+        "erben1893:p.183"
+      ]
+    }
+  ],
+  "family": {
+    "value": "forest",
+    "cites": [
+      "machal1918:p.263"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "machal-wild-women",
+      "label": "Machal's Wild Women"
+    },
+    {
+      "id": "afanasyev-poland-bohemia",
+      "label": "Afanasyev's dziwozony of Poland and divé ženy of Bohemia"
+    },
+    {
+      "id": "afanasyev-hutsul",
+      "label": "Afanasyev's Hutsul wild women"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "They are good-looking beings.",
+      "cites": [
+        "machal1918:p.263"
+      ],
+      "form": "machal-wild-women"
+    },
+    {
+      "text": "They have large, square heads.",
+      "cites": [
+        "machal1918:p.263"
+      ],
+      "form": "machal-wild-women"
+    },
+    {
+      "text": "Their hair is long and thick, ruddy or black in colour.",
+      "cites": [
+        "machal1918:p.263"
+      ],
+      "form": "machal-wild-women"
+    },
+    {
+      "text": "Their bodies are hairy.",
+      "cites": [
+        "machal1918:p.263"
+      ],
+      "form": "machal-wild-women"
+    },
+    {
+      "text": "They have long fingers.",
+      "cites": [
+        "machal1918:p.263"
+      ],
+      "form": "machal-wild-women"
+    },
+    {
+      "text": "Their bodies are covered with hair.",
+      "cites": [
+        "afanasyev1868:p.343"
+      ],
+      "form": "afanasyev-poland-bohemia"
+    },
+    {
+      "text": "Their long loose braids stream through the air.",
+      "cites": [
+        "afanasyev1868:p.343"
+      ],
+      "form": "afanasyev-poland-bohemia"
+    },
+    {
+      "text": "Their breasts are so large that they use them in place of washing beetles when they wash linen.",
+      "cites": [
+        "afanasyev1868:p.343"
+      ],
+      "form": "afanasyev-poland-bohemia"
+    },
+    {
+      "text": "They wear red caps on their heads.",
+      "cites": [
+        "afanasyev1868:p.343"
+      ],
+      "form": "afanasyev-poland-bohemia"
+    },
+    {
+      "text": "The Hutsuls picture them as tall.",
+      "cites": [
+        "afanasyev1869:p.803"
+      ],
+      "form": "afanasyev-hutsul"
+    },
+    {
+      "text": "The Hutsuls picture them as lean.",
+      "cites": [
+        "afanasyev1869:p.803"
+      ],
+      "form": "afanasyev-hutsul"
+    },
+    {
+      "text": "The Hutsuls picture them with pale faces.",
+      "cites": [
+        "afanasyev1869:p.803"
+      ],
+      "form": "afanasyev-hutsul"
+    },
+    {
+      "text": "The Hutsuls picture them with long, dishevelled hair.",
+      "cites": [
+        "afanasyev1869:p.803"
+      ],
+      "form": "afanasyev-hutsul"
+    },
+    {
+      "text": "Among the Hutsuls, they tie grass round themselves in place of a belt.",
+      "cites": [
+        "afanasyev1869:p.803"
+      ],
+      "form": "afanasyev-hutsul"
+    }
+  ],
+  "scene": [
+    {
+      "text": "Woods and mountains are the home of the Wild Women.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "The smell of the bread they baked spread throughout the wood.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "Storms were believed to be caused by their wild frolicking.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "It was during Midsummer Night that they were most powerful.",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "text": "According to Czech folk tradition, the evil beings of true noon, called poludnice or generally divé ženy, work their harm chiefly between eleven and twelve o'clock.",
+      "cites": [
+        "erben1893:p.183"
+      ]
+    },
+    {
+      "text": "For this reason people do not like to walk in the forests at true noon.",
+      "cites": [
+        "erben1893:p.183"
+      ]
+    },
+    {
+      "text": "According to the Hutsuls, at night they gather in crowds and run over fields and woods, clapping their hands.",
+      "cites": [
+        "afanasyev1869:p.803"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "lusatian",
+      "label": "Lusatian Dziwje Zony",
+      "peoples": [
+        "Sorbs"
+      ],
+      "appearance": [
+        {
+          "text": "The Lusatian Serbs believe the Dziwje Zony are white beings.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "They reveal themselves at noon or at evening.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        },
+        {
+          "text": "They like to spin hemp.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        },
+        {
+          "text": "If a girl spins or combs hemp for them, they reward her with leaves that become gold.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polish",
+      "label": "Polish Dziwozony",
+      "peoples": [
+        "Poles"
+      ],
+      "appearance": [
+        {
+          "text": "They are tall in stature.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        },
+        {
+          "text": "Their faces are thin.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        },
+        {
+          "text": "Their hair is long and dishevelled.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        },
+        {
+          "text": "They fling their breasts over their shoulders, since otherwise they would be hindered in running.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        },
+        {
+          "text": "Their garments are always disarranged.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "In Polish superstition the Dziwozony are superhuman females with cold and callous hearts.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        },
+        {
+          "text": "In Polish superstition they are filled with passionate sensuality.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        },
+        {
+          "text": "Groups of them go about woods and fields.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        },
+        {
+          "text": "If they chance upon human beings, they tickle the adults to death.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        },
+        {
+          "text": "They take the young folk they meet with them to be their lovers and playmates.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slovenian",
+      "label": "Slovenian Divje Devojke and Divja Zena",
+      "peoples": [
+        "Slovenes"
+      ],
+      "appearance": [
+        {
+          "text": "The Divja Zena is a woman of tall figure.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        },
+        {
+          "text": "The Divja Zena has an enormously large head.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        },
+        {
+          "text": "The Divja Zena has long black hair.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        },
+        {
+          "text": "The Divja Zena has very short feet.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "In the belief of the Slovenians the Divje Devojke, or Dekle, dwell in the forests.",
+          "cites": [
+            "machal1918:p.264"
+          ]
+        },
+        {
+          "text": "At harvest-time they come down to the fields to reap the corn, and the \"Wild Men\" bind it into sheaves, the farmers' wives bringing them food in return.",
+          "cites": [
+            "machal1918:pp.264-265"
+          ]
+        },
+        {
+          "text": "Where the Divje Devojke came from no one can tell.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        },
+        {
+          "text": "The Divja Zena dwells in mountain caves.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        },
+        {
+          "text": "If a woman does not nurse her child properly, the \"Wild Woman\" comes and either substitutes a changeling for it or carries it away.",
+          "cites": [
+            "machal1918:p.265"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "They lived in underground burrows.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "They had households like mankind.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "They gathered ears in the fields or picked them from the sheaves, ground the grain on a stone and baked bread.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "Besides bread they ate liquorice root and caught game and fish.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "They were fond of combing hemp, which they wove into frocks and shirts.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "They knew the secret forces of nature.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "From plants and roots they prepared unguents with which they anointed themselves, becoming light and invisible.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "They were fond of music and singing.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "Lads and lasses were invited to dance with them and afterward reaped rich rewards.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "They maintained a friendly intercourse with human beings, frequently entering their villages and borrowing kneading-troughs and other necessaries.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "For those who reserved a dish for them, they kept houses in order, swept rooms and courtyards, cleared firesides of ashes and took care of the children.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "In the fields they reaped the corn for such people and tied the grain into sheaves.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "For the women they spun hemp and gave them crops that never diminished.",
+      "cites": [
+        "machal1918:pp.263-264"
+      ]
+    },
+    {
+      "text": "Many stories are told about their marriages with country lads, in which they were model wives and housekeepers.",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "text": "They were dangerous to any person they met alone in the forest, turning him round and round until he lost his way.",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "text": "They lay in wait especially for women who had just become mothers and substituted their own offspring for the human children.",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "text": "These changelings, called Divous (\"Wild Brats\") or Premien (\"Changelings\"), are ugly, squalling and unshapely.",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "text": "They did much harm to avaricious and greedy persons, dragging their corn along the fields, bewitching their cows, and afflicting their children with whooping-cough or even killing them.",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "text": "Afanasyev says the dziwozony of Poland and Galicia and the divé ženy of Bohemia are marked by a wild and malicious temper.",
+      "cites": [
+        "afanasyev1868:p.343"
+      ]
+    },
+    {
+      "text": "Afanasyev says the wild women are also accused of substituting newborn infants.",
+      "cites": [
+        "afanasyev1869:p.310"
+      ]
+    },
+    {
+      "text": "Afanasyev says both the wild women and the rusalki are pictured as dwellers in the forests.",
+      "cites": [
+        "afanasyev1869:p.310"
+      ]
+    },
+    {
+      "text": "In Czech belief, divé ženy (with the věštice) substitute unbaptised infants and harm women in childbed.",
+      "cites": [
+        "afanasyev1869:p.311"
+      ]
+    },
+    {
+      "text": "If a child is born dead, the wild women are held to blame.",
+      "cites": [
+        "afanasyev1869:p.311"
+      ]
+    },
+    {
+      "text": "In Czech folk tradition a divá žena may send bewilderment (blud) on a person in the forest at true noon.",
+      "cites": [
+        "erben1893:p.183"
+      ]
+    },
+    {
+      "text": "The Hutsuls say they live in caves, in inaccessible places.",
+      "cites": [
+        "afanasyev1869:p.803"
+      ]
+    },
+    {
+      "text": "The Hutsuls say that on seeing a traveller they rush at him and begin to tickle him.",
+      "cites": [
+        "afanasyev1869:p.803"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "Those who did not forget to reserve some dish for them were well repaid.",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "A Wild Woman married to a country lad vanished if anyone called her a \"Wild Woman\".",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "text": "Uncleared firesides or unscrubbed kneading-troughs were also apt to drive such wives away.",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "text": "Because of the Polish Dziwozony, young people never go to the woods alone, but only in groups.",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "text": "Among the Slovenians, the cracking of whips has at last driven the Divje Devojke away.",
+      "cites": [
+        "machal1918:p.265"
+      ]
+    },
+    {
+      "text": "Afanasyev says the dziwozony fear the flowers called bellflowers (колокольчики).",
+      "cites": [
+        "afanasyev1869:p.311"
+      ]
+    },
+    {
+      "text": "In Czech belief, a knife is laid under the pillow of a woman in childbed to counter the designs of the divé ženy and věštice.",
+      "cites": [
+        "afanasyev1869:p.311"
+      ]
+    },
+    {
+      "text": "When a child is born dead, an old custom requires the father to cut off its head and throw it into water.",
+      "cites": [
+        "afanasyev1869:p.311"
+      ]
+    }
+  ],
+  "origin": [],
+  "related": [
+    {
+      "id": "poludnitsa",
+      "relation": "related"
+    },
+    {
+      "id": "leshy",
+      "relation": "related"
+    },
+    {
+      "id": "rusalka",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Machal records the Wild Women for Czechs (Bohemian Divozenky) and Poles (Polish Dziwozony).",
+        "cites": [
+          "machal1918:p.263"
+        ]
+      },
+      {
+        "text": "Machal records the Dziwje Zony for the Lusatian Serbs and the Divje Devojke for the Slovenians.",
+        "cites": [
+          "machal1918:p.264"
+        ]
+      },
+      {
+        "text": "Afanasyev records the dziwozony of Poland and the divé ženy of Bohemia.",
+        "cites": [
+          "afanasyev1868:p.343"
+        ]
+      },
+      {
+        "text": "Afanasyev records Czech belief that the divé ženy substitute unbaptised infants and harm women in childbed.",
+        "cites": [
+          "afanasyev1869:p.311"
+        ]
+      },
+      {
+        "text": "Afanasyev's two volumes count as one source; on these pages he draws on Siemieński and Wagilewicz, not on Machal, and Machal's Wild Women passage cites no source, so Machal and Afanasyev are counted as two independent sources for Czechs and Poles.",
+        "cites": [
+          "afanasyev1869:p.310",
+          "machal1918:p.263"
+        ]
+      },
+      {
+        "text": "Erben is marked literary in the manifest; his note on the noon divé ženy is kept but not counted toward independence.",
+        "cites": [
+          "erben1893:p.183"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "erben1893",
+      "author": "Karel Jaromír Erben",
+      "title": "Kytice z pověstí národních",
+      "year": 1893,
+      "url": "https://archive.org/details/kyticezbsnka00erbeuoft",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "origin: no opened page says where the wild women come from or who becomes one; Machal p.265 says only that no one can tell where the Slovenian Divje Devojke came from (kept in the Slovenian variant). Searched divozenky, divozen, divoz, divozenka, dziwozona, dziwozon, dziwje, divje, divja, divji, diva-ta, divi-te, wild women, wild woman, changeling, divous, premien, dive zen, дивожон, дикия жены, дикихъ женъ, дивьи, дивьи жены across all sources."
+    },
+    {
+      "kind": "scope",
+      "text": "Machal pp.263-265 treats Bohemian Divozenky, Lusatian Dziwje Zony, Polish Dziwozony, Slovenian Divje Devojke and Bulgarian Divi-te Zeni as one class of \"Wild Women\"; the general description on pp.263-264 is not restricted to one people and is kept top-level, while the people-specific passages are variants. The Slovenian and Bulgarian material is included because Machal names those forms in the same list; Ben may prefer to narrow the entry to Czechs, Poles and Sorbs."
+    },
+    {
+      "kind": "scope",
+      "text": "Afanasyev afanasyev1868:p.343 equates the Polish dziwozony and Bohemian divé ženy with the lisunki, the female leshies; his reading of them as cloud nymphs, and the bellflower as Perun's flower (afanasyev1869:p.311), is interpretation and was left out. afanasyev1868:p.344 describes German forest women (glossed дивожены) and was not used for this entry."
+    },
+    {
+      "kind": "other",
+      "text": "People terms not in sources/peoples.json, left unmapped: \"Галиція\" (Galicia), afanasyev1868:p.343, proposed Poles or Ukrainians (contested); \"гуцулы\" (Hutsuls), afanasyev1869:p.803, proposed Ukrainians; \"по чешскому повѣрью\" / \"у чеховъ\" (Russian for Czech, Czechs), afanasyev1869:p.311, proposed Czechs. No people row was written from these cites."
+    },
+    {
+      "kind": "other",
+      "text": "OCR: Afanasyev prints the Latin-script names dziwozony and divé ženy, but the OCR text renders them as Cyrillic garble (йгіѵѵогопу, йіѵе хепу at afanasyev1868:p.343; сІгіхѵоЕопу, гііѵё гену at afanasyev1869:p.310); they are not recorded as native forms. The quoted Polish passage from Siemieński on afanasyev1869:pp.310-311 is unreadable OCR and was not used beyond Afanasyev's own Russian sentences. Machal p.263 prints \"DZiwje Zony\"; the native form is taken from p.264. Erben p.183 prints the plural as \"divé žen v.\" (OCR); only the singular \"divá žena\" is recorded."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: sources/peoples.json now lists \"Galicia, Галиція, Галиціи\" (afanasyev1868:p.343) and \"Hutsuls, гуцулы, гуцуловъ\" (afanasyev1869:p.803), both -> Ukrainians (contested rows), and \"чешскому\" (afanasyev1869:p.311) -> Czechs. The draft note above that calls these terms unmapped predates the table rows; a re-run could add a Ukrainians peoples_regions row from the Hutsul passage."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: Machal names a Bulgarian form of the Wild Women (Divi-te Zeni, machal1918:p.263; Diva-ta Zena, machal1918:p.265, living in the woods, hairy, strong and savage), but prints only the adjective \"Bulgarian\", which sources/peoples.json does not list. The Bulgarian people row, both Bulgarian name rows and the Bulgarian variant were removed at verify; adding \"Bulgarian\" to the Bulgarians row would let a re-run restore them. \"Lusatian\" and \"Slovenian\" on p.263 are likewise unlisted; those rows were re-cited to p.264, which prints \"Lusatian Serbs\" and \"Slovenians\"."
+    }
+  ]
+}

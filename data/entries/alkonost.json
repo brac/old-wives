@@ -1,0 +1,181 @@
+{
+  "id": "alkonost",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "alkonost",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Алконостъ",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1869:p.221"
+          ]
+        }
+      ]
+    },
+    "variants": [],
+    "meaning": []
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "\"our old symbolism\" (нашей старинной символикѣ); sculptures of the Dmitrievsky Cathedral at Vladimir on the Klyazma",
+      "cites": [
+        "afanasyev1869:p.221"
+      ]
+    }
+  ],
+  "family": {
+    "value": "other",
+    "cites": [
+      "afanasyev1869:p.221"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "Alkonost is a bird: Afanasyev names it, together with Sirin, among the paradise birds (райскія птицы).",
+      "cites": [
+        "afanasyev1869:p.221"
+      ]
+    }
+  ],
+  "scene": [],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "In what Afanasyev calls \"our old symbolism\" (нашей старинной символикѣ) the paradise birds Alkonost and Sirin often signify the righteous.",
+      "cites": [
+        "afanasyev1869:p.221"
+      ]
+    },
+    {
+      "text": "According to Count Uvarov, both birds, Alkonost and Sirin, are found in this meaning on the sculptures of the Dmitrievsky Cathedral at Vladimir on the Klyazma.",
+      "cites": [
+        "afanasyev1869:p.221"
+      ]
+    },
+    {
+      "text": "Popular woodcut prints (lubok pictures) made the common people acquainted with the paradise birds Alkonost and Sirin.",
+      "cites": [
+        "afanasyev1868:p.135"
+      ]
+    }
+  ],
+  "dealing_with_it": [],
+  "origin": [],
+  "related": [
+    {
+      "id": "sirin",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "literary",
+    "rationale": [
+      {
+        "text": "Every surviving clause comes from Afanasyev, whose volumes 2 and 3 count as one source: the paradise-bird symbolism and the cathedral sculptures at afanasyev1869:p.221, the lubok prints in footnote 2 of afanasyev1868:p.135.",
+        "cites": [
+          "afanasyev1869:p.221",
+          "afanasyev1868:p.135"
+        ]
+      },
+      {
+        "text": "The cathedral sculptures are reported by Afanasyev from Count Uvarov (\"по словамъ гр. Уварова\"), not from a separate source in the corpus, so they add no independent author.",
+        "cites": [
+          "afanasyev1869:p.221"
+        ]
+      },
+      {
+        "text": "Afanasyev's evidence is learned symbolism, church sculpture and printed lubok pictures, not a belief or tale collected from the people.",
+        "cites": [
+          "afanasyev1869:p.221",
+          "afanasyev1868:p.135"
+        ]
+      },
+      {
+        "text": "Only one people, Russians, rests on Afanasyev's first-person \"our\" (нашей, наше), mapped by the contested peoples-table row.",
+        "cites": [
+          "afanasyev1869:p.221",
+          "afanasyev1868:p.135"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "The corpus says very little about Alkonost. Only two pages mention it: afanasyev1869:p.221 (main text, one sentence pairing it with Sirin as paradise birds signifying the righteous) and afanasyev1868:p.135, where the mention is in footnote 2, a discursive note, not a reference line, saying lubok prints made the common people acquainted with the paradise birds Alkonost and Sirin. The verify agent should decide whether that footnote may be cited as lore. The index page afanasyev1869:p.817 lists 'Алконостъ а 135' and gives nothing further."
+    },
+    {
+      "kind": "scope",
+      "text": "The main text of afanasyev1868:p.135 says the paradise birds Gomayun and Phoenix fly to the Makarian island near paradise, where there is no winter. That passage names only Gomayun and Phoenix, so it is not attributed to Alkonost here."
+    },
+    {
+      "kind": "other",
+      "text": "People term: Afanasyev's first-person 'our' (нашей старинной символикѣ, afanasyev1869:p.221; наше простонародье, afanasyev1868:p.135). Russians is recorded on that reading.",
+      "cites": [
+        "afanasyev1869:p.221",
+        "afanasyev1868:p.135"
+      ]
+    },
+    {
+      "kind": "other",
+      "text": "family: the hint 'other' is kept. afanasyev1869:p.221 calls Alkonost a paradise bird with a symbolic meaning; it is not placed in a house, water, forest or field, nor described as undead, a disease or fate, or a monster."
+    },
+    {
+      "kind": "empty-field",
+      "text": "appearance: no source describes the bird's body, colour, head or size; the only physical statement is that it is a bird. Searched alkonost, alkonos, alconost, alkonóst, алконост, алконостом, алконос, 'райская птица', 'райскими птицами', 'райския птицы' across all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "names.variants and names.meaning: no source gives another name for Alkonost or explains the name (afanasyev1868:p.135 glosses Sirin as siren, not Alkonost). Same searches as above."
+    },
+    {
+      "kind": "empty-field",
+      "text": "scene: no source places Alkonost anywhere it is met; it is only depicted (lubok prints, cathedral sculptures), recorded in behavior_habitat. Same searches as above."
+    },
+    {
+      "kind": "empty-field",
+      "text": "dealing_with_it: no source gives wards, offerings, taboos or any dealing with Alkonost. Same searches as above."
+    },
+    {
+      "kind": "empty-field",
+      "text": "origin: no source says where Alkonost comes from. afanasyev1869:p.221 goes on to tales of dead souls turning into birds (chiefly doves and ravens), but does not tie that to Alkonost, so it is not used. Same searches as above."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: no source describes Alkonost differently by people or region. Same searches as above."
+    },
+    {
+      "kind": "accretion",
+      "text": "Editorial: depictions of Alkonost in modern painting, fantasy fiction and game lore are excluded; this entry records only what the cited 19th-century pages state, which is no physical description beyond its being a bird."
+    },
+    {
+      "kind": "other",
+      "text": "Verify: footnote 2 on afanasyev1868:p.135 is Afanasyev's own discursive prose (a statement, not a bare reference line), so it was accepted as a citation for the lubok clause."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "entry_id": "oboroten",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [],
+  "retagged": [
+    {
+      "field": "/names/primary/native/0",
+      "text": "оборотень (Russians)",
+      "from_cites": [
+        "afanasyev1869:p.529"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.529",
+        "ralston1872:p.403"
+      ],
+      "reason": "The form 'оборотень' is printed in the nominative on afanasyev1869:p.529, but there in a Carinthian (хорутанскимъ) tale, and the page ties the word to no people. ralston1872:p.403 gives oboroten as the name for a person so changed 'in Russia', which the Russian row of sources/peoples.json fixes as Russians by context. Kept p.529 for the printed form and added p.403 for the people."
+    },
+    {
+      "field": "/names/variants/0/native/0",
+      "text": "Волкодлакъ (Russians)",
+      "from_cites": [
+        "afanasyev1869:p.527"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.527",
+        "ralston1872:p.404"
+      ],
+      "reason": "afanasyev1869:p.527 prints 'Волкодлакъ' as the head form of a list whose other forms carry language labels (малор., бѣлор., пол.), but prints no people term for the head form itself. ralston1872:p.404 renders the same list 'The Great-Russian volkodlak becomes, says Afanasief, in Little-Russian vovkulak...', and 'Great-Russian' is a table term for Russians. Kept p.527 for the printed form and added p.404 for the people."
+    },
+    {
+      "field": "/peoples_regions/1",
+      "text": "Russians",
+      "from_cites": [
+        "afanasyev1869:p.530"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.532"
+      ],
+      "reason": "afanasyev1869:p.530 says 'По русскимъ повѣрьямъ' (by Russian beliefs); 'русскимъ' is not a term in sources/peoples.json. afanasyev1869:p.532 prints 'О вовкулакахъ великорусскіе поселяне ... разсказываютъ', and 'великорусскіе' is a table term for Russians."
+    }
+  ],
+  "reformed": [],
+  "flagged": [],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Afanasyev records vovkulaki among Great-Russian peasants and, as involuntary werewolves, in the Ukraine and White Russia.",
+      "cites": [
+        "afanasyev1869:p.532",
+        "afanasyev1869:p.549"
+      ]
+    },
+    {
+      "text": "Afanasyev also records the belief among the Poles and the Serbs.",
+      "cites": [
+        "afanasyev1869:p.528"
+      ]
+    },
+    {
+      "text": "Ralston's account of involuntary werewolves, with the Polish, White-Russian and Ruthenian tales and the black-dog cure, cites Afanasyev, so it is counted with him, not as a second source.",
+      "cites": [
+        "ralston1872:p.408"
+      ]
+    },
+    {
+      "text": "Ralston's Ukrainian pitchfork tradition also cites Afanasyev.",
+      "cites": [
+        "ralston1872:p.432"
+      ]
+    },
+    {
+      "text": "Ralston independently gives oboroten as the name in Russia for a person changed by magic, records the Russian peasant belief in bristles under the werewolf's tongue, and prints a werewolf spell from Sakharov.",
+      "cites": [
+        "ralston1872:p.403",
+        "ralston1872:p.404",
+        "ralston1872:p.406"
+      ]
+    },
+    {
+      "text": "Machal, a third author, records the Vlkodlak among the Slavs generally, with South-Slav and Istrian traditions.",
+      "cites": [
+        "machal1918:p.229"
+      ]
+    }
+  ]
+}

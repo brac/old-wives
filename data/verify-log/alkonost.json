@@ -1,0 +1,66 @@
+{
+  "entry_id": "alkonost",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [],
+  "downgraded": [
+    {
+      "field": "/behavior_habitat/0",
+      "text": "In the old (Russian) symbolism the paradise birds Alkonost and Sirin often signify the righteous.",
+      "to_text": "In what Afanasyev calls \"our old symbolism\" (нашей старинной символикѣ) the paradise birds Alkonost and Sirin often signify the righteous.",
+      "from_cites": [
+        "afanasyev1869:p.221"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.221"
+      ],
+      "reason": "The page says \"нашей старинной символикѣ\" (our old symbolism); the inserted \"(Russian)\" is an interpretation not printed on the page. The people mapping belongs in peoples_regions (where the table settles it), not in the clause text, so the clause keeps the page's own wording."
+    },
+    {
+      "field": "/notes/2",
+      "text": "People term not in sources/peoples.json: Afanasyev's first-person 'our' (нашей старинной символикѣ, afanasyev1869:p.221; наше простонародье, afanasyev1868:p.135). Proposed people: Russians, by the same reasoning as the table's 'у насъ' row (Afanasyev writes as a Russian for Russian readers). The schema requires a people on the native row and at least one peoples_regions row, so Russians is recorded on that reading; the table should gain a row for 'our / наш' or the rows should be removed.",
+      "to_text": "People term: Afanasyev's first-person 'our' (нашей старинной символикѣ, afanasyev1869:p.221; наше простонародье, afanasyev1868:p.135). Russians is recorded on that reading.",
+      "from_cites": [
+        "afanasyev1869:p.221",
+        "afanasyev1868:p.135"
+      ],
+      "to_cites": [
+        "afanasyev1869:p.221",
+        "afanasyev1868:p.135"
+      ],
+      "reason": "Both quoted phrases are printed on the cited pages. Cut the request that the table gain a row: sources/peoples.json now has the row 'нашей, наше (\"our\")' mapping to Russians, so that part is stale and is not something the pages say."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [],
+  "grade": "literary",
+  "grade_rationale": [
+    {
+      "text": "Every surviving clause comes from Afanasyev, whose volumes 2 and 3 count as one source: the paradise-bird symbolism and the cathedral sculptures at afanasyev1869:p.221, the lubok prints in footnote 2 of afanasyev1868:p.135.",
+      "cites": [
+        "afanasyev1869:p.221",
+        "afanasyev1868:p.135"
+      ]
+    },
+    {
+      "text": "The cathedral sculptures are reported by Afanasyev from Count Uvarov (\"по словамъ гр. Уварова\"), not from a separate source in the corpus, so they add no independent author.",
+      "cites": [
+        "afanasyev1869:p.221"
+      ]
+    },
+    {
+      "text": "Afanasyev's evidence is learned symbolism, church sculpture and printed lubok pictures, not a belief or tale collected from the people.",
+      "cites": [
+        "afanasyev1869:p.221",
+        "afanasyev1868:p.135"
+      ]
+    },
+    {
+      "text": "Only one people, Russians, rests on Afanasyev's first-person \"our\" (нашей, наше), mapped by the contested peoples-table row.",
+      "cites": [
+        "afanasyev1869:p.221",
+        "afanasyev1868:p.135"
+      ]
+    }
+  ]
+}

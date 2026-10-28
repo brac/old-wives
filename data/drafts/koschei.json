@@ -1,0 +1,269 @@
+{
+  "id": "koschei",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "Koschei",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "Кощей",
+          "people": "Russians",
+          "cites": ["afanasyev1868:p.594"]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Koshchei the Immortal",
+        "peoples": ["Russians"],
+        "cites": ["ralston1872:p.164"]
+      },
+      {
+        "romanized": "Koshchei the Deathless",
+        "peoples": ["Russians"],
+        "cites": ["ralston1873:p.84"]
+      },
+      {
+        "romanized": "Koshchei bezsmertny",
+        "peoples": ["Russians"],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "Кощея безсмертнаго",
+            "people": "Russians",
+            "cites": ["afanasyev1868:p.594"]
+          }
+        ],
+        "cites": ["afanasyev1868:p.594"]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "His name is said to be derived from kost', a bone, whence comes a verb meaning to ossify or grow hard as bone or stone, a figurative expression for 'to freeze'.",
+        "cites": ["ralston1872:p.164"]
+      },
+      {
+        "text": "Some mythologists derive the name from kost', a bone, either because he is bony of limb or because he produces an effect akin to freezing or petrifaction.",
+        "cites": ["ralston1873:p.84"]
+      },
+      {
+        "text": "He is called 'Immortal' or 'The Deathless' because of his superiority to the ordinary laws of existence.",
+        "cites": ["ralston1873:p.84"]
+      },
+      {
+        "text": "In Old Slavonic texts the word koshch' occurs only in the sense of dry, lean, thin of body, and is evidently closely related to the word kost', bone.",
+        "cites": ["afanasyev1868:p.594"]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "cites": ["afanasyev1868:p.594"]
+    },
+    {
+      "people": "Russians",
+      "cites": ["ralston1872:p.166"]
+    },
+    {
+      "people": "Poles",
+      "region": "a Polish version of the 'Sleeping Beauty'",
+      "cites": ["ralston1872:p.166"]
+    }
+  ],
+  "family": {
+    "value": "monster",
+    "cites": ["ralston1873:p.84"]
+  },
+  "appearance_forms": [
+    { "id": "ralston-serpent", "label": "Ralston's serpent-like Koshchei" },
+    { "id": "ralston-half-serpent", "label": "Ralston's part-human, part-serpent Koshchei" },
+    { "id": "ralston-man", "label": "Ralston's man-shaped Koshchei" },
+    { "id": "afanasyev-old-sorcerer", "label": "Afanasyev's old sorcerer" }
+  ],
+  "appearance": [
+    {
+      "text": "Sometimes he is described as altogether serpent-like in form.",
+      "cites": ["ralston1873:p.84"],
+      "form": "ralston-serpent"
+    },
+    {
+      "text": "Sometimes he seems to be of a mixed nature, partly human and partly serpent.",
+      "cites": ["ralston1873:p.84"],
+      "form": "ralston-half-serpent"
+    },
+    {
+      "text": "In some of the stories he is apparently framed after the fashion of a man.",
+      "cites": ["ralston1873:p.84"],
+      "form": "ralston-man"
+    },
+    {
+      "text": "The demon of winter, discussed on this page as Koshchei, is often pictured in folk tradition as an old sorcerer.",
+      "cites": ["afanasyev1868:p.595"],
+      "form": "afanasyev-old-sorcerer"
+    }
+  ],
+  "scene": [
+    {
+      "text": "In a Russian story he is found in a forbidden chamber, hung up and bound with twelve chains.",
+      "cites": ["ralston1872:p.166"]
+    },
+    {
+      "text": "He says he has hung there without drinking for ten years.",
+      "cites": ["ralston1872:p.166"]
+    },
+    {
+      "text": "In another version the hero finds him in the forbidden chamber in a cauldron amid flames, boiling in pitch, where he says he has been for fifteen years, lured there by the beauty of Anastasia the Fair.",
+      "cites": ["ralston1873:p.98"]
+    },
+    {
+      "text": "In a further version he is found in the forbidden chamber seated on a horse which is chained to a cauldron.",
+      "cites": ["ralston1873:p.98"]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "In the stories he keeps beautiful princesses in imprisonment until his spell is broken and his power overthrown.",
+      "cites": ["ralston1872:p.165"]
+    },
+    {
+      "text": "Sometimes he suddenly carries off a hero's mother, sometimes the hero's wife, and keeps her prisoner.",
+      "cites": ["ralston1872:p.165"]
+    },
+    {
+      "text": "In the tales he plays the same part as the snake: a miserly guardian of treasures and a dangerous abductor of beautiful maidens, hostile to the heroes.",
+      "cites": ["afanasyev1868:p.594"]
+    },
+    {
+      "text": "He and the snake freely replace each other, so that one variant of a tale has the snake and another has Koshchei.",
+      "cites": ["afanasyev1868:p.594"]
+    },
+    {
+      "text": "Like the devouring snakes, he smells 'the scent of the Russian spirit'.",
+      "cites": ["afanasyev1868:p.595"]
+    },
+    {
+      "text": "A folk tale ascribes to him self-playing gusli that play so skilfully that anyone who hears them listens to the point of death.",
+      "cites": ["afanasyev1868:p.595"]
+    },
+    {
+      "text": "In a Polish version of the 'Sleeping Beauty' he carries off the princess and throws her and all the inhabitants of her father's kingdom into a magic slumber.",
+      "cites": ["ralston1872:p.166"]
+    },
+    {
+      "text": "In that Polish version the rescuer conquers him and seizes his magic gusli, and at their music the sleepers awake.",
+      "cites": ["ralston1872:p.166"]
+    },
+    {
+      "text": "When given water he drinks his fill, recovers his lost strength, bursts his chains and flies away, carrying off the queen.",
+      "cites": ["ralston1872:p.166"]
+    },
+    {
+      "text": "When the prince shifts the egg that holds his death from hand to hand, he rushes wildly from side to side of the room.",
+      "cites": ["ralston1873:p.109"]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "His prisoner is held until the hero finds out in what place his 'death' can be discovered.",
+      "cites": ["ralston1872:p.165"]
+    },
+    {
+      "text": "He is induced to reveal that his death lies in an egg, in a duck, in a hare, in a casket under an oak; when the egg is found and broken, he dies.",
+      "cites": ["ralston1872:p.165"]
+    },
+    {
+      "text": "In one story he first claims his death is in a besom, then in the fence round the house, and his captive adorns each with gold before he tells the truth.",
+      "cites": ["ralston1872:p.167"]
+    },
+    {
+      "text": "Different versions give different animals in the chain that secures his life, the last link being an egg or a stone inside an egg.",
+      "cites": ["ralston1872:p.167"]
+    },
+    {
+      "text": "In one variant the hero is helped in his search for the fatal egg by the Thunder, the Wind and the Hail.",
+      "cites": ["ralston1872:p.167"]
+    },
+    {
+      "text": "Sometimes he cannot be killed except by one substance.",
+      "cites": ["ralston1873:p.84"]
+    },
+    {
+      "text": "In one telling he is killed by a blow on the forehead struck with the egg.",
+      "cites": ["ralston1873:p.109"]
+    },
+    {
+      "text": "Having taken the wondrous egg, the prince throws it at Koshchei's forehead and he dies at once.",
+      "cites": ["afanasyev1868:p.603"]
+    },
+    {
+      "text": "In the Marya Morevna story a magic steed fells him with a kick on the forehead.",
+      "cites": ["ralston1872:p.166"]
+    },
+    {
+      "text": "In charms an incantation against Koshchei-yadun is still pronounced.",
+      "cites": ["afanasyev1868:p.595"]
+    }
+  ],
+  "origin": [],
+  "related": [
+    { "id": "zmey-gorynych", "relation": "related" },
+    { "id": "baba-yaga", "relation": "related" }
+  ],
+  "attestation": null,
+  "sources": [
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1873",
+      "author": "W. R. S. Ralston",
+      "title": "Russian Folk-Tales",
+      "year": 1873,
+      "url": "https://archive.org/details/russianfolktales00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "origin: no opened page says where Koshchei comes from or who becomes one; the pages offer only the mythologists' reading of him as a personification of winter or storm (ralston1872 pp.164-167, ralston1873 p.84, afanasyev1868 pp.594-595, 603), which was not recorded as folk origin. Searched koshchei, koschei, kashchei, кощей, кощеи, кащей, безсмертный across all sources."
+    },
+    {
+      "kind": "empty-field",
+      "text": "variants: the only people-specific telling is a Polish 'Sleeping Beauty' version (ralston1872 p.166), recorded in behavior_habitat with its people named in the clause rather than as a variant, since it differs in plot, not in description."
+    },
+    {
+      "kind": "scope",
+      "text": "Interpretations of Koshchei as winter, storm or a demon of rain-clouds (ralston1872 pp.164-167, afanasyev1868 pp.594-595, 603) are mythologists' readings and are kept out of every field. The 'bony of limb' guess is in meaning only, as part of an etymology, and not in appearance."
+    },
+    {
+      "kind": "scope",
+      "text": "Unread relevant pages (budget): afanasyev1868 pp.596-602 and 604 (retell the Koshchei tales; may add scene and dealing details); ralston1873 pp.85-96 and 101-108 (full texts of Marya Morevna and Koshchei the Deathless; may add scene and behaviour); ralston1872 p.373 (charm naming 'Koshchei-yadun'; would give a romanised variant); afanasyev1868 pp.430, 615, 714, 780 (passing mentions)."
+    },
+    {
+      "kind": "other",
+      "text": "related: zmey-gorynych is linked because ralston1873 p.115 says names such as Koshchei admit of exchange with Zmei Goruinuich, and afanasyev1868 p.594 names Zmey Gorynych and Koshchei together as underground kings; baba-yaga because ralston1873 p.97 calls the Baba Yaga the feminine counterpart of Koshchei and the Snake."
+    },
+    {
+      "kind": "other",
+      "text": "The tale on ralston1873 p.100 is footnoted 'From the Perm Government'. The term is not in sources/peoples.json, so no region row was written; proposed mapping: Russians, region 'Perm Government'."
+    }
+  ]
+}

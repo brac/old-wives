@@ -1,0 +1,83 @@
+{
+  "entry_id": "koschei",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [
+    {
+      "field": "/appearance/3",
+      "text": "The demon of winter, discussed on this page as Koshchei, is often pictured in folk tradition as an old sorcerer.",
+      "cites": [
+        "afanasyev1868:p.595"
+      ],
+      "reason": "Unsupported for Koshchei. afanasyev1868 p.595 says 'the demon of winter in folk traditions is often represented as an old sorcerer' as a general remark about the winter demon; the page does not say Koshchei is pictured so, and the identification of Koshchei with that demon is the author's mythological interpretation. Appearance must be physical description stated about this creature, without inference. Its form 'afanasyev-old-sorcerer' is left empty and dropped."
+    }
+  ],
+  "downgraded": [
+    {
+      "field": "/peoples_regions/2",
+      "text": "Poles, region: a Polish version of the 'Sleeping Beauty'",
+      "to_text": "Poles",
+      "from_cites": [
+        "ralston1872:p.166"
+      ],
+      "to_cites": [
+        "ralston1872:p.166"
+      ],
+      "reason": "The page prints 'a Polish version', which sources/peoples.json maps to Poles (row 'Poles, Polish, Poland ...'), so the people stands. The region value was a tale title, not a place; it is cut rather than replaced, since the page names no region."
+    },
+    {
+      "field": "/dealing_with_it/1",
+      "text": "He is induced to reveal that his death lies in an egg, in a duck, in a hare, in a casket under an oak; when the egg is found and broken, he dies.",
+      "to_text": "He is generally induced to make some such revelation as that his death lies in an egg, in a duck, in a hare, in a casket under an oak; when the egg is found and broken, he dies.",
+      "from_cites": [
+        "ralston1872:p.165"
+      ],
+      "to_cites": [
+        "ralston1872:p.165"
+      ],
+      "reason": "The page hedges: Koshchei 'is generally induced to make some such revelation as this'. The draft stated it without the hedge; 'generally' and 'some such' restored."
+    }
+  ],
+  "retagged": [],
+  "reformed": [],
+  "flagged": [],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "The verified entry records Koshchei for Russians, in Afanasyev's account of Russian folk tradition and in Ralston's Russian stories.",
+      "cites": [
+        "afanasyev1868:p.594",
+        "ralston1872:p.166"
+      ]
+    },
+    {
+      "text": "It records him for Poles through a Polish version of the 'Sleeping Beauty' in which he puts a kingdom into a magic slumber.",
+      "cites": [
+        "ralston1872:p.166"
+      ]
+    },
+    {
+      "text": "Afanasyev also retells a Polish tale in which Koshchei puts others to sleep, so the Polish attestation appears in both authors.",
+      "cites": [
+        "afanasyev1868:p.595"
+      ]
+    },
+    {
+      "text": "Ralston tells the Polish tale and the Marya Morevna story without citing or quoting Afanasyev on that page, so on that passage he counts as an independent source.",
+      "cites": [
+        "ralston1872:p.166"
+      ]
+    },
+    {
+      "text": "Ralston's forbidden-chamber versions are footnoted to Khudyakof and Erlenvein, collectors other than Afanasyev.",
+      "cites": [
+        "ralston1873:p.98"
+      ]
+    },
+    {
+      "text": "Ralston's derivation of the name rests on Afanasief, whom his footnote quotes, so the etymology is counted once, not twice.",
+      "cites": [
+        "ralston1873:p.84"
+      ]
+    }
+  ]
+}

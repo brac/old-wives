@@ -1,0 +1,476 @@
+{
+  "id": "kikimora",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "kikimora",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "кикимора",
+          "people": "Russians",
+          "cites": [
+            "afanasyev1868:p.101"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "shishimora",
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "шишимора",
+            "people": "Russians",
+            "cites": [
+              "afanasyev1868:p.101"
+            ]
+          }
+        ],
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.133",
+          "afanasyev1868:p.101"
+        ]
+      },
+      {
+        "romanized": "mara",
+        "peoples": [
+          "Russians"
+        ],
+        "cites": [
+          "ralston1872:p.133",
+          "afanasyev1868:p.101"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Afanasyev calls the name a compound word whose first half is still used on its own in regional dialects: shish meaning domovoy or demon, shishko an unclean spirit.",
+        "cites": [
+          "afanasyev1868:p.101"
+        ]
+      },
+      {
+        "text": "The second half of the word is equivalent to the German mar (as in nightmare).",
+        "cites": [
+          "afanasyev1868:p.101",
+          "ralston1872:p.133"
+        ]
+      },
+      {
+        "text": "Afanasyev writes that the words kiki-mora, mora, mara and marukha point to gloomy, dark beings.",
+        "cites": [
+          "afanasyev1869:p.136"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Russians",
+      "region": "Russia",
+      "cites": [
+        "ralston1872:p.133",
+        "afanasyev1868:p.101"
+      ]
+    }
+  ],
+  "family": {
+    "value": "household",
+    "cites": [
+      "machal1918:p.228"
+    ]
+  },
+  "appearance_forms": [],
+  "appearance": [
+    {
+      "text": "Kikimoras are tiny female beings.",
+      "cites": [
+        "machal1918:p.228",
+        "afanasyev1868:p.101"
+      ]
+    },
+    {
+      "text": "They are pictured as misshapen dwarfs or little ones.",
+      "cites": [
+        "afanasyev1869:p.136"
+      ]
+    },
+    {
+      "text": "Their head is the size of a thimble.",
+      "cites": [
+        "afanasyev1869:p.136"
+      ]
+    },
+    {
+      "text": "Their body is as thin as a straw.",
+      "cites": [
+        "afanasyev1869:p.136"
+      ]
+    },
+    {
+      "text": "They go about without clothing or footwear.",
+      "cites": [
+        "afanasyev1869:p.136"
+      ]
+    }
+  ],
+  "scene": [
+    {
+      "text": "Inside houses, behind the stove.",
+      "cites": [
+        "machal1918:p.228",
+        "afanasyev1868:p.101"
+      ]
+    },
+    {
+      "text": "At night, with whining and whistling noises.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "In the quiet hours of the night they can be clearly heard drawing out and twisting threads and warping cloth.",
+      "cites": [
+        "afanasyev1869:pp.136-137"
+      ]
+    }
+  ],
+  "variants": [],
+  "behavior_habitat": [
+    {
+      "text": "In Russia the kikimoras play the role of household gods (penates).",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "They live in houses behind the oven.",
+      "cites": [
+        "machal1918:p.228",
+        "afanasyev1868:p.101"
+      ]
+    },
+    {
+      "text": "At night they make noises, whining and whistling, and trouble sleeping people.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "Kikimora (or shishimora) is the Russian word for the incubus, as when the domovoy plays the part of the nightmare.",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "text": "The kikimori, or incubi, harass sleepers.",
+      "cites": [
+        "ralston1872:p.174"
+      ]
+    },
+    {
+      "text": "They are very fond of spinning.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "They are almost constantly busy spinning.",
+      "cites": [
+        "afanasyev1868:p.101"
+      ]
+    },
+    {
+      "text": "Their favourite occupation is spinning and weaving.",
+      "cites": [
+        "afanasyev1869:p.136"
+      ]
+    },
+    {
+      "text": "They hop from place to place all the time.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "They are invisible.",
+      "cites": [
+        "machal1918:p.228",
+        "afanasyev1868:p.101"
+      ]
+    },
+    {
+      "text": "They have the power to go invisible, to run fast and to see far into the distance.",
+      "cites": [
+        "afanasyev1869:p.136"
+      ]
+    },
+    {
+      "text": "They do not grow old.",
+      "cites": [
+        "machal1918:p.228",
+        "afanasyev1869:p.136"
+      ]
+    },
+    {
+      "text": "Manifestation of their presence always portends trouble.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "Sitting behind the stove they knock and whistle.",
+      "cites": [
+        "afanasyev1868:p.101"
+      ]
+    },
+    {
+      "text": "They throw stones at passers-by.",
+      "cites": [
+        "afanasyev1868:p.101"
+      ]
+    },
+    {
+      "text": "They break dishes.",
+      "cites": [
+        "afanasyev1868:p.101"
+      ]
+    },
+    {
+      "text": "They are forever restless and like to knock, rumble, whistle and hiss.",
+      "cites": [
+        "afanasyev1869:p.136"
+      ]
+    },
+    {
+      "text": "Settling in peasant huts, they live behind the stove and pester people at night with a terrible knocking.",
+      "cites": [
+        "afanasyev1869:p.136"
+      ]
+    },
+    {
+      "text": "Afanasyev writes that witches and sorcerers teach them wisdom, comb their hair and give them honey dew to drink, and that the cat Bayun amuses them with his songs.",
+      "cites": [
+        "afanasyev1869:p.136"
+      ]
+    },
+    {
+      "text": "Folk sayings run: \"Hush! the kikimora is spinning yarn\" and \"From a kikimora you will never get a shirt!\"",
+      "cites": [
+        "afanasyev1869:p.137"
+      ]
+    },
+    {
+      "text": "In the Kostroma Government kikimoras are said to throttle hens.",
+      "cites": [
+        "afanasyev1869:p.800"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "They tangle and tear the tow of women who get up from the spinning-wheel without making the sign of the cross.",
+      "cites": [
+        "machal1918:p.228"
+      ]
+    },
+    {
+      "text": "On the night before Christmas they tousle and burn the tow left at the distaff without a prayer.",
+      "cites": [
+        "afanasyev1868:pp.101-102"
+      ]
+    },
+    {
+      "text": "To get rid of a kikimora, a znakhar (wise man) sweeps the stove and the corners of the hut while saying an incantation.",
+      "cites": [
+        "afanasyev1868:p.102"
+      ]
+    },
+    {
+      "text": "The incantation calls on the house kikimora to leave the house quickly, or else it will be flogged with red-hot rods, burnt with fire and drenched with black tar.",
+      "cites": [
+        "afanasyev1868:p.102"
+      ]
+    },
+    {
+      "text": "Wise men and women are called in to calm an angered domovoy, kikimoras and other hostile spirits that have taken over a dwelling.",
+      "cites": [
+        "afanasyev1869:p.439"
+      ]
+    },
+    {
+      "text": "In the Kostroma Government stones (called hen gods) are hung in hen-houses so that the kikimoras do not throttle the hens.",
+      "cites": [
+        "afanasyev1869:p.800"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "The kikimori are generally understood to be the souls of girls who died unchristened or were cursed by their parents, and so passed under the power of evil spirits.",
+      "cites": [
+        "ralston1872:p.133"
+      ]
+    },
+    {
+      "text": "It is told that kikimoras are infants who died unbaptised or were cursed by their parents, and so fell under the power of the unclean force.",
+      "cites": [
+        "afanasyev1868:p.101"
+      ]
+    },
+    {
+      "text": "If the master of a house does not pay the carpenters in full for building the hut, they send an evil kikimora into it.",
+      "cites": [
+        "afanasyev1868:p.102"
+      ]
+    },
+    {
+      "text": "Afanasyev reads the maras or kikimoras as personified souls of the dead who, settling in their kinsmen's dwellings, took on the character of household spirits.",
+      "cites": [
+        "afanasyev1868:p.102"
+      ]
+    },
+    {
+      "text": "Afanasyev writes that kikimoras are born of the unions of the fiery serpent with beautiful maidens.",
+      "cites": [
+        "afanasyev1869:p.136"
+      ]
+    },
+    {
+      "text": "Afanasyev writes that the offspring of wives' unchaste unions with serpents are not ordinary children but sorcerer-heroes and kikimoras, that is, thunder spirits.",
+      "cites": [
+        "afanasyev1868:p.578"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "domovoi",
+      "relation": "related"
+    },
+    {
+      "id": "mora",
+      "relation": "related"
+    },
+    {
+      "id": "poludnitsa",
+      "relation": "related"
+    },
+    {
+      "id": "zlydni",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "regional",
+    "rationale": [
+      {
+        "text": "The only verified people is the Russians: Ralston calls Kikimora the Russian word for the incubus, and Afanasyev calls kikimora a Russian word.",
+        "cites": [
+          "ralston1872:p.133",
+          "afanasyev1868:p.101"
+        ]
+      },
+      {
+        "text": "Máchal independently records the Kikimoras in Russia as tiny female household beings behind the oven, fond of spinning, with no reference to Afanasyev on that passage.",
+        "cites": [
+          "machal1918:p.228"
+        ]
+      },
+      {
+        "text": "Afanasyev, across two volumes counted as one source, records the kikimoras behind the stove, spinning, invisible, and the incantation and Kostroma hen-house stones against them.",
+        "cites": [
+          "afanasyev1868:p.101",
+          "afanasyev1868:p.102",
+          "afanasyev1869:p.136",
+          "afanasyev1869:p.800"
+        ]
+      },
+      {
+        "text": "Ralston depends on Afanasyev for the derivation of the name (\"says Afanasief\"), but his account of the kikimori as souls of unchristened or cursed girls cites no one on that passage, so it counts as a third independent source.",
+        "cites": [
+          "ralston1872:p.133"
+        ]
+      },
+      {
+        "text": "One people with several independent sources (Máchal, Ralston, Afanasyev) is regional.",
+        "cites": [
+          "machal1918:p.228",
+          "ralston1872:p.133",
+          "afanasyev1868:p.101"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1868",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 2",
+      "year": 1868,
+      "url": "https://archive.org/details/poeticheskiiavoz02afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "empty-field",
+      "text": "variants: no source ties a distinct description of the kikimora to a particular people or region; searched kikimora, kikimoras, kikimori, shishimora, кикимор, кикимора, кикиморы, шишимор, шишимора across all sources."
+    },
+    {
+      "kind": "other",
+      "text": "Unlisted region term: Kostroma Government (костромской губ., afanasyev1869:p.800), the hen-house stone ward. Not mapped; proposed people Russians. No peoples_regions row written for it."
+    },
+    {
+      "kind": "scope",
+      "text": "Footnote lore not used: afanasyev1869:p.137 footnote 1 says that in the Saratov Government a shishi-mor is an apparition in the form of a white old man; afanasyev1868:p.102 footnote 3 puts the igosha (a stillborn infant) in one class with the kikimoras. Both sit in footnote lines and were left out under the footnote rule. Saratov Government is also an unlisted region term (proposed people Russians)."
+    },
+    {
+      "kind": "scope",
+      "text": "afanasyev1869:p.136 follows its kikimora description with a tale of travellers who find a crying child in a field that escapes with wild laughter near the village; the page does not name it a kikimora, so it was left out."
+    },
+    {
+      "kind": "scope",
+      "text": "machal1918:p.228 and afanasyev1868:p.101 identify the Russian maras/moras with the kikimoras. Material on the mora of Serbia, Montenegro, Bohemia and Poland and on the Olonets mara (ralston1872:p.133, machal1918:p.228, afanasyev1868:p.101) is not tied to the kikimora by name and was left to the mora entry."
+    },
+    {
+      "kind": "other",
+      "text": "verify-v2.1: the mora variant (machal1918:p.228, \"In Russia the Moras, or Kikimoras\") and the Cyrillic мара native row (afanasyev1868:p.101, \"Въ Россіи также извѣстны мары\") were removed because their people rests on the term \"Russia\" / \"Россія\", which sources/peoples.json does not list. If the table gains a row for that term, a re-run can restore them."
+    },
+    {
+      "kind": "accretion",
+      "text": "Editorial: monster designs called kikimora or kikimore in modern fantasy games and fiction are excluded; this entry records only the cited nineteenth- and early twentieth-century sources."
+    }
+  ]
+}

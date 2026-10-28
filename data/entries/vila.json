@@ -1,0 +1,792 @@
+{
+  "id": "vila",
+  "schema_version": 2,
+  "names": {
+    "primary": {
+      "romanized": "vila",
+      "native": [
+        {
+          "script": "Cyrl",
+          "text": "вила",
+          "people": "Serbs",
+          "cites": [
+            "karadzic1852:s.v.вила"
+          ]
+        }
+      ]
+    },
+    "variants": [
+      {
+        "romanized": "Samovila",
+        "peoples": [
+          "Bulgarians"
+        ],
+        "cites": [
+          "machal1918:p.256"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "само-вила",
+            "people": "Bulgarians",
+            "cites": [
+              "afanasyev1869:p.182"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Samodiva",
+        "peoples": [
+          "Bulgarians"
+        ],
+        "cites": [
+          "machal1918:p.256"
+        ],
+        "native": [
+          {
+            "script": "Cyrl",
+            "text": "само-дива",
+            "people": "Bulgarians",
+            "cites": [
+              "afanasyev1869:p.182"
+            ]
+          }
+        ]
+      },
+      {
+        "romanized": "Wili",
+        "peoples": [
+          "Poles"
+        ],
+        "cites": [
+          "machal1918:p.256"
+        ]
+      }
+    ],
+    "meaning": [
+      {
+        "text": "Machal says the meaning of the word vila has not been explained satisfactorily, but that it seems to come from the root vel ('perish') and to be cognate with Lithuanian veles ('spirits of the deceased').",
+        "cites": [
+          "machal1918:p.256"
+        ]
+      },
+      {
+        "text": "Afanasyev glosses the Bulgarian name Samovila as 'self-winding' or 'self-spinner' (само-вьющая, самопряха).",
+        "cites": [
+          "afanasyev1869:p.182"
+        ]
+      }
+    ]
+  },
+  "peoples_regions": [
+    {
+      "people": "Serbs",
+      "region": "Serbian legends; Servian Vilas",
+      "cites": [
+        "machal1918:p.256",
+        "ralston1872:p.146"
+      ]
+    },
+    {
+      "people": "Bulgarians",
+      "region": "Bulgarian Samovila, Samodiva",
+      "cites": [
+        "machal1918:p.256",
+        "afanasyev1869:p.182"
+      ]
+    },
+    {
+      "people": "Slovaks",
+      "cites": [
+        "machal1918:p.256"
+      ]
+    },
+    {
+      "people": "Poles",
+      "region": "the Wili",
+      "cites": [
+        "machal1918:p.256"
+      ]
+    },
+    {
+      "people": "Slovenes",
+      "region": "the Slovenians",
+      "cites": [
+        "machal1918:p.257"
+      ]
+    },
+    {
+      "people": "Russians",
+      "region": "ancient written traditions of the Russians",
+      "cites": [
+        "machal1918:p.256"
+      ]
+    }
+  ],
+  "family": {
+    "value": "water",
+    "cites": [
+      "machal1918:p.259"
+    ]
+  },
+  "appearance_forms": [
+    {
+      "id": "maiden",
+      "label": "young woman (Machal, Karadzic)"
+    },
+    {
+      "id": "horse",
+      "label": "horse (Machal)"
+    },
+    {
+      "id": "wolf",
+      "label": "wolf (Machal)"
+    },
+    {
+      "id": "snake",
+      "label": "snake (Machal)"
+    },
+    {
+      "id": "falcon",
+      "label": "falcon (Machal)"
+    },
+    {
+      "id": "swan",
+      "label": "swan (Machal, Afanasyev)"
+    }
+  ],
+  "appearance": [
+    {
+      "text": "The Vily are pictured as beautiful women.",
+      "cites": [
+        "machal1918:p.258"
+      ],
+      "form": "maiden"
+    },
+    {
+      "text": "They are eternally young.",
+      "cites": [
+        "machal1918:p.258"
+      ],
+      "form": "maiden"
+    },
+    {
+      "text": "They have pale cheeks.",
+      "cites": [
+        "machal1918:p.258"
+      ],
+      "form": "maiden"
+    },
+    {
+      "text": "They are dressed in white; Karadzic says every vila is dressed in a thin white garment.",
+      "cites": [
+        "machal1918:p.258",
+        "karadzic1852:s.v.вила"
+      ],
+      "form": "maiden"
+    },
+    {
+      "text": "Their long hair is usually fair or golden.",
+      "cites": [
+        "machal1918:p.258"
+      ],
+      "form": "maiden"
+    },
+    {
+      "text": "Their long hair hangs loose down the back and over the breast.",
+      "cites": [
+        "karadzic1852:s.v.вила"
+      ],
+      "form": "maiden"
+    },
+    {
+      "text": "Their bodies are as slender as the stem of a pine and as light as those of birds.",
+      "cites": [
+        "machal1918:p.258"
+      ],
+      "form": "maiden"
+    },
+    {
+      "text": "They are frequently provided with wings.",
+      "cites": [
+        "machal1918:p.258"
+      ],
+      "form": "maiden"
+    },
+    {
+      "text": "Their eyes flash like lightning.",
+      "cites": [
+        "machal1918:p.258"
+      ],
+      "form": "maiden"
+    },
+    {
+      "text": "They can transform themselves into horses.",
+      "cites": [
+        "machal1918:p.258"
+      ],
+      "form": "horse"
+    },
+    {
+      "text": "They can transform themselves into wolves.",
+      "cites": [
+        "machal1918:p.258"
+      ],
+      "form": "wolf"
+    },
+    {
+      "text": "They can transform themselves into snakes.",
+      "cites": [
+        "machal1918:p.258"
+      ],
+      "form": "snake"
+    },
+    {
+      "text": "They can transform themselves into falcons.",
+      "cites": [
+        "machal1918:p.258"
+      ],
+      "form": "falcon"
+    },
+    {
+      "text": "They can transform themselves into swans; Afanasyev says the Serbian vily turn into swans and fly in as swans.",
+      "cites": [
+        "machal1918:p.258",
+        "afanasyev1869:p.188"
+      ],
+      "form": "swan"
+    }
+  ],
+  "scene": [
+    {
+      "text": "They may often be seen dancing by moonlight near the graves of those who have died a violent death.",
+      "cites": [
+        "machal1918:p.257"
+      ]
+    },
+    {
+      "text": "A few people still chance to see them dancing in the fields, or sitting on a bare rock or deserted cliff, weeping and singing melancholy songs.",
+      "cites": [
+        "machal1918:p.257"
+      ]
+    },
+    {
+      "text": "On moonlit nights, when the water-vily leave their abodes, the waters rise and foam, and they dance on the banks.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "Places where they have danced can be recognised from afar by thick, deep green grass (fairy-rings).",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "When they fight each other the forest resounds with din and clamour and the ground shakes.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "Karadzic says the vile live on the great mountains and on rocky ground around waters.",
+      "cites": [
+        "karadzic1852:s.v.вила"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "bulgarian-samovila-samodiva",
+      "label": "Bulgarian samovila and samodiva",
+      "peoples": [
+        "Bulgarians"
+      ],
+      "appearance": [
+        {
+          "text": "In Bulgarian songs the samovily have fine light-brown (русыя) braids of hair.",
+          "cites": [
+            "afanasyev1869:p.182"
+          ]
+        }
+      ],
+      "behavior_habitat": [
+        {
+          "text": "The Bulgarians know two such maidens: the samovila lives mainly in the mountains, the samodiva in rivers and wells.",
+          "cites": [
+            "afanasyev1869:p.182"
+          ]
+        },
+        {
+          "text": "In songs the samovily lead round-dances, enter into sworn brotherhood with heroes, help them in need and save them from untimely death.",
+          "cites": [
+            "afanasyev1869:p.182"
+          ]
+        },
+        {
+          "text": "Like the Serbian vily, the samovily build cloud cities.",
+          "cites": [
+            "afanasyev1869:p.182"
+          ]
+        },
+        {
+          "text": "The Bulgarians believe that when it rains while the sun shines, the samovily are bathing.",
+          "cites": [
+            "afanasyev1869:p.182"
+          ]
+        },
+        {
+          "text": "Some samodivy settled the waters and others remained in the air, where at night they break the silence with sounds heard as distant music, maidens' songs or the creaking of countless wheels.",
+          "cites": [
+            "afanasyev1869:p.183"
+          ]
+        },
+        {
+          "text": "The samodivy sing and dance on meadows and leave large circles on the grass, made of a narrow path trodden by their feet.",
+          "cites": [
+            "afanasyev1869:p.183"
+          ]
+        },
+        {
+          "text": "If a man who hears their song dares to approach a samodiva round-dance, they either kill him or take away his speech and memory forever.",
+          "cites": [
+            "afanasyev1869:p.183"
+          ]
+        },
+        {
+          "text": "According to popular belief the samodivy hide in the fields while the crops are still green.",
+          "cites": [
+            "afanasyev1869:p.183"
+          ]
+        },
+        {
+          "text": "The samovily are credited with shutting off springs of water and with stealing sight.",
+          "cites": [
+            "afanasyev1869:p.183"
+          ]
+        }
+      ]
+    }
+  ],
+  "behavior_habitat": [
+    {
+      "text": "They live in the clouds, on forest-clad mountains and in the waters.",
+      "cites": [
+        "machal1918:p.258"
+      ]
+    },
+    {
+      "text": "Those of the clouds sit among the clouds sleeping, singing and dancing, may cause winds and storms, and have eagles for helpers.",
+      "cites": [
+        "machal1918:pp.258-259"
+      ]
+    },
+    {
+      "text": "Now and then, turned into birds, the cloud vily float down to earth to prophesy the future and protect mankind against disaster.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "The vily of the forests dwell on high mountains, in caves and in ravines, and also have magnificent castles.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "The forest vily roam the woods on horseback or on stags, chase deer with arrows, kill men who defy them, and like to perch on trees with which they are inseparably united.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "The water-vily live in rivers, lakes, springs and wells, though for the most part they stay outside the water.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "Dancing on the banks, the water-vily drown young men who are bathing there.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "If they see a man on the opposite bank, they grow in size so as to step across the stream.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "They bathe their children in the water, or throw things in to poison it, and whoever drinks there must die.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "They entice young lads, shepherds or singers to dance with them and distribute happiness or misfortune among them.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "Their voices are so sweet that a man might listen for days without eating or drinking; no one knows their language, and only their friends understand them.",
+      "cites": [
+        "machal1918:pp.258-259"
+      ]
+    },
+    {
+      "text": "A man who once sees a vila will yearn for her, and his longing will at last kill him.",
+      "cites": [
+        "machal1918:p.258"
+      ]
+    },
+    {
+      "text": "They like to ride horses and stags.",
+      "cites": [
+        "machal1918:p.258"
+      ]
+    },
+    {
+      "text": "They are remarkable for strength and bravery and often fight each other.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "They can foretell the future and cure diseases.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "When free they give birth to children but are apt to foist them on mortal women; such children have excellent memory and great cleverness.",
+      "cites": [
+        "machal1918:pp.259-260"
+      ]
+    },
+    {
+      "text": "They kidnap children, feeding them with honey and teaching them all kinds of knowledge.",
+      "cites": [
+        "machal1918:p.260"
+      ]
+    },
+    {
+      "text": "They are on the whole good-natured, but may be classed as white (beneficent) or black (maleficent); the black send cruel maladies on people or wound their feet, hands or hearts with arrows.",
+      "cites": [
+        "machal1918:p.260"
+      ]
+    },
+    {
+      "text": "Karadzic says the vile do harm to no one unless offended; whoever offends them they punish by shooting him in a leg or arm, both legs or both arms, or in the heart, so that he dies at once.",
+      "cites": [
+        "karadzic1852:s.v.вила"
+      ]
+    },
+    {
+      "text": "The vily are believed to have lived originally in friendship with people, helping them harvest, mow, feed cattle and build houses, and teaching them to plough, sow, drain meadows and bury the dead.",
+      "cites": [
+        "machal1918:p.257"
+      ]
+    },
+    {
+      "text": "When men abandoned their old virtues, cracked whips and cursed in the pastures, and made war with guns, the vily left for foreign lands.",
+      "cites": [
+        "machal1918:p.257"
+      ]
+    },
+    {
+      "text": "The Slovenians believe the vily told people when to plough, sow and harvest, weeded the crops, and asked in return for food which they ate at night; they disappeared when people began to live sinfully.",
+      "cites": [
+        "machal1918:pp.257-258"
+      ]
+    },
+    {
+      "text": "It is a popular conviction that every young lad and every honest man has a vila for a sister who helps him in need, blesses his property and gives him presents; some animals (stags, roes, chamois) may have such kindred too.",
+      "cites": [
+        "machal1918:p.258"
+      ]
+    },
+    {
+      "text": "In many folk-tales vily marry young men and are dutiful wives and excellent housekeepers.",
+      "cites": [
+        "machal1918:p.258"
+      ]
+    },
+    {
+      "text": "Their life and strength are believed to depend on their hair, so that a vila who loses a single hair will die.",
+      "cites": [
+        "machal1918:p.258"
+      ]
+    },
+    {
+      "text": "In a Servian ballad of the building of Skadra, the vilas pull down at night what has been built during the day.",
+      "cites": [
+        "ralston1872:p.127"
+      ]
+    },
+    {
+      "text": "Ralston calls the Servian vilas akin to the rusalkas, equal to them in beauty and generally outdoing them in malice.",
+      "cites": [
+        "ralston1872:pp.146-147"
+      ]
+    },
+    {
+      "text": "No higher compliment can be paid a Servian maiden than to call her 'lovely as a vila'.",
+      "cites": [
+        "ralston1872:p.147"
+      ]
+    },
+    {
+      "text": "In a Servian story a husband boasted that his wife was more beautiful than the white vila; the vila from the hill overheard and demanded to see her, and the wife was three times as beautiful as the vila.",
+      "cites": [
+        "ralston1872:p.147"
+      ]
+    },
+    {
+      "text": "In a Bulgarian song a vila who guards fountains demands 'the dark eyes' of those who drink from them.",
+      "cites": [
+        "ralston1872:p.181"
+      ]
+    }
+  ],
+  "dealing_with_it": [
+    {
+      "text": "Karadzic says the vile are offended by someone treading on their round-dance (kolo) or on their supper.",
+      "cites": [
+        "karadzic1852:s.v.вила"
+      ]
+    },
+    {
+      "text": "Anyone who presumes to step inside a place where they have danced must expect punishment.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "They punish anyone who drinks from their springs without their permission.",
+      "cites": [
+        "machal1918:p.259"
+      ]
+    },
+    {
+      "text": "A man who robs a vila of her wings binds her to himself, but once she regains them she disappears.",
+      "cites": [
+        "machal1918:p.258"
+      ]
+    },
+    {
+      "text": "Husbands of vily must not remind them of their descent, or they will disappear forever, though they still secretly watch over their children.",
+      "cites": [
+        "machal1918:p.258"
+      ]
+    },
+    {
+      "text": "The Slovenians assert that a vila will show herself in her true shape to anyone who succeeds in cutting off her hair.",
+      "cites": [
+        "machal1918:p.258"
+      ]
+    },
+    {
+      "text": "In Croatia young girls place fruits of the field, flowers or silk ribbons on stones in caves as offerings to them.",
+      "cites": [
+        "machal1918:p.260"
+      ]
+    },
+    {
+      "text": "In Bulgaria gay ribbons are hung on trees, or little cakes are placed near wells, as offerings.",
+      "cites": [
+        "machal1918:p.260"
+      ]
+    },
+    {
+      "text": "Among the Bulgarians, the last ears left in the field are reckoned the property of the samodivy, and whoever grudges leaving them on his strip will have his legs taken by whirlwinds.",
+      "cites": [
+        "afanasyev1869:p.183"
+      ]
+    },
+    {
+      "text": "When grain is brought to the mill, part of the flour is thrown into the water for the samodivy.",
+      "cites": [
+        "afanasyev1869:p.183"
+      ]
+    },
+    {
+      "text": "A surviving Bulgarian custom is to throw a piece of roast goose into the water for the samodivy.",
+      "cites": [
+        "afanasyev1869:p.188"
+      ]
+    }
+  ],
+  "origin": [
+    {
+      "text": "According to popular tradition the vily are souls of the departed.",
+      "cites": [
+        "machal1918:p.256"
+      ]
+    },
+    {
+      "text": "Serbian legends declare that originally they were proud maidens who incurred the curse of God.",
+      "cites": [
+        "machal1918:p.256"
+      ]
+    },
+    {
+      "text": "The Bulgarians believe the samovily are girls who died unbaptized.",
+      "cites": [
+        "machal1918:p.256"
+      ]
+    },
+    {
+      "text": "Among the Slovaks a widespread story holds that they are souls of brides who died after their betrothal and, finding no rest, must roam at night.",
+      "cites": [
+        "machal1918:p.256"
+      ]
+    },
+    {
+      "text": "The Poles think the Wili are souls of beautiful young girls condemned, for their frivolous life, to float in the air between sky and earth, doing good to those who favoured them in life and evil to those who offended them.",
+      "cites": [
+        "machal1918:p.256"
+      ]
+    },
+    {
+      "text": "Like elves and forest and water spirits, the samodivy are held to be fallen angels of light; cast down from heaven, they peopled the waters, and some stayed in the air.",
+      "cites": [
+        "afanasyev1869:p.183"
+      ]
+    },
+    {
+      "text": "In a Servian story the vila from the hill says the hill itself bore her and swaddled her in green leaves, the morning dew nourished her and the breeze from the hill rocked her.",
+      "cites": [
+        "ralston1872:p.147"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "id": "rusalka",
+      "relation": "related"
+    },
+    {
+      "id": "poludnitsa",
+      "relation": "related"
+    }
+  ],
+  "attestation": {
+    "grade": "widely-attested",
+    "rationale": [
+      {
+        "text": "Machal records the vila among Serbs, Bulgarians, Slovaks, Poles and Slovenians, and says the Vila is mentioned in the ancient written traditions of the Russians.",
+        "cites": [
+          "machal1918:p.256",
+          "machal1918:p.257"
+        ]
+      },
+      {
+        "text": "Karadzic's dictionary describes the Serbian vila's dwelling, dress, hair and punishments independently of Machal.",
+        "cites": [
+          "karadzic1852:s.v.вила"
+        ]
+      },
+      {
+        "text": "Afanasyev records the Bulgarian samovila and samodiva and the Serbian vily turning into swans.",
+        "cites": [
+          "afanasyev1869:p.182",
+          "afanasyev1869:p.188"
+        ]
+      },
+      {
+        "text": "Ralston independently describes the Servian Vilas and a Bulgarian song of a fountain-guarding Vila, without citing Afanasyev on those passages.",
+        "cites": [
+          "ralston1872:p.146",
+          "ralston1872:p.181"
+        ]
+      },
+      {
+        "text": "Ralston's story of the vila from the hill is quoted from Vuk Karadjich by Buslaef, so on that passage he is not independent of Karadzic and is counted once with him.",
+        "cites": [
+          "ralston1872:p.147"
+        ]
+      }
+    ],
+    "assigned_by": "verify"
+  },
+  "sources": [
+    {
+      "source_id": "machal1918",
+      "author": "Jan Máchal",
+      "title": "Slavic Mythology (The Mythology of All Races, vol. 3: Celtic and Slavic)",
+      "year": 1918,
+      "url": "https://archive.org/details/mythologyofallra0003john",
+      "public_domain": true
+    },
+    {
+      "source_id": "ralston1872",
+      "author": "W. R. S. Ralston",
+      "title": "The Songs of the Russian People",
+      "year": 1872,
+      "url": "https://archive.org/details/songsofrussianpe00ralsuoft",
+      "public_domain": true
+    },
+    {
+      "source_id": "afanasyev1869",
+      "author": "А. Н. Афанасьев (A. N. Afanasyev)",
+      "title": "Поэтические воззрения славян на природу, т. 3",
+      "year": 1869,
+      "url": "https://archive.org/details/poeticheskiiavoz03afan",
+      "public_domain": true
+    },
+    {
+      "source_id": "karadzic1852",
+      "author": "Вук Стефановић Караџић (Vuk Stefanović Karadžić)",
+      "title": "Српски рјечник истумачен њемачкијем и латинскијем ријечима",
+      "year": 1852,
+      "url": "https://archive.org/details/srpski-rjecnik-istumacen-njemackijem-i-latinskijem-rijecima",
+      "public_domain": true
+    }
+  ],
+  "image": null,
+  "notes": [
+    {
+      "kind": "scope",
+      "text": "Budget scope: afanasyev1869 pp.152-193 (the hinted vily section) was read only at pp.182, 183 and 188. Unread and likely relevant: afanasyev1869 pp.184-186 (Bulgarian samovila songs, incl. the samovila who shoots with arrows and the 'стара самовила'), p.104 (the plague-maiden counted among samodivy and samovily), and the remainder of pp.152-193 (Russian and Serbian vily material). afanasyev1865 and afanasyev1868 have about 50 hits each for вила/вилы/виле that were not triaged (many are likely the word 'вилы' = pitchfork or other senses)."
+    },
+    {
+      "kind": "scope",
+      "text": "karadzic1818 has the same vila entry as karadzic1852 (leaf 113), but its headword is OCR-misread as 'Busa', so s.v.Вила does not resolve and no headword override exists; it was not cited. A headword override for karadzic1818 вила would let it be cited."
+    },
+    {
+      "kind": "scope",
+      "text": "Family 'water' rests on Machal's Water-Vily (p.259) and Afanasyev's river-dwelling samodiva (p.182); the same pages place vily equally in the clouds and on forest mountains (machal1918:p.258-259), and Karadzic places them on mountains and rocky ground around waters."
+    },
+    {
+      "kind": "scope",
+      "text": "People-specific claims (Serbian, Bulgarian, Slovak, Polish, Slovenian, Croatian) are kept in top-level fields with the people named in the clause, because the variants object cannot carry origin or dealing_with_it. Only the Bulgarian samovila/samodiva got a nested variant. Machal's Judy of Macedonia and the Rhodope (p.260) are said to 'strongly resemble' the samovily but are a separate being, so their snake-like bodies were not used."
+    },
+    {
+      "kind": "other",
+      "text": "Unmapped people/region terms (no row in sources/peoples.json, no people row written): 'Southern Slavs' (machal1918:p.256; broad group, no proposal); 'South-Slavonian' (ralston1872:p.181; broad group, no proposal); 'Croatia' (machal1918:p.260; propose Croatians); 'Bulgaria' (machal1918:p.260; propose Bulgarians); 'Montenegro' (ralston1873:p.205 footnote; propose Montenegrins or Serbs, Ben to rule); 'болгары' (afanasyev1869:p.182; propose Bulgarians, the Russian form is not in the table); 'сербской'/'словенской' (afanasyev1869:p.182; propose Serbs and Slovenes)."
+    },
+    {
+      "kind": "scope",
+      "text": "ralston1873:p.205 mentions a Vila only in a footnote (playing St Nedelka's part in a Montenegrin song); footnotes are references, not lore, so it was not cited."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: Machal names Croatia for offerings to the Vily (young girls place fruits, flowers or silk ribbons on stones in caves), and sources/peoples.json maps 'Croatia' to Croatians, so a Croatians row is supportable at machal1918:p.260."
+    },
+    {
+      "kind": "other",
+      "text": "verify found, not added: Machal says the festivals for the Rusalky are at the same time festivals of the Vily, with young people going to the meadows, picking flowers and singing songs about the fairies, at machal1918:p.257."
+    },
+    {
+      "kind": "other",
+      "text": "Verify removed the Czechs row because sources/peoples.json lists 'Czekhs' but not the spelling 'Czechs' that machal1918:p.256 prints; adding 'Czechs' to the Czechs row would let a re-run keep it. Several terms the draft listed as unmapped (Croatia, Bulgaria, болгары, сербской, словенской, Montenegro) do now have rows in the table."
+    },
+    {
+      "kind": "accretion",
+      "text": "Editorial: the Wilis of the ballet Giselle (1841) and its literary sources are excluded; this entry records only the cited folk and scholarly sources."
+    }
+  ]
+}

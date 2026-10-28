@@ -1,0 +1,148 @@
+{
+  "entry_id": "divozenka",
+  "verifier_prompt_version": "verify-v2.1",
+  "removed": [
+    {
+      "field": "/peoples_regions/4",
+      "text": "Bulgarians (Bulgarian)",
+      "cites": [
+        "machal1918:p.263"
+      ],
+      "reason": "Machal prints only the adjective \"Bulgarian\" (machal1918:p.263 \"Bulgarian Divi-te Zeni\", p.265 \"The Bulgarian Diva-ta Zena\"); sources/peoples.json row \"Bulgarians, Bulgaria, болгары, болгаръ\" does not list \"Bulgarian\", so the people Bulgarians rests on an unlisted term and is refused until the table gains it."
+    },
+    {
+      "field": "/names/variants/6",
+      "text": "Divi-te Zeni (Bulgarians)",
+      "cites": [
+        "machal1918:p.263"
+      ],
+      "reason": "The form is printed on the page, but its people Bulgarians rests on the term \"Bulgarian\", which sources/peoples.json does not list (row \"Bulgarians, Bulgaria, болгары, болгаръ\"), so it is refused until the table gains the term; a names.variants row needs at least one people."
+    },
+    {
+      "field": "/names/variants/7",
+      "text": "Diva-ta Zena (Bulgarians)",
+      "cites": [
+        "machal1918:p.265"
+      ],
+      "reason": "The form is printed on the page, but its people Bulgarians rests on the term \"Bulgarian\", which sources/peoples.json does not list (row \"Bulgarians, Bulgaria, болгары, болгаръ\"), so it is refused until the table gains the term; a names.variants row needs at least one people."
+    },
+    {
+      "field": "/variants/3/appearance/0",
+      "text": "The Bulgarian Diva-ta Zena is covered with a thick coat of hair.",
+      "cites": [
+        "machal1918:p.265"
+      ],
+      "reason": "Supported by machal1918:p.265, but the variant \"Bulgarian Diva-ta Zena\" records the people Bulgarians: its people Bulgarians rests on the term \"Bulgarian\", which sources/peoples.json does not list (row \"Bulgarians, Bulgaria, болгары, болгаръ\"), so it is refused until the table gains the term. The whole variant is removed and can return on a re-run once the table lists the term."
+    },
+    {
+      "field": "/variants/3/appearance/1",
+      "text": "She has long breasts, which she throws over her shoulders to nurse her children.",
+      "cites": [
+        "machal1918:p.265"
+      ],
+      "reason": "Supported by machal1918:p.265, but the variant \"Bulgarian Diva-ta Zena\" records the people Bulgarians: its people Bulgarians rests on the term \"Bulgarian\", which sources/peoples.json does not list (row \"Bulgarians, Bulgaria, болгары, болгаръ\"), so it is refused until the table gains the term. The whole variant is removed and can return on a re-run once the table lists the term."
+    },
+    {
+      "field": "/variants/3/behavior_habitat/0",
+      "text": "The Bulgarian Diva-ta Zena lives in the woods.",
+      "cites": [
+        "machal1918:p.265"
+      ],
+      "reason": "Supported by machal1918:p.265, but the variant \"Bulgarian Diva-ta Zena\" records the people Bulgarians: its people Bulgarians rests on the term \"Bulgarian\", which sources/peoples.json does not list (row \"Bulgarians, Bulgaria, болгары, болгаръ\"), so it is refused until the table gains the term. The whole variant is removed and can return on a re-run once the table lists the term."
+    },
+    {
+      "field": "/variants/3/behavior_habitat/1",
+      "text": "She is strong and savage.",
+      "cites": [
+        "machal1918:p.265"
+      ],
+      "reason": "Supported by machal1918:p.265, but the variant \"Bulgarian Diva-ta Zena\" records the people Bulgarians: its people Bulgarians rests on the term \"Bulgarian\", which sources/peoples.json does not list (row \"Bulgarians, Bulgaria, болгары, болгаръ\"), so it is refused until the table gains the term. The whole variant is removed and can return on a re-run once the table lists the term."
+    },
+    {
+      "field": "/variants/3/behavior_habitat/2",
+      "text": "Her enunciation is defective.",
+      "cites": [
+        "machal1918:p.265"
+      ],
+      "reason": "Supported by machal1918:p.265, but the variant \"Bulgarian Diva-ta Zena\" records the people Bulgarians: its people Bulgarians rests on the term \"Bulgarian\", which sources/peoples.json does not list (row \"Bulgarians, Bulgaria, болгары, болгаръ\"), so it is refused until the table gains the term. The whole variant is removed and can return on a re-run once the table lists the term."
+    }
+  ],
+  "downgraded": [],
+  "retagged": [
+    {
+      "field": "/peoples_regions/1",
+      "text": "Sorbs (Lusatian)",
+      "from_cites": [
+        "machal1918:p.263"
+      ],
+      "to_cites": [
+        "machal1918:p.264"
+      ],
+      "reason": "p.263 prints only the adjective \"Lusatian\", which is not a term in sources/peoples.json; p.264 prints \"The Lusatian Serbs\", the table row \"Lusatians, Lusatian Serbs, лужичане\" -> Sorbs, about the Dziwje Zony."
+    },
+    {
+      "field": "/peoples_regions/3",
+      "text": "Slovenes (Slovenian)",
+      "from_cites": [
+        "machal1918:p.263"
+      ],
+      "to_cites": [
+        "machal1918:p.264"
+      ],
+      "reason": "p.263 prints only the adjective \"Slovenian\", which is not a term in sources/peoples.json; p.264 prints \"In the belief of the Slovenians the Divje Devojke\", the table row \"Slovenians, Slovenes\" -> Slovenes."
+    }
+  ],
+  "reformed": [],
+  "flagged": [
+    {
+      "field": "/scene/4",
+      "text": "According to Czech folk tradition, the evil beings of true noon, called poludnice or generally divé ženy, work their harm chiefly between eleven and twelve o'clock.",
+      "reason": "Erben p.183 names the noon beings \"poludnice\" first and only \"generally divé ženy\"; the page supports the clause as worded, but whether Erben's noon divé ženy are the same being as Machal's Divozenky rests on the shared name."
+    },
+    {
+      "field": "/names/variants/5",
+      "text": "Divja Zena (Slovenes)",
+      "reason": "Machal p.265 prints \"The Divja Zena\" without naming a people; Slovenes is read from the Slovenian passage that runs on from p.264, before \"The Bulgarian Diva-ta Zena\". The same reading carries the native row /names/variants/5/native/0 and the Divja Zena clauses in the Slovenian variant."
+    }
+  ],
+  "grade": "widely-attested",
+  "grade_rationale": [
+    {
+      "text": "Machal records the Wild Women for Czechs (Bohemian Divozenky) and Poles (Polish Dziwozony).",
+      "cites": [
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "Machal records the Dziwje Zony for the Lusatian Serbs and the Divje Devojke for the Slovenians.",
+      "cites": [
+        "machal1918:p.264"
+      ]
+    },
+    {
+      "text": "Afanasyev records the dziwozony of Poland and the divé ženy of Bohemia.",
+      "cites": [
+        "afanasyev1868:p.343"
+      ]
+    },
+    {
+      "text": "Afanasyev records Czech belief that the divé ženy substitute unbaptised infants and harm women in childbed.",
+      "cites": [
+        "afanasyev1869:p.311"
+      ]
+    },
+    {
+      "text": "Afanasyev's two volumes count as one source; on these pages he draws on Siemieński and Wagilewicz, not on Machal, and Machal's Wild Women passage cites no source, so Machal and Afanasyev are counted as two independent sources for Czechs and Poles.",
+      "cites": [
+        "afanasyev1869:p.310",
+        "machal1918:p.263"
+      ]
+    },
+    {
+      "text": "Erben is marked literary in the manifest; his note on the noon divé ženy is kept but not counted toward independence.",
+      "cites": [
+        "erben1893:p.183"
+      ]
+    }
+  ]
+}
