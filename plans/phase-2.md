@@ -201,3 +201,14 @@ in the brief.
   - vodyanoi: a blobby, bloated frog creature, only vaguely human, with a big belly.
   - Each was drawn on seeds 41 and 42 under `plates/iter5/out/`. The ledger is $5.209.
 - **Round-five verdict (Ben, 2026-10-27).** These are approved: poludnitsa `iter5/a-s41`, drekavac `iter5/a-s42` and vodyanoi `iter5/a-s42`. With them, all ten plates are approved and the generation rounds are closed. The ledger is $5.209.
+- **2d-i (2026-10-27)** finalised the ten plates (`50d8f0c`, tag `phase-2d`):
+  - sizes, the public sidecars, the extended `image` schema and the ten filled entries;
+  - review: 214 tests pass, all ten entries validate, and two sabotages are caught.
+  - `image.date` is the sidecar's UTC date, so eight entries read 2026-10-28; this is left as is.
+  - The brief's automated vision check is replaced by Ben's review, in line with the settled "Ben is the visual judge" decision.
+- **2e (2026-10-27)** writes `style/STYLE-SHEET.md`. It carries:
+  - the plates, the silverpoint rationale and the format;
+  - the locked model, settings and tokens, and the bake-off losers;
+  - the prompt recipe and what the model does with words;
+  - the review workflow and the public-domain style references.
+  - Rejected: a published artifact as the style sheet. It must live in the repo, so that volume 2 can match volume 1.
