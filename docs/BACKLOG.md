@@ -386,3 +386,26 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   existing flags stand.
 - **Validator rule R-PEOPLE.** Every `people` value and every item of a `peoples` list
   must be a `people` value of the table, at both stages. All ten pilot entries pass.
+
+## Phase 4c and 4d (2026-10-28)
+
+- **Design review, planner defaults (4d), vetoable by Ben.** Body text stays 18px
+  (rejected: 20px). Spread columns are 5fr / 4fr to favour the plate (rejected: equal
+  columns, and a narrower 68rem spread). One chip per cite (rejected: smaller chips, one
+  chip per clause). Variants stay closed (rejected: open by default). Contents thumbnails
+  have the alt "Silverpoint study of <name>" (rejected: empty alt beside the visible
+  name). Empty sections are hidden, heading and all (rejected: "Nothing in the cited
+  sources."). "The name" heading and the CC BY gloss stay. The method page is in first
+  person where the act was Ben's (rejected: third person).
+- **Site typecheck is a gate.** `npm run check` runs `tsc --noEmit -p site`, and the site
+  tsconfig resolves modules as NodeNext, which types the shared validator's ajv import
+  the way Node loads it. Rejected: `@astrojs/check` (a new package; it would also cover
+  `.astro` files, which are still unchecked), and Astro's default Bundler resolution.
+- **The desk's note-to-edit model is `google/gemini-2.5-flash` through fal's
+  `openrouter/router`**, on the key the pipeline already uses, capped at $0.50 in total.
+  Rejected: a second provider or key.
+- **The $1 plate cap is enforced in the desk** per creature: spend-ledger rows plus queued
+  jobs plus the new job's estimate, checked at queue time and again before each real
+  generate call. Queued dry runs count too. Rejected: relying on the generator's $25
+  pilot total alone, which never stops a single creature. The desk's queue file,
+  `plates/desk-queue.json`, is local state and is gitignored.

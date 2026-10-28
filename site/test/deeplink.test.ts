@@ -73,7 +73,7 @@ describe("chips on real entries", () => {
         if (s.deepLinkMode === "item" || parseCite(tag).kind === "sv") {
           expect(c.href, tag).not.toMatch(/\/page\//);
         } else if (s.url && s.deepLinkMode === "header-ia-label") {
-          expect(c.href === s.url || c.href.startsWith(`${s.url}/page/`), tag).toBe(true);
+          expect(c.href === s.url || (c.href ?? "").startsWith(`${s.url}/page/`), tag).toBe(true);
         } else if (s.url) {
           expect([s.url, `${s.url}/page/${encodeURIComponent(parseCite(tag).locus.split("-")[0]!)}`], tag).toContain(c.href);
         }

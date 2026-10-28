@@ -15,3 +15,6 @@ playwright-report/
 
 .vercel
 .env*
+
+# Review desk queue and call log (local state)
+plates/desk-queue.json
