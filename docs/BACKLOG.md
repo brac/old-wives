@@ -455,6 +455,34 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   Every s.v. tag in data/entries and data/drafts resolves to the same leaf and text as
   before. Rejected: a fuzzier text match (for example, preferring a line followed by a
   part-of-speech mark), which would move existing citations without a curator looking.
+- **2026-10-28, 4b-peoples-5: batch 3's hinted pages were scanned for people terms before
+  any draft.** In batches 1 and 2 a term the table lacked at draft time stayed unmapped
+  and could not be added at verify, so this time every page and headword hinted for the
+  nine batch 3 creatures was read with the corpus resolver and every place or people word
+  checked against the table first. New rows, uncontested (Great Russian governments, or
+  a named people): the Olonets, Vologda, Tomsk, Tver and Nijegorod Governments and Kazan
+  (Russians); Afanasyev's "хорутанскій" forms (Slovenes: the Russian name for the
+  Slovenes of Carinthia, Carniola and Styria). New rows, contested: the Kursk Government
+  (Russians, following Voroneje; its south-west was Little-Russian); Podolia, "Подоліи",
+  "Подолянинъ" (Ukrainians, following Kief and Chernigof; Poles rejected, though Podolia
+  was Polish until 1793); the Bukovina (Ukrainians, following the Hutsuls and
+  Ruthenians; the page names only a place, and a Romanian version would get no row).
+  Kazan is uncontested although the city was Tatar: the tale is a Russian one, and a
+  non-Slavic alternative gets no row. Forms added to existing rows: "черниговской губ.",
+  "черниг. губ." (Kief and Chernigof); "русинъ", "русина", "русины", "русинамъ"
+  (Ruthenians); "Иа Руси", the OCR of "На Руси" on 1865 p.512 (На Руси); "Черногоріи",
+  "Черногорію" (Montenegro); "у Грбљу" (the Bay of Kotor row; Grbalj was Austrian in
+  1852 like the Boka). No row: Southern Slavs, "Южные славяне", "славяно-литовскимъ",
+  "Slavonians" (umbrella); Lithuania, Germany, Norway, Brittany, Sweden, Finns, Tatars,
+  Cheremis, Turks (not Slavic); Kiev in the bylina of 1865 p.306 (a story's setting, not
+  where a belief is held); "по всей Руси" in a legend's dialogue (1869 p.107); Bosnia
+  in Karadžić's first "ала" (the word for a privy, not the creature); Afanasyev's
+  bibliographic abbreviations ("Москв.", "Новгор.", "Оренб.", "Путеш. въ Черногор.",
+  "Срп."); Karadžić's "буковина" (beech wood); place labels on neighbouring headwords of a
+  hinted leaf. Rejected: adding forms only when a draft meets them, which is what lost
+  content in batches 1 and 2. Open: `karadzic1852:s.v.аждаха` does not resolve (the OCR
+  prints the headword "атдаха", leaf 18); the ala drafts need a headword override or must
+  cite s.v.ала, which quotes it.
 
 ## Phase 4c and 4d (2026-10-28)
 
@@ -478,3 +506,14 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   generate call. Queued dry runs count too. Rejected: relying on the generator's $25
   pilot total alone, which never stops a single creature. The desk's queue file,
   `plates/desk-queue.json`, is local state and is gitignored.
+
+## Phase 4b cost decision (2026-10-28)
+
+- **Ben: the per-creature dollar figures are an estimate of plan tokens, not
+  metered spend, so the agent pipeline continues as it is.** Drafting and verify
+  run as Claude Code subagents on Opus 5.5; `data/cost.json` prices their tokens at
+  API list price only to make the $0.50 draft cap checkable. Rejected for now: a
+  scripted pipeline (direct API calls on Sonnet 5.5 with prompt caching and the
+  Batch API, estimated at $0.10 to $0.20 per creature in real API spend), and
+  moving the agents to Sonnet 5.5. Revisit if the plan allowance becomes the limit
+  when scaling past the first tranche.

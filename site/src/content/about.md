@@ -72,12 +72,19 @@ them, and says here what the objection is:
   ("нашей", "наше") is recorded the same way.
 - **The Voroneje Government** (Ralston) is recorded as Russians, though its southern
   districts were Little-Russian settlement and the page does not say which district.
+- **The Kursk Government** (Ralston) is recorded as Russians on the same reading, though
+  its south-western districts were Little-Russian settlement.
+- **Podolia** (Ralston, Afanasyev) is recorded as Ukrainians, as a government of
+  Little-Russia, and Afanasyev calls a Podolian a "русинъ". Podolia was Polish until 1793
+  and its towns largely Polish and Jewish, and a reader may prefer Poles.
+- **The Bukovina** (Ralston) is recorded as Ukrainians, the Ruthenians who were its
+  Slavs. The page names a place, not a people, and the Bukovina was also Romanian.
 - **Afanasyev's "словенской" and "словенскія"** are recorded as Slovenes. The word can also mean Slavonic
   in general, and the page does not settle which.
 - **"Montenegro"** (Ralston, Machal, and Karadžić's place label "Ц. г.") is recorded as
   Montenegrins. In the 19th century they were often counted as Serbs, Karadžić among
   others, and a reader may prefer that.
-- **The Bay of Kotor** (Karadžić's "у Боци", "у Рисну", "Бокески") is recorded as
+- **The Bay of Kotor** (Karadžić's "у Боци", "у Рисну", "Бокески", "у Грбљу") is recorded as
   Montenegrins, following the Montenegro row. In 1852 the Boka was Austrian Dalmatia,
   its people Orthodox and Catholic, and a reader may prefer Serbs or Croats.
 - **Herzegovina** (Karadžić's place label "Ерц.") is recorded as Serbs, as Karadžić

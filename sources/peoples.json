@@ -67,11 +67,11 @@
       "pilot": "vampir /names/variants/1: the flag (an interpretation not stated on the page) is cleared by the table; the row is listed as contested instead."
     },
     {
-      "term": "Kief and Chernigof (Governments of), кіевской и черниговской губ.",
-      "sources": ["ralston1872", "afanasyev1868"],
+      "term": "Kief and Chernigof (Governments of), кіевской и черниговской губ., черниговской губ., черниг. губ.",
+      "sources": ["ralston1872", "afanasyev1868", "afanasyev1869", "afanasyev1865"],
       "people": "Ukrainians",
       "region": "Governments of Kief and Chernigof",
-      "reasoning": "Both governments lie in Little-Russia, which the table maps to Ukrainians; a bare government name takes the people of the region it belongs to, not the people of the empire. Afanasyev names the same two governments in Russian (\"Въ кіевской и черниговской губ.\", 1868 p.330).",
+      "reasoning": "Both governments lie in Little-Russia, which the table maps to Ukrainians; a bare government name takes the people of the region it belongs to, not the people of the empire. Afanasyev names the same two governments in Russian (\"Въ кіевской и черниговской губ.\", 1868 p.330), and the Chernigof Government alone as a place label on a word (\"свирѣпица (черниг. губ.)\", 1869 p.104).",
       "contested": true,
       "note": "The pilot filed these as Russians by the context rule (Ralston is writing about Russian peasants). A reader may prefer that reading for the 1870s, or object that the modern border is being read back.",
       "pilot": "leshy /peoples_regions/3 would change from Russians to Ukrainians. The Phase 1 flag on it is not in the v2 log, so no current flag changes."
@@ -87,11 +87,11 @@
       "pilot": "rusalka /names/variants/2: the attribution flag is cleared by the table (the OCR part of the flag stands). vampir's Phase 1 Kharkov row is not in the v2 entry, so nothing changes there."
     },
     {
-      "term": "Ruthenians",
-      "sources": ["ralston1872"],
+      "term": "Ruthenians, русинъ, русина, русины, русинамъ",
+      "sources": ["ralston1872", "afanasyev1869", "afanasyev1865", "afanasyev1868"],
       "people": "Ukrainians",
       "region": "Ruthenians",
-      "reasoning": "Ralston's Ruthenians are the East Slavs of Austrian Galicia and Hungary, whom the modern usage counts as Ukrainians; the region text keeps \"Ruthenians\".",
+      "reasoning": "Ralston's Ruthenians are the East Slavs of Austrian Galicia and Hungary, whom the modern usage counts as Ukrainians; the region text keeps \"Ruthenians\". Afanasyev's \"русинъ\" is the same word in Russian: the man who carries the Plague maiden in his legend is a \"русинъ\" (1869 p.107), and the next legend is set in Podolia (p.111).",
       "contested": true,
       "note": "Some of these communities identify as Rusyns, a separate people, not as Ukrainians. The table chooses Ukrainians and says so.",
       "pilot": "domovoi: the term was left unmapped in a note (ralston1872 p.122). A re-run would add a Ukrainians row; the entry is not re-run."
@@ -289,10 +289,10 @@
       "pilot": "No pilot entry uses the term; nothing changes."
     },
     {
-      "term": "На Руси (\"in Rus'\")",
-      "sources": ["afanasyev1868", "afanasyev1869"],
+      "term": "На Руси (\"in Rus'\"), Иа Руси",
+      "sources": ["afanasyev1868", "afanasyev1869", "afanasyev1865"],
       "people": "Russians",
-      "reasoning": "\"На Руси есть сказка про Лихо одноглазое\" (1868 p.698) introduces the tale that Afanasyev then sets against a \"малорусскій варіантъ\" (p.699) and calls \"великорусской сказкѣ\" (p.700), so here Rus' is the Great Russian tradition. On 1869 p.549 (\"На Руси думаютъ, что колдунъ ... можетъ ... сдѣлать его оборотнемъ\") the next sentence turns to \"На Украйнѣ и въ Бѣлоруссіи\", which may be a contrast (Great Russians) or a narrowing of a statement about all the East Slavs.",
+      "reasoning": "\"На Руси есть сказка про Лихо одноглазое\" (1868 p.698) introduces the tale that Afanasyev then sets against a \"малорусскій варіантъ\" (p.699) and calls \"великорусской сказкѣ\" (p.700), so here Rus' is the Great Russian tradition. On 1869 p.549 (\"На Руси думаютъ, что колдунъ ... можетъ ... сдѣлать его оборотнемъ\") the next sentence turns to \"На Украйнѣ и въ Бѣлоруссіи\", which may be a contrast (Great Russians) or a narrowing of a statement about all the East Slavs. \"Иа Руси\" is the OCR of \"На Руси\" on 1865 p.512 (\"Иа Руси она слыветъ Жаръ-птицею, у чеховъ и словаковъ ...\"), listed because the cited page prints it so; there Rus' is set against the Czechs and Slovaks, not against another East Slav people.",
       "contested": true,
       "note": "Rus' can name all the East Slavs. On 1868 pp.698-700 the pages set it against a Little-Russian form, which settles Russians there; on 1869 p.549 the page does not settle it, so the row is contested and a reader may take it as East Slavs in general.",
       "pilot": "No pilot entry uses the term; nothing changes."
@@ -316,11 +316,11 @@
       "pilot": "No pilot entry uses the term; nothing changes."
     },
     {
-      "term": "Montenegro, Montenegrins, Montenegrin, Ц. г., Ц.г., Црној гори, Црне горе, Црна гора",
-      "sources": ["ralston1873", "machal1918", "karadzic1852", "karadzic1818", "ralston1872"],
+      "term": "Montenegro, Montenegrins, Montenegrin, Ц. г., Ц.г., Црној гори, Црне горе, Црна гора, Черногоріи, Черногорію",
+      "sources": ["ralston1873", "machal1918", "karadzic1852", "karadzic1818", "ralston1872", "afanasyev1868", "afanasyev1869", "afanasyev1865"],
       "people": "Montenegrins",
       "region": "Montenegro",
-      "reasoning": "Ralston cites \"one of the Songs of Montenegro\" (1873 p.205, footnote); the songs are those of the Montenegrins. Machal writes \"In Montenegro a distinction\" (1918 p.227) and \"The Montenegrins personify the soul\" (p.228). Karadžić marks words used in Montenegro \"(у Ц. г.)\", for example s.v.Здухач (1852 leaf 223, where the OCR reads \"Ц.г.\"), and writes the name out as \"Црној гори\" (s.v.мора, 1852 leaf 383).",
+      "reasoning": "Ralston cites \"one of the Songs of Montenegro\" (1873 p.205, footnote); the songs are those of the Montenegrins. Machal writes \"In Montenegro a distinction\" (1918 p.227) and \"The Montenegrins personify the soul\" (p.228). Karadžić marks words used in Montenegro \"(у Ц. г.)\", for example s.v.Здухач (1852 leaf 223, where the OCR reads \"Ц.г.\"), and writes the name out as \"Црној гори\" (s.v.мора, 1852 leaf 383). Afanasyev's Russian form: \"Въ Сербіи и Черногоріи мора ... признается за демоническаго духа\" (1868 p.101).",
       "contested": true,
       "note": "A new people value. In the 19th century the Montenegrins were commonly counted as Serbs, Karadžić counted them so, and the songs belong to the Serbian epic tradition, so a reader may prefer Serbs. Karadžić's \"Ц. г.\" is a place label on a word in a Serbian dictionary, not a statement about who the speakers were.",
       "pilot": "No pilot entry uses the term; nothing changes."
@@ -366,11 +366,11 @@
       "pilot": "No pilot entry uses the term; nothing changes."
     },
     {
-      "term": "у Боци, у Рисну, Бокески",
+      "term": "у Боци, у Рисну, Бокески, у Грбљу",
       "sources": ["karadzic1852"],
       "people": "Montenegrins",
       "region": "Bay of Kotor (Boka)",
-      "reasoning": "Karadžić marks words used in the Bay of Kotor \"(у Боци)\" (s.v.Вједогоња, 1852 leaf 81) and in its town Risan \"(у Рисну)\" (s.v.Једогоња, leaf 267), and on the same page sets \"Бокески\" (the men of Boka) against the Neapolitans. The Boka is now in Montenegro, and the row follows the contested Montenegro row.",
+      "reasoning": "Karadžić marks words used in the Bay of Kotor \"(у Боци)\" (s.v.Вједогоња, 1852 leaf 81) and in its town Risan \"(у Рисну)\" (s.v.Једогоња, leaf 267), and on the same page sets \"Бокески\" (the men of Boka) against the Neapolitans. Grbalj, the district behind Budva at the mouth of the Boka, is named the same way: \"У Грбљу има читава молитва коју онај којега мора дави ваља да очита\" (s.v.мора, 1852 leaf 383, where the OCR reads \"чнтава\" and \"давн\"). The Boka is now in Montenegro, and the row follows the contested Montenegro row.",
       "contested": true,
       "note": "In 1852 the Boka was Austrian Dalmatia, not Montenegro, and its people were Orthodox and Catholic; Karadžić counted them as Serbs, and a reader may prefer Serbs, or Croats for the Catholics. The page names a place, not a people.",
       "pilot": "No pilot entry uses the term; nothing changes."
@@ -423,6 +423,105 @@
       "reasoning": "Afanasyev places a cure there (\"Въ орловской губ. больнаго купаютъ въ отварѣ липоваго цвѣта\", 1869 p.94). Orel was a Great Russian government.",
       "contested": false,
       "note": "None.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Olonets Government, олонецкой губ.",
+      "sources": ["ralston1872", "afanasyev1865", "afanasyev1868", "afanasyev1869"],
+      "people": "Russians",
+      "region": "Olonets Government",
+      "reasoning": "\"No woman in the Olonets Government thinks of laying aside her spindle without uttering a prayer\" (Ralston 1872 p.133), from Afanasyev's \"въ олонецкой губ. ни одна баба не покидаетъ ...\" (1868 p.101). Olonets was a Great Russian government.",
+      "contested": false,
+      "note": "The government also held Karelians and Vepsians, who are not Slavs and get no row; the pages speak of the Russian peasant women there.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Vologda Government, вологодской губ., вологодской губерніи",
+      "sources": ["ralston1873", "afanasyev1865", "afanasyev1869"],
+      "people": "Russians",
+      "region": "Vologda Government",
+      "reasoning": "Ralston gives a tale's provenance as \"From the Vologda Government\" (1873 p.214, footnote), and Afanasyev writes \"въ вологодской губ. морозы называются калинники\" (1865 p.583). Vologda was a Great Russian government.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Tomsk Government, томской губ.",
+      "sources": ["ralston1872", "afanasyev1865", "afanasyev1868", "afanasyev1869"],
+      "people": "Russians",
+      "region": "Tomsk Government",
+      "reasoning": "\"In the Tomsk Government, on the Eve of the Epiphany, the peasants place ... little cakes\" (Ralston 1872 p.134), and Afanasyev's \"въ томской губ. сильному («жгучему») морозу дается эпитетъ\" (1865 p.583). Tomsk is a Siberian government, and the table already maps Siberia to Russians.",
+      "contested": false,
+      "note": "The government also held Siberian peoples who are not Slavs and get no row; both pages speak of Russian settlers.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Tver Government, тверской губ.",
+      "sources": ["ralston1872", "ralston1873", "afanasyev1865", "afanasyev1868", "afanasyev1869"],
+      "people": "Russians",
+      "region": "Tver Government",
+      "reasoning": "Afanasyev writes \"Въ тверской губ. въ день похоронъ хозяинъ дома ставитъ на столъ кипу блиновъ\" (1868 p.52, footnote). Tver was a Great Russian government.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Nijegorod Government, нижегородской губ.",
+      "sources": ["ralston1872", "ralston1873", "afanasyev1865", "afanasyev1868", "afanasyev1869"],
+      "people": "Russians",
+      "region": "Nijegorod Government",
+      "reasoning": "Ralston gives a Fire Bird tale's provenance as \"From the Nijegorod Government\" (1873 p.285, footnote to Khudyakof's collection). Nizhny Novgorod was a Great Russian government.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Kazan",
+      "sources": ["ralston1873", "ralston1872", "machal1918"],
+      "people": "Russians",
+      "region": "Kazan",
+      "reasoning": "Ralston's footnote to the Frost tale gives a Russian variant from Afanasyev as \"written down in Kazan\" (1873 p.223). The tale is in Russian, in a Russian collection, and Kazan was a government of European Russia whose largest people was the Russians.",
+      "contested": false,
+      "note": "Kazan was also the chief city of the Tatars, who are not Slavs and get no row; the page fixes only where the tale was written down, and the table reads its teller as Russian.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Kursk Government, курской губ.",
+      "sources": ["ralston1873", "afanasyev1865", "afanasyev1868", "afanasyev1869"],
+      "people": "Russians",
+      "region": "Kursk Government",
+      "reasoning": "Ralston writes \"In a variant from the Kursk Government (Afanasief IV. No 42. b), the stepdaughter is left by her father\" (1873 p.221). Most of the government was Great Russian.",
+      "contested": true,
+      "note": "Follows the Voroneje row: the south-western districts of Kursk were largely Little-Russian (Ukrainian) settlement, and the page does not say which district the variant came from, so a reader may file it as Ukrainians.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Podolia, Подоліи, подольской губ., Подолянинъ",
+      "sources": ["ralston1872", "afanasyev1865", "afanasyev1868", "afanasyev1869"],
+      "people": "Ukrainians",
+      "region": "Podolia",
+      "reasoning": "Afanasyev writes \"Поѣздъ Чумы въ Подоліи называютъ гоминъ\" and tells the legend of a \"Подолянинъ\" who met it, whom the same passage calls a \"русинъ\" (1869 p.111), and \"Въ подольской губ. вѣрятъ, что нечистый можетъ являться\" (1865 p.529). Podolia was a government of Little-Russia; same rule as Kief and Chernigof.",
+      "contested": true,
+      "note": "Podolia belonged to Poland until 1793 and its landowners and towns were largely Polish and Jewish, so a reader may file a Podolian usage as Poles; the pilot's context rule would have filed it as Russians. The table follows Kief and Chernigof and the page's own \"русинъ\".",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Bukovina, Буковинѣ",
+      "sources": ["ralston1873", "afanasyev1865"],
+      "people": "Ukrainians",
+      "region": "Bukovina",
+      "reasoning": "Ralston sets \"a version of the story which comes from the Bukovina\" beside \"the German or the Russian tale\" (1873 p.286). The Slavs of the Bukovina were the Ruthenians, whom the table maps to Ukrainians; the Hutsuls row already places them there.",
+      "contested": true,
+      "note": "The page names a place, not a people, and the Bukovina was also Romanian and German-speaking; a Romanian version would get no row, since Romanians are not Slavs. Karadžić's \"буковина\" (beech wood) is a common noun and is not listed.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "хорутане, хорутанъ, хорутанская, хорутанской, хорутанскому, хорутанскомъ, хорутанскимъ, хорутанскихъ, хорутанскою, хорутанскую, хорутанскія (\"Carinthian\")",
+      "sources": ["afanasyev1865", "afanasyev1868", "afanasyev1869"],
+      "people": "Slovenes",
+      "reasoning": "In 19th-century Russian the хорутане are the Slovenes (of Carinthia, Carniola and Styria). Afanasyev cites \"хорутанской приповѣдки\" (1868 p.295), \"Въ хорутанской редакціи этой сказки\" (1868 p.311) and \"По хорутанскому преданію, Куга переѣзжала на ладьѣ черезъ рѣку Саву\" (1869 p.113), the Sava being the Slovene river.",
+      "contested": false,
+      "note": "The word is a regional name for the Slovenes, not an umbrella; the entry's region keeps \"хорутанскій\" where it matters.",
       "pilot": "No pilot entry uses the term; nothing changes."
     }
   ]
