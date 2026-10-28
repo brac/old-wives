@@ -42,6 +42,8 @@ export interface PageRecord {
   text: string;
   /** Set only when page_label_source is "header" and no header number was found on the leaf. */
   page_inferred?: true;
+  /** Set only when page_label_source is "header" and IA's own label for the leaf differs from `page`. */
+  ia_page?: string | null;
 }
 
 /** Repository root, resolved from this file's location (src/corpus/). */

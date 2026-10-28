@@ -29,7 +29,7 @@ describe("deepLinkMode", () => {
   it("allows only archive.org page sources with IA's own labels", () => {
     expect(deepLinkMode({ iaItem: item, locator: "page", pageLabelSource: undefined })).toBe("ia-label");
     expect(deepLinkMode({ iaItem: item, locator: "page", pageLabelSource: "ia" })).toBe("ia-label");
-    expect(deepLinkMode({ iaItem: item, locator: "page", pageLabelSource: "header" })).toBe("item");
+    expect(deepLinkMode({ iaItem: item, locator: "page", pageLabelSource: "header" })).toBe("header-ia-label");
     expect(deepLinkMode({ iaItem: item, locator: "headword", pageLabelSource: undefined })).toBe("item");
     expect(deepLinkMode({ iaItem: undefined, locator: "page", pageLabelSource: undefined })).toBe("item");
   });
@@ -72,10 +72,44 @@ describe("chips on real entries", () => {
         const s = sources.get(parseCite(tag).sourceId)!;
         if (s.deepLinkMode === "item" || parseCite(tag).kind === "sv") {
           expect(c.href, tag).not.toMatch(/\/page\//);
+        } else if (s.url && s.deepLinkMode === "header-ia-label") {
+          expect(c.href === s.url || c.href.startsWith(`${s.url}/page/`), tag).toBe(true);
         } else if (s.url) {
           expect([s.url, `${s.url}/page/${encodeURIComponent(parseCite(tag).locus.split("-")[0]!)}`], tag).toContain(c.href);
         }
       }
     }
+  });
+});
+
+describe("header-labelled sources (phase 4a)", () => {
+  // Máchal 1918 around the plates: IA counts the plate leaves, the printed headers do not.
+  const hdr = [
+    { leaf: 125, page: "87" }, // blank plate leaf, kept on IA's label
+    { leaf: 129, page: "87", iaPage: "91" },
+    { leaf: 139, page: "95", iaPage: "101" },
+    { leaf: 145, page: "101", iaPage: "107" },
+    { leaf: 153, page: "115", page_inferred: true },
+    { leaf: 160, page: "115", iaPage: "108" },
+    { leaf: 161, page: "108" },
+    { leaf: 286, page: "240" },
+  ];
+  it("links a header label by the cited leaf's IA label", () => {
+    expect(deepLink(item, "header-ia-label", parseCite("machal1918:p.95"), hdr)).toBe(
+      `https://archive.org/details/${item}/page/101`,
+    );
+    expect(deepLink(item, "header-ia-label", parseCite("machal1918:p.240"), hdr)).toBe(
+      `https://archive.org/details/${item}/page/240`,
+    );
+  });
+  it("keeps the item link when the header label or the IA label is not unique", () => {
+    expect(deepLink(item, "header-ia-label", parseCite("machal1918:p.87"), hdr)).toBeUndefined();
+    expect(deepLink(item, "header-ia-label", parseCite("machal1918:p.115"), hdr)).toBeUndefined();
+    // header 101 names leaf 145 only, but no other leaf claims IA 107: linked.
+    expect(deepLink(item, "header-ia-label", parseCite("machal1918:pp.101-102"), hdr)).toBe(
+      `https://archive.org/details/${item}/page/107`,
+    );
+    // header 108 is unique, but IA 108 is claimed by leaf 160 as well: no link.
+    expect(deepLink(item, "header-ia-label", parseCite("machal1918:p.108"), hdr)).toBeUndefined();
   });
 });

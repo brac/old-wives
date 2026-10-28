@@ -16,7 +16,9 @@ const TABLE: Record<string, { rule: string | string[]; path: string; stage: Stag
   "untagged-clause": { rule: "minItems", path: "/appearance/0/cites", stage: "draft" },
   "clause-missing-cites": { rule: "required", path: "/appearance/0", stage: "draft" },
   "bad-tag-grammar": { rule: "pattern", path: "/appearance/0/cites/0", stage: "draft" },
-  "people-slavic": { rule: "pattern", path: "/peoples_regions/0/people", stage: "draft" },
+  // "Slavic" is also outside the people table, so it trips R-PEOPLE as well as the schema pattern.
+  "people-slavic": { rule: ["pattern", "R-PEOPLE"], path: "/peoples_regions/0/people", stage: "draft" },
+  "people-not-in-table": { rule: "R-PEOPLE", path: "/peoples_regions/0/people", stage: "draft" },
   "empty-appearance-no-scene": { rule: "minItems", path: "/scene", stage: "draft" },
   "unknown-property": { rule: "unevaluatedProperties", path: "/", stage: "draft" },
   "bad-family": { rule: "enum", path: "/family/value", stage: "draft" },
@@ -101,11 +103,17 @@ describe("Slavic umbrella terms", () => {
   test.each(["Slavic", "slav", "SLAVS", "Slavonic", " slavic "])("rejects %j", (people) => {
     const obj = { ...base, peoples_regions: [{ people, cites: ["ralston1872:p.123"] }] };
     const rules = validateEntry(obj, { stage: "draft", basename: "fixture-seen" }).map((i) => i.rule);
-    expect(rules).toEqual(["pattern"]);
+    // The schema pattern rejects it; it is also outside the people table (R-PEOPLE).
+    expect(rules.sort()).toEqual(["R-PEOPLE", "pattern"]);
   });
-  test.each(["East Slavs", "Russians", "Slovaks", "Slovenes"])("accepts %j", (people) => {
+  test.each(["Russians", "Slovaks", "Slovenes"])("accepts %j", (people) => {
     const obj = { ...base, peoples_regions: [{ people, cites: ["ralston1872:p.123"] }] };
     expect(validateEntry(obj, { stage: "draft", basename: "fixture-seen" })).toEqual([]);
+  });
+  test('"East Slavs" passes the umbrella pattern but is not in the people table', () => {
+    const obj = { ...base, peoples_regions: [{ people: "East Slavs", cites: ["ralston1872:p.123"] }] };
+    const rules = validateEntry(obj, { stage: "draft", basename: "fixture-seen" }).map((i) => i.rule);
+    expect(rules).toEqual(["R-PEOPLE"]);
   });
 });
 

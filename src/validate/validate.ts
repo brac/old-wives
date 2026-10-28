@@ -75,6 +75,46 @@ function resolveIssues(cites: { tag: string; path: string }[]): Issue[] {
   return issues;
 }
 
+let peopleSet: Set<string> | undefined;
+
+/** The `people` values of sources/peoples.json: the only peoples an entry may record (R-PEOPLE). */
+export function tablePeoples(): Set<string> {
+  if (!peopleSet) {
+    const url = new URL("../../sources/peoples.json", import.meta.url);
+    const table = JSON.parse(readFileSync(url, "utf8")) as { rows: { people: string }[] };
+    peopleSet = new Set(table.rows.map((r) => r.people));
+  }
+  return peopleSet;
+}
+
+/**
+ * R-PEOPLE: every `people` string and every item of a `peoples` array is a people in the mapping
+ * table. The schema already rejects the umbrella terms; this rejects anything the table does not list.
+ */
+function peopleIssues(value: unknown, at: (string | number)[] = []): Issue[] {
+  const out: Issue[] = [];
+  const check = (v: unknown, path: (string | number)[]) => {
+    if (typeof v === "string" && !tablePeoples().has(v)) {
+      out.push({
+        rule: "R-PEOPLE",
+        path: pointer(path),
+        message: `people "${v}" is not in sources/peoples.json`,
+        severity: "error",
+      });
+    }
+  };
+  if (Array.isArray(value)) {
+    value.forEach((v, i) => out.push(...peopleIssues(v, [...at, i])));
+  } else if (isRecord(value)) {
+    for (const [k, v] of Object.entries(value)) {
+      if (k === "people") check(v, [...at, k]);
+      else if (k === "peoples" && Array.isArray(v)) v.forEach((x, i) => check(x, [...at, k, i]));
+      else out.push(...peopleIssues(v, [...at, k]));
+    }
+  }
+  return out;
+}
+
 function loadSchema(name: string): object {
   const url = new URL(`../../schema/${name}`, import.meta.url);
   return JSON.parse(readFileSync(url, "utf8")) as object;
@@ -316,6 +356,9 @@ export function validateEntry(obj: unknown, opts: EntryOptions): Issue[] {
   }
 
   issues.push(...familyIssues(obj), ...formIssues(obj));
+
+  // R-PEOPLE (an error at both stages)
+  issues.push(...peopleIssues(obj));
 
   // R-ID
   issues.push(...idIssue(obj, "id", opts.basename));

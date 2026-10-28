@@ -47,10 +47,29 @@ describe:"*, followed by the appearance clauses from the entry with their citati
 
 Entries name specific peoples (Russians, Ukrainians, Serbs and so on), never just
 "Slavic". The nineteenth-century sources often use labels that do not map neatly onto
-present-day peoples, such as "Little-Russia", Lusatia, "Ruthenians" or Kharkov. In this
-volume each such mapping was made inside the entry where it came up, and is flagged
-there. A single mapping table for these labels is still to come, before the Slavic
-volume grows past the pilot.
+present-day peoples, such as "Little-Russia", Lusatia, "Ruthenians" or Kharkov. In the
+ten pilot entries each such mapping was made inside the entry where it came up, and is
+flagged there. From the next tranche on, every label goes through one mapping table,
+`sources/peoples.json`, which gives the people each label is recorded as and why. An
+entry keeps the source's own word in its region text.
+
+### Contested mappings
+
+These rows of the table are a choice a reader may reasonably dispute. The table applies
+them, and says here what the objection is:
+
+- **"Ruthenians"** (Ralston) are recorded as Ukrainians. Some of these communities
+  identify as Rusyns, a separate people.
+- **The Governments of Kief and Chernigof** (Ralston) are recorded as Ukrainians, as
+  part of Little-Russia. The pilot filed them as Russians, because Ralston writes of
+  Russian peasants; a reader may prefer that reading for the 1870s.
+- **Kharkov** (Ralston, Afanasyev) is recorded as Ukrainians, on the same rule.
+- **"South-Russian"** (Ralston) is recorded as Ukrainians. The page does not say it
+  means Little-Russian, and the term can also cover the Don and New Russia.
+- **Afanasyev's "у насъ" ("among us")** is recorded as Russians, though the same
+  passage says the belief survives chiefly in the Ukraine and White Russia.
+- **Frombald's "Rätzisch" (Rascian)** is recorded as Serbs. The word named a church and
+  a frontier status as much as a people.
 
 ## Licences
 

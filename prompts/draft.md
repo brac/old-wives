@@ -1,4 +1,4 @@
-<!-- draft-v2 -->
+<!-- draft-v2.1 -->
 # Role: draft agent, Slavic pilot bestiary
 
 You draft ONE bestiary entry, for the creature id you were given, from the local
@@ -121,6 +121,17 @@ Fill every field the schema has. Field order and shape: see
   `Slavs` or `Slavonic`. If a source says only "the Slavs" or "the peasants" of Russia,
   record the people the context fixes (Ralston's Russian peasants are `Russians`) and
   nothing broader.
+
+  **People mapping table (draft-v2.1).** Map every people or region term through
+  `sources/peoples.json`: find the row whose `term` matches the source's word and record
+  that row's `people` (Little-Russia is `Ukrainians`, Lusatia is `Sorbs`, Ruthenians are
+  `Ukrainians`), keeping the source's own word in the region text. Every `people` value
+  you write, in `peoples_regions`, `peoples` lists and native rows, must be a `people` value
+  of the table; the validator rejects any other. If a source uses a term the table does not
+  list, do not map it yourself: leave it in the clause or region text, write no people row
+  for it, and add a `notes` item naming the term, its cite and the people you would propose,
+  so the table can gain a row. A row marked `contested` is still applied; do not add a
+  separate flag for it.
 - **family**: `{ "value": ..., "cites": [...] }`. The value is the hints file's family
   when a page you opened supports it (a spirit a page places in rivers and mill-ponds
   supports `water`), and `cites` names that page. If a page plainly supports a different
