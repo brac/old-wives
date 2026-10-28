@@ -38,15 +38,24 @@ export function parseTag(tag: string): ParsedTag | null {
 }
 
 /** True when normalised `line` starts with normalised `head` followed by a non-letter or the end. */
-function startsWithHeadword(line: string, head: string): boolean {
-  const n = normalize(line);
+function startsWithHeadwordNormalized(n: string, head: string): boolean {
   if (!n.startsWith(head)) return false;
   const next = n.slice(head.length, head.length + 2);
   return next.length === 0 || !/^\p{L}/u.test(next);
 }
 
 export function createResolver(corpus: Corpus): (tag: string) => ResolveResult {
-  return (tag: string): ResolveResult => {
+  const lineCache = new Map<string, string[][]>();
+  const normalizedLines = (id: string, pages: PageRecord[]): string[][] => {
+    let c = lineCache.get(id);
+    if (!c) {
+      c = pages.map((r) => r.text.split("\n").map((line) => normalize(line)));
+      lineCache.set(id, c);
+    }
+    return c;
+  };
+  const memo = new Map<string, ResolveResult>();
+  const resolveUncached = (tag: string): ResolveResult => {
     const parsed = parseTag(tag);
     if (!parsed) return { ok: false, reason: `bad tag grammar: ${tag}` };
     const source = corpus.sources.find((s) => s.id === parsed.source);
@@ -82,10 +91,19 @@ export function createResolver(corpus: Corpus): (tag: string) => ResolveResult {
       if (r) return { ok: true, source, pages: [r], via: "override" };
       return { ok: false, reason: `override leaf ${override.leaf} not in corpus` };
     }
-    for (const r of pages) {
-      if (r.text.split("\n").some((line) => startsWithHeadword(line, head))) return { ok: true, source, pages: [r], via: "match" };
+    const lines = normalizedLines(source.id, pages);
+    for (let i = 0; i < pages.length; i++) {
+      if (lines[i]!.some((n) => startsWithHeadwordNormalized(n, head))) return { ok: true, source, pages: [pages[i]!], via: "match" };
     }
     return { ok: false, reason: "headword not found" };
+  };
+  return (tag: string): ResolveResult => {
+    let r = memo.get(tag);
+    if (!r) {
+      r = resolveUncached(tag);
+      memo.set(tag, r);
+    }
+    return r;
   };
 }
 
