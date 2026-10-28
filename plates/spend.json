@@ -1,6 +1,6 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 4.969,
+  "total_usd": 5.209,
   "rows": [
     {
       "date": "2026-10-27T16:17:19.854Z",
@@ -1570,6 +1570,72 @@
       "status": "done",
       "request_id": "01a18037-fc1a-7ec2-bee4-47fef81fe52c",
       "file": "plates\\iter4\\out\\domovoi\\a-s34\\domovoi-qwen-s34.full.png"
+    },
+    {
+      "date": "2026-10-28T02:16:33.034Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 41,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a1804b-7fff-7b32-8700-7c0c0171321c",
+      "file": "plates\\iter5\\out\\poludnitsa\\a-s41\\poludnitsa-qwen-s41.full.png"
+    },
+    {
+      "date": "2026-10-28T02:17:18.510Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 42,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a1804c-3176-7863-a89a-c7a7f2d42387",
+      "file": "plates\\iter5\\out\\poludnitsa\\a-s42\\poludnitsa-qwen-s42.full.png"
+    },
+    {
+      "date": "2026-10-28T02:17:41.523Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "drekavac",
+      "seed": 41,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a1804c-8b59-78d1-bdac-3e4051a574e7",
+      "file": "plates\\iter5\\out\\drekavac\\a-s41\\drekavac-qwen-s41.full.png"
+    },
+    {
+      "date": "2026-10-28T02:18:05.332Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "drekavac",
+      "seed": 42,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a1804c-e85c-7070-8511-8aa6410416d5",
+      "file": "plates\\iter5\\out\\drekavac\\a-s42\\drekavac-qwen-s42.full.png"
+    },
+    {
+      "date": "2026-10-28T02:18:28.346Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vodyanoi",
+      "seed": 41,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a1804d-4249-7591-aa12-3ab0b93a54f0",
+      "file": "plates\\iter5\\out\\vodyanoi\\a-s41\\vodyanoi-qwen-s41.full.png"
+    },
+    {
+      "date": "2026-10-28T02:18:51.656Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vodyanoi",
+      "seed": 42,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a1804d-9d5c-7a13-af74-18cffd164b73",
+      "file": "plates\\iter5\\out\\vodyanoi\\a-s42\\vodyanoi-qwen-s42.full.png"
     }
   ]
 }

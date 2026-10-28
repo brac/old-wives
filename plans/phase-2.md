@@ -183,3 +183,20 @@ in the brief.
     - vodyanoi is a frog-human crossbreed with a frog head and frog skin, not a man in a mask.
   - Iter4 used seeds 31 and 32. Drekavac and domovoi also got 33 and 34, because 31 and 32 came back tinted (16–26%).
   - The review sheet shows the colour percentage per plate as information only; Ben's eye decides. The ledger is $4.969.
+- **Round-four verdict (Ben, 2026-10-27).** Seven plates are approved:
+  - baba-yaga `iter2/a2-s21`;
+  - zmey-gorynych `iter2/a-s21`;
+  - leshy `iter4/a-s31` (Ben said "looks good" without naming a seed; seed 31 was his earlier preference, so confirm);
+  - bannik `iter4/a-s31` ("a little white; off-white preferred, but fine; stop spending on it");
+  - domovoi `iter4/a-s33`;
+  - rusalka `iter4/a-s31`;
+  - vampir `iter4/a-s31`.
+- **Rejected in round four:**
+  - poludnitsa: one seed topless, the other a living woman with a tongue;
+  - drekavac: a skinny man in odd poses;
+  - vodyanoi: a man in a frog hat.
+- **2d-h** rewrites those three:
+  - poludnitsa: a half-rotted skull head with a flower crown, wispy hair, a detached lower jaw hanging by sinew and the tongue; fully clothed;
+  - drekavac: a demon with reverse knees, a gaping mouth of needle teeth, bat-like ears and a sunken stomach;
+  - vodyanoi: a blobby, bloated frog creature, only vaguely human, with a big belly.
+  - Each was drawn on seeds 41 and 42 under `plates/iter5/out/`. The ledger is $5.209.

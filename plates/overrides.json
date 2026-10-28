@@ -45,12 +45,12 @@
   },
   "poludnitsa": {
     "visual": {
-      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. The gruesome corpse of a young village woman, half rotted, with a dead, horrible expression. Her lower jaw is entirely missing: her face ends at her upper teeth, and below them hangs only a very long, grotesque, creepy tongue, dangling down over her throat and chest and tapering to a point. Grey, rotting skin and flesh cling to her skull and body, torn open in places to show bone; her arms are thin and withered but still fleshed. Her eyes are solid white, rotted and blind, in deep black sockets. She wears a rotted, tattered peasant festival dress and a wreath of withered field flowers on her matted hair, and holds a curved sickle. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A gruesome corpse whose head is a half-rotted skull, with patches of rotting flesh still clinging to it and thin, wispy, rotting hair hanging from it, crowned with a wreath of field flowers. Her lower jaw is detached and hangs loose by a strip of sinew below her upper teeth, and a long, gruesome tongue hangs out and down over her chest. Her eyes are solid white and rotted, in deep sockets. She is fully clothed, covered from neck to ankle in a rotting, tattered, long-sleeved peasant dress, and her bony, withered hands hold a curved sickle. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
       "basis": "visual tradition",
       "by": "Ben",
       "date": "2026-10-27",
-      "note": "Ben, round 4: plates drifted to colour and photorealism with backgrounds; the style is restated at the head and every setting removed. No lower jaw at all; solid white rotted eyes; never happy. Seed 32's tongue and rot were good.",
-      "negative_extra": "photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, lower jaw, chin, lips, smile, happy expression, complete skeleton, clean bare skull"
+      "note": "Ben, round 5: one seed was topless, the other a living peasant woman with a tongue; the head must be a half-rotted skull with a flower crown and a detached lower jaw.",
+      "negative_extra": "photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, nudity, bare breasts, bare shoulders, living woman, healthy skin, pretty face, smile"
     }
   },
   "bannik": {
@@ -65,12 +65,12 @@
   },
   "drekavac": {
     "visual": {
-      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A gaunt, malnourished, hairless monster, humanoid but monstrous. Thin skin is stretched tight over a starved, fleshed body: its belly is sucked in hollow beneath the rib cage, and its limbs are skinny and sinewy. Its legs are digitigrade and reverse-jointed, like a dog's hind legs: it stands on its toes, and the knee bends backward. Its forearms are very long and end in long, sharp claws. Its face is narrow and pointed, with long pointed ears and a vicious mouth full of sharp teeth, and a row of bony knobs runs down its spine. Crouching. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
-      "negative_extra": "photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, hair, fur, goat, ghost, skeleton, bare bones, bird, chicken",
+      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A demonic, monstrous creature, a starved demon that is humanoid only in outline. Its legs bend backward at the knee like a dog's hind legs, reverse-jointed, so it stands on its toes. Its stomach is sunken deep beneath the ribs, and its hairless skin is stretched tight. It has huge, long, pointed ears like a bat's. Its mouth gapes wide open, full of long, sharp, needle-like teeth. Its long arms end in long claws, and bony spikes run down its spine. It is hunched and crouched, snarling. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+      "negative_extra": "photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, hair, fur, goat, ghost, skeleton, bird, chicken, man, person, human face, clothes",
       "basis": "visual tradition",
       "by": "Ben",
       "date": "2026-10-27",
-      "note": "Ben, round 4: plates drifted to colour and photorealism with backgrounds; the style is restated at the head and every setting removed. Both seeds were right apart from the style."
+      "note": "Ben, round 5: read as a skinny man in odd poses; redone as a demon with reverse knees, an open mouth of sharp teeth and large pointed ears."
     }
   },
   "domovoi": {
@@ -105,12 +105,12 @@
   },
   "vodyanoi": {
     "visual": {
-      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A swamp creature that is a crossbreed of a huge frog and a man. His body is human in shape and stands upright, but his head is shaped like a frog's, with a very wide frog mouth stretching across it and big, bulging, alien frog eyes set far apart. His skin is frog skin all over: slimy, warty and mottled. A gross, scraggly, mossy beard hangs from his chin, and stringy, scraggly hair hangs from the top of his head. His fingers are long frog fingers, webbed, with round tips and claws. He has a fat, sagging belly. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
-      "negative_extra": "photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, hat, cap, mask, gloves, clothes, old man, human face, swamp, water",
+      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A big, blobby, bloated frog creature, only vaguely human in shape, with a huge, round, fat belly and short, stumpy legs. Its broad frog head sinks into its shoulders with no neck, and has a very wide frog mouth and big, bulging frog eyes set far apart. Its skin is warty, slimy frog skin all over. A gross, scraggly, mossy beard hangs from its chin, and stringy, scraggly hair hangs from the top of its head. Its hands are webbed frog hands with long fingers. It sits squat like a frog. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+      "negative_extra": "photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, hat, cap, mask, hood, gloves, clothes, man, human face, swamp, water",
       "basis": "visual tradition",
       "by": "Ben",
       "date": "2026-10-27",
-      "note": "Ben, round 4: plates drifted to colour and photorealism with backgrounds; the style is restated at the head and every setting removed. Read as an old man in a frog mask and gloves; he should be a frog-human crossbreed with a frog head and frog skin."
+      "note": "Ben, round 5: looked like a man in a frog hat; he is a big blobby frog creature with a large belly, only vaguely human."
     }
   }
 }
