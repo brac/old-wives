@@ -75,6 +75,18 @@ them, and says here what the objection is:
   in general, and the page does not settle which.
 - **"Montenegro"** (Ralston) is recorded as Montenegrins. In the 19th century they were
   often counted as Serbs, and a reader may prefer that.
+- **Afanasyev's "На Руси" ("in Rus'")** is recorded as Russians. Where he sets it
+  against a Little-Russian form that is clear; elsewhere Rus' may mean all the East
+  Slavs.
+- **"Dalmatian"** (Ralston) is recorded as Croatians. The Slavs of Dalmatia included
+  Serbs, and 19th-century writers often called its speech Serbian.
+- **"The Slavs in Istria"** (Machal) are recorded as Croatians, the majority there. The
+  north of Istria was Slovene, and the page names no people.
+- **Galicia** (Ralston, Afanasyev) is recorded as Ukrainians, the Ruthenians of its
+  eastern half. Western Galicia was Polish, and one of Afanasyev's pages pairs it with
+  Poland.
+- **The Hutsuls** (Afanasyev) are recorded as Ukrainians, as the Ruthenians are. Some
+  Hutsuls identify as a separate people or as Rusyns.
 - **Frombald's "Rätzisch" (Rascian)** is recorded as Serbs. The word named a church and
   a frontier status as much as a people.
 

@@ -399,6 +399,21 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   often counted them as Serbs. "Southern Slavs" and "South-Slavonian" get no row: the
   schema requires a people and an umbrella term is not one. A Great Russian government
   maps to Russians uncontested.
+- **2026-10-28, 4b-peoples-2: the terms the later drafts met (oboroten, divozenka, dolya;
+  skritek met none) are in the table.** New rows, all contested: Dalmatian (Croatians;
+  Serbs rejected, since 19th-century usage often counted Dalmatian speech as Serbian);
+  "Slavs in Istria" (Croatians, the majority and the first form Machal gives; Slovenes
+  rejected, though the north of Istria was Slovene); Galicia (Ukrainians, as the
+  Ruthenians of eastern Galicia and Ralston's Mavki; Poles rejected, though Afanasyev
+  1868 p.343 pairs it with Poland and a Polish name); Hutsuls (Ukrainians, following the
+  Ruthenians row). Spellings added to existing rows: "Great-Russian", "великорусскіе",
+  "Великорусская" (Great Russian); "малор.", "малорусская", "малороссійскихъ"
+  (Little-Russians); "Украйна" (the Ukraine); "Бѣлоруссія", "бѣлор." (White-Russia);
+  "Сербы" (Serbs); "поляковъ", "Польшѣ" (Poles); "чеховъ", "чешскому", "Богеміи" (Czechs).
+  **Reversed:** "На Руси" is now contested. On 1869 p.549 the page moves from "На Руси"
+  to "На Украйнѣ и въ Бѣлоруссіи", which may be a contrast or a narrowing of an all-East-
+  Slav statement, so the 4b-peoples reading (settled by 1868 pp.698-700) does not carry
+  over. No row: Lett (not Slavic) and "Jugo-Slavs" (umbrella; the schema requires a people).
 
 ## Phase 4c and 4d (2026-10-28)
 

@@ -40,19 +40,19 @@
       "pilot": "leshy /peoples_regions/6: the flag (a translation choice the page does not confirm) is cleared by the table. rusalka /peoples_regions/4 and vodyanoi /peoples_regions/7 are unchanged."
     },
     {
-      "term": "Little-Russians, Little Russians, Little-Russian, малорусскій",
+      "term": "Little-Russians, Little Russians, Little-Russian, малорусскій, малор., малорусская, малороссійскихъ",
       "sources": ["ralston1872", "machal1918", "afanasyev1869", "ralston1873", "afanasyev1868"],
       "people": "Ukrainians",
-      "reasoning": "The older English and Russian name for Ukrainians; Machal uses it beside \"Ukranians\" for the same people. Ralston prints the adjective \"a Little-Russian variant\" (1873 p.181) and Afanasyev \"малорусскій варіантъ\" (1868 p.699) for the same tale.",
+      "reasoning": "The older English and Russian name for Ukrainians; Machal uses it beside \"Ukranians\" for the same people. Ralston prints the adjective \"a Little-Russian variant\" (1873 p.181) and Afanasyev \"малорусскій варіантъ\" (1868 p.699) for the same tale. Afanasyev abbreviates the adjective as \"малор.\" in a list of word forms (\"Волкодлакъ (малор. вовкулакъ, вовкунъ, бѣлор. вавкалакъ\", 1869 p.527), and has \"малорусская сказка\" (1869 p.392) and \"Въ пѣсняхъ малороссійскихъ\" (1869 p.394).",
       "contested": false,
       "note": "As for Little-Russia: the word stays in region text, the people is Ukrainians.",
       "pilot": "No v2 flag. The Phase 1 flags on it (domovoi, baba-yaga) would be cleared."
     },
     {
-      "term": "the Ukraine, Ukranians",
-      "sources": ["ralston1872", "machal1918"],
+      "term": "the Ukraine, Ukranians, Украйна, Украйнѣ",
+      "sources": ["ralston1872", "machal1918", "afanasyev1869"],
       "people": "Ukrainians",
-      "reasoning": "Named directly (Machal prints the misspelling \"Ukranians\").",
+      "reasoning": "Named directly (Machal prints the misspelling \"Ukranians\"). Afanasyev: \"На Украйнѣ и въ Бѣлоруссіи такихъ невольныхъ оборотней называютъ вовкулаками\" (1869 p.549).",
       "contested": false,
       "note": "None.",
       "pilot": "No change."
@@ -97,11 +97,11 @@
       "pilot": "domovoi: the term was left unmapped in a note (ralston1872 p.122). A re-run would add a Ukrainians row; the entry is not re-run."
     },
     {
-      "term": "White-Russia, White-Russians, White Russians",
-      "sources": ["ralston1872", "machal1918"],
+      "term": "White-Russia, White-Russians, White Russians, Бѣлоруссія, Бѣлоруссіи, бѣлор.",
+      "sources": ["ralston1872", "machal1918", "afanasyev1869"],
       "people": "Belarusians",
       "region": "White-Russia",
-      "reasoning": "White-Russia is the older English name for Belarus, and White-Russians for its people.",
+      "reasoning": "White-Russia is the older English name for Belarus, and White-Russians for its people. Afanasyev names the land (\"въ Бѣлоруссіи\", 1869 p.549) and abbreviates the adjective as \"бѣлор.\" (\"бѣлор. вавкалакъ\", 1869 p.527).",
       "contested": false,
       "note": "None.",
       "pilot": "No change."
@@ -127,11 +127,11 @@
       "pilot": "domovoi /peoples_regions/8: the flag (people inferred from the region) is cleared by the table."
     },
     {
-      "term": "Bohemian, Bohemians, Bohemia, Czekhs",
-      "sources": ["machal1918", "ralston1872", "afanasyev1869"],
+      "term": "Bohemian, Bohemians, Bohemia, Czekhs, чехи, чеховъ, чешскій, чешскому, Богемія, Богеміи",
+      "sources": ["machal1918", "ralston1872", "afanasyev1869", "afanasyev1868"],
       "people": "Czechs",
       "region": "Bohemia",
-      "reasoning": "Bohemian is the older English name for Czech; Ralston prints \"Czekhs\". Draft-v2 already gave this as its example.",
+      "reasoning": "Bohemian is the older English name for Czech; Ralston prints \"Czekhs\". Draft-v2 already gave this as its example. Afanasyev's Russian forms: \"По чешскому повѣрью\" and \"у чеховъ полудница\" (1869 p.311), \"въ Богеміи\" (1868 p.343).",
       "contested": false,
       "note": "None.",
       "pilot": "No change."
@@ -156,11 +156,11 @@
       "pilot": "poludnitsa /peoples_regions/4: the flag (people fixed only by context) is cleared by the table."
     },
     {
-      "term": "Poles, Polish, Poland",
-      "sources": ["machal1918", "ralston1872", "afanasyev1869"],
+      "term": "Poles, Polish, Poland, поляки, поляковъ, Польша, Польшѣ",
+      "sources": ["machal1918", "ralston1872", "afanasyev1869", "afanasyev1868"],
       "people": "Poles",
       "region": "Poland",
-      "reasoning": "Named directly.",
+      "reasoning": "Named directly. Afanasyev: \"У поляковъ встрѣчаемъ повѣрье\" (1869 p.528), \"Въ Польшѣ и Галиціи\" (1868 p.343).",
       "contested": false,
       "note": "None.",
       "pilot": "No change. (The baba-yaga /peoples_regions/6 flag is about whether Jendzyna is Baba Yaga, not about the people, and stands.)"
@@ -175,10 +175,10 @@
       "pilot": "No change."
     },
     {
-      "term": "Servian, Serbs, Serbian, сербской, сербскимъ",
+      "term": "Servian, Serbs, Serbian, сербской, сербскимъ, Сербы",
       "sources": ["ralston1872", "karadzic1818", "afanasyev1869"],
       "people": "Serbs",
-      "reasoning": "Servian is the older English name for Serbian; Karadžić's dictionary is of the Serbian language and its usage. Afanasyev's adjective (\"сербской и словенской вилы\", \"сербскимъ виламъ\", 1869 p.182).",
+      "reasoning": "Servian is the older English name for Serbian; Karadžić's dictionary is of the Serbian language and its usage. Afanasyev's adjective (\"сербской и словенской вилы\", \"сербскимъ виламъ\", 1869 p.182). Afanasyev names the people (\"Сербы утверждаютъ, что вукодлаки\", 1869 p.528).",
       "contested": false,
       "note": "None.",
       "pilot": "No change."
@@ -290,18 +290,18 @@
     },
     {
       "term": "На Руси (\"in Rus'\")",
-      "sources": ["afanasyev1868"],
+      "sources": ["afanasyev1868", "afanasyev1869"],
       "people": "Russians",
-      "reasoning": "\"На Руси есть сказка про Лихо одноглазое\" (1868 p.698) introduces the tale that Afanasyev then sets against a \"малорусскій варіантъ\" (p.699) and calls \"великорусской сказкѣ\" (p.700), so here Rus' is the Great Russian tradition.",
-      "contested": false,
-      "note": "Rus' can name all the East Slavs; the row reads it as Russians only where the pages themselves set it against a Little-Russian form, as on pp.698-700.",
+      "reasoning": "\"На Руси есть сказка про Лихо одноглазое\" (1868 p.698) introduces the tale that Afanasyev then sets against a \"малорусскій варіантъ\" (p.699) and calls \"великорусской сказкѣ\" (p.700), so here Rus' is the Great Russian tradition. On 1869 p.549 (\"На Руси думаютъ, что колдунъ ... можетъ ... сдѣлать его оборотнемъ\") the next sentence turns to \"На Украйнѣ и въ Бѣлоруссіи\", which may be a contrast (Great Russians) or a narrowing of a statement about all the East Slavs.",
+      "contested": true,
+      "note": "Rus' can name all the East Slavs. On 1868 pp.698-700 the pages set it against a Little-Russian form, which settles Russians there; on 1869 p.549 the page does not settle it, so the row is contested and a reader may take it as East Slavs in general.",
       "pilot": "No pilot entry uses the term; nothing changes."
     },
     {
-      "term": "великорусскій, великорусской (\"Great Russian\")",
-      "sources": ["afanasyev1868"],
+      "term": "великорусскій, великорусской (\"Great Russian\"), Great-Russian, великорусскіе, Великорусская",
+      "sources": ["afanasyev1868", "ralston1872", "afanasyev1869"],
       "people": "Russians",
-      "reasoning": "Named directly: \"Какъ въ великорусской сказкѣ\" (1868 p.700). Great Russian is the 19th-century name for the Russians as distinct from the Little- and White-Russians.",
+      "reasoning": "Named directly: \"Какъ въ великорусской сказкѣ\" (1868 p.700). Great Russian is the 19th-century name for the Russians as distinct from the Little- and White-Russians. Ralston prints \"The Great-Russian volkodlak becomes, says Afanasief, in Little-Russian vovkulak\" (1872 p.404; the OCR reads \"volTcodldlc\"); Afanasyev has \"великорусскіе поселяне\" (1869 p.532) and \"Великорусская редакція этой сказки\" (1869 p.393).",
       "contested": false,
       "note": "None.",
       "pilot": "No pilot entry uses the term; nothing changes."
@@ -323,6 +323,46 @@
       "reasoning": "Ralston cites \"one of the Songs of Montenegro\" (1873 p.205, footnote); the songs are those of the Montenegrins.",
       "contested": true,
       "note": "A new people value. In the 19th century the Montenegrins were commonly counted as Serbs, and the songs belong to the Serbian epic tradition, so a reader may prefer Serbs.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Dalmatian, Dalmatia",
+      "sources": ["ralston1872"],
+      "people": "Croatians",
+      "region": "Dalmatia",
+      "reasoning": "Ralston lists word forms by language (\"vukodlak in Dalmatian vakudluk, in Bulgarian vrkodlak\", 1872 p.404); the Slavic speech of Dalmatia is Croatian.",
+      "contested": true,
+      "note": "Dalmatia's Slavs included Orthodox Serbs, and 19th-century writers often counted Dalmatian speech as Serbian, so a reader may prefer Serbs. The region text keeps \"Dalmatia\".",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Slavs in Istria",
+      "sources": ["machal1918"],
+      "people": "Croatians",
+      "region": "Istria",
+      "reasoning": "\"The Slavs in Istria believe that every single family has its own Vukodlak\" (Machal p.229); the Slavs of Istria were mostly Croats, and Machal gives the Croatian form Krsnik first.",
+      "contested": true,
+      "note": "The page names no people. Istria's Slavs were Croats and, in the north, Slovenes, and Machal also gives the Slovene form Kresnik, so a reader may file it as Slovenes or as both.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Galicia, Галиція, Галиціи",
+      "sources": ["ralston1872", "afanasyev1868", "afanasyev1869"],
+      "people": "Ukrainians",
+      "region": "Galicia",
+      "reasoning": "Ralston pairs Galicia with Little-Russia for the Mavki (1872 p.142), and Afanasyev's Galician rusalki on the mountains are the same beings (1869 p.124); the Slavs of eastern Galicia were the Ruthenians, whom the table maps to Ukrainians.",
+      "contested": true,
+      "note": "Western Galicia was Polish, and on 1868 p.343 (\"Въ Польшѣ и Галиціи лисунки называются dziwożony\") Afanasyev pairs it with Poland and gives a Polish name, so a reader may file that usage as Poles. The region text keeps \"Galicia\".",
+      "pilot": "rusalka: the Galician mountain clause (afanasyev1869 p.124) has no people row and says so in a note; a re-run would add a contested Ukrainians row. The entry is not re-run."
+    },
+    {
+      "term": "Hutsuls, гуцулы, гуцуловъ",
+      "sources": ["afanasyev1869"],
+      "people": "Ukrainians",
+      "region": "Hutsuls",
+      "reasoning": "Afanasyev cites \"По разсказамъ гуцуловъ\" for the wild women (1869 p.803, addenda to pp.343-4). The Hutsuls are highlanders of Galicia and Bukovina, among the people the table maps as Ruthenians to Ukrainians.",
+      "contested": true,
+      "note": "Follows the Ruthenians row: some Hutsuls identify as a separate people or as Rusyns rather than Ukrainians. The table chooses Ukrainians and says so.",
       "pilot": "No pilot entry uses the term; nothing changes."
     }
   ]
