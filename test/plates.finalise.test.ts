@@ -40,7 +40,7 @@ let root: string;
 
 /** A tiny repo: one pick with a 6x8 grey PNG (one tinted pixel at the origin) and its sidecar. */
 async function makeRepo(dirName: string, sidecar: Sidecar): Promise<string> {
-  const r = mkdtempSync(join(tmpdir(), "beasts-finalise-"));
+  const r = mkdtempSync(join(tmpdir(), "old-wives-finalise-"));
   const src = join(r, "plates", "iterX", "out", "test-beast", dirName);
   mkdirSync(src, { recursive: true });
   const px = Buffer.alloc(6 * 8 * 3, 200);

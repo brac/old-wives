@@ -14,7 +14,7 @@ import {
   type SourceEntry,
 } from "./manifest.js";
 
-const USER_AGENT = "beasts-corpus/0.1 (+https://github.com/brac/beasts)";
+const USER_AGENT = "old-wives-corpus/0.1 (+https://github.com/brac/old-wives)";
 const MAX_CONCURRENT = 2;
 const MAX_ATTEMPTS = 6;
 

@@ -1,4 +1,4 @@
-# Beasts plate style sheet (volume 1, Slavic pilot)
+# Old Wives plate style sheet (volume 1, Slavic pilot)
 
 This sheet lets a later volume match the ten Slavic plates without re-deriving anything.
 Each rule here was settled by Ben during Phase 2. The reasons and the rejected

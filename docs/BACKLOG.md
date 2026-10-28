@@ -334,3 +334,11 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   public when the repo is flipped. Changing it means rewriting history, which is Ben's
   call. The lighter option is the GitHub noreply address for future commits only.
 
+
+## Public name and launch (2026-10-28)
+
+- **The public name is Old Wives** (as in "old wives' tale", without the tale). The
+  site title is "Old Wives: a field guide to Slavic folklore creatures", the GitHub
+  repo is `brac/old-wives`, and the npm package names follow. Rejected: "Beasts", the
+  working name from Phase 3, which stays in the historical plans and reports and in the
+  local folder name. The `v0.1.0` tag predates the rename.

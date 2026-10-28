@@ -5,7 +5,7 @@ description: What the field guide includes and excludes, how the plates relate t
 
 # About this book
 
-Beasts is a field guide to creatures from folk belief. This first volume covers ten
+Old Wives is a field guide to creatures from folk belief. This first volume covers ten
 Slavic creatures as a pilot. Each clause of lore in an entry is tagged with its source
 and page, and every entry has an attestation grade that says how well the
 creature is attested.
@@ -63,5 +63,5 @@ volume grows past the pilot.
 
 If an entry gets something wrong, a misread source, a wrong page, a missing variant,
 please open an issue at
-[github.com/brac/beasts/issues](https://github.com/brac/beasts/issues) using the
+[github.com/brac/old-wives/issues](https://github.com/brac/old-wives/issues) using the
 "Entry correction" template. Name the entry and, where you can, the source and page.

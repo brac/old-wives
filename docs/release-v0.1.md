@@ -1,6 +1,6 @@
-# Beasts v0.1.0: the Slavic pilot
+# Old Wives v0.1.0: the Slavic pilot
 
-*Beasts: a field guide to Slavic folklore creatures.* A bestiary in which every claim
+*Old Wives: a field guide to Slavic folklore creatures.* A bestiary in which every claim
 carries a citation tag that resolves to a page of a public-domain source, so each claim
 can be checked against the text it came from.
 
@@ -30,7 +30,7 @@ can be checked against the text it came from.
 
 - Code: MIT (`LICENSE`).
 - Dataset (`data/`, `plates/slavic/`, `schema/`): CC BY 4.0 (`LICENSE-DATA`). Cite as
-  *Beasts: a field guide to Slavic folklore creatures*, v0.1.0, by brac (2026).
+  *Old Wives: a field guide to Slavic folklore creatures*, v0.1.0, by brac (2026).
 - Source texts (`sources/pages/`) and style references (`style/refs/`): public domain.
 
 ## What is not in this release

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://beasts.local/schema/verify-log.schema.json",
+  "$id": "https://old-wives.local/schema/verify-log.schema.json",
   "title": "Verify log",
   "description": "Every item the verify agent removed, downgraded, re-tagged, re-formed or flagged in one entry, with its reason. `family` is an item too: a family the cited pages do not support is logged in `removed` (field `/family`, text its value), a re-cited one in `retagged`.",
   "type": "object",

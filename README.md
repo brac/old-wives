@@ -1,4 +1,4 @@
-# Beasts
+# Old Wives
 
 A field guide to Slavic folklore creatures, built so that every claim can be checked.
 Each of the ten entries is a JSON file in which every clause carries a citation tag
@@ -28,8 +28,8 @@ avoided or appeased are in.
 - **Licences:** code is MIT (`LICENSE`). The dataset, meaning `data/`, `plates/slavic/`
   and `schema/`, is CC BY 4.0 (`LICENSE-DATA`). The corpus under `sources/pages/` and the
   style references under `style/refs/` are public domain (`sources/README.md`).
-- **Cite as:** *Beasts: a field guide to Slavic folklore creatures*, v0.1.0, by brac
-  (2026), https://github.com/brac/beasts, CC BY 4.0.
+- **Cite as:** *Old Wives: a field guide to Slavic folklore creatures*, v0.1.0, by brac
+  (2026), https://github.com/brac/old-wives, CC BY 4.0.
 
 ## How it was made
 

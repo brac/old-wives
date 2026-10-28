@@ -110,7 +110,7 @@ describe("Slavic umbrella terms", () => {
 });
 
 describe("R-RELATED", () => {
-  const tmp = mkdtempSync(join(tmpdir(), "beasts-related-"));
+  const tmp = mkdtempSync(join(tmpdir(), "old-wives-related-"));
   afterAll(() => rmSync(tmp, { recursive: true, force: true }));
   const entry = readFileSync(join(FIXTURES, "valid/draft/fixture-seen.json"), "utf8");
   writeFileSync(join(tmp, "fixture-seen.json"), entry);

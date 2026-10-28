@@ -19,7 +19,7 @@ const SHIPPED_PLATE = /\.(web|thumb)\.webp$/;
 function pinImportMetaUrl() {
   const root = REPO_ROOT.replace(/\\/g, "/");
   return {
-    name: "beasts:pin-import-meta-url",
+    name: "old-wives:pin-import-meta-url",
     enforce: /** @type {const} */ ("pre"),
     /** @param {string} code @param {string} id */
     transform(code, id) {
@@ -32,9 +32,9 @@ function pinImportMetaUrl() {
 }
 
 /** Copies the shipped plate sizes into the build and writes the OG contact sheet. */
-function beastsAssets() {
+function oldWivesAssets() {
   return {
-    name: "beasts:assets",
+    name: "old-wives:assets",
     hooks: {
       /** @param {{ server: import("vite").ViteDevServer }} opts */
       "astro:server:setup": ({ server }) => {
@@ -64,6 +64,6 @@ function beastsAssets() {
 export default defineConfig({
   output: "static",
   trailingSlash: "ignore",
-  integrations: [beastsAssets()],
+  integrations: [oldWivesAssets()],
   vite: { plugins: [pinImportMetaUrl()] },
 });

@@ -1,6 +1,6 @@
 ---
 title: The data
-description: How to get the Beasts dataset as static JSON files, what the attestation grades mean, and how to cite it.
+description: How to get the Old Wives dataset as static JSON files, what the attestation grades mean, and how to cite it.
 ---
 
 # The data
@@ -35,7 +35,7 @@ console.log(domovoi.attestation.grade); // "widely-attested"
 ## The repository
 
 The same files, with the history of every change, are on GitHub at
-[github.com/brac/beasts](https://github.com/brac/beasts). The entries are in
+[github.com/brac/old-wives](https://github.com/brac/old-wives). The entries are in
 `data/entries/`, the schema in `schema/entry.schema.json` and the plates in
 `plates/slavic/`.
 
@@ -63,7 +63,7 @@ you credit the source. The site's code is MIT.
 
 ## How to cite
 
-> Beasts: a field guide to Slavic folklore creatures, v0.1.0 (2026).
-> https://github.com/brac/beasts. CC BY 4.0.
+> Old Wives: a field guide to Slavic folklore creatures, v0.1.0 (2026).
+> https://github.com/brac/old-wives. CC BY 4.0.
 
 When you cite a single entry, add its id, for example `domovoi`.
