@@ -23,17 +23,29 @@ describe("makeRow", () => {
 });
 
 describe("totals and the cap", () => {
-  test("sums usd over draft and verify per creature; PASS at the cap, OVER above it", () => {
+  test("sums usd over all runs for display; the verdict checks draft usd against the cap", () => {
     const rows = [
       makeRow("vila", "draft", 80_000, M, D), // 0.32
       makeRow("vila", "verify", 45_000, M, D), // 0.18 -> 0.50 total
-      makeRow("koschei", "draft", 100_000, M, D), // 0.40
-      makeRow("koschei", "verify", 30_000, M, D), // 0.12 -> 0.52 total
+      makeRow("koschei", "draft", 130_000, M, D), // 0.52
+      makeRow("koschei", "verify", 30_000, M, D), // 0.12 -> 0.64 total
     ];
     const t = totals(rows, 0.5);
-    expect(t.find((x) => x.creature === "vila")).toMatchObject({ runs: 2, tokens: 125_000, usd: 0.5, usd_high: 2.5, verdict: "PASS" });
-    expect(t.find((x) => x.creature === "koschei")).toMatchObject({ usd: 0.52, verdict: "OVER" });
+    expect(t.find((x) => x.creature === "vila")).toMatchObject({ runs: 2, tokens: 125_000, usd: 0.5, usd_high: 2.5, draft_usd: 0.32, verdict: "PASS" });
+    expect(t.find((x) => x.creature === "koschei")).toMatchObject({ usd: 0.64, draft_usd: 0.52, verdict: "OVER" });
     expect(totals(rows, 0.6).every((x) => x.verdict === "PASS")).toBe(true);
+  });
+
+  test("draft usd 0.40 with verify usd 0.30 is PASS at cap 0.50; verify is not capped", () => {
+    const rows = [
+      makeRow("polevik", "draft", 100_000, M, D), // 0.40
+      makeRow("polevik", "verify", 75_000, M, D), // 0.30 -> 0.70 total
+    ];
+    expect(totals(rows, 0.5)[0]).toMatchObject({ usd: 0.7, draft_usd: 0.4, verdict: "PASS" });
+  });
+
+  test("draft usd 0.52 is OVER at cap 0.50", () => {
+    expect(totals([makeRow("vila", "draft", 130_000, M, D)], 0.5)[0]).toMatchObject({ draft_usd: 0.52, verdict: "OVER" });
   });
 
   test("the cap is checked against usd, not usd_high", () => {

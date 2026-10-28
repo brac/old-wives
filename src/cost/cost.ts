@@ -1,11 +1,12 @@
 // Per-creature cost record for draft and verify runs (Phase 4 settled decision: draft cost
-// cap $0.50 per creature, tokens converted at the API price of the model used).
+// cap $0.50 per creature, checked against draft runs only; verify runs are recorded but not capped; tokens converted at the API price of the model used).
 //
 // The harness reports only the total subagent tokens of a run, with no input/output split.
 // So each row carries two prices: `usd` prices every token at the model's input rate, and
 // `usd_high` prices every token at its output rate. The true cost lies between the two and
 // is input-dominated (a draft or verify run reads far more corpus text than it writes), so
-// `usd` is the figure the cap is checked against and `usd_high` is the bound Ben can see.
+// `usd` is the figure the draft cap is checked against and `usd_high` is the bound Ben can see.
+// Verify runs are recorded but not capped.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 
@@ -24,7 +25,7 @@ export interface CostRow {
   stage: Stage;
   model: string;
   subagent_tokens: number;
-  /** tokens x input price: the figure the cap is checked against. */
+  /** tokens x input price: the figure the draft cap is checked against. */
   usd: number;
   /** tokens x output price: the upper bound. */
   usd_high: number;
@@ -38,7 +39,7 @@ export interface CostFile {
 }
 
 export const DESCRIPTION =
-  "One row per draft or verify run. subagent_tokens is the harness's total for the run (no input/output split). usd = tokens x the model's input price, usd_high = tokens x its output price; the true cost lies between and is input-dominated. The $0.50 per-creature cap is checked against the sum of usd. Written by `npm run cost -- add`.";
+  "One row per draft or verify run. subagent_tokens is the harness's total for the run (no input/output split). usd = tokens x the model's input price, usd_high = tokens x its output price; the true cost lies between and is input-dominated. The $0.50 per-creature cap is checked against the sum of usd over draft rows; verify rows are recorded but not capped. Written by `npm run cost -- add`.";
 
 const round6 = (n: number) => Math.round(n * 1e6) / 1e6;
 
@@ -66,21 +67,24 @@ export interface CreatureTotal {
   tokens: number;
   usd: number;
   usd_high: number;
+  /** sum of usd over draft runs only: the figure checked against the cap. */
+  draft_usd: number;
   verdict: "PASS" | "OVER";
 }
 
-/** Sum of usd over a creature's draft and verify runs, checked against the cap. */
+/** Sums tokens and usd over all of a creature's runs for display; the verdict checks draft_usd against the cap. */
 export function totals(rows: CostRow[], cap: number): CreatureTotal[] {
   const by = new Map<string, CreatureTotal>();
   for (const r of rows) {
-    const t = by.get(r.creature) ?? { creature: r.creature, runs: 0, tokens: 0, usd: 0, usd_high: 0, verdict: "PASS" as const };
+    const t = by.get(r.creature) ?? { creature: r.creature, runs: 0, tokens: 0, usd: 0, usd_high: 0, draft_usd: 0, verdict: "PASS" as const };
     t.runs++;
     t.tokens += r.subagent_tokens;
     t.usd = round6(t.usd + r.usd);
     t.usd_high = round6(t.usd_high + r.usd_high);
+    if (r.stage === "draft") t.draft_usd = round6(t.draft_usd + r.usd);
     by.set(r.creature, t);
   }
-  return [...by.values()].map((t) => ({ ...t, verdict: t.usd > cap ? "OVER" : "PASS" }));
+  return [...by.values()].map((t) => ({ ...t, verdict: t.draft_usd > cap ? "OVER" : "PASS" }));
 }
 
 export function readCost(path: string): CostFile {
@@ -101,6 +105,6 @@ export function appendRow(path: string, row: CostRow): CostFile {
 export function formatTotals(ts: CreatureTotal[], cap: number): string[] {
   if (ts.length === 0) return ["no runs recorded"];
   return ts.map(
-    (t) => `${t.creature}  runs ${t.runs}  tokens ${t.tokens}  usd ${t.usd.toFixed(4)} (high ${t.usd_high.toFixed(4)})  cap ${cap.toFixed(2)}  ${t.verdict}`,
+    (t) => `${t.creature}  runs ${t.runs}  tokens ${t.tokens}  usd ${t.usd.toFixed(4)} (high ${t.usd_high.toFixed(4)})  draft_usd ${t.draft_usd.toFixed(4)}  cap ${cap.toFixed(2)}  ${t.verdict}`,
   );
 }
