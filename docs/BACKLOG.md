@@ -10,6 +10,7 @@ and the project-scoped "why" behind decisions, each with the rejected alternativ
 | 0 | Foundation: repo scaffold, entry JSON Schema and validator, PD source corpus with manifest and citation resolver, draft and verify role prompts | No |
 | 1 | Stages 1 and 2 for all ten pilot creatures: drafted, independently verified, graded entries plus per-entry verify diffs | No |
 | 2 | Style sheet, image generation (stage 3) and vision check (stage 4) | Yes: style and image-model brainstorm first |
+| 4 | First Slavic tranche: people-mapping table, 30 creatures drafted and verified in batches of ten under the $0.50 cap, a dictation-driven review desk, the site design review applied, a style LoRA once 30 plates are approved. Plan: `plans/phase-4.md` | Yes: review sessions of ten at the desk, LoRA pick |
 | 3 | Ship v0.1: Astro book site for the ten, scope note, method page, public-repo prep (licences, README, release notes, tag), final pilot report. Human review (stage 5) was absorbed into Phase 2, where Ben approved all ten plates. Plan: `plans/phase-3.md`. **Delivered 2026-10-27** (tags `phase-3a`, `phase-3b`, `phase-3c`, `phase-3d`, `phase-3e`; `phase-3` and `v0.1.0` follow the final report). Reports: `docs/phase3-report.md`, `docs/pilot-report.md` | Only to flip the repo public and connect Vercel |
 
 ## Decisions
@@ -342,3 +343,23 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   repo is `brac/old-wives`, and the npm package names follow. Rejected: "Beasts", the
   working name from Phase 3, which stays in the historical plans and reports and in the
   local folder name. The `v0.1.0` tag predates the rename.
+
+## Phase 4 decisions (2026-10-28)
+
+- Ben: plates keep coming from his visual-tradition text. The pilot's agent-drafted
+  descriptions produced plates that did not match the creature as commonly pictured, so
+  the pipeline does not author the visual text; Ben does, by dictation, and each text is
+  a logged human edit. Rejected: agent drafts that Ben edits (the drafts were not a
+  usable starting point in the pilot), and any fully automatic visual text.
+- Ben: the review desk takes spoken notes (Web Speech API first, fal Whisper if names
+  are mangled). Rejected: typed notes, and continuing to dictate into chat and hand-edit
+  JSON.
+- Ben: the next phase is one phase with three lanes (people table and text batch, review
+  desk, site design review), stopping at 30 creatures, then the LoRA. Rejected: three
+  sequential phases, and running to 150 before measuring cost and review load.
+- Planner, vetoable: a spoken note is turned into a revised visual text by a small model
+  and shown as a diff for approval; the model edits Ben's words only. The people table
+  is applied from this tranche on and the pilot entries are not re-run. The coverage pass
+  moves to the second tranche. The style LoRA is for look consistency and is judged by
+  redraws-to-approval, not by taste alone.
+
