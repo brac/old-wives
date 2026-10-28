@@ -200,3 +200,4 @@ in the brief.
   - drekavac: a demon with reverse knees, a gaping mouth of needle teeth, bat-like ears and a sunken stomach;
   - vodyanoi: a blobby, bloated frog creature, only vaguely human, with a big belly.
   - Each was drawn on seeds 41 and 42 under `plates/iter5/out/`. The ledger is $5.209.
+- **Round-five verdict (Ben, 2026-10-27).** These are approved: poludnitsa `iter5/a-s41`, drekavac `iter5/a-s42` and vodyanoi `iter5/a-s42`. With them, all ten plates are approved and the generation rounds are closed. The ledger is $5.209.
