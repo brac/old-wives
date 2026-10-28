@@ -414,6 +414,25 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   to "На Украйнѣ и въ Бѣлоруссіи", which may be a contrast or a narrowing of an all-East-
   Slav statement, so the 4b-peoples reading (settled by 1868 pp.698-700) does not carry
   over. No row: Lett (not Slavic) and "Jugo-Slavs" (umbrella; the schema requires a people).
+- **2026-10-28, 4b-peoples-3: rows list every form the corpus prints; a verifier matches a
+  form, not a lemma.** verify-v2.1 matches people terms against the table exactly, so
+  batch 1 lost sound content to spelling gaps alone: "Russia" and "Россіи" (kikimora),
+  "Czechs" where the row had only "Czekhs" (vila), the adjective "Bulgarian" (divozenka's
+  whole Bulgarian variant), "русское" and "русскимъ" (kikimora, oboroten), "Lusatian"
+  and "Slovenian" (divozenka), and Karadžić's "Српски" (vila). Every uncontested row
+  that maps to a people now carries the people noun, the adjective and the land name in
+  English, and the inflected Russian, Serbian, Czech and Polish forms, in the
+  orthography the sources print. Each added form was checked as a whole word in the
+  corpus with the repo's normaliser; a form the corpus never prints was not added (so
+  "Россія" is not listed: the corpus prints only "Россіи", "Россіей"). Left out as
+  ambiguous: Wends/Wendish (Sorbs, or the Slavs of the Baltic coast generally), the
+  Russian "словенскій" forms (Slavonic or Slovene; the "словенской" row stays contested),
+  "словѣне" (the old Slavs), "лужица" (also "puddle"), Morava (also the river),
+  abbreviations such as "серб." and "польск.", and the German and Latin glosses in
+  Karadžić 1818. The Russians row's note now says "Russia" can mean the whole Empire.
+  Contested rows are unchanged, so the about page is unchanged. Rejected: changing
+  verify-v2.1 to match lemmas, which would change the frozen prompt mid-tranche and break
+  comparability with the entries already verified under it.
 
 ## Phase 4c and 4d (2026-10-28)
 
