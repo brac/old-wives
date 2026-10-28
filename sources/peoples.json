@@ -40,10 +40,10 @@
       "pilot": "leshy /peoples_regions/6: the flag (a translation choice the page does not confirm) is cleared by the table. rusalka /peoples_regions/4 and vodyanoi /peoples_regions/7 are unchanged."
     },
     {
-      "term": "Little-Russians, Little Russians",
-      "sources": ["ralston1872", "machal1918", "afanasyev1869"],
+      "term": "Little-Russians, Little Russians, Little-Russian, малорусскій",
+      "sources": ["ralston1872", "machal1918", "afanasyev1869", "ralston1873", "afanasyev1868"],
       "people": "Ukrainians",
-      "reasoning": "The older English and Russian name for Ukrainians; Machal uses it beside \"Ukranians\" for the same people.",
+      "reasoning": "The older English and Russian name for Ukrainians; Machal uses it beside \"Ukranians\" for the same people. Ralston prints the adjective \"a Little-Russian variant\" (1873 p.181) and Afanasyev \"малорусскій варіантъ\" (1868 p.699) for the same tale.",
       "contested": false,
       "note": "As for Little-Russia: the word stays in region text, the people is Ukrainians.",
       "pilot": "No v2 flag. The Phase 1 flags on it (domovoi, baba-yaga) would be cleared."
@@ -58,20 +58,20 @@
       "pilot": "No change."
     },
     {
-      "term": "South-Russian",
-      "sources": ["ralston1872"],
+      "term": "South-Russian, South Russia",
+      "sources": ["ralston1872", "ralston1873"],
       "people": "Ukrainians",
-      "reasoning": "Ralston labels forms \"South-Russian\" in the same way he labels others \"Little-Russian\", for the speech of the Ukrainian governments.",
+      "reasoning": "Ralston labels forms \"South-Russian\" in the same way he labels others \"Little-Russian\", for the speech of the Ukrainian governments. Ralston 1873 p.178 has \"a proverb common to Poland and South Russia\", the same usage as a place name.",
       "contested": true,
       "note": "\"South-Russian\" is not stated to equal Little-Russian on p.410, and in other usage it can cover the Don and New Russia, which were not only Ukrainian.",
       "pilot": "vampir /names/variants/1: the flag (an interpretation not stated on the page) is cleared by the table; the row is listed as contested instead."
     },
     {
-      "term": "Kief and Chernigof (Governments of)",
-      "sources": ["ralston1872"],
+      "term": "Kief and Chernigof (Governments of), кіевской и черниговской губ.",
+      "sources": ["ralston1872", "afanasyev1868"],
       "people": "Ukrainians",
       "region": "Governments of Kief and Chernigof",
-      "reasoning": "Both governments lie in Little-Russia, which the table maps to Ukrainians; a bare government name takes the people of the region it belongs to, not the people of the empire.",
+      "reasoning": "Both governments lie in Little-Russia, which the table maps to Ukrainians; a bare government name takes the people of the region it belongs to, not the people of the empire. Afanasyev names the same two governments in Russian (\"Въ кіевской и черниговской губ.\", 1868 p.330).",
       "contested": true,
       "note": "The pilot filed these as Russians by the context rule (Ralston is writing about Russian peasants). A reader may prefer that reading for the 1870s, or object that the modern border is being read back.",
       "pilot": "leshy /peoples_regions/3 would change from Russians to Ukrainians. The Phase 1 flag on it is not in the v2 log, so no current flag changes."
@@ -175,10 +175,10 @@
       "pilot": "No change."
     },
     {
-      "term": "Servian, Serbs, Serbian",
-      "sources": ["ralston1872", "karadzic1818"],
+      "term": "Servian, Serbs, Serbian, сербской, сербскимъ",
+      "sources": ["ralston1872", "karadzic1818", "afanasyev1869"],
       "people": "Serbs",
-      "reasoning": "Servian is the older English name for Serbian; Karadžić's dictionary is of the Serbian language and its usage.",
+      "reasoning": "Servian is the older English name for Serbian; Karadžić's dictionary is of the Serbian language and its usage. Afanasyev's adjective (\"сербской и словенской вилы\", \"сербскимъ виламъ\", 1869 p.182).",
       "contested": false,
       "note": "None.",
       "pilot": "No change."
@@ -194,10 +194,10 @@
       "pilot": "vampir /peoples_regions/1 and /names/variants/12: the flags (a translation choice) are cleared by the table; the row is listed as contested instead."
     },
     {
-      "term": "Croatians",
-      "sources": ["ralston1872"],
+      "term": "Croatians, Croatia",
+      "sources": ["ralston1872", "machal1918"],
       "people": "Croatians",
-      "reasoning": "Named directly.",
+      "reasoning": "Named directly. Machal names the land (\"In Croatia young girls place fruits\", p.260).",
       "contested": false,
       "note": "None.",
       "pilot": "No change."
@@ -212,10 +212,10 @@
       "pilot": "No change."
     },
     {
-      "term": "Bulgarians",
-      "sources": ["ralston1872"],
+      "term": "Bulgarians, Bulgaria, болгары, болгаръ",
+      "sources": ["ralston1872", "machal1918", "afanasyev1869"],
       "people": "Bulgarians",
-      "reasoning": "Named directly.",
+      "reasoning": "Named directly. Machal names the land (\"in Bulgaria gay ribbons are hung on trees\", p.260); Afanasyev names the people (\"болгары знаютъ\", 1869 p.182).",
       "contested": false,
       "note": "None.",
       "pilot": "No change."
@@ -228,6 +228,102 @@
       "contested": false,
       "note": "None.",
       "pilot": "No change."
+    },
+    {
+      "term": "нашей, наше (\"our\")",
+      "sources": ["afanasyev1869", "afanasyev1868"],
+      "people": "Russians",
+      "reasoning": "Afanasyev's first-person \"our\" (\"Въ нашей старинной символикѣ\", 1869 p.221; \"наше простонародье\", 1868 p.135) is read as Russians on the same ground as the \"у насъ\" row: he writes as a Russian for Russian readers.",
+      "contested": true,
+      "note": "Neither page names a people. \"Our\" may mean all the East Slavs of the empire, or Old Rus' as a whole, rather than the Russians alone.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Perm Government",
+      "sources": ["ralston1873"],
+      "people": "Russians",
+      "region": "Perm Government",
+      "reasoning": "Ralston gives a tale's provenance as \"From the Perm Government\" (1873 p.100). The government's Slavic population was Great Russian.",
+      "contested": false,
+      "note": "The government also held Komi-Permyaks and other non-Slavic peoples; the row covers only the Russian tale Ralston cites.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Kostroma Government, костромской губ.",
+      "sources": ["afanasyev1869"],
+      "people": "Russians",
+      "region": "Kostroma Government",
+      "reasoning": "Afanasyev places a custom there (\"Въ костромской губ. вѣшаютъ въ курятникахъ камни\", 1869 p.800). Kostroma was a Great Russian government.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Saratov Government, саратовской губ.",
+      "sources": ["afanasyev1869"],
+      "people": "Russians",
+      "region": "Saratov Government",
+      "reasoning": "Afanasyev places the shishimora there (\"Въ саратовской губ. ши-ши-моръ\", 1869 p.137, footnote). Its Slavic population was Great Russian.",
+      "contested": false,
+      "note": "The government also held Volga Germans and Ukrainian settlers; the row follows the Russian-language usage Afanasyev quotes.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "пошехонскій уѣздъ, пошехонскомъ уѣздѣ (Poshekhonye district)",
+      "sources": ["afanasyev1869"],
+      "people": "Russians",
+      "region": "Poshekhonye district",
+      "reasoning": "Afanasyev cites the peasants of the district (\"Въ пошехонскомъ уѣздѣ крестьяне\", 1869 p.591). It lies in the Yaroslavl Government, which was Great Russian.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Voroneje Government",
+      "sources": ["ralston1873"],
+      "people": "Russians",
+      "region": "Voroneje Government",
+      "reasoning": "Ralston gives a tale's provenance as \"From the Voroneje Government\" (1873 p.178). Most of the government was Great Russian.",
+      "contested": true,
+      "note": "The southern districts of Voronezh were largely Little-Russian (Ukrainian) settlement, and the page does not say which district the tale came from, so a reader may file it as Ukrainians.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "На Руси (\"in Rus'\")",
+      "sources": ["afanasyev1868"],
+      "people": "Russians",
+      "reasoning": "\"На Руси есть сказка про Лихо одноглазое\" (1868 p.698) introduces the tale that Afanasyev then sets against a \"малорусскій варіантъ\" (p.699) and calls \"великорусской сказкѣ\" (p.700), so here Rus' is the Great Russian tradition.",
+      "contested": false,
+      "note": "Rus' can name all the East Slavs; the row reads it as Russians only where the pages themselves set it against a Little-Russian form, as on pp.698-700.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "великорусскій, великорусской (\"Great Russian\")",
+      "sources": ["afanasyev1868"],
+      "people": "Russians",
+      "reasoning": "Named directly: \"Какъ въ великорусской сказкѣ\" (1868 p.700). Great Russian is the 19th-century name for the Russians as distinct from the Little- and White-Russians.",
+      "contested": false,
+      "note": "None.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "словенской (\"Slovene\" or \"Slavonic\")",
+      "sources": ["afanasyev1869"],
+      "people": "Slovenes",
+      "reasoning": "\"сербской и словенской вилы\" (1869 p.182) pairs the word with the Serbian vila, which reads as a second named people, the Slovenes, among whom the vila is attested.",
+      "contested": true,
+      "note": "In 19th-century Russian \"словенскій\" can also mean Slavonic in general, which is no people; the page does not settle which Afanasyev means.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Montenegro",
+      "sources": ["ralston1873"],
+      "people": "Montenegrins",
+      "region": "Montenegro",
+      "reasoning": "Ralston cites \"one of the Songs of Montenegro\" (1873 p.205, footnote); the songs are those of the Montenegrins.",
+      "contested": true,
+      "note": "A new people value. In the 19th century the Montenegrins were commonly counted as Serbs, and the songs belong to the Serbian epic tradition, so a reader may prefer Serbs.",
+      "pilot": "No pilot entry uses the term; nothing changes."
     }
   ]
 }

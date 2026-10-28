@@ -386,6 +386,19 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   existing flags stand.
 - **Validator rule R-PEOPLE.** Every `people` value and every item of a `peoples` list
   must be a `people` value of the table, at both stages. All ten pilot entries pass.
+- **2026-10-28, 4b-peoples: the terms batch 1 met are in the table.** New rows: Afanasyev's
+  "нашей, наше" ("our"), Perm, Kostroma and Saratov Governments, Voroneje Government,
+  the Poshekhonye district, "На Руси", "великорусскій" (Great Russian), "словенской" and
+  Montenegro. Spellings added to existing rows: "Little-Russian" and "малорусскій"
+  (Little-Russians), "South Russia" (South-Russian), "кіевской и черниговской губ."
+  (Kief and Chernigof), Croatia (Croatians), Bulgaria and "болгары" (Bulgarians),
+  "сербской" (Serbs). Four new contested rows: "our", which follows "у насъ"; Voroneje,
+  whose southern districts were Little-Russian settlement; "словенской", which may mean
+  Slavonic in general rather than Slovene; and Montenegro, recorded as a new people value,
+  Montenegrins, with Serbs as the rejected alternative, since the 19th-century usage
+  often counted them as Serbs. "Southern Slavs" and "South-Slavonian" get no row: the
+  schema requires a people and an umbrella term is not one. A Great Russian government
+  maps to Russians uncontested.
 
 ## Phase 4c and 4d (2026-10-28)
 

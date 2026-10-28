@@ -67,7 +67,14 @@ them, and says here what the objection is:
 - **"South-Russian"** (Ralston) is recorded as Ukrainians. The page does not say it
   means Little-Russian, and the term can also cover the Don and New Russia.
 - **Afanasyev's "у насъ" ("among us")** is recorded as Russians, though the same
-  passage says the belief survives chiefly in the Ukraine and White Russia.
+  passage says the belief survives chiefly in the Ukraine and White Russia. His "our"
+  ("нашей", "наше") is recorded the same way.
+- **The Voroneje Government** (Ralston) is recorded as Russians, though its southern
+  districts were Little-Russian settlement and the page does not say which district.
+- **Afanasyev's "словенской"** is recorded as Slovenes. The word can also mean Slavonic
+  in general, and the page does not settle which.
+- **"Montenegro"** (Ralston) is recorded as Montenegrins. In the 19th century they were
+  often counted as Serbs, and a reader may prefer that.
 - **Frombald's "Rätzisch" (Rascian)** is recorded as Serbs. The word named a church and
   a frontier status as much as a people.
 
