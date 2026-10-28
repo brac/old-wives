@@ -5,13 +5,13 @@ description: How the ten pilot entries and plates were made, what the checks fou
 
 # Method
 
-This page describes the pipeline as it was actually run for the ten Slavic pilot
+This page describes the pipeline as I actually ran it for the ten Slavic pilot
 creatures, including the parts that did not work as planned. The numbers come from the
 project's phase reports and style sheet in the repository.
 
 ## Why a pilot
 
-The pilot took ten creatures end to end to find out whether the entry template, the
+I took ten creatures end to end in the pilot to find out whether the entry template, the
 sourcing rules and the house style hold up before scaling to the rest of the Slavic
 creatures. The ten were chosen to stress the pipeline, not because they are the ten most
 famous: easy and hard sourcing, seen and unseen creatures, regional variants, several
@@ -19,7 +19,7 @@ names across several peoples, and a named individual of a class.
 
 ## Sources
 
-Entries quote and cite public-domain works, mainly Máchal's *Slavic Mythology* (1918),
+The entries quote and cite public-domain works, mainly Máchal's *Slavic Mythology* (1918),
 Ralston's *Songs of the Russian People* (1872) and *Russian Folk-Tales* (1873),
 Afanasyev's *Poetic Views of the Slavs on Nature* (1865 to 1869) and Karadžić's Serbian
 dictionary (1818, 1852). Modern scholarship is used for checking only.
@@ -49,8 +49,8 @@ drafts padded from memory. It does not show that nothing is missing: verify open
 only the pages a draft cites, so it cannot see omissions.
 
 Each draft worked within a budget of about 100,000 tokens. Seven of the ten stopped with
-relevant pages unread, mostly in Afanasyev, and each lists those pages in its notes. The
-pilot accepts these gaps.
+relevant pages unread, mostly in Afanasyev, and each lists those pages in its notes. I
+accept these gaps for the pilot.
 
 ## Canaries
 
@@ -81,8 +81,8 @@ Two rules were set during the pilot: a single folklore collector counts as one s
 and Ralston counts as dependent on Afanasyev only where he cites him on the passage in
 question. The two pull against each other. Wherever Ralston retells Afanasyev
 without citing him, he counts as a second source, so the collector rule never takes
-effect. Under the collector rule alone, bannik and zmey-gorynych would be literary. The
-grades stand as they are for the pilot, and the rule may be revisited at scale.
+effect. Under the collector rule alone, bannik and zmey-gorynych would be literary. I have
+left the grades as they are for the pilot, and may revisit the rule at scale.
 
 ## Appearance fields
 
@@ -100,7 +100,7 @@ A study suits a bestiary built from sources, because it reads as an attempt to r
 thing rather than as finished fantasy illustration. The fine line holds detail at
 thumbnail size, and one medium keeps ten very different creatures looking like one book.
 
-Rejected along the way:
+What I rejected along the way:
 
 - lubok prints, as too old-world;
 - the illustrations from the Grimm television series, as too amateur;
@@ -111,7 +111,7 @@ Rejected along the way:
 ### Choosing a model
 
 Four setups, built on three open-weights models on fal, were compared blind on
-baba-yaga, bannik and zmey-gorynych. Qwen-Image won and was locked for the pilot. The
+baba-yaga, bannik and zmey-gorynych. Qwen-Image won, and I locked it for the pilot. The
 others:
 
 - **Z-Image:** good hatching, but the structure made no sense.
@@ -126,15 +126,15 @@ because their terms were ambiguous about releasing the output under CC BY 4.0.
 
 The plates were not generated from the sourced appearance clauses. Editing those
 clauses one by one could not change a plate's anatomy. Instead, each plate follows a
-visual description written by Ben from the popular tradition, and is marked
-interpretive in the data. The entries stay sourced. Each
-plate was drawn on two seeds, compared with popular reference images kept locally, and
-redrawn from Ben's notes until he approved it. He is the only visual judge; the
-automated vision check the plan called for was replaced by his review.
+visual description I wrote from the popular tradition, and is marked interpretive in
+the data. The entries stay sourced. Each plate was drawn on two seeds, compared with
+popular reference images I keep locally, and redrawn from my notes until I approved
+it. I am the only visual judge; my review replaced the automated vision check the plan
+called for.
 
 ### What the model does with words
 
-Five review rounds taught a few rules about prompting:
+Five review rounds taught me a few rules about prompting:
 
 - **Naming something draws it.** "No construction grid" drew a grid, and "no bigger
   than a house cat" put a cat beside the domovoi. To suppress something, leave it out

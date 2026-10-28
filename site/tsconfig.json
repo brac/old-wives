@@ -1,5 +1,15 @@
 {
   "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    // `npm run check` typechecks the site with `tsc --noEmit -p site` (Phase 4, 4d).
+    // The site's .ts files import the repo's validator, which loads CommonJS packages
+    // (ajv) through Node at build and test time, so resolve modules the way Node does
+    // rather than Astro's default "Bundler", which mistypes those default imports.
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    // Declares `?raw` imports and node: modules without relying on a generated .astro/.
+    "types": ["astro/client", "node"]
+  },
   "include": [".astro/types.d.ts", "**/*"],
   "exclude": ["dist"]
 }
