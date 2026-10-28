@@ -64,17 +64,29 @@ them, and says here what the objection is:
   part of Little-Russia. The pilot filed them as Russians, because Ralston writes of
   Russian peasants; a reader may prefer that reading for the 1870s.
 - **Kharkov** (Ralston, Afanasyev) is recorded as Ukrainians, on the same rule.
-- **"South-Russian"** (Ralston) is recorded as Ukrainians. The page does not say it
-  means Little-Russian, and the term can also cover the Don and New Russia.
+- **"South-Russian"** (Ralston, and Afanasyev's "южнорусскихъ") is recorded as
+  Ukrainians. The page does not say it means Little-Russian, and the term can also cover
+  the Don and New Russia.
 - **Afanasyev's "у насъ" ("among us")** is recorded as Russians, though the same
   passage says the belief survives chiefly in the Ukraine and White Russia. His "our"
   ("нашей", "наше") is recorded the same way.
 - **The Voroneje Government** (Ralston) is recorded as Russians, though its southern
   districts were Little-Russian settlement and the page does not say which district.
-- **Afanasyev's "словенской"** is recorded as Slovenes. The word can also mean Slavonic
+- **Afanasyev's "словенской" and "словенскія"** are recorded as Slovenes. The word can also mean Slavonic
   in general, and the page does not settle which.
-- **"Montenegro"** (Ralston) is recorded as Montenegrins. In the 19th century they were
-  often counted as Serbs, and a reader may prefer that.
+- **"Montenegro"** (Ralston, Machal, and Karadžić's place label "Ц. г.") is recorded as
+  Montenegrins. In the 19th century they were often counted as Serbs, Karadžić among
+  others, and a reader may prefer that.
+- **The Bay of Kotor** (Karadžić's "у Боци", "у Рисну", "Бокески") is recorded as
+  Montenegrins, following the Montenegro row. In 1852 the Boka was Austrian Dalmatia,
+  its people Orthodox and Catholic, and a reader may prefer Serbs or Croats.
+- **Herzegovina** (Karadžić's place label "Ерц.") is recorded as Serbs, as Karadžić
+  counted its speakers. Its Catholics and Muslims spoke the same dialect, and a reader
+  may prefer Croats or no single people.
+- **Syrmia** (Karadžić's "у Сријему") is recorded as Serbs. Syrmia also had Croats.
+- **Macedonia** (Machal) is recorded as Bulgarians, whose tradition Machal says he is
+  reporting. Macedonia's Slavs were claimed by Bulgaria and Serbia, and are now a
+  separate people, the Macedonians.
 - **Afanasyev's "На Руси" ("in Rus'")** is recorded as Russians. Where he sets it
   against a Little-Russian form that is clear; elsewhere Rus' may mean all the East
   Slavs.

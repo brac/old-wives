@@ -433,6 +433,28 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   Contested rows are unchanged, so the about page is unchanged. Rejected: changing
   verify-v2.1 to match lemmas, which would change the frozen prompt mid-tranche and break
   comparability with the entries already verified under it.
+- **2026-10-28, 4b-peoples-4: the terms batch 2 met are in the table, and a curated
+  headword override now wins over the text match.** New rows: the Archangel and Orel
+  Governments (Russians, uncontested: Great Russian governments; "Archangel" alone is not
+  listed, since it also means the archangel); Macedonia (Bulgarians, contested: Machal
+  writes of "Bulgarian tradition in Macedonia"; rejected a Macedonians value, which Machal
+  does not use); the Bay of Kotor, "у Боци", "у Рисну", "Бокески" (Montenegrins,
+  contested, following the Montenegro row; in 1852 the Boka was Austrian Dalmatia, so
+  Serbs or Croats are the rejected alternatives); Herzegovina, Karadžić's "Ерц." (Serbs,
+  contested; Croats rejected); Syrmia, "у Сријему" (Serbs, contested; Croats rejected).
+  Forms added to existing rows: "Сибиряки", "сибиряковъ" (Siberia, Russians);
+  "южнорусскихъ", "южнорусской" (South-Russian, contested Ukrainians); "словенскія"
+  (the contested "словенской" row); "Montenegrins", "Montenegrin", "Ц. г.", "Ц.г." and the
+  written-out "Црној гори" forms (Montenegro row, whose sources now include machal1918,
+  ralston1872 and both Karadžić editions). The OCR forms "Ц.г." and "Срнјему" are listed
+  because the cited pages print them so. **Resolver change:** `s.v.` now checks
+  sources/headwords/<id>.json before the text match, because the first line that starts
+  with a headword can sit on the wrong leaf: karadzic1852 "Усуд" matched a cross-reference
+  on leaf 739 (the entry is on leaf 807) and "мора" matched running text on leaf 193 (the
+  entry is on leaf 383). karadzic1818 "Вила" (OCR "Busa", leaf 113) had no match at all.
+  Every s.v. tag in data/entries and data/drafts resolves to the same leaf and text as
+  before. Rejected: a fuzzier text match (for example, preferring a line followed by a
+  part-of-speech mark), which would move existing citations without a curator looking.
 
 ## Phase 4c and 4d (2026-10-28)
 

@@ -74,14 +74,16 @@ export function createResolver(corpus: Corpus): (tag: string) => ResolveResult {
     if (source.locator !== "headword") return { ok: false, reason: `s.v. is only for headword sources; ${source.id} is cited by page` };
     const head = normalize(parsed.headword);
     if (head.length === 0) return { ok: false, reason: "empty headword" };
-    for (const r of pages) {
-      if (r.text.split("\n").some((line) => startsWithHeadword(line, head))) return { ok: true, source, pages: [r], via: "match" };
-    }
+    // A curated override wins over the text match: the first line that starts with the headword can be a
+    // cross-reference or running text on an earlier leaf (karadzic1852 усуд on leaf 739, мора on leaf 193).
     const override = corpus.headwords(source.id).find((h) => normalize(h.headword) === head);
     if (override) {
       const r = pages.find((p) => p.leaf === override.leaf);
       if (r) return { ok: true, source, pages: [r], via: "override" };
       return { ok: false, reason: `override leaf ${override.leaf} not in corpus` };
+    }
+    for (const r of pages) {
+      if (r.text.split("\n").some((line) => startsWithHeadword(line, head))) return { ok: true, source, pages: [r], via: "match" };
     }
     return { ok: false, reason: "headword not found" };
   };

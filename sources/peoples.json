@@ -11,11 +11,11 @@
       "pilot": "No change. Rows filed this way in all ten pilot entries stand."
     },
     {
-      "term": "Siberian Russians, Siberia",
-      "sources": ["machal1918", "afanasyev1869"],
+      "term": "Siberian Russians, Siberia, Сибиряки, сибиряковъ",
+      "sources": ["machal1918", "afanasyev1869", "afanasyev1865", "afanasyev1868"],
       "people": "Russians",
       "region": "Siberia",
-      "reasoning": "Machal prints \"Siberian Russians\" (p.268); Afanasyev's southern Siberia sits in the same Russian-language tradition.",
+      "reasoning": "Machal prints \"Siberian Russians\" (p.268); Afanasyev's southern Siberia sits in the same Russian-language tradition. Afanasyev's \"Сибиряки\" (1869 p.84: \"Сибиряки совѣтуютъ больному чернить свое лицо\") and \"сибиряковъ\" (1868 p.102) are the same Russian settlers.",
       "contested": false,
       "note": "Siberia also has non-Slavic peoples; the row covers only the Russian settlers the pages describe.",
       "pilot": "No change (poludnitsa rows 10-11)."
@@ -58,10 +58,10 @@
       "pilot": "No change."
     },
     {
-      "term": "South-Russian, South Russia",
-      "sources": ["ralston1872", "ralston1873"],
+      "term": "South-Russian, South Russia, южнорусскихъ, южнорусской",
+      "sources": ["ralston1872", "ralston1873", "afanasyev1869"],
       "people": "Ukrainians",
-      "reasoning": "Ralston labels forms \"South-Russian\" in the same way he labels others \"Little-Russian\", for the speech of the Ukrainian governments. Ralston 1873 p.178 has \"a proverb common to Poland and South Russia\", the same usage as a place name.",
+      "reasoning": "Ralston labels forms \"South-Russian\" in the same way he labels others \"Little-Russian\", for the speech of the Ukrainian governments. Ralston 1873 p.178 has \"a proverb common to Poland and South Russia\", the same usage as a place name. Afanasyev's \"южнорусскихъ мавкахъ\" (1869 p.367) is the Russian form of the same label, and the Mavki are the Ukrainian name Ralston gives for Little-Russia and Galicia.",
       "contested": true,
       "note": "\"South-Russian\" is not stated to equal Little-Russian on p.410, and in other usage it can cover the Don and New Russia, which were not only Ukrainian.",
       "pilot": "vampir /names/variants/1: the flag (an interpretation not stated on the page) is cleared by the table; the row is listed as contested instead."
@@ -307,22 +307,22 @@
       "pilot": "No pilot entry uses the term; nothing changes."
     },
     {
-      "term": "словенской (\"Slovene\" or \"Slavonic\")",
+      "term": "словенской, словенскія (\"Slovene\" or \"Slavonic\")",
       "sources": ["afanasyev1869"],
       "people": "Slovenes",
-      "reasoning": "\"сербской и словенской вилы\" (1869 p.182) pairs the word with the Serbian vila, which reads as a second named people, the Slovenes, among whom the vila is attested.",
+      "reasoning": "\"сербской и словенской вилы\" (1869 p.182) pairs the word with the Serbian vila, which reads as a second named people, the Slovenes, among whom the vila is attested. \"словенскія вѣштицы\" (1869 p.449) uses the South Slavic witch word вѣштица, which points the same way.",
       "contested": true,
       "note": "In 19th-century Russian \"словенскій\" can also mean Slavonic in general, which is no people; the page does not settle which Afanasyev means.",
       "pilot": "No pilot entry uses the term; nothing changes."
     },
     {
-      "term": "Montenegro",
-      "sources": ["ralston1873"],
+      "term": "Montenegro, Montenegrins, Montenegrin, Ц. г., Ц.г., Црној гори, Црне горе, Црна гора",
+      "sources": ["ralston1873", "machal1918", "karadzic1852", "karadzic1818", "ralston1872"],
       "people": "Montenegrins",
       "region": "Montenegro",
-      "reasoning": "Ralston cites \"one of the Songs of Montenegro\" (1873 p.205, footnote); the songs are those of the Montenegrins.",
+      "reasoning": "Ralston cites \"one of the Songs of Montenegro\" (1873 p.205, footnote); the songs are those of the Montenegrins. Machal writes \"In Montenegro a distinction\" (1918 p.227) and \"The Montenegrins personify the soul\" (p.228). Karadžić marks words used in Montenegro \"(у Ц. г.)\", for example s.v.Здухач (1852 leaf 223, where the OCR reads \"Ц.г.\"), and writes the name out as \"Црној гори\" (s.v.мора, 1852 leaf 383).",
       "contested": true,
-      "note": "A new people value. In the 19th century the Montenegrins were commonly counted as Serbs, and the songs belong to the Serbian epic tradition, so a reader may prefer Serbs.",
+      "note": "A new people value. In the 19th century the Montenegrins were commonly counted as Serbs, Karadžić counted them so, and the songs belong to the Serbian epic tradition, so a reader may prefer Serbs. Karadžić's \"Ц. г.\" is a place label on a word in a Serbian dictionary, not a statement about who the speakers were.",
       "pilot": "No pilot entry uses the term; nothing changes."
     },
     {
@@ -363,6 +363,66 @@
       "reasoning": "Afanasyev cites \"По разсказамъ гуцуловъ\" for the wild women (1869 p.803, addenda to pp.343-4). The Hutsuls are highlanders of Galicia and Bukovina, among the people the table maps as Ruthenians to Ukrainians.",
       "contested": true,
       "note": "Follows the Ruthenians row: some Hutsuls identify as a separate people or as Rusyns rather than Ukrainians. The table chooses Ukrainians and says so.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "у Боци, у Рисну, Бокески",
+      "sources": ["karadzic1852"],
+      "people": "Montenegrins",
+      "region": "Bay of Kotor (Boka)",
+      "reasoning": "Karadžić marks words used in the Bay of Kotor \"(у Боци)\" (s.v.Вједогоња, 1852 leaf 81) and in its town Risan \"(у Рисну)\" (s.v.Једогоња, leaf 267), and on the same page sets \"Бокески\" (the men of Boka) against the Neapolitans. The Boka is now in Montenegro, and the row follows the contested Montenegro row.",
+      "contested": true,
+      "note": "In 1852 the Boka was Austrian Dalmatia, not Montenegro, and its people were Orthodox and Catholic; Karadžić counted them as Serbs, and a reader may prefer Serbs, or Croats for the Catholics. The page names a place, not a people.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Ерц., Ерцеговини, Херцеговини",
+      "sources": ["karadzic1818", "karadzic1852"],
+      "people": "Serbs",
+      "region": "Herzegovina",
+      "reasoning": "Karadžić marks the word as Herzegovinian \"(Ерц.)\" (s.v.вјештица, 1818 leaf 115: \"Вјештица, f. (Ерц.) Die Here\"); in his Serbian dictionary the label places a Serbian word, and he counted the Štokavian speakers of Herzegovina as Serbs.",
+      "contested": true,
+      "note": "Herzegovina was home to Orthodox, Catholic and Muslim speakers of the same dialect, so a reader may file a Herzegovinian word as Croatian, or as no single people. The label names a place, not a people.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Срем, Срему, Сријем, Сријема, Сријему, у Сријему, Срнјему",
+      "sources": ["karadzic1818", "karadzic1852"],
+      "people": "Serbs",
+      "region": "Syrmia (Srem)",
+      "reasoning": "Karadžić reports that \"у Сријему се приповиједа\" the witches gather there (s.v.вјештица, 1852 leaf 82, where the OCR reads \"Срнјему\"); his Syrmian material is that of the Serbs of Syrmia, which he collected in his Serbian dictionary.",
+      "contested": true,
+      "note": "Syrmia had Serbs and Croats (and Germans and Hungarians), so a reader may prefer Croats. \"Срнјему\" is the OCR's reading of \"Сријему\", listed because the cited page prints it so.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Macedonia",
+      "sources": ["machal1918"],
+      "people": "Bulgarians",
+      "region": "Macedonia",
+      "reasoning": "Machal writes \"According to Bulgarian tradition in Macedonia, the Navi\" (1918 p.254) and \"The Bulgarians in Southern Macedonia keep the Rusalye\" (p.312): his Macedonia is a place where Bulgarians live.",
+      "contested": true,
+      "note": "Macedonia also held Greeks, Aromanians, Albanians and Turks, and its Slavs were claimed by Bulgaria and Serbia; today they are a separate people, the Macedonians. Rejected: a Macedonians people value, which Machal does not use. The region text keeps \"Macedonia\".",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Government of Archangel, Archangel Government, архангельской губер., архангельской губ.",
+      "sources": ["ralston1872", "ralston1873", "afanasyev1865", "afanasyev1868", "afanasyev1869"],
+      "people": "Russians",
+      "region": "Archangel Government",
+      "reasoning": "Ralston writes \"In the Government of Archangel tradition tells of Twelve Midnight Sisters\" (1872 p.148), from Afanasyev's \"въ архангельской губер. знаютъ двѣнадцать сестеръ полуночницъ\" (1869 p.77). Archangel was a Great Russian government.",
+      "contested": false,
+      "note": "Only the government forms are listed: \"Archangel\" alone also means the archangel.",
+      "pilot": "No pilot entry uses the term; nothing changes."
+    },
+    {
+      "term": "Orel Government, орловской губ.",
+      "sources": ["ralston1872", "ralston1873", "afanasyev1865", "afanasyev1868", "afanasyev1869"],
+      "people": "Russians",
+      "region": "Orel Government",
+      "reasoning": "Afanasyev places a cure there (\"Въ орловской губ. больнаго купаютъ въ отварѣ липоваго цвѣта\", 1869 p.94). Orel was a Great Russian government.",
+      "contested": false,
+      "note": "None.",
       "pilot": "No pilot entry uses the term; nothing changes."
     }
   ]

@@ -64,6 +64,18 @@ describe("headword overrides resolve", () => {
       });
     }
   }
+  // Each case had a wrong or missing text match: an override must win over an earlier matching line.
+  for (const [tag, leaf, why] of [
+    ["karadzic1852:s.v.Усуд", 807, "text match lands on the cross-reference on leaf 739"],
+    ["karadzic1852:s.v.мора", 383, "text match lands on running text on leaf 193"],
+    ["karadzic1818:s.v.Вила", 113, "OCR prints the headword as Busa"],
+  ] as const) {
+    test(`${tag} -> leaf ${leaf} (${why})`, () => {
+      const r = resolve(tag);
+      expect(r.ok && r.via).toBe("override");
+      expect(r.ok && r.pages[0]!.leaf).toBe(leaf);
+    });
+  }
 });
 
 // Page-label audit: the label must match the number printed in the leaf's running header.
