@@ -1,0 +1,52 @@
+{
+  "baba-yaga": {
+    "source": "plates/iter2/out/baba-yaga/a2-s21",
+    "approved_by": "Ben",
+    "date": "2026-10-27"
+  },
+  "zmey-gorynych": {
+    "source": "plates/iter2/out/zmey-gorynych/a-s21",
+    "approved_by": "Ben",
+    "date": "2026-10-27"
+  },
+  "leshy": {
+    "source": "plates/iter4/out/leshy/a-s31",
+    "approved_by": "Ben",
+    "date": "2026-10-27"
+  },
+  "bannik": {
+    "source": "plates/iter4/out/bannik/a-s31",
+    "approved_by": "Ben",
+    "date": "2026-10-27"
+  },
+  "domovoi": {
+    "source": "plates/iter4/out/domovoi/a-s33",
+    "approved_by": "Ben",
+    "date": "2026-10-27"
+  },
+  "rusalka": {
+    "source": "plates/iter4/out/rusalka/a-s31",
+    "approved_by": "Ben",
+    "date": "2026-10-27"
+  },
+  "vampir": {
+    "source": "plates/iter4/out/vampir/a-s31",
+    "approved_by": "Ben",
+    "date": "2026-10-27"
+  },
+  "poludnitsa": {
+    "source": "plates/iter5/out/poludnitsa/a-s41",
+    "approved_by": "Ben",
+    "date": "2026-10-27"
+  },
+  "drekavac": {
+    "source": "plates/iter5/out/drekavac/a-s42",
+    "approved_by": "Ben",
+    "date": "2026-10-27"
+  },
+  "vodyanoi": {
+    "source": "plates/iter5/out/vodyanoi/a-s42",
+    "approved_by": "Ben",
+    "date": "2026-10-27"
+  }
+}

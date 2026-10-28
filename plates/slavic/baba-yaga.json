@@ -1,0 +1,31 @@
+{
+  "id": "baba-yaga",
+  "source": "plates/iter2/out/baba-yaga/a2-s21",
+  "approved_by": "Ben",
+  "approved_date": "2026-10-27",
+  "file": "plates/slavic/baba-yaga.web.webp",
+  "thumb": "plates/slavic/baba-yaga.thumb.webp",
+  "prompt": "A frightening, witch-like old hag with an enormous, very long hooked nose that reaches down past her chin, a jutting pointed chin, sunken cheeks and glaring, malicious deep-set eyes. A sly, menacing grin shows crooked teeth. Long, thin, wild, unkempt hair falls down past her shoulders. She is gaunt and wiry but fully fleshed; her arms and hands are thin and wrinkled, with knobbly knuckles and long fingers ending in sharp nails. She wears ragged peasant clothes and leans on a gnarled wooden staff. Full figure. silverpoint study, metalpoint drawing, Renaissance sketch, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, skeleton, bare bones, skull, metal, kindly expression, sad expression",
+  "model": "fal-ai/qwen-image",
+  "seed": 21,
+  "date": "2026-10-27",
+  "style_tokens_version": "a-2026-10-27",
+  "licence": "Apache-2.0",
+  "interpretive": true,
+  "cost_usd": 0.04,
+  "request_id": "01a17f32-fe6b-7ea1-a75d-f73cf2427b84",
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "A frightening, witch-like old hag with an enormous, very long hooked nose that reaches down past her chin, a jutting pointed chin, sunken cheeks and glaring, malicious deep-set eyes. A sly, menacing grin shows crooked teeth. Long, thin, wild, unkempt hair falls down past her shoulders. She is gaunt and wiry but fully fleshed; her arms and hands are thin and wrinkled, with knobbly knuckles and long fingers ending in sharp nails. She wears ragged peasant clothes and leans on a gnarled wooden staff. Full figure.",
+      "by": "Ben",
+      "date": "2026-10-27"
+    }
+  ],
+  "endpoint": "fal-ai/qwen-image",
+  "size": {
+    "width": 1104,
+    "height": 1472
+  }
+}

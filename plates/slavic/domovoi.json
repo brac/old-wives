@@ -1,0 +1,31 @@
+{
+  "id": "domovoi",
+  "source": "plates/iter4/out/domovoi/a-s33",
+  "approved_by": "Ben",
+  "approved_date": "2026-10-27",
+  "file": "plates/slavic/domovoi.web.webp",
+  "thumb": "plates/slavic/domovoi.thumb.webp",
+  "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A tiny old man, a little house spirit about knee-high to a grown person. He is wholly human in shape, a little old man and not an animal. He wears simple peasant clothes. A huge beard and moustache cover his mouth and most of his face, and only his tousled hair pokes out above. He has large human ears and gnarled hands with sharp, claw-like fingernails, and looks like an unsettling little gremlin. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, Renaissance sketch, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, cat, kitten, animal, fur, whiskers, cat ears, stove, floor",
+  "model": "fal-ai/qwen-image",
+  "seed": 33,
+  "date": "2026-10-28",
+  "style_tokens_version": "a-2026-10-27",
+  "licence": "Apache-2.0",
+  "interpretive": true,
+  "cost_usd": 0.04,
+  "request_id": "01a18037-a0eb-7e11-a0e9-4a2d74b002e7",
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A tiny old man, a little house spirit about knee-high to a grown person. He is wholly human in shape, a little old man and not an animal. He wears simple peasant clothes. A huge beard and moustache cover his mouth and most of his face, and only his tousled hair pokes out above. He has large human ears and gnarled hands with sharp, claw-like fingernails, and looks like an unsettling little gremlin. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+      "by": "Ben",
+      "date": "2026-10-27"
+    }
+  ],
+  "endpoint": "fal-ai/qwen-image",
+  "size": {
+    "width": 1104,
+    "height": 1472
+  }
+}

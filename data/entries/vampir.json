@@ -808,7 +808,28 @@
       "public_domain": true
     }
   ],
-  "image": null,
+  "image": {
+    "file": "plates/slavic/vampir.web.webp",
+    "thumb": "plates/slavic/vampir.thumb.webp",
+    "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. An aristocratic vampire nobleman, tall and gaunt, in an elegant high-collared nineteenth-century frock coat and cravat, his long hair swept back. At first glance he looks refined; on a closer look his skin is deathly pale and his long, thin fingers end in long pointed fingernails. His mouth is closed, his lips thin and pressed together. His eyes are cold and predatory. Half-length portrait. silverpoint study, metalpoint drawing, Renaissance sketch, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, coffin, grave, corpse, cape, blood, red, open mouth, teeth, fangs",
+    "model": "fal-ai/qwen-image",
+    "seed": 31,
+    "date": "2026-10-28",
+    "style_tokens_version": "a-2026-10-27",
+    "licence": "Apache-2.0",
+    "interpretive": true,
+    "cost_usd": 0.04,
+    "request_id": "01a18034-f2b2-72d0-9af2-94598773fb91",
+    "human_edits": [
+      {
+        "type": "visual-tradition",
+        "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. An aristocratic vampire nobleman, tall and gaunt, in an elegant high-collared nineteenth-century frock coat and cravat, his long hair swept back. At first glance he looks refined; on a closer look his skin is deathly pale and his long, thin fingers end in long pointed fingernails. His mouth is closed, his lips thin and pressed together. His eyes are cold and predatory. Half-length portrait.",
+        "by": "Ben",
+        "date": "2026-10-27"
+      }
+    ]
+  },
   "notes": [
     {
       "kind": "empty-field",

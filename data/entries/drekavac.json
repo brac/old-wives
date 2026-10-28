@@ -113,7 +113,28 @@
       "public_domain": true
     }
   ],
-  "image": null,
+  "image": {
+    "file": "plates/slavic/drekavac.web.webp",
+    "thumb": "plates/slavic/drekavac.thumb.webp",
+    "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A demonic, monstrous creature, a starved demon that is humanoid only in outline. Its legs bend backward at the knee like a dog's hind legs, reverse-jointed, so it stands on its toes. Its stomach is sunken deep beneath the ribs, and its hairless skin is stretched tight. It has huge, long, pointed ears like a bat's. Its mouth gapes wide open, full of long, sharp, needle-like teeth. Its long arms end in long claws, and bony spikes run down its spine. It is hunched and crouched, snarling. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, Renaissance sketch, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, hair, fur, goat, ghost, skeleton, bird, chicken, man, person, human face, clothes",
+    "model": "fal-ai/qwen-image",
+    "seed": 42,
+    "date": "2026-10-28",
+    "style_tokens_version": "a-2026-10-27",
+    "licence": "Apache-2.0",
+    "interpretive": true,
+    "cost_usd": 0.04,
+    "request_id": "01a1804c-e85c-7070-8511-8aa6410416d5",
+    "human_edits": [
+      {
+        "type": "visual-tradition",
+        "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A demonic, monstrous creature, a starved demon that is humanoid only in outline. Its legs bend backward at the knee like a dog's hind legs, reverse-jointed, so it stands on its toes. Its stomach is sunken deep beneath the ribs, and its hairless skin is stretched tight. It has huge, long, pointed ears like a bat's. Its mouth gapes wide open, full of long, sharp, needle-like teeth. Its long arms end in long claws, and bony spikes run down its spine. It is hunched and crouched, snarling. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+        "by": "Ben",
+        "date": "2026-10-27"
+      }
+    ]
+  },
   "notes": [
     {
       "kind": "scope",

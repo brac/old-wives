@@ -178,14 +178,46 @@
         { "type": "null" },
         {
           "type": "object",
-          "required": ["file", "prompt", "model", "seed", "date", "style_tokens_version"],
+          "required": [
+            "file",
+            "thumb",
+            "prompt",
+            "model",
+            "seed",
+            "date",
+            "style_tokens_version",
+            "licence",
+            "interpretive",
+            "cost_usd",
+            "human_edits"
+          ],
           "properties": {
             "file": { "$ref": "#/$defs/NonEmptyString" },
+            "thumb": { "$ref": "#/$defs/NonEmptyString" },
             "prompt": { "$ref": "#/$defs/NonEmptyString" },
+            "negative": { "type": "string" },
             "model": { "$ref": "#/$defs/NonEmptyString" },
             "seed": { "type": "integer" },
             "date": { "type": "string", "format": "date" },
-            "style_tokens_version": { "$ref": "#/$defs/NonEmptyString" }
+            "style_tokens_version": { "$ref": "#/$defs/NonEmptyString" },
+            "licence": { "type": "string" },
+            "interpretive": { "type": "boolean" },
+            "cost_usd": { "type": "number" },
+            "request_id": { "type": "string" },
+            "human_edits": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["type", "text", "by", "date"],
+                "properties": {
+                  "type": { "$ref": "#/$defs/NonEmptyString" },
+                  "text": { "$ref": "#/$defs/NonEmptyString" },
+                  "by": { "$ref": "#/$defs/NonEmptyString" },
+                  "date": { "type": "string", "minLength": 1, "format": "date" }
+                },
+                "unevaluatedProperties": false
+              }
+            }
           },
           "unevaluatedProperties": false
         }

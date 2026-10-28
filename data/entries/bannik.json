@@ -221,7 +221,28 @@
       "public_domain": true
     }
   ],
-  "image": null,
+  "image": {
+    "file": "plates/slavic/bannik.web.webp",
+    "thumb": "plates/slavic/bannik.thumb.webp",
+    "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A strange, unsettling, mischievous little old man, gnarled and wizened, about as tall as the wooden bucket of water that stands beside him; he and the bucket are almost the same size, and the bucket is his only prop. He is scrawny and sinewy, with wild white hair, a long straggly white beard and moustache, a sly, crafty grin and glinting eyes. He clutches a bundle of leafy birch twigs. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, Renaissance sketch, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, cute, cartoon, 3D animation character, bathhouse, bench, wall, other people",
+    "model": "fal-ai/qwen-image",
+    "seed": 31,
+    "date": "2026-10-28",
+    "style_tokens_version": "a-2026-10-27",
+    "licence": "Apache-2.0",
+    "interpretive": true,
+    "cost_usd": 0.04,
+    "request_id": "01a18032-1044-7fa2-8a57-0d4d2c5022cd",
+    "human_edits": [
+      {
+        "type": "visual-tradition",
+        "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A strange, unsettling, mischievous little old man, gnarled and wizened, about as tall as the wooden bucket of water that stands beside him; he and the bucket are almost the same size, and the bucket is his only prop. He is scrawny and sinewy, with wild white hair, a long straggly white beard and moustache, a sly, crafty grin and glinting eyes. He clutches a bundle of leafy birch twigs. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+        "by": "Ben",
+        "date": "2026-10-27"
+      }
+    ]
+  },
   "notes": [
     {
       "kind": "empty-field",

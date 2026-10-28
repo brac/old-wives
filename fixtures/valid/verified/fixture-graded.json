@@ -123,12 +123,17 @@
     }
   ],
   "image": {
-    "file": "fixture.png",
+    "file": "fixture.web.webp",
+    "thumb": "fixture.thumb.webp",
     "prompt": "Fixture prompt.",
     "model": "fixture-model",
     "seed": 1,
     "date": "2026-10-26",
-    "style_tokens_version": "fixture-v0"
+    "style_tokens_version": "fixture-v0",
+    "licence": "Apache-2.0",
+    "interpretive": false,
+    "cost_usd": 0.04,
+    "human_edits": []
   },
   "notes": [
     {

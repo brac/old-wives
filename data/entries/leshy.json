@@ -929,7 +929,28 @@
       "public_domain": true
     }
   ],
-  "image": null,
+  "image": {
+    "file": "plates/slavic/leshy.web.webp",
+    "thumb": "plates/slavic/leshy.thumb.webp",
+    "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. An uncanny old spirit of the forest in the shape of a gaunt, wild old man, dressed in moss, bark, dead leaves and forest debris. One of his arms is gnarled and knotted like a tree branch, half arm and half wood. From his head grow branching antlers of gnarled tree branches, many-pointed like a stag's antlers but made of wood and twigs. He has a long, tangled beard, a long drooping moustache and dishevelled hair hanging down. His eyes are wild, staring and cold, and his expression is unfriendly and menacing: a wandering creature of the woods that might eat a lost traveller. His legs are reverse-jointed, bending backward at the knee like the hind legs of a beast, and end in gnarled, clawed feet. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, Renaissance sketch, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, kindly expression, smiling, jolly old man, close-up",
+    "model": "fal-ai/qwen-image",
+    "seed": 31,
+    "date": "2026-10-28",
+    "style_tokens_version": "a-2026-10-27",
+    "licence": "Apache-2.0",
+    "interpretive": true,
+    "cost_usd": 0.04,
+    "request_id": "01a18030-9713-7f81-9a44-bca39040ac49",
+    "human_edits": [
+      {
+        "type": "visual-tradition",
+        "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. An uncanny old spirit of the forest in the shape of a gaunt, wild old man, dressed in moss, bark, dead leaves and forest debris. One of his arms is gnarled and knotted like a tree branch, half arm and half wood. From his head grow branching antlers of gnarled tree branches, many-pointed like a stag's antlers but made of wood and twigs. He has a long, tangled beard, a long drooping moustache and dishevelled hair hanging down. His eyes are wild, staring and cold, and his expression is unfriendly and menacing: a wandering creature of the woods that might eat a lost traveller. His legs are reverse-jointed, bending backward at the knee like the hind legs of a beast, and end in gnarled, clawed feet. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+        "by": "Ben",
+        "date": "2026-10-27"
+      }
+    ]
+  },
   "notes": [
     {
       "kind": "scope",

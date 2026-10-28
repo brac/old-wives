@@ -76,6 +76,13 @@ export function styleTokens(opts: StyleOpts = {}): string {
 export const STYLE_TOKENS = styleTokens();
 
 /**
+ * Version label for the locked style tokens (2d-i): style a with guides off and plain paper,
+ * as locked on 2026-10-27. Written into each entry's `image.style_tokens_version`. Bump it
+ * if any fragment that feeds STYLE_TOKENS changes.
+ */
+export const STYLE_TOKENS_VERSION = "a-2026-10-27";
+
+/**
  * Negative tokens: brainstorm C4, plus the 2d no-script negatives. Written as bare nouns
  * (2d-c): a negative prompt already means "steer away", and Qwen-Image's language-model
  * encoder reads a "no" inside it, so "no text" may steer toward text.

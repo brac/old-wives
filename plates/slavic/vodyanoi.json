@@ -1,0 +1,31 @@
+{
+  "id": "vodyanoi",
+  "source": "plates/iter5/out/vodyanoi/a-s42",
+  "approved_by": "Ben",
+  "approved_date": "2026-10-27",
+  "file": "plates/slavic/vodyanoi.web.webp",
+  "thumb": "plates/slavic/vodyanoi.thumb.webp",
+  "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A big, blobby, bloated frog creature, only vaguely human in shape, with a huge, round, fat belly and short, stumpy legs. Its broad frog head sinks into its shoulders with no neck, and has a very wide frog mouth and big, bulging frog eyes set far apart. Its skin is warty, slimy frog skin all over. A gross, scraggly, mossy beard hangs from its chin, and stringy, scraggly hair hangs from the top of its head. Its hands are webbed frog hands with long fingers. It sits squat like a frog. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, Renaissance sketch, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, hat, cap, mask, hood, gloves, clothes, man, human face, swamp, water",
+  "model": "fal-ai/qwen-image",
+  "seed": 42,
+  "date": "2026-10-28",
+  "style_tokens_version": "a-2026-10-27",
+  "licence": "Apache-2.0",
+  "interpretive": true,
+  "cost_usd": 0.04,
+  "request_id": "01a1804d-9d5c-7a13-af74-18cffd164b73",
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching, like a page from a Renaissance master's sketchbook. A big, blobby, bloated frog creature, only vaguely human in shape, with a huge, round, fat belly and short, stumpy legs. Its broad frog head sinks into its shoulders with no neck, and has a very wide frog mouth and big, bulging frog eyes set far apart. Its skin is warty, slimy frog skin all over. A gross, scraggly, mossy beard hangs from its chin, and stringy, scraggly hair hangs from the top of its head. Its hands are webbed frog hands with long fingers. It sits squat like a frog. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+      "by": "Ben",
+      "date": "2026-10-27"
+    }
+  ],
+  "endpoint": "fal-ai/qwen-image",
+  "size": {
+    "width": 1104,
+    "height": 1472
+  }
+}
