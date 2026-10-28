@@ -141,8 +141,8 @@ describe("desk API round trip on a scratch creature", () => {
     expect(c.candidates.items).toHaveLength(1);
     expect((await call(api, "POST", "/approve", { id: ID, source: "plates/iter9/out/x" })).status).toBe(400);
     expect((await call(api, "POST", "/approve", { id: ID, source: c.candidates.items[0].source })).status).toBe(200);
-    const batch = (await call(api, "GET", "/batch")).data;
-    expect(batch).toEqual([expect.objectContaining({ id: ID, state: "approved" })]);
+    const batch = (await call(api, "GET", "/batch?batch=pilot")).data;
+    expect(batch).toEqual([expect.objectContaining({ id: ID, name: "Scratch", state: "approved" })]);
   });
 
   describe("plate cap", () => {
@@ -202,6 +202,61 @@ describe("desk API round trip on a scratch creature", () => {
       expect(q.jobs[0].status).toBe("failed");
       const last: string = q.jobs[0].log.at(-1);
       for (const part of [ID, "$0.98", "$1.00"]) expect(last).toContain(part);
+    });
+  });
+
+  describe("batch selector", () => {
+    const entry = (id: string, batch?: number) => {
+      writeFileSync(join(root, "data/entries", `${id}.json`), JSON.stringify({ id, names: { primary: { romanized: `${id} name`, native: [{ script: "Cyrl", text: "x" }] } }, appearance: [] }));
+      return { id, ...(batch === undefined ? {} : { batch }) };
+    };
+    beforeEach(() => {
+      mkdirSync(join(root, "prompts"), { recursive: true });
+      const rows = [entry("pa"), entry("zb", 1), entry("pb"), entry("ab", 1), entry("c2", 2), entry("c3", 3), { id: "missing", batch: 1 }];
+      writeFileSync(join(root, "prompts/creatures.json"), JSON.stringify({ creatures: rows }));
+      writeFileSync(join(root, "plates/picks.json"), JSON.stringify({ zb: { source: "s", approved_by: "Ben", date: "2026-10-28" } }));
+    });
+    const ids = (rows: Array<{ id: string }>) => rows.map((r) => r.id);
+
+    it("defaults to batch 1, in creatures.json order, only creatures on disk", async () => {
+      const api = createDeskApi({ root, fal, runJob });
+      expect(ids((await call(api, "GET", "/batch")).data)).toEqual(["zb", "ab"]);
+      expect(ids((await call(api, "GET", "/batch?batch=1")).data)).toEqual(["zb", "ab"]);
+      expect(ids((await call(api, "GET", "/batch?batch=2")).data)).toEqual(["c2"]);
+      expect(ids((await call(api, "GET", "/batch?batch=3")).data)).toEqual(["c3"]);
+    });
+    it("pilot is the creatures on disk with no batch", async () => {
+      const api = createDeskApi({ root, fal, runJob });
+      expect(ids((await call(api, "GET", "/batch?batch=pilot")).data)).toEqual(["pa", "pb", ID]);
+    });
+    it("refuses an unknown batch", async () => {
+      const api = createDeskApi({ root, fal, runJob });
+      expect((await call(api, "GET", "/batch?batch=4")).status).toBe(400);
+    });
+    it("every row has a string name, and /creature keeps the native forms", async () => {
+      const api = createDeskApi({ root, fal, runJob });
+      for (const b of ["pilot", "1", "2", "3"]) {
+        for (const r of (await call(api, "GET", `/batch?batch=${b}`)).data) expect(typeof r.name, r.id).toBe("string");
+      }
+      expect((await call(api, "GET", "/batch")).data[0].name).toBe("zb name");
+      const c = (await call(api, "GET", "/creature?id=zb")).data;
+      expect(c.name).toBe("zb name");
+      expect(c.names.primary.native).toEqual([{ script: "Cyrl", text: "x" }]);
+    });
+    it("summarises count and approvals per batch", async () => {
+      const api = createDeskApi({ root, fal, runJob });
+      expect((await call(api, "GET", "/batches")).data).toEqual([
+        { batch: "pilot", label: "pilot", count: 3, approved: 0 },
+        { batch: "1", label: "batch 1", count: 2, approved: 1 },
+        { batch: "2", label: "batch 2", count: 1, approved: 0 },
+        { batch: "3", label: "batch 3", count: 1, approved: 0 },
+      ]);
+    });
+    it("tells the card whether Ben's text exists", async () => {
+      writeFileSync(join(root, "plates/overrides.json"), JSON.stringify({ ab: { visual: { text: "Ben's text.", basis: "visual tradition", by: "Ben" } } }));
+      const api = createDeskApi({ root, fal, runJob });
+      const rows = (await call(api, "GET", "/batch")).data;
+      expect(rows.map((r: { id: string; has_text: boolean; thumb: unknown }) => [r.id, r.has_text, r.thumb])).toEqual([["zb", false, null], ["ab", true, null]]);
     });
   });
 

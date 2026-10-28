@@ -38,15 +38,28 @@ function showFull(src: string) {
   full.style.display = "block";
 }
 
-async function batchView() {
-  titleEl.textContent = "batch";
-  const rows = await api<any[]>("/batch");
-  app.innerHTML = `<div class="sheet">${rows
+let lastBatch = "1";
+
+function cardBody(r: any): string {
+  if (r.thumb) return `<img loading="lazy" src="${img(r.thumb)}" alt="">`;
+  return `<div class="muted noimg">${r.has_text ? "no image yet: queue a redraw" : "needs your visual text"}</div>`;
+}
+
+async function batchView(key: string) {
+  lastBatch = key;
+  titleEl.textContent = key === "pilot" ? "pilot" : `batch ${key}`;
+  const [summary, rows] = await Promise.all([api<any[]>("/batches"), api<any[]>(`/batch?batch=${encodeURIComponent(key)}`)]);
+  const tabs = summary
     .map(
-      (r) => `<a class="card" href="#/c/${esc(r.id)}">${r.thumb ? `<img loading="lazy" src="${img(r.thumb)}" alt="">` : `<div class="muted">no image</div>`}
+      (b) => `<a class="tab${b.batch === key ? " on" : ""}" href="#/b/${esc(b.batch)}">${esc(b.label)} <small>${b.count} · ${b.approved} approved</small></a>`,
+    )
+    .join("");
+  app.innerHTML = `<nav class="tabs">${tabs}</nav><div class="sheet">${rows
+    .map(
+      (r) => `<a class="card" href="#/c/${esc(r.id)}">${cardBody(r)}
       <div>${esc(r.name)}</div><div class="state ${r.state.split(" ")[0]}">${esc(r.state)} · $${r.spend_usd.toFixed(2)}</div></a>`,
     )
-    .join("")}</div>`;
+    .join("") || "<p class='muted'>no creatures in this batch</p>"}</div>`;
 }
 
 function renderDiff(ops: Op[]): string {
@@ -207,7 +220,14 @@ function setupTalk(btn: HTMLButtonElement, field: HTMLTextAreaElement, state: El
 
 function route() {
   const m = location.hash.match(/^#\/c\/([a-z0-9-]+)/);
-  (m ? creatureView(m[1]) : batchView()).catch((e) => (app.innerHTML = `<p>${esc(e.message)}</p>`));
+  if (m) return void creatureView(m[1]).catch((e) => (app.innerHTML = `<p>${esc(e.message)}</p>`));
+  const b = location.hash.match(/^#\/b\/(pilot|[123])$/);
+  if (!b) {
+    // Opens on batch 1, or the last batch viewed; the choice lives in the URL hash.
+    history.replaceState(null, "", `#/b/${lastBatch}`);
+    return route();
+  }
+  batchView(b[1]).catch((e) => (app.innerHTML = `<p>${esc(e.message)}</p>`));
 }
 window.addEventListener("hashchange", route);
 route();

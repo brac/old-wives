@@ -130,6 +130,39 @@ export function creatureIds(root: string): string[] {
     .sort();
 }
 
+export const CREATURES_FILE = "prompts/creatures.json";
+
+/** A batch selector value: the pilot creatures, or tranche batch 1, 2 or 3. */
+export type BatchKey = "pilot" | "1" | "2" | "3";
+export const BATCH_KEYS: readonly BatchKey[] = Object.freeze(["pilot", "1", "2", "3"]);
+
+export function isBatchKey(v: unknown): v is BatchKey {
+  return typeof v === "string" && (BATCH_KEYS as readonly string[]).includes(v);
+}
+
+/**
+ * The creatures of one batch, in prompts/creatures.json order, limited to those with an
+ * entry on disk. "pilot" is every creature on disk with no `batch` (creatures.json rows
+ * without one first, in file order, then any entry creatures.json does not list, sorted).
+ */
+export function creaturesInBatch(root: string, key: BatchKey): string[] {
+  const onDisk = creatureIds(root);
+  const have = new Set(onDisk);
+  const rows = readJson<{ creatures?: Array<{ id: string; batch?: number }> }>(root, CREATURES_FILE, {}).creatures ?? [];
+  if (key !== "pilot") return rows.filter((r) => String(r.batch) === key && have.has(r.id)).map((r) => r.id);
+  const listed = new Set(rows.map((r) => r.id));
+  const pilot = rows.filter((r) => r.batch === undefined && have.has(r.id)).map((r) => r.id);
+  return [...pilot, ...onDisk.filter((id) => !listed.has(id))];
+}
+
+/** The display name of an entry: names.primary.romanized (or a plain string), else the id. */
+export function displayName(entry: { names?: { primary?: unknown } } | null | undefined, id: string): string {
+  const p = entry?.names?.primary;
+  if (typeof p === "string" && p.trim()) return p;
+  if (p && typeof p === "object" && typeof (p as { romanized?: unknown }).romanized === "string") return (p as { romanized: string }).romanized;
+  return id;
+}
+
 const SAFE_ID = /^[a-z0-9][a-z0-9-]{0,63}$/;
 export function assertId(id: unknown): asserts id is string {
   if (typeof id !== "string" || !SAFE_ID.test(id)) throw new Error(`bad creature id: ${String(id)}`);

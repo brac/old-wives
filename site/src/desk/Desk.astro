@@ -19,6 +19,10 @@
       .sheet { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
       .card { border: 1px solid var(--line); border-radius: 6px; padding: 6px; background: #fff; color: inherit; text-decoration: none; }
       .card img, .cands img, .refs img { width: 100%; display: block; border-radius: 4px; }
+      .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+      .tab { border: 1px solid var(--line); border-radius: 5px; padding: 4px 10px; color: var(--acc); text-decoration: none; background: #fff; }
+      .tab.on { background: var(--acc); color: #fff; } .tab.on small { color: #fff; }
+      .noimg { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 8px; border: 1px dashed var(--line); border-radius: 4px; }
       .state { font-size: 13px; color: var(--mute); }
       .state.approved { color: #2d6a2d; } .state.redraw { color: #9a5a00; }
       .cands { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }

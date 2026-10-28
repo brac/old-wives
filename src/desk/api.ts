@@ -18,8 +18,12 @@ import {
   QUEUE_FILE,
   agentDraft,
   assertId,
+  BATCH_KEYS,
   candidates,
   creatureIds,
+  creaturesInBatch,
+  displayName,
+  isBatchKey,
   readJson,
   readOverrides,
   readPicks,
@@ -185,15 +189,34 @@ export function createDeskApi(deps: DeskDeps) {
       dry_run: Boolean(deps.dryRun),
     }),
 
-    "GET /batch": async () => {
+    "GET /batch": async (_req, url) => {
+      const key = url.searchParams.get("batch") ?? "1";
+      if (!isBatchKey(key)) throw new HttpError(400, `batch must be one of ${BATCH_KEYS.join(", ")}`);
       const picks = readPicks(root);
       const queue = readQueue(root);
       const spend = spendByCreature(root);
-      return creatureIds(root).map((id) => {
+      const overrides = readOverrides(root);
+      return creaturesInBatch(root, key).map((id) => {
         const c = candidates(root, id);
         const pick = picks[id];
         const thumb = (pick && c.items.find((i) => i.source === pick.source)?.image) ?? c.items[0]?.image ?? null;
-        return { id, name: entryOf(root, id).names?.primary ?? id, state: stateOf(id, picks, queue), spend_usd: spend[id] ?? 0, thumb };
+        return {
+          id,
+          name: displayName(entryOf(root, id), id),
+          state: stateOf(id, picks, queue),
+          spend_usd: spend[id] ?? 0,
+          thumb,
+          has_text: Boolean(overrides[id]?.visual?.text),
+          candidate_count: c.items.length,
+        };
+      });
+    },
+
+    "GET /batches": async () => {
+      const picks = readPicks(root);
+      return BATCH_KEYS.map((key) => {
+        const ids = creaturesInBatch(root, key);
+        return { batch: key, label: key === "pilot" ? "pilot" : `batch ${key}`, count: ids.length, approved: ids.filter((id) => picks[id]).length };
       });
     },
 
@@ -206,7 +229,8 @@ export function createDeskApi(deps: DeskDeps) {
       const visual = ov.visual ?? null;
       return {
         id,
-        name: entry.names?.primary ?? id,
+        name: displayName(entry, id),
+        names: entry.names ?? null,
         state: stateOf(id, picks, queue),
         pick: picks[id] ?? null,
         appearance: entry.appearance ?? [],
