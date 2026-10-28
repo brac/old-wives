@@ -1,0 +1,14 @@
+---
+// Placeholder spread route; 3c replaces it.
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import { getEntries, primaryName } from "../../lib/entries.ts";
+
+export const getStaticPaths = (() => getEntries().map((e) => ({ params: { id: e.id } }))) satisfies GetStaticPaths;
+
+const entry = getEntries().find((e) => e.id === Astro.params.id)!;
+const name = primaryName(entry);
+---
+<Base title={name}>
+  <h1>{name}</h1>
+</Base>
