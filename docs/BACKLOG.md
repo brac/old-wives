@@ -10,7 +10,7 @@ and the project-scoped "why" behind decisions, each with the rejected alternativ
 | 0 | Foundation: repo scaffold, entry JSON Schema and validator, PD source corpus with manifest and citation resolver, draft and verify role prompts | No |
 | 1 | Stages 1 and 2 for all ten pilot creatures: drafted, independently verified, graded entries plus per-entry verify diffs | No |
 | 2 | Style sheet, image generation (stage 3) and vision check (stage 4) | Yes: style and image-model brainstorm first |
-| 3 | Ship v0.1: Astro book site for the ten, scope note, method page, public-repo prep (licences, README, release notes, tag), final pilot report. Human review (stage 5) was absorbed into Phase 2, where Ben approved all ten plates. Plan: `plans/phase-3.md` | Only to flip the repo public and connect Vercel |
+| 3 | Ship v0.1: Astro book site for the ten, scope note, method page, public-repo prep (licences, README, release notes, tag), final pilot report. Human review (stage 5) was absorbed into Phase 2, where Ben approved all ten plates. Plan: `plans/phase-3.md`. **Delivered 2026-10-27** (tags `phase-3a`, `phase-3b`, `phase-3c`, `phase-3d`, `phase-3e`; `phase-3` and `v0.1.0` follow the final report). Reports: `docs/phase3-report.md`, `docs/pilot-report.md` | Only to flip the repo public and connect Vercel |
 
 ## Decisions
 
@@ -42,7 +42,9 @@ and the project-scoped "why" behind decisions, each with the rejected alternativ
   verify stage grade it.
 - Machal 1918's English translator: confirm the name and death year before quoting at
   length for an EU audience. US public-domain status is clear.
-- Code license for the repo (the dataset is CC BY 4.0 per the brief): decide by Phase 3.
+- ~~Code license for the repo (the dataset is CC BY 4.0 per the brief): decide by Phase 3.~~
+  Closed 2026-10-27: MIT for code, CC BY 4.0 for data and plates (`LICENSE`,
+  `LICENSE-DATA`); see "Phase 3 decisions".
 - 2026-10-26: Phase 0 closed (tag `phase-0`). The validator now rejects unresolvable
   citations, page tags on the column-numbered dictionaries, and source rows that
   disagree with the manifest. The draft and verify role prompts are frozen at
@@ -295,10 +297,40 @@ The full answers are in `docs/phase2-brainstorm.md`. Settled, with what each rej
 - Planner, vetoable: MIT for code, CC BY 4.0 for data and plates (closes the open
   licence item). Rejected: Apache-2.0 for code (patent clause is noise for this repo);
   CC BY-SA for data (share-alike would stop the plates being used in a print book
-  without relicensing the book).
+  without relicensing the book). Applied in 3e: `LICENSE` (MIT), `LICENSE-DATA` (CC BY
+  4.0 over `data/`, `plates/slavic/` and `schema/`); the corpus under `sources/pages/` is
+  public domain and `style/refs/` is PD-Art, each said in its own README or manifest.
 - Planner, vetoable: every spread states that the plate is a drawing after the folk
   tradition and shows the sourced appearance clauses beside it, so the interpretive
   split is visible on the page rather than buried in `image.interpretive`.
 - Shipping rhythm (Ben, in conversation): the unit of release is the volume, not the
   entry. v0.1 is the ten; v1.0 is Slavic complete; later volumes are their own releases.
+- Planner, 3c: a creature that has appearance clauses shows them on the left page, so its
+  `scene` clauses go in a right-page "Scene" section after "Behaviour and habitat" (8 of
+  the 10 spreads). Unseen creatures keep their scene clauses on the left page. Rejected:
+  dropping a seen creature's scene clauses from the page, because a sourced clause must
+  not vanish from what the reader sees.
+
+## Next-phase candidates (recorded 2026-10-27, at the close of Phase 3)
+
+Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
+
+- Slavic batch scaling: the remaining 100 to 150 Slavic creatures under the v2 prompts,
+  released as v1.0 (the volume is the unit of release).
+- Coverage pass: sample uncited pages for name variants and omissions the verify stage
+  cannot see. Seven of the ten v2 drafts stopped with relevant pages unread.
+- People-mapping table (\*): settle Little-Russia, Lusatia, Ruthenians, Kief/Chernigof,
+  South-Russian and Kharkov once, before each batch entry guesses.
+- R2 and release zips: the full-resolution PNGs go to a Cloudflare R2 bucket and a GitHub
+  Release zip, as settled in Phase 2. Not done in Phase 3 (no spend).
+- Hugging Face mirror of the dataset.
+- Agent-readable layer: a form of the dataset and method aimed at agents, beyond the
+  static JSON API under `/data/slavic/`.
+- Máchal 1918 deep links (from 3c-2): the site's chip deep links rely on archive.org's
+  page labels. Switching `machal1918` to `page_label_source: "header"` (the open item
+  above) would turn its deep links off until a leaf-index mapping is verified. No pilot
+  citation is affected today: cited labels are 231 to 271.
+- Author email at the flip (from 3e): the git author email is on every commit and becomes
+  public when the repo is flipped. Changing it means rewriting history, which is Ben's
+  call. The lighter option is the GitHub noreply address for future commits only.
 
