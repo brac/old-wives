@@ -164,3 +164,22 @@ in the brief.
     - vodyanoi: a man who is part frog, with a human nose, wispy beard and head hair, and heavier webbing.
   - Each `note` field records Ben's reason.
 - **2d-f** generates those eight on seeds 31 and 32 under `plates/iter3/out/` (16 images, 16 OK). The ledger stands at $4.17 of the $25 cap.
+- **Round-three verdict (Ben, 2026-10-27): the plates drifted into colour, photorealism and painted backgrounds.**
+  - Iter3 had the style words only as a suffix, and its descriptions named settings: a stove, a bathhouse, a swamp's edge.
+  - A mechanical count of tinted pixels backs his eye. The share of samples with chroma above 0.12 was:
+    - bannik about 63%;
+    - rusalka 45–59%;
+    - vodyanoi about 33%;
+    - domovoi 24–31%.
+    - For comparison, the approved baba-yaga scores 1.7%.
+  - **2d-g** opens every `visual` text with a restated style sentence (a monochrome silverpoint character study, a single figure on plain off-white paper, Renaissance sketchbook).
+  - It removes every setting and adds photorealism, background, scenery and interior to the negatives.
+  - It folds in his per-creature notes:
+    - poludnitsa has no lower jaw at all and solid white, rotted eyes, and is never happy;
+    - bannik is not cute and has no bathhouse;
+    - domovoi has no stove;
+    - rusalka's hair alone covers her breasts, with no bikini top;
+    - vampir's mouth is closed and teeth are never mentioned;
+    - vodyanoi is a frog-human crossbreed with a frog head and frog skin, not a man in a mask.
+  - Iter4 used seeds 31 and 32. Drekavac and domovoi also got 33 and 34, because 31 and 32 came back tinted (16–26%).
+  - The review sheet shows the colour percentage per plate as information only; Ben's eye decides. The ledger is $4.969.
