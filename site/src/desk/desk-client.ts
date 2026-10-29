@@ -137,7 +137,13 @@ async function creatureView(id: string) {
   app.querySelector<HTMLButtonElement>("#acceptDirect")!.onclick = () =>
     act(() => api("/accept", { id, text: app.querySelector<HTMLTextAreaElement>("#direct")!.value, note: note.value || "(typed directly)" }), id);
   app.querySelector<HTMLButtonElement>("#redraw")!.onclick = () => act(() => api("/redraw", { id }), id);
-  app.querySelector<HTMLButtonElement>("#run")!.onclick = () => act(() => api("/run", {}), id).then(() => poll(id));
+  const runBtn = app.querySelector<HTMLButtonElement>("#run")!;
+  runBtn.onclick = () => void runQueue();
+  // The creature payload is fresher than the page's last queue read (e.g. right after
+  // "Queue redraw"), so fold its jobs in before labelling the button, then re-check.
+  queueJobs = [...queueJobs.filter((j) => j.creature !== id), ...c.history.jobs];
+  syncRunButton();
+  void checkQueue();
   app.querySelector<HTMLButtonElement>("#skip")!.onclick = () => act(() => api("/skip", { id }), id);
   app.querySelector<HTMLButtonElement>("#flag")!.onclick = () => {
     const text = prompt("Flag for the report");
@@ -148,20 +154,165 @@ async function creatureView(id: string) {
 function jobsHtml(jobs: any[]): string {
   return jobs
     .slice(-3)
-    .map((j) => `<div><small>${esc(j.id)} seed ${j.seed}${j.dry_run ? " (dry run)" : ""}: <b>${esc(j.status)}</b></small><pre>${esc(j.log.slice(-6).join("\n"))}</pre></div>`)
+    .map(
+      (j) =>
+        `<div><small>${esc(j.id)} seed ${j.seed}${j.dry_run ? " (dry run)" : ""}: <b class="job-${esc(j.status)}">${esc(j.status)}</b></small><pre>${esc(j.log.slice(-6).join("\n"))}</pre></div>`,
+    )
     .join("");
 }
 
-async function poll(id: string) {
-  for (let i = 0; i < 600; i++) {
-    const q = await api<any>("/queue");
-    const mine = q.jobs.filter((j: any) => j.creature === id);
-    const el = document.getElementById("jobs");
-    if (!el) return;
-    el.innerHTML = jobsHtml(mine);
-    if (!q.jobs.some((j: any) => j.status === "queued" || j.status === "running")) return route();
-    await new Promise((r) => setTimeout(r, 2000));
+// ---- Queue state: one poller for the whole page, feeding the header bar, the Run queue
+// button and the creature view's #jobs block. "Busy" means a job is running, or this page
+// pressed Run and queued jobs are still waiting to start. Jobs that are merely queued are
+// waiting for Run, not busy: treating them as busy would disable the button and poll forever.
+
+const qbar = document.getElementById("qbar") as HTMLDivElement;
+const POLL_MS = 2000;
+const SUMMARY_MS = 10_000;
+let queueJobs: any[] = [];
+let starting = false; // the POST /run request is in flight
+let runRequested = false; // this page pressed Run and the queue has not gone idle since
+let polling = false;
+let wasBusy = false;
+const session = new Set<string>(); // ids of jobs seen queued or running while busy
+let tickTimer: ReturnType<typeof setInterval> | undefined;
+let summaryTimer: ReturnType<typeof setTimeout> | undefined;
+
+const isActive = (j: any) => j.status === "queued" || j.status === "running";
+const runningJob = () => queueJobs.find((j) => j.status === "running");
+const queuedCount = () => queueJobs.filter((j) => j.status === "queued").length;
+const isBusy = () => Boolean(runningJob()) || (runRequested && queuedCount() > 0);
+const currentCreature = () => location.hash.match(/^#\/c\/([a-z0-9-]+)/)?.[1] ?? null;
+
+function syncRunButton() {
+  const btn = document.getElementById("run") as HTMLButtonElement | null;
+  const id = currentCreature();
+  if (!btn || !id) return;
+  const left = queueJobs.filter(isActive).length;
+  const mine = queueJobs.some((j) => j.creature === id && j.status === "queued");
+  const [label, disabled] = starting
+    ? ["Starting…", true]
+    : isBusy()
+      ? [`Running… (${left} left)`, true]
+      : mine
+        ? ["Run queue", false]
+        : ["Nothing queued", true];
+  btn.textContent = label;
+  btn.disabled = disabled;
+}
+
+function startedAt(job: any): number | null {
+  const line = (job.log as string[]).find((l) => l.startsWith("start "));
+  const t = line ? Date.parse(line.slice(6)) : NaN;
+  return Number.isFinite(t) ? t : null;
+}
+
+function mmss(ms: number): string {
+  const s = Math.max(0, Math.floor(ms / 1000));
+  return `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
+}
+
+function renderBusyBar() {
+  const job = runningJob();
+  const queued = queuedCount();
+  let text: string;
+  if (job) {
+    const t0 = startedAt(job);
+    text = `fal is generating ${esc(job.creature)} seed ${esc(job.seed)}${job.dry_run ? " (dry run)" : ""}${t0 === null ? "" : ` · ${mmss(Date.now() - t0)} elapsed`}`;
+    if (queued) text += ` · ${queued} more queued`;
+  } else text = `starting the queue · ${queued} queued`;
+  qbar.className = "qbar busy";
+  qbar.innerHTML = `<span class="qspin" aria-hidden="true"></span><span>${text}</span>`;
+  qbar.hidden = false;
+}
+
+function showSummary() {
+  const jobs = queueJobs.filter((j) => session.has(j.id));
+  const done = jobs.filter((j) => j.status === "done");
+  const failed = jobs.filter((j) => j.status === "failed");
+  const parts: string[] = [];
+  if (done.length) parts.push(`done: ${done.length} image${done.length === 1 ? "" : "s"}${done.every((j) => j.dry_run) ? " (dry run)" : ""}`);
+  if (failed.length) parts.push(`${failed.length} failed: ${esc(failed[failed.length - 1].log.slice(-1)[0] ?? "no log")}`);
+  if (!parts.length) parts.push("queue idle");
+  qbar.className = `qbar ${failed.length ? "fail" : "ok"}`;
+  qbar.innerHTML = `<span>${parts.join(" · ")}</span>`;
+  qbar.hidden = false;
+  clearTimeout(summaryTimer);
+  summaryTimer = setTimeout(() => (qbar.hidden = true), SUMMARY_MS);
+}
+
+/** Applies a fresh queue read to the bar, the button and #jobs; handles the busy → idle edge. */
+function applyQueue(jobs: any[]) {
+  queueJobs = jobs;
+  const busy = isBusy();
+  if (busy) {
+    jobs.filter(isActive).forEach((j) => session.add(j.id));
+    clearTimeout(summaryTimer);
+    renderBusyBar();
+    if (!tickTimer) tickTimer = setInterval(() => isBusy() && renderBusyBar(), 1000);
+  } else {
+    clearInterval(tickTimer);
+    tickTimer = undefined;
   }
+  const id = currentCreature();
+  const el = document.getElementById("jobs");
+  if (id && el) el.innerHTML = jobsHtml(jobs.filter((j) => j.creature === id));
+  if (wasBusy && !busy) {
+    runRequested = false;
+    showSummary();
+    // Refresh the view so new candidates (or batch thumbnails) appear, as before.
+    const touched = jobs.some((j) => session.has(j.id) && (id === null || j.creature === id));
+    session.clear();
+    if (touched) route();
+  }
+  wasBusy = busy;
+  syncRunButton();
+}
+
+/** One queue read; starts the poller if the queue is busy. */
+async function checkQueue() {
+  try {
+    applyQueue((await api<any>("/queue")).jobs);
+  } catch {
+    return;
+  }
+  if (isBusy()) void pollQueue();
+}
+
+async function pollQueue() {
+  if (polling) return;
+  polling = true;
+  try {
+    while (isBusy()) {
+      await new Promise((r) => setTimeout(r, POLL_MS));
+      try {
+        applyQueue((await api<any>("/queue")).jobs);
+      } catch {
+        // A dropped read (server restart, phone sleep) just waits for the next tick.
+      }
+    }
+  } finally {
+    polling = false;
+  }
+}
+
+async function runQueue() {
+  if (starting || isBusy()) return;
+  starting = true;
+  syncRunButton();
+  try {
+    await api("/run", {});
+    runRequested = true;
+    queueJobs.filter(isActive).forEach((j) => session.add(j.id));
+    // A job can finish (or be refused at the plate cap) before the first read below;
+    // marking the page busy here still produces the summary on that read.
+    wasBusy = true;
+  } catch (e) {
+    alert((e as Error).message);
+  } finally {
+    starting = false;
+  }
+  await checkQueue();
 }
 
 async function act(fn: () => Promise<unknown>, id: string) {
@@ -370,3 +521,5 @@ function route() {
 }
 window.addEventListener("hashchange", route);
 route();
+// On load, check once: a reload or a second device picks up a queue that is already running.
+void checkQueue();
