@@ -65,6 +65,51 @@ export async function noteToEdit(note: string, text: string, call: FalCall = rea
   return { revised, model: NOTE_MODEL, endpoint: NOTE_ENDPOINT, cost_usd: Number(d.usage?.cost ?? 0) };
 }
 
+/**
+ * The fixed instruction for the singular starting text (4c round 6, Ben 2026-10-29). The
+ * entry's appearance clauses are research data written about the creature as a kind ("The
+ * Vily are pictured as beautiful women"); the desk offers Ben one individual instead. The
+ * clauses themselves stay untouched in data/; this rewrite lives only in the desk cache
+ * (plates/desk-drafts.json), and its cost counts against NOTE_SPEND_CAP_USD.
+ */
+export const SINGULAR_INSTRUCTION = [
+  "You rewrite a short description of a folklore creature for an illustrator who will draw one individual.",
+  'Describe one single creature of this kind, in the singular and the present tense ("She has long hair", not "The Vily have long hair").',
+  "Keep every physical detail in the text.",
+  "Add nothing that is not in the text: no details from folklore sources, no details from your own knowledge of the creature.",
+  'Drop attributions to sources and scholars ("Karadzic says", "according to").',
+  "Drop behaviour and belief that cannot be seen in a picture.",
+  "Reply with the rewritten text only, no preamble, no quotes.",
+].join(" ");
+
+export function singularPrompt(draft: string): string {
+  return `DESCRIPTION:\n${draft.trim()}`;
+}
+
+export interface SingularResult {
+  text: string;
+  model: string;
+  endpoint: string;
+  cost_usd: number;
+}
+
+/** Rewrites the joined appearance clauses as one creature, singular and present tense. */
+export async function singularize(draft: string, call: FalCall = realFalCall): Promise<SingularResult> {
+  if (!draft.trim()) throw new Error("empty agent draft");
+  const { data } = await call(NOTE_ENDPOINT, {
+    model: NOTE_MODEL,
+    system_prompt: SINGULAR_INSTRUCTION,
+    prompt: singularPrompt(draft),
+    temperature: 0,
+    max_tokens: 1200,
+  });
+  const d = data as { output?: string; error?: string | null; usage?: { cost?: number } | null };
+  if (d.error) throw new Error(`singular-draft model error: ${d.error}`);
+  const text = (d.output ?? "").trim().replace(/^"(.*)"$/s, "$1");
+  if (!text) throw new Error("singular-draft model returned no text");
+  return { text, model: NOTE_MODEL, endpoint: NOTE_ENDPOINT, cost_usd: Number(d.usage?.cost ?? 0) };
+}
+
 /** Whisper path: audio uploaded to fal storage, transcript returned, audio not kept here. */
 export async function transcribe(audio: Blob): Promise<string> {
   if (!process.env.FAL_KEY) throw new Error("FAL_KEY is not set (the desk loads it from .env)");

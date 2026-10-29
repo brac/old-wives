@@ -73,7 +73,9 @@ async function creatureView(id: string) {
   const c = await api<any>(`/creature?id=${encodeURIComponent(id)}`);
   const cfg = await api<any>("/config");
   titleEl.textContent = `${c.name} · ${c.state}`;
-  const current: string = c.visual?.text ?? c.draft?.text ?? "";
+  // The starting text: Ben's text, else the singular agent draft (cached or fetched below),
+  // else the raw joined clauses. The note path and "Edit directly" both start from it.
+  let current: string = c.visual?.text ?? c.draft?.singular?.text ?? c.draft?.text ?? "";
   const cands: Cand[] = c.candidates.items;
   app.innerHTML = `
   <section><h2>Candidates <small>${esc(c.candidates.iteration ?? "none")}</small></h2>
@@ -84,7 +86,10 @@ async function creatureView(id: string) {
       )
       .join("")}</div></section>
   <section><h2>Visual text</h2>
-    ${c.visual ? `<p>${esc(c.visual.text)}</p><p class="muted">negative_extra: ${esc(c.visual.negative_extra ?? "none")} · ${esc(c.visual.by)} ${esc(c.visual.date)}</p>` : `<div class="draft"><b>${esc(c.draft.label)}</b><p>${esc(c.draft.text)}</p></div>`}
+    ${c.visual ? `<p>${esc(c.visual.text)}</p><p class="muted">${esc(c.visual.by)} ${esc(c.visual.date)}</p>` : draftHtml(c.draft)}
+    <div class="neg"><label>negative words <input id="neg" type="text" value="${esc(c.visual?.negative_extra ?? "")}" ${c.visual ? "" : "disabled title='accept a visual text first'"} placeholder="none"></label>
+      <button id="saveNeg" ${c.visual ? "" : "disabled title='accept a visual text first'"}>Save</button> <small id="negstate"></small>
+      <p class="muted"><small>base negatives (fixed, always sent): ${esc(c.base_negative ?? "")}</small></p></div>
   </section>
   <section><h2>Note</h2>
     <button class="talk" id="talk">Hold or tap to talk</button> <small id="talkstate"></small>
@@ -113,6 +118,30 @@ async function creatureView(id: string) {
   </ul></section>`;
 
   app.querySelectorAll<HTMLImageElement>("img[data-full]").forEach((el) => (el.onclick = () => showFull(el.dataset.full!)));
+  const direct = app.querySelector<HTMLTextAreaElement>("#direct")!;
+  if (!c.visual && c.draft) {
+    const box = app.querySelector<HTMLDivElement>("#draftBox")!;
+    const status = app.querySelector<HTMLElement>("#draftState")!;
+    const loadSingular = async (remake: boolean) => {
+      const before = current;
+      status.textContent = remake ? "remaking the singular draft…" : "making the singular draft…";
+      try {
+        const r = await api<any>("/singular", { id, remake });
+        current = r.text;
+        box.querySelector("b")!.textContent = r.label;
+        box.querySelector(".draftText")!.textContent = r.text;
+        // Only replace the edit box when Ben has not typed into it yet.
+        if (direct.value === before) direct.value = r.text;
+        status.textContent = r.cached ? "from cache" : `${cfg.note_model} · $${Number(r.cost_usd).toFixed(5)}`;
+      } catch (e) {
+        status.textContent = `showing the raw draft: ${(e as Error).message}`;
+      }
+    };
+    app.querySelector<HTMLButtonElement>("#remake")!.onclick = () => void loadSingular(true);
+    if (!c.draft.singular) void loadSingular(false);
+  }
+  app.querySelector<HTMLButtonElement>("#saveNeg")!.onclick = () =>
+    act(() => api("/accept", { id, text: current, note: "(negative words edited)", negative_extra: app.querySelector<HTMLInputElement>("#neg")!.value }), id);
   app.querySelectorAll<HTMLButtonElement>("button[data-approve]").forEach(
     (b) => (b.onclick = () => act(() => api("/approve", { id, source: b.dataset.approve }), id)),
   );
@@ -135,7 +164,7 @@ async function creatureView(id: string) {
     }
   };
   app.querySelector<HTMLButtonElement>("#acceptDirect")!.onclick = () =>
-    act(() => api("/accept", { id, text: app.querySelector<HTMLTextAreaElement>("#direct")!.value, note: note.value || "(typed directly)" }), id);
+    act(() => api("/accept", { id, text: direct.value, note: note.value || "(typed directly)" }), id);
   app.querySelector<HTMLButtonElement>("#redraw")!.onclick = () => act(() => api("/redraw", { id }), id);
   const runBtn = app.querySelector<HTMLButtonElement>("#run")!;
   runBtn.onclick = () => void runQueue();
@@ -313,6 +342,14 @@ async function runQueue() {
     starting = false;
   }
   await checkQueue();
+}
+
+/** The agent draft block: singular text when cached, raw clauses under a collapsed toggle. */
+function draftHtml(d: any): string {
+  const shown = d.singular ?? d;
+  return `<div class="draft" id="draftBox"><b>${esc(shown.label)}</b><p class="draftText">${esc(shown.text)}</p>
+    <details><summary>source clauses</summary><p>${esc(d.text)}</p></details>
+    <button id="remake">Remake singular</button> <small id="draftState"></small></div>`;
 }
 
 async function act(fn: () => Promise<unknown>, id: string) {

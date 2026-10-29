@@ -34,10 +34,15 @@ export const STYLES: readonly Style[] = ["a", "b"];
 /**
  * Fragments shared by every style variant. "study sheet" was removed in 2d: together with
  * "Renaissance sketch" it pulled in Leonardo-style handwritten annotations.
+ *
+ * STYLE_SKETCH, 2026-10-29, Ben's ruling (4c round 6): "Renaissance sketch" became
+ * "bestiary illustration" for every plate generated from now on. Rejected alternative: keep
+ * "Renaissance sketch", which pulled plates toward human figure studies. Plates approved
+ * before the change keep the prompts recorded with them.
  */
 export const STYLE_LEAD = "silverpoint study";
 export const STYLE_MEDIUM = "metalpoint drawing";
-export const STYLE_SKETCH = "Renaissance sketch";
+export const STYLE_SKETCH = "bestiary illustration";
 export const STYLE_BODY = "hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome";
 
 /** Style b's own fragments (2d-d). */

@@ -33,7 +33,7 @@ describe("tokens", () => {
 
   test("positive tokens default to guides off and plain paper; negatives carry the no-script list", () => {
     expect(STYLE_TOKENS).toBe(
-      "silverpoint study, metalpoint drawing, Renaissance sketch, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+      "silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
     );
     expect(styleTokens()).toBe(styleTokens({ guides: "off", paper: "plain", style: "a" }));
     expect(styleTokens({ style: "b" })).toBe(

@@ -11,8 +11,10 @@ import { resolve } from "node:path";
 import type { IncomingMessage, ServerResponse } from "node:http";
 import { estimateUsd, getArm } from "../plates/arms.js";
 import { wordDiff } from "./diff.js";
-import { NOTE_ENDPOINT, NOTE_MODEL, NOTE_SPEND_CAP_USD, WHISPER_ENDPOINT, noteToEdit, transcribe, type FalCall } from "./llm.js";
+import { NEGATIVE_TOKENS } from "../plates/prompt.js";
+import { NOTE_ENDPOINT, NOTE_MODEL, NOTE_SPEND_CAP_USD, WHISPER_ENDPOINT, noteToEdit, singularize, transcribe, type FalCall } from "./llm.js";
 import {
+  DRAFTS_FILE,
   OVERRIDES_FILE,
   PICKS_FILE,
   QUEUE_FILE,
@@ -23,8 +25,10 @@ import {
   creatureIds,
   creaturesInBatch,
   displayName,
+  draftHash,
   isBatchKey,
   readJson,
+  readDrafts,
   readOverrides,
   readPicks,
   readQueue,
@@ -144,6 +148,54 @@ export function llmSpend(root: string): number {
   return Math.round(readQueue(root).llm_calls.reduce((s, c) => s + c.cost_usd, 0) * 1e6) / 1e6;
 }
 
+export const RAW_DRAFT_LABEL = "agent draft, not yet yours";
+export const SINGULAR_DRAFT_LABEL = "agent draft, singular (Gemini), not yet yours";
+/** The note recorded in the queue's call log for a singular-draft call. */
+export const SINGULAR_CALL_NOTE = "(singular draft)";
+
+/** The cached singular draft for a creature, or null when absent or made from an older raw draft. */
+export function cachedSingular(root: string, id: string, raw: string): string | null {
+  const hit = readDrafts(root)[id];
+  return hit && hit.raw_hash === draftHash(raw) ? hit.text : null;
+}
+
+/**
+ * The singular starting text (4c round 6): from the cache when it matches the current raw
+ * draft, otherwise one model call, logged in the queue's call log and counted against the
+ * note spend cap. `remake` skips the cache. Throws (HTTP 402) when the cap is reached.
+ */
+export async function singularDraft(
+  root: string,
+  id: string,
+  raw: string,
+  fal?: FalCall,
+  remake = false,
+): Promise<{ text: string; cached: boolean; cost_usd: number }> {
+  if (!remake) {
+    const hit = cachedSingular(root, id, raw);
+    if (hit) return { text: hit, cached: true, cost_usd: 0 };
+  }
+  if (!raw.trim()) throw new HttpError(409, "the entry has no appearance clauses to rewrite");
+  if (llmSpend(root) >= NOTE_SPEND_CAP_USD) throw new HttpError(402, `note spend has reached the $${NOTE_SPEND_CAP_USD} cap; showing the raw draft`);
+  const log = (ok: boolean, cost: number) => {
+    const q = readQueue(root);
+    q.llm_calls.push({ date: new Date().toISOString(), creature: id, endpoint: NOTE_ENDPOINT, model: NOTE_MODEL, cost_usd: cost, note: SINGULAR_CALL_NOTE, ok });
+    writeDeskJson(root, QUEUE_FILE, q);
+  };
+  let r;
+  try {
+    r = await singularize(raw, fal);
+  } catch (err) {
+    log(false, 0);
+    throw err;
+  }
+  log(true, r.cost_usd);
+  const drafts = readDrafts(root);
+  drafts[id] = { raw_hash: draftHash(raw), text: r.text, model: r.model, date: new Date().toISOString() };
+  writeDeskJson(root, DRAFTS_FILE, drafts);
+  return { text: r.text, cached: false, cost_usd: r.cost_usd };
+}
+
 export function createDeskApi(deps: DeskDeps) {
   const { root } = deps;
   const runJob = deps.runJob ?? spawnGenerator;
@@ -235,7 +287,14 @@ export function createDeskApi(deps: DeskDeps) {
         pick: picks[id] ?? null,
         appearance: entry.appearance ?? [],
         visual,
-        draft: visual ? null : { label: "agent draft, not yet yours", text: agentDraft(entry) },
+        draft: visual
+          ? null
+          : (() => {
+              const raw = agentDraft(entry);
+              const singular = cachedSingular(root, id, raw);
+              return { label: RAW_DRAFT_LABEL, text: raw, singular: singular ? { label: SINGULAR_DRAFT_LABEL, text: singular } : null };
+            })(),
+        base_negative: NEGATIVE_TOKENS,
         can_generate: Boolean(visual),
         candidates: candidates(root, id),
         refs: refImages(root, id),
@@ -278,6 +337,14 @@ export function createDeskApi(deps: DeskDeps) {
       }
     },
 
+    "POST /singular": async (req) => {
+      const b = await json(req);
+      const id = str(b.id, "id", 64);
+      const raw = agentDraft(entryOf(root, id));
+      const r = await singularDraft(root, id, raw, deps.fal, b.remake === true);
+      return { ok: true, label: SINGULAR_DRAFT_LABEL, ...r };
+    },
+
     "POST /accept": async (req) => {
       const b = await json(req);
       const id = str(b.id, "id", 64);
@@ -288,6 +355,8 @@ export function createDeskApi(deps: DeskDeps) {
       const overrides = readOverrides(root);
       const ov = (overrides[id] ??= {});
       const date = today();
+      // An explicit string replaces the stored negative words ("" clears them); absent keeps them.
+      if (typeof b.negative_extra === "string" && b.negative_extra.length > 1000) throw new HttpError(400, "negative_extra too long");
       const negative = typeof b.negative_extra === "string" ? b.negative_extra.trim() : ov.visual?.negative_extra;
       ov.visual = { text, ...(negative ? { negative_extra: negative } : {}), basis: "visual tradition", by: "Ben", date, ...(note ? { note } : {}) };
       ov.human_edits = [...(ov.human_edits ?? []), { type: "visual-tradition", text, note, by: "Ben", date }];

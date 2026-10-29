@@ -18,3 +18,6 @@ playwright-report/
 
 # Review desk queue and call log (local state)
 plates/desk-queue.json
+
+# Review desk singular-draft cache (4c round 6, local state, regenerable)
+plates/desk-drafts.json

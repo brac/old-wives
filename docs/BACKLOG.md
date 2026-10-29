@@ -527,3 +527,17 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   Anthropic API key in `.env`; dropping the model step and editing the visual text
   directly, which loses the cleanup of rambling dictation. Revisit if the edits it
   proposes are poor.
+
+## Plate style and desk starting text (2026-10-29)
+
+- **Ben: the style token "Renaissance sketch" becomes "bestiary illustration" for
+  every plate from now on.** Plates were coming out as human figure studies; the
+  silverpoint and Renaissance-sketch vocabulary is learned mostly from portrait and
+  anatomy studies. Rejected: keeping it, and running a two-style bake-off first
+  (Ben ruled directly). Already approved plates keep their recorded prompts.
+- **Ben: the desk's starting text is a singular rewrite of the agent draft.** The
+  entry's appearance clauses stay as researched (plural where the sources are),
+  because they are cited data; Gemini rewrites them at the desk into one
+  individual creature so Ben edits less. Rejected: changing the research prompts or
+  the entries to write in the singular, which would make the cited clauses drift
+  from what the sources say.

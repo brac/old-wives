@@ -1,9 +1,10 @@
 // Storage for the review desk (plan phase-4, 4c "Storage").
 //
-// The desk writes exactly three files, all under plates/: overrides.json, picks.json and
-// the desk's own queue file. Every write goes through writeDeskJson, which refuses any
+// The desk writes exactly four files, all under plates/: overrides.json, picks.json, the
+// desk's own queue file and its singular-draft cache (desk-drafts.json, 4c round 6). Every write goes through writeDeskJson, which refuses any
 // other path. Everything else the desk touches is read-only.
 
+import { createHash } from "node:crypto";
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { isAbsolute, join, normalize, relative, resolve, sep } from "node:path";
 
@@ -12,9 +13,11 @@ export const PICKS_FILE = "plates/picks.json";
 export const QUEUE_FILE = "plates/desk-queue.json";
 export const SPEND_FILE = "plates/spend.json";
 export const ENTRIES_DIR = "data/entries";
+/** Cache of the singular starting text, keyed by creature id (4c round 6). Gitignored. */
+export const DRAFTS_FILE = "plates/desk-drafts.json";
 
 /** The only files the desk may write, relative to the repo root. */
-export const WRITE_ALLOW_LIST: readonly string[] = Object.freeze([OVERRIDES_FILE, PICKS_FILE, QUEUE_FILE]);
+export const WRITE_ALLOW_LIST: readonly string[] = Object.freeze([OVERRIDES_FILE, PICKS_FILE, QUEUE_FILE, DRAFTS_FILE]);
 
 /** Image folders the desk may serve to its own page (read-only). refs never leave the machine. */
 const SERVE_ROOT = /^plates\/(iter\d+|cand|grid|refs|desk)\//;
@@ -24,7 +27,7 @@ function relPosix(root: string, p: string): string {
   return relative(resolve(root), resolve(root, p)).split(sep).join("/");
 }
 
-/** True when `p` (relative to root, or absolute) is exactly one of the three desk files. */
+/** True when `p` (relative to root, or absolute) is exactly one of the desk's own files. */
 export function isWriteAllowed(root: string, p: string): boolean {
   if (typeof p !== "string" || p.includes("\0")) return false;
   const rel = relPosix(root, p);
@@ -224,6 +227,21 @@ export function stateOf(id: string, picks: Picks, queue: Queue): CreatureState {
 /** The labelled agent starting draft: the sourced clauses joined, never Ben's text. */
 export function agentDraft(entry: { appearance?: Array<{ text: string }> }): string {
   return (entry.appearance ?? []).map((c) => c.text.trim()).join(" ");
+}
+
+/** One cached singular draft: valid only while `raw_hash` matches the current agent draft. */
+export interface SingularDraft {
+  raw_hash: string;
+  text: string;
+  model: string;
+  date: string;
+}
+export type Drafts = Record<string, SingularDraft>;
+export const readDrafts = (root: string) => readJson<Drafts>(root, DRAFTS_FILE, {});
+
+/** Short content hash of the raw agent draft, so the cache misses when the entry changes. */
+export function draftHash(raw: string): string {
+  return createHash("sha256").update(raw.trim()).digest("hex").slice(0, 16);
 }
 
 export function today(): string {

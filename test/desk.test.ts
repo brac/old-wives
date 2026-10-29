@@ -2,9 +2,10 @@ import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "nod
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
-import { JOB_ESTIMATE_USD, PLATE_CAP_USD, createDeskApi, type RunJob } from "../src/desk/api.js";
+import { JOB_ESTIMATE_USD, PLATE_CAP_USD, SINGULAR_DRAFT_LABEL, createDeskApi, type RunJob } from "../src/desk/api.js";
 import { applyDiff, wordDiff } from "../src/desk/diff.js";
-import { NOTE_ENDPOINT, NOTE_INSTRUCTION, NOTE_MODEL, noteToEdit, type FalCall } from "../src/desk/llm.js";
+import { NOTE_ENDPOINT, NOTE_INSTRUCTION, NOTE_MODEL, NOTE_SPEND_CAP_USD, SINGULAR_INSTRUCTION, noteToEdit, singularize, type FalCall } from "../src/desk/llm.js";
+import { NEGATIVE_TOKENS } from "../src/plates/prompt.js";
 import { WRITE_ALLOW_LIST, isWriteAllowed, servablePath, writeDeskJson } from "../src/desk/store.js";
 
 describe("wordDiff", () => {
@@ -32,8 +33,8 @@ describe("wordDiff", () => {
 
 describe("write allow-list", () => {
   const root = "/repo";
-  it("allows exactly the three desk files", () => {
-    expect([...WRITE_ALLOW_LIST].sort()).toEqual(["plates/desk-queue.json", "plates/overrides.json", "plates/picks.json"]);
+  it("allows exactly the four desk files", () => {
+    expect([...WRITE_ALLOW_LIST].sort()).toEqual(["plates/desk-drafts.json", "plates/desk-queue.json", "plates/overrides.json", "plates/picks.json"]);
     for (const p of WRITE_ALLOW_LIST) expect(isWriteAllowed(root, p)).toBe(true);
     expect(isWriteAllowed(root, "plates/../plates/picks.json")).toBe(true);
   });
@@ -74,6 +75,23 @@ describe("noteToEdit", () => {
     expect(seen!.input.model).toBe("google/gemini-2.5-flash");
     expect(seen!.input.system_prompt).toBe(NOTE_INSTRUCTION);
     expect(String(seen!.input.prompt)).toContain("more hunched");
+  });
+});
+
+describe("singularize", () => {
+  it("sends the fixed singular instruction to the pinned model", async () => {
+    let seen: { endpoint: string; input: Record<string, unknown> } | null = null;
+    const fal: FalCall = async (endpoint, input) => {
+      seen = { endpoint, input };
+      return { data: { output: '"She has long hair."', usage: { cost: 0.0002 } } };
+    };
+    const r = await singularize("The Vily have long hair.", fal);
+    expect(r).toEqual({ text: "She has long hair.", model: NOTE_MODEL, endpoint: NOTE_ENDPOINT, cost_usd: 0.0002 });
+    expect(seen!.endpoint).toBe(NOTE_ENDPOINT);
+    expect(seen!.input.model).toBe(NOTE_MODEL);
+    expect(seen!.input.system_prompt).toBe(SINGULAR_INSTRUCTION);
+    expect(String(seen!.input.prompt)).toContain("The Vily have long hair.");
+    for (const part of ["singular", "present tense", "Add nothing", "Karadzic says", "cannot be seen"]) expect(SINGULAR_INSTRUCTION).toContain(part);
   });
 });
 
@@ -257,6 +275,87 @@ describe("desk API round trip on a scratch creature", () => {
       const api = createDeskApi({ root, fal, runJob });
       const rows = (await call(api, "GET", "/batch")).data;
       expect(rows.map((r: { id: string; has_text: boolean; thumb: unknown }) => [r.id, r.has_text, r.thumb])).toEqual([["zb", false, null], ["ab", true, null]]);
+    });
+  });
+
+  describe("singular starting text", () => {
+    const counted = () => {
+      const calls: Array<Record<string, unknown>> = [];
+      const f: FalCall = async (_e, input) => {
+        calls.push(input);
+        return { data: { output: `He is tall (${calls.length}).`, usage: { cost: 0.001 } } };
+      };
+      return { calls, f };
+    };
+
+    it("is generated once, then served from the cache and shown on /creature", async () => {
+      const { calls, f } = counted();
+      const api = createDeskApi({ root, fal: f, runJob });
+      expect((await call(api, "GET", `/creature?id=${ID}`)).data.draft.singular).toBeNull();
+      const a = await call(api, "POST", "/singular", { id: ID });
+      expect(a.status).toBe(200);
+      expect(a.data).toMatchObject({ text: "He is tall (1).", cached: false, label: SINGULAR_DRAFT_LABEL });
+      expect(calls[0].system_prompt).toBe(SINGULAR_INSTRUCTION);
+      const b = await call(api, "POST", "/singular", { id: ID });
+      expect(b.data).toMatchObject({ text: "He is tall (1).", cached: true });
+      expect(calls).toHaveLength(1);
+      const c = (await call(api, "GET", `/creature?id=${ID}`)).data;
+      expect(c.draft).toMatchObject({ text: "He is tall.", singular: { label: SINGULAR_DRAFT_LABEL, text: "He is tall (1)." } });
+      const q = (await call(api, "GET", "/queue")).data;
+      expect(q.llm_calls).toEqual([expect.objectContaining({ creature: ID, cost_usd: 0.001, note: "(singular draft)", ok: true })]);
+      expect((await call(api, "GET", "/config")).data.llm_spend_usd).toBe(0.001);
+    });
+
+    it("misses the cache when the entry's draft changes, and remake regenerates", async () => {
+      const { calls, f } = counted();
+      const api = createDeskApi({ root, fal: f, runJob });
+      await call(api, "POST", "/singular", { id: ID });
+      writeFileSync(join(root, "data/entries", `${ID}.json`), JSON.stringify({ id: ID, appearance: [{ text: "He is very tall.", cites: ["x:p.1"] }] }));
+      expect((await call(api, "GET", `/creature?id=${ID}`)).data.draft.singular).toBeNull();
+      expect((await call(api, "POST", "/singular", { id: ID })).data).toMatchObject({ text: "He is tall (2).", cached: false });
+      expect((await call(api, "POST", "/singular", { id: ID, remake: true })).data).toMatchObject({ text: "He is tall (3).", cached: false });
+      expect(calls).toHaveLength(3);
+      expect(String(calls[1].prompt)).toContain("He is very tall.");
+    });
+
+    it("refuses at the note spend cap without calling the model", async () => {
+      const { calls, f } = counted();
+      writeFileSync(join(root, "plates/desk-queue.json"), JSON.stringify({ llm_calls: [{ date: "x", creature: ID, endpoint: NOTE_ENDPOINT, model: NOTE_MODEL, cost_usd: NOTE_SPEND_CAP_USD, note: "n", ok: true }] }));
+      const api = createDeskApi({ root, fal: f, runJob });
+      const r = await call(api, "POST", "/singular", { id: ID });
+      expect(r.status).toBe(402);
+      expect(r.data.error).toContain("cap");
+      expect(calls).toHaveLength(0);
+    });
+
+    it("logs a failed call and writes no cache", async () => {
+      const api = createDeskApi({ root, fal: async () => { throw new Error("boom"); }, runJob });
+      expect((await call(api, "POST", "/singular", { id: ID })).status).toBe(500);
+      expect((await call(api, "GET", "/queue")).data.llm_calls).toEqual([expect.objectContaining({ ok: false, cost_usd: 0 })]);
+      expect((await call(api, "GET", `/creature?id=${ID}`)).data.draft.singular).toBeNull();
+    });
+
+    it("accepts the singular text as is; the raw draft stays refused", async () => {
+      const { f } = counted();
+      const api = createDeskApi({ root, fal: f, runJob });
+      const s = (await call(api, "POST", "/singular", { id: ID })).data.text;
+      expect((await call(api, "POST", "/accept", { id: ID, text: "He is tall." })).status).toBe(409);
+      expect((await call(api, "POST", "/accept", { id: ID, text: s })).status).toBe(200);
+    });
+  });
+
+  describe("negative words", () => {
+    const neg = () => JSON.parse(readFileSync(join(root, "plates/overrides.json"), "utf8"))[ID].visual.negative_extra;
+
+    it("are set, kept when absent, and cleared by an explicit empty string", async () => {
+      const api = createDeskApi({ root, fal, runJob });
+      expect((await call(api, "GET", `/creature?id=${ID}`)).data.base_negative).toBe(NEGATIVE_TOKENS);
+      await call(api, "POST", "/accept", { id: ID, text: "A tall man.", note: "(negative words edited)", negative_extra: " two eyes " });
+      expect(neg()).toBe("two eyes");
+      await call(api, "POST", "/accept", { id: ID, text: "A taller man.", note: "(typed directly)" });
+      expect(neg()).toBe("two eyes");
+      await call(api, "POST", "/accept", { id: ID, text: "A taller man.", note: "(negative words edited)", negative_extra: "" });
+      expect(neg()).toBeUndefined();
     });
   });
 
