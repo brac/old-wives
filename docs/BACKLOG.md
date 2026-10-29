@@ -541,3 +541,58 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   individual creature so Ben edits less. Rejected: changing the research prompts or
   the entries to write in the singular, which would make the cited clauses drift
   from what the sources say.
+
+## Presentation backlog (2026-10-28, from a survey of catalog sites)
+
+Ben surveyed how reference catalogs present illustrated entries (manuscript facsimile
+viewers, scholarly cross-reference sites, single-author illustrated encyclopedias,
+game compendia, museum collections, skeuomorphic flipbooks). Decisions:
+
+- **No page-flip or grimoire skeuomorphism.** The book feeling comes from typography,
+  paper, margins, plate placement and the voice, not from a curl animation. Rejected: a
+  literal flipping grimoire, as too on the nose and as the pattern with the worst record
+  (latency on every navigation, poor on phones, hides the URL structure).
+- **Not now: an attestation view** (creatures sorted or gridded by how well they are
+  attested, sources as columns). Ben does not care about it yet. Kept as a candidate.
+
+### Scheduled candidates (not yet in a phase)
+
+- **Beast-to-beast graph.** The site is pages of entries linked only to their sources.
+  Add the links the data already supports, after the model of bestiary.ca, where every
+  beast, manuscript and source page links to the others:
+  - a page per `family` (the household spirits, the water spirits, and so on), listing
+    its creatures with thumbnails;
+  - a page per practice or motif drawn from `dealing_with_it` and `behavior_habitat`
+    (left bread for it; crossed the gates; exhumed and staked; met at noon), which needs
+    a small controlled vocabulary of motif tags added to the schema and applied by the
+    draft, checked by verify;
+  - "also appears as" links between an entry and the entries that hold it as a variant
+    or a related being, from `related` and `variants`;
+  - a "related" strip at the foot of each spread generated from shared family and motif
+    tags, museum-collection style.
+
+  Cheap, because `family`, `related`, `variants` and the clause fields exist; the motif
+  vocabulary is the one new piece of data work. Earliest sensible phase: after the first
+  Slavic tranche (Phase 4), when 40 entries make the graph worth drawing.
+- **Contents page as a map of the volume.** Show the full Slavic candidate list on the
+  contents page with the drawn creatures filled in and the undrawn as a name only (no
+  silhouette, no unlock mechanic), so the page says how far the volume has got and makes
+  "the volume is the unit of release" visible. Depends on the candidate list in
+  `plans/phase-4.md` becoming a committed file.
+
+### bestiary.ca as a reference
+
+David Badke's Medieval Bestiary (bestiary.ca) is the reference for the *medieval Latin
+bestiary tradition* (Physiologus, Isidore of Seville, the English and French
+manuscripts). It is not a folklore encyclopedia, and its overlap with the Slavic volume
+is close to nil. Its own text is copyrighted, so it is never a cited source under the
+public-domain rule. Two uses:
+
+- **Structural model.** Its three node types (beasts, manuscripts, sources) with
+  constant cross-linking are the pattern for the beast-to-beast graph above. Study its
+  beast and manuscript page layouts before designing the family and motif pages.
+- **Source map for a later volume.** Its Digital Text Library and bibliography point at
+  public-domain editions (Isidore, Physiologus, the bestiary families). When a European
+  medieval or bestiary volume is scoped, start the corpus from that list rather than
+  from scratch, and cite the editions, not the site.
+
