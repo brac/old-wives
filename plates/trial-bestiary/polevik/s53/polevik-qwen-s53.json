@@ -1,0 +1,54 @@
+{
+  "name": "polevik-qwen-s53",
+  "date": "2026-11-02T22:12:39.439Z",
+  "arm": "qwen",
+  "endpoint": "fal-ai/qwen-image",
+  "request_id": "01a19e52-590a-73a1-8141-121851c4c39a",
+  "seed_requested": 53,
+  "seed_returned": 53,
+  "size_requested": {
+    "width": 1104,
+    "height": 1472
+  },
+  "size_returned": {
+    "width": 1104,
+    "height": 1472
+  },
+  "entry": "data/entries/polevik.json",
+  "field": "visual",
+  "form": null,
+  "variant": null,
+  "interpretive": true,
+  "behaviour_clause": null,
+  "guides": "off",
+  "paper": "plain",
+  "style": "a",
+  "prompt": "a small man, with a large beard and unruly hair tied like bundles of straw. His hair is straw. He wears simple, dirty farm clothes. stout slavic men. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "prompt_raw": "a small man, with a large beard and unruly hair tied like bundles of straw. His hair is straw. He wears simple, dirty farm clothes. stout slavic men. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions",
+  "clauses_used": [],
+  "clauses_dropped": [],
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "a small man, with a large beard and unruly hair tied like bundles of straw. His hair is straw. He wears simple, dirty farm clothes. stout slavic men.",
+      "by": "Ben",
+      "date": "2026-10-29"
+    }
+  ],
+  "refs": [],
+  "input": {
+    "prompt": "a small man, with a large beard and unruly hair tied like bundles of straw. His hair is straw. He wears simple, dirty farm clothes. stout slavic men. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "seed": 53,
+    "image_size": {
+      "width": 1104,
+      "height": 1472
+    },
+    "num_images": 1,
+    "output_format": "png",
+    "negative_prompt": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions"
+  },
+  "cost_usd_estimate": 0.04,
+  "price_source": "fal model page, 2026-10-27: \"$0.02 per megapixel\"",
+  "licence": "Apache-2.0"
+}

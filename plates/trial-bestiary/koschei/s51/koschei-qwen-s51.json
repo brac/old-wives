@@ -1,0 +1,54 @@
+{
+  "name": "koschei-qwen-s51",
+  "date": "2026-11-02T22:08:49.032Z",
+  "arm": "qwen",
+  "endpoint": "fal-ai/qwen-image",
+  "request_id": "01a19e4e-d4ff-7740-b558-0079066dfeb0",
+  "seed_requested": 51,
+  "seed_returned": 51,
+  "size_requested": {
+    "width": 1104,
+    "height": 1472
+  },
+  "size_returned": {
+    "width": 1104,
+    "height": 1472
+  },
+  "entry": "data/entries/koschei.json",
+  "field": "visual",
+  "form": null,
+  "variant": null,
+  "interpretive": true,
+  "behaviour_clause": null,
+  "guides": "off",
+  "paper": "plain",
+  "style": "a",
+  "prompt": "frightening, scary Old King is apparently framed after the fashion of a man. He is withered, decrepit, and yet lethal and dangerous. He is bald with white hair, and a beard and mustache that goes down to his mid-torso. He wears a crown upon his head and holds a sword that has serpentine qualities to it. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "prompt_raw": "frightening, scary Old King is apparently framed after the fashion of a man. He is withered, decrepit, and yet lethal and dangerous. He is bald with white hair, and a beard and mustache that goes down to his mid-torso. He wears a crown upon his head and holds a sword that has serpentine qualities to it. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions",
+  "clauses_used": [],
+  "clauses_dropped": [],
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "frightening, scary Old King is apparently framed after the fashion of a man. He is withered, decrepit, and yet lethal and dangerous. He is bald with white hair, and a beard and mustache that goes down to his mid-torso. He wears a crown upon his head and holds a sword that has serpentine qualities to it.",
+      "by": "Ben",
+      "date": "2026-10-29"
+    }
+  ],
+  "refs": [],
+  "input": {
+    "prompt": "frightening, scary Old King is apparently framed after the fashion of a man. He is withered, decrepit, and yet lethal and dangerous. He is bald with white hair, and a beard and mustache that goes down to his mid-torso. He wears a crown upon his head and holds a sword that has serpentine qualities to it. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "seed": 51,
+    "image_size": {
+      "width": 1104,
+      "height": 1472
+    },
+    "num_images": 1,
+    "output_format": "png",
+    "negative_prompt": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions"
+  },
+  "cost_usd_estimate": 0.04,
+  "price_source": "fal model page, 2026-10-27: \"$0.02 per megapixel\"",
+  "licence": "Apache-2.0"
+}

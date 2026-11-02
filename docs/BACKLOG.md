@@ -554,6 +554,16 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   Still in the prompts and not ruled on: "silverpoint study" in the tokens and
   "silverpoint character study" in the pilot opening sentence. "Study" is the word the
   2d-d style b dropped for pulling in figure-study and notebook pages.
+- **2026-11-02: the trial plates are drawn.** Twenty plates under `a-2026-10-29` in
+  `plates/trial-bestiary/<id>/s<seed>/` (sidecars committed, PNGs ignored as usual):
+  the eight desk creatures of 2026-10-29 at two seeds each, matching seeds the old style
+  already drew, plus baba-yaga (s21, s22) and leshy (s31, s32) from the pilot. $0.80 on
+  the ledger. Ben is remote, so instead of the desk the pairs are served as a static
+  side-by-side sheet at https://old-wives-trial.vercel.app (Vercel project
+  `old-wives-trial`, separate from the book site; throwaway, delete after the ruling).
+  Rejected: a review route inside the book site, which would ship trial material to the
+  public build; and a Vercel preview of the book site, whose preview URLs sit behind
+  Vercel authentication that a phone browser is not logged into.
 
 ## Presentation backlog (2026-10-28, from a survey of catalog sites)
 

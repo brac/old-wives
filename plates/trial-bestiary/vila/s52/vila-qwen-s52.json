@@ -1,0 +1,54 @@
+{
+  "name": "vila-qwen-s52",
+  "date": "2026-11-02T22:13:51.927Z",
+  "arm": "qwen",
+  "endpoint": "fal-ai/qwen-image",
+  "request_id": "01a19e53-7431-74b2-b680-9e21b79541fd",
+  "seed_requested": 52,
+  "seed_returned": 52,
+  "size_requested": {
+    "width": 1104,
+    "height": 1472
+  },
+  "size_returned": {
+    "width": 1104,
+    "height": 1472
+  },
+  "entry": "data/entries/vila.json",
+  "field": "visual",
+  "form": null,
+  "variant": null,
+  "interpretive": true,
+  "behaviour_clause": null,
+  "guides": "off",
+  "paper": "plain",
+  "style": "a",
+  "prompt": "The Vily are pictured as a beautiful woman, eternally young, with pale, porcelain skin. dressed all in white, in a thin white garment. long hair is fair or and hangs loose down their back and over their shoulders. body slender, thin and graceful, as light and ethereal as birds. often have gossamer wings. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "prompt_raw": "The Vily are pictured as a beautiful woman, eternally young, with pale, porcelain skin. dressed all in white, in a thin white garment. long hair is fair or and hangs loose down their back and over their shoulders. body  slender, thin and graceful, as light and ethereal as birds. often have gossamer wings. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions",
+  "clauses_used": [],
+  "clauses_dropped": [],
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "The Vily are pictured as a beautiful woman, eternally young, with pale, porcelain skin. dressed all in white, in a thin white garment. long hair is fair or and hangs loose down their back and over their shoulders. body  slender, thin and graceful, as light and ethereal as birds. often have gossamer wings.",
+      "by": "Ben",
+      "date": "2026-10-29"
+    }
+  ],
+  "refs": [],
+  "input": {
+    "prompt": "The Vily are pictured as a beautiful woman, eternally young, with pale, porcelain skin. dressed all in white, in a thin white garment. long hair is fair or and hangs loose down their back and over their shoulders. body slender, thin and graceful, as light and ethereal as birds. often have gossamer wings. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "seed": 52,
+    "image_size": {
+      "width": 1104,
+      "height": 1472
+    },
+    "num_images": 1,
+    "output_format": "png",
+    "negative_prompt": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions"
+  },
+  "cost_usd_estimate": 0.04,
+  "price_source": "fal model page, 2026-10-27: \"$0.02 per megapixel\"",
+  "licence": "Apache-2.0"
+}

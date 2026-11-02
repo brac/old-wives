@@ -1,0 +1,54 @@
+{
+  "name": "leshy-qwen-s31",
+  "date": "2026-11-02T22:15:32.875Z",
+  "arm": "qwen",
+  "endpoint": "fal-ai/qwen-image",
+  "request_id": "01a19e54-fe8a-7463-9a17-4cdb325ff487",
+  "seed_requested": 31,
+  "seed_returned": 31,
+  "size_requested": {
+    "width": 1104,
+    "height": 1472
+  },
+  "size_returned": {
+    "width": 1104,
+    "height": 1472
+  },
+  "entry": "data/entries/leshy.json",
+  "field": "visual",
+  "form": null,
+  "variant": null,
+  "interpretive": true,
+  "behaviour_clause": null,
+  "guides": "off",
+  "paper": "plain",
+  "style": "a",
+  "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. An uncanny old spirit of the forest in the shape of a gaunt, wild old man, dressed in moss, bark, dead leaves and forest debris. One of his arms is gnarled and knotted like a tree branch, half arm and half wood. From his head grow branching antlers of gnarled tree branches, many-pointed like a stag's antlers but made of wood and twigs. He has a long, tangled beard, a long drooping moustache and dishevelled hair hanging down. His eyes are wild, staring and cold, and his expression is unfriendly and menacing: a wandering creature of the woods that might eat a lost traveller. His legs are reverse-jointed, bending backward at the knee like the hind legs of a beast, and end in gnarled, clawed feet. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "prompt_raw": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. An uncanny old spirit of the forest in the shape of a gaunt, wild old man, dressed in moss, bark, dead leaves and forest debris. One of his arms is gnarled and knotted like a tree branch, half arm and half wood. From his head grow branching antlers of gnarled tree branches, many-pointed like a stag's antlers but made of wood and twigs. He has a long, tangled beard, a long drooping moustache and dishevelled hair hanging down. His eyes are wild, staring and cold, and his expression is unfriendly and menacing: a wandering creature of the woods that might eat a lost traveller. His legs are reverse-jointed, bending backward at the knee like the hind legs of a beast, and end in gnarled, clawed feet. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, kindly expression, smiling, jolly old man, close-up",
+  "clauses_used": [],
+  "clauses_dropped": [],
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. An uncanny old spirit of the forest in the shape of a gaunt, wild old man, dressed in moss, bark, dead leaves and forest debris. One of his arms is gnarled and knotted like a tree branch, half arm and half wood. From his head grow branching antlers of gnarled tree branches, many-pointed like a stag's antlers but made of wood and twigs. He has a long, tangled beard, a long drooping moustache and dishevelled hair hanging down. His eyes are wild, staring and cold, and his expression is unfriendly and menacing: a wandering creature of the woods that might eat a lost traveller. His legs are reverse-jointed, bending backward at the knee like the hind legs of a beast, and end in gnarled, clawed feet. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+      "by": "Ben",
+      "date": "2026-10-27"
+    }
+  ],
+  "refs": [],
+  "input": {
+    "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. An uncanny old spirit of the forest in the shape of a gaunt, wild old man, dressed in moss, bark, dead leaves and forest debris. One of his arms is gnarled and knotted like a tree branch, half arm and half wood. From his head grow branching antlers of gnarled tree branches, many-pointed like a stag's antlers but made of wood and twigs. He has a long, tangled beard, a long drooping moustache and dishevelled hair hanging down. His eyes are wild, staring and cold, and his expression is unfriendly and menacing: a wandering creature of the woods that might eat a lost traveller. His legs are reverse-jointed, bending backward at the knee like the hind legs of a beast, and end in gnarled, clawed feet. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "seed": 31,
+    "image_size": {
+      "width": 1104,
+      "height": 1472
+    },
+    "num_images": 1,
+    "output_format": "png",
+    "negative_prompt": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, kindly expression, smiling, jolly old man, close-up"
+  },
+  "cost_usd_estimate": 0.04,
+  "price_source": "fal model page, 2026-10-27: \"$0.02 per megapixel\"",
+  "licence": "Apache-2.0"
+}

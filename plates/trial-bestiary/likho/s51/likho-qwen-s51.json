@@ -1,0 +1,54 @@
+{
+  "name": "likho-qwen-s51",
+  "date": "2026-11-02T22:09:40.606Z",
+  "arm": "qwen",
+  "endpoint": "fal-ai/qwen-image",
+  "request_id": "01a19e4f-9e7e-7493-b64c-a44597774cba",
+  "seed_requested": 51,
+  "seed_returned": 51,
+  "size_requested": {
+    "width": 1104,
+    "height": 1472
+  },
+  "size_returned": {
+    "width": 1104,
+    "height": 1472
+  },
+  "entry": "data/entries/likho.json",
+  "field": "visual",
+  "form": null,
+  "variant": null,
+  "interpretive": true,
+  "behaviour_clause": null,
+  "guides": "off",
+  "paper": "plain",
+  "style": "a",
+  "prompt": "▎ A gaunt, one-eyed giant seen face-on. A single large eye in the middle of his forehead, above the nose. Smooth bare skin where the other eyes would be, with no eye sockets on either side. Sharp teeth, long tangled beard. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "prompt_raw": "▎ A gaunt, one-eyed giant seen face-on. A single large eye in the middle of his forehead, above the nose. Smooth bare skin where the other eyes would be, with no eye sockets on either side. Sharp teeth, long tangled beard. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, two eyes, pair of eyes, eyes on both sides, profile view, side view",
+  "clauses_used": [],
+  "clauses_dropped": [],
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "▎ A gaunt, one-eyed giant seen face-on. A single large eye in the middle of his forehead, above the nose. Smooth bare skin where the other eyes would be, with no eye sockets on either side. Sharp teeth, long tangled beard.",
+      "by": "Ben",
+      "date": "2026-10-29"
+    }
+  ],
+  "refs": [],
+  "input": {
+    "prompt": "▎ A gaunt, one-eyed giant seen face-on. A single large eye in the middle of his forehead, above the nose. Smooth bare skin where the other eyes would be, with no eye sockets on either side. Sharp teeth, long tangled beard. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "seed": 51,
+    "image_size": {
+      "width": 1104,
+      "height": 1472
+    },
+    "num_images": 1,
+    "output_format": "png",
+    "negative_prompt": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, two eyes, pair of eyes, eyes on both sides, profile view, side view"
+  },
+  "cost_usd_estimate": 0.04,
+  "price_source": "fal model page, 2026-10-27: \"$0.02 per megapixel\"",
+  "licence": "Apache-2.0"
+}
