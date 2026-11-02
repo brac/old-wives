@@ -78,8 +78,8 @@ A plate prompt has three parts, joined in this order.
    > paper, drawn only in fine grey metalpoint lines and hatching.
 
    Until 2026-10-29 the sentence ended "like a page from a Renaissance master's
-   sketchbook". It was removed for the bestiary trial (style tokens `a-2026-10-29`)
-   because plates were reading as human figure studies.
+   sketchbook". It was removed with the bestiary tokens (`a-2026-10-29`) because plates
+   were reading as human figure studies; Ben kept the change on 2026-11-02.
 
 2. **Subject.** For the pilot, this is Ben's visual-tradition description in
    `plates/overrides.json` (`visual.text`, marked `interpretive`). The entry's sourced
@@ -93,7 +93,9 @@ A plate prompt has three parts, joined in this order.
    > ground
 
    Plates approved before 2026-10-29 used "Renaissance sketch" in place of "bestiary
-   illustration" (style tokens `a-2026-10-27`).
+   illustration" (style tokens `a-2026-10-27`). Ben judged the two side by side on
+   2026-11-02 and kept the bestiary tokens; the pilot ten are being redrawn under them
+   and "silverpoint study" stays.
 
 **Negative prompt.** These are bare nouns, never "no X":
 

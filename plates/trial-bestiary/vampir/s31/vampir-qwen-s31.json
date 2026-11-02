@@ -1,0 +1,54 @@
+{
+  "name": "vampir-qwen-s31",
+  "date": "2026-11-02T22:31:04.612Z",
+  "arm": "qwen",
+  "endpoint": "fal-ai/qwen-image",
+  "request_id": "01a19e63-3635-7331-9a04-5bfa00e661c7",
+  "seed_requested": 31,
+  "seed_returned": 31,
+  "size_requested": {
+    "width": 1104,
+    "height": 1472
+  },
+  "size_returned": {
+    "width": 1104,
+    "height": 1472
+  },
+  "entry": "data/entries/vampir.json",
+  "field": "visual",
+  "form": null,
+  "variant": null,
+  "interpretive": true,
+  "behaviour_clause": null,
+  "guides": "off",
+  "paper": "plain",
+  "style": "a",
+  "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. An aristocratic vampire nobleman, tall and gaunt, in an elegant high-collared nineteenth-century frock coat and cravat, his long hair swept back. At first glance he looks refined; on a closer look his skin is deathly pale and his long, thin fingers end in long pointed fingernails. His mouth is closed, his lips thin and pressed together. His eyes are cold and predatory. Half-length portrait. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "prompt_raw": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. An aristocratic vampire nobleman, tall and gaunt, in an elegant high-collared nineteenth-century frock coat and cravat, his long hair swept back. At first glance he looks refined; on a closer look his skin is deathly pale and his long, thin fingers end in long pointed fingernails. His mouth is closed, his lips thin and pressed together. His eyes are cold and predatory. Half-length portrait. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, coffin, grave, corpse, cape, blood, red, open mouth, teeth, fangs",
+  "clauses_used": [],
+  "clauses_dropped": [],
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. An aristocratic vampire nobleman, tall and gaunt, in an elegant high-collared nineteenth-century frock coat and cravat, his long hair swept back. At first glance he looks refined; on a closer look his skin is deathly pale and his long, thin fingers end in long pointed fingernails. His mouth is closed, his lips thin and pressed together. His eyes are cold and predatory. Half-length portrait.",
+      "by": "Ben",
+      "date": "2026-10-27"
+    }
+  ],
+  "refs": [],
+  "input": {
+    "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. An aristocratic vampire nobleman, tall and gaunt, in an elegant high-collared nineteenth-century frock coat and cravat, his long hair swept back. At first glance he looks refined; on a closer look his skin is deathly pale and his long, thin fingers end in long pointed fingernails. His mouth is closed, his lips thin and pressed together. His eyes are cold and predatory. Half-length portrait. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "seed": 31,
+    "image_size": {
+      "width": 1104,
+      "height": 1472
+    },
+    "num_images": 1,
+    "output_format": "png",
+    "negative_prompt": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, coffin, grave, corpse, cape, blood, red, open mouth, teeth, fangs"
+  },
+  "cost_usd_estimate": 0.04,
+  "price_source": "fal model page, 2026-10-27: \"$0.02 per megapixel\"",
+  "licence": "Apache-2.0"
+}

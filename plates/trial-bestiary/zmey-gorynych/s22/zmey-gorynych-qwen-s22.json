@@ -1,0 +1,54 @@
+{
+  "name": "zmey-gorynych-qwen-s22",
+  "date": "2026-11-02T22:27:03.247Z",
+  "arm": "qwen",
+  "endpoint": "fal-ai/qwen-image",
+  "request_id": "01a19e5f-874e-79b2-989d-a84c1a9d76b9",
+  "seed_requested": 22,
+  "seed_returned": 22,
+  "size_requested": {
+    "width": 1104,
+    "height": 1472
+  },
+  "size_returned": {
+    "width": 1104,
+    "height": 1472
+  },
+  "entry": "data/entries/zmey-gorynych.json",
+  "field": "visual",
+  "form": null,
+  "variant": null,
+  "interpretive": true,
+  "behaviour_clause": null,
+  "guides": "off",
+  "paper": "plain",
+  "style": "a",
+  "prompt": "A three-headed dragon standing on four powerful clawed legs, with two large wings spread from its back and a long, thick dragon tail. Each of its three heads rises on its own long neck, ferocious, with open jaws and sharp teeth; one head breathes a stream of fire. Scaled body. Full figure. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "prompt_raw": "A three-headed dragon standing on four powerful clawed legs, with two large wings spread from its back and a long, thick dragon tail. Each of its three heads rises on its own long neck, ferocious, with open jaws and sharp teeth; one head breathes a stream of fire. Scaled body. Full figure. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, serpent without legs",
+  "clauses_used": [],
+  "clauses_dropped": [],
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "A three-headed dragon standing on four powerful clawed legs, with two large wings spread from its back and a long, thick dragon tail. Each of its three heads rises on its own long neck, ferocious, with open jaws and sharp teeth; one head breathes a stream of fire. Scaled body. Full figure.",
+      "by": "Ben",
+      "date": "2026-10-27"
+    }
+  ],
+  "refs": [],
+  "input": {
+    "prompt": "A three-headed dragon standing on four powerful clawed legs, with two large wings spread from its back and a long, thick dragon tail. Each of its three heads rises on its own long neck, ferocious, with open jaws and sharp teeth; one head breathes a stream of fire. Scaled body. Full figure. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "seed": 22,
+    "image_size": {
+      "width": 1104,
+      "height": 1472
+    },
+    "num_images": 1,
+    "output_format": "png",
+    "negative_prompt": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, serpent without legs"
+  },
+  "cost_usd_estimate": 0.04,
+  "price_source": "fal model page, 2026-10-27: \"$0.02 per megapixel\"",
+  "licence": "Apache-2.0"
+}

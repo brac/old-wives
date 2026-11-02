@@ -564,6 +564,15 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   Rejected: a review route inside the book site, which would ship trial material to the
   public build; and a Vercel preview of the book site, whose preview URLs sit behind
   Vercel authentication that a phone browser is not logged into.
+- **Ben, 2026-11-02: the bestiary style is kept.** Judged from the twenty trial pairs:
+  "overall they look better", and fewer iterations are expected per plate, though the
+  hard creatures stay hard. "silverpoint study" stays in the tokens and "silverpoint
+  character study" stays in the pilot opening sentence. Consequences: the ten pilot
+  plates are redrawn under `a-2026-10-29` (approved seed plus the next two, served on
+  the same trial sheet for Ben to pick one each); the five tranche plates approved under
+  `a-2026-10-27` on 2026-10-29 are to be re-picked from their bestiary twins on the
+  sheet, which were drawn at the approved seeds. Rejected: reverting to `a-2026-10-27`;
+  keeping the pilot ten under the old tokens, which would leave the book in two styles.
 
 ## Presentation backlog (2026-10-28, from a survey of catalog sites)
 

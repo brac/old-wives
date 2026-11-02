@@ -1,0 +1,54 @@
+{
+  "name": "bannik-qwen-s32",
+  "date": "2026-11-02T22:28:56.143Z",
+  "arm": "qwen",
+  "endpoint": "fal-ai/qwen-image",
+  "request_id": "01a19e61-4051-7413-a212-73b8fa671c1c",
+  "seed_requested": 32,
+  "seed_returned": 32,
+  "size_requested": {
+    "width": 1104,
+    "height": 1472
+  },
+  "size_returned": {
+    "width": 1104,
+    "height": 1472
+  },
+  "entry": "data/entries/bannik.json",
+  "field": "visual",
+  "form": null,
+  "variant": null,
+  "interpretive": true,
+  "behaviour_clause": null,
+  "guides": "off",
+  "paper": "plain",
+  "style": "a",
+  "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A strange, unsettling, mischievous little old man, gnarled and wizened, about as tall as the wooden bucket of water that stands beside him; he and the bucket are almost the same size, and the bucket is his only prop. He is scrawny and sinewy, with wild white hair, a long straggly white beard and moustache, a sly, crafty grin and glinting eyes. He clutches a bundle of leafy birch twigs. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "prompt_raw": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A strange, unsettling, mischievous little old man, gnarled and wizened, about as tall as the wooden bucket of water that stands beside him; he and the bucket are almost the same size, and the bucket is his only prop. He is scrawny and sinewy, with wild white hair, a long straggly white beard and moustache, a sly, crafty grin and glinting eyes. He clutches a bundle of leafy birch twigs. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, cute, cartoon, 3D animation character, bathhouse, bench, wall, other people",
+  "clauses_used": [],
+  "clauses_dropped": [],
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A strange, unsettling, mischievous little old man, gnarled and wizened, about as tall as the wooden bucket of water that stands beside him; he and the bucket are almost the same size, and the bucket is his only prop. He is scrawny and sinewy, with wild white hair, a long straggly white beard and moustache, a sly, crafty grin and glinting eyes. He clutches a bundle of leafy birch twigs. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+      "by": "Ben",
+      "date": "2026-10-27"
+    }
+  ],
+  "refs": [],
+  "input": {
+    "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A strange, unsettling, mischievous little old man, gnarled and wizened, about as tall as the wooden bucket of water that stands beside him; he and the bucket are almost the same size, and the bucket is his only prop. He is scrawny and sinewy, with wild white hair, a long straggly white beard and moustache, a sly, crafty grin and glinting eyes. He clutches a bundle of leafy birch twigs. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "seed": 32,
+    "image_size": {
+      "width": 1104,
+      "height": 1472
+    },
+    "num_images": 1,
+    "output_format": "png",
+    "negative_prompt": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, cute, cartoon, 3D animation character, bathhouse, bench, wall, other people"
+  },
+  "cost_usd_estimate": 0.04,
+  "price_source": "fal model page, 2026-10-27: \"$0.02 per megapixel\"",
+  "licence": "Apache-2.0"
+}

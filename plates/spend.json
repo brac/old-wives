@@ -1,6 +1,6 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 7.049,
+  "total_usd": 8.129,
   "rows": [
     {
       "date": "2026-10-27T16:17:19.854Z",
@@ -2140,6 +2140,289 @@
       "status": "done",
       "request_id": "01a19e55-6296-7ef1-9fbf-6553dcae26a3",
       "file": "plates\\trial-bestiary\\leshy\\s32\\leshy-qwen-s32.full.png"
+    },
+    {
+      "date": "2026-11-02T22:26:15.165Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "baba-yaga",
+      "seed": 23,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e5e-cbb0-76f0-bd83-645a47c11d9f",
+      "file": "plates\\trial-bestiary\\baba-yaga\\s23\\baba-yaga-qwen-s23.full.png"
+    },
+    {
+      "date": "2026-11-02T22:26:39.245Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 21,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e5f-298c-7691-bfa6-4a84a0afe81c",
+      "file": "plates\\trial-bestiary\\zmey-gorynych\\s21\\zmey-gorynych-qwen-s21.full.png"
+    },
+    {
+      "date": "2026-11-02T22:27:03.247Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 22,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e5f-874e-79b2-989d-a84c1a9d76b9",
+      "file": "plates\\trial-bestiary\\zmey-gorynych\\s22\\zmey-gorynych-qwen-s22.full.png"
+    },
+    {
+      "date": "2026-11-02T22:27:27.404Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "zmey-gorynych",
+      "seed": 23,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e5f-e5ab-7f52-bf6a-26059b1e38f3",
+      "file": "plates\\trial-bestiary\\zmey-gorynych\\s23\\zmey-gorynych-qwen-s23.full.png"
+    },
+    {
+      "date": "2026-11-02T22:27:51.724Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "leshy",
+      "seed": 33,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e60-44a7-7620-a337-d2369fe9ac28",
+      "file": "plates\\trial-bestiary\\leshy\\s33\\leshy-qwen-s33.full.png"
+    },
+    {
+      "date": "2026-11-02T22:28:15.945Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e60-a34a-7262-94c3-2d637fe816e7",
+      "file": "plates\\trial-bestiary\\bannik\\s31\\bannik-qwen-s31.full.png"
+    },
+    {
+      "date": "2026-11-02T22:28:56.143Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e61-4051-7413-a212-73b8fa671c1c",
+      "file": "plates\\trial-bestiary\\bannik\\s32\\bannik-qwen-s32.full.png"
+    },
+    {
+      "date": "2026-11-02T22:29:19.826Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "bannik",
+      "seed": 33,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e61-9cd8-7b61-969b-89cc4d7b3f2c",
+      "file": "plates\\trial-bestiary\\bannik\\s33\\bannik-qwen-s33.full.png"
+    },
+    {
+      "date": "2026-11-02T22:29:43.627Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "domovoi",
+      "seed": 33,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e61-f9c7-7910-8afd-8ec78fe26cd3",
+      "file": "plates\\trial-bestiary\\domovoi\\s33\\domovoi-qwen-s33.full.png"
+    },
+    {
+      "date": "2026-11-02T22:30:08.011Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "domovoi",
+      "seed": 34,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e62-590c-7381-a2d4-bc9660671443",
+      "file": "plates\\trial-bestiary\\domovoi\\s34\\domovoi-qwen-s34.full.png"
+    },
+    {
+      "date": "2026-11-02T22:30:33.633Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "domovoi",
+      "seed": 35,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e62-bd32-7ad1-851e-a6bae997bffd",
+      "file": "plates\\trial-bestiary\\domovoi\\s35\\domovoi-qwen-s35.full.png"
+    },
+    {
+      "date": "2026-11-02T22:30:58.620Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:31:00.612Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:31:02.597Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 33,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:31:04.612Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vampir",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e63-3635-7331-9a04-5bfa00e661c7",
+      "file": "plates\\trial-bestiary\\vampir\\s31\\vampir-qwen-s31.full.png"
+    },
+    {
+      "date": "2026-11-02T22:31:29.549Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vampir",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e63-978b-7970-bbf7-2d4d19242e51",
+      "file": "plates\\trial-bestiary\\vampir\\s32\\vampir-qwen-s32.full.png"
+    },
+    {
+      "date": "2026-11-02T22:31:54.763Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vampir",
+      "seed": 33,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e63-fa09-77e2-b8db-3f334bce531c",
+      "file": "plates\\trial-bestiary\\vampir\\s33\\vampir-qwen-s33.full.png"
+    },
+    {
+      "date": "2026-11-02T22:32:19.463Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 41,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:32:20.896Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 42,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:32:23.410Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 43,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:32:25.357Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "drekavac",
+      "seed": 42,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e64-718c-7dc3-928b-fdc7bc754d4e",
+      "file": "plates\\trial-bestiary\\drekavac\\s42\\drekavac-qwen-s42.full.png"
+    },
+    {
+      "date": "2026-11-02T22:32:50.709Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "drekavac",
+      "seed": 43,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e64-d494-7bc2-85f1-e1328134fdc6",
+      "file": "plates\\trial-bestiary\\drekavac\\s43\\drekavac-qwen-s43.full.png"
+    },
+    {
+      "date": "2026-11-02T22:33:16.030Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "drekavac",
+      "seed": 44,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e65-377e-7591-8148-4908bfa69531",
+      "file": "plates\\trial-bestiary\\drekavac\\s44\\drekavac-qwen-s44.full.png"
+    },
+    {
+      "date": "2026-11-02T22:33:41.468Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vodyanoi",
+      "seed": 42,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e65-9add-70d0-996d-9b43d4c18583",
+      "file": "plates\\trial-bestiary\\vodyanoi\\s42\\vodyanoi-qwen-s42.full.png"
+    },
+    {
+      "date": "2026-11-02T22:34:06.857Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vodyanoi",
+      "seed": 43,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e65-fe0a-74b3-a0bf-185772d78b98",
+      "file": "plates\\trial-bestiary\\vodyanoi\\s43\\vodyanoi-qwen-s43.full.png"
+    },
+    {
+      "date": "2026-11-02T22:34:31.845Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vodyanoi",
+      "seed": 44,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e66-5fa3-7f73-af6b-b169b3138197",
+      "file": "plates\\trial-bestiary\\vodyanoi\\s44\\vodyanoi-qwen-s44.full.png"
+    },
+    {
+      "date": "2026-11-02T22:35:35.982Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "failed"
     }
   ]
 }

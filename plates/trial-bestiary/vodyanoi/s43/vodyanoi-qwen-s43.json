@@ -1,0 +1,54 @@
+{
+  "name": "vodyanoi-qwen-s43",
+  "date": "2026-11-02T22:34:06.857Z",
+  "arm": "qwen",
+  "endpoint": "fal-ai/qwen-image",
+  "request_id": "01a19e65-fe0a-74b3-a0bf-185772d78b98",
+  "seed_requested": 43,
+  "seed_returned": 43,
+  "size_requested": {
+    "width": 1104,
+    "height": 1472
+  },
+  "size_returned": {
+    "width": 1104,
+    "height": 1472
+  },
+  "entry": "data/entries/vodyanoi.json",
+  "field": "visual",
+  "form": null,
+  "variant": null,
+  "interpretive": true,
+  "behaviour_clause": null,
+  "guides": "off",
+  "paper": "plain",
+  "style": "a",
+  "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A big, blobby, bloated frog creature, only vaguely human in shape, with a huge, round, fat belly and short, stumpy legs. Its broad frog head sinks into its shoulders with no neck, and has a very wide frog mouth and big, bulging frog eyes set far apart. Its skin is warty, slimy frog skin all over. A gross, scraggly, mossy beard hangs from its chin, and stringy, scraggly hair hangs from the top of its head. Its hands are webbed frog hands with long fingers. It sits squat like a frog. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "prompt_raw": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A big, blobby, bloated frog creature, only vaguely human in shape, with a huge, round, fat belly and short, stumpy legs. Its broad frog head sinks into its shoulders with no neck, and has a very wide frog mouth and big, bulging frog eyes set far apart. Its skin is warty, slimy frog skin all over. A gross, scraggly, mossy beard hangs from its chin, and stringy, scraggly hair hangs from the top of its head. Its hands are webbed frog hands with long fingers. It sits squat like a frog. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+  "negative": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, hat, cap, mask, hood, gloves, clothes, man, human face, swamp, water",
+  "clauses_used": [],
+  "clauses_dropped": [],
+  "human_edits": [
+    {
+      "type": "visual-tradition",
+      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A big, blobby, bloated frog creature, only vaguely human in shape, with a huge, round, fat belly and short, stumpy legs. Its broad frog head sinks into its shoulders with no neck, and has a very wide frog mouth and big, bulging frog eyes set far apart. Its skin is warty, slimy frog skin all over. A gross, scraggly, mossy beard hangs from its chin, and stringy, scraggly hair hangs from the top of its head. Its hands are webbed frog hands with long fingers. It sits squat like a frog. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+      "by": "Ben",
+      "date": "2026-10-27"
+    }
+  ],
+  "refs": [],
+  "input": {
+    "prompt": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A big, blobby, bloated frog creature, only vaguely human in shape, with a huge, round, fat belly and short, stumpy legs. Its broad frog head sinks into its shoulders with no neck, and has a very wide frog mouth and big, bulging frog eyes set far apart. Its skin is warty, slimy frog skin all over. A gross, scraggly, mossy beard hangs from its chin, and stringy, scraggly hair hangs from the top of its head. Its hands are webbed frog hands with long fingers. It sits squat like a frog. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper. silverpoint study, metalpoint drawing, bestiary illustration, hatching and cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper ground",
+    "seed": 43,
+    "image_size": {
+      "width": 1104,
+      "height": 1472
+    },
+    "num_images": 1,
+    "output_format": "png",
+    "negative_prompt": "painterly fantasy concept art, 3D render, digital painting, colour, color, smooth shading, anime, comic book inking, photograph, text, watermark, border, handwriting, inscriptions, annotations, script, lettering, captions, photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, hat, cap, mask, hood, gloves, clothes, man, human face, swamp, water"
+  },
+  "cost_usd_estimate": 0.04,
+  "price_source": "fal model page, 2026-10-27: \"$0.02 per megapixel\"",
+  "licence": "Apache-2.0"
+}

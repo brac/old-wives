@@ -86,9 +86,10 @@ export const STYLE_TOKENS = styleTokens();
  * if any fragment that feeds STYLE_TOKENS changes.
  *
  * a-2026-10-29: STYLE_SKETCH is "bestiary illustration" and the pilot visual overrides no
- * longer open with "like a page from a Renaissance master's sketchbook". This is a trial:
- * if Ben keeps it, the ten pilot plates are redrawn under it; if not, revert to
- * a-2026-10-27. Plates already approved keep the version recorded with them.
+ * longer open with "like a page from a Renaissance master's sketchbook". Ben kept it on
+ * 2026-11-02 after a twenty-plate side-by-side trial, so the pilot ten are redrawn under
+ * it. "silverpoint study" stays by the same ruling. Plates approved under a-2026-10-27
+ * keep that version recorded with them until they are replaced.
  */
 export const STYLE_TOKENS_VERSION = "a-2026-10-29";
 
