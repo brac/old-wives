@@ -152,7 +152,9 @@ describe("visual overrides (2d-d)", () => {
     for (const id of ids) {
       const v = allOverrides[id]?.visual;
       expect(v, id).toBeDefined();
-      expect(v).toMatchObject({ basis: "visual tradition", by: "Ben", date: "2026-10-27" });
+      expect(v).toMatchObject({ basis: "visual tradition", by: "Ben" });
+      // Written 2026-10-27; rusalka and poludnitsa were reworded on 2026-11-02 for fal's content checker.
+      expect(["2026-10-27", "2026-11-02"], id).toContain(v!.date);
       expect(v!.note!.length).toBeGreaterThan(0);
     }
     expect(allOverrides["baba-yaga"].drop).toHaveLength(2);
@@ -182,7 +184,7 @@ describe("visual overrides (2d-d)", () => {
       expect(p.interpretive).toBe(true);
       expect(p.clauses_used).toEqual([]);
       expect(p.clauses_dropped).toEqual([]);
-      expect(p.human_edits).toEqual([{ type: "visual-tradition", text: v.text, by: "Ben", date: "2026-10-27" }]);
+      expect(p.human_edits).toEqual([{ type: "visual-tradition", text: v.text, by: "Ben", date: v.date }]);
       const inline = buildPrompt(e, authors, { overrides: allOverrides, style, negativeInline: true });
       expect(inline.negative).toBe("");
       expect(inline.prompt.endsWith(`${AVOID_PREFIX} ${p.negative}`)).toBe(true);
