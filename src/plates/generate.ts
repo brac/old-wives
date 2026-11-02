@@ -256,6 +256,10 @@ export async function main(argv: string[]): Promise<void> {
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   main(process.argv.slice(2)).catch((err) => {
     console.error(err instanceof Error ? err.message : err);
+    // fal's 422 carries the reason in the body; since 2026-11-02 that includes a prompt
+    // content checker ("content_policy_violation"), which the message alone does not say.
+    const detail = (err as { body?: { detail?: Array<{ type?: string; msg?: string }> } })?.body?.detail;
+    if (Array.isArray(detail)) for (const d of detail) console.error(`  ${d.type ?? "detail"}: ${d.msg ?? JSON.stringify(d)}`);
     process.exit(1);
   });
 }

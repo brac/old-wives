@@ -573,6 +573,18 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   `a-2026-10-27` on 2026-10-29 are to be re-picked from their bestiary twins on the
   sheet, which were drawn at the approved seeds. Rejected: reverting to `a-2026-10-27`;
   keeping the pilot ten under the old tokens, which would leave the book in two styles.
+- **2026-11-02: fal now runs a prompt content checker on `fal-ai/qwen-image`.** Rusalka
+  and poludnitsa, whose visual text drew without complaint on 2026-10-27, now come back
+  `422 content_policy_violation` on the prompt (rusalka's bare-breasts-under-hair and bare
+  thighs; poludnitsa's rotting corpse, detached jaw and sinew). Eight of the pilot ten
+  and all twenty trial plates passed. Nineteen attempts at the two failed, one diagnostic
+  submit of the rusalka text passed, so the checker is not fully deterministic but close
+  enough that retrying is waste: $0.76 of 422s on the ledger (counted, since a rejected
+  request may still bill). Consequence: the two visual overrides need rewording that
+  keeps the creature and loses the flagged terms, and the wording is Ben's. The
+  generator now prints the 422 detail. Rejected: blind retry loops; switching arm for the
+  two, because the checker is fal's, not the model's, and a second style in the book is
+  the thing the ruling above avoids.
 
 ## Presentation backlog (2026-10-28, from a survey of catalog sites)
 
