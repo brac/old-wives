@@ -585,6 +585,12 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   generator now prints the 422 detail. Rejected: blind retry loops; switching arm for the
   two, because the checker is fal's, not the model's, and a second style in the book is
   the thing the ruling above avoids.
+- **2026-11-02: Ben approved the agent-drafted rewordings for rusalka and poludnitsa**
+  (in `plates/overrides.json`, the superseded text kept in each creature's
+  `human_edits`). Six plates, three seeds each, drew first time under the new text.
+  Ben also moved the five 2026-10-29 tranche picks to their bestiary twins at the same
+  seeds. Finalise is held until the pilot ten are picked, so the book flips to the new
+  style in one pass.
 
 ## Presentation backlog (2026-10-28, from a survey of catalog sites)
 

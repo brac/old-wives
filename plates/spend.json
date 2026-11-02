@@ -1,6 +1,6 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 8.929,
+  "total_usd": 9.169,
   "rows": [
     {
       "date": "2026-10-27T16:17:19.854Z",
@@ -2606,6 +2606,72 @@
       "seed": 43,
       "estimate_usd": 0.04,
       "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:49:07.420Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e73-bc08-7b92-9d55-e74ee5846b1f",
+      "file": "plates\\trial-bestiary\\rusalka\\s31\\rusalka-qwen-s31.full.png"
+    },
+    {
+      "date": "2026-11-02T22:49:37.802Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e74-3295-7b92-a293-9543a090cd0a",
+      "file": "plates\\trial-bestiary\\rusalka\\s32\\rusalka-qwen-s32.full.png"
+    },
+    {
+      "date": "2026-11-02T22:50:01.799Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 33,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e74-905b-75e1-b012-abc593db3b9e",
+      "file": "plates\\trial-bestiary\\rusalka\\s33\\rusalka-qwen-s33.full.png"
+    },
+    {
+      "date": "2026-11-02T22:50:25.801Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 41,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e74-ee0d-7633-bdd4-2fdbc3edc2a9",
+      "file": "plates\\trial-bestiary\\poludnitsa\\s41\\poludnitsa-qwen-s41.full.png"
+    },
+    {
+      "date": "2026-11-02T22:50:50.074Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 42,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e75-4ce2-71e0-9d27-da55355d45d6",
+      "file": "plates\\trial-bestiary\\poludnitsa\\s42\\poludnitsa-qwen-s42.full.png"
+    },
+    {
+      "date": "2026-11-02T22:51:14.733Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 43,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e75-ad2e-7ec1-9208-1564465fda0c",
+      "file": "plates\\trial-bestiary\\poludnitsa\\s43\\poludnitsa-qwen-s43.full.png"
     }
   ]
 }
