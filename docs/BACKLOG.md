@@ -541,6 +541,19 @@ Not scheduled. The reasons for most of them are in `docs/pilot-report.md`.
   individual creature so Ben edits less. Rejected: changing the research prompts or
   the entries to write in the singular, which would make the cited clauses drift
   from what the sources say.
+- **Ben, 2026-10-29: the bestiary style is a trial, run on the next plates drawn.** Every
+  Renaissance reference is out of the generation prompts: the style tokens carry
+  "bestiary illustration" (already in `54574de`), and the eight pilot visual overrides
+  lose their closing "like a page from a Renaissance master's sketchbook". Kept, at
+  Ben's instruction: "metalpoint drawing" and "hatching and cross-hatching". The style
+  tokens version moves to `a-2026-10-29` so every plate records which style drew it.
+  Ben judges the new plates himself. If the change is kept, the ten pilot plates are
+  redrawn under it (and the five tranche plates approved under `a-2026-10-27` are a
+  question for then); if not, revert to `a-2026-10-27`. Rejected: a planner-run
+  side-by-side bake-off before the desk session; Ben will judge from real desk plates.
+  Still in the prompts and not ruled on: "silverpoint study" in the tokens and
+  "silverpoint character study" in the pilot opening sentence. "Study" is the word the
+  2d-d style b dropped for pulling in figure-study and notebook pages.
 
 ## Presentation backlog (2026-10-28, from a survey of catalog sites)
 

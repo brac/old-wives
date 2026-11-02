@@ -75,8 +75,11 @@ A plate prompt has three parts, joined in this order.
 1. **Opening style sentence**, at the head of every subject text:
 
    > A monochrome silverpoint character study: a single figure alone on plain off-white
-   > paper, drawn only in fine grey metalpoint lines and hatching, like a page from a
-   > Renaissance master's sketchbook.
+   > paper, drawn only in fine grey metalpoint lines and hatching.
+
+   Until 2026-10-29 the sentence ended "like a page from a Renaissance master's
+   sketchbook". It was removed for the bestiary trial (style tokens `a-2026-10-29`)
+   because plates were reading as human figure studies.
 
 2. **Subject.** For the pilot, this is Ben's visual-tradition description in
    `plates/overrides.json` (`visual.text`, marked `interpretive`). The entry's sourced
@@ -85,9 +88,12 @@ A plate prompt has three parts, joined in this order.
 
 3. **Style tokens** (from `src/plates/prompt.ts`), appended:
 
-   > silverpoint study, metalpoint drawing, Renaissance sketch, hatching and
+   > silverpoint study, metalpoint drawing, bestiary illustration, hatching and
    > cross-hatching, fine line, high contrast, sharp focus, monochrome, clean light paper
    > ground
+
+   Plates approved before 2026-10-29 used "Renaissance sketch" in place of "bestiary
+   illustration" (style tokens `a-2026-10-27`).
 
 **Negative prompt.** These are bare nouns, never "no X":
 

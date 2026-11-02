@@ -1,6 +1,6 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 5.209,
+  "total_usd": 6.249,
   "rows": [
     {
       "date": "2026-10-27T16:17:19.854Z",
@@ -1636,6 +1636,290 @@
       "status": "done",
       "request_id": "01a1804d-9d5c-7a13-af74-18cffd164b73",
       "file": "plates\\iter5\\out\\vodyanoi\\a-s42\\vodyanoi-qwen-s42.full.png"
+    },
+    {
+      "date": "2026-10-28T23:20:57.959Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "kikimora",
+      "seed": 51,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a184d1-193d-7c93-a15c-25403131d9e8",
+      "file": "plates\\desk\\kikimora\\s51\\kikimora-qwen-s51.full.png"
+    },
+    {
+      "date": "2026-10-29T02:48:32.612Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "kikimora",
+      "seed": 52,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a1858f-24dd-7f72-9a9d-e7363eb198a5",
+      "file": "plates\\desk\\kikimora\\s52\\kikimora-qwen-s52.full.png"
+    },
+    {
+      "date": "2026-10-29T02:48:57.263Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vila",
+      "seed": 51,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-10-29T02:49:20.571Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "polevik",
+      "seed": 51,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a1858f-dfe4-7ef2-b61c-faaafd56c402",
+      "file": "plates\\desk\\polevik\\s51\\polevik-qwen-s51.full.png"
+    },
+    {
+      "date": "2026-10-29T02:49:47.039Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "likho",
+      "seed": 51,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a18590-4755-7393-8235-dbeefb6376e6",
+      "file": "plates\\desk\\likho\\s51\\likho-qwen-s51.full.png"
+    },
+    {
+      "date": "2026-10-29T02:50:12.090Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "koschei",
+      "seed": 51,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a18590-a92a-7970-83b5-2606b7dce7e3",
+      "file": "plates\\desk\\koschei\\s51\\koschei-qwen-s51.full.png"
+    },
+    {
+      "date": "2026-10-29T02:50:54.087Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "polevik",
+      "seed": 52,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a18591-4d3a-7fd3-b81c-7f7f3769a7ba",
+      "file": "plates\\desk\\polevik\\s52\\polevik-qwen-s52.full.png"
+    },
+    {
+      "date": "2026-10-29T02:58:48.594Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "likho",
+      "seed": 52,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a18598-8eba-77f2-97e9-9ce23c3382e7",
+      "file": "plates\\desk\\likho\\s52\\likho-qwen-s52.full.png"
+    },
+    {
+      "date": "2026-10-29T02:59:14.306Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vila",
+      "seed": 52,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a18598-ef3d-7a01-b579-6676c84d6546",
+      "file": "plates\\desk\\vila\\s52\\vila-qwen-s52.full.png"
+    },
+    {
+      "date": "2026-10-29T03:40:28.828Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "likho",
+      "seed": 53,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185be-b1f4-7e10-80ad-9223813b3ecd",
+      "file": "plates\\desk\\likho\\s53\\likho-qwen-s53.full.png"
+    },
+    {
+      "date": "2026-10-29T03:41:45.547Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "vila",
+      "seed": 53,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185bf-dcde-7ad2-9035-174e50c0b2b1",
+      "file": "plates\\desk\\vila\\s53\\vila-qwen-s53.full.png"
+    },
+    {
+      "date": "2026-10-29T03:42:10.114Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "likho",
+      "seed": 54,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185c0-3cdf-7213-b510-9b1dedadce1a",
+      "file": "plates\\desk\\likho\\s54\\likho-qwen-s54.full.png"
+    },
+    {
+      "date": "2026-10-29T03:43:47.535Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "alkonost",
+      "seed": 51,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185c1-b970-7a30-816e-d3c5be967b37",
+      "file": "plates\\desk\\alkonost\\s51\\alkonost-qwen-s51.full.png"
+    },
+    {
+      "date": "2026-10-29T03:45:12.813Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "alkonost",
+      "seed": 52,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185c3-068c-73a0-9b84-08d04f47ce57",
+      "file": "plates\\desk\\alkonost\\s52\\alkonost-qwen-s52.full.png"
+    },
+    {
+      "date": "2026-10-29T03:46:07.825Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "likho",
+      "seed": 55,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185c3-dd6a-7703-b530-7f855b8cb55b",
+      "file": "plates\\desk\\likho\\s55\\likho-qwen-s55.full.png"
+    },
+    {
+      "date": "2026-10-29T03:46:58.651Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "alkonost",
+      "seed": 53,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185c4-a3f4-7ee1-86ba-351456d5f8c5",
+      "file": "plates\\desk\\alkonost\\s53\\alkonost-qwen-s53.full.png"
+    },
+    {
+      "date": "2026-10-29T03:47:22.927Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "likho",
+      "seed": 56,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185c5-02cd-7680-83ab-a34de17202de",
+      "file": "plates\\desk\\likho\\s56\\likho-qwen-s56.full.png"
+    },
+    {
+      "date": "2026-10-29T03:48:10.799Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "alkonost",
+      "seed": 54,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185c5-bde2-7570-9a41-72d3e8877c09",
+      "file": "plates\\desk\\alkonost\\s54\\alkonost-qwen-s54.full.png"
+    },
+    {
+      "date": "2026-10-29T03:49:36.297Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "polevik",
+      "seed": 53,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185c7-0bc7-7322-a5bd-d11ed222324b",
+      "file": "plates\\desk\\polevik\\s53\\polevik-qwen-s53.full.png"
+    },
+    {
+      "date": "2026-10-29T03:50:01.474Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "likho",
+      "seed": 57,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185c7-6e39-77d1-b9ad-fff04ce2884a",
+      "file": "plates\\desk\\likho\\s57\\likho-qwen-s57.full.png"
+    },
+    {
+      "date": "2026-10-29T03:52:16.892Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "alkonost",
+      "seed": 55,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185c9-7f5a-7eb2-8b4c-70fc4700c72a",
+      "file": "plates\\desk\\alkonost\\s55\\alkonost-qwen-s55.full.png"
+    },
+    {
+      "date": "2026-10-29T03:52:41.164Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "alkonost",
+      "seed": 56,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185c9-ddec-7253-98d8-00eb029fa88a",
+      "file": "plates\\desk\\alkonost\\s56\\alkonost-qwen-s56.full.png"
+    },
+    {
+      "date": "2026-10-29T03:53:05.812Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "alkonost",
+      "seed": 57,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185ca-3e46-7143-b0b5-bb862095664c",
+      "file": "plates\\desk\\alkonost\\s57\\alkonost-qwen-s57.full.png"
+    },
+    {
+      "date": "2026-10-29T03:53:30.577Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "oboroten",
+      "seed": 51,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185ca-9ef2-7f30-9c3f-3271c8236ef8",
+      "file": "plates\\desk\\oboroten\\s51\\oboroten-qwen-s51.full.png"
+    },
+    {
+      "date": "2026-10-29T03:53:54.759Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "oboroten",
+      "seed": 52,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185ca-fd62-7573-9c8d-26840ee692f3",
+      "file": "plates\\desk\\oboroten\\s52\\oboroten-qwen-s52.full.png"
+    },
+    {
+      "date": "2026-10-29T03:54:19.506Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "skritek",
+      "seed": 51,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a185cb-5e23-7123-b525-e6886843fd89",
+      "file": "plates\\desk\\skritek\\s51\\skritek-qwen-s51.full.png"
     }
   ]
 }
