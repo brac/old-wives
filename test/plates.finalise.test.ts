@@ -71,9 +71,9 @@ describe("picks", () => {
     expect(picks).toHaveLength(15);
     expect(picks.every((p) => p.approved_by === "Ben")).toBe(true);
     expect(picks.filter((p) => p.date === "2026-10-27")).toHaveLength(10);
-    expect(picks.filter((p) => p.date === "2026-10-29")).toHaveLength(5);
+    expect(picks.filter((p) => p.date === "2026-11-02")).toHaveLength(5);
     expect(picks.find((p) => p.id === "drekavac")?.source).toBe("plates/iter5/out/drekavac/a-s42");
-    expect(picks.find((p) => p.id === "koschei")?.source).toBe("plates/desk/koschei/s51");
+    expect(picks.find((p) => p.id === "koschei")?.source).toBe("plates/trial-bestiary/koschei/s51");
   });
 
   test("rejects a bad id, an unknown key, a missing source and a bad date", () => {

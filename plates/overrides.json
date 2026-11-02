@@ -45,13 +45,22 @@
   },
   "poludnitsa": {
     "visual": {
-      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A gruesome corpse whose head is a half-rotted skull, with patches of rotting flesh still clinging to it and thin, wispy, rotting hair hanging from it, crowned with a wreath of field flowers. Her lower jaw is detached and hangs loose by a strip of sinew below her upper teeth, and a long, gruesome tongue hangs out and down over her chest. Her eyes are solid white and rotted, in deep sockets. She is fully clothed, covered from neck to ankle in a rotting, tattered, long-sleeved peasant dress, and her bony, withered hands hold a curved sickle. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A gaunt, deathly woman whose face is drawn so tight over the bone that it reads as a skull, with hollow cheeks, deep eye sockets and thin, wispy hair, crowned with a wreath of field flowers. Her mouth hangs slack and far too wide, and a long tongue lolls out and down over her chest. Her eyes are blank white in deep sockets. She is fully clothed, covered from neck to ankle in a tattered, decaying, long-sleeved peasant dress, and her bony, withered hands hold a curved sickle. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
       "basis": "visual tradition",
       "by": "Ben",
-      "date": "2026-10-27",
-      "note": "Ben, round 5: one seed was topless, the other a living peasant woman with a tongue; the head must be a half-rotted skull with a flower crown and a detached lower jaw.",
+      "date": "2026-11-02",
+      "note": "Ben, 2026-11-02: reworded (drafted by the agent, approved by Ben) after fal's prompt content checker rejected the 2026-10-27 text with 422 content_policy_violation on \"corpse\", \"rotting flesh\", \"detached jaw\", \"sinew\" and \"rotted eyes\". Same creature, flagged terms gone. Previous note: Ben, round 5: one seed was topless, the other a living peasant woman with a tongue; the head must be a half-rotted skull with a flower crown and a detached lower jaw.",
       "negative_extra": "photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, nudity, bare breasts, bare shoulders, living woman, healthy skin, pretty face, smile"
-    }
+    },
+    "human_edits": [
+      {
+        "type": "visual-tradition",
+        "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A gruesome corpse whose head is a half-rotted skull, with patches of rotting flesh still clinging to it and thin, wispy, rotting hair hanging from it, crowned with a wreath of field flowers. Her lower jaw is detached and hangs loose by a strip of sinew below her upper teeth, and a long, gruesome tongue hangs out and down over her chest. Her eyes are solid white and rotted, in deep sockets. She is fully clothed, covered from neck to ankle in a rotting, tattered, long-sleeved peasant dress, and her bony, withered hands hold a curved sickle. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+        "by": "Ben",
+        "date": "2026-10-27",
+        "note": "Superseded 2026-11-02; this is the text fal's content checker rejected."
+      }
+    ]
   },
   "bannik": {
     "visual": {
@@ -85,13 +94,22 @@
   },
   "rusalka": {
     "visual": {
-      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A thin, gaunt young woman, a malevolent spirit of the lake, dripping as if she has just risen from a swamp. Her very long, wet, straggling dark hair falls in heavy strands over her shoulders and down her chest, and her breasts are covered only by her hair, which is tangled and entwined with leaves, weeds and swamp vegetation. Wet water plants and leaves trail loosely around her hips, leaving her thighs and legs bare. A water lily blossom is tucked behind one ear. Her face is lean and angular, not a classical beauty, with a cold, luring expression. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+      "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A thin, gaunt young woman, a malevolent spirit of the lake, dripping as if she has just risen from a swamp. Her very long, wet, straggling dark hair falls in heavy strands over her shoulders and down her front, so thick and tangled with leaves, weeds and swamp vegetation that it clothes her to the waist. A skirt of trailing water plants and wet leaves hangs loosely from her hips. A water lily blossom is tucked behind one ear. Her face is lean and angular, not a classical beauty, with a cold, luring expression. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
       "negative_extra": "photorealism, photograph, colour painting, oil painting, background, scenery, landscape, interior, room, nudity, nipples, bikini, bra, top, classical drapery, shawl, trousers, water, lake",
       "basis": "visual tradition",
       "by": "Ben",
-      "date": "2026-10-27",
-      "note": "Ben, round 4: plates drifted to colour and photorealism with backgrounds; the style is restated at the head and every setting removed. The hair alone covers her breasts, with no bikini top; the legs were good."
-    }
+      "date": "2026-11-02",
+      "note": "Ben, 2026-11-02: reworded (drafted by the agent, approved by Ben) after fal's prompt content checker rejected the 2026-10-27 text with 422 content_policy_violation on \"breasts covered only by her hair\" and \"thighs and legs bare\". Same creature, flagged terms gone. Previous note: Ben, round 4: plates drifted to colour and photorealism with backgrounds; the style is restated at the head and every setting removed. The hair alone covers her breasts, with no bikini top; the legs were good."
+    },
+    "human_edits": [
+      {
+        "type": "visual-tradition",
+        "text": "A monochrome silverpoint character study: a single figure alone on plain off-white paper, drawn only in fine grey metalpoint lines and hatching. A thin, gaunt young woman, a malevolent spirit of the lake, dripping as if she has just risen from a swamp. Her very long, wet, straggling dark hair falls in heavy strands over her shoulders and down her chest, and her breasts are covered only by her hair, which is tangled and entwined with leaves, weeds and swamp vegetation. Wet water plants and leaves trail loosely around her hips, leaving her thighs and legs bare. A water lily blossom is tucked behind one ear. Her face is lean and angular, not a classical beauty, with a cold, luring expression. Full-length figure: the whole body from head to feet inside the frame, isolated on blank paper.",
+        "by": "Ben",
+        "date": "2026-10-27",
+        "note": "Superseded 2026-11-02; this is the text fal's content checker rejected."
+      }
+    ]
   },
   "vampir": {
     "visual": {

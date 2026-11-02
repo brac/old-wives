@@ -50,28 +50,28 @@
     "date": "2026-10-27"
   },
   "koschei": {
-    "source": "plates/desk/koschei/s51",
+    "source": "plates/trial-bestiary/koschei/s51",
     "approved_by": "Ben",
-    "date": "2026-10-29"
+    "date": "2026-11-02"
   },
   "kikimora": {
-    "source": "plates/desk/kikimora/s52",
+    "source": "plates/trial-bestiary/kikimora/s52",
     "approved_by": "Ben",
-    "date": "2026-10-29"
+    "date": "2026-11-02"
   },
   "vila": {
-    "source": "plates/desk/vila/s53",
+    "source": "plates/trial-bestiary/vila/s53",
     "approved_by": "Ben",
-    "date": "2026-10-29"
+    "date": "2026-11-02"
   },
   "polevik": {
-    "source": "plates/desk/polevik/s53",
+    "source": "plates/trial-bestiary/polevik/s53",
     "approved_by": "Ben",
-    "date": "2026-10-29"
+    "date": "2026-11-02"
   },
   "likho": {
-    "source": "plates/desk/likho/s56",
+    "source": "plates/trial-bestiary/likho/s56",
     "approved_by": "Ben",
-    "date": "2026-10-29"
+    "date": "2026-11-02"
   }
 }
