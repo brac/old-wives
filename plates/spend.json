@@ -1,6 +1,6 @@
 {
   "note": "Running ledger of fal spend. total_usd sums estimate_usd of every submitted row, including failed ones, because a failed request may still bill.",
-  "total_usd": 8.129,
+  "total_usd": 8.929,
   "rows": [
     {
       "date": "2026-10-27T16:17:19.854Z",
@@ -2421,6 +2421,189 @@
       "endpoint": "fal-ai/qwen-image",
       "entry": "rusalka",
       "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:46:00.000Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "done",
+      "request_id": "01a19e6c-459a-7183-bba0-ede285ab528e",
+      "file": "(diagnostic request, image not kept)"
+    },
+    {
+      "date": "2026-11-02T22:46:00.000Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 41,
+      "estimate_usd": 0.04,
+      "status": "failed",
+      "request_id": "01a19e6c-4b39-7270-9270-9eddb85dd85d"
+    },
+    {
+      "date": "2026-11-02T22:42:09.331Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:42:11.192Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:42:12.674Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 31,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:42:14.147Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:42:15.609Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:42:17.066Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 32,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:42:18.536Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 33,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:42:19.987Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 33,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:42:21.465Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "rusalka",
+      "seed": 33,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:42:32.036Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 41,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:43:25.013Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 41,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:43:41.941Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 41,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:43:56.193Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 42,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:44:07.276Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 42,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:44:08.748Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 42,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:44:11.793Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 43,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:44:15.936Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 43,
+      "estimate_usd": 0.04,
+      "status": "failed"
+    },
+    {
+      "date": "2026-11-02T22:44:17.920Z",
+      "arm": "qwen",
+      "endpoint": "fal-ai/qwen-image",
+      "entry": "poludnitsa",
+      "seed": 43,
       "estimate_usd": 0.04,
       "status": "failed"
     }
